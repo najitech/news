@@ -1,8 +1,4 @@
-.test{
-    background-color: cadetblue;
-    height: 240px;
-    border : black solid 1px;
-}
+
 .posts{
     width: 700px;
     grid-column-gap:10px;
