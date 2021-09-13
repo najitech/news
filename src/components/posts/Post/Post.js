@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
+import './Post.css'
 
 function Post(props) {
     const postdate = new Date(props.publish_date);
     return (
-        <div>
+        <div className="Post">
             <div className="Post_image">
-                <image src={props.image} />
+                <img src={props.image} alt="image" />
             </div>
             <div className="Post_container">
                 <h3>

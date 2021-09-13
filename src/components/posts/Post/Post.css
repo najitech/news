@@ -1,0 +1,7 @@
+.Post{
+    width: 400px;
+    height: 700px;
+}
+.Post_image > img {
+    width: 90%;
+}
