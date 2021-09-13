@@ -1,7 +1,7 @@
 import React from 'react'
 
 function Post(props) {
-    postdate = new Date(props.publish_date)
+    const postdate = new Date(props.publish_date);
     return (
         <div>
             <div className="Post_image">
@@ -14,10 +14,8 @@ function Post(props) {
                 <p>{props.news_text}</p>
             </div>
             <div className="Post_footer">
-                {postdate}
+                {postdate.getHours()}
             </div>
-
-
         </div>
     )
 }
