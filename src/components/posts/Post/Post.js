@@ -15,7 +15,7 @@ function Post(props) {
                 <p>{props.news_text}</p>
             </div>
             <div className="Post_footer">
-                {postdate.getHours()}
+                {postdate.toLocaleString()}
             </div>
         </div>
     )
