@@ -10,7 +10,6 @@ function Rss() {
         <div className='Rss'>
             <Filters/>
             <Posts/>
-            <Widgets/>  
         </div>
     )
 }
