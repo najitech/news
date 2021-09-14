@@ -13,7 +13,7 @@ function Posts() {
         });
     } , []);*/
     return (
-        <div className="posts">
+        <div className="Posts">
             {/*data.map((data)=>{
                 <Post image={data.image} 
                     link={data.link}

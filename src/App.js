@@ -1,10 +1,10 @@
 import './App.css';
-import Posts from './components/posts/Posts';
+import Rss from './components/Rss/Rss';
 function App() {
 
   return (
     <div className="App">
-        <Posts/>
+        <Rss/>
     </div>
   );
 }
