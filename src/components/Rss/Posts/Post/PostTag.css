@@ -1,0 +1,15 @@
+.PostTag {
+    padding:0px 5px;
+    display: flex;
+    width: 50px;
+    height: 17px;
+    background-color: rgb(191,87,148);
+    border-radius : 15px;
+    margin:6px;
+    align-items:center;
+    color:white;
+}
+.PostTag  p {
+    text-align: center;
+    font-size: 12px;
+}
