@@ -1,9 +1,13 @@
 import React from 'react'
+import Accardion from '../../../UI/Accardion'
 import './Filters.css'
+import Positiveness from './Positiveness/Positiveness'
 function Filters() {
     return (
         <div className="Filters">
-            <h2>Filters</h2>
+            <form>  
+                    <Positiveness/> 
+            </form>
         </div>
     )
 }
