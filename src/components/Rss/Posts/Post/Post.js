@@ -1,11 +1,30 @@
 import React from 'react';
-import './Post.css'
+import './Post.css';
+import { makeStyles } from '@material-ui/core/styles';
+import Card from '@material-ui/core/Card';
+import CardActionArea from '@material-ui/core/CardActionArea';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
+
+
+const useStyles = makeStyles({
+    root: {
+      maxWidth: 345,
+    },
+    media: {
+      height: 140,
+    },
+  });
 
 function Post(props) {
+    const classes = useStyles();
     const postdate = new Date(props.publish_date);
     return (
         <div className="Post">
-            <div className="Post_image">
+            {/*<div className="Post_image">
                 <img src={props.image} alt="image" />
             </div>
             <div className="Post_container">
@@ -17,6 +36,29 @@ function Post(props) {
             <div className="Post_footer">
                 {postdate.toLocaleString()}
             </div>
+            */}
+            <Card className={classes.root}>
+                <CardActionArea>
+                    <CardMedia
+                    className={classes.media}
+                    image={props.image}
+                    title={props.title}
+                    />
+                    <CardContent>
+                    <Typography gutterBottom variant="h5" component="h2">
+                        خبر فوری
+                    </Typography>
+                    <Typography variant="body2" color="textSecondary" component="p">
+                        {props.news_text}
+                    </Typography>
+                    </CardContent>
+                </CardActionArea>
+                <CardActions>
+                    <Button size="large" color="primary">
+                        ادامه خبر ...
+                    </Button>
+                </CardActions>
+            </Card>           
         </div>
     )
 }
