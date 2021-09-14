@@ -5,6 +5,7 @@ import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+
 const useStyles = makeStyles((theme) => ({
     root: {
       width: '100%',
@@ -13,11 +14,14 @@ const useStyles = makeStyles((theme) => ({
       fontSize: theme.typography.pxToRem(15),
       fontWeight: theme.typography.fontWeightRegular,
     },
+    expanded: {
+        margin: "0 auto"
+      }
   }));
 function Accardion(props) {
     const classes = useStyles();
     return (
-        <Accordion>
+        <Accordion disableSpacing>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
@@ -31,6 +35,7 @@ function Accardion(props) {
           </Typography>
         </AccordionDetails>
       </Accordion>
+      
     )
 }
 

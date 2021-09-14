@@ -1,6 +1,11 @@
 .Filters{
     flex:0.2;
-    background-color: white;
-    box-shadow: 0px 1px 3px 1px rgb(218, 218, 218);
-    border-radius: 3px;
+    overflow-y: scroll;
 }
+.Filters::-webkit-scrollbar {
+    display: none;
+  }
+  .Filters {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }

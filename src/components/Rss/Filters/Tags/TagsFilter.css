@@ -1,0 +1,11 @@
+.tagsFilter ul{
+    margin: 0px;
+    list-style: none ;
+}
+.tagsFilter li {
+    margin-right: -50px;
+}
+.addTag{
+    width: 100% !important;
+    margin-top: 10px !important;
+}
