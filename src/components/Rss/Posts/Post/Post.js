@@ -48,16 +48,17 @@ function Post(props) {
                     <Typography gutterBottom variant="h5" component="h2">
                         خبر فوری
                     </Typography>
-                    <Typography variant="body2" color="textSecondary" component="p">
+                    <Typography className="Post_news_text" variant="body2" color="textSecondary" component="p">
                         {props.news_text}
                     </Typography>
                     </CardContent>
-                </CardActionArea>
-                <CardActions>
+                    <CardActions>
                     <Button size="large" color="primary">
                         ادامه خبر ...
                     </Button>
-                </CardActions>
+                    </CardActions>
+                </CardActionArea>
+
             </Card>           
         </div>
     )

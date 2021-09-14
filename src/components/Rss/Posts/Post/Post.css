@@ -20,3 +20,10 @@
 .Post_footer {
     padding-right:5px;
 }
+.Post_news_text {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
