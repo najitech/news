@@ -13,6 +13,7 @@ function CategoryCheckbox(props) {
         <div>
             <FormGroup row>
                 <FormControlLabel
+                    className="fontStyle"
                     control={<Checkbox name={props.name} color={props.color}/>}
                     label={props.label}           
                 />

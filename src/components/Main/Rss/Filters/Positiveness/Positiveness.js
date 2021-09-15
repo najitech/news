@@ -12,7 +12,7 @@ function Positiveness() {
       <FormControl component="fieldset">
       <FormLabel component="legend"></FormLabel>
       <RadioGroup aria-label="gender" name="gender1">
-        <FormControlLabel value="مثبت" control={<Radio />} label="مثبت" />
+        <FormControlLabel className="fontStyle" value="مثبت" control={<Radio/>} label="مثبت" />
         <FormControlLabel value="منفی" control={<Radio />} label="منفی" />
         <FormControlLabel value="هیچ کدام" control={<Radio />} label="هیچ کدام" />
       </RadioGroup>

@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import './fonts/B-Nazanin.ttf'
-
+import './fonts/Shabnam.ttf';
+import './fonts/Vazir.ttf'
 ReactDOM.render(
   <React.StrictMode>
     <App />

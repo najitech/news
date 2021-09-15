@@ -4,8 +4,8 @@ import CategoryCheckbox from './CategoryCheckbox'
 function Categories() {
     return (
         <div className="categories">
-            <CategoryCheckbox name="سیاسی" label="سیاسی"/>
-            <CategoryCheckbox name="اقتصادی" label="اقتصادی"/>
+            <CategoryCheckbox className="fontStyle" name="سیاسی" label="سیاسی"/>
+            <CategoryCheckbox className="fontStyle" name="اقتصادی" label="اقتصادی"/>
         </div>  
     )
 }
