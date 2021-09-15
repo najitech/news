@@ -1,0 +1,11 @@
+.catCheck{
+    position: relative;
+    width: 100%;
+}
+.iconCheck{
+    position: absolute;
+    left: 30px;
+    top: 0.4em;
+    color: rgb(63, 63, 63);
+    font-size: 22px;
+}

@@ -13,7 +13,7 @@ function Filters() {
                     <Accardion title="تاریخ">
                         <DateFilter/>
                     </Accardion>
-                    <Accardion title="موضوع">
+                    <Accardion off title="موضوع">
                         <Categories/>
                     </Accardion>
                     <Accardion title="تگ">
