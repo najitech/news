@@ -22,12 +22,7 @@ function Navbar() {
         <div className={classes.root , 'Navbar'}>
         <AppBar className="AppBar" position="static">
           <Toolbar className="AppBar" variant="dense">
-            <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-              <MenuIcon />
-            </IconButton>
-            <Typography variant="h6" color="inherit">
-              Photos
-            </Typography>
+
           </Toolbar>
         </AppBar>
       </div>
