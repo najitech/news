@@ -8,6 +8,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import PostTags from './PostTags'
 
 
 const useStyles = makeStyles({
@@ -44,20 +45,18 @@ function Post(props) {
                     image={props.image}
                     title={props.title}
                     />
+                    <PostTags/>
                     <CardContent>
-                    <Typography gutterBottom variant="h5" component="h2">
-                        خبر فوری
+                    <Typography className="Post_title" gutterBottom variant="h5" component="h2">
+                        {props.title}
                     </Typography>
-                    <Typography variant="body2" color="textSecondary" component="p">
+                    <Typography className="Post_news_text" variant="body2" color="textSecondary" component="p">
                         {props.news_text}
                     </Typography>
                     </CardContent>
+
                 </CardActionArea>
-                <CardActions>
-                    <Button size="large" color="primary">
-                        ادامه خبر ...
-                    </Button>
-                </CardActions>
+
             </Card>           
         </div>
     )
