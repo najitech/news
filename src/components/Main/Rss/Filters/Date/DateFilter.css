@@ -1,6 +1,8 @@
 .dateFilter{
-    padding: 20px;
-    
+    padding: 0px 0px;
+    display: flex;
 }
-.dateFilter{
+.datePicker{
+        margin-top: -10px !important;
+        margin-left: 5px !important;
 }  

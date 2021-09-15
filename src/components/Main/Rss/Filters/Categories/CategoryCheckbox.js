@@ -1,24 +1,24 @@
 import React from 'react';
-import { withStyles } from '@material-ui/core/styles';
-import { green } from '@material-ui/core/colors';
 import FormGroup from '@material-ui/core/FormGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
-import CheckBoxOutlineBlankIcon from '@material-ui/icons/CheckBoxOutlineBlank';
-import CheckBoxIcon from '@material-ui/icons/CheckBox';
-import Favorite from '@material-ui/icons/Favorite';
-import FavoriteBorder from '@material-ui/icons/FavoriteBorder';
+import './categoryCheckbox.css';
 function CategoryCheckbox(props) {
+    const Icon  = props.Icon;
     return (
-        <div>
-            <FormGroup row>
+        
+            <div>
+            <FormGroup row className="catCheck">
                 <FormControlLabel
                     className="fontStyle"
                     control={<Checkbox name={props.name} color={props.color}/>}
                     label={props.label}           
                 />
+                <div className="iconCheck">
+                    <Icon/>
+                </div>
             </FormGroup>
-        </div>
+            </div>
     )
 }
 

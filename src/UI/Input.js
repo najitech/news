@@ -8,6 +8,8 @@ function Input(props) {
     return (
         <TextField size={props.size} 
         className={props.class} 
+        value={props.value}
+        onChange={props.handler}
         id={props.id} 
         label={props.label}
         placeholder={props.placeholder}
