@@ -2,7 +2,6 @@
   flex:0.8;
   display: flex;
   flex-wrap: wrap;
-
   margin-right:20px;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */

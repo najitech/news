@@ -1,5 +1,5 @@
 import { Button, FormControl, TextField } from '@material-ui/core'
-import Input from '../../../../UI/Input';
+import Input from '../../../../../UI/Input';
 import {AiFillTag} from "react-icons/ai";
 import React from 'react'
 import CategoryCheckbox from '../Categories/CategoryCheckbox';

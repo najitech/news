@@ -1,5 +1,5 @@
 import React from 'react'
-import Accardion from '../../../UI/Accardion'
+import Accardion from '../../../../UI/Accardion'
 import Categories from './Categories/Categories'
 import DateFilter from './Date/DateFilter'
 import './Filters.css'

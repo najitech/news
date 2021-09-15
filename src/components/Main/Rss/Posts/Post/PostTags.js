@@ -1,5 +1,5 @@
 import React from 'react'
-import PostTag from './PostTag'
+import PostTag from '../../../../../UI/Tag'
 import './PostTags.css'
 function PostTags() {
     return (

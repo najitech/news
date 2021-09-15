@@ -1,10 +1,13 @@
 import './App.css';
-import Rss from './components/Rss/Rss';
+import Main from './components/Main/Main'
+import Navbar from './components/Navbar/Navbar'
+
 function App() {
 
   return (
     <div className="App">
-        <Rss/>
+        <Navbar/>
+        <Main/>
     </div>
   );
 }

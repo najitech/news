@@ -1,0 +1,8 @@
+.Navbar {
+    margin-bottom : 10px;
+}
+.AppBar {
+    height: 60px;
+    display: flex;
+    background-color: rgb(59, 51, 51);
+}

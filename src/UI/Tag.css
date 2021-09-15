@@ -1,4 +1,4 @@
-.PostTag {
+.Tag {
     padding:0px 5px;
     display: flex;
     width: 50px;
@@ -9,7 +9,7 @@
     align-items:center;
     color:white;
 }
-.PostTag  p {
+.Tag  p {
     text-align: center;
     font-size: 12px;
 }
