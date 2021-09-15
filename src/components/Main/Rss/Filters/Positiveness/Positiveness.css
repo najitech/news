@@ -8,3 +8,10 @@
 .fontStyle{
     font-family: 'Yekan' !important;
 }
+.Positive_nav{
+    width: 100%;
+}
+.Positive_item {
+    height: 30px !important;
+    width: 30px !important;
+}
