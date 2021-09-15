@@ -1,42 +1,42 @@
-import React from 'react'
-import { makeStyles } from '@material-ui/core/styles';
-import Accordion from '@material-ui/core/Accordion';
-import AccordionSummary from '@material-ui/core/AccordionSummary';
-import AccordionDetails from '@material-ui/core/AccordionDetails';
-import Typography from '@material-ui/core/Typography';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import { withStyles } from "@material-ui/core/styles";
+import ExpansionPanel from "@material-ui/core/ExpansionPanel";
+import PropTypes from "prop-types";
+import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
+import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";
+import Typography from "@material-ui/core/Typography";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-      width: '100%',
-    },
-    heading: {
-      fontSize: theme.typography.pxToRem(15),
-      fontWeight: theme.typography.fontWeightRegular,
-    },
-    expanded: {
-        margin: "0 auto"
-      }
-  }));
+const styles = theme => ({
+  root: {
+    width: "100%"
+  },
+  heading: {
+    fontSize: theme.typography.pxToRem(15),
+    fontWeight: theme.typography.fontWeightRegular
+  },
+  expanded: {
+    "&$expanded":{
+      margin : "0px 0px",
+    }
+  }
+});
 function Accardion(props) {
-    const classes = useStyles();
+    const {classes} = props;
     return (
-        <Accordion disableSpacing>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
-        >
+      <ExpansionPanel classes={{ expanded: classes.expanded }}>
+        <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
           <Typography className={classes.heading}>{props.title}</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
+        </ExpansionPanelSummary>
+        <ExpansionPanelDetails>
           <Typography>
             {props.children}
           </Typography>
-        </AccordionDetails>
-      </Accordion>
-      
+        </ExpansionPanelDetails>
+      </ExpansionPanel>
     )
 }
+Accardion.propTypes = {
+  classes: PropTypes.object.isRequired
+};
 
-export default Accardion
+export default withStyles(styles)(Accardion);
