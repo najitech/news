@@ -45,7 +45,7 @@ function Post(props) {
                     image={props.image}
                     title={props.title}
                     />
-                    <PostTags/>
+
                     <CardContent>
                     <Typography className="Post_title" gutterBottom variant="h5" component="h2">
                         {props.title}
@@ -54,7 +54,7 @@ function Post(props) {
                         {props.news_text}
                     </Typography>
                     </CardContent>
-
+                    <PostTags/>
                 </CardActionArea>
 
             </Card>           

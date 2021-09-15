@@ -1,10 +1,9 @@
 .Tag {
-    padding:2px 13px;
+    padding:4px 13px;
     display: flex;
     height: 17px;
     background-color: purple;
     border-radius : 15px;
-    margin:6px;
     align-items:center;
     color:white;
 
@@ -14,4 +13,5 @@
     font-size: 12px;
     color : rgb(241, 241, 241);
     font-family: Shabnam;
+    
 }
