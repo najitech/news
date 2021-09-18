@@ -6,6 +6,9 @@
     position: absolute;
     left: 30px;
     top: 0.4em;
-    color: rgb(63, 63, 63);
-    font-size: 22px;
+    color: rgb(109, 108, 108);
+    font-size: 17px;
+}
+.fontStyle{
+    color: rgb(65, 64, 64);
 }

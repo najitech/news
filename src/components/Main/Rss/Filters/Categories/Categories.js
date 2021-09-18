@@ -2,11 +2,11 @@ import React from 'react'
 import './Categories.css'
 import {BiBasketball , BiMovie , BiNews, BiPalette} from 'react-icons/bi';
 import CategoryCheckbox from './CategoryCheckbox'
-import {BsGraphUp , BsMusicNoteBeamed} from 'react-icons/bs';
+import {BsGraphUp , BsMusicNoteBeamed, BsFillPeopleFill} from 'react-icons/bs';
 import {FaCarCrash ,FaRegLaugh  , FaChalkboardTeacher, FaMosque , FaRegHospital} from 'react-icons/fa';
 import {RiMoneyEuroCircleLine , RiPercentLine} from 'react-icons/ri';
-import {GrGroup , GrShieldSecurity} from 'react-icons/gr';
-import { AiOutlineStop} from 'react-icons/ai';
+import  {GrSecure} from 'react-icons/gr';
+import { AiOutlineStop , AiFillSecurityScan} from 'react-icons/ai';
 import {MdSmokeFree} from 'react-icons/md'
 import {ImBooks} from 'react-icons/im'
 import {GiShotgunRounds , GiMountains , GiWhiteBook, GiMaterialsScience ,GiEgyptianTemple, GiPartyFlags} from 'react-icons/gi';
@@ -16,7 +16,7 @@ const CategoriesRss = {
     "filmocinema" : ['فیلم و سینما', BiMovie],
     'havades' : ['حوادث', FaCarCrash],
     'siasi' : ['سیاسی', RiMoneyEuroCircleLine],
-    'ejtemaee' : ['اجتماعی',GrGroup ],
+    'ejtemaee' : ['اجتماعی',BsFillPeopleFill ],
     'nezami' : ['نظامی' , GiShotgunRounds],
     "tabiatvahava" : ["طبیعت",GiMountains ] , 
     "pezeshki" : ["پزشکی",FaRegHospital ],
@@ -24,7 +24,7 @@ const CategoriesRss = {
     'elmi' : ['علمی' , GiMaterialsScience],
     'farhangi' : ['فرهنگی', GiPartyFlags] , 
     "honari" : ["هنری" ,BiPalette ], 
-    "amniati" : ['امنیتی' ,GrShieldSecurity],
+    "amniati" : ['امنیتی' ,AiFillSecurityScan],
     'mazhabi' : ['مذهبی' ,FaMosque ] ,
     "mokhadderoalkol" : ['مخدر و الکل', MdSmokeFree], 
     "amozeshi" : ['آموزشی',FaChalkboardTeacher ],
@@ -35,7 +35,6 @@ const CategoriesRss = {
     "tarikhi" : ['تاریخی', GiEgyptianTemple],
     "tablighofrosh" : ["تبلیغات" ,  RiPercentLine], 
     "mostahjan" : ["مستحجن" , AiOutlineStop]
-
 }
 function Categories() {
     const list = Object.keys(CategoriesRss).map((item)=>{

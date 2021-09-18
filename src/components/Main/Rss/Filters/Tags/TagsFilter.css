@@ -4,6 +4,7 @@
 }
 .tagsFilter{
     margin-bottom: 50px;
+    border-radius: 10px !important;
 }
 .tagsFilter li {
     margin-right: -50px;

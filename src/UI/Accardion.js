@@ -6,36 +6,32 @@ import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import './Accardion.css'
-const styles = theme => ({
-  root: {
-    width: "100%",
-    borderRadius : "50px",
-    padding:"0px"
-  },
-  heading: {
-    fontSize: theme.typography.pxToRem(15),
-    fontWeight: theme.typography.fontWeightRegular,
-    margin : "0px 0px",
-  },
-  expanded: {
-    "&$expanded":{
-      margin : "0px 0px",
-    }
-  },
+import { makeStyles } from "@material-ui/styles";
+const useStyles = makeStyles({
   hideBorder: {
     '&.MuiExpansionPanel-root:before': {
-      display: 'none',
+        display : 'none',
     },
+      borderRadius : '10px',
+      boxShadow: 'none',
+      borderBottom : 'none',
+      '&:before': {
+        display: 'none',
+      },
+      '&$expanded': {
+        margin: 'auto',
+      },
+    expanded: {},
   },
-});
+})
 function Accardion(props) {
-    const {classes} = props;
+    const classes = useStyles();
     return (
-      <ExpansionPanel className={props.off ? "acc" : ""} classes={{ expanded: classes.expanded }}>
-        <ExpansionPanelSummary  expandIcon={<ExpandMoreIcon />}>
+      <ExpansionPanel className={props.off ? "acc" : "" , 'margin' , classes.hideBorder} classes={{ expanded: classes.expanded }}>
+        <ExpansionPanelSummary className="margin"  expandIcon={<ExpandMoreIcon />}>
           <Typography className={classes.heading}>{props.title}</Typography>
         </ExpansionPanelSummary>
-        <ExpansionPanelDetails className={props.off ? "acc" : ""}>
+        <ExpansionPanelDetails className={props.off ? "acc" : "" , 'margin'}>
             {props.children}
         </ExpansionPanelDetails>
       </ExpansionPanel>
@@ -45,4 +41,4 @@ Accardion.propTypes = {
   classes: PropTypes.object.isRequired
 };
 
-export default withStyles(styles)(Accardion);
+export default (Accardion);
