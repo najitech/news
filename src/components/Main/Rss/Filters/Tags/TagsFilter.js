@@ -10,9 +10,11 @@ function TagsFilter(props) {
     console.info('You clicked the delete icon.');
   };
     return (
-        <div className="tagsFilter">    
+        <div className="tagsFilter"> 
+            <div className="addTagContainer"> 
                 <Input placeholder="تگ را وارد کنید" size="small" Icon={AiFillTag} class="inputStyle"/>
                 <Button className="addTag">افزودن</Button>
+            </div>
            <div className="tagsFilterDiv">
                 <Chip
                     className="chipClass"

@@ -24,16 +24,18 @@ code {
   src: local('Vazir'), url(./fonts/Vazir.ttf) format('truetype');
 }
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 7px;
+  border-radius: 5px;
 }
 
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+  background:rgb(185, 184, 184); 
+  border-radius: 5px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: rgba(133, 132, 132, 0.671); 
 }
