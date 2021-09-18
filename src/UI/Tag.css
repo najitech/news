@@ -1,16 +1,17 @@
 .Tag {
-    padding:4px 13px;
+    padding:4px 9.5px;
     display: flex;
-    height: 17px;
+    height: 11px;
     background-color: purple;
     border-radius : 15px;
     align-items:center;
     color:white;
+    margin-left:10px;
 
 }
 .Tag  p {
     text-align: center;
-    font-size: 12px;
+    font-size: 9.4px;
     color : rgb(241, 241, 241);
     font-family: Shabnam;
     

@@ -2,9 +2,8 @@
     width: 250px;
     border-bottom-right-radius:10px;
     border-bottom-left-radius:10px;
-    
     margin:8px;
-    margin-bottom: 20px;
+    margin-bottom: 17px;
     margin-top:0;
 }
 /*.Post_image > img {
@@ -24,11 +23,12 @@
 }*/
 .Post_news_text {
     display: -webkit-box;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
     padding-top:5px;
+    font-size: 12px !important;
     
 }
 
@@ -44,5 +44,9 @@
     border-bottom: 1px solid rgb(228, 219, 219);
     color:rgb(7, 76, 155);
     padding-bottom: 7px;
+    font-size: 14px !important;
+}
+.Post_card {
+    height: 313px;
 }
 

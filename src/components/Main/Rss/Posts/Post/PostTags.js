@@ -4,7 +4,8 @@ import './PostTags.css'
 function PostTags() {
     return (
         <div className="PostTags">
-            <PostTag text="سیاسی" backGroundColor ="#15AEFA"/>
+            <PostTag text="اقتصادی" backGroundColor ="#15AEFA"/>
+            <PostTag text="حوادث" />
 
         </div>
     )

@@ -38,7 +38,7 @@ function Post(props) {
                 {postdate.toLocaleString()}
             </div>
             */}
-            <Card className={classes.root}>
+            <Card className={classes.root ,"Post_card"}>
                 <CardActionArea>
                     <CardMedia
                     className={classes.media}
