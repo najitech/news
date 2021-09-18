@@ -3,29 +3,45 @@ import Input from '../../../../../UI/Input';
 import {AiFillTag} from "react-icons/ai";
 import React , {useState} from 'react'
 import Chip from '@material-ui/core/Chip';
-import './TagsFilter.css'
+import './TagsFilter.css';
 function TagsFilter(props) {
     const [tagFilter , setTagFilter] = useState("");
-    const handleDelete = () => {
-    console.info('You clicked the delete icon.');
-  };
+    const [tags , addTag] = useState([]);
+    const addTagHandler = () =>{
+           addTag([...tags , tagFilter]);
+    }
+    const closeHandler = (e)=>{
+        console.log(e);
+    }
     return (
-        <div className="tagsFilter">    
-                <Input placeholder="تگ را وارد کنید" size="small" Icon={AiFillTag} class="inputStyle"/>
-                <Button className="addTag">افزودن</Button>
-           <div className="tagsFilterDiv">
+        <div className="tagsFilter"> 
+            <div className="addTagContainer"> 
+                <Input placeholder="تگ را وارد کنید"
+                 size="small" 
+                 Icon={AiFillTag}
+                  class="inputStyle"
+                  value={tagFilter}
+                  onChange={(e)=>{setTagFilter(e.target.value)}}/>
+                <Button onClick={addTagHandler} className="addTag">افزودن</Button>
+            </div>
+           <div className="tagsContainer">
+                {tags.map((item)=>{
+                    return <Chip
+                                className ="chipclass"
+                                label={item}
+                                color="secondary"
+                                onDelete={closeHandler}/>
+                })}
+                 <Chip
+                                className ="chipclass"
+                                label="تگ 1"
+                                color="secondary"
+                                onDelete={closeHandler}/>
                 <Chip
-                    className="chipClass"
-                    label="Del"
-                    color="secondary"
-                    onDelete={handleDelete}
-                />
-                <Chip
-                    className="chipClass"
-                    label="secory"
-                    color="secondary"   
-                    onDelete={handleDelete}
-                />
+                                className ="chipclass"
+                                label="تگ 2"
+                                color="secondary"
+                                onDelete={closeHandler}/>
            </div>
         </div>
     )

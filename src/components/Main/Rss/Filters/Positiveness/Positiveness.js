@@ -42,6 +42,8 @@ function Positiveness() {
   
   
     return (
+        <div className="Positivness">
+        <h3>حس خبر</h3>
         <div className="Positive">
           <ToggleButtonGroup
             value={alignment}
@@ -67,8 +69,8 @@ function Positiveness() {
             alignment==="right" ?
             <p className="Positive_Positive"> مثبت</p> :
             null
-          }
-    
+          } 
+        </div>
         </div>
     )
 }

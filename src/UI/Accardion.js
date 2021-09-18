@@ -5,15 +5,16 @@ import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
 import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import './Accardion.css'
+import './Accardion.css';
 import { makeStyles } from "@material-ui/styles";
 const useStyles = makeStyles({
   hideBorder: {
     '&.MuiExpansionPanel-root:before': {
         display : 'none',
     },
+    
       borderRadius : '10px',
-      boxShadow: 'none',
+      boxShadow : 'none',
       borderBottom : 'none',
       '&:before': {
         display: 'none',

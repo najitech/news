@@ -5,6 +5,7 @@ import Checkbox from '@material-ui/core/Checkbox';
 import './categoryCheckbox.css';
 import { withStyles } from '@material-ui/styles';
 import { makeStyles } from '@material-ui/core';
+import '../../../../../UI/Styles.css'
 const useStyles = makeStyles(() => ({
     label: {
          fontSize: '0.85em'
@@ -15,14 +16,14 @@ function CategoryCheckbox(props) {
     const  classes  = useStyles();
     return (
             <div>
-            <FormGroup row className="catCheck">
+            <FormGroup row className="catCheck noselect">
                 <FormControlLabel
                  classes={{
                     label: classes.label, 
                 }}
                     className="fontStyle"
-                    control={<Checkbox name={props.name} color={props.color}/>}
-                    label={props.label}           
+                    control={<Checkbox name={props.name} size="small" color={props.color}/>}
+                    label={props.label}          
                 />
                 <div className="iconCheck">
                     <Icon/>

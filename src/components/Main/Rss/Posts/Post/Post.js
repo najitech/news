@@ -14,6 +14,7 @@ import PostTags from './PostTags'
 const useStyles = makeStyles({
     root: {
       maxWidth: 345,
+      boxShadow : '0.0px 0.3px 2px 0.3px rgb(220 , 220 , 220)'
     },
     media: {
       height: 140,

@@ -9,8 +9,9 @@ function Input(props) {
         <TextField size={props.size} 
         className={props.class} 
         value={props.value}
-        onChange={props.handler}
+        onChange={props.onChange}
         id={props.id} 
+        color={props.color}
         label={props.label}
         placeholder={props.placeholder}
         InputProps={{
