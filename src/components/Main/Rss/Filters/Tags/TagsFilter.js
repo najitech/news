@@ -1,50 +1,57 @@
-import { Button, FormControl, TextField } from '@material-ui/core'
-import Input from '../../../../../UI/Input';
-import {AiFillTag} from "react-icons/ai";
-import React , {useState} from 'react'
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
 import Chip from '@material-ui/core/Chip';
-import './TagsFilter.css';
-function TagsFilter(props) {
-    const [tagFilter , setTagFilter] = useState("");
-    const [tags , addTag] = useState([]);
-    const addTagHandler = () =>{
-           addTag([...tags , tagFilter]);
-    }
-    const closeHandler = (e)=>{
-        console.log(e);
-    }
-    return (
-        <div className="tagsFilter"> 
-            <div className="addTagContainer"> 
-                <Input placeholder="تگ را وارد کنید"
-                 size="small" 
-                 Icon={AiFillTag}
-                  class="inputStyle"
-                  value={tagFilter}
-                  onChange={(e)=>{setTagFilter(e.target.value)}}/>
-                <Button onClick={addTagHandler} className="addTag">افزودن</Button>
-            </div>
-           <div className="tagsContainer">
-                {tags.map((item)=>{
-                    return <Chip
-                                className ="chipclass"
-                                label={item}
-                                color="secondary"
-                                onDelete={closeHandler}/>
-                })}
-                 <Chip
-                                className ="chipclass"
-                                label="تگ 1"
-                                color="secondary"
-                                onDelete={closeHandler}/>
-                <Chip
-                                className ="chipclass"
-                                label="تگ 2"
-                                color="secondary"
-                                onDelete={closeHandler}/>
-           </div>
-        </div>
-    )
-}
+import Paper from '@material-ui/core/Paper';
+import TagFacesIcon from '@material-ui/icons/TagFaces';
 
-export default TagsFilter;
+const useStyles = makeStyles((theme) => ({
+  root: {
+    display: 'flex',
+    justifyContent: 'center',
+    flexWrap: 'wrap',
+    listStyle: 'none',
+    padding: theme.spacing(0.5),
+    margin: 0,
+  },
+  chip: {
+    margin: theme.spacing(0.5),
+  },
+}));
+
+export default function ChipsArray() {
+  const classes = useStyles();
+  const [chipData, setChipData] = React.useState([
+    { key: 0, label: 'Angular' },
+    { key: 1, label: 'jQuery' },
+    { key: 2, label: 'Polymer' },
+    { key: 3, label: 'React' },
+    { key: 4, label: 'Vue.js' },
+  ]);
+
+  const handleDelete = (chipToDelete) => () => {
+    setChipData((chips) => chips.filter((chip) => chip.key !== chipToDelete.key));
+  };
+
+  return (
+    <Paper component="ul" className={classes.root}>
+      {chipData.map((data) => {
+        let icon;
+
+        if (data.label === 'React') {
+          icon = <TagFacesIcon />;
+        }
+
+        return (
+          <li key={data.key}>
+            <Chip
+              icon={icon}
+              label={data.label}
+              onDelete={data.label === 'React' ? undefined : handleDelete(data)}
+              className={classes.chip}
+            />
+          </li>
+        );
+      })}
+    </Paper>
+  );
+}
