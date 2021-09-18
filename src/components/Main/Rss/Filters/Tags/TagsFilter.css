@@ -12,14 +12,14 @@
 .addTag{
     background-color: rgb(102, 102, 102) !important;
     border-radius: 0px !important;
-    font-size: 12px !important;
+    font-size: 11px !important;
     color: white !important;
     border-top-left-radius:5px !important;
     border-bottom-left-radius: 5px !important;
-    padding: 4px !important;    
+    padding: 5px !important;    
     margin-left: 20px !important;
 }
-.tagsFilterDiv{
+.tagsContainer{
     direction: ltr;
 }
 .chipClass{
@@ -28,4 +28,5 @@
 .addTagContainer{
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
 }
