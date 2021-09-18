@@ -11,6 +11,7 @@ function Input(props) {
         value={props.value}
         onChange={props.handler}
         id={props.id} 
+        color={props.color}
         label={props.label}
         placeholder={props.placeholder}
         InputProps={{

@@ -7,8 +7,8 @@ import {FaCarCrash ,FaRegLaugh  , FaChalkboardTeacher, FaMosque , FaRegHospital}
 import {RiMoneyEuroCircleLine , RiPercentLine} from 'react-icons/ri';
 import  {GrSecure} from 'react-icons/gr';
 import { AiOutlineStop , AiFillSecurityScan} from 'react-icons/ai';
-import {MdSmokeFree} from 'react-icons/md'
-import {ImBooks} from 'react-icons/im'
+import {MdSmokeFree} from 'react-icons/md';
+import {ImBooks} from 'react-icons/im';
 import {GiShotgunRounds , GiMountains , GiWhiteBook, GiMaterialsScience ,GiEgyptianTemple, GiPartyFlags} from 'react-icons/gi';
 const CategoriesRss = { 
     "varzeshi" : ["ورزشی",BiBasketball],
@@ -42,7 +42,8 @@ function Categories() {
                 <CategoryCheckbox className="fontStyle" 
                 name={item} 
                 label={CategoriesRss[item][0]}
-                Icon={CategoriesRss[item][1]}/>
+                Icon={CategoriesRss[item][1]}
+                color="secondary"/>
             </li>
     });
     return (
