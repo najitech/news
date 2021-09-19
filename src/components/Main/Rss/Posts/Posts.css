@@ -1,12 +1,13 @@
 .Posts{
-  flex:0.8;
   display: flex;
   flex-wrap: wrap;
   margin-right:20px;
+  justify-content: space-between;
+  flex:0.8;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
   overflow-y: scroll;
-  justify-content: space-between;
+  height: 100%;
 }
 .Posts::-webkit-scrollbar {
     display: none;
