@@ -3,7 +3,7 @@
     list-style: none ;
 }
 .tagsFilter{
-    margin-bottom: 50px !important;
+    margin-bottom: 20px !important;
     border-radius: 10px !important;
 }
 .tagsFilter li {
@@ -30,4 +30,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+}
+.siteFilterSwitch{
+    font-size: 10px !important;
 }
