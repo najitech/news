@@ -9,7 +9,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import PostTags from './PostTags'
-
+import ModalPost from './ModalPost'
 
 const useStyles = makeStyles({
     root: {
@@ -21,11 +21,27 @@ const useStyles = makeStyles({
     },
   });
 
+const handleClick = (props) =>() => {
+    
+}
+
+
 function Post(props) {
     const classes = useStyles();
     const postdate = new Date(props.publish_date);
+    const [open, setOpen] = React.useState(false);
+
+    const handleOpen = () => {
+        setOpen(true);
+      };
+
+    const handleClose = () => {
+        setOpen(false);
+      };
+
+
     return (
-        <div className="Post">
+        <div  className="Post">
             {/*<div className="Post_image">
                 <img src={props.image} alt="image" />
             </div>
@@ -39,7 +55,9 @@ function Post(props) {
                 {postdate.toLocaleString()}
             </div>
             */}
-            <Card className={classes.root ,"Post_card"}>
+            <ModalPost open={open} setOpen={setOpen}  handleClose={handleClose} PostProps={props} />
+
+            <Card onClick={handleOpen}  className={classes.root ,"Post_card"}>
                 <CardActionArea>
                     <CardMedia
                     className={classes.media}

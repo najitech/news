@@ -6,6 +6,7 @@
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
   overflow-y: scroll;
+  justify-content: space-between;
 }
 .Posts::-webkit-scrollbar {
     display: none;

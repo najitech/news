@@ -33,7 +33,7 @@ const useStyles = makeStyles({
 function Positiveness() {
     const classes = useStyles();
     const [value, setValue] = React.useState(0);
-    const [alignment, setAlignment] = React.useState('left');
+    const [alignment, setAlignment] = React.useState('right');
     const handleAlignment = (event, newAlignment) => {
       if (newAlignment !== null) {
         setAlignment(newAlignment);
@@ -43,7 +43,7 @@ function Positiveness() {
   
     return (
         <div className="Positivness">
-        <p >حس خبر</p>
+        <p className="Positivness_title" >حس خبر</p>
         <div className="Positive">
           <ToggleButtonGroup
             value={alignment}

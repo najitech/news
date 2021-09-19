@@ -35,8 +35,8 @@
     width: 20px;
 }
 .Positive_box {
-    height: 35px;
-    width: 50px;
+    height: 26px;
+    width: 43px;
 }
 .Positive p {
     font-size: 14px;
@@ -59,6 +59,7 @@
     background-color:#05aa44d3;
     color:rgb(255, 255, 255)
 }
-.Positivness p {
+.Positivness_title {
     font-size: 16px;
+    margin-right: 5px;
 }
