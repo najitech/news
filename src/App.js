@@ -3,6 +3,8 @@ import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 import Main from './components/Main/Main'
 import Navbar from './components/Navbar/Navbar'
+
+import { BrowserRouter as Router} from 'react-router-dom';
 const theme = createMuiTheme({
   typography: {
     fontFamily: [
@@ -18,12 +20,14 @@ const theme = createMuiTheme({
 function App() {
 
   return (
-    <ThemeProvider theme={theme}>
-    <div className="App">   
-        <Navbar/>
-        <Main/>
-    </div>
-    </ThemeProvider>
+    <Router>  
+      <ThemeProvider theme={theme}>
+      <div className="App">   
+          <Navbar/>
+          <Main/>
+      </div>
+      </ThemeProvider>
+    </Router>
   );
 }
 

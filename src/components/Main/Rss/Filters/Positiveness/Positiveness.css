@@ -23,6 +23,7 @@
     padding: 10px;
     padding-top: 4px;
     border-radius: 10px;
+    box-shadow : 1.0px 1.4px 2px 0.4px rgb(226, 226, 226);
 }
 .Positive {
     display: flex;

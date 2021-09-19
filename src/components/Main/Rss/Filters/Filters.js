@@ -11,7 +11,7 @@ function Filters() {
         <div className="Filters">
             <form>  
                     <Positiveness/> 
-                    <Accardion expanded off title="موضوع">
+                    <Accardion title="موضوع">
                         <Categories/>
                     </Accardion> 
                     <Accardion title="تاریخ">
