@@ -10,11 +10,11 @@ function Filters() {
         <div className="Filters">
             <form>  
                     <Positiveness/> 
+                    <Accardion expanded off title="موضوع">
+                        <Categories/>
+                    </Accardion> 
                     <Accardion title="تاریخ">
                         <DateFilter/>
-                    </Accardion>
-                    <Accardion off title="موضوع">
-                        <Categories/>
                     </Accardion>
                     <Accardion title="تگ">
                         <TagsFilter/>   

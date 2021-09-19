@@ -40,7 +40,7 @@ function Categories() {
     const list = Object.keys(CategoriesRss).map((item)=>{
         return <li>        
                 <CategoryCheckbox className="fontStyle" 
-                name={item} 
+                name={item}
                 label={CategoriesRss[item][0]}
                 Icon={CategoriesRss[item][1]}
                 color="secondary"/>
