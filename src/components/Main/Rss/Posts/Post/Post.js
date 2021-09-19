@@ -42,6 +42,7 @@ function Post(props) {
 
     return (
         <div  className="Post">
+
             {/*<div className="Post_image">
                 <img src={props.image} alt="image" />
             </div>
@@ -55,12 +56,14 @@ function Post(props) {
                 {postdate.toLocaleString()}
             </div>
             */}
+            <div className={props.good? "Post_top_green" : "Post_top_red"}></div>
+
             <ModalPost open={open} setOpen={setOpen}  handleClose={handleClose} PostProps={props} />
 
             <Card onClick={handleOpen}  className={classes.root ,"Post_card"}>
                 <CardActionArea>
                     <CardMedia
-                    className={classes.media}
+                    className={classes.media }
                     image={props.image}
                     title={props.title}
                     />
