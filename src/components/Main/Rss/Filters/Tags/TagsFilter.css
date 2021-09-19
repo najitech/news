@@ -3,7 +3,7 @@
     list-style: none ;
 }
 .tagsFilter{
-    margin-bottom: 50px;
+    margin-bottom: 20px !important;
     border-radius: 10px !important;
 }
 .tagsFilter li {
@@ -23,10 +23,14 @@
     direction: ltr;
 }
 .chipClass{
-    margin : 2px 3px;
+    margin : 3px 4px !important;
+
 }
 .addTagContainer{
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+}
+.siteFilterSwitch{
+    font-size: 10px !important;
 }

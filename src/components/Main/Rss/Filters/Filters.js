@@ -5,6 +5,7 @@ import DateFilter from './Date/DateFilter'
 import './Filters.css'
 import Positiveness from './Positiveness/Positiveness'
 import TagsFilter from './Tags/TagsFilter'
+import SitesFilter from './SitesFilter/SitesFilter'
 function Filters() {
     return (
         <div className="Filters">
@@ -18,6 +19,9 @@ function Filters() {
                     </Accardion>
                     <Accardion title="تگ">
                         <TagsFilter/>   
+                    </Accardion>
+                    <Accardion title="وب سایت">
+                        <SitesFilter/>
                     </Accardion>
             </form>
         </div>
