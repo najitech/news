@@ -1,13 +1,7 @@
-.tagsFilter ul{
-    margin: 0px;
-    list-style: none ;
-}
+
 .tagsFilter{
     margin-bottom: 20px !important;
     border-radius: 10px !important;
-}
-.tagsFilter li {
-    margin-right: -50px;
 }
 .addTag{
     background-color: rgb(102, 102, 102) !important;

@@ -10,7 +10,10 @@ function Rss() {
     return (
         <div className='Rss'>
             <Filters/>
-            <Posts/>
+            <div className="RssContainer">      
+                <Search/>
+                <Posts/>
+            </div>
         </div>
     )
 }

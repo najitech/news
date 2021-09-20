@@ -1,9 +1,8 @@
 .Posts{
   display: flex;
   flex-wrap: wrap;
-  margin-right:20px;
   justify-content: space-between;
-  flex:0.8;
+  flex:0.95;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
   overflow-y: scroll;

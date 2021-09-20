@@ -1,16 +1,20 @@
-/*.ModalPost {
-    position: absolute;
-    width: 800px;
-    height: 200px;
-}*/
+.ModalPost {
+    position :fixed !important;
+    height: 500px !important;
+    width: 300px !important;
+}
 
 .ModalPost_image {
-    width: 600px;
-    height: 337.5px;
+    width: 300px;
+    height: 140px;
 }
 .ModalPost_text {
     font-size: 10px;
 }
 .ModalPost_title {
     font-size: 20px;
+}
+
+.ModalPost2 {
+    height: 400px !important;
 }
