@@ -9,13 +9,10 @@ import Search from './Search/Search';
 function Rss() {
     return (
         <div className='Rss'>
-            <Search/>
-            <div className="RssContainer">
-                <Filters/>
-                <Posts/>
-            </div>
+            <Filters/>
+            <Posts/>
         </div>
     )
 }
 
-export default Rss
+export default Rss;
