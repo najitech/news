@@ -1,20 +1,33 @@
-import React from 'react'
+import React  , {useState} from 'react'
 import './NERfilter.css';
 import { Button } from '@material-ui/core';
 import Input from '../../../../../UI/Input';
-import { AiFillTag } from 'react-icons/ai';
+import { AiFillFileWord } from 'react-icons/ai';
+import NERCheckBox from './NERCheckBox/NERCheckBox';
 function NERfilter(props) {
+    const [NERs , setNERs] = useState([]);
+    const [inputNER , setINputNER] =  useState("");
+    const addNERHandler = ()=>{
+        setNERs([...NERs , inputNER]);
+    }
     return (
         <div className="NERfilter">
              <div className="NERAddContainer"> 
                 <Input placeholder="افزودن موجودیت"
                  size="small" 
-                 Icon={AiFillTag}
+                 Icon={AiFillFileWord}
                  class="inputStyle"
-                 value="NER"
-                 onChange={()=>{}}
+                 value={inputNER}
+                 onChange={(e)=>{setINputNER(e.target.value)}}
                   class="inputStyle"/>
-                <Button className="addTag">افزودن</Button>
+                <Button onClick={addNERHandler} className="addTag">افزودن</Button>
+            </div>
+            <div className="listOfNER">
+                <ul>
+                    {NERs.map((item)=>{
+                        return <NERCheckBox label={item}/>
+                    })}
+                </ul>
             </div>
         </div>
     )

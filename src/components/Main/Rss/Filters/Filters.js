@@ -18,13 +18,13 @@ function Filters() {
                     <Accardion title="تاریخ">
                         <DateFilter/>
                     </Accardion>
-                    <Accardion title="تگ">
+                    <Accardion title="هشتگ">
                         <TagsFilter/>   
                     </Accardion>
                     <Accardion title="وب سایت">
                         <SitesFilter/>
                     </Accardion>
-                    <Accardion>
+                    <Accardion title="موجودیت ها">
                         <NERfilter/>
                     </Accardion>
             </form>

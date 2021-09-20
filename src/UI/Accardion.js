@@ -29,9 +29,9 @@ function Accardion(props) {
     
     const classes = useStyles();
     return (
-      <ExpansionPanel className={props.off ? "acc" : "" , 'margin' , classes.hideBorder} classes={{ expanded: classes.expanded }}>
+      <ExpansionPanel className={props.off ? "acc" : "" , 'margin'  , classes.hideBorder} classes={{ expanded: classes.expanded }}>
         <ExpansionPanelSummary className="margin"  expandIcon={<ExpandMoreIcon />}>
-          <Typography className={classes.heading}>{props.title}</Typography>
+          <Typography className="fontAccardion">{props.title}</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails className={props.off ? "acc" : "" , 'margin'}>
             {props.children}
