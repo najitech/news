@@ -2,12 +2,13 @@
     height:100%;
     overflow-y: hidden;
     display: flex;
-    flex-direction: column;
 }
 .RssContainer{
-    flex:0.95;
+    flex:0.8;
     display: flex;
     justify-content: space-between;
     height:100%;
+    flex-direction: column;
     overflow-y: hidden;
+    padding: 0px 20px;
 }

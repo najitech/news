@@ -6,6 +6,7 @@ import './Filters.css'
 import Positiveness from './Positiveness/Positiveness'
 import TagsFilter from './Tags/TagsFilter'
 import SitesFilter from './SitesFilter/SitesFilter'
+import NERfilter from './NER/NERfilter'
 function Filters() {
     return (
         <div className="Filters">
@@ -22,6 +23,9 @@ function Filters() {
                     </Accardion>
                     <Accardion title="وب سایت">
                         <SitesFilter/>
+                    </Accardion>
+                    <Accardion>
+                        <NERfilter/>
                     </Accardion>
             </form>
         </div>

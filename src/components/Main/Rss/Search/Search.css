@@ -1,7 +1,6 @@
-.search input{    
-    width: 90% ;
-    margin :0px auto;
-    margin-bottom: 30px;
+.search input{  
+    margin :0px 0px;
+    flex: 0.9;
     border: none ;
     border-radius: none ;
     background-color: white ;
@@ -18,8 +17,14 @@
 .search{
     text-align: center;
     flex : 0.05;
+    display: flex;
+    margin: 0px auto;
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: aqua;
 }
 .searchButtonRss{
+    flex: 0.1;
     border-radius: 0px !important;
     height: 40px !important;
     box-shadow: 1px 1px 1px 1px rgb(197, 195, 195) !important;

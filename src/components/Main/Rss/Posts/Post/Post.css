@@ -2,12 +2,11 @@
     width: 257px;
     border-bottom-right-radius:10px;
     border-bottom-left-radius:10px;
-    margin:8px;
     margin-bottom: 12px;
     margin-top:0px;
 }
 .Post_top_green {
-    background-color:rgba(58, 253, 19, 0.938);
+    background-color:#05aa44d3;
     width: 100%;
     height: 6px;
     border-top-left-radius: 3px ;
@@ -15,7 +14,7 @@
 }
 
 .Post_top_red {
-    background-color:rgba(248, 16, 16, 0.938);
+    background-color:#f50056d7;
     width: 100%;
     height: 6px;
     border-top-left-radius: 3px ;
