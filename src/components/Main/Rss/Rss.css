@@ -13,13 +13,19 @@
     padding: 0px 20px;
 }
 .filterSearch{
-    direction: ltr;
-    flex:0.05;
+    margin-top:20px;
+    flex:0.4;
     display: flex;
+    flex-direction: column;
 }
 .siteFilterSwitch{
     padding: 10px 0px;
 }
 .siteFilterSwitch:hover{
     background-color: rgb(235, 235, 235);
+}
+
+.Header {
+    display: flex;
+
 }
