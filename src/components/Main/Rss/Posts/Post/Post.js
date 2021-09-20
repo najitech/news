@@ -58,7 +58,7 @@ function Post(props) {
             */}
             <div className={props.good? "Post_top_green" : "Post_top_red"}></div>
 
-            <ModalPost open={open} setOpen={setOpen}  handleClose={handleClose} PostProps={props} />
+            <ModalPost  open={open} setOpen={setOpen}  handleClose={handleClose} PostProps={props} />
 
             <Card onClick={handleOpen}  className={classes.root ,"Post_card"}>
                 <CardActionArea>

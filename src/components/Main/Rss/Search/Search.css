@@ -17,6 +17,7 @@
 }
 .search{
     text-align: center;
+    flex : 0.05;
 }
 .searchButtonRss{
     border-radius: 0px !important;

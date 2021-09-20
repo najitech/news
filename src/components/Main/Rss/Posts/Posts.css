@@ -8,6 +8,8 @@
   scrollbar-width: none;  /* Firefox */
   overflow-y: scroll;
   height: 100%;
+  background-color: red;
+
 }
 .Posts::-webkit-scrollbar {
     display: none;

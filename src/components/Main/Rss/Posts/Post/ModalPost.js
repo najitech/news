@@ -33,7 +33,7 @@ export default function ModalPost(props) {
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
-        className={classes.modal ,"ModalPost" }
+        className={classes.modal ,"ModalPost2" }
         open={props.open}
         onClose={props.handleClose}
         closeAfterTransition
@@ -41,6 +41,7 @@ export default function ModalPost(props) {
         BackdropProps={{
           timeout: 500,
         }}
+        disableEnforceFocus
       >
         <Fade in={props.open}>
           <div className={classes.paper }>

@@ -1,8 +1,11 @@
 .Rss{
     height:100%;
     overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
 }
 .RssContainer{
+    flex:0.95;
     display: flex;
     justify-content: space-between;
     height:100%;
