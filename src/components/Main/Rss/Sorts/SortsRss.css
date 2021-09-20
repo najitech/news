@@ -1,0 +1,24 @@
+.SortsRss{
+    flex : 0.2;   
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.togSort{
+    flex:0.3;
+    border-radius: none !important;
+    background-color: white !important;
+    height: 30px;
+}
+.selectSort{
+    width: 100px;
+    border-radius: 0px !important;   
+}
+.sortSelectBtn{
+    border-radius:3px !important;
+    background-color: white !important;
+    font-size: 12px !important;
+    padding: 4px !important;
+    margin: 0px 5px !important;
+    box-shadow : 1.0px 1.4px 2px 0.4px rgb(226, 226, 226) !important;
+}

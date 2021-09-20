@@ -5,30 +5,35 @@
     border-radius: none ;
     background-color: white ;
     font-size: 15px;
-    padding: 0px 10px;
+    padding: 0px 20px;
     font-family: vazir;
-    box-shadow: 1px 1px 1px 1px rgb(197, 195, 195);
     height: 40px;
+    border-top-right-radius: 10px;
+    box-shadow: 0.0px 1.0px 2px 0.3px rgb(196, 195, 195);
+    border-bottom-right-radius: 10px;
 }
 .search input:focus{
     outline: none;
     border: none;
+    border-bottom:1px solid rgb(219, 219, 221); 
 }
 .search{
     text-align: center;
-    flex : 0.05;
+    direction: rtl;
+    flex : 0.8;
     display: flex;
     margin: 0px auto;
     margin-bottom: 10px;
     width: 100%;
-    background-color: aqua;
 }
 .searchButtonRss{
     flex: 0.1;
     border-radius: 0px !important;
     height: 40px !important;
-    box-shadow: 1px 1px 1px 1px rgb(197, 195, 195) !important;
     font-size: 20px !important;
+    border-top-left-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
     color: white !important;
+    box-shadow : 0.0px 1.0px 2px 0.3px rgb(196, 195, 195) !important;
     background-color:rgba(63, 81, 181,0.8) !important;
 }

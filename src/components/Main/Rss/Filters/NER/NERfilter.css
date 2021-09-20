@@ -15,7 +15,7 @@
 .listOfNER{
     padding: 0px;
     width: 100%;
-    height: 300px;
+    max-height: 200px;
     overflow-y: scroll;
     margin-bottom: 10px;
 }

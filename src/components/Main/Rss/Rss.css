@@ -12,3 +12,14 @@
     overflow-y: hidden;
     padding: 0px 20px;
 }
+.filterSearch{
+    direction: ltr;
+    flex:0.05;
+    display: flex;
+}
+.siteFilterSwitch{
+    padding: 10px 0px;
+}
+.siteFilterSwitch:hover{
+    background-color: rgb(235, 235, 235);
+}
