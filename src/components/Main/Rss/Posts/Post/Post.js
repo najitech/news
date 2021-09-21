@@ -38,7 +38,10 @@ function Post(props) {
     const handleClose = () => {
         setOpen(false);
       };
-
+      let bordercolor = "Post_border_red";
+      if (props.good){
+        bordercolor="Post_border_green";
+      }
 
     return (
         <div  className="Post">
@@ -56,7 +59,7 @@ function Post(props) {
                 {postdate.toLocaleString()}
             </div>
             */}
-            <div className={props.good? "Post_top_green" : "Post_top_red"}></div>
+
             <ModalPost  open={open} setOpen={setOpen}  handleClose={handleClose} PostProps={props} />
             <Card onClick={handleOpen}  className={classes.root ,"Post_card"}>
                 <CardActionArea className="postBody">
@@ -66,7 +69,7 @@ function Post(props) {
                     title={props.title}
                     />
                     <CardContent>
-                    <Typography className="Post_title" gutterBottom variant="h5" component="h2">
+                    <Typography className={["Post_title",bordercolor].join(" ")} gutterBottom variant="h5" component="h2">
                         {props.title}
                     </Typography>
                     <Typography className="Post_news_text" variant="body2" color="textSecondary" component="p">

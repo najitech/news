@@ -4,8 +4,10 @@
     border-bottom-left-radius:10px;
     margin-bottom: 12px;
     margin-top:0px;
+    box-shadow: ;
 }
 .Post_top_green {
+    background-color: rgba(13, 238, 13, 0.733);
     width: 100%;
     height: 6px;
     border-top-left-radius: 3px ;
@@ -13,13 +15,11 @@
 }
 
 .Post_top_red {
+    background-color: rgba(255, 6, 6, 0.733);
     width: 100%;
     height: 6px;
     border-top-left-radius: 3px ;
     border-top-right-radius: 3px;
-}
-.postBody{
-    background:linear-gradient(180deg  ,#f1c5d5d7 40% , #f1c5d5b4 40% , #f3d8e285 50%, #faf8f8d7  , white,white ) !important;
 }
 /*.Post_image > img {
     width: 100%;
@@ -55,18 +55,23 @@
     
 }
 .Post_title {
-    font-size:15px !important;
-    border-bottom: 1px solid rgb(228, 219, 219);
-    color:rgb(7, 76, 155);
+    border-bottom: 2px solid #06f306;
     padding-bottom: 7px;
     font-size: 14px !important;
 }
 .Post_card {
     height: 313px;
-    border-top-left-radius: 0px !important;
-    border-top-right-radius: 0px !important;
+    border-top-left-radius: 2px !important;
+    border-top-right-radius: 2px !important;
 }
 
 .photo{
     border-radius: 0px;
+}
+
+.Post_border_red {
+    border-bottom-color :rgb(224, 5, 5) !important;
+}
+.Post_border_green {
+    border-bottom-color :rgb(5, 172, 5) !important;
 }
