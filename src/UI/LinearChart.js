@@ -27,7 +27,7 @@ function LinearChart() {
               options={tempvar.options}
               series={tempvar.series}
               type="bar"
-              width="60%"
+              width="100%"
               height="150px"
             />
         </div>

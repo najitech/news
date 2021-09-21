@@ -7,7 +7,7 @@
     font-size: 15px;
     padding: 0px 20px;
     font-family: vazir;
-    height: 40px;
+    height: 30px;
     border-top-right-radius: 10px;
     box-shadow: 0.0px 1.0px 2px 0.3px rgb(196, 195, 195);
     border-bottom-right-radius: 10px;
@@ -23,13 +23,12 @@
     flex : 0.8;
     display: flex;
     margin: 0px auto;
-    margin-bottom: 10px;
     width: 100%;
 }
 .searchButtonRss{
     flex: 0.1;
     border-radius: 0px !important;
-    height: 40px !important;
+    height: 30px !important;
     font-size: 20px !important;
     border-top-left-radius: 10px !important;
     border-bottom-left-radius: 10px !important;

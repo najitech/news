@@ -57,17 +57,14 @@ function Post(props) {
             </div>
             */}
             <div className={props.good? "Post_top_green" : "Post_top_red"}></div>
-
             <ModalPost  open={open} setOpen={setOpen}  handleClose={handleClose} PostProps={props} />
-
             <Card onClick={handleOpen}  className={classes.root ,"Post_card"}>
-                <CardActionArea>
+                <CardActionArea className="postBody">
                     <CardMedia
                     className={classes.media }
                     image={props.image}
                     title={props.title}
                     />
-
                     <CardContent>
                     <Typography className="Post_title" gutterBottom variant="h5" component="h2">
                         {props.title}

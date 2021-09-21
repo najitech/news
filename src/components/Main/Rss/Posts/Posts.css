@@ -5,7 +5,6 @@
   flex:0.95;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
-  overflow-y: scroll;
   height: 100%;
 }
 .Posts::-webkit-scrollbar {
