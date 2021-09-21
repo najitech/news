@@ -5,6 +5,8 @@ import ViewQuiltIcon from '@material-ui/icons/ViewQuilt';
 import ToggleButton from '@material-ui/lab/ToggleButton';
 import ToggleButtonGroup from '@material-ui/lab/ToggleButtonGroup';
 import './SortsRss.css';
+import {MdSort} from 'react-icons/md'
+import SortItems from './SortItems';
 import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -36,21 +38,10 @@ function SortsRss() {
                 <ViewModuleIcon />
             </ToggleButton>
             </ToggleButtonGroup>
-            <div>
-                <Button className="sortSelectBtn" aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
-                    Open Menu
-                </Button>
-                <Menu
-                    id="simple-menu"
-                    anchorEl={anchorEl}
-                    keepMounted
-                    open={Boolean(anchorEl)}
-                    onClose={handleClose}
-                >
-                    <MenuItem onClick={handleClose}>Profile</MenuItem>
-                    <MenuItem onClick={handleClose}>My account</MenuItem>
-                    <MenuItem onClick={handleClose}>Logout</MenuItem>
-                </Menu>
+            <div className="barAsasRss">   
+                <MdSort className="sortIconRss"/>
+                <p>مرتب سازی بر اساس :  </p>
+                <SortItems/>
                </div>
         </div>
     )
