@@ -4,7 +4,6 @@
     border-bottom-left-radius:10px;
     margin-bottom: 12px;
     margin-top:0px;
-    box-shadow: ;
 }
 .Post_top_green {
     background-color: rgba(13, 238, 13, 0.733);
@@ -60,9 +59,10 @@
     font-size: 14px !important;
 }
 .Post_card {
-    height: 313px;
+   
     border-top-left-radius: 2px !important;
     border-top-right-radius: 2px !important;
+
 }
 
 .photo{
@@ -74,4 +74,15 @@
 }
 .Post_border_green {
     border-bottom-color :rgb(5, 172, 5) !important;
+}
+
+.Post_footer {
+    display: flex;
+    direction: rtl;
+    justify-content: right;
+}
+.Post_footer > p {
+    font-family: Shabnam;
+    font-size:10px;
+
 }

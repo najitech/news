@@ -8,8 +8,9 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import PostTags from './PostTags'
-import ModalPost from './ModalPost'
+import PostTags from './PostTags';
+import ModalPost from './ModalPost';
+import PostHashtags from './PostHashtags';
 
 const useStyles = makeStyles({
     root: {
@@ -77,6 +78,11 @@ function Post(props) {
                     </Typography>
                     </CardContent>
                     <PostTags/>
+                    <div className="Post_footer">
+                        <p> کلمات کلیدی : </p>
+                        <PostHashtags/>
+                    </div>
+
                 </CardActionArea>
 
             </Card>           
