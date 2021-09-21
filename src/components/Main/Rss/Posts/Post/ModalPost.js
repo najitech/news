@@ -3,8 +3,8 @@ import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
-import './ModalPost.css'
-
+import './ModalPost.css';
+import { Divider } from '@material-ui/core';
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     modal: {
@@ -13,8 +13,9 @@ const useStyles = makeStyles((theme: Theme) =>
       justifyContent: 'center',
     },
     paper: {
+      height : '100%',
+      borderRadius : 5,
       backgroundColor: theme.palette.background.paper,
-      border: '2px solid #000',
       boxShadow: theme.shadows[5],
       padding: theme.spacing(2, 4, 3),
     },
@@ -44,11 +45,11 @@ export default function ModalPost(props) {
         disableEnforceFocus
       >
         <Fade in={props.open}>
-          <div className={classes.paper }>
-            <img className="ModalPost_image" src ={PostProps.image}/>
-            <h2 className="ModalPost_title" id="transition-modal-title">{PostProps.title}</h2>
-            <p className="ModalPost_text" id="transition-modal-description">{PostProps.news_text}</p>
-
+          <div className={classes.paper }> 
+              <div className="">
+                
+              </div>
+             <Divider orientation="vertical" flexItem/>
           </div>
         </Fade>
       </Modal>

@@ -1,8 +1,4 @@
-.ModalPost {
-    position :fixed !important;
-    height: 500px !important;
-    width: 300px !important;
-}
+
 
 .ModalPost_image {
     width: 300px;
@@ -16,5 +12,7 @@
 }
 
 .ModalPost2 {
-    height: 400px !important;
+    height: 80% !important;
+    margin: auto auto;
+    width: 65%;
 }
