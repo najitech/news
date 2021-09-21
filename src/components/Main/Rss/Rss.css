@@ -24,3 +24,8 @@
 .siteFilterSwitch:hover{
     background-color: rgb(235, 235, 235);
 }
+
+.filterSearch {
+    border-bottom: 1px solid rgba(221, 218, 218, 0.808) ;
+    padding-bottom: 10px;
+}

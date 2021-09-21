@@ -26,6 +26,9 @@
     display: flex;
     direction: rtl;
     align-items: center;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow : 1.0px 1.4px 2px 0.4px rgb(226, 226, 226) !important;
 }
 .sortIconRss{
     font-size: 23px;

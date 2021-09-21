@@ -6,6 +6,8 @@
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
   height: 100%;
+  margin-top: 10px;
+
 }
 .Posts::-webkit-scrollbar {
     display: none;

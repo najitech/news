@@ -19,7 +19,6 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',  
     height : '30px',
     flexWrap: 'wrap',
-    boxShadow : ' 0.0px 1.0px 2px 0.3px rgb(196, 195, 195);',
   },
   divider: {
     margin: 0,
