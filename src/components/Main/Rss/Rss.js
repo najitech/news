@@ -13,11 +13,11 @@ function Rss() {
         <div className='Rss'>
             <Filters/>
             <div className="RssContainer">   
-                <div className="filterSearch">
-                    <Search/>
-                    <SortsRss/>
-                </div> 
+                <Search/>
                 <LinearChart/> 
+                <div className="filterSearch">
+                    <SortsRss/>
+                </div>
                 <Posts/>
             </div>
         </div>

@@ -9,13 +9,13 @@ let tempvar = {
         id: "basic-bar"
       },
       xaxis: {
-        categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]
+        categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999 ,2000 ,2001 , 2002, 2003, 2004 , 2005]
       }
     },
     series: [
       {
         name: "series-1",
-        data: [30, 40, 45, 50, 49, 60, 70, 91]
+        data: [30, 40, 45, 50, 49, 60, 70, 91 ,20 , 80 , 60 , 45 , 85 , 100]
       }
     ]
 };
@@ -28,7 +28,8 @@ function LinearChart() {
               series={tempvar.series}
               type="bar"
               width="100%"
-              height="150px"
+              height="180px"
+              className="LinearChart_chart"
             />
         </div>
     )
