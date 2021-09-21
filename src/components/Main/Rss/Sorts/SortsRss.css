@@ -1,14 +1,13 @@
 .SortsRss{
-    display: flex;
-    flex-direction: row-reverse;
+    display: flex;  
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    direction: ltr;
 }
 .togSort{
     flex:0.3;
     border-radius: none !important;
-    background-color: white !important;
     height: 30px;
 }
 .selectSort{
@@ -22,4 +21,19 @@
     padding: 4px !important;
     margin: 0px 5px !important;
     box-shadow : 1.0px 1.4px 2px 0.4px rgb(226, 226, 226) !important;
+}
+.barAsasRss{
+    display: flex;
+    direction: rtl;
+    align-items: center;
+}
+.sortIconRss{
+    font-size: 23px;
+    color: rgb(61, 61, 61);
+}
+.barAsasRss p{
+    padding : 0px;
+    font-size: 13px;
+    color: rgb(61, 61, 61);
+    margin: 0px 5px;
 }
