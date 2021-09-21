@@ -28,7 +28,8 @@ function LinearChart() {
               series={tempvar.series}
               type="bar"
               width="100%"
-              height="200px"
+              height="180px"
+              className="LinearChart_chart"
             />
         </div>
     )
