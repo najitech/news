@@ -5,7 +5,9 @@ import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
 import './ModalPost.css';
 import Chart from 'react-apexcharts';
-
+import PostTag from '../../../../../UI/Tag';
+import Hashtag from '../../../../../UI/Hashtag';
+import moment from 'jalali-moment'
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     modal: {
@@ -18,7 +20,6 @@ const useStyles = makeStyles((theme: Theme) =>
       borderRadius : 5,
       backgroundColor: theme.palette.background.paper,
       boxShadow: theme.shadows[5],
-      padding :5,
     },
   }),
 );
@@ -26,11 +27,13 @@ const useStyles = makeStyles((theme: Theme) =>
 export default function ModalPost(props) {
   const classes = useStyles();
   const {PostProps} = props ;
-  console.log(PostProps)
   const [chart , setChart] = useState({
     options: {
       chart: {
-        id: "basic-bar"
+        id: "basic-bar",
+        toolbar : {
+            show : false,
+        },
       },
       plotOptions: {
         bar: {
@@ -55,12 +58,106 @@ export default function ModalPost(props) {
     series: [44, 55, 41, 17, 15],
     labels: ['A', 'B', 'C', 'D', 'E']
   });
+  const [distributedChart , setDistributed] = useState({
+          
+    series: [
+      {
+        data: [
+          {
+            x: 'New Delhi',
+            y: 218
+          },
+          {
+            x: 'Kolkata',
+            y: 149
+          },
+          {
+            x: 'Mumbai',
+            y: 184
+          },
+          {
+            x: 'Ahmedabad',
+            y: 55
+          },
+          {
+            x: 'Bangaluru',
+            y: 84
+          },
+          {
+            x: 'Pune',
+            y: 31
+          },
+          {
+            x: 'Chennai',
+            y: 70
+          },
+          {
+            x: 'Jaipur',
+            y: 30
+          },
+          {
+            x: 'Surat',
+            y: 44
+          },
+          {
+            x: 'Hyderabad',
+            y: 68
+          },
+          {
+            x: 'Lucknow',
+            y: 28
+          },
+          {
+            x: 'Indore',
+            y: 19
+          },
+          {
+            x: 'Kanpur',
+            y: 29
+          }
+        ]
+      }
+    ],
+    options: {
+      legend: {
+        show: false
+      },
+      chart: {
+        toolbar : {
+          show : false,
+        },
+        height: 350,
+        type: 'treemap'
+      },
+      colors: [
+        '#3B93A5',
+        '#F7B844',
+        '#ADD8C7',
+        '#EC3C65',
+        '#CDD7B6',
+        '#C1F666',
+        '#D43F97',
+        '#1E5D8C',
+        '#421243',
+        '#7F94B0',
+        '#EF6537',
+        '#C0ADDB'
+      ],
+      plotOptions: {
+        treemap: {
+          distributed: true,
+          enableShades: false
+        }
+      }
+    },
+  })
+  console.log(moment(props.publish_date).locale('fa').format('YYYY/MM/DD'));
   return (
     <div className="ModalPost">
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
-        className={classes.modal ,"ModalPost2" }
+        className={[classes.modal ,"ModalPost2"].join(" ")}
         open={props.open}
         onClose={props.handleClose}
         closeAfterTransition
@@ -74,37 +171,62 @@ export default function ModalPost(props) {
           <div className={[classes.paper ,'modalBase'].join(" ")}> 
               <div className="graphsRss">
                 <div className="categoriesChart">
-                    <Chart
-                    options={chart.options}
-                    series={chart.series}
-                    type="bar"
-                  />
+                  <Chart
+                      options={distributedChart.options}
+                      series={distributedChart.series}
+                      type="treemap"
+                      width="100%"
+                      height="300px"
+                    />
                 </div>
                 <div className="PieChartRss">
                   <Chart
                       options={donChart.options}
                       series={donChart.series}
-                      type="donut"
-                      height="200px"
+                      type="donut"  
+                      width="350px"
+                      height="300px"
                     />
+                     <Chart
+                    options={chart.options}
+                    series={chart.series}
+                    type="bar"
+                    height="250px"
+                  />
+                  
                 </div>
               </div>
               <div className="PostContentRss">
+                <div className="postContent">
                 <div className="PostImage">
                   <img width="100%" src={props.image} alt={props.title}/>
                   <div className="tites">
-                    <p className="publishDatePost">{(props.publish_date)} </p>
                     <h3>{props.title}</h3>
                   </div>
                 </div>
-                <div className="postContent">
-                  <p>
+                  <p className="publishDatePost">{(props.publish_date)} </p>
+                  <p className="textRssPost">
                     {props.text}
                   </p>
-                <div className="hashtags"></div>
-                <div className="keywords"></div>
-                <div className=""></div>
-              </div>
+                </div>
+                <div className="postRssFooter">
+                  <hr className="lineBet"/>
+                  <p>موضوعات : </p>
+                  <div className="hashtags">
+                    <PostTag text="اقتصادی" fontSize="13px" padding="7px" backGroundColor ="#15AEFA"/>
+                    <PostTag text="حوادث"  fontSize="13px" padding="7px" backGroundColor="red"/>
+                    <PostTag text="نظامی"  fontSize="13px" padding="7px" backGroundColor="orange"/>
+                    <PostTag text="جنگ"  fontSize="13px" padding="7px" backGroundColor="green"/>
+                    <PostTag text="فرهنگی" fontSize="13px" padding="7px"  backGroundColor="purple"/>
+                  </div>
+                  <p> کلمات کلیدی : </p>
+                  <div className="keywords">
+                    <Hashtag/>
+                    <Hashtag/>
+                    <Hashtag/>
+                    <Hashtag/>  
+                  </div>  
+                </div>
               </div>
           </div>
         </Fade>

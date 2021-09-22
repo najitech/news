@@ -26,7 +26,7 @@ function LinearChart() {
             <Chart
               options={tempvar.options}
               series={tempvar.series}
-              type="bar"
+              type="area"
               width="103%"
               height="150px"
               className="LinearChart_chart"
