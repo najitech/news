@@ -5,7 +5,7 @@ function PostTags() {
     return (
         <div className="PostTags">
             <PostTag text="اقتصادی" backGroundColor ="#15AEFA"/>
-            <PostTag text="حوادث" />
+            <PostTag text="حوادث"  backGroundColor="red"/>
 
         </div>
     )
