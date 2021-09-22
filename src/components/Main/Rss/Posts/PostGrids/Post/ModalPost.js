@@ -5,8 +5,8 @@ import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
 import './ModalPost.css';
 import Chart from 'react-apexcharts';
-import PostTag from '../../../../../UI/Tag';
-import Hashtag from '../../../../../UI/Hashtag';
+import PostTag from '../../../../../../UI/Tag';
+import Hashtag from '../../../../../../UI/Hashtag';
 import moment from 'jalali-moment'
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({

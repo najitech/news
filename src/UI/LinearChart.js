@@ -6,6 +6,9 @@ import Chart from "react-apexcharts";
 let tempvar = {
     options: {
       chart: {
+        toolbar : {
+          show:false
+        },
         id: "basic-bar"
       },
       xaxis: {
