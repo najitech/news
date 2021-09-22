@@ -1,0 +1,4 @@
+PostLists {
+    display: flex;
+    flex-direction: column;
+}
