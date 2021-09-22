@@ -64,55 +64,55 @@ export default function ModalPost(props) {
       {
         data: [
           {
-            x: 'New Delhi',
+            x: 'طنز',
             y: 218
           },
           {
-            x: 'Kolkata',
+            x: 'تاریخی',
             y: 149
           },
           {
-            x: 'Mumbai',
+            x: 'آموزشی',
             y: 184
           },
           {
-            x: 'Ahmedabad',
+            x: 'مذهبی',
             y: 55
           },
           {
-            x: 'Bangaluru',
+            x: 'هنری',
             y: 84
           },
           {
-            x: 'Pune',
+            x: 'علمی',
             y: 31
           },
           {
-            x: 'Chennai',
+            x: 'طبیعت',
             y: 70
           },
           {
-            x: 'Jaipur',
+            x: 'حوادث',
             y: 30
           },
           {
-            x: 'Surat',
+            x: 'ورزشی',
             y: 44
           },
           {
-            x: 'Hyderabad',
+            x: 'نظامی',
             y: 68
           },
           {
-            x: 'Lucknow',
+            x: 'جنگ',
             y: 28
           },
           {
-            x: 'Indore',
+            x: 'سیاسی',
             y: 19
           },
           {
-            x: 'Kanpur',
+            x: 'اجتماعی',
             y: 29
           }
         ]
@@ -177,6 +177,7 @@ export default function ModalPost(props) {
                       type="treemap"
                       width="100%"
                       height="300px"
+                      className="ChartStyleClassRssModal"
                     />
                 </div>
                 <div className="PieChartRss">
@@ -193,31 +194,32 @@ export default function ModalPost(props) {
                     type="bar"
                     height="250px"
                   />
-                  
                 </div>
               </div>
               <div className="PostContentRss">
                 <div className="postContent">
-                <div className="PostImage">
-                  <img width="100%" src={props.image} alt={props.title}/>
-                  <div className="tites">
-                    <h3>{props.title}</h3>
+                  <div className="PostImage">
+                    <img width="100%" src={props.image} alt={props.title}/>
+                    <div className="tites">
+                      <h3>{props.title}</h3>
+                    </div>
                   </div>
-                </div>
-                  <p className="publishDatePost">{(props.publish_date)} </p>
-                  <p className="textRssPost">
-                    {props.text}
-                  </p>
+                  <div className="textAreaRss">  
+                    <p className="publishDatePost">{(props.publish_date)} </p>
+                    <p className="textRssPost">
+                      {props.text}
+                    </p>
+                  </div>
                 </div>
                 <div className="postRssFooter">
                   <hr className="lineBet"/>
                   <p>موضوعات : </p>
                   <div className="hashtags">
-                    <PostTag text="اقتصادی" fontSize="13px" padding="7px" backGroundColor ="#15AEFA"/>
-                    <PostTag text="حوادث"  fontSize="13px" padding="7px" backGroundColor="red"/>
-                    <PostTag text="نظامی"  fontSize="13px" padding="7px" backGroundColor="orange"/>
-                    <PostTag text="جنگ"  fontSize="13px" padding="7px" backGroundColor="green"/>
-                    <PostTag text="فرهنگی" fontSize="13px" padding="7px"  backGroundColor="purple"/>
+                    <PostTag text="اقتصادی" fontSize="13px" padding="5px" backGroundColor ="#15AEFA"/>
+                    <PostTag text="حوادث"  fontSize="13px" padding="5px" backGroundColor="red"/>
+                    <PostTag text="نظامی"  fontSize="13px" padding="5px" backGroundColor="orange"/>
+                    <PostTag text="جنگ"  fontSize="13px" padding="5px" backGroundColor="green"/>
+                    <PostTag text="فرهنگی" fontSize="13px" padding="5px"  backGroundColor="purple"/>
                   </div>
                   <p> کلمات کلیدی : </p>
                   <div className="keywords">
