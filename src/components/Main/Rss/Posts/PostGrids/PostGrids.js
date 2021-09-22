@@ -1,8 +1,8 @@
 import React ,{useState , useEffect} from 'react';
 import axios from 'axios';  
-import './Posts.css';
+import './PostGrids.css';
 import PostGrid from './Post/PostGrid';
-function Posts() {
+function PostGrids() {
     /*const [data , setData] = useState([]);
     useEffect(()=>{
         axios.get("url").then((res)=>{
@@ -234,4 +234,4 @@ function Posts() {
     )
 }   
 
-export default Posts
+export default PostGrids;

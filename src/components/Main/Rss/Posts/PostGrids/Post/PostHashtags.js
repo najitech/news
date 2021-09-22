@@ -1,5 +1,5 @@
 import React from 'react'
-import Hashtag from '../../../../../UI/Hashtag'
+import Hashtag from '../../../../../../UI/Hashtag'
 import './PostHashtags.css'
 
 function PostHashtags() {
