@@ -10,23 +10,39 @@
 }
 
 .ModalPost2 {
-    height: 80% !important;
+    height: 85% !important;
     margin: auto auto;
     width: 65%;
     padding: 0px !important;
+}
+.ModalPost2:focus{
+    border: none;
+    outline: none;
 }
 .modalBase{
     display: flex;
     direction: ltr;
 }
 .graphsRss{
-    flex: 0.5;
+    flex: 0.6;
+    padding: 0px;
     height: 100%;
     width: 100%;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
+
+.graphsRss::-webkit-scrollbar {
+    display: none;
+  }
 .PostContentRss{
-    flex: 0.5;
+    flex: 0.4;
+    display: flex;
+    flex-direction: column;
+    position: relative;
     direction: rtl;
+    overflow-y: hidden;
 }
 .graphsRss{
     display: flex;
@@ -34,18 +50,13 @@
 }
 .categoriesChart{
     flex:0.5;
+    margin: 0px;
+    padding: 0px 20px;
 }
 .PieChartRss{
     flex: 0.5;
-}
-.PostImage{
-    width: 100%;
-    position: relative;
-}
-.PostImage img{
-    border-radius: 5px;
-    display: block;
-    box-shadow: 0.0px 1.0px 2px 0.3px rgb(224, 224, 224);
+    align-items: center;
+    display: flex;
 }
 .tites{
     direction: rtl;
@@ -57,7 +68,6 @@
     left: 0;
     background-color: rgba(0, 0, 0, 0.514);
     opacity: 1;
-    border-radius: 5px;
 }
 .tites p{
     font-size: 15px;
@@ -67,7 +77,69 @@
     padding:0px 10px;
     text-decoration: underline;
 }
-.PostImage img:hover .tites{
+.titles:hover .tites{
     opacity: 1;
     transition: opacity ease-out 0.5s;
+}
+.postContent{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    margin: auto;
+    flex: 0.7;
+    padding : 20px;
+    font-size: 15px;
+    height: 100%;
+    overflow-y: hidden;
+}
+.hashtags{
+    display: flex;
+    margin-top:4px;
+    margin-bottom: 12px;
+    margin-right:16.5px;
+}
+.postRssFooter{
+    bottom: 0;
+    flex: 0.3;
+    background-color: white;
+    left: 0;
+    right: 0;
+}
+.postRssFooter p{
+    margin: 10px;
+    padding: 0px;
+}
+.keywords{
+    display: flex;
+    padding: 10px;
+}
+.lineBet{
+    color :grey;
+    width: 88%;
+    opacity: 0.7;
+    border-bottom: none;
+}
+.publishDatePost{
+    padding: 4px;
+    font-size: 13px;
+    text-decoration: underline;
+    margin:0px
+}
+.textRssPost{
+    margin: 0px;
+}
+.textAreaRss{
+    overflow-y: scroll;
+    flex : 0.6;
+    height: 400px;
+    padding : 10px 10px;
+}
+.PostImage{
+    width: 100%;
+    position: relative;
+    border-radius: 3px;
+    height: 50%;
+    box-shadow: 0.0px 1.0px 2px 0.3px rgb(168, 166, 166);
+    flex : 0.4;
+    overflow:hidden;
 }
