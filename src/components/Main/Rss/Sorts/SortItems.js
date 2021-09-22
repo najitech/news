@@ -19,6 +19,8 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',  
     height : '30px',
     flexWrap: 'wrap',
+    marginLeft:3,
+    marginRight:3
   },
   divider: {
     margin: 0,

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Post.css';
+import './PostGrid.css';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
@@ -11,6 +11,7 @@ import Typography from '@material-ui/core/Typography';
 import PostTags from './PostTags';
 import ModalPost from './ModalPost';
 import PostHashtags from './PostHashtags';
+import {TiKey} from 'react-icons/ti'
 
 const useStyles = makeStyles({
     root: {

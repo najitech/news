@@ -12,12 +12,8 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 
 
-function SortsRss() {
-    const [view, setView] = React.useState('list');
+function SortsRss(props) {
 
-    const handleChange = (event, nextView) => {
-      setView(nextView);
-    };
     const [anchorEl, setAnchorEl] = React.useState(null);
 
     const handleClick = (event) => {
@@ -30,7 +26,7 @@ function SortsRss() {
   
     return (    
         <div className="SortsRss">
-            <ToggleButtonGroup  className="togSort" value={view} exclusive onChange={handleChange}>
+            <ToggleButtonGroup  className="togSort" value={props.view} exclusive onChange={props.handleChange}>
             <ToggleButton   size="small" value="list" aria-label="list">
                 <ViewListIcon />
             </ToggleButton>

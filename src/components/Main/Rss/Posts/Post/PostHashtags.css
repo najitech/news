@@ -1,8 +1,6 @@
 .PostHashtags {
     margin-right :7px;
     display: flex;
-    justify-content: space-between;
-    background-color: red;
-    
-
+    justify-content: space-around;
+    width: 70%;
 }

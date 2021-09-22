@@ -9,6 +9,11 @@ import SortsRss from './Sorts/SortsRss';
 
 
 function Rss() {
+    const [view, setView] = React.useState('list');
+
+    const handleChange = (event, nextView) => {
+      setView(nextView);
+    };
     return (
         <div className='Rss'>
             <Filters/>
@@ -16,7 +21,7 @@ function Rss() {
                 <Search/>
                 <LinearChart/> 
                 <div className="filterSearch">
-                    <SortsRss/>
+                    <SortsRss view={view} handleChange={handleChange}/>
                 </div>
                 <Posts/>
             </div>

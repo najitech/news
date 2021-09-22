@@ -80,6 +80,8 @@
     display: flex;
     direction: rtl;
     justify-content: right;
+    width: 86%;
+    margin : 0px auto;
 }
 .Post_footer > p {
     font-family: Shabnam;
