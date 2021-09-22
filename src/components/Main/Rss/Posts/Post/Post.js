@@ -61,7 +61,7 @@ function Post(props) {
             </div>
             */}
 
-            <ModalPost  open={open} setOpen={setOpen}  handleClose={handleClose} PostProps={props} />
+            <ModalPost  open={open} setOpen={setOpen} image={props.image} title={props.title} text={props.news_text} publish_date={props.publish_date} handleClose={handleClose} PostProps={props} />
             <Card onClick={handleOpen}  className={classes.root ,"Post_card"}>
                 <CardActionArea className="postBody">
                     <CardMedia
