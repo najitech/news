@@ -8,6 +8,7 @@ import Typography from '@material-ui/core/Typography';
 import SkipPreviousIcon from '@material-ui/icons/SkipPrevious';
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import SkipNextIcon from '@material-ui/icons/SkipNext';
+import './PostList.css'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -17,6 +18,7 @@ const useStyles = makeStyles((theme) => ({
   details: {
     display: 'flex',
     flexDirection: 'column',
+    width: "70%"
   },
   content: {
     flex: '1 0 auto',
@@ -36,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function MediaControlCard() {
+export default function MediaControlCard(props) {
   const classes = useStyles();
   const theme = useTheme();
 
@@ -45,17 +47,17 @@ export default function MediaControlCard() {
 
      <CardMedia
         className={[classes.cover , "PostList_image"].join(" ")}
-        image="https://img9.irna.ir/d/r2/2021/09/08/4/169049562.jpg"
+        image={props.image}
         title="Live from space album cover"
       />
 
       <div className={classes.details}>
         <CardContent className={classes.content}>
-          <Typography component="h5" variant="h5">
-            Live From Space
+          <Typography paragraph={true}>
+            {props.title}
           </Typography>
-          <Typography variant="subtitle1" color="textSecondary">
-            Mac Miller
+          <Typography variant='string' className="PolstList_news_text ">
+            {props.news_text}
           </Typography>
         </CardContent>
         <div className={classes.controls}>
