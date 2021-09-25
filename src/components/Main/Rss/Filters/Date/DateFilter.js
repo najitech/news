@@ -10,7 +10,7 @@ import {
   MuiPickersUtilsProvider,
   KeyboardDatePicker,
 } from '@material-ui/pickers';
-import './DateFilter.css'
+import './DateFilter.css'   
 
 import InputIcon from "react-multi-date-picker/components/input_icon"
 function DateFilter() {
@@ -22,8 +22,7 @@ function DateFilter() {
                     calendar={persian}
                     locale={persian_fa}
                     calendarPosition="bottom"
-                    render={<CustomInputDF/>}
-                    
+                    render={<InputIcon style={{fontFamily:"shabnam" ,color:'rgb(100, 100, 100)', fontSize:"12px" , padding:"5px" , width:"100%"}} placeholder="تاریخ شروع"/>}
                 /> 
             </div> 
             <div>   
@@ -31,7 +30,7 @@ function DateFilter() {
                     className=" red"
                     calendar={persian}
                     locale={persian_fa}
-                    calendarPosition="bottom"render={<InputIcon style={{fontFamily:"shabnam" ,color:'rgb(100, 100, 100)', fontSize:"12px" , padding:"5px" , width:"100%"}} placeholder="تاریخ پایان"/>}
+                    calendarPosition="bottom" render={<InputIcon style={{fontFamily:"shabnam" ,color:'rgb(100, 100, 100)', fontSize:"12px" , padding:"5px" , width:"100%"}} placeholder="تاریخ پایان"/>}
                 />
             </div> 
         </div>
