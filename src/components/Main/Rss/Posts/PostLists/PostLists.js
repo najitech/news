@@ -1,10 +1,12 @@
 import React from 'react'
 import './PostLists.css'
 import PostList from './PostList/PostList'
+import FlipMove from 'react-flip-move';
 
 function PostLists() {
     return (
         <div className="PostLists">
+            <FlipMove>
             <PostList  image={"https://img9.irna.ir/d/r2/2021/09/08/4/169049562.jpg"} 
                 link={"https://www.shia-news.com/fa/news/260105/هشدار-انتقال-فعالیت‌های-تروریستی-از-افغانستان-به-آسیای-مرکزی"}
                 title={"هشدار انتقال فعالیت‌های تروریستی از افغانستان به آسیای مرکزی"}
@@ -110,6 +112,7 @@ function PostLists() {
                 publish_date={"05 Sep 2021 11:00:01 +0430"}
                 good="true"
             />
+            </FlipMove>
         </div>
     )
 }

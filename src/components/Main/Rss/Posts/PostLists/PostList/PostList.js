@@ -29,6 +29,7 @@ const useStyles = makeStyles((theme) => ({
   },
   cover: {
     width: '30%',
+
   },
   controls: {
     display: 'flex',
