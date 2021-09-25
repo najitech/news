@@ -1,13 +1,13 @@
 .Posts{
-  display: flex;
+  display: grid;
+  place-items: center;
   flex-wrap: wrap;
-  justify-content: space-between;
   flex:0.95;
+  grid-template-columns: auto auto auto auto;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
   height: 100%;
   margin-top: 10px;
-
 }
 .Posts::-webkit-scrollbar {
     display: none;

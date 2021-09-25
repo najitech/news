@@ -1,6 +1,8 @@
 import 'date-fns';
 import React from 'react';
 import DateFnsUtils from '@date-io/date-fns';
+import persian from "react-date-object/calendars/persian"
+import persian_fa from "react-date-object/locales/persian_fa"
 import {
   MuiPickersUtilsProvider,
   DatePicker,
