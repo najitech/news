@@ -3,53 +3,37 @@ import React from 'react';
 import DateFnsUtils from '@date-io/date-fns';
 import persian from "react-date-object/calendars/persian"
 import persian_fa from "react-date-object/locales/persian_fa"
+import DatePicker from "react-multi-date-picker"
+import CustomInputDF from './CustomInputDF';
+import "react-multi-date-picker/styles/colors/red.css"
 import {
   MuiPickersUtilsProvider,
-  DatePicker,
   KeyboardDatePicker,
 } from '@material-ui/pickers';
 import './DateFilter.css'
 
+import InputIcon from "react-multi-date-picker/components/input_icon"
 function DateFilter() {
     return (
         <div className="dateFilter">
             <div>
-                <MuiPickersUtilsProvider  utils={DateFnsUtils}>
-                    <DatePicker
-                    className="datePicker"
-                disableToolbar
-                variant="inline"
-                inputVariant="outlined"
-                format="MM/dd/yyyy"
-                margin="normal"
-                size="small"
-                id="date-picker-inline"
-                label="تاریخ شروع"
-                KeyboardButtonProps={{
-                    'aria-label': 'change date',
-                }}
+                <DatePicker
+                    className="red"
+                    calendar={persian}
+                    locale={persian_fa}
+                    calendarPosition="bottom"
+                    render={<CustomInputDF/>}
+                    
                 /> 
-                </MuiPickersUtilsProvider>
             </div> 
             <div>   
-                <MuiPickersUtilsProvider  utils={DateFnsUtils}>
-                    <DatePicker
-                    
-                className="datePicker"
-                disableToolbar
-                size="small"
-                variant="inline"
-                format="MM/dd/yyyy"
-                inputVariant="outlined"
-                margin="normal"
-                id="date-picker-inline"
-                label="تاریخ پایان"
-                KeyboardButtonProps={{
-                    'aria-label': 'change date',
-                }}
-                />  
-                </MuiPickersUtilsProvider>
-            </div>
+                <DatePicker
+                    className=" red"
+                    calendar={persian}
+                    locale={persian_fa}
+                    calendarPosition="bottom"render={<InputIcon style={{fontFamily:"shabnam" ,color:'rgb(100, 100, 100)', fontSize:"12px" , padding:"5px" , width:"100%"}} placeholder="تاریخ پایان"/>}
+                />
+            </div> 
         </div>
     )
 }
