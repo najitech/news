@@ -9,6 +9,10 @@ import SkipPreviousIcon from '@material-ui/icons/SkipPrevious';
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import SkipNextIcon from '@material-ui/icons/SkipNext';
 import './PostList.css'
+import PostHashtags from '../../PostGrids/Post/PostHashtags';
+import PostListTags from './PostListTags';
+import PostListHashtags from './PostListHashtags';
+import ModalPost from '../../PostGrids/Post/ModalPost';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -21,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
     width: "70%"
   },
   content: {
-    flex: '1 0 auto',
+  
   },
   cover: {
     width: '30%',
@@ -29,8 +33,9 @@ const useStyles = makeStyles((theme) => ({
   controls: {
     display: 'flex',
     alignItems: 'center',
-    paddingLeft: theme.spacing(1),
-    paddingBottom: theme.spacing(1),
+    justifyContent : 'space-between',
+    marginTop:'18px',
+    alignItems:'center',
   },
   playIcon: {
     height: 38,
@@ -41,38 +46,51 @@ const useStyles = makeStyles((theme) => ({
 export default function MediaControlCard(props) {
   const classes = useStyles();
   const theme = useTheme();
+  const publishDate = new Date(props.publish_date);
+  const [open, setOpen] = React.useState(false);
 
+  const handleOpen = () => {
+      setOpen(true);
+    };
+
+  const handleClose = () => {
+      setOpen(false);
+    };
   return (
-    <Card className={[classes.root , "PostList"].join(" ")}>
+    <div className="PostList">
+      <ModalPost open={open} setOpen={setOpen} image={props.image} title={props.title} text={props.news_text} publish_date={props.publish_date} handleClose={handleClose} PostProps={props} />
+      <Card className={[classes.root ,'PostListCard'].join(" ") } onClick={handleOpen}>
+      <CardMedia
+          className={[classes.cover , "PostList_image"].join(" ")}
+          image={props.image}
+          title="Live from space album cover"
+        />
 
-     <CardMedia
-        className={[classes.cover , "PostList_image"].join(" ")}
-        image={props.image}
-        title="Live from space album cover"
-      />
+        <div className={classes.details}>
+          <CardContent className={classes.content}>
+            <div className="PostList_header">
+              <Typography className="PostList_title" >
+                  {props.title}
+              </Typography>
+              <PostListTags/>
+            </div>
+            <Typography variant='string' className="PolstList_news_text ">
+              {props.news_text}
+            </Typography>
+            <div className={classes.controls}>
+              <div className="PostList_keywords">
+                <p className="PostList_keywords_title">کلمات کلیدی :</p>
+                <PostListHashtags/>
+              </div>
+              <p className="PostList_date">{publishDate.toDateString()}</p>
+            </div>
 
-      <div className={classes.details}>
-        <CardContent className={classes.content}>
-          <Typography paragraph={true}>
-            {props.title}
-          </Typography>
-          <Typography variant='string' className="PolstList_news_text ">
-            {props.news_text}
-          </Typography>
-        </CardContent>
-        <div className={classes.controls}>
-          <IconButton aria-label="previous">
-            {theme.direction === 'rtl' ? <SkipNextIcon /> : <SkipPreviousIcon />}
-          </IconButton>
-          <IconButton aria-label="play/pause">
-            <PlayArrowIcon className={classes.playIcon} />
-          </IconButton>
-          <IconButton aria-label="next">
-            {theme.direction === 'rtl' ? <SkipPreviousIcon /> : <SkipNextIcon />}
-          </IconButton>
+          </CardContent>
+
+
         </div>
-      </div>
- 
-    </Card>
+  
+      </Card>
+    </div>
   );
 }

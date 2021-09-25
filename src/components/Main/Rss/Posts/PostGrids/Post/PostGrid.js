@@ -23,11 +23,6 @@ const useStyles = makeStyles({
     },
   });
 
-const handleClick = (props) =>() => {
-    
-}
-
-
 function Post(props) {
     const classes = useStyles();
     const postdate = new Date(props.publish_date);
@@ -78,7 +73,11 @@ function Post(props) {
                         {props.news_text}
                     </Typography>
                     </CardContent>
-                    <PostTags/>
+                    <div className="PostGrid_Tag_Date">
+                      <PostTags/>
+                      
+                    </div>
+
                     <div className="Post_footer">
                         <p> کلمات کلیدی : </p>
                         <PostHashtags/>

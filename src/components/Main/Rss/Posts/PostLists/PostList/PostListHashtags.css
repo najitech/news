@@ -1,0 +1,8 @@
+.PostListHashtags {
+    display: flex;
+
+}
+
+.PostListHashtags > * {
+    margin-right:5px;
+}
