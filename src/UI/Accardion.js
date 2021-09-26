@@ -12,7 +12,6 @@ const useStyles = makeStyles({
     '&.MuiExpansionPanel-root:before': {
         display : 'none',
     },
-    
       borderRadius : '10px',
       boxShadow : 'none',
       borderBottom : 'none',

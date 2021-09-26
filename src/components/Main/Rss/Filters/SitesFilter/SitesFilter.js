@@ -20,18 +20,24 @@ export default function SwitchesGroup() {
   return (
     <FormControl className="SitesFilter" component="fieldset">
       <FormGroup>
-        <FormControlLabel className="siteFilterSwitch"
-          control={<Switch checked={state.gilad} className="sitesFilterLabel" size="small"  onChange={handleChange} name="gilad" />}
-          label="www.khabaronline.ir"
-        />
-        <FormControlLabel className="siteFilterSwitch"
-          control={<Switch checked={state.jason} className="sitesFilterLabel" size="small"  onChange={handleChange} name="jason" />}
-          label="www.yjc.news"
-        />
-        <FormControlLabel className="siteFilterSwitch"
-          control={<Switch checked={state.antoine} className="sitesFilterLabel" size="small"  onChange={handleChange} name="antoine" />}
-          label="www.mashreghnews.ir"
-        />
+        <div className="siteOption">
+          <FormControlLabel className="siteFilterSwitch"
+            control={<Switch checked={state.gilad} className="sitesFilterLabel" size="small"  onChange={handleChange} name="gilad" />}
+            label="خبر آنلاین"
+          />
+        </div>
+        <div className="siteOption">
+          <FormControlLabel className="siteFilterSwitch"
+            control={<Switch checked={state.jason} className="sitesFilterLabel" size="small"  onChange={handleChange} name="jason" />}
+            label="YJC"
+          />
+        </div>
+        <div className="siteOption">
+          <FormControlLabel className="siteFilterSwitch"
+            control={<Switch checked={state.antoine} className="sitesFilterLabel" size="small"  onChange={handleChange} name="antoine" />}
+            label="مشرق نیوز"
+          />
+        </div>
       </FormGroup>
     </FormControl>
   );

@@ -8,6 +8,14 @@ function NERfilter(props) {
     const [NERs , setNERs] = useState([]);
     const [inputNER , setINputNER] =  useState("");
     const addNERHandler = ()=>{
+        if(inputNER === "")
+        {
+            return;
+        }
+        if(NERs.indexOf(inputNER) !== -1)
+        {
+            return;
+        }
         setNERs([...NERs , inputNER]);
     }
     return (

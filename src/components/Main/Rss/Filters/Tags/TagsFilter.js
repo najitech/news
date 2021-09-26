@@ -8,6 +8,14 @@ function TagsFilter(props) {
     const [tagFilter , setTagFilter] = useState("");
     const [tags , setTags] = useState([]);
     const addTagHandler = () =>{
+      if(tagFilter === "")
+        {
+            return;
+        }
+        if(tags.indexOf(tagFilter) !== -1)
+        {
+            return;
+        }
       setTags([...tags , tagFilter]);
     }
     const closeHandler = (e) => ()=>{
