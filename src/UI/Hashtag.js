@@ -3,7 +3,7 @@ import Chip from '@material-ui/core/Chip';
 import './Hashtag.css'
 function Hashtag() {
     return (
-        <div>
+        <div className="HashtagDiv">
             <Chip className="Hashtag" size="small" label="افغانستان" />
         </div>
     )

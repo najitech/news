@@ -43,6 +43,7 @@
     position: relative;
     direction: rtl;
     overflow-y: hidden;
+    text-align: right;
 }
 .graphsRss{
     display: flex;
@@ -109,10 +110,7 @@
     margin: 10px;
     padding: 0px;
 }
-.keywords{
-    display: flex;
-    padding: 10px;
-}
+
 .lineBet{
     color :grey;
     width: 88%;
@@ -142,4 +140,27 @@
     box-shadow: 0.0px 1.0px 2px 0.3px rgb(168, 166, 166);
     flex : 0.4;
     overflow:hidden;
+}
+
+.keywords{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: right;
+
+}
+.keywords > p {
+    flex:0.25;
+
+}
+
+.keywords_tags {
+    display: flex;
+    align-items: center;
+    flex:0.75;
+    justify-content: right;
+ 
+}
+.keywords .HashtagDiv {
+    margin-right: 5px;
 }

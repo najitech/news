@@ -218,13 +218,16 @@ export default function ModalPost(props) {
                     <PostTag text="نظامی"  fontSize="13px" padding="5px" backGroundColor="orange"/>
                     <PostTag text="جنگ"  fontSize="13px" padding="5px" backGroundColor="green"/>
                     <PostTag text="فرهنگی" fontSize="13px" padding="5px"  backGroundColor="purple"/>
-                  </div>
-                  <p> کلمات کلیدی : </p>
+                  </div> 
                   <div className="keywords">
-                    <Hashtag/>
-                    <Hashtag/>
-                    <Hashtag/>
-                    <Hashtag/>  
+                  <p> کلمات کلیدی : </p>
+                    <div className="keywords_tags">
+                      <Hashtag/>
+                      <Hashtag/>
+                      <Hashtag/>
+                      <Hashtag/>  
+                    </div>
+
                   </div>  
                 </div>
               </div>
