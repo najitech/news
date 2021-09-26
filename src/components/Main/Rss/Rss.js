@@ -9,7 +9,7 @@ import PostGrids from './Posts/PostGrids/PostGrids'
 
 
 function Rss() {
-    const [view, setView] = React.useState('list');
+    const [view, setView] = React.useState('module');
 
     const handleChange = (event, nextView) => {
       setView(nextView);
