@@ -3,6 +3,8 @@ import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 import Main from './components/Main/Main'
 import Navbar from './components/Navbar/Navbar'
+import './scss/style.scss';
+
 
 import { BrowserRouter as Router} from 'react-router-dom';
 const theme = createMuiTheme({

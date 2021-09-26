@@ -4,12 +4,13 @@ import { Switch , Route } from 'react-router-dom'
 import './Main.css'
 import Home from './Home/Home'
 import Twitter from './Twitter/Twitter';
+import TheLayout from '../../containers/TheLayout'
 function Main() {
     return (
         <div className="Main">
                 <Switch>
                     <Route exact path="/">
-                        <Home/>
+                        <TheLayout/>
                     </Route>
                     <Route path="/RSS">
                         <Rss/>
