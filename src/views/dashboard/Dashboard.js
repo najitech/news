@@ -13,6 +13,7 @@ import {
   CCallout
 } from '@coreui/react'
 import {CgWebsite} from 'react-icons/cg';
+import {AiFillFacebook} from 'react-icons/ai'
 import CIcon from '@coreui/icons-react'
 import {FaRssSquare} from 'react-icons/fa'
 import MainChartExample from '../charts/MainChartExample.js'
@@ -268,7 +269,7 @@ const Dashboard = () => {
 
                   <div className="progress-group">
                     <div className="progress-group-header">
-                      <CIcon name="cib-facebook" className="progress-group-icon" />
+                      <AiFillFacebook style={{fontSize:"22px"}} className="progress-group-icon"/>
                       <span className="title">Facebook</span>
                       <span className="ml-auto font-weight-bold">51,223 <span className="text-muted small">(15%)</span></span>
                     </div>
