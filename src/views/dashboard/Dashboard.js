@@ -16,8 +16,6 @@ import {CgWebsite} from 'react-icons/cg';
 import CIcon from '@coreui/icons-react'
 import {FaRssSquare} from 'react-icons/fa'
 import MainChartExample from '../charts/MainChartExample.js'
-import ApexMulti from '../charts/ApexMulti.js';
-
 const WidgetsDropdown = lazy(() => import('../widgets/WidgetsDropdown.js'))
 const WidgetsBrand = lazy(() => import('../widgets/WidgetsBrand.js'))
 
@@ -33,7 +31,7 @@ const Dashboard = () => {
               <div className="small text-muted">توضیح یا تاریخ</div>
             </CCol>
             <CCol sm="7" className="d-none d-md-block">
-              <CButtonGroup className="float-right mr-3">
+              <CButtonGroup style={{direction:'ltr'}} className="float-right mr-3">
                 {
                   ['روز', 'ماه', 'سال'].map(value => (
                     <CButton
@@ -49,7 +47,7 @@ const Dashboard = () => {
               </CButtonGroup>
             </CCol>
           </CRow>
-          <ApexMulti/>
+          <MainChartExample style={{height: '300px', marginTop: '40px'}}/>
         </CCardBody>
         <CCardFooter>
           <CRow className="text-center">

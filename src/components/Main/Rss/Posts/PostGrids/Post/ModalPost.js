@@ -201,9 +201,9 @@ export default function ModalPost(props) {
                     <div className="tites">
                       <h3>{props.title}</h3>
                     </div>
-                  </div>
+                  </div> 
                   <div className="textAreaRss">  
-                    <p className="publishDatePost">{(props.publish_date)} </p>
+                    <p className="publishDatePost">تاریخ انتشار : {(props.publish_date)} </p>
                     <p className="textRssPost">
                       {props.text}
                     </p>
@@ -213,11 +213,11 @@ export default function ModalPost(props) {
                   <hr className="lineBet"/>
                   <p>موضوعات : </p>
                   <div className="hashtags">
-                    <PostTag text="اقتصادی" fontSize="13px" padding="5px" backGroundColor ="#15AEFA"/>
-                    <PostTag text="حوادث"  fontSize="13px" padding="5px" backGroundColor="red"/>
-                    <PostTag text="نظامی"  fontSize="13px" padding="5px" backGroundColor="orange"/>
-                    <PostTag text="جنگ"  fontSize="13px" padding="5px" backGroundColor="green"/>
-                    <PostTag text="فرهنگی" fontSize="13px" padding="5px"  backGroundColor="purple"/>
+                    <PostTag text="اقتصادی" fontSize="12px" padding="6px" backGroundColor ="#15AEFA"/>
+                    <PostTag text="حوادث"  fontSize="12px" padding="6px" backGroundColor="red"/>
+                    <PostTag text="نظامی"  fontSize="12px" padding="6px" backGroundColor="orange"/>
+                    <PostTag text="جنگ"  fontSize="12px" padding="6px" backGroundColor="green"/>
+                    <PostTag text="فرهنگی" fontSize="12px" padding="6px"  backGroundColor="purple"/>
                   </div> 
                   <div className="keywords">
                   <p> کلمات کلیدی : </p>

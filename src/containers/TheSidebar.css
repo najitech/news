@@ -2,3 +2,7 @@
     font-family: shabnam;
     font-size: 17px;
 }
+.TheSidebar{
+    right: 0px;
+    top: 35px !important;
+}

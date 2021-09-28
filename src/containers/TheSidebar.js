@@ -7,17 +7,14 @@ import {
   CSidebarMinimizer,
 } from '@coreui/react'
 import './TheSidebar.css';
-import CIcon from '@coreui/icons-react'
-
 // sidebar nav config
-import navigation from './_nav'
 
 const TheSidebar = () => {
   const dispatch = useDispatch()
   const show = useSelector(state => state.sidebarShow)
 
   return (
-    <CSidebar
+    <CSidebar className="TheSidebar"
       show={show}
       onShowChange={(val) => dispatch({type: 'set', sidebarShow: val })}
     >
