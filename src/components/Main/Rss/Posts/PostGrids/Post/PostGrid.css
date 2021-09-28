@@ -10,7 +10,7 @@
 @media screen and (max-width : 1380px) {
     .Post_card {
         width:245px !important;
-        transition: width 2s ease ;
+        transition: width 2s ease-in-out ;
         background-color: red;
     }
     .Post {
@@ -46,8 +46,6 @@
 @media screen and (max-width : 1110px) {
     .Post_card {
         width:245px !important;
-        transition: width 2s ease ;
-        background-color: red;
     }
     .Post {
         width: 245px;
@@ -57,24 +55,25 @@
 
 @media screen and (max-width : 1020px) {
     .Post_card {
-      width: 290px !important;
+      width: 298px !important;
     }
     .Post {
-        width: 290px;
+        width: 298px;
     }
     .PostGrid_image {
         height: 160px !important;
     }
 }
 
-@media screen and (max-width : 910px) {
+
+@media screen and (max-width : 930px) {
     .Post_card {
-        width:265px !important;
+        width:268px !important;
         transition: width 2s ease ;
         background-color: red;
     }
     .Post {
-        width: 265px;
+        width: 268px;
     }
 }
 
