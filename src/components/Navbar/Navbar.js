@@ -30,18 +30,10 @@ function Navbar() {
                 <Link className="navLink" to="/">Home</Link>
               </div>
               <div>
-                <TemporaryDrawer/>
-              </div>
-              <div>
                 <Link className="navLink" to="/RSS">RSS</Link>
               </div>
               <div>
                 <Link className="navLink" to="/Twitter">Twitter</Link>
-              </div>
-              <div className="tnavFilters">
-                <TemporaryDrawer dir="right">
-                  <div>re</div>
-                </TemporaryDrawer>
               </div>
           </Toolbar>
         </AppBar>

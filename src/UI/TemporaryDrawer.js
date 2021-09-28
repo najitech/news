@@ -11,6 +11,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
 import {GiHamburgerMenu} from 'react-icons/gi'
+import './TemporaryDrawer.css';
 
 const useStyles = makeStyles({
   list: {
@@ -41,7 +42,7 @@ export default function TemporaryDrawer(props) {
     <div>
       {[props.dir].map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)}><GiHamburgerMenu/></Button>
+          <Button className={props.class} onClick={toggleDrawer(anchor, true)}><GiHamburgerMenu/></Button>
           <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
             {props.children}
           </Drawer>
