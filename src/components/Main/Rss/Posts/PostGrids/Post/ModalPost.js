@@ -7,6 +7,7 @@ import './ModalPost.css';
 import Chart from 'react-apexcharts';
 import PostTag from '../../../../../../UI/Tag';
 import Hashtag from '../../../../../../UI/Hashtag';
+import CustomizedProgressBars from './LinearProgress/CustomizedProgressBars'
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     modal: {
@@ -178,6 +179,8 @@ export default function ModalPost(props) {
                       className="ChartStyleClassRssModal"
                     />
                 </div>
+                <div>
+                </div>
                 <div className="PieChartRss">
                   <Chart
                       options={donChart.options}
@@ -210,7 +213,7 @@ export default function ModalPost(props) {
                   </div>
                 </div>
                 <div className="postRssFooter">
-                  <hr className="lineBet"/>
+                  <CustomizedProgressBars barValue={70}/>
                   <div className="hashtags">
                     <PostTag text="موضوعات :" fontSize="13px" padding="0px" backGroundColor="white" color="black" marginP="0px" paddingP="0px"/>
                     <PostTag text="اقتصادی" fontSize="11px" padding="5px" backGroundColor ="#15AEFA"/>
