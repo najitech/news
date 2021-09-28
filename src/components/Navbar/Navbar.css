@@ -18,4 +18,15 @@
     line-height: 1.5em;
     text-decoration: none;
 }
-
+.tnavFilters{
+    position: absolute;
+    right: 8px;
+    color: rgb(77, 77, 77) !important;
+    font-size:25px;
+    display: none;
+}
+@media screen and (max-width: 992px) {
+    .tnavFilters {
+        display: block;
+    }
+  }
