@@ -13,9 +13,10 @@ import {
   CCallout
 } from '@coreui/react'
 import {CgWebsite} from 'react-icons/cg';
-import {AiFillFacebook} from 'react-icons/ai'
+import {AiFillFacebook, AiFillTwitterSquare} from 'react-icons/ai'
 import CIcon from '@coreui/icons-react'
 import {FaRssSquare} from 'react-icons/fa'
+import {BiWorld} from 'react-icons/bi'
 import MainChartExample from '../charts/MainChartExample.js'
 const WidgetsDropdown = lazy(() => import('../widgets/WidgetsDropdown.js'))
 const WidgetsBrand = lazy(() => import('../widgets/WidgetsBrand.js'))
@@ -257,7 +258,7 @@ const Dashboard = () => {
                   
                   <div className="progress-group">
                     <div className="progress-group-header">
-                      <CIcon className="progress-group-icon" name="cil-globe-alt" />
+                      <BiWorld style={{fontSize:"22px"}} className="progress-group-icon" name="cil-globe-alt" />
                       <span className="title">Organic Search</span>
                       <span className="ml-auto font-weight-bold">191,235 <span className="text-muted small">(56%)</span></span>
                     </div>
@@ -279,7 +280,7 @@ const Dashboard = () => {
                   </div>
                   <div className="progress-group">
                     <div className="progress-group-header">
-                      <CIcon name="cib-twitter" className="progress-group-icon" />
+                      <AiFillTwitterSquare style={{fontSize:"23px"}} name="cib-twitter" className="progress-group-icon"/>
                       <span className="title">Twitter</span>
                       <span className="ml-auto font-weight-bold">37,564 <span className="text-muted small">(11%)</span></span>
                     </div>

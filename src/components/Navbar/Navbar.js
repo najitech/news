@@ -6,7 +6,10 @@ import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import './Navbar.css'
+import {GiHamburgerMenu} from 'react-icons/gi'
 import {Link} from 'react-router-dom'
+import { Drawer } from '@material-ui/core';
+import TemporaryDrawer from '../../UI/TemporaryDrawer';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -33,7 +36,6 @@ function Navbar() {
                 <Link className="navLink" to="/Twitter">Twitter</Link>
               </div>
           </Toolbar>
-          
         </AppBar>
       </div>
     )
