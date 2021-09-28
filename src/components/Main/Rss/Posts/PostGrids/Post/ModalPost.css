@@ -39,12 +39,12 @@
     display: none;
   }
 .PostContentRss{
-    flex: 0.4;
+    flex: 0.5;
     display: flex;
     flex-direction: column;
     position: relative;
     direction: rtl;
-    border-left: solid 1px rgb(235, 226, 226);
+    border-left: solid 1px rgb(226, 226, 226);
     overflow-y: hidden;
     text-align: right;
 }
@@ -105,6 +105,7 @@
     flex: 0.7;
     padding : 20px;
     font-size: 15px;
+    padding-bottom: 0px;
     height: 100%;
     overflow-y: hidden;
 }
@@ -116,6 +117,7 @@
 }
 .postRssFooter{
     bottom: 0;
+    padding:0px 10px;
     flex: 0.3;
     background-color: white;
     left: 0;
@@ -123,7 +125,7 @@
 }
 .postRssFooter p{
     margin: 10px;
-    padding: 5px;
+    padding: 3px;
 }
 
 .lineBet{
@@ -140,6 +142,7 @@
 }
 .textRssPost{
     margin: 0px;
+    padding:0px;
 }
 .textAreaRss{
     overflow-y: scroll;
