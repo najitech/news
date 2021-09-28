@@ -211,16 +211,18 @@ export default function ModalPost(props) {
                 </div>
                 <div className="postRssFooter">
                   <hr className="lineBet"/>
-                  <p>موضوعات : </p>
                   <div className="hashtags">
-                    <PostTag text="اقتصادی" fontSize="12px" padding="6px" backGroundColor ="#15AEFA"/>
-                    <PostTag text="حوادث"  fontSize="12px" padding="6px" backGroundColor="red"/>
-                    <PostTag text="نظامی"  fontSize="12px" padding="6px" backGroundColor="orange"/>
-                    <PostTag text="جنگ"  fontSize="12px" padding="6px" backGroundColor="green"/>
-                    <PostTag text="فرهنگی" fontSize="12px" padding="6px"  backGroundColor="purple"/>
+                    <PostTag text="موضوعات :" fontSize="13px" padding="0px" backGroundColor="white" color="black" marginP="0px" paddingP="0px"/>
+                    <PostTag text="اقتصادی" fontSize="11px" padding="5px" backGroundColor ="#15AEFA"/>
+                    <PostTag text="حوادث"  fontSize="11px" padding="5px" backGroundColor="red"/>
+                    <PostTag text="نظامی"  fontSize="11px" padding="5px" backGroundColor="orange"/>
+                    <PostTag text="جنگ"  fontSize="11px" padding="5px" backGroundColor="green"/>
+                    <PostTag text="فرهنگی" fontSize="11px" padding="5px"  backGroundColor="purple"/>
+                    <PostTag text="ورزشی" fontSize="11px" padding="5px"  backGroundColor="brown"/>
+                    <PostTag text="علمی" fontSize="11px" padding="5px"  backGroundColor="rgb(145, 135, 53)"/>
                   </div> 
                   <div className="keywords">
-                  <p> کلمات کلیدی : </p>
+                    <PostTag text="کلمات کلیدی :" fontSize="13px" padding="0px" backGroundColor="white" color="black" marginP="0px" paddingP="0px"/>
                     <div className="keywords_tags">
                       <Hashtag/>
                       <Hashtag/>
