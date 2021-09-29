@@ -144,7 +144,71 @@
         font-size: 9.5px !important;
     }
 }
+@media screen and (max-width : 608px) {
+    .Post_card {
+        width:260px !important;
+    }
+    .Post {
+        width: 260px;
+        margin-bottom: 15px !important;
+    }
+    .Post_footer_title {
+        font-size: 9.5px !important;
+    }
+}
+@media screen and (max-width : 565px) {
+        .Post_card {
+            width: 240px !important;
+          }
+          .Post {
+              width: 240px;
+          }
+          .Post_footer {
+              display: none !important;
+          }
+          .PostGrid_image {
+              height: 140px !important;
+          }
+          .Post_title {
+              font-size: 12px !important;
+          }
+}
+@media screen and (max-width : 527px) {
+    .Post_card {
+        width: 219px !important;
+      }
+      .Post {
+          width: 219px;
+      }
+      .Post_footer {
+          display: none !important;
+      }
+      .PostGrid_image {
+          height: 140px !important;
+      }
+      .Post_title {
+          font-size: 12px !important;
+      }
+}
 
+@media screen and (max-width : 487px) {
+    .Post_card {
+      width: 100% !important;
+    }
+    .Post {
+        width: 100%;
+        margin-bottom: 20px !important;
+    }
+    .PostGrid_image {
+        height: 200px !important;
+    }
+    .Post_title {
+        font-size: 14px !important;
+    }
+    .Post_footer {
+        display:flex !important;
+    }
+}
 
 
 .Post_top_green {

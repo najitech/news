@@ -30,3 +30,9 @@
     grid-template-columns: auto auto;
   }
 }
+@media screen and (max-width : 487px) {
+  .Posts {
+    grid-template-columns: auto;
+    justify-content: space-around;
+  }
+}
