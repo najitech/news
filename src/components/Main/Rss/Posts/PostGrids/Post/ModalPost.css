@@ -26,7 +26,7 @@
     direction: ltr;
 }
 .graphsRss{
-    flex: 0.58;
+    flex: 0.52;
     padding: 0px;
     height: 100%;
     width: 100%;
@@ -39,7 +39,7 @@
     display: none;
   }
 .PostContentRss{
-    flex: 0.42;
+    flex: 0.48;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -58,7 +58,6 @@
     padding: 0px 20px;
 }
 .PieChartRss{
-    flex: 0.5;
     align-items: center;
     display: flex;
 }
@@ -74,6 +73,7 @@
     background-color: rgba(0, 0, 0, 0.514);
     opacity: 0;
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
     padding-top: 10px;
     transition: opacity 0.3s ease-in;
@@ -136,9 +136,9 @@
     border-bottom: none;
 }
 .publishDatePost{
-    padding: 4px;
-    font-size: 13px;
-    text-decoration: underline;
+    padding:0px 4px;
+    font-size: 13px !important;
+    text-decoration: underline !important;
     margin:0px;
     margin-bottom: 2px;
 }
