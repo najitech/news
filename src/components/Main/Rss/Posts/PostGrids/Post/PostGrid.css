@@ -16,10 +16,13 @@
     .Post {
         width: 245px;
     }
+    .Post_footer_title {
+        font-size: 9.5px !important;
+    }
 }
 
 
-@media screen and (max-width : 1275px) {
+@media screen and (max-width : 1279px) {
     .Post_card {
       width: 285px !important;
     }
@@ -31,7 +34,7 @@
     }
 }
 
-@media screen and (max-width : 1175px) {
+@media screen and (max-width : 1190px) {
     .Post_card {
       width: 265px !important;
     }
@@ -43,17 +46,20 @@
     }
 }
 
-@media screen and (max-width : 1110px) {
+@media screen and (max-width : 1119px) {
     .Post_card {
         width:245px !important;
     }
     .Post {
         width: 245px;
     }
+    .Post_footer_title {
+        font-size: 9.5px !important;
+    }
 }
 
 
-@media screen and (max-width : 1020px) {
+@media screen and (max-width : 1030px) {
     .Post_card {
       width: 298px !important;
     }
@@ -66,7 +72,7 @@
 }
 
 
-@media screen and (max-width : 930px) {
+@media screen and (max-width : 940px) {
     .Post_card {
         width:268px !important;
         transition: width 2s ease ;
@@ -76,6 +82,70 @@
         width: 268px;
     }
 }
+@media screen and (max-width : 853px) {
+    .Post_card {
+        width:245px !important;
+    }
+    .Post {
+        width: 245px;
+    }
+    .Post_footer_title {
+        font-size: 9.5px !important;
+    }
+    .PostGrid_image {
+        height: 140px !important;
+    }
+}
+
+
+@media screen and (max-width : 790px) {
+    .Post_card {
+      width: 212px !important;
+    }
+    .Post {
+        width: 212px;
+    }
+    .Post_footer {
+        display: none !important;
+    }
+    .PostGrid_image {
+        height: 140px !important;
+    }
+    .Post_title {
+        font-size: 12px !important;
+    }
+}
+@media screen and (max-width : 690px) {
+    .Post_card {
+      width: 299px !important;
+    }
+    .Post {
+        width: 299px;
+        margin-bottom: 20px !important;
+    }
+    .PostGrid_image {
+        height: 160px !important;
+    }
+    .Post_title {
+        font-size: 14px !important;
+    }
+    .Post_footer {
+        display:flex !important;
+    }
+}
+@media screen and (max-width : 650px) {
+    .Post_card {
+        width:280px !important;
+    }
+    .Post {
+        width: 280px;
+    }
+    .Post_footer_title {
+        font-size: 9.5px !important;
+    }
+}
+
+
 
 .Post_top_green {
     background-color: rgba(13, 238, 13, 0.733);
@@ -122,7 +192,8 @@
 .Post_title {
     border-bottom: 2px solid #06f306;
     padding-bottom: 7px;
-    font-size: 14px !important;
+
+
 }
 .Post_card {
    

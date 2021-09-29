@@ -12,6 +12,19 @@ import PostTags from './PostTags';
 import ModalPost from './ModalPost';
 import PostHashtags from './PostHashtags';
 import {TiKey} from 'react-icons/ti'
+import { createTheme, ThemeProvider } from '@material-ui/core/styles';
+
+const theme = createTheme();
+
+theme.typography= {
+  fontSize: '15px',
+  '@media screen and (min-width:1000px)': {
+    fontSize: '10px',
+  },
+  [theme.breakpoints.up('md')]: {
+    fontSize: '2rem',
+  },
+};
 
 const useStyles = makeStyles({
     root: {
@@ -66,9 +79,11 @@ function Post(props) {
                     title={props.title}
                     />
                     <CardContent>
-                    <Typography className={["Post_title",bordercolor].join(" ")} gutterBottom variant="h5" component="h2">
-                        {props.title}
-                    </Typography>
+                    <ThemeProvider theme={theme}>
+                      <Typography className={["Post_title",bordercolor].join(" ")} gutterBottom>
+                          {props.title}
+                      </Typography>
+                    </ThemeProvider>
                     <Typography className="Post_news_text" variant="body2" color="textSecondary" component="p">
                         {props.news_text}
                     </Typography>
@@ -79,7 +94,7 @@ function Post(props) {
                     </div>
 
                     <div className="Post_footer">
-                        <p> کلمات کلیدی : </p>
+                        <p className="Post_footer_title"> کلمات کلیدی : </p>
                         <PostHashtags/>
                     </div>
 
