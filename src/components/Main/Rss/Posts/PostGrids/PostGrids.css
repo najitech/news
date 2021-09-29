@@ -14,3 +14,9 @@
 .Posts::-webkit-scrollbar {
     display: none;
   }
+
+  @media screen and (max-width : 1020px) {
+    .Posts {
+      grid-template-columns: auto auto auto;
+    }
+}

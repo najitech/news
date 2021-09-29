@@ -10,4 +10,9 @@
     scrollbar-width: none;  /* Firefox */
     margin-bottom: 10px;
   }
-  
+  @media screen and (max-width : 1275px) {
+    .Filters {
+      flex:0
+    }
+    
+  }

@@ -61,7 +61,7 @@ function Post(props) {
             <Card onClick={handleOpen}  className={classes.root ,"Post_card"}>
                 <CardActionArea className="postBody">
                     <CardMedia
-                    className={classes.media }
+                    className={[classes.media , "PostGrid_image"].join(" ") }
                     image={props.image}
                     title={props.title}
                     />

@@ -6,6 +6,77 @@
     margin-top:0px;
     
 }
+
+@media screen and (max-width : 1380px) {
+    .Post_card {
+        width:245px !important;
+        transition: width 2s ease-in-out ;
+        background-color: red;
+    }
+    .Post {
+        width: 245px;
+    }
+}
+
+
+@media screen and (max-width : 1275px) {
+    .Post_card {
+      width: 285px !important;
+    }
+    .Post {
+        width: 285px;
+    }
+    .PostGrid_image {
+        height: 160px !important;
+    }
+}
+
+@media screen and (max-width : 1175px) {
+    .Post_card {
+      width: 265px !important;
+    }
+    .Post {
+        width: 265px;
+    }
+    .PostGrid_image {
+        height: 160px !important;
+    }
+}
+
+@media screen and (max-width : 1110px) {
+    .Post_card {
+        width:245px !important;
+    }
+    .Post {
+        width: 245px;
+    }
+}
+
+
+@media screen and (max-width : 1020px) {
+    .Post_card {
+      width: 298px !important;
+    }
+    .Post {
+        width: 298px;
+    }
+    .PostGrid_image {
+        height: 160px !important;
+    }
+}
+
+
+@media screen and (max-width : 930px) {
+    .Post_card {
+        width:268px !important;
+        transition: width 2s ease ;
+        background-color: red;
+    }
+    .Post {
+        width: 268px;
+    }
+}
+
 .Post_top_green {
     background-color: rgba(13, 238, 13, 0.733);
     width: 100%;
