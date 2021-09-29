@@ -10,9 +10,9 @@
 }
 
 .ModalPost2 {
-    max-width: 1000px !important;
-    max-height: 570px !important;
-    height: 85% !important;
+    max-width: 1000px ;
+    max-height: 570px ;
+    height: 85%;
     margin: auto auto;
     width: 65%;
     padding: 0px !important;
@@ -140,7 +140,7 @@
     font-size: 13px !important;
     text-decoration: underline !important;
     margin:0px;
-    margin-bottom: 2px;
+    margin-bottom: 0px;
 }
 .textRssPost{
     font-size: 13px;
@@ -190,4 +190,46 @@
 }
 .keywords .HashtagDiv {
     margin-right: 5px;
+}
+@media screen and (max-width : 1500px) {
+    .ModalPost2{
+        width: 74%;
+    }
+}
+@media screen and (max-width : 1300px) {
+    .ModalPost2{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width : 1200px) {
+    .ModalPost2{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width : 1050px) {
+    .ModalPost2{
+        width: 98%;
+    }
+}
+@media screen and (max-width : 1000px) {
+    .modalBase{
+        width: 70%;
+        display: block;
+    }
+    .graphsRss{
+        display: none;
+    }
+    .PostContentRss{  
+        display: block;  
+        overflow-y: scroll;
+    }
+    .postContent{  
+
+        display: block;
+    }
+    .PostImage{
+        height: 200px;
+    }
 }
