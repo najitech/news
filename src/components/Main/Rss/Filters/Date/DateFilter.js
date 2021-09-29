@@ -1,36 +1,42 @@
 import 'date-fns';
 import React from 'react';
-import DateFnsUtils from '@date-io/date-fns';
-import persian from "react-date-object/calendars/persian"
-import persian_fa from "react-date-object/locales/persian_fa"
-import DatePicker from "react-multi-date-picker"
-import CustomInputDF from './CustomInputDF';
+import persian from "react-date-object/calendars/persian";
+import persian_fa from "react-date-object/locales/persian_fa";
+import DatePicker from "react-multi-date-picker";
 import "react-multi-date-picker/styles/colors/red.css"
-import {
-  MuiPickersUtilsProvider,
-  KeyboardDatePicker,
-} from '@material-ui/pickers';
-import './DateFilter.css'   
-
-import InputIcon from "react-multi-date-picker/components/input_icon"
-function DateFilter() {
+import './DateFilter.css';
+import "react-multi-date-picker/styles/layouts/mobile.css";
+import transition from "react-element-popper/animations/transition";
+import InputIcon from "react-multi-date-picker/components/input_icon";
+function DateFilter(props) {
     return (
         <div className="dateFilter">
-            <div>
+            <div className="dateInputPicker">
                 <DatePicker
-                    className="red"
+                    className={['red' , props.mobile ? "rmdp-mobile" : ''].join(" ")}
                     calendar={persian}
                     locale={persian_fa}
-                    calendarPosition="bottom"
-                    render={<InputIcon style={{fontFamily:"shabnam" ,color:'rgb(100, 100, 100)', fontSize:"12px" , padding:"5px" , width:"100%"}} placeholder="تاریخ شروع"/>}
+                    mobileLabels={props.mobile ?{
+                        OK: "Accept",
+                        CANCEL: "Close",
+                      } : {}}
+                    calendarPosition={props.mobile ? 'bottom-right' :"bottom"}
+                    animations={[transition()]} 
+                    render={<InputIcon className="inputDatepicker" style={{fontFamily:"shabnam" ,color:'rgb(100, 100, 100)', fontSize:"12px" , padding:"5px" , width:"100%"}} placeholder="تاریخ شروع"/>}
                 /> 
             </div> 
-            <div>   
+            <div className="dateInputPicker">   
                 <DatePicker
-                    className=" red"
+                    className={['red' , props.mobile ? "rmdp-mobile" : ''].join(" ")}
+                    animations={[transition()]} 
                     calendar={persian}
+                    mobileLabels={props.mobile ?{
+                        OK: "Accept",
+                        CANCEL: "Close",
+                      } : {}}
+                    calendarPosition={props.mobile ? 'bottom-right' :"bottom"}
                     locale={persian_fa}
-                    calendarPosition="bottom" render={<InputIcon style={{fontFamily:"shabnam" ,color:'rgb(100, 100, 100)', fontSize:"12px" , padding:"5px" , width:"100%"}} placeholder="تاریخ پایان"/>}
+                     render={<InputIcon className="inputDatepicker" style={{fontFamily:"shabnam" ,color:'rgb(100, 100, 100)', fontSize:"12px" , padding:"5px" , width:"100%"}} placeholder="تاریخ پایان"/>}
                 />
             </div> 
         </div>

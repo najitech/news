@@ -7,7 +7,7 @@ import Positiveness from './Positiveness/Positiveness'
 import TagsFilter from './Tags/TagsFilter'
 import SitesFilter from './SitesFilter/SitesFilter'
 import NERfilter from './NER/NERfilter'
-function Filters() {
+function Filters(props) {
     return (
         <div className="Filters">
             <form>  
@@ -16,7 +16,7 @@ function Filters() {
                         <Categories/>
                     </Accardion> 
                     <Accardion title="تاریخ">
-                        <DateFilter/>
+                        <DateFilter mobile={props.mobile}/>
                     </Accardion>
                     <Accardion title="هشتگ">
                         <TagsFilter/>   

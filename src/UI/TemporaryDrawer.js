@@ -40,7 +40,7 @@ export default function TemporaryDrawer(props) {
 
   return (
     <div>
-      {[props.dir].map((anchor) => (
+      {["right"].map((anchor) => (
         <React.Fragment key={anchor}>
           <Button className={props.class} onClick={toggleDrawer(anchor, true)}><GiHamburgerMenu/></Button>
           <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>

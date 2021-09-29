@@ -2,9 +2,26 @@
     padding: 0px 0px;
     display: flex;
     margin-bottom: 10px !important;
+    text-align: center;
     flex-direction: column;
+    width: 100%;
 }
 .datePicker{
-        margin-top: 0px !important;
-        margin-left: 5px !important;
+
+    margin-top: 0px !important;
+    margin-left: 5px !important;
 }  
+.dateInputPicker{
+    margin: auto;
+}
+.inputDatepicker{
+    height: 40px;
+    font-size:13px !important;
+    border: none;
+    margin-bottom: 3px !important;
+    border-bottom : 1px solid grey !important;
+}
+.inputDatepicker:focus{
+    border-bottom : 1px solid grey !important;
+    outline: none !important;
+}
