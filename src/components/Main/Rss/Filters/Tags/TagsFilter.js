@@ -27,7 +27,7 @@ function TagsFilter(props) {
                 <Input placeholder="تگ را وارد کنید"
                  size="small" 
                  Icon={AiFillTag}
-                  class="inputStyle"
+                  class="inputFilterStyle"
                   value={tagFilter}
                   onChange={(e)=>{setTagFilter(e.target.value)}}/>
                 <Button onClick={addTagHandler} className="addTag">افزودن</Button>

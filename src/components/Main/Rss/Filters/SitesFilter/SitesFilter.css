@@ -11,3 +11,7 @@
     width: 90% !important;
     padding : 0px !important
 }
+.switchsiteFilterLabel{
+    padding-right: 4px;
+    font-size: 13px;
+}
