@@ -9,6 +9,8 @@
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
     margin-bottom: 10px;
+    width: 250px;
+    margin-top: 5px;
   }
   @media screen and (max-width : 1279px) {
     .Filters {

@@ -259,8 +259,8 @@ const Dashboard = () => {
                   <div className="progress-group">
                     <div className="progress-group-header">
                       <BiWorld style={{fontSize:"22px"}} className="progress-group-icon" name="cil-globe-alt" />
-                      <span className="title">Organic Search</span>
-                      <span className="ml-auto font-weight-bold">191,235 <span className="text-muted small">(56%)</span></span>
+                      <span className="title">Organic Search&nbsp;</span>
+                      <span className="ml-auto font-weight-bold">&nbsp;191,235 <span className="text-muted small">(56%)</span></span>
                     </div>
                     <div className="progress-group-bars">
                       <CProgress className="progress-xs" color="success" value="56" />
@@ -271,8 +271,8 @@ const Dashboard = () => {
                   <div className="progress-group">
                     <div className="progress-group-header">
                       <AiFillFacebook style={{fontSize:"22px"}} className="progress-group-icon"/>
-                      <span className="title">Facebook</span>
-                      <span className="ml-auto font-weight-bold">51,223 <span className="text-muted small">(15%)</span></span>
+                      <span className="title">Facebook&nbsp;</span>
+                      <span className="ml-auto font-weight-bold">&nbsp;51,223 <span className="text-muted small">(15%)</span></span>
                     </div>
                     <div className="progress-group-bars">
                       <CProgress className="progress-xs" color="success" value="15" />
@@ -281,8 +281,8 @@ const Dashboard = () => {
                   <div className="progress-group">
                     <div className="progress-group-header">
                       <AiFillTwitterSquare style={{fontSize:"23px"}} name="cib-twitter" className="progress-group-icon"/>
-                      <span className="title">Twitter</span>
-                      <span className="ml-auto font-weight-bold">37,564 <span className="text-muted small">(11%)</span></span>
+                      <span className="title">Twitter&nbsp;</span>
+                      <span className="ml-auto font-weight-bold">&nbsp;37,564 <span className="text-muted small">(11%)</span></span>
                     </div>
                     <div className="progress-group-bars">
                       <CProgress className="progress-xs" color="success" value="11" />
@@ -291,8 +291,8 @@ const Dashboard = () => {
                   <div className="progress-group">
                     <div className="progress-group-header">
                       <FaRssSquare name="cib-linkedin" style={{fontSize:"20px"}} className="progress-group-icon" />
-                      <span className="title">RSS </span>
-                      <span className="ml-auto font-weight-bold">27,319 <span className="text-muted small">(8%)</span></span>
+                      <span className="title">RSS&nbsp;</span>
+                      <span className="ml-auto font-weight-bold">&nbsp;27,319 <span className="text-muted small">(8%)</span></span>
                     </div>
                     <div className="progress-group-bars">
                       <CProgress className="progress-xs" color="success" value="8" />

@@ -187,7 +187,7 @@ export default function ModalPost(props) {
                       series={donChart.series}
                       type="donut"  
                       width="350px"
-                      height="300px"
+                      height="auto"
                     />
                      <Chart
                     options={chart.options}
@@ -202,11 +202,11 @@ export default function ModalPost(props) {
                   <div className="PostImage">
                     <img width="100%" src={props.image} alt={props.title}/>
                     <div className="tites">
+                      <p className="publishDatePost">تاریخ انتشار : {(props.publish_date)} </p>
                       <h3>{props.title}</h3>
                     </div>
                   </div> 
                   <div className="textAreaRss">  
-                    <p className="publishDatePost">تاریخ انتشار : {(props.publish_date)} </p>
                     <p className="textRssPost">
                       {props.text}
                     </p>
