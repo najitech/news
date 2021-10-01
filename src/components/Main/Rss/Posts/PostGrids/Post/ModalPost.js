@@ -189,7 +189,7 @@ export default function ModalPost(props) {
                       width="350px"
                       height="auto"
                     />
-                     <Chart
+                  <Chart
                     options={chart.options}
                     series={chart.series}
                     type="bar"
@@ -232,7 +232,6 @@ export default function ModalPost(props) {
                       <Hashtag/>
                       <Hashtag/>  
                     </div>
-
                   </div>  
                 </div>
               </div>

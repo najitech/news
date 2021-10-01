@@ -1,0 +1,58 @@
+.modalPostRes{
+    width: 100%;
+    position: relative;
+    margin: auto auto;
+    padding: 0px !important;
+    height: 85%;
+    overflow-y:hidden;
+    text-align: right;
+}
+.modalBaseRes{
+    background-color: white;
+    width: 80%;
+    padding: 10px 10px 10px 5px;
+    height: 100%;
+    overflow-y:scroll;
+    position: relative;
+    border-radius: 5px;
+}
+.imageContainerResModal{
+    width: 100%;
+    overflow: hidden;
+    height: 40%;
+    position: relative;
+}
+.imageContainerResModal img{
+    width: 100%;
+}
+.imageHoverRes{
+    z-index: 10;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    color: white;
+    position: absolute;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.514);
+    
+}
+
+.publishDatePost{
+    padding:0px 4px;
+    padding-top: 4px;
+    font-size: 13px !important;
+    text-decoration: underline !important;
+    margin:0px;
+    margin-bottom: 0px;
+}
+.imageHoverRes h3{
+    padding: 10px;
+    font-size: 18px;
+}
+.postContentModalRes{
+
+}
+.chartsModalRes{
+    
+}   
