@@ -51,7 +51,7 @@ function Navbar() {
               </div>
               <div className={item3 ? 'activeBar' : ""}>
                 <FaTwitter className="navIcon"  style={{color:"rgb(28,156,234)"}}/>
-                <Link className="navLink" to="/Twitter">Twitter</Link>
+                <Link className="navLink" to="/Twitter">توییتر</Link>
               </div>
           </Toolbar>
         </AppBar>
