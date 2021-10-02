@@ -84,7 +84,7 @@
 @media screen and (max-width : 759px) {
     
     .imageContainerResModal{
-        height: 30%;
+        height: 25%;
     }
 }
 @media screen and (max-width : 600px) {
@@ -94,10 +94,25 @@
     .chartOriginalResModal:last-child{
         flex:0.7;
     }
+    .imageContainerResModal{
+        height: 30%;
+    }
 }
 @media screen and (max-width : 550px) {
     .chartOriginalResModal{
         display: block;
         margin: -5px 0px;
+    }
+    .imageContainerResModal{
+        height: 25%;
+    }
+}
+@media screen and (max-width : 380px) {
+    .chartOriginalResModal{
+        display: block;
+        margin: -5px 0px;
+    }
+    .imageContainerResModal{
+        height: 20%;
     }
 }
