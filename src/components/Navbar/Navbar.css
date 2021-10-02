@@ -1,8 +1,10 @@
 .Navbar {
     margin-bottom : 10px;
+    padding: 0px !important;
 }
 .AppBar {
     height: 40px;
+    padding: 0px !important;
     display: flex;
     background-color: rgb(255, 255, 255);
     box-shadow : 0.0px 0.4px 2px 0.4px rgb(238, 238, 238);
@@ -11,12 +13,44 @@
 }
 .AppBar div{
     text-align: center;
-    color: black;
+    color: rgb(163, 163, 163);   
+    font-size: 15px;
+    padding: 11px 0px;
+    align-items: center;
+    border-radius: 2px;
+    border-bottom: solid 3px white;
+    width: 300px;
+}
+.activeBar{
+    border-bottom: solid 3px #259FFB !important;
+}
+.activeBar .navIcon{
+}
+.activeBar .navLink{
+    color : #259FFB ;
+}
+.activeBar:hover .navLink{
+    color: #259FFB;
+}
+.navIcon{
+    font-size: 20px;
+    margin-left: 4px;
+    color: rgb(61, 61, 61);
+}
+.AppBar div:hover{  
+    border-bottom: solid 3px rgb(58, 58, 58);
+    transition: 0.3s border ease-out;
 }
 .navLink{
     color: rgb(61, 61, 61);
     line-height: 1.5em;
+    width: 100%;
     text-decoration: none;
+}
+.navLink:hover{
+    text-decoration: none;
+    color: black;
+    
 }
 .tnavFilters{
     position: absolute;

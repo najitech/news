@@ -8,6 +8,7 @@ import Chart from 'react-apexcharts';
 import Hashtag from '../../../../../../../UI/Hashtag';
 import CustomizedProgressBars from '../LinearProgress/CustomizedProgressBars';
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
+import { useMediaQuery } from 'react-responsive';
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     modal: {
@@ -23,10 +24,34 @@ const useStyles = makeStyles((theme: Theme) =>
     },
   }),
 );
-
 function ModalResponsive(props) {
     const classes = useStyles();
     const [chart , setChart] = useState({
+        options: {
+          chart: {
+            id: "basic-bar",
+            toolbar : {
+                show : false,
+            },
+          },
+          plotOptions: {
+            bar: {
+              borderRadius: 4,
+            }
+          },
+          xaxis: {
+            categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]
+          }
+        },
+        
+        series: [
+          {
+            name: "series-1",
+            data: [30, 40, 45, 50, 49, 60, 70, 91]
+          }
+        ]
+      });
+      const [chart2 , setChart2 ] = useState({
         options: {
           chart: {
             id: "basic-bar",
@@ -149,7 +174,10 @@ function ModalResponsive(props) {
             }
           }
         },
-      })
+      });
+      const nowItsTheTime = useMediaQuery({query :'(max-width: 759px)'});
+      const timeToBack = useMediaQuery({query : "(max-width : 550px)"})
+      
     return (
         <div className="modalRes">
         <Modal
@@ -175,6 +203,8 @@ function ModalResponsive(props) {
                     </div>
                 </div>
                 <div className="postContentModalRes">
+                    <p style={{fontSize:'10px' , textDecoration:"underline"}}>تاریخ انتشار : {(props.publish_date)} </p>
+                    <h3 style={{fontSize:'18px'}}>{props.title}</h3>
                     <p>
                       {props.text}
                     </p>
@@ -194,37 +224,46 @@ function ModalResponsive(props) {
                     <PostTag text="کلمات کلیدی :" fontSize="13px" padding="0px" backGroundColor="white" color="black" marginP="0px" paddingP="0px"/>
                     <div className="keywords_tags">
                       <Hashtag/>
-                      <Hashtag/>
+                      <Hashtag/>  
                       <Hashtag/>
                       <Hashtag/>  
                     </div>
                 </div> 
                 <div className="chartsModalRes">
+                      <div className="chartOriginalResModal">
+                        <div>
+                          {nowItsTheTime && !timeToBack ? <Chart
+                        options={chart2.options}
+                        series={chart2.series}
+                        type="bar"
+                        height="200px"
+                        /> : <Chart
+                        options={chart.options}
+                        series={chart.series}
+                        type="bar"
+                        height="200px"
+                        />}
+                          </div>
+                        <div >
+                        <Chart
+                        options={donChart.options}
+                        series={donChart.series}
+                        type="donut" 
+                        height="200px"
+                        />
+                        </div>
+                    </div>
                     <div>
+                    </div>
+                    
+                    <div className="squarChartRes">
                         <Chart
                         options={distributedChart.options}
                         series={distributedChart.series}
                         type="treemap"
                         wi  dth="100%"
-                        height="300px"
+                        height="200px"
                         className="ChartStyleClassRssModal"
-                        />
-                    </div>
-                    <div>
-                        <Chart
-                        options={donChart.options}
-                        series={donChart.series}
-                        type="donut"  
-                        width="350px"
-                        height="auto"
-                        />
-                    </div>
-                    <div>
-                        <Chart
-                        options={chart.options}
-                        series={chart.series}
-                        type="bar"
-                        height="250px"
                         />
                     </div>
                 </div>

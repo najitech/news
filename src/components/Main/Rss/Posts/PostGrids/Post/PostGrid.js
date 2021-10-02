@@ -9,6 +9,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import PostTags from './PostTags';
+import { useMediaQuery } from 'react-responsive'
 import ModalPost from './ModalPost';
 import PostHashtags from './PostHashtags';
 import {TiKey} from 'react-icons/ti'
@@ -53,7 +54,7 @@ function Post(props) {
       if (props.good){
         bordercolor="Post_border_green";
       }
-
+    const isMobileScreen = useMediaQuery({query :'(max-width : 1000px)'});
     return (
         <div  className="Post">
 
@@ -70,9 +71,12 @@ function Post(props) {
                 {postdate.toLocaleString()}
             </div>
             */}
-
-            <ModalResponsive  open={open} setOpen={setOpen} image={props.image} title={props.title} text={props.news_text} publish_date={props.publish_date} handleClose={handleClose} PostProps={props} />
-            <Card onClick={handleOpen}  className={classes.root ,"Post_card"}>
+            {!isMobileScreen ? 
+                <ModalPost  open={open} setOpen={setOpen} image={props.image} positiveness={10} title={props.title} text={props.news_text} publish_date={props.publish_date} handleClose={handleClose} PostProps={props} />
+             :
+             <ModalResponsive  open={open} setOpen={setOpen} image={props.image} positiveness={10} title={props.title} text={props.news_text} publish_date={props.publish_date} handleClose={handleClose} PostProps={props} />
+             }
+             <Card onClick={handleOpen}  className={classes.root ,"Post_card"}>
                 <CardActionArea className="postBody">
                     <CardMedia
                     className={[classes.media , "PostGrid_image"].join(" ") }

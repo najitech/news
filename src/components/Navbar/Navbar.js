@@ -7,10 +7,12 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import './Navbar.css'
 import {GiHamburgerMenu} from 'react-icons/gi'
-import {Link} from 'react-router-dom'
+import {Link ,useRouteMatch} from 'react-router-dom'
+import {MdDashboard} from 'react-icons/md'
 import { Drawer } from '@material-ui/core';
+import {FaRssSquare ,FaTwitter} from 'react-icons/fa'
 import TemporaryDrawer from '../../UI/TemporaryDrawer';
-
+import TabPanel from './tabPanel/TabPanel';
 const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
@@ -21,18 +23,34 @@ const useStyles = makeStyles((theme) => ({
   }));
   
 function Navbar() {
+
     const classes = useStyles();
+    let item1 = useRouteMatch({
+      path: '/',
+      exact: true
+    });
+    let item2 = useRouteMatch({
+      path: '/RSS',
+      exact: true
+    });
+    let item3 = useRouteMatch({
+      path: '/Twitter',
+      exact: true
+    });
     return (
       <div className={classes.root , 'Navbar'}>
-        <AppBar className="AppBar" position="static">
+        <AppBar  position="static">
           <Toolbar className="AppBar" variant="dense">
-              <div>
-                <Link className="navLink" to="/">Home</Link>
+              <div className={item1 ? 'activeBar' : ""}>
+                <MdDashboard className="navIcon" style={{color : "#F50057"}}/>
+                <Link className="navLink" to="/">داشبورد</Link>
               </div>
-              <div>
-                <Link className="navLink" to="/RSS">RSS</Link>
+              <div className={item2 ? 'activeBar' : ""}>
+                <FaRssSquare className="navIcon" style={{color:"#F38203"}}/>
+                <Link className="navLink" to="/RSS">خبرخوان</Link>
               </div>
-              <div>
+              <div className={item3 ? 'activeBar' : ""}>
+                <FaTwitter className="navIcon"  style={{color:"rgb(28,156,234)"}}/>
                 <Link className="navLink" to="/Twitter">Twitter</Link>
               </div>
           </Toolbar>
