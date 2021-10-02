@@ -213,23 +213,3 @@
         width: 98%;
     }
 }
-@media screen and (max-width : 1000px) {
-    .modalBase{
-        width: 70%;
-        display: block;
-    }
-    .graphsRss{
-        display: none;
-    }
-    .PostContentRss{  
-        display: block;  
-        overflow-y: scroll;
-    }
-    .postContent{  
-
-        display: block;
-    }
-    .PostImage{
-        height: 200px;
-    }
-}
