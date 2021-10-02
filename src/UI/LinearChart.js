@@ -6,9 +6,7 @@ import Chart from "react-apexcharts";
 let tempvar = {
   options: {
     chart: {
-      toolbar : {
-        show:false
-      },
+
       id: "basic-bar"
     },
 
@@ -26,9 +24,9 @@ let tempvar = {
 let tempvar2 = {
   options: {
     chart: {
-      toolbar : {
+    toolbar : {
         show:false
-      },
+    },
       id: "basic-bar"
     },
 
@@ -53,7 +51,7 @@ function LinearChart(props) {
                 options={tempvar.options}
                 series={tempvar.series}
                 type={props.type}
-                width="103%"
+                width="103.2%"
                 height="150px"
                 className="LinearChart_chart"
               />
