@@ -19,11 +19,14 @@
 .imageContainerResModal{
     width: 100%;
     overflow: hidden;
-    height: 40%;
+    box-shadow: 0.0px 1.0px 2px 0.3px rgb(168, 166, 166);
+    height: 30%;
+    border-radius: 5px;
     position: relative;
 }
 .imageContainerResModal img{
     width: 100%;
+    border-radius: 5px;
 }
 .imageHoverRes{
     z-index: 10;
@@ -35,9 +38,13 @@
     position: absolute;
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.514);
-    
+    opacity: 0;
+    transition: 0.3s opacity ease-in;
 }
-
+.imageHoverRes:hover{
+    opacity: 1;
+    transition: 0.3s opacity ease-out;
+}
 .publishDatePost{
     padding:0px 4px;
     padding-top: 4px;
@@ -51,8 +58,14 @@
     font-size: 18px;
 }
 .postContentModalRes{
-
+    height: 200px;
+    overflow-y: scroll;
+    padding:0px 10px;
 }
-.chartsModalRes{
-    
+.chartsModalRes div{
+    margin: auto auto;
 }   
+.squarChartRes{
+    width: 97%;
+    margin: 0px auto;
+}

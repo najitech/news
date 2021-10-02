@@ -37,7 +37,6 @@ function ModalResponsive(props) {
           plotOptions: {
             bar: {
               borderRadius: 4,
-              horizontal: true,
             }
           },
           xaxis: {
@@ -175,6 +174,8 @@ function ModalResponsive(props) {
                     </div>
                 </div>
                 <div className="postContentModalRes">
+                    <p style={{fontSize:'10px' , textDecoration:"underline"}}>تاریخ انتشار : {(props.publish_date)} </p>
+                    <h3 style={{fontSize:'18px'}}>{props.title}</h3>
                     <p>
                       {props.text}
                     </p>
@@ -194,20 +195,19 @@ function ModalResponsive(props) {
                     <PostTag text="کلمات کلیدی :" fontSize="13px" padding="0px" backGroundColor="white" color="black" marginP="0px" paddingP="0px"/>
                     <div className="keywords_tags">
                       <Hashtag/>
-                      <Hashtag/>
+                      <Hashtag/>  
                       <Hashtag/>
                       <Hashtag/>  
                     </div>
                 </div> 
                 <div className="chartsModalRes">
-                    <div>
+                      <div>
                         <Chart
-                        options={distributedChart.options}
-                        series={distributedChart.series}
-                        type="treemap"
-                        wi  dth="100%"
-                        height="300px"
-                        className="ChartStyleClassRssModal"
+                        options={chart.options}
+                        series={chart.series}
+                        type="bar"
+                        width="100%"
+                        height="200px"
                         />
                     </div>
                     <div>
@@ -215,16 +215,19 @@ function ModalResponsive(props) {
                         options={donChart.options}
                         series={donChart.series}
                         type="donut"  
-                        width="350px"
-                        height="auto"
+                        width="100%"
+                        height="175px"
                         />
                     </div>
-                    <div>
+                    
+                    <div className="squarChartRes">
                         <Chart
-                        options={chart.options}
-                        series={chart.series}
-                        type="bar"
-                        height="250px"
+                        options={distributedChart.options}
+                        series={distributedChart.series}
+                        type="treemap"
+                        wi  dth="100%"
+                        height="200px"
+                        className="ChartStyleClassRssModal"
                         />
                     </div>
                 </div>
