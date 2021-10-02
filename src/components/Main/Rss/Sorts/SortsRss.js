@@ -11,7 +11,7 @@ import MoreVertIcon from '@material-ui/icons/MoreVert';
 import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
-import { useMediaQuery } from '@material-ui/core';
+import { useMediaQuery } from 'react-responsive';
 import {BiSortUp} from 'react-icons/bi'
 function SortsRss(props) {
     const [anchorEl, setAnchorEl] = React.useState(null);
@@ -30,7 +30,8 @@ function SortsRss(props) {
       setSortType(e.target.value);
       setAnchorEl(null);
     };
-    const buttonName = ['جدید ترین' , 'قدیمی ترین' , 'پربازدید ترین' , 'کم بازدید ترین'];
+    const mobileSize = useMediaQuery({query :'(max-width : 580px)'});
+    const buttonName = ['جدیدترین' , 'قدیمی ترین' , 'پربازدیدترین' , 'کم بازدیدترین'];
     return (    
         <div className="SortsRss">
 
@@ -46,7 +47,10 @@ function SortsRss(props) {
             <div className="barAsasRss">   
                 <MdSort className="sortIconRss"/>
                 <p>مرتب سازی بر اساس :  </p>
-                <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>{buttonName[sortType-1]}<BiSortUp style={{fontSize:22 ,paddingRight:'5px' , color:  'rgb(60,60,60)'}} /></Button>
+                {!mobileSize ? 
+                <SortItems/>
+                :<>
+                <Button aria-controls="simple-menu" className="menuButtonRssSort" aria-haspopup="true" onClick={handleClick}>{buttonName[sortType-1]}<BiSortUp style={{fontSize:22 ,paddingRight:'5px' , color:  'rgb(60,60,60)'}} /></Button>
                 <Menu
                 id="simple-menu"
                 anchorEl={anchorEl}
@@ -54,11 +58,13 @@ function SortsRss(props) {
                 open={Boolean(anchorEl)}
                 onClose={handleClose}
             >
-                <MenuItem value={1} onClick={handleClose}>جدید ترین</MenuItem>
-                <MenuItem value={2} onClick={handleClose}>قدیمی ترین</MenuItem>
-                <MenuItem value={3} onClick={handleClose}>پربازدید ترین</MenuItem>
-                <MenuItem value={4} onClick={handleClose}>کم بازدید ترین</MenuItem>
+                <MenuItem value={1} className="menuItemRss" onClick={handleClose}>جدیدترین</MenuItem>
+                <MenuItem value={2}  className="menuItemRss" onClick={handleClose}>قدیمی ترین</MenuItem>
+                <MenuItem value={3} className="menuItemRss" onClick={handleClose}>پربازدیدترین</MenuItem>
+                <MenuItem value={4} className="menuItemRss" onClick={handleClose}>کم بازدیدترین</MenuItem>
             </Menu>
+            </>
+                }
                </div>
         </div>
     )

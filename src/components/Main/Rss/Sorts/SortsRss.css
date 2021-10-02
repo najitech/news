@@ -53,3 +53,9 @@
         display: none;
     }
 }
+.menuItemRss{
+    font-size: 12px !important;
+}
+.menuButtonRssSort{
+    font-size: 12px !important;
+}
