@@ -56,7 +56,7 @@ export default function CustomizedDividers() {
   const classes = useStyles();
 
   return (
-    <div>
+    <div className="SortItems">
       <Paper  elevation={0} className={classes.paper}>
         <StyledToggleButtonGroup
           size="small"

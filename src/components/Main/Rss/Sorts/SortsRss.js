@@ -24,8 +24,10 @@ function SortsRss(props) {
       setAnchorEl(null);
     };
   
+
     return (    
         <div className="SortsRss">
+
             <ToggleButtonGroup  className="togSort" value={props.view} exclusive onChange={props.handleChange}>
             <ToggleButton   size="small" value="list" aria-label="list">
                 <ViewListIcon />
@@ -34,6 +36,7 @@ function SortsRss(props) {
                 <ViewModuleIcon />
             </ToggleButton>
             </ToggleButtonGroup>
+
             <div className="barAsasRss">   
                 <MdSort className="sortIconRss"/>
                 <p>مرتب سازی بر اساس :  </p>

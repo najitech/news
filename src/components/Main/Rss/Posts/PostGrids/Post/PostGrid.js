@@ -97,6 +97,7 @@ function Post(props) {
                     <div className="Post_footer">
                         <p className="Post_footer_title"> کلمات کلیدی : </p>
                         <PostHashtags/>
+                        <p className="Post_footer_date"> {postdate.toDateString()}</p>
                     </div>
 
                 </CardActionArea>

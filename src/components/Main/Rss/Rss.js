@@ -6,13 +6,18 @@ import LinearChart from '../../../UI/LinearChart';
 import SortsRss from './Sorts/SortsRss';
 import PostLists from './Posts/PostLists/PostLists';
 import PostGrids from './Posts/PostGrids/PostGrids'
-
+import { useMediaQuery } from 'react-responsive'
 
 function Rss() {
     const [view, setView] = React.useState('module');
+    const ShowModule = useMediaQuery({ query: '(max-width: 760px)' })
 
     const handleChange = (event, nextView) => {
-      setView(nextView);
+        if(nextView!==null)
+        {
+            setView(nextView);
+        }
+
     };
     return (
         <div className='Rss'>
@@ -26,10 +31,15 @@ function Rss() {
                     </div>
                 </div>  
                 <div className="RssContainer_bottom">
-                    {view === 'module' ?
+                    {ShowModule ? 
+                    <PostGrids/> :
+                    view === 'module' ?
                     <PostGrids/>
                     :
+                    view === 'list'?
                     <PostLists/>
+                    :
+                    <PostGrids/>
                     }
                 </div>
          

@@ -40,3 +40,16 @@
     color: rgb(61, 61, 61);
     margin: 0px 5px;
 }
+@media screen  and (max-width :760px){ 
+    .togSort {
+        display: none !important;
+    }
+    .SortsRss {
+        justify-content: right;
+    }
+}
+@media screen  and (max-width :573px){ 
+    .SortItems {
+        display: none;
+    }
+}

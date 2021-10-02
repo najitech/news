@@ -1,3 +1,5 @@
 .PostListTags {
     display: flex;
+    flex : 0.4;
+    justify-content: left;
 }
