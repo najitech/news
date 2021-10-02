@@ -1,7 +1,8 @@
 .LinearChart2 {
     display: none;
 }
-@media screen  and (max-width :573px){ 
+
+@media screen  and (max-width :580px){ 
     .LinearChart1 {
         display: none;
     }
