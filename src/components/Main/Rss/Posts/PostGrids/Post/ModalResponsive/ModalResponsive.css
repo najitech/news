@@ -88,7 +88,7 @@
     }
 }
 @media screen and (max-width : 600px) {
-    .chartOriginalResModal:first-child{
+        .chartOriginalResModal:first-child{
         flex: 0.3;
     }
     .chartOriginalResModal:last-child{
