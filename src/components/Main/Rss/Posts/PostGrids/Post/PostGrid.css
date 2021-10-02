@@ -309,4 +309,18 @@
     
 }
 
+@media screen and (max-width : 430px) {
+    .Post_news_text {
+        -webkit-line-clamp: 4; 
+    }
+}
+@media screen and (max-width : 390px) {
+    .Post_news_text {
+        -webkit-line-clamp: 3; 
+    }
+    .PostGrid_image {
+        height: 180px !important;
+    }
+}
+
 

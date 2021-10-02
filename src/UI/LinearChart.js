@@ -23,19 +23,52 @@ let tempvar = {
     }
   ]
 };
+let tempvar2 = {
+  options: {
+    chart: {
+      toolbar : {
+        show:false
+      },
+      id: "basic-bar"
+    },
 
-function LinearChart() {
+    xaxis: {
+      categories: [1998, 1999 ,2000 ,2001 , 2002, 2003, 2004 , 2005]
+    }
+  },
+  series: [
+    {
+      name: "series-1",
+      data: [91 ,20 , 80 , 60 , 45 , 85 , 100]
+    }
+  ]
+};
+
+function LinearChart(props) {
 
     return (
-        <div className="LinearChart">
-            <Chart
-              options={tempvar.options}
-              series={tempvar.series}
-              type="area"
-              width="103%"
-              height="150px"
-              className="LinearChart_chart"
-            />
+        <div>
+          <div className="LinearChart1">
+              <Chart
+                options={tempvar.options}
+                series={tempvar.series}
+                type={props.type}
+                width="103%"
+                height="150px"
+                className="LinearChart_chart"
+              />
+          </div>
+          <div className="LinearChart2">
+              <Chart
+                options={tempvar2.options}
+                series={tempvar2.series}
+                type={props.type}
+                width="103%"
+                height="150px"
+                className="LinearChart_chart2"
+              />
+          </div>
+
         </div>
     )
 }

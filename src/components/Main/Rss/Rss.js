@@ -25,7 +25,15 @@ function Rss() {
             <div className="RssContainer"> 
                 <div className="RssContainer_top">
                     <Search/>
-                    <LinearChart/> 
+                    <div className="Rss_chart">
+                    {
+                        ShowModule?
+                        <LinearChart type="bar"/> 
+                        :
+                        <LinearChart type="area"/> 
+                    }
+                    </div>
+                    
                     <div className="filterSearch">
                         <SortsRss view={view} handleChange={handleChange}/>
                     </div>
