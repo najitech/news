@@ -63,7 +63,7 @@ function LinearChart(props) {
                 options={tempvar2.options}
                 series={tempvar2.series}
                 type={props.type}
-                width="103%"
+                width="106.5%"
                 height="150px"
                 className="LinearChart_chart2"
               />
