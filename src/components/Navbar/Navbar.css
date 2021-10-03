@@ -21,10 +21,27 @@
     border-bottom: solid 3px white;
     width: 300px;
 }
+
+.activeBar1{
+    border-bottom: #F50057 3px solid !important;
+}
+.activeBar1 .navLink{
+    color : #F50057;
+}
+.activeBar1:hover .navLink{
+    color : #F50057;
+}
+.activeBar2{
+    border-bottom: #F38203 3px solid !important;
+}
+.activeBar2 .navLink{
+    color : #F38203;
+}
+.activeBar2:hover .navLink{
+    color : #F38203;
+}
 .activeBar{
     border-bottom: solid 3px #259FFB !important;
-}
-.activeBar .navIcon{
 }
 .activeBar .navLink{
     color : #259FFB ;
@@ -44,7 +61,7 @@
 .navLink{
     color: rgb(61, 61, 61); 
     line-height: 1.5em;
-    width: 100%;
+   
     text-decoration: none;
 }
 .navLink:hover{

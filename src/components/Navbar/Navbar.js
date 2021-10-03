@@ -41,18 +41,24 @@ function Navbar() {
       <div className={classes.root , 'Navbar'}>
         <AppBar  position="static">
           <Toolbar className="AppBar" variant="dense">
-              <div className={item1 ? 'activeBar' : ""}>
-                <MdDashboard className="navIcon" style={{color : "#F50057"}}/>
-                <Link className="navLink" to="/">داشبورد</Link>
-              </div>
-              <div className={item2 ? 'activeBar' : ""}>
-                <FaRssSquare className="navIcon" style={{color:"#F38203"}}/>
-                <Link className="navLink" to="/RSS">خبرخوان</Link>
-              </div>
-              <div className={item3 ? 'activeBar' : ""}>
-                <FaTwitter className="navIcon"  style={{color:"rgb(28,156,234)"}}/>
-                <Link className="navLink" to="/Twitter">توییتر</Link>
-              </div>
+              <Link to="/" className="navLink">  
+                <div className={item1 ? 'activeBar1' : ""}>
+                  <MdDashboard className="navIcon" style={{color : "#F50057"}}/>
+                  <Link className="navLink" to="/">داشبورد</Link>
+                </div>
+              </Link>
+              <Link className="navLink" to="RSS">  
+                <div className={item2 ? 'activeBar2' : ""}>
+                  <FaRssSquare className="navIcon" style={{color:"#F38203"}}/>
+                  <Link className="navLink" to="/RSS">خبرخوان</Link>
+                </div>
+              </Link>
+              <Link className="navLink" to="/Twitter">  
+                <div className={item3 ? 'activeBar' : ""}>
+                  <FaTwitter className="navIcon"  style={{color:"rgb(28,156,234)"}}/>
+                  <Link className="navLink" to="/Twitter">توییتر</Link>
+                </div>
+              </Link>
           </Toolbar>
         </AppBar>
       </div>
