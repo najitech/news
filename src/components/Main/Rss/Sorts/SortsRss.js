@@ -48,18 +48,18 @@ function SortsRss(props) {
                 <p>مرتب سازی بر اساس :  </p>
                 <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>{buttonName[sortType-1]}<BiSortUp style={{fontSize:22 ,paddingRight:'5px' , color:  'rgb(60,60,60)'}} /></Button>
                 <Menu
-                id="simple-menu"
-                anchorEl={anchorEl}
-                keepMounted
-                open={Boolean(anchorEl)}
-                onClose={handleClose}
-            >
-                <MenuItem value={1} onClick={handleClose}>جدید ترین</MenuItem>
-                <MenuItem value={2} onClick={handleClose}>قدیمی ترین</MenuItem>
-                <MenuItem value={3} onClick={handleClose}>پربازدید ترین</MenuItem>
-                <MenuItem value={4} onClick={handleClose}>کم بازدید ترین</MenuItem>
-            </Menu>
-               </div>
+                    id="simple-menu"
+                    anchorEl={anchorEl}
+                    keepMounted
+                    open={Boolean(anchorEl)}
+                    onClose={handleClose}
+                >
+                    <MenuItem value={1} onClick={handleClose}>جدید ترین</MenuItem>
+                    <MenuItem value={2} onClick={handleClose}>قدیمی ترین</MenuItem>
+                    <MenuItem value={3} onClick={handleClose}>پربازدید ترین</MenuItem>
+                    <MenuItem value={4} onClick={handleClose}>کم بازدید ترین</MenuItem>
+                </Menu>
+            </div>
         </div>
     )
 }
