@@ -54,9 +54,7 @@
     }
 }
 @media screen and (max-width : 400px) {
-    .drawerRssFilter{
-        padding: 0px;
-    }
+    
     .search input{
         padding: 0px;
     }
