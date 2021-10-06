@@ -6,7 +6,6 @@ function TwitterContainer() {
     const [searchInput , setSearchInput] = useState("");
     const [searchType , setSearchType] = useState("");
     const [submitted , setSubmitted] = useState(false);
-    console.log(searchInput);
     return (
         <div className="twitterContianer">
            {!submitted ? <ProSearch value={searchInput} setSearchInput={setSearchInput} setSubmit={setSubmitted}/> : <TwitterResult/> }

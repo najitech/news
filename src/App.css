@@ -2,6 +2,7 @@
     height: 100vh;
     direction: rtl !important;
     text-align: right;
+    overflow-y: hidden;
 }
 p {
     display: block;

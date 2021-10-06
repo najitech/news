@@ -14,13 +14,19 @@
     text-align: center;
     padding: 40px;
 }
+
 .imagestyle h1{
     padding-top: 50px;
     font-size: 40px;
 }
+.toggleContainerSelect{
+    margin: 0px auto;
+    margin-top: 50px;
+    width: 800px !important;
+}
 .proSearchInput{
     margin: 0px auto;
-    margin-top: 50px ;
+    margin-top: 10px ;
     position: relative;
     width: 800px;
     border-radius: 30px;
