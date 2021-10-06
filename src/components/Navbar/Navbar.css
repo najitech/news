@@ -54,10 +54,21 @@
     margin-left: 5px;
     color: rgb(61, 61, 61);
 }
-.AppBar div:hover{  
-    border-bottom: solid 3px rgb(58, 58, 58);
+.AppBar div:first-child:hover{  
+    border-bottom: solid 3px #F50057;
     transition: 0.3s border ease-out;
 }
+.AppBar div:first-child:hover .navLink{color : #F50057;}
+.AppBar div:nth-child(2):hover{
+    border-bottom: solid 3px #F38203;
+    transition: 0.3s border ease-out;
+}
+.AppBar div:nth-child(2):hover .navLink {color : #F38203}
+.AppBar div:last-child:hover{
+    border-bottom: solid 3px #259FFB;
+    transition: 0.3s border ease-out;
+}
+.AppBar div:last-child:hover .navLink {color : #259FFB}
 .navLink{
     color: rgb(61, 61, 61); 
     line-height: 1.5em;
