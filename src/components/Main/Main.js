@@ -2,10 +2,8 @@ import React from 'react'
 import Rss from './Rss/Rss'
 import { Switch , Route } from 'react-router-dom'
 import './Main.css'
-import Home from './Home/Home'
-import Twitter from './Twitter/Twitter';
 import TheLayout from '../../containers/TheLayout'
-import { Drawer } from '@material-ui/core'
+import TwitterContainer from './Twitter/TwitterContainer'
 function Main() {
     return (
         <div className="Main">
@@ -17,7 +15,7 @@ function Main() {
                         <Rss/>
                     </Route>
                     <Route path="/Twitter">
-                        <Twitter/>
+                        <TwitterContainer/>
                     </Route>
                 </Switch>
         </div>
