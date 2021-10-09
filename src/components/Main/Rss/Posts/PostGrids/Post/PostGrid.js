@@ -31,10 +31,11 @@ theme.typography= {
 const useStyles = makeStyles({
     root: {
       maxWidth: 345,
+      height:360,
       boxShadow : '0.0px 0.3px 2px 0.3px rgb(220 , 220 , 220)'
     },
     media: {
-      height: 140,
+      height: 155,
     },
   });
 
@@ -83,7 +84,7 @@ function Post(props) {
                     image={props.image}
                     title={props.title}
                     />
-                    <CardContent>
+                    <CardContent className="CardContent">
                     <ThemeProvider theme={theme}>
                       <Typography className={["Post_title",bordercolor].join(" ")} gutterBottom>
                           {props.title}
@@ -93,17 +94,18 @@ function Post(props) {
                         {props.news_text}
                     </Typography>
                     </CardContent>
-                    <div className="PostGrid_Tag_Date">
-                      <PostTags/>
-                      
-                    </div>
+                    <div>
+                      <div className="PostGrid_Tag_Date">
+                        <PostTags/>
+                        
+                      </div>
 
-                    <div className="Post_footer">
-                        <p className="Post_footer_title"> کلمات کلیدی : </p>
-                        <PostHashtags/>
-                        <p className="Post_footer_date"> {postdate.toDateString()}</p>
+                      <div className="Post_footer">
+                          <p className="Post_footer_title"> کلمات کلیدی : </p>
+                          <PostHashtags/>
+                          <p className="Post_footer_date"> {postdate.toDateString()}</p>
+                      </div>
                     </div>
-
                 </CardActionArea>
 
             </Card>           

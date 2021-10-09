@@ -47,23 +47,39 @@
     text-overflow: ellipsis;
     padding-top:5px;
     font-size: 12px !important;
+
     
 }
 
 
 .Post_title {
+    display: flex;
+    align-items:center;
     border-bottom: 2px solid #06f306;
-    padding-bottom: 7px;
-
-
+    padding-top :auto;
+    padding-bottom: 7px;   
+    height: 45px;
+    font-size : 13.5px;
 }
 .Post_card {
    
     border-top-left-radius: 2px !important;
     border-top-right-radius: 2px !important;
+    height: 373px !important;
+}
+.postBody {
+    height: 100% !important;
+    display: grid !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    padding: 0px !important;
 
 }
-
+.CardContent{
+    padding-top: 0px !important;
+ 
+    margin-top:5px !important;
+}
 .photo{
     border-radius: 0px;
 }
@@ -89,7 +105,6 @@
     font-size:10px;
 
 }
-
 
 
 
@@ -245,6 +260,7 @@
 @media screen and (max-width : 565px) {
         .Post_card {
             width: 240px !important;
+            height: 330px !important;
           }
           .Post {
               width: 240px;
@@ -280,6 +296,7 @@
 @media screen and (max-width : 487px) {
     .Post_card {
       width: 100% !important;
+      height: auto !important;
     }
     .Post {
         width: 100%;
@@ -290,6 +307,7 @@
     }
     .Post_title {
         font-size: 14px !important;
+        height: 57px;
     }
     .Post_footer {
         display:flex !important;
