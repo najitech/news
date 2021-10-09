@@ -1,0 +1,10 @@
+.layout{
+    height: 95vh;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+}
+
+.layout::-webkit-scrollbar {
+    display: none;
+}
