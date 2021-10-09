@@ -2,10 +2,7 @@ import React from 'react'
 import ToggleButton from '@material-ui/lab/ToggleButton';
 import ToggleButtonGroup from '@material-ui/lab/ToggleButtonGroup';
 import './SearchTypeTw.css';
-import {BsHash} from 'react-icons/bs'
-import VpnKeyIcon from '@material-ui/icons/VpnKey';
-import PersonIcon from '@material-ui/icons/Person';
-import LocalOfferIcon from '@material-ui/icons/LocalOffer';
+import {BsHash} from 'react-icons/bs';
 import { AiOutlineKey ,AiOutlineUser } from 'react-icons/ai';
 function SearchTypeTw(props) {
     const [alignment, setAlignment] = React.useState('left');
@@ -23,6 +20,7 @@ function SearchTypeTw(props) {
             onChange={handleAlignment}
             aria-label="text alignment"
             >
+                
             <ToggleButton className="toggleTypeSelect" value="keyword" aria-label="left aligned">
                 <AiOutlineKey className="reacIconTypeSelect"/>
                 <span>کلیدواژه</span>

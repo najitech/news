@@ -3,6 +3,7 @@ import React , {useEffect , useState} from 'react';
 import { BsSearch } from 'react-icons/bs';
 import Search from '../../Rss/Search/Search';
 import './ProSearch.css';
+import Grow from '@material-ui/core/Grow';
 import SearchTypeTw from './SearchTypeTw/SearchTypeTw';
 function ProSearch(props) {
     const handleChange = (e)=>{
@@ -18,18 +19,26 @@ function ProSearch(props) {
     return (
         <div className="proSearch">
             <div className="imageContainerPS">    
-                <img width="100%" height="auto" src="https://rcciworld.com/picture/bg.jpg" alt=""/>
+                <img height="100%" src="https://rcciworld.com/picture/bg.jpg" alt=""/>
                 <div className="imagestyle">
                     <h1>جستجوی پیشرفته</h1>
-                    <div className="toggleContainerSelect">
-                        <SearchTypeTw/>
-                    </div>  
+                    <Grow in={true}>      
+                        <div className="toggleContainerSelect">
+                            <SearchTypeTw/>
+                        </div>  
+                    </Grow>
+                    <Grow
+                    in={true}
+                    style={{ transformOrigin: '0 100 0' }}
+                    {...(true ? { timeout: 1000 } : {})}
+                    >
                     <div className="proSearchInput" style={{}}>
                         <input placeholder="جستجو" value={props.value} onChange={handleChange}/>
                         <Button onClick={()=>{props.setSubmit(true)}} className="searchButtonPs">
                             <BsSearch/>
                         </Button>
                     </div>
+                    </Grow>
                 </div>
                 
             </div>
