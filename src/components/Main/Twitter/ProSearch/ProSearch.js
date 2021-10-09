@@ -21,20 +21,22 @@ function ProSearch(props) {
             <div className="imageContainerPS">    
                 <img height="100%" src="https://rcciworld.com/picture/bg.jpg" alt=""/>
                 <div className="imagestyle">
-                    <Grow in={true}>    
+                    <Grow in={true}
+                    {...(true ? { timeout: 700 } : {})}>    
                         <h1>جستجوی پیشرفته</h1>
                     </Grow>
-                    <Zoom in={true}
-                          style={{transitionDelay:'200ms',}}>      
+                    <Grow in={true}
+                          style={{transitionDelay:'300ms',}}
+                          {...(true ? { timeout: 1000 } : {})}>      
                         <div className="toggleContainerSelect">
                             <SearchTypeTw/>
                         </div>  
-                    </Zoom>
+                    </Grow>
                     <Grow
                     in={true}
                     style={{ transformOrigin: '0 100 0',
-                    transitionDelay:'500ms'}}
-                    {...(true ? { timeout: 1000 } : {})}
+                    transitionDelay:'700ms'}}
+                    {...(true ? { timeout: 2000 } : {})}
                     >
                     <div className="proSearchInput" style={{}}>
                         <input placeholder="جستجو" value={props.value} onChange={handleChange}/>
@@ -45,8 +47,20 @@ function ProSearch(props) {
                     </Grow>
                 </div>
             </div>
-            <div className="footer">
-
+            <div className="footerTW">
+                <div>
+                    <h5>About</h5>
+                    <p >این یک متن آزمایشی برای فوتر سایت است بخش درباره ما در این قسمت قرار میگیرد</p>
+                </div>
+                <div>
+                    <h5>بخش ها</h5>
+                    <ul>
+                        <li>توییتر</li>
+                        <li>خبر خوان</li>
+                        <li>ب</li>
+                    </ul>
+                </div>
+                <div></div>
             </div>
         </div>
     )
