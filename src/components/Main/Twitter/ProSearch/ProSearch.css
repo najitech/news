@@ -2,6 +2,15 @@
     position: fixed;
     left: 0px;
     right: 0px;
+    top: 49px;
+    
+}
+.imageContainerPS{
+    height: 100vh;
+}
+.imageContainerPS img{
+    
+object-fit: cover;    
 }
 .imagestyle{
     position: absolute;

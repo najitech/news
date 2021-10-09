@@ -195,20 +195,22 @@ function ModalResponsive(props) {
       >  
         <Fade in={props.open}>
             <div className="modalBaseRes">
+              <div className="flexresponsive">
                 <div className="imageContainerResModal">
-                    <img src={props.image} alt={props.alt}/>
-                    <div className="imageHoverRes">
-                      <p className="publishDatePost">تاریخ انتشار : {(props.publish_date)} </p>
-                      <h3>{props.title}</h3>
-                    </div>
-                </div>
-                <div className="postContentModalRes">
-                    <p style={{fontSize:'10px' , textDecoration:"underline"}}>تاریخ انتشار : {(props.publish_date)} </p>
-                    <h3 style={{fontSize:'18px'}}>{props.title}</h3>
-                    <p>
-                      {props.text}
-                    </p>
-                </div>
+                      <img src={props.image} alt={props.alt}/>
+                      <div className="imageHoverRes">
+                        <p className="publishDatePost">تاریخ انتشار : {(props.publish_date)} </p>
+                        <h3>{props.title}</h3>
+                      </div>
+                  </div>
+                  <div className="postContentModalRes">
+                      <p style={{fontSize:'10px' , textDecoration:"underline"}}>تاریخ انتشار : {(props.publish_date)} </p>
+                      <h3 style={{fontSize:'15px'}}>{props.title}</h3>
+                      <p style={{fontSize:13}}>
+                        {props.text}
+                      </p>
+                  </div>
+              </div>
                 <CustomizedProgressBars barValue={props.positiveness}/>
                 <div className="hashtags">
                     <PostTag text="موضوعات :" fontSize="13px" padding="0px" backGroundColor="white" color="black" marginP="0px" paddingP="0px"/>

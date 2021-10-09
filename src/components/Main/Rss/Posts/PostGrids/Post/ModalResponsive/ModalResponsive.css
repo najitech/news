@@ -21,6 +21,7 @@
     overflow: hidden;
     box-shadow: 0.0px 1.0px 2px 0.3px rgb(168, 166, 166);
     height: 40%;
+    flex: 0.5;
     border-radius: 5px;
     position: relative;
 }
@@ -49,7 +50,7 @@
 .publishDatePost{
     padding:0px 4px;
     padding-top: 4px;
-    font-size: 13px !important;
+    font-size: 12px !important;
     text-decoration: underline !important;
     margin:0px;
     margin-bottom: 0px;
@@ -61,6 +62,7 @@
 .postContentModalRes{
     height: 200px;
     overflow-y: scroll;
+    flex: 0.5;
     padding:0px 10px;
     text-align: right;
 }
@@ -81,21 +83,35 @@
 .chartOriginalResModal:last-child{
     flex:0.5;
 }
+.flexresponsive{
+    display: flex;
+    align-items: center;
+}
 @media screen and (max-width : 759px) {
     
     .imageContainerResModal{
         height: 25%;
+        
+    }
+    .flexresponsive:first-child{
+        flex : 0.6;
+    }
+    .flexresponsive:last-child{
+        flex:0.4 ;
     }
 }
 @media screen and (max-width : 600px) {
         .chartOriginalResModal:first-child{
         flex: 0.3;
     }
+    .flexresponsive{
+        display: block;
+    }
     .chartOriginalResModal:last-child{
         flex:0.7;
     }
     .imageContainerResModal{
-        height: 30%;
+        height: auto;
     }
 }
 @media screen and (max-width : 550px) {
@@ -103,8 +119,11 @@
         display: block;
         margin: -5px 0px;
     }
+    .flexresponsive{
+        display: block;
+    }
     .imageContainerResModal{
-        height: 25%;
+        height: auto;
     }
 }
 @media screen and (max-width : 380px) {
@@ -112,7 +131,10 @@
         display: block;
         margin: -5px 0px;
     }
+    .flexresponsive{
+        display: block;
+    }
     .imageContainerResModal{
-        height: 20%;
+        height: auto;
     }
 }
