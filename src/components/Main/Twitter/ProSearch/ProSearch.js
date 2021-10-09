@@ -26,7 +26,7 @@ function ProSearch(props) {
                         <h1>جستجوی پیشرفته</h1>
                     </Grow>
                     <Grow in={true}
-                          style={{transitionDelay:'300ms',}}
+                          style={{transitionDelay:'200ms',}}
                           {...(true ? { timeout: 1000 } : {})}>      
                         <div className="toggleContainerSelect">
                             <SearchTypeTw/>
@@ -36,7 +36,7 @@ function ProSearch(props) {
                     in={true}
                     style={{ transformOrigin: '0 100 0',
                     transitionDelay:'700ms'}}
-                    {...(true ? { timeout: 2000 } : {})}
+                    {...(true ? { timeout: 1700 } : {})}
                     >
                     <div className="proSearchInput" style={{}}>
                         <input placeholder="جستجو" value={props.value} onChange={handleChange}/>
