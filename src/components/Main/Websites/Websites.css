@@ -1,0 +1,14 @@
+.websites{
+    background-color: white;
+    height: 97%;
+    border-radius: 5px;
+    display: flex;
+    direction: ltr;
+    box-shadow: 0.5px 0.5px 3px 3px rgb(226, 226, 226);
+}
+.websitesContainer{
+    flex:0.6;
+}
+.websiteInformationContainer{
+    flex: 0.4;
+}

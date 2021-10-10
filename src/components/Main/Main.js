@@ -4,6 +4,7 @@ import { Switch , Route } from 'react-router-dom'
 import './Main.css'
 import TheLayout from '../../containers/TheLayout'
 import TwitterContainer from './Twitter/TwitterContainer'
+import Websites from './Websites/Websites'
 function Main() {
     return (
         <div className="Main">
@@ -15,7 +16,7 @@ function Main() {
                         <Rss/>
                     </Route>
                     <Route path="/Twitter">
-                        <TwitterContainer/>
+                        <Websites/>
                     </Route>
                 </Switch>
         </div>
