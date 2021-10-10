@@ -7,8 +7,12 @@
     box-shadow: 0.5px 0.5px 3px 3px rgb(226, 226, 226);
 }
 .websitesContainer{
-    flex:0.6;
+    flex:0.75;
+}
+.websitesContainer h3{
+    margin: 30px;
 }
 .websiteInformationContainer{
-    flex: 0.4;
+    flex: 0.25;
+    background-color: tomato;
 }

@@ -1,0 +1,38 @@
+.cardHeaderWebsite{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.cardHeaderWebsite h4{
+    margin-right: 10px;
+    padding-top: 4px;
+    font-size: 20px;
+}
+.avatarWebsite{
+    width: 47px !important;
+    height: 47px !important;
+}
+.lastPostDateWebsite{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.lastPostDateWebsite span{
+    padding-top: 3px;
+}
+.locationWebsiteCard{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.websiteCardChart{
+    width: 50%;
+    margin: 0px !important;
+    padding:0px !important;
+    height: 100px;
+}
+.websiteCardFooter{
+    display: flex;
+}

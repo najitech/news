@@ -1,6 +1,7 @@
 import { FormControl, InputLabel, Select } from '@material-ui/core';
 import { MenuItem } from 'material-ui';
 import React from 'react';
+import WebsiteCard from './websiteCard/WebsiteCard';
 import './Websites.css';
 function Websites(props) {
     const [sort, setSort] = React.useState('');
@@ -10,7 +11,9 @@ function Websites(props) {
     return (
         <div className="websites">
             <div className="websitesContainer">
-                <div className="sortSitesContainer">
+                <h3>خبر گزاری ها</h3>
+                <div className="gridWebsites">
+                    <WebsiteCard/>
                 </div>
             </div>
             <div className="websiteInformationContainer">
