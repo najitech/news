@@ -12,7 +12,7 @@ function TwitterResult(props) {
     const ShowModule = useMediaQuery({ query: '(max-width: 760px)'});
     return (
         <div className='Twitter'>
-            <Filters/>
+              <Filters/>
             <div className="TwitterContainer"> 
                 <div className="RssContainer_top">
                     <Search/>
@@ -33,7 +33,8 @@ function TwitterResult(props) {
                     <PostLists/>
                 </div>
             </div>
-            <TwitterWidgets/>
+                <TwitterWidgets/>
+
         </div>
     )
 }
