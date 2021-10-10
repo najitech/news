@@ -47,21 +47,6 @@ function ProSearch(props) {
                     </Grow>
                 </div>
             </div>
-            <div className="footerTW">
-                <div>
-                    <h5>About</h5>
-                    <p >این یک متن آزمایشی برای فوتر سایت است بخش درباره ما در این قسمت قرار میگیرد</p>
-                </div>
-                <div>
-                    <h5>بخش ها</h5>
-                    <ul>
-                        <li>توییتر</li>
-                        <li>خبر خوان</li>
-                        <li>ب</li>
-                    </ul>
-                </div>
-                <div></div>
-            </div>
         </div>
     )
 }
