@@ -2,6 +2,7 @@ import { FormControl, InputLabel, Select } from '@material-ui/core';
 import { MenuItem } from 'material-ui';
 import React from 'react';
 import WebsiteCard from './websiteCard/WebsiteCard';
+import WebsitePreview from './WebsitePreview/WebsitePreview';
 import './Websites.css';
 const data= [
     {
@@ -60,6 +61,9 @@ function Websites(props) {
     };
     return (
         <div className="websites">
+            <div className="websiteInformationContainer">
+                <WebsitePreview/>
+            </div>
             <div className="websitesContainer">
                 <h3>خبر گزاری ها</h3>
                 <div className="gridWebsites">
@@ -73,9 +77,7 @@ function Websites(props) {
                     })}
                 </div>
             </div>
-            <div className="websiteInformationContainer">
-                info
-            </div>
+
         </div>
     )
 }

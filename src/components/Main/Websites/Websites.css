@@ -15,7 +15,6 @@
 }
 .websiteInformationContainer{
     flex: 0.25;
-    background-color: tomato;
 }
 .gridWebsites{
     justify-content: space-around;
@@ -23,4 +22,5 @@
     padding: 20px;
     gap: 10px 0px;
     grid-template-columns: auto auto auto;
+    border: 1px solid rgb(243, 241, 241);
 }

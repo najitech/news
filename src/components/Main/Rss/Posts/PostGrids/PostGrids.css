@@ -15,7 +15,8 @@
     display: none;
   }
 
-  @media screen and (max-width : 1030px) {
+
+@media screen and (max-width : 1030px) {
     .Posts {
       grid-template-columns: auto auto auto;
     }
