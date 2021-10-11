@@ -232,6 +232,9 @@ export default function ModalPost(props) {
                       <Hashtag/>
                       <Hashtag/>  
                     </div>
+                    <div>
+                      
+                    </div>
                   </div>  
                 </div>
               </div>

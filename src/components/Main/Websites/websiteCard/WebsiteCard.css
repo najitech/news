@@ -2,18 +2,22 @@
     position:  relative !important;
     width: 330px !important;
     direction: ltr !important;
+    cursor: pointer;
     box-shadow: 0.4px 0.4px 3px 1px rgb(235, 235, 235) !important;
+}
+.websiteCardRss:hover{
+    background-color: rgba(212, 212, 212, 0.116) !important;
 }
 .cardHeaderWebsite{
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    margin-right: 20px;
-    margin-top: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
 }
 .cardHeaderWebsite h4{
     margin-right: 8px;
-    padding-top: 4px;
+    padding-top: 2px;
     font-size: 16px;
 }
 .activateCardWebsite { 
@@ -31,6 +35,7 @@
 }
 .lastPostDateWebsite span{
     padding-top: 3px;
+    font-size: 13px;
 }
 .locationWebsiteCard{
     display: flex;
@@ -56,7 +61,7 @@
     color:#ff891b;
     border: #cecdcdda 1px solid;
     padding:0px 20px;
-    font-size: 20px;
+    font-size: 19px;
     margin: 0px 5px;
     border-radius: 5px;
     height: 100%;
@@ -74,9 +79,11 @@
 }
 .piegraphWebsiteCard{
     position: absolute;
-    top: 88px;
-    left: 35px;
+    top: 60px;
+    left: 32px;
 }
 .typographyWebsiteCard{
-    padding-right: 4px !important;
+    padding-right: 1px !important;
+    margin-top: -10px !important;
+    font-size: 13px !important;
 }

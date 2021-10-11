@@ -23,7 +23,7 @@
     display: grid;
     direction: rtl;
     padding: 20px;
-    gap: 10px 0px;
+    gap: 20px 20px;
     grid-template-columns: auto auto auto;
     border: 1px solid rgb(243, 241, 241);
 }

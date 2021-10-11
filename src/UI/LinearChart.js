@@ -1,8 +1,6 @@
 import React from 'react';
 import './LinearChart.css';
 import Chart from "react-apexcharts";
-
-
 let tempvar = {
   options: {
     chart: {
@@ -12,6 +10,10 @@ let tempvar = {
 
     xaxis: {
       categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999 ,2000 ,2001 , 2002, 2003, 2004 , 2005]
+    },
+    
+    fill:{
+      colors: ['#ff891b'],
     }
   },
   series: [
@@ -43,7 +45,7 @@ let tempvar2 = {
 };
 
 function LinearChart(props) {
-
+    
     return (
         <div>
           <div className="LinearChart1">

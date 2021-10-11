@@ -73,7 +73,7 @@ const data= [
         title:'خبرگزاری مهر',
         image : 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Mehrnews_Logo.svg/1200px-Mehrnews_Logo.svg.png',
         publish_date : '8 شهریور 1400',
-        daily_data : '592.431k',
+        daily_data : '592.41k',
         color : 'rgb(183, 19, 216)',
         location : 'مشهد',
         chart_data : [43,76,18,53,94,15,84,23,64,44]  

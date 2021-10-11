@@ -24,6 +24,7 @@ function CategoryCheckbox(props) {
                     className="fontStyle"
                     control={<Checkbox name={props.name} size="small" color={props.color}/>}
                     label={props.label}          
+                    
                 />
                 <div className="iconCheck">
                     <Icon/>
