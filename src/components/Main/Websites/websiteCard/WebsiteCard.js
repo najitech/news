@@ -9,7 +9,7 @@ import {FiCalendar} from 'react-icons/fi'
 import {HiOutlineLocationMarker} from 'react-icons/hi'
 import './WebsiteCard.css';
 import Chart from "react-apexcharts";
-
+import '../../../../UI/Styles.css';
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 345,
@@ -71,7 +71,7 @@ export default function WebsiteCard(props) {
   }
   });
   return (
-    <Card className={[classes.root , 'websiteCardRss',props.active?'activateCardWebsite':'']}>
+    <Card className={[classes.root , 'websiteCardRss',props.active?'activateCardWebsite':'' , 'noselect']}>
       <div className="piegraphWebsiteCard">
         <Chart options={chartCircle.options3} series={chartCircle.series3} type="donut" height={65} width={65} />
       </div>

@@ -2,18 +2,11 @@ import React, {useRef} from 'react'
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
 import './Navbar.css'
-import {GiHamburgerMenu} from 'react-icons/gi'
 import {Link ,useRouteMatch} from 'react-router-dom'
 import {MdDashboard} from 'react-icons/md'
-import { Drawer } from '@material-ui/core';
 import {FaRssSquare ,FaTwitter} from 'react-icons/fa'
-import TemporaryDrawer from '../../UI/TemporaryDrawer';
-import TabPanel from './tabPanel/TabPanel';
-
+import '../../UI/Styles.css';
 const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
@@ -40,7 +33,7 @@ function Navbar() {
     });
     const myLink = useRef();
     return (
-      <div className={classes.root , 'Navbar'}>
+      <div className={[classes.root , 'Navbar' ,'noselect']}>
         <AppBar  position="static">
           <Toolbar className="AppBar" variant="dense">
             <Link className="navLink1" to="/">  

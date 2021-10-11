@@ -2,7 +2,11 @@
     position:  relative !important;
     width: 330px !important;
     direction: ltr !important;
+    cursor: pointer;
     box-shadow: 0.4px 0.4px 3px 1px rgb(235, 235, 235) !important;
+}
+.websiteCardRss:hover{
+    background-color: rgba(212, 212, 212, 0.116) !important;
 }
 .cardHeaderWebsite{
     display: flex;
