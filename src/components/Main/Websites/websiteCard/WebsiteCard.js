@@ -87,7 +87,7 @@ export default function WebsiteCard(props) {
                 <span>{props.publish_date}</span>
             </div>
             <div className="locationWebsiteCard">
-                <HiOutlineLocationMarker style={{fontSize:18}}/>
+                <HiOutlineLocationMarker style={{fontSize:18, marginRight: "-0.5px"}}/>
                 &nbsp;
                 <span>{props.location}</span>
             </div>
