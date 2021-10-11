@@ -1,3 +1,7 @@
+.websiteCardRss{
+    width: 330px !important;
+    box-shadow: 0.4px 0.4px 3.5px 1px rgb(223, 223, 223) !important;
+}
 .cardHeaderWebsite{
     display: flex;
     flex-direction: row-reverse;
@@ -8,7 +12,7 @@
 .cardHeaderWebsite h4{
     margin-right: 10px;
     padding-top: 4px;
-    font-size: 20px;
+    font-size: 18px;
 }
 .avatarWebsite{
     width: 47px !important;
@@ -28,11 +32,37 @@
     flex-direction: row-reverse;
 }
 .websiteCardChart{
-    width: 50%;
+    width: 60%;
     margin: 0px !important;
-    padding:0px !important;
     height: 100px;
+    padding:0px !important;     
+    border-radius: 5px !important;
+    border: 1px solid #f3830375 !important;
 }
 .websiteCardFooter{
+    margin-top: 15px;
     display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-bottom: -13px;
+}
+.dataCardWebsite{
+    color:#ff891b;
+    border: #cecdcdda 1px solid;
+    padding:0px 20px;
+    font-size: 20px;
+    margin: 0px 5px;
+    border-radius: 5px;
+    height: 100%;
+    align-self: center;
+}
+.dataCardWebsite span{
+    font-size: 14px;    
+    color:#747474da;
+}
+.chartCardWebsite{
+    align-self: center;
+    border: #cecdcdda 1px solid;
+    border-radius: 5px;   
+    padding: 0px 10px;
 }

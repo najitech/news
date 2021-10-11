@@ -8,6 +8,7 @@
 }
 .websitesContainer{
     flex:0.75;
+    overflow-y:scroll ;
 }
 .websitesContainer h3{
     margin: 30px;
@@ -15,4 +16,11 @@
 .websiteInformationContainer{
     flex: 0.25;
     background-color: tomato;
+}
+.gridWebsites{
+    justify-content: space-around;
+    display: grid;
+    padding: 20px;
+    gap: 10px 0px;
+    grid-template-columns: auto auto auto;
 }
