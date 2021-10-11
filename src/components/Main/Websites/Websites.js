@@ -52,10 +52,27 @@ const data= [
         daily_data : '1.4m',
         location : 'تهران',
         chart_data : [80,34,110,43,90,9,83,77,31,40]
+    },
+    {
+        title:'فارس نیوز',
+        image : "https://www.farsnews.ir/images/farsnewslogo.jpg",
+        publish_date:  "7 مرداد 1400",
+        daily_data : '603.21k',
+        locatio : 'تهران',
+        chart_data:[34,65,17,94,13,65,15,67,43,12]
+    },
+    {
+        title:'خبرگزاری مهر',
+        image : 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Mehrnews_Logo.svg/1200px-Mehrnews_Logo.svg.png',
+        publish_date : '8 شهریور 1400',
+        daily_data : '592.431k',
+        location : 'مشهد',
+        chart_data : [43,76,18,53,94,15,84,23,64,44]  
     }
 ]
 function Websites(props) {
     const [sort, setSort] = React.useState('');
+
     const handleChange = (event) => {
       setSort(event.target.value);
     };
@@ -65,7 +82,6 @@ function Websites(props) {
                 <WebsitePreview/>
             </div>
             <div className="websitesContainer">
-                <h3>خبر گزاری ها</h3>
                 <div className="gridWebsites">
                     {data.map(item=>{
                         return <WebsiteCard title={item.title}

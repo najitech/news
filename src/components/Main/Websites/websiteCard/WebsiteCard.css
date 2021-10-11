@@ -1,6 +1,8 @@
 .websiteCardRss{
+    position:  relative !important;
     width: 330px !important;
-    box-shadow: 0.4px 0.4px 3.5px 1px rgb(223, 223, 223) !important;
+    direction: ltr !important;
+    box-shadow: 0.4px 0.4px 3px 1px rgb(235, 235, 235) !important;
 }
 .cardHeaderWebsite{
     display: flex;
@@ -40,7 +42,7 @@
     border: 1px solid #f3830375 !important;
 }
 .websiteCardFooter{
-    margin-top: 15px;
+    margin-top: 30px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -65,4 +67,9 @@
     border: #cecdcdda 1px solid;
     border-radius: 5px;   
     padding: 0px 10px;
+}
+.piegraphWebsiteCard{
+    position: absolute;
+    top: 80px;
+    left: 35px;
 }
