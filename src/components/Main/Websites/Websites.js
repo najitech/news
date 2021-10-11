@@ -45,10 +45,11 @@ const data= [
         title:'تسنیم',
         image:'https://upload.wikimedia.org/wikipedia/commons/3/35/Tasnim_News_Agency_logo_2color_rounded_square.png',
         publish_date : '12 دی 99',
-        daily_data : '692.435k',
+        daily_data : '692.43k',
         location : 'تهران',
         color : 'rgb(216, 203, 19)',
-        chart_data : [45,55,21,80,67,31,80,87,32,12]
+        chart_data : [45,55,21,80,67,31,80,87,32,12],
+        active: true,
     },
     {
         title:'شهر خبر',
@@ -98,7 +99,8 @@ function Websites(props) {
                                             publish_date={item.publish_date}
                                             location={item.location}
                                             daily_data={item.daily_data}
-                                            chart_data={item.chart_data}/>
+                                            chart_data={item.chart_data}
+                                            active={item.active}/>
                     })}
                 </div>
             </div>

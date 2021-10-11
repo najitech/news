@@ -71,7 +71,7 @@ export default function WebsiteCard(props) {
   }
   });
   return (
-    <Card className={[classes.root , 'websiteCardRss']}>
+    <Card className={[classes.root , 'websiteCardRss',props.active?'activateCardWebsite':'']}>
       <div className="piegraphWebsiteCard">
         <Chart options={chartCircle.options3} series={chartCircle.series3} type="donut" height={65} width={65} />
       </div>
