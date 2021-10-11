@@ -54,6 +54,7 @@ export default function WebsiteCard(props) {
       }
     },
   fill: {
+    colors: [props.color]
   }
   },
 });
@@ -79,7 +80,7 @@ export default function WebsiteCard(props) {
             <h4>{props.title}</h4>
       </div>
       <CardContent>
-        <Typography variant="body2" color="textSecondary" component="p">
+        <Typography variant="body2" color="textSecondary" className="typographyWebsiteCard" component="p">
             <div className="lastPostDateWebsite">
                 <FiCalendar style={{fontSize:17}}/>
                 &nbsp;

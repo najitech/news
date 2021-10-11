@@ -11,6 +11,7 @@ const data= [
         publish_date : '25 اسفند 99',
         daily_data : '11.546k',
         location : 'تهران',
+        color : 'rgb(238, 6, 6)',
         chart_data : [45,76,12,30,12,43,60,17,80,21]
     },
     {
@@ -19,6 +20,7 @@ const data= [
         publish_date : '29 اسفند 99',
         daily_data : '131.56k',
         location : 'تهران',
+        color : 'rgb(58, 216, 19)',
         chart_data : [20,45,32,56,31,76,34,12,87,23]
     },
     {
@@ -27,6 +29,7 @@ const data= [
         publish_date : '5 بهمن 99',
         daily_data : '70.834k',
         location : 'تهران',
+        color : 'rgb(19, 144, 216)',
         chart_data : [80,23,56,87,23,86,65,76,90,14]
     },
     {
@@ -35,6 +38,7 @@ const data= [
         publish_date : '18 مهر 1400',
         daily_data : '765.12k',
         location : 'تهران',
+        color : 'rgb(216, 19, 200)',
         chart_data : [10,87,43,43,24,65,12,46,18,99]
     },
     {
@@ -43,6 +47,7 @@ const data= [
         publish_date : '12 دی 99',
         daily_data : '692.435k',
         location : 'تهران',
+        color : 'rgb(216, 203, 19)',
         chart_data : [45,55,21,80,67,31,80,87,32,12]
     },
     {
@@ -51,6 +56,7 @@ const data= [
         publish_date : '29 شهریور 1400',
         daily_data : '1.4m',
         location : 'تهران',
+        color : 'rgb(19, 216, 167)',
         chart_data : [80,34,110,43,90,9,83,77,31,40]
     },
     {
@@ -58,7 +64,8 @@ const data= [
         image : "https://www.farsnews.ir/images/farsnewslogo.jpg",
         publish_date:  "7 مرداد 1400",
         daily_data : '603.21k',
-        locatio : 'تهران',
+        locatio : 'تهران', 
+        color : 'rgb(157, 216, 19)',
         chart_data:[34,65,17,94,13,65,15,67,43,12]
     },
     {
@@ -66,6 +73,7 @@ const data= [
         image : 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Mehrnews_Logo.svg/1200px-Mehrnews_Logo.svg.png',
         publish_date : '8 شهریور 1400',
         daily_data : '592.431k',
+        color : 'rgb(183, 19, 216)',
         location : 'مشهد',
         chart_data : [43,76,18,53,94,15,84,23,64,44]  
     }
@@ -85,6 +93,7 @@ function Websites(props) {
                 <div className="gridWebsites">
                     {data.map(item=>{
                         return <WebsiteCard title={item.title}
+                                            color={item.color}
                                             image={item.image}
                                             publish_date={item.publish_date}
                                             location={item.location}
