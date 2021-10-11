@@ -12,13 +12,14 @@
     margin-top: 20px;
 }
 .cardHeaderWebsite h4{
-    margin-right: 10px;
+    margin-right: 8px;
     padding-top: 4px;
-    font-size: 18px;
+    font-size: 16px;
 }
 .avatarWebsite{
-    width: 47px !important;
-    height: 47px !important;
+    width: 50px !important;
+    height: 50px !important;
+    border: #ff891b 2px solid ;
 }
 .lastPostDateWebsite{
     display: flex;
@@ -42,7 +43,7 @@
     border: 1px solid #f3830375 !important;
 }
 .websiteCardFooter{
-    margin-top: 30px;
+    margin-top: 27px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -70,6 +71,9 @@
 }
 .piegraphWebsiteCard{
     position: absolute;
-    top: 80px;
+    top: 88px;
     left: 35px;
+}
+.typographyWebsiteCard{
+    padding-right: 4px !important;
 }
