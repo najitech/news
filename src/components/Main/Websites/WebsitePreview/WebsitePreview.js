@@ -5,6 +5,7 @@ import Button from '@material-ui/core/Button';
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 import Icon from '@material-ui/core/Icon';
 import RssFeedIcon from '@material-ui/icons/RssFeed';
+import Chart from "react-apexcharts";
 
 
 
@@ -15,6 +16,72 @@ const useStyles = makeStyles((theme: Theme) =>
     },
   }),
 );
+
+const colors= ['#2E93fA', '#66DA26', '#546E7A', '#E91E63', '#FF9800'];
+const state = {
+    series: [{
+        data: [28, 16, 21, 13, 30,21,5]
+      }],
+      options: {
+        chart: {
+          height: 350,
+          type: 'bar',
+          toolbar: {
+            show: false
+          },
+          events: {
+            click: function(chart, w, e) {
+              // console.log(chart, w, e)
+            }
+          }
+        },
+        colors: colors,
+        plotOptions: {
+          bar: {
+            columnWidth: '45%',
+            distributed: true,
+          }
+        },
+        dataLabels: {
+          enabled: false
+        },
+        legend: {
+          show: false
+        },
+        title: {
+            text: "تعداد پست ها در هفت روز گذشته",
+            align: 'right',
+            margin: 10,
+            offsetX: -170,
+            offsetY:7,
+            floating: false,
+            style: {
+              fontSize:  '12px',
+              fontFamily: 'Shabnam',
+              color:  '#263238'
+            },
+        },
+        xaxis: {
+          categories: [
+            ['John'],
+            ['Joe'],
+            ['Jake'],
+            ['Amber'],
+            ['Peter'],
+            ['Joe'],
+            ['Jake'],
+           ],
+          labels: {
+            style: {
+              colors: colors,
+              fontSize: '9px'
+            }
+          }
+        }
+      },
+    
+    
+};
 
 function WebsitePreview() {
     const classes = useStyles();
@@ -35,9 +102,14 @@ function WebsitePreview() {
                     <p>مشاهده ی اخبار {"ایسنا"}</p>
                 </div>
             </Button>
-            <div className="ٌWebsitePreview_chartContent">
-            
-            </div>
+            <Chart
+                options={state.options}
+                series={state.series}
+                type="bar"
+                width="320"
+                height="170"
+                className="WebsitePreview_chart"
+            />
         </div>
     )
 }
