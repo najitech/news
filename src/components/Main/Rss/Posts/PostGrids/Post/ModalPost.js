@@ -8,6 +8,8 @@ import Chart from 'react-apexcharts';
 import PostTag from '../../../../../../UI/Tag';
 import Hashtag from '../../../../../../UI/Hashtag';
 import CustomizedProgressBars from './LinearProgress/CustomizedProgressBars'
+import { BiCurrentLocation, BiTimeFive } from 'react-icons/bi';
+import { BsFillPeopleFill } from 'react-icons/bs';
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     modal: {
@@ -175,7 +177,7 @@ export default function ModalPost(props) {
                       series={distributedChart.series}
                       type="treemap"
                       width="100%"
-                      height="300px"
+                      height="220px"
                       className="ChartStyleClassRssModal"
                     />
                 </div>
@@ -196,6 +198,30 @@ export default function ModalPost(props) {
                     height="250px"
                   />
                 </div>
+                <div className="NER_tags">
+                      <div className="NER_location">
+                        <span className="NER_title_head">:مکان
+                        <BiCurrentLocation/> </span>
+                        <span>
+                          مشهد ، تهران ، تبریز ، اصفهان ، شیراز
+                          </span>
+                      </div>
+                      <div className="NER_people">
+                        
+                      <span className="NER_title_head">:اشخاص
+                      <BsFillPeopleFill/></span>
+                      <span>
+                          روحانی ، رئیس جمهور ، سرباز ، رهبر 
+                          </span>
+                      </div>
+                      <div className="NER_time">
+                      <span className="NER_title_head">:زمان
+                      <BiTimeFive/></span>
+                      <span>
+                           هفته ناجا، روز معلم ، شهریور 
+                          </span>
+                      </div>
+                  </div>
               </div>
               <div className="PostContentRss">
                 <div className="postContent">
@@ -231,11 +257,12 @@ export default function ModalPost(props) {
                       <Hashtag/>
                       <Hashtag/>
                       <Hashtag/>  
-                    </div>
-                    <div>
-                      
-                    </div>
+                    </div>  
                   </div>  
+                  <div className="hashtags2">
+                      <span>هشتگ ها:</span>
+                      #افتصاد #جنگ #افغانستان #طالبان #زندگی #جهان #کشور #خبر # اخبار
+                  </div>
                 </div>
               </div>
           </div>

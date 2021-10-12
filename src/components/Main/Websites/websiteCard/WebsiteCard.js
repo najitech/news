@@ -51,28 +51,33 @@ export default function WebsiteCard(props) {
       height: 35,
       sparkline: {
         enabled: true
-      }
+      },
     },
+    
   fill: {
-    colors: [props.color]
+    colors:[props.color]
   }
   },
 });
- const [chartCircle , setChartCircle] = React.useState({series3: [43, 32, 12, 9],
+ const [chartCircle , setChartCircle] = React.useState({series3: [53, 67],
   options3: {
     chart: {
-      type: 'pie',
+      type: 'radialBar',
       width: 40,
       height: 40,
       sparkline: {
         enabled: true
       }
-    }
-  }
+    },
+    dataLabels: {
+      enabled: false
+    },}
   });
   return (
     <Card className={[classes.root , 'websiteCardRss',props.active?'activateCardWebsite':'' , 'noselect']}>
-
+      <div className="piegraphWebsiteCard">
+        <Chart options={chartCircle.options3} series={chartCircle.series3} type="radialBar" height={95} width={95} />
+      </div>
       <div className="cardHeaderWebsite">
             <Avatar src={props.image} className="avatarWebsite">R</Avatar>
             <h4>{props.title}</h4>

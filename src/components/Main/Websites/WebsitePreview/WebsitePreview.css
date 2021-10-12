@@ -10,6 +10,9 @@
     overflow-y: scroll;
     overflow-x: hidden;
 }
+.WebsitePreview::-webkit-scrollbar {
+    display: none;
+}
 
 
 .WebsitePreview_header {

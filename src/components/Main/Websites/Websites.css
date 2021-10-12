@@ -9,7 +9,9 @@
 .websitesContainer{
     flex:0.75;
     overflow-y:scroll ;
-
+}
+.websitesContainer::-webkit-scrollbar {
+    display: none;
 }
 .websitesContainer h3{
     margin: 30px;

@@ -9,6 +9,8 @@ import Hashtag from '../../../../../../../UI/Hashtag';
 import CustomizedProgressBars from '../LinearProgress/CustomizedProgressBars';
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 import { useMediaQuery } from 'react-responsive';
+import { BsFillPeopleFill } from 'react-icons/bs';
+import { BiCurrentLocation, BiTimeFive } from 'react-icons/bi';
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     modal: {
@@ -231,6 +233,34 @@ function ModalResponsive(props) {
                       <Hashtag/>  
                     </div>
                 </div> 
+                <div className="hashtags2">
+                      <span>هشتگ ها:</span>
+                      #افتصاد #جنگ #افغانستان #طالبان #زندگی #جهان #کشور #خبر # اخبار
+                </div>
+                <div className="NER_tags_res">
+                      <div className="NER_location">
+                        <span className="NER_title_head">:مکان
+                        <BiCurrentLocation/> </span>
+                        <span>
+                          مشهد ، تهران ، تبریز ، اصفهان ، شیراز
+                          </span>
+                      </div>
+                      <div className="NER_people">
+                        
+                      <span className="NER_title_head">:اشخاص
+                      <BsFillPeopleFill/></span>
+                      <span>
+                          روحانی ، رئیس جمهور ، سرباز ، رهبر 
+                          </span>
+                      </div>
+                      <div className="NER_time">
+                      <span className="NER_title_head">:زمان
+                      <BiTimeFive/></span>
+                      <span>
+                           هفته ناجا، روز معلم ، شهریور 
+                          </span>
+                      </div>
+                  </div>
                 <div className="chartsModalRes">
                       <div className="chartOriginalResModal">
                         <div>

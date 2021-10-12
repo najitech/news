@@ -1,6 +1,7 @@
 .Navbar {
     margin-bottom : 10px;
     padding: 0px !important;
+    width: 100% !important;
 }
 .AppBar {
     height: 40px;
@@ -128,7 +129,27 @@
     display: none;
 }
 @media screen and (max-width: 992px) {
-    .tnavFilters {
-        display: block;
+    .AppBar div {
+        width: 200px;
     }
-  }
+}
+@media screen and (max-width: 700px) {
+    .AppBar div {
+        width: 170px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .AppBar div {
+        width: 160px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .AppBar div {
+        width: 120px;
+    }
+}
+@media screen and (max-width: 370px) {
+    .AppBar div {
+        width: 90px;
+    }
+}
