@@ -196,6 +196,10 @@
     text-align: right;
     width: 90%;
     margin: 0px auto;
+    color: #3584c0;
+    padding: 2px;
+    font-size: 13px;
+    margin-bottom: 10px;
 }
 .NER_tags span { 
     color : black;
@@ -209,22 +213,58 @@
     margin-right: 5px;
 }
 .NER_location{
-    border: rgba(47, 168, 47, 0.719) 1px solid;
+    flex-direction: row-reverse;
+    border-bottom: 2px solid #00e676;
     height: 30px;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding:2px 3px;
     margin: 5px auto;
 }
+.NER_location span {
+    color: rgb(78, 78, 78);
+    font-size: 11px;
+}
+
 .NER_people{
-    border:1px solid red;
+    flex-direction: row-reverse;
+    border-bottom:2px solid #ff1744;
     height: 30px;
     width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    justify-content: right;
+    padding:2px 3px;
     margin: 5px auto;
 }
-.NER_other{
-    border : 1px solid yellow;
+.NER_people span{
+    color: rgb(78, 78, 78);
+    font-size: 11px;
+}
+
+.NER_time{
+    flex-direction: row-reverse;
+    border-bottom: #ffea00 2px solid;
     height: 30px;
     width: 100%;
-    margin : 5px auto;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    justify-content: right;
+    padding:2px 3px;
+    margin: 5px auto;
+}
+.NER_time span{
+    color: rgb(78, 78, 78);
+    font-size: 11px;
+}
+.NER_title_head{
+    color: #3584c0 !important;
+    font-size: 13px !important;
+    padding-left: 6px;
 }
 @media screen and (max-width : 1500px) {
     .ModalPost2{

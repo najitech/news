@@ -8,6 +8,8 @@ import Chart from 'react-apexcharts';
 import PostTag from '../../../../../../UI/Tag';
 import Hashtag from '../../../../../../UI/Hashtag';
 import CustomizedProgressBars from './LinearProgress/CustomizedProgressBars'
+import { BiCurrentLocation, BiTimeFive } from 'react-icons/bi';
+import { BsFillPeopleFill } from 'react-icons/bs';
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     modal: {
@@ -197,15 +199,27 @@ export default function ModalPost(props) {
                   />
                 </div>
                 <div className="NER_tags">
-                      <span>موجودیت ها</span>
                       <div className="NER_location">
-
+                        <span className="NER_title_head">:مکان
+                        <BiCurrentLocation/> </span>
+                        <span>
+                          مشهد ، تهران ، تبریز ، اصفهان ، شیراز
+                          </span>
                       </div>
                       <div className="NER_people">
-
+                        
+                      <span className="NER_title_head">:اشخاص
+                      <BsFillPeopleFill/></span>
+                      <span>
+                          روحانی ، رئیس جمهور ، سرباز ، رهبر 
+                          </span>
                       </div>
-                      <div className="NER_other">
-
+                      <div className="NER_time">
+                      <span className="NER_title_head">:زمان
+                      <BiTimeFive/></span>
+                      <span>
+                           هفته ناجا، روز معلم ، شهریور 
+                          </span>
                       </div>
                   </div>
               </div>
