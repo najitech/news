@@ -175,7 +175,7 @@ export default function ModalPost(props) {
                       series={distributedChart.series}
                       type="treemap"
                       width="100%"
-                      height="300px"
+                      height="220px"
                       className="ChartStyleClassRssModal"
                     />
                 </div>
@@ -196,6 +196,18 @@ export default function ModalPost(props) {
                     height="250px"
                   />
                 </div>
+                <div className="NER_tags">
+                      <span>موجودیت ها</span>
+                      <div className="NER_location">
+
+                      </div>
+                      <div className="NER_people">
+
+                      </div>
+                      <div className="NER_other">
+
+                      </div>
+                  </div>
               </div>
               <div className="PostContentRss">
                 <div className="postContent">
@@ -231,11 +243,12 @@ export default function ModalPost(props) {
                       <Hashtag/>
                       <Hashtag/>
                       <Hashtag/>  
-                    </div>
-                    <div>
-                      
-                    </div>
+                    </div>  
                   </div>  
+                  <div className="hashtags2">
+                      <span>هشتگ ها:</span>
+                      #افتصاد #جنگ #افغانستان #طالبان #زندگی #جهان #کشور #خبر # اخبار
+                  </div>
                 </div>
               </div>
           </div>

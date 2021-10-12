@@ -11,10 +11,9 @@
 
 .ModalPost2 {
     max-width: 1000px ;
-    max-height: 570px ;
     height: 85%;
     margin: auto auto;
-    width: 65%;
+    width: 75%;
     padding: 0px !important;
 }
 .ModalPost2:focus{
@@ -177,22 +176,55 @@
     padding: 10px;
     align-items: center;
     justify-content: right;
-
 }
 .keywords > p {
     flex:0.25;
-
 }
-
 .keywords_tags {
     display: flex;
     align-items: center;
     flex:0.75;
     justify-content: right;
- 
+}
+.NER_tags{
+    text-align: right;
+    width: 90%;
+    margin: 0px auto;
+    margin-top: -20px;
+}
+.hashtags2{
+    text-align: right;
+    width: 90%;
+    margin: 0px auto;
+}
+.NER_tags span { 
+    color : black;
+    font-size: 13px;
+}
+.hashtags2 span{
+    color : black;
+    font-size: 13px;   
 }
 .keywords .HashtagDiv {
     margin-right: 5px;
+}
+.NER_location{
+    border: rgba(47, 168, 47, 0.719) 1px solid;
+    height: 30px;
+    width: 100%;
+    margin: 5px auto;
+}
+.NER_people{
+    border:1px solid red;
+    height: 30px;
+    width: 100%;
+    margin: 5px auto;
+}
+.NER_other{
+    border : 1px solid yellow;
+    height: 30px;
+    width: 100%;
+    margin : 5px auto;
 }
 @media screen and (max-width : 1500px) {
     .ModalPost2{
