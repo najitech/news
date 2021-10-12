@@ -55,6 +55,7 @@ export default function WebsiteCard(props) {
     },
     
   fill: {
+    colors:[props.color]
   }
   },
 });
