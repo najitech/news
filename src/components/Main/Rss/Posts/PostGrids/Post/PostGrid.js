@@ -15,6 +15,7 @@ import PostHashtags from './PostHashtags';
 import {TiKey} from 'react-icons/ti'
 import { createTheme, ThemeProvider } from '@material-ui/core/styles';
 import ModalResponsive from './ModalResponsive/ModalResponsive';
+import Hashtag2 from '../../../../../../UI/Hashtag2';
 
 const theme = createTheme();
 
@@ -96,16 +97,27 @@ function Post(props) {
                     </CardContent>
                     <div>
                       <div className="PostGrid_Tag_Date">
-                        <PostTags/>
-                        
+     
                       </div>
-
+                      <PostTags/> 
+                    <div className="PostGrid_HashtagsContainer">
                       <div className="Post_footer">
-                          <p className="Post_footer_title"> کلمات کلیدی : </p>
-                          <PostHashtags/>
-                          <p className="Post_footer_date"> {postdate.toDateString()}</p>
-                      </div>
+                            <p className="Post_footer_title"> کلمات کلیدی : </p>
+                            <PostHashtags/>
+                        </div>
+                        <p className="Post_footer_date"> {postdate.toDateString()}</p>
                     </div>
+
+
+                    </div>
+                    <div className="Hashtags2">
+                        <Hashtag2/>
+                        <Hashtag2/>
+                        <Hashtag2/>
+                        <Hashtag2/>
+                        <Hashtag2/>
+                    </div>
+
                 </CardActionArea>
 
             </Card>           

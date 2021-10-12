@@ -117,22 +117,23 @@ function WebsitePreview() {
                 className="WebsitePreview_chart"
             />
         <Chart2
+        className="rchart"
         width={'100%'}
         height={'200px'}
         chartType="PieChart"
         loader={<div>Loading Chart</div>}
         data={[
-            ['Task', 'Hours per Day'],
-            ['Work', 11],
-            ['Eat', 2],
-            ['Commute', 2],
-            ['Watch TV', 2],
-            ['Sleep', 7],
+            ['علمی', 'Hours per Day'],
+            ['فرهنگی', 11],
+            ['سیاسی', 2],
+            ['اجتماعی', 2],
+            ['هنری', 2],
+            ['ورزشی', 7],
         ]}
         options={{
-            title: 'My Daily Activities',
-            // Just add this option
+            title: 'پراکندگی موضوع',
             is3D: true,
+            pieSliceText: 'label',
         }}
         rootProps={{ 'data-testid': '2' }}
         />

@@ -51,6 +51,56 @@
     flex : 0.57;
 }
 
+.Postlist_Hashtags2 {
+    display: flex;
+    margin-top: 6px;
+    border-top:1px solid rgb(228, 225, 225);
+    padding-top:12px;
+    margin-bottom: -10px;
+}
+.Postlist_Hashtags2 > * {
+    margin-left:10px;
+}
+
+.Postlist_Hashtags2 > * {
+    font-size:12px !important;
+}
+
+.Ner {
+    display: none;
+    justify-content: space-between;
+
+    font-size:12px;
+    margin-bottom: 5px;
+    margin-top:5px;
+}
+
+.Ner_box {
+    height: 30px;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    width: 33%;
+}
+.Ner_box > span {
+    margin-right:5px;
+}
+.Ner_Persons{
+    border-bottom: 1px solid rgb(230, 9, 9);
+}
+
+.Ner_locations {
+    border-bottom: 1px solid rgb(12, 56, 202);
+
+}
+.Ner_times {
+    border-bottom: 1px solid rgb(32, 231, 14);
+}
+
+.Ner_box {
+    border-bottom : 1px solid rgb(219, 219, 219);
+}
+
 @media screen and (max-width : 887px) {
     .PostList_date {
         font-size: 12px;

@@ -66,3 +66,7 @@
 .WebsitePreview_chart2 {
     margin-right:25px !important;
 }
+
+.rchart{
+    direction: ltr;
+}

@@ -4,11 +4,9 @@
     border-bottom-left-radius:10px;
     margin-bottom: 12px;
     margin-top:0px;
-    
 }
-.Post_footer_date {
-    display: none;
-}
+
+
 .Post_top_green {
     background-color: rgba(13, 238, 13, 0.733);
     width: 100%;
@@ -65,7 +63,7 @@
    
     border-top-left-radius: 2px !important;
     border-top-right-radius: 2px !important;
-    height: 373px !important;
+
 }
 .postBody {
     height: 100% !important;
@@ -76,8 +74,7 @@
 
 }
 .CardContent{
-    padding-top: 0px !important;
- 
+    padding: 0px 10px !important;
     margin-top:5px !important;
 }
 .photo{
@@ -90,6 +87,13 @@
 .Post_border_green {
     border-bottom-color :rgb(5, 172, 5) !important;
 }
+.PostGrid_HashtagsContainer {
+    display: flex;
+    padding : 0px 10px;
+    border: 1px solid rgb(236, 235, 235);
+    border-right:none;
+    border-left:none;
+}
 
 .Post_footer {
     display: flex;
@@ -99,11 +103,37 @@
     width: 86%;
     margin : 0px auto;
     margin-top:3px;
+    flex: 1;
+    border-radius: 10px;
+    padding-right:2px;
 }
+.Post_footer_date {
+    display: flex;
+    font-size: 11px;
+    flex:0.4;
+    justify-content: left;
+    align-items: center;
+    padding-top:7px;
+    display: none;
+  }
 .Post_footer > p {
     font-family: Shabnam;
-    font-size:10px;
+    font-size:9.5px;
 
+}
+
+.Hashtags2 {
+    display: flex;
+    align-items: center;
+    margin-right:12px;
+    padding: 7px 0px;
+}
+.Hashtags2 > p {
+    font-size: 12px;
+}
+
+.Hashtags2 > * {
+    margin-left:6px;
 }
 
 
@@ -340,5 +370,9 @@
         height: 180px !important;
     }
 }
-
+@media screen and (max-width : 371px) {
+    .Post_footer_date {
+        display: none;
+    }
+}
 

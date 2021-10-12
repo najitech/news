@@ -1,6 +1,13 @@
 .PostTags {
     display: flex;
-    margin-top:4px;
+    margin-top:10px;
     margin-bottom: 12px;
-    margin-right:16.5px; 
+    padding: 0px 10px;
+
+}
+
+@media screen and (max-width : 1380px) {
+    .PostTags_lastchild {
+        display: none;
+    }
 }

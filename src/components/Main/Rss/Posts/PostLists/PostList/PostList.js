@@ -13,6 +13,7 @@ import PostHashtags from '../../PostGrids/Post/PostHashtags';
 import PostListTags from './PostListTags';
 import PostListHashtags from './PostListHashtags';
 import ModalPost from '../../PostGrids/Post/ModalPost';
+import Hashtag2 from '../../../../../../UI/Hashtag2';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -85,7 +86,27 @@ export default function MediaControlCard(props) {
               </div>
               <p className="PostList_date">{publishDate.toDateString()}</p>
             </div>
-
+            <div className="Ner">
+                        <div className="Ner_Persons Ner_box">
+                          <span>اشخاص : </span>
+                          <span> علی، حسین، حسین، تقی</span>
+                        </div>
+                        <div className="Ner_locations Ner_box">
+                          <span>اماکن :</span>
+                          <span>مشهد، تهران ، تبریز، اصفهان</span>
+                        </div>
+                        <div className="Ner_times Ner_box">
+                           <span>زمان :</span>
+                           <span> اربعین، روز معلم،روز زن</span>
+                        </div>
+            </div>
+            <div className="Postlist_Hashtags2">
+                  <Hashtag2/>
+                  <Hashtag2/>
+                  <Hashtag2/>
+                  <Hashtag2/>
+                  <Hashtag2/>
+            </div>
           </CardContent>
 
 
