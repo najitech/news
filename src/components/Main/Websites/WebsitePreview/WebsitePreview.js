@@ -1,4 +1,4 @@
-import React from 'react'
+import React , {useState} from 'react'
 import Avatar from '@material-ui/core/Avatar';
 import './WebsitePreview.css'
 import Button from '@material-ui/core/Button';
@@ -6,6 +6,7 @@ import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 import Icon from '@material-ui/core/Icon';
 import RssFeedIcon from '@material-ui/icons/RssFeed';
 import Chart from "react-apexcharts";
+import Chart2 from "react-google-charts";
 
 
 
@@ -85,6 +86,11 @@ const state = {
 
 function WebsitePreview() {
     const classes = useStyles();
+    const [donChart , setdonChart] = useState({
+        options: {},
+        series: [44, 55, 41, 17, 15],
+        labels: ['A', 'B', 'C', 'D', 'E']
+      });
     return (
         <div className="WebsitePreview">
             <Avatar className="WebsitePreview_avatar"  src="https://upload.wikimedia.org/wikipedia/commons/e/e9/ISNA_logo.jpg" className="WebsitePreview_avatar" >R</Avatar>
@@ -110,6 +116,26 @@ function WebsitePreview() {
                 height="170"
                 className="WebsitePreview_chart"
             />
+        <Chart2
+        width={'100%'}
+        height={'200px'}
+        chartType="PieChart"
+        loader={<div>Loading Chart</div>}
+        data={[
+            ['Task', 'Hours per Day'],
+            ['Work', 11],
+            ['Eat', 2],
+            ['Commute', 2],
+            ['Watch TV', 2],
+            ['Sleep', 7],
+        ]}
+        options={{
+            title: 'My Daily Activities',
+            // Just add this option
+            is3D: true,
+        }}
+        rootProps={{ 'data-testid': '2' }}
+        />
         </div>
     )
 }

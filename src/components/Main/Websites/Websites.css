@@ -1,5 +1,5 @@
 .websites{
-    background-color: white;
+    background-color:white;
     height: 97%;
     border-radius: 5px;
     display: flex;
@@ -9,6 +9,7 @@
 .websitesContainer{
     flex:0.75;
     overflow-y:scroll ;
+
 }
 .websitesContainer h3{
     margin: 30px;
