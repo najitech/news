@@ -36,11 +36,9 @@ const state = {
             }
           }
         },
-        colors: colors,
         plotOptions: {
           bar: {
             columnWidth: '45%',
-            distributed: true,
           }
         },
         dataLabels: {
@@ -84,13 +82,109 @@ const state = {
     
 };
 
+
+
+
 function WebsitePreview() {
+  const [donChart , setdonChart] = useState({
+    options: {},
+    series: [44, 55, 41, 17, 15],
+    labels: ['A', 'B', 'C', 'D', 'E']
+  });
+  const [distributedChart , setDistributed] = useState({
+          
+    series: [
+      {
+        data: [
+          {
+            x: 'طنز',
+            y: 218
+          },
+          {
+            x: 'تاریخی',
+            y: 149
+          },
+          {
+            x: 'آموزشی',
+            y: 184
+          },
+          {
+            x: 'مذهبی',
+            y: 55
+          },
+          {
+            x: 'هنری',
+            y: 84
+          },
+          {
+            x: 'علمی',
+            y: 31
+          },
+          {
+            x: 'طبیعت',
+            y: 70
+          },
+          {
+            x: 'حوادث',
+            y: 30
+          },
+          {
+            x: 'ورزشی',
+            y: 44
+          },
+          {
+            x: 'نظامی',
+            y: 68
+          },
+          {
+            x: 'جنگ',
+            y: 28
+          },
+          {
+            x: 'سیاسی',
+            y: 19
+          },
+          {
+            x: 'اجتماعی',
+            y: 29
+          }
+        ]
+      }
+    ],
+    options: {
+      legend: {
+        show: false
+      },
+      chart: {
+        toolbar : {
+          show : false,
+        },
+        height: 350,
+        type: 'treemap'
+      },
+      colors: [
+        '#3B93A5',
+        '#F7B844',
+        '#ADD8C7',
+        '#EC3C65',
+        '#CDD7B6',
+        '#C1F666',
+        '#D43F97',
+        '#1E5D8C',
+        '#421243',
+        '#7F94B0',
+        '#EF6537',
+        '#C0ADDB'
+      ],
+      plotOptions: {
+        treemap: {
+          distributed: true,
+          enableShades: false
+        }
+      }
+    },
+  })
     const classes = useStyles();
-    const [donChart , setdonChart] = useState({
-        options: {},
-        series: [44, 55, 41, 17, 15],
-        labels: ['A', 'B', 'C', 'D', 'E']
-      });
     return (
         <div className="WebsitePreview">
             <Avatar className="WebsitePreview_avatar"  src="https://upload.wikimedia.org/wikipedia/commons/e/e9/ISNA_logo.jpg" className="WebsitePreview_avatar" >R</Avatar>
@@ -116,27 +210,14 @@ function WebsitePreview() {
                 height="170"
                 className="WebsitePreview_chart"
             />
-        <Chart2
-        className="rchart"
-        width={'100%'}
-        height={'200px'}
-        chartType="PieChart"
-        loader={<div>Loading Chart</div>}
-        data={[
-            ['علمی', 'Hours per Day'],
-            ['فرهنگی', 11],
-            ['سیاسی', 2],
-            ['اجتماعی', 2],
-            ['هنری', 2],
-            ['ورزشی', 7],
-        ]}
-        options={{
-            title: 'پراکندگی موضوع',
-            is3D: true,
-            pieSliceText: 'label',
-        }}
-        rootProps={{ 'data-testid': '2' }}
-        />
+            <Chart
+              options={donChart.options}
+              series={donChart.series}
+              type="donut"  
+              width="280px"
+              height="auto"
+            />
+
         </div>
     )
 }

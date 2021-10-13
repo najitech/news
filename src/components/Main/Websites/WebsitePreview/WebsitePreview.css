@@ -59,6 +59,8 @@
 .WebsitePreview_chart {
     margin-top:20px !important;
     border-top : 1px solid rgb(231, 226, 226) !important;
+    border-bottom : 1px solid rgb(231, 226, 226) !important;
+    
 }
 
 .WebsitePreview_chartContent2 {

@@ -73,11 +73,38 @@ export default function WebsiteCard(props) {
       enabled: false
     },}
   });
+  const [chartCircle2 , setChartCircle2] = React.useState({     
+    series: [{
+      name: 'Sales',
+      data: [4, 3, 10, 9, 29, 19, 22, 9, 12, 7, 19, 5, 13, 9, 17, 2, 7, 5]
+    }],
+    options: {
+      chart: {
+        height: 350,
+        type: 'line',
+        sparkline: {
+            enabled: true
+          }
+      },
+      stroke: {
+        width: 2,
+        curve: 'smooth'
+      },
+      xaxis: {
+        type: 'datetime',
+        categories: ['1/11/2000', '2/11/2000', '3/11/2000', '4/11/2000', '5/11/2000', '6/11/2000', '7/11/2000', '8/11/2000', '9/11/2000', '10/11/2000', '11/11/2000', '12/11/2000', '1/11/2001', '2/11/2001', '3/11/2001','4/11/2001' ,'5/11/2001' ,'6/11/2001'],
+        tickAmount: 10,
+      },
+      yaxis: {
+        min: -10,
+        max: 40,
+      }
+    },
+});
+
   return (
     <Card className={[classes.root , 'websiteCardRss',props.active?'activateCardWebsite':'' , 'noselect']}>
-      <div className="piegraphWebsiteCard">
-        <Chart options={chartCircle.options3} series={chartCircle.series3} type="radialBar" height={95} width={95} />
-      </div>
+
       <div className="cardHeaderWebsite">
             <Avatar src={props.image} className="avatarWebsite">R</Avatar>
             <h4>{props.title}</h4>
@@ -85,28 +112,30 @@ export default function WebsiteCard(props) {
       <CardContent>
         <Typography variant="body2" color="textSecondary" className="typographyWebsiteCard" component="p">
             <div className="lastPostDateWebsite">
-                <FiCalendar style={{fontSize:17}}/>
+                <FiCalendar className="WebsiteCard_icons" />
                 &nbsp;
-                <span>{props.publish_date}</span>
+                <span className="WebsiteCard_iconContent">{props.publish_date}</span>
             </div>
             <div className="locationWebsiteCard">
-                <HiOutlineLocationMarker style={{fontSize:18, marginRight: "-0.5px"}}/>
+                <HiOutlineLocationMarker className="WebsiteCard_icons" />
                 &nbsp;
-                <span>{props.location}</span>
+                <span className="WebsiteCard_iconContent">{props.location}</span>
             </div>
         </Typography>
         <div className="websiteCardFooter">
         <div className="chartCardWebsite">
-          <div id="chart-1">
-            <Chart options={chart.options1}  series={chart.series1} type="bar" height={60} width={160} />
-          </div>
+            <Chart className="WebsiteCard_sparkline" options={chartCircle2.options} series={chartCircle2.series} type="line" height="50" width="100px"/>
+            <div className="WebsitePreview_growth">
+              <span className="Growth_title">رشد</span>
+              <span className="Growth_number">{props.daily_data}</span>
+            </div>
         </div>
         <div className="dataCardWebsite">
-            <span>داده در روز</span>
-            <br/>
-            {props.daily_data}
+            <span className="dataCardWebsite_title">داده در روز</span>
+            <span className="dataCardWebsite_number">{props.daily_data}</span>
         </div>
         </div>
+
       </CardContent>
     </Card>
   );
