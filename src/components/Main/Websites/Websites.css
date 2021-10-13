@@ -1,12 +1,9 @@
 .websites{
+    background-color:white;
     height: 97%;
     border-radius: 5px;
     display: flex;
-    background-image:url('../../../Images/websitesbackground.png');
     direction: ltr;
-    background-repeat: no-repeat;
-    background-position-x: -000px;
-    background-size: cover;
     box-shadow: 0.5px 0.5px 3px 3px rgb(226, 226, 226);
 }
 .websitesContainer{

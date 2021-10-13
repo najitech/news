@@ -11,6 +11,7 @@ import CustomizedProgressBars from './LinearProgress/CustomizedProgressBars'
 import { BiCurrentLocation, BiTimeFive } from 'react-icons/bi';
 import { BsFillPeopleFill } from 'react-icons/bs';
 import Hashtag2 from '../../../../../../UI/Hashtag2';
+import { MdWeb } from 'react-icons/md';
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     modal: {
@@ -231,6 +232,10 @@ export default function ModalPost(props) {
                     <div className="tites">
                       <p className="publishDatePost">تاریخ انتشار : {(props.publish_date)} </p>
                       <h3>{props.title}</h3>
+                      <div className="Modal_website_Rss">  
+                        <MdWeb/>
+                        <p>خبرگزاری تسنیم</p>
+                      </div>
                     </div>
                   </div> 
                   <div className="textAreaRss">  

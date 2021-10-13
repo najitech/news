@@ -20,7 +20,7 @@
     font-size: 12px !important;
     padding: 4px !important;
     margin: 0px 5px !important;
-    box-shadow : 1.0px 1.4px 2px 0.4px rgb(226, 226, 226) !important;
+    box-shadow : 1.0px 1.4px 2px 0.4px #E4E0F5 !important;
 }
 .barAsasRss{
     display: flex;
@@ -28,11 +28,11 @@
     align-items: center;
     background-color: white;
     border-radius: 3px;
-    box-shadow : 1.0px 1.4px 2px 0.4px rgb(226, 226, 226) !important;
+    box-shadow : 1.0px 1.4px 2px 0.4px #E4E0F5 !important;
 }
 .sortIconRss{
     font-size: 23px;
-    color: rgb(61, 61, 61);
+    color: #764ee3;
 }
 .barAsasRss p{
     padding : 0px;
