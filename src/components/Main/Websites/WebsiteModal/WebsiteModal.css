@@ -1,0 +1,13 @@
+.ModalPost3{
+    max-width: 1000px ;
+    height: 97%;
+    max-height: 740px;
+    margin: auto auto;
+    width: 75%;
+    padding: 0px !important;
+}
+@media screen and (max-width : 825px) {
+    .ModalPost3{
+        height: 80%;
+    }
+}

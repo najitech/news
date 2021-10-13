@@ -81,6 +81,8 @@
 .bin {
     margin-top:15px;
     display: grid;
+    text-align: right;
+    direction:rtl ;
     grid-template-columns: 1fr 1fr;
     gap: 8px 27px;
 }

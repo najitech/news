@@ -1,15 +1,5 @@
 import React from 'react';
 import { makeStyles, withStyles } from '@material-ui/core/styles';
-import FormatAlignLeftIcon from '@material-ui/icons/FormatAlignLeft';
-import FormatAlignCenterIcon from '@material-ui/icons/FormatAlignCenter';
-import FormatAlignRightIcon from '@material-ui/icons/FormatAlignRight';
-import FormatAlignJustifyIcon from '@material-ui/icons/FormatAlignJustify';
-import FormatBoldIcon from '@material-ui/icons/FormatBold';
-import FormatItalicIcon from '@material-ui/icons/FormatItalic';
-import FormatUnderlinedIcon from '@material-ui/icons/FormatUnderlined';
-import FormatColorFillIcon from '@material-ui/icons/FormatColorFill';
-import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
-import Divider from '@material-ui/core/Divider';
 import Paper from '@material-ui/core/Paper';
 import ToggleButton from '@material-ui/lab/ToggleButton';
 import ToggleButtonGroup from '@material-ui/lab/ToggleButtonGroup';
@@ -41,7 +31,7 @@ const StyledToggleButtonGroup = withStyles((theme) => ({
   },
 }))(ToggleButtonGroup);
 
-export default function CustomizedDividers(props) {
+export default function SortItemWebsite(props) {
   const [alignment, setAlignment] = React.useState('left');
   const [formats, setFormats] = React.useState(() => ['italic']);
 
@@ -66,16 +56,16 @@ export default function CustomizedDividers(props) {
           aria-label="text alignment"
         >
           <ToggleButton  aria-label="left aligned">
-            <p>جدید ترین</p>
+            <p>نام</p>
           </ToggleButton>
           <ToggleButton v aria-label="right aligned">
-            <p>قدیمی ترین</p>
+            <p>جدید ترین</p>
           </ToggleButton>
           <ToggleButton va aria-label="centered">
-            <p>پربازدید ترین</p>
+            <p>بیشترین داده</p>
           </ToggleButton>
           <ToggleButton aria-label="right aligned">
-            <p>کم بازدید ترین</p>
+            <p>پربازدیدترین</p>
           </ToggleButton>
         </StyledToggleButtonGroup>
       </Paper>

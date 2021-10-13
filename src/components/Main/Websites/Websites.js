@@ -5,7 +5,9 @@ import WebsiteCard from './websiteCard/WebsiteCard';
 import WebsitePreview from './WebsitePreview/WebsitePreview';
 import './Websites.css';
 import Chart from "react-apexcharts";
-import SortsRss from '../Rss/Sorts/SortsRss';
+import SortWebsite from './SortWebsite/SortWebsite'
+import WebsiteModal from './WebsiteModal/WebsiteModal';
+import { useMediaQuery } from 'react-responsive'
 function Websites(props) {
     const [data , setData] = React.useState([
         {
@@ -128,7 +130,14 @@ function Websites(props) {
         color : '#FF891B',
         chart_data : [45,76,12,30,12,43,60,17,80,21]
     });
+    
+    const [open, setOpen] = React.useState(false);
     const [sort, setSort] = React.useState('');
+    const MoWidth1 = useMediaQuery({query :'(max-width : 1285px)'});
+    const MoWidth2 = useMediaQuery({query :'(min-width : 1071px)'});
+    const MoWidth3 = useMediaQuery({query :'(max-width : 825px)'});
+    const MoWidth4 = useMediaQuery({query :'(min-width : 583px)'});
+    const MoWidth5 = useMediaQuery({query :'(max-width : 529px)'});
     const handleChange = (event) => {
         setSort(event.target.value);
       };
@@ -139,18 +148,27 @@ function Websites(props) {
               else 
                   return {...item , active:false}
           })});
-          
           const index = data.findIndex((item)=>{return item.title === e})
           setPreview(data[index]);
+          if((MoWidth1 && MoWidth2) || (MoWidth3 && MoWidth4) || (MoWidth5))
+            setOpen(true);
       }
+        
+        const handleClose = () => {
+            setOpen(false);
+        };
     return (
         <div className="websites">
+            <WebsiteModal title={preview.title} image={preview.image} open={open} setOpen={setOpen} handleClose={handleClose}/>
             <div className="websiteInformationContainer">
                 <WebsitePreview title={preview.title} image={preview.image}/>
             </div>
             <div className="websitesContainer">
-
+                <div className="sortItemsWebsites" >
+                    <SortWebsite/>
+                </div>
                 <div className="gridWebsites">
+                    
                     {data.map(item=>{
                         return <WebsiteCard 
                                     open={handleOpen}
