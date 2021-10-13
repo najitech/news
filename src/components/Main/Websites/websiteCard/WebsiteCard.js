@@ -154,7 +154,7 @@ export default function WebsiteCard(props) {
         </Typography>
         <div className="websiteCardFooter">
         <div className="chartCardWebsite">
-            <Chart className="WebsiteCard_sparkline" options={chartCircle2.options} series={chartCircle2.series} type="line" height="50" width="100px"/>
+            <Chart className="WebsiteCard_sparkline" options={chartCircle2.options} series={chartCircle2.series} type="area" height="50" width="100px"/>
             <div className="WebsitePreview_growth">
               <span className="Growth_title">رشد</span>
               <span className="Growth_number">{props.daily_data}</span>

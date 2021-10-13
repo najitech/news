@@ -1,5 +1,6 @@
 .Hashtag2Container {
-
     font-size:10px;
     color:rgb(0, 153, 255);
+    background-color: red;
+    border-radius: 3px;
 }

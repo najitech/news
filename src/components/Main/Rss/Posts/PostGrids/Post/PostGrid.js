@@ -16,6 +16,7 @@ import {TiKey} from 'react-icons/ti'
 import { createTheme, ThemeProvider } from '@material-ui/core/styles';
 import ModalResponsive from './ModalResponsive/ModalResponsive';
 import Hashtag2 from '../../../../../../UI/Hashtag2';
+import { MdWeb } from 'react-icons/md';
 
 const theme = createTheme();
 
@@ -79,6 +80,10 @@ function Post(props) {
              <ModalResponsive  open={open} setOpen={setOpen} image={props.image} positiveness={10} title={props.title} text={props.news_text} publish_date={props.publish_date} handleClose={handleClose} PostProps={props} />
              }
              <Card onClick={handleOpen}  className={classes.root ,"Post_card"}>
+                <div className="PostGrid_site">  
+                        <MdWeb/>
+                        <p>خبرگزاری تسنیم</p>
+                </div>
                 <CardActionArea className="postBody">
                     <CardMedia
                     className={[classes.media , "PostGrid_image"].join(" ") }

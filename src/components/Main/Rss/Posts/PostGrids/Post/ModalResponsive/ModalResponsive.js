@@ -12,6 +12,7 @@ import { useMediaQuery } from 'react-responsive';
 import { BsFillPeopleFill } from 'react-icons/bs';
 import { BiCurrentLocation, BiTimeFive } from 'react-icons/bi';
 import Hashtag2 from '../../../../../../../UI/Hashtag2';
+import { MdWeb } from 'react-icons/md';
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     modal: {
@@ -207,6 +208,10 @@ function ModalResponsive(props) {
                       </div>
                   </div>
                   <div className="postContentModalRes">
+                  <div className="modal_rss_website">  
+                        <MdWeb/>
+                        <p>خبرگزاری تسنیم</p>
+                      </div>
                       <p style={{fontSize:'10px' , textDecoration:"underline"}}>تاریخ انتشار : {(props.publish_date)} </p>
                       <h3 style={{fontSize:'15px'}}>{props.title}</h3>
                       <p style={{fontSize:13}}>

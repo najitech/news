@@ -9,7 +9,7 @@
     outline: none !important;
 }
 .boxShadowAcc{
-    box-shadow : 0.0px 0.3px 2px 0.3px rgb(220 , 220 , 220) !important;
+    box-shadow : 0.0px 0.3px 2px 0.3px #E4E0F5 !important;
 }
 .fontAccardion{
     font-size: 14px !important;
