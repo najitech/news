@@ -10,6 +10,7 @@ import Hashtag from '../../../../../../UI/Hashtag';
 import CustomizedProgressBars from './LinearProgress/CustomizedProgressBars'
 import { BiCurrentLocation, BiTimeFive } from 'react-icons/bi';
 import { BsFillPeopleFill } from 'react-icons/bs';
+import Hashtag2 from '../../../../../../UI/Hashtag2';
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     modal: {
@@ -176,8 +177,8 @@ export default function ModalPost(props) {
                       options={distributedChart.options}
                       series={distributedChart.series}
                       type="treemap"
-                      width="100%"
-                      height="220px"
+                      width="104%"
+                      height="240px"
                       className="ChartStyleClassRssModal"
                     />
                 </div>
@@ -201,7 +202,7 @@ export default function ModalPost(props) {
                 <div className="NER_tags">
                       <div className="NER_location">
                         <span className="NER_title_head">:مکان
-                        <BiCurrentLocation/> </span>
+                        <BiCurrentLocation className="NER_iconsmodal" /> </span>
                         <span>
                           مشهد ، تهران ، تبریز ، اصفهان ، شیراز
                           </span>
@@ -209,14 +210,14 @@ export default function ModalPost(props) {
                       <div className="NER_people">
                         
                       <span className="NER_title_head">:اشخاص
-                      <BsFillPeopleFill/></span>
+                      <BsFillPeopleFill className="NER_iconsmodal"/></span>
                       <span>
                           روحانی ، رئیس جمهور ، سرباز ، رهبر 
                           </span>
                       </div>
                       <div className="NER_time">
                       <span className="NER_title_head">:زمان
-                      <BiTimeFive/></span>
+                      <BiTimeFive className="NER_iconsmodal"/></span>
                       <span>
                            هفته ناجا، روز معلم ، شهریور 
                           </span>
@@ -259,10 +260,13 @@ export default function ModalPost(props) {
                       <Hashtag/>  
                     </div>  
                   </div>  
-                  <div className="hashtags2">
-                      <span>هشتگ ها:</span>
-                      #افتصاد #جنگ #افغانستان #طالبان #زندگی #جهان #کشور #خبر # اخبار
-                  </div>
+                      <div className="Modal_Hashtags2">
+                        <Hashtag2/>
+                        <Hashtag2/>
+                        <Hashtag2/>
+                        <Hashtag2/>
+                        <Hashtag2/>
+                    </div>
                 </div>
               </div>
           </div>

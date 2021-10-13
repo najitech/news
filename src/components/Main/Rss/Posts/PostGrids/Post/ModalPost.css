@@ -170,10 +170,13 @@
     object-fit: cover  !important;
 }
 .keywords{
-    margin-right:12.5px;
     margin-top: 10px;
     display: flex;
     padding: 10px;
+    padding-right: 22.5px;
+    border: 1px solid rgb(236, 235, 235);
+    border-right:none;
+    border-left:none;
     align-items: center;
     justify-content: right;
 }
@@ -186,21 +189,14 @@
     flex:0.75;
     justify-content: right;
 }
+
 .NER_tags{
     text-align: right;
-    width: 90%;
+    width: 95%;
     margin: 0px auto;
     margin-top: -20px;
 }
-.hashtags2{
-    text-align: right;
-    width: 90%;
-    margin: 0px auto;
-    color: #3584c0;
-    padding: 2px;
-    font-size: 13px;
-    margin-bottom: 10px;
-}
+
 .NER_tags span { 
     color : black;
     font-size: 13px;
@@ -247,7 +243,7 @@
 
 .NER_time{
     flex-direction: row-reverse;
-    border-bottom: #ffea00 2px solid;
+    border-bottom: #26A0FC 2px solid;
     height: 30px;
     width: 100%;
     display: flex;
@@ -263,8 +259,24 @@
 }
 .NER_title_head{
     color: #3584c0 !important;
-    font-size: 13px !important;
+    font-size: 12px !important;
     padding-left: 6px;
+}
+.Modal_Hashtags2 {
+    display: flex;
+    align-items: center;
+    margin-right:12px;
+    padding: 7px 10px;
+}
+.Modal_Hashtags2 > p {
+    font-size: 15px;
+}
+
+.Modal_Hashtags2 > * {
+    margin-left:6px;
+}
+.NER_iconsmodal{
+    margin-left: 3px;
 }
 @media screen and (max-width : 1500px) {
     .ModalPost2{

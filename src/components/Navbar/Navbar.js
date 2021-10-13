@@ -6,6 +6,7 @@ import './Navbar.css'
 import {Link ,useRouteMatch} from 'react-router-dom'
 import {MdDashboard} from 'react-icons/md'
 import {FaRssSquare ,FaTwitter} from 'react-icons/fa'
+import {IoNewspaperOutline} from 'react-icons/io5'
 import '../../UI/Styles.css';
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -50,8 +51,8 @@ function Navbar() {
             </Link>
             <Link className="navLink3" to="/Twitter">
               <div className={item3 ? 'activeBar' : ""}>
-                  <FaTwitter className="navIcon"  style={{color:"rgb(28,156,234)"}}/>
-                  <Link className="navLink3" to="/Twitter">توییتر</Link>
+                  <IoNewspaperOutline className="navIcon"  style={{color:"#24E5A4"}}/>
+                  <Link className="navLink3" to="/Twitter">خبرگزاری ها</Link>
                 </div>
             </Link>
           </Toolbar>
