@@ -47,6 +47,7 @@
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
+    margin-top:2px;
 }
 .websiteCardChart{
     width: 60%;
@@ -71,8 +72,13 @@
 }
 .typographyWebsiteCard{
     padding-right: 2px !important;
-
     font-size: 13px !important;
+    flex:0.4;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
 
 
@@ -84,8 +90,9 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     flex : 0.6;
-    width: 200px;
+    width: 100%;
     height: 50px;
+    margin-top:5px;
 }
 
 .WebsiteCard_sparkline {
@@ -96,34 +103,36 @@
 .WebsitePreview_growth {
     width: 75px;
     display: flex;
+    flex:0.4;
     flex-direction: column;
 }
 
 .Growth_title{
-    font-size: 12px;
-    padding:5px;
-    padding-right:8px;
+    font-size: 11px;
+    padding:3px 0px;
+    padding-right:5px;
     color:rgb(170, 166, 166);
     
 }
 .Growth_number{
-    font-size:15px;
+    font-size:12px;
     width: 100%;
-    padding-right:7px;
+
     color:#54BBB8;
     font-weight: bold;
+    
 }
 
 .dataCardWebsite{
     color:#ff891b;
-    border: #f1e9e9da 1px solid;
-    font-size: 19px;
+    border-right: #f1e9e9da 1px solid;
     border-radius: 3px;
-    height: 50px;
+    height: 40px;
     display: flex;
     flex-direction: column;
     align-self: center;
-    flex:0.38;
+    flex:0.6;
+
 }
 
 
@@ -146,4 +155,13 @@
 }
 .WebsiteCard_iconContent{
     font-size: 12px;
+}
+
+.WebsiteCard_dateAndData{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.WebsiteCard_GrowthAndDataContainer {
+    height: 40px;
 }
