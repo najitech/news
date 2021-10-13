@@ -7,9 +7,7 @@ import Icon from '@material-ui/core/Icon';
 import RssFeedIcon from '@material-ui/icons/RssFeed';
 import Chart from "react-apexcharts";
 import Chart2 from "react-google-charts";
-
-
-
+import WebsiteItemHot from './WebsitePopTags/WebsiteItemHot';
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     button: {
@@ -17,7 +15,6 @@ const useStyles = makeStyles((theme: Theme) =>
     },
   }),
 );
-
 const colors= ['#2E93fA', '#66DA26', '#546E7A', '#E91E63', '#FF9800'];
 const state = {
     series: [{
@@ -30,11 +27,15 @@ const state = {
           toolbar: {
             show: false
           },
+          
           events: {
             click: function(chart, w, e) {
               // console.log(chart, w, e)
             }
           }
+        },
+        fill: {
+          colors: ['#764ee3']
         },
         plotOptions: {
           bar: {
@@ -72,7 +73,6 @@ const state = {
            ],
           labels: {
             style: {
-              colors: colors,
               fontSize: '9px'
             }
           }
@@ -81,22 +81,7 @@ const state = {
     
     
 };
-
-
-
-
 function WebsitePreview(props) {
-  const [donChart , setdonChart] = useState({
-    options: {
-      plotOptions: {
-        pie: {
-          size: 500
-        }
-      }
-    },
-    series: [44, 55, 41, 17, 15],
-    labels: ['A', 'B', 'C', 'D', 'E']
-  });
   const [distributedChart , setDistributed] = useState({
           
     series: [
@@ -190,6 +175,7 @@ function WebsitePreview(props) {
       }
     },
   })
+const [listOftags , setListOftags] = React.useState([]);
     const classes = useStyles();
     return (
         <div className="WebsitePreview">
@@ -201,7 +187,6 @@ function WebsitePreview(props) {
                 variant="contained"
                 color="primary"
                 className={[classes.button , "WebsitePreview_button"].join(" ")}
-
             >
                 <div className="WebsitePreview_buttonContent">
                     <RssFeedIcon className="WebsitePreview_buttonIcon" />
@@ -217,15 +202,18 @@ function WebsitePreview(props) {
                 className="WebsitePreview_chart"
             />
             <div className="bin">
-              <Chart
-                options={donChart.options}
-                series={donChart.series}
-                type="donut"  
-                width="280px"
-                height="auto"
-              />
+              <WebsiteItemHot tag="خبر"/>
+              <WebsiteItemHot tag="اجتماعی"/>
+              <WebsiteItemHot tag="طالبان_در_افغانستان"/>
+              <WebsiteItemHot tag="ایران"/>
+              <WebsiteItemHot tag="زندگی_در_افغانستان"/>
+              <WebsiteItemHot tag="یک_هشتگ_تستی"/>
+              <WebsiteItemHot tag="بهترین_هشتگ_ها"/>
+              <WebsiteItemHot tag="Tehran_corona"/>
+              <WebsiteItemHot tag="iran_naji"/>
+              <WebsiteItemHot tag="یک_هشتگ_تستی"/>
+              <WebsiteItemHot tag="رئیس_جمهور"/>
             </div>
-
 
         </div>
     )
