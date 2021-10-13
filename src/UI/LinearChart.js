@@ -9,6 +9,13 @@ let tempvar = {
     },
     fill: {
       colors: ['#764ee3']
+    },    
+    stroke: {
+      show: true,
+      curve: 'smooth',
+      colors: ["#764ee3"],
+      width: 3,
+      dashArray: 0,      
     },
     xaxis: {
       categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999 ,2000 ,2001 , 2002, 2003, 2004 , 2005]
@@ -31,7 +38,10 @@ let tempvar2 = {
     },
       id: "basic-bar"
     },
-
+    fill: {
+      colors: ['#764ee3']
+    },    
+    
     xaxis: {
       categories: [1998, 1999 ,2000 ,2001 , 2002, 2003, 2004 , 2005]
     }

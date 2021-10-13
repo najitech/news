@@ -1,4 +1,8 @@
 .Hashtag {
     font-size: 7px !important;
     height: 17px !important;
+    border-radius: 3px !important;
+    background-color: #EFEBF9 !important;
+    color: #7556DB !important;
+    font-weight: bold;
 }

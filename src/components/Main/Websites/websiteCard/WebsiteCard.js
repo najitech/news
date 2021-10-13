@@ -140,6 +140,7 @@ export default function WebsiteCard(props) {
             <p>{props.title}</p>
       </div>
       <CardContent>
+        <div className="WebsiteCard_">
         <Typography variant="body2" color="textSecondary" className="typographyWebsiteCard" component="p">
             <div className="lastPostDateWebsite">
                 <FiCalendar className="WebsiteCard_icons" />
@@ -152,6 +153,11 @@ export default function WebsiteCard(props) {
                 <span className="WebsiteCard_iconContent">{props.location}</span>
             </div>
         </Typography>
+        <div className="dataCardWebsite">
+            <span className="dataCardWebsite_title">داده در روز</span>
+            <span className="dataCardWebsite_number">{props.daily_data}</span>
+        </div>
+        </div>
         <div className="websiteCardFooter">
         <div className="chartCardWebsite">
             <Chart className="WebsiteCard_sparkline" options={chartCircle2.options} series={chartCircle2.series} type="area" height="50" width="100px"/>
@@ -160,10 +166,7 @@ export default function WebsiteCard(props) {
               <span className="Growth_number">{props.daily_data}</span>
             </div>
         </div>
-        <div className="dataCardWebsite">
-            <span className="dataCardWebsite_title">داده در روز</span>
-            <span className="dataCardWebsite_number">{props.daily_data}</span>
-        </div>
+
         </div>
 
       </CardContent>

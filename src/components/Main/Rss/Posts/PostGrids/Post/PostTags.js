@@ -4,12 +4,12 @@ import './PostTags.css'
 function PostTags() {
     return (
         <div className="PostTags">
-            <PostTag text = "حوادث" backGroundColor="red" fontSize="7px" />
-            <PostTag text = "سیاسی"  backGroundColor="rgb(16, 160, 233)" fontSize="7px" padding="6px" />
-            <PostTag text = "اجتماعی" backGroundColor="rgb(5, 172, 5)" fontSize="7px"/>
-            <PostTag text = "فرهنگی"  backGroundColor="purple" fontSize="7px"/>
+            <PostTag text = "حوادث" backGroundColor="#EFEBF9" fontSize="7px" color="#7556DB"/>
+            <PostTag text = "سیاسی"  backGroundColor="#ebf4f9" fontSize="7px" color="#56bcdb" padding="6px" />
+            <PostTag text = "اجتماعی" backGroundColor="#ebf9ec" fontSize="7px" color="#56db82"/>
+            <PostTag text = "فرهنگی"  backGroundColor="#f9ebeb" fontSize="7px" color="#db5656"/>
             <div className="PostTags_lastchild">
-              <PostTag  text = "فرهنگی"  backGroundColor="orange" fontSize="7px" />
+              <PostTag  text = "فرهنگی"  backGroundColor="#f9f3eb" color="#dbb156" fontSize="7px" />
             </div>
 
 

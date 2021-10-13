@@ -2,10 +2,9 @@
     padding:4px 9.5px;
     display: flex;
     height: 17px;
-    background-color: purple;
-    border-radius : 4px;
+    border-radius : 3px;
+    font-weight: bold !important;
     align-items:center;
-    color:white;
     margin-left:10px;
 
 }
