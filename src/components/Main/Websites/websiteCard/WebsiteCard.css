@@ -20,10 +20,13 @@
     margin-right: 10px;
     margin-top: 10px;
 }
-.cardHeaderWebsite h4{
+.cardHeaderWebsite > p{
     margin-right: 8px;
     padding-top: 2px;
-    font-size: 16px;    
+    font-family: "Shabnam" !important;
+    font-size: 14px;    
+    font-weight: bold;
+    color:rgb(92, 87, 87);
 }
 .activateCardWebsite { 
     transition: border-color 0.4s ease-out;
@@ -32,7 +35,8 @@
 .avatarWebsite{
     width: 50px !important;
     height: 50px !important;
-    border: #ff891b 2px solid ;
+    box-shadow: 0px 0.4px 3px 1px rgba(87, 86, 86, 0.144) !important;
+
 }
 .lastPostDateWebsite{
     display: flex;
@@ -74,9 +78,10 @@
 
 .chartCardWebsite{
     align-self: center;
-    border: #cecdcdda 1px solid;
+    border: #f1e9e9da 1px solid;
     border-radius: 3px;   
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     flex : 0.6;
     width: 200px;
@@ -84,7 +89,7 @@
 }
 
 .WebsiteCard_sparkline {
-    border-right: 1px solid rgb(207, 207, 207);
+    border-left: #f1e9e9da 1px solid;
     margin-right:0px;
 }
 
@@ -111,7 +116,7 @@
 
 .dataCardWebsite{
     color:#ff891b;
-    border: #cecdcdda 1px solid;
+    border: #f1e9e9da 1px solid;
     font-size: 19px;
     border-radius: 3px;
     height: 50px;

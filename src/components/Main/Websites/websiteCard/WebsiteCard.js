@@ -79,6 +79,36 @@ export default function WebsiteCard(props) {
       data: [4, 3, 10, 9, 29, 19, 22, 9, 12, 7, 19, 5, 13, 9, 17, 2, 7, 5]
     }],
     options: {
+      grid: {
+        show: true,
+        borderColor: '#90A4AE',
+        strokeDashArray: 0,
+        position: 'back',
+        xaxis: {
+            lines: {
+                show: false
+            }
+        },   
+        yaxis: {
+            lines: {
+                show: false
+            }
+        },  
+        row: {
+            colors: undefined,
+            opacity: 0.1
+        },  
+        column: {
+            colors: undefined,
+            opacity: 0.1
+        },  
+        padding: {
+            top: 0,
+            right: 0,
+            bottom: 0,
+            left: 0
+        }, 
+      },
       chart: {
         height: 350,
         type: 'line',
@@ -107,9 +137,10 @@ export default function WebsiteCard(props) {
       
       <div className="cardHeaderWebsite">
             <Avatar src={props.image} className="avatarWebsite">R</Avatar>
-            <h4>{props.title}</h4>
+            <p>{props.title}</p>
       </div>
       <CardContent>
+        <div className="WebsiteCard_">
         <Typography variant="body2" color="textSecondary" className="typographyWebsiteCard" component="p">
             <div className="lastPostDateWebsite">
                 <FiCalendar className="WebsiteCard_icons" />
@@ -122,18 +153,20 @@ export default function WebsiteCard(props) {
                 <span className="WebsiteCard_iconContent">{props.location}</span>
             </div>
         </Typography>
+        <div className="dataCardWebsite">
+            <span className="dataCardWebsite_title">داده در روز</span>
+            <span className="dataCardWebsite_number">{props.daily_data}</span>
+        </div>
+        </div>
         <div className="websiteCardFooter">
         <div className="chartCardWebsite">
-            <Chart className="WebsiteCard_sparkline" options={chartCircle2.options} series={chartCircle2.series} type="line" height="50" width="100px"/>
+            <Chart className="WebsiteCard_sparkline" options={chartCircle2.options} series={chartCircle2.series} type="area" height="50" width="100px"/>
             <div className="WebsitePreview_growth">
               <span className="Growth_title">رشد</span>
               <span className="Growth_number">{props.daily_data}</span>
             </div>
         </div>
-        <div className="dataCardWebsite">
-            <span className="dataCardWebsite_title">داده در روز</span>
-            <span className="dataCardWebsite_number">{props.daily_data}</span>
-        </div>
+
         </div>
 
       </CardContent>

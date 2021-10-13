@@ -3,6 +3,7 @@
     height: 97%;
     border-radius: 5px;
     display: flex;
+    background-color: #F7F8FC;
     direction: ltr;
     box-shadow: 0.5px 0.5px 3px 3px rgb(226, 226, 226);
 }
@@ -18,8 +19,8 @@
 }
 .websiteInformationContainer{
     flex: 0.25;
-    padding:14px;
-    padding-top :20px;
+
+
 }
 .gridWebsites{
     justify-content: space-around;
@@ -28,6 +29,6 @@
     padding: 20px;
     gap: 20px 20px;
     grid-template-columns: auto auto auto;
-    border: 1px solid rgb(243, 241, 241);
+
 }
 

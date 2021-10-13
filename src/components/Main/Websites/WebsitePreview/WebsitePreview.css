@@ -3,12 +3,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 4px;
+    box-shadow: 0px 0.4px 0px 1px rgb(235, 235, 235) !important;
     background-color: white;
-    padding-top:9px;
+    padding-top:15px;
     height: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
+
 }
 .WebsitePreview::-webkit-scrollbar {
     display: none;
@@ -25,6 +26,7 @@
 .WebsitePreview_avatar{
     height: 120px !important;
     width: 120px !important;
+    box-shadow: 0px 0.4px 3px 1px rgba(87, 86, 86, 0.144) !important;
 }
 .WebsitePreview_title{
     margin-top:10px;
@@ -73,4 +75,8 @@
 
 .rchart{
     direction: ltr;
+}
+
+.bin {
+    margin-top:15px;
 }
