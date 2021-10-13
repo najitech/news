@@ -245,6 +245,12 @@
     .Post_title {
         font-size: 12px !important;
     }
+    .Hashtag2_lastchild{
+        display: none;
+    }
+    .Hashtags2 span{
+        font-size: 8px !important;
+    }
 }
 @media screen and (max-width : 690px) {
     .Post_card {
@@ -262,6 +268,9 @@
     }
     .Post_footer {
         display:flex !important;
+    }
+    .Hashtags2 span{
+        font-size: 10px !important;
     }
 }
 @media screen and (max-width : 650px) {
@@ -321,6 +330,9 @@
       .Post_title {
           font-size: 12px !important;
       }
+      .Hashtags2 span{
+        font-size: 9px !important;
+    }
 }
 
 @media screen and (max-width : 487px) {
@@ -354,7 +366,9 @@
     .Post_footer  {
         width: 92%;
     }
-    
+    .Hashtags2 span{
+        font-size: 10px !important;
+    }
 }
 
 @media screen and (max-width : 430px) {

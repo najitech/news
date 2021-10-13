@@ -27,6 +27,7 @@ function PostGrids() {
         title:" چگونه ژاچن را خیلی زیاد و خوب بشناسیم و در",
         news_text:" ژاپن بسیار زیباست خیلی خیلی زیبا در حد خیلی زیاد . هرچیزی بگویید باز هم ولی ژاپن از همه زیبا تر و بهتر است ، این متن آزمایشی است ",
         publish_date:"05 Sep 2021 11:00:01 +0430",
+        good:true
     },
     
     {
@@ -211,7 +212,7 @@ function PostGrids() {
                     let mycount2= mycount1+1000;
                     mycount1=mycount2;
                     return (
-                    <PostGrid key={mycount1}  image={data.image} link={data.link} title={data.title} news_text={data.news_text} publish_date={data.publish_date}  />
+                    <PostGrid key={mycount1} good={data.good} image={data.image} link={data.link} title={data.title} news_text={data.news_text} publish_date={data.publish_date}  />
                 )})
             }
 

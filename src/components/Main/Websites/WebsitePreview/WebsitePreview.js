@@ -87,7 +87,13 @@ const state = {
 
 function WebsitePreview(props) {
   const [donChart , setdonChart] = useState({
-    options: {},
+    options: {
+      plotOptions: {
+        pie: {
+          size: 500
+        }
+      }
+    },
     series: [44, 55, 41, 17, 15],
     labels: ['A', 'B', 'C', 'D', 'E']
   });
@@ -210,13 +216,16 @@ function WebsitePreview(props) {
                 height="170"
                 className="WebsitePreview_chart"
             />
-            <Chart
-              options={donChart.options}
-              series={donChart.series}
-              type="donut"  
-              width="280px"
-              height="auto"
-            />
+            <div className="bin">
+              <Chart
+                options={donChart.options}
+                series={donChart.series}
+                type="donut"  
+                width="280px"
+                height="auto"
+              />
+            </div>
+
 
         </div>
     )

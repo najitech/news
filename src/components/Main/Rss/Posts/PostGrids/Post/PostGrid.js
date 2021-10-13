@@ -115,7 +115,7 @@ function Post(props) {
                         <Hashtag2/>
                         <Hashtag2/>
                         <Hashtag2/>
-                        <Hashtag2/>
+                        <Hashtag2 className="Hashtag2_lastchild"/>
                     </div>
 
                 </CardActionArea>

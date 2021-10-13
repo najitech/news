@@ -5,6 +5,7 @@ import WebsiteCard from './websiteCard/WebsiteCard';
 import WebsitePreview from './WebsitePreview/WebsitePreview';
 import './Websites.css';
 import Chart from "react-apexcharts";
+import SortsRss from '../Rss/Sorts/SortsRss';
 function Websites(props) {
     const [data , setData] = React.useState([
         {
@@ -102,6 +103,7 @@ function Websites(props) {
                 <WebsitePreview title={preview.title} image={preview.image}/>
             </div>
             <div className="websitesContainer">
+
                 <div className="gridWebsites">
                     {data.map(item=>{
                         return <WebsiteCard 

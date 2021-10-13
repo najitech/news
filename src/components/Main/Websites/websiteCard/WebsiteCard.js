@@ -79,6 +79,36 @@ export default function WebsiteCard(props) {
       data: [4, 3, 10, 9, 29, 19, 22, 9, 12, 7, 19, 5, 13, 9, 17, 2, 7, 5]
     }],
     options: {
+      grid: {
+        show: true,
+        borderColor: '#90A4AE',
+        strokeDashArray: 0,
+        position: 'back',
+        xaxis: {
+            lines: {
+                show: false
+            }
+        },   
+        yaxis: {
+            lines: {
+                show: false
+            }
+        },  
+        row: {
+            colors: undefined,
+            opacity: 0.1
+        },  
+        column: {
+            colors: undefined,
+            opacity: 0.1
+        },  
+        padding: {
+            top: 0,
+            right: 0,
+            bottom: 0,
+            left: 0
+        }, 
+      },
       chart: {
         height: 350,
         type: 'line',
@@ -107,7 +137,7 @@ export default function WebsiteCard(props) {
       
       <div className="cardHeaderWebsite">
             <Avatar src={props.image} className="avatarWebsite">R</Avatar>
-            <h4>{props.title}</h4>
+            <p>{props.title}</p>
       </div>
       <CardContent>
         <Typography variant="body2" color="textSecondary" className="typographyWebsiteCard" component="p">
