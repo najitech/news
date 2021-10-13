@@ -214,7 +214,6 @@ const [listOftags , setListOftags] = React.useState([]);
               <WebsiteItemHot tag="یک_هشتگ_تستی"/>
               <WebsiteItemHot tag="رئیس_جمهور"/>
             </div>
-
         </div>
     )
 }

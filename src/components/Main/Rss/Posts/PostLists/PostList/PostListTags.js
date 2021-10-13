@@ -5,9 +5,10 @@ import './PostListTags.css'
 function PostListTags() {
     return (
         <div className="PostListTags">
-            <Tag text = "حوادث" backGroundColor="red" />
-            <Tag text = "سیاسی"  backGroundColor="rgb(16, 160, 233)" />
-            <Tag text = "اجتماعی" backGroundColor="rgb(5, 172, 5)"/>
+        <Tag text = "حوادث" backGroundColor="#EFEBF9"  color="#7556DB"/>
+        <Tag text = "سیاسی"  backGroundColor="#ebf4f9" color="#56bcdb" padding="6px" />
+        <Tag text = "اجتماعی" backGroundColor="#ebf9ec"  color="#56db82"/>
+        <Tag text = "فرهنگی"  backGroundColor="#f9ebeb"  color="#db5656"/>
         </div>
     )
 }
