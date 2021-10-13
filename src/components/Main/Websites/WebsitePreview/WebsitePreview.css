@@ -34,7 +34,6 @@
 
 .WebsitePreview_avatar{
     border: 4px solid white;
-
 }
 
 .WebsitePreview_buttonContent {
@@ -52,7 +51,7 @@
     width: 230px !important;
     height: 41px !important;
     border-radius: 25px !important;
-    background-color: #ff891b !important;
+    background-color: #F38203 !important;
 }
 .WebsitePreview_buttonIcon{
     margin-left: 3px !important;
@@ -80,4 +79,7 @@
 
 .bin {
     margin-top:15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 27px;
 }

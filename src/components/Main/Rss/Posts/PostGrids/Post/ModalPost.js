@@ -45,6 +45,9 @@ export default function ModalPost(props) {
           horizontal: true,
         }
       },
+      fill: {
+        colors: ['#764ee3']
+      },
       xaxis: {
         categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]
       }
@@ -247,14 +250,14 @@ export default function ModalPost(props) {
                 <div className="postRssFooter">
                   <CustomizedProgressBars barValue={70}/>
                   <div className="hashtags">
-                    <PostTag text="موضوعات :" fontSize="13px" padding="0px" backGroundColor="white" color="black" marginP="0px" paddingP="0px"/>
-                    <PostTag text="اقتصادی" fontSize="11px" padding="5px" backGroundColor ="#15AEFA"/>
-                    <PostTag text="حوادث"  fontSize="11px" padding="5px" backGroundColor="red"/>
-                    <PostTag text="نظامی"  fontSize="11px" padding="5px" backGroundColor="orange"/>
-                    <PostTag text="جنگ"  fontSize="11px" padding="5px" backGroundColor="green"/>
-                    <PostTag text="فرهنگی" fontSize="11px" padding="5px"  backGroundColor="purple"/>
-                    <PostTag text="ورزشی" fontSize="11px" padding="5px"  backGroundColor="brown"/>
-                    <PostTag text="علمی" fontSize="11px" padding="5px"  backGroundColor="rgb(145, 135, 53)"/>
+                    <PostTag text="موضوعات :"  fontSize="13px" padding="0px" backGroundColor="white" color="black" marginP="0px" paddingP="0px"/>
+                    <PostTag text="اقتصادی" color="#56bcdb" fontSize="11px" padding="5px" backGroundColor ="#ebf4f9"/>
+                    <PostTag text="حوادث"  color="#56db82" fontSize="11px" padding="5px" backGroundColor="#ebf9ec"/>
+                    <PostTag text="نظامی"  color="#db5656" fontSize="11px" padding="5px" backGroundColor="#f9ebeb"/>
+                    <PostTag text="جنگ" color="#dbb156" fontSize="11px" padding="5px" backGroundColor="#f9f3eb"/>
+                    <PostTag text="فرهنگی" color="#7556DB" fontSize="11px" padding="5px"  backGroundColor="#EFEBF9"/>
+                    <PostTag text="ورزشی" color="#56db82" fontSize="11px" padding="5px"  backGroundColor="#ebf9ec"/>
+                    <PostTag text="علمی" color="#db56af" fontSize="11px" padding="5px"  backGroundColor="#f9ebf3"/>
                   </div> 
                   <div className="keywords">
                     <PostTag text="کلمات کلیدی :" fontSize="13px" padding="0px" backGroundColor="white" color="black" marginP="0px" paddingP="0px"/>

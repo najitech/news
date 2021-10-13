@@ -70,7 +70,7 @@
     text-align: right;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.514);
+    background-color: #332f4d3b;
     opacity: 0;
     display: flex;
     flex-direction: column;
@@ -162,7 +162,7 @@
     position: relative;
     border-radius: 3px;
     height: 70%;
-    box-shadow: 0.0px 1.0px 2px 0.3px rgb(168, 166, 166);
+    box-shadow : 0.0px 1.0px 17px 4px #E4E0F5 !important;
     flex : 0.5;
 }
 .PostImage img{

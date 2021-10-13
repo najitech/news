@@ -79,6 +79,10 @@ export default function WebsiteCard(props) {
       data: [4, 3, 10, 9, 29, 19, 22, 9, 12, 7, 19, 5, 13, 9, 17, 2, 7, 5]
     }],
     options: {
+      fill: {
+        colors: ['#764ee3']
+      },    
+
       grid: {
         show: true,
         borderColor: '#90A4AE',
@@ -118,17 +122,18 @@ export default function WebsiteCard(props) {
       },
       stroke: {
         width: 2,
-        curve: 'smooth'
+        curve: 'smooth',
+        show: true,
+        curve: 'smooth',
+        colors: ["#764ee3"],
+        width: 2,
+        dashArray: 0,      
       },
       xaxis: {
         type: 'datetime',
         categories: ['1/11/2000', '2/11/2000', '3/11/2000', '4/11/2000', '5/11/2000', '6/11/2000', '7/11/2000', '8/11/2000', '9/11/2000', '10/11/2000', '11/11/2000', '12/11/2000', '1/11/2001', '2/11/2001', '3/11/2001','4/11/2001' ,'5/11/2001' ,'6/11/2001'],
         tickAmount: 10,
       },
-      yaxis: {
-        min: -10,
-        max: 40,
-      }
     },
 });
 
@@ -165,10 +170,7 @@ export default function WebsiteCard(props) {
           </div>
 
         </div>
-        <div className="chartCardWebsite">
-            <Chart className="WebsiteCard_sparkline" options={chartCircle2.options} series={chartCircle2.series} type="area" height="60" width="100%"/>
-
-        </div>
+        <Chart className="WebsiteCard_sparkline" options={chartCircle2.options} series={chartCircle2.series} type="area" height="50" width="100%"/>
 
       </CardContent>
     </Card>

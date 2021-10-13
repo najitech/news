@@ -19,7 +19,7 @@
 .imageContainerResModal{
     width: 100%;
     overflow: hidden;
-    box-shadow: 0.0px 1.0px 2px 0.3px rgb(168, 166, 166);
+    box-shadow : 0.0px 1.0px 17px 4px #E4E0F5 !important; 
     height: 40%;
     flex: 0.5;
     border-radius: 5px;
