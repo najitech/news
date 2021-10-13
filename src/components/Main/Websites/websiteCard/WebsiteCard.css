@@ -89,7 +89,7 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    flex : 0.6;
+    flex : 0.5;
     width: 100%;
     height: 50px;
     margin-top:5px;
@@ -103,7 +103,7 @@
 .WebsitePreview_growth {
     width: 75px;
     display: flex;
-    flex:0.4;
+    flex:0.5;
     flex-direction: column;
 }
 
@@ -117,7 +117,7 @@
 .Growth_number{
     font-size:12px;
     width: 100%;
-
+    padding-right: 12px;
     color:#54BBB8;
     font-weight: bold;
     
@@ -138,15 +138,17 @@
 
 .dataCardWebsite_title {
     padding:5px;
-    font-size: 12px;
+    font-size: 11px;
     color:rgb(170, 166, 166);
 
 }
 .dataCardWebsite_number {
-    font-size:15px;
+    font-size:12px;
     width: 100%;
-    padding-right:15px;
+    padding-right:30px;
     font-weight: bold;
+
+
 }
 
 .WebsiteCard_icons {
@@ -164,4 +166,8 @@
 
 .WebsiteCard_GrowthAndDataContainer {
     height: 40px;
+    display: flex;
+    flex:0.6;
+    border: 1px solid rgb(231, 231, 231);
+    border-radius:3px;
 }

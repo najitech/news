@@ -81,9 +81,3 @@
 .bin {
     margin-top:15px;
 }
-.WebsiteCard_GrowthAndDataContainer{
-    display: flex;
-    flex:0.6;
-    border: 1px solid rgb(231, 231, 231);
-    border-radius:3px;
-}
