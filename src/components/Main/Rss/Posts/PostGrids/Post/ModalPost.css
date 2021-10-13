@@ -12,6 +12,7 @@
 .ModalPost2 {
     max-width: 1000px ;
     height: 85%;
+    max-height: 650px;
     margin: auto auto;
     width: 75%;
     padding: 0px !important;

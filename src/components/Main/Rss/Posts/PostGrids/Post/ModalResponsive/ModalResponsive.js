@@ -11,6 +11,7 @@ import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 import { useMediaQuery } from 'react-responsive';
 import { BsFillPeopleFill } from 'react-icons/bs';
 import { BiCurrentLocation, BiTimeFive } from 'react-icons/bi';
+import Hashtag2 from '../../../../../../../UI/Hashtag2';
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     modal: {
@@ -233,10 +234,13 @@ function ModalResponsive(props) {
                       <Hashtag/>  
                     </div>
                 </div> 
-                <div className="hashtags2">
-                      <span>هشتگ ها:</span>
-                      #افتصاد #جنگ #افغانستان #طالبان #زندگی #جهان #کشور #خبر # اخبار
-                </div>
+                <div className="Modal_Hashtags2">
+                        <Hashtag2/>
+                        <Hashtag2/>
+                        <Hashtag2/>
+                        <Hashtag2/>
+                        <Hashtag2/>
+                    </div>
                 <div className="NER_tags_res">
                       <div className="NER_location">
                         <span className="NER_title_head">:مکان

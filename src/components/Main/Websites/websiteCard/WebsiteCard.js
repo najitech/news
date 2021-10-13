@@ -103,8 +103,8 @@ export default function WebsiteCard(props) {
 });
 
   return (
-    <Card className={[classes.root , 'websiteCardRss',props.active?'activateCardWebsite':'' , 'noselect']}>
-
+    <Card onClick={()=>{props.open(props.title)}} className={[classes.root , 'websiteCardRss',props.active?'activateCardWebsite':'' , 'noselect']}>
+      
       <div className="cardHeaderWebsite">
             <Avatar src={props.image} className="avatarWebsite">R</Avatar>
             <h4>{props.title}</h4>
