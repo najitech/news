@@ -179,7 +179,7 @@ const [listOftags , setListOftags] = React.useState([]);
     const classes = useStyles();
     return (
         <div className="WebsitePreview">
-            <Avatar className="WebsitePreview_avatar"  src={props.image} className="WebsitePreview_avatar" >R</Avatar>
+            <Avatar src={props.image} className="WebsitePreview_avatar" >R</Avatar>
             <div className="WebsitePreview_header">
                 <h4 className="WebsitePreview_title"> {props.title}</h4>
             </div>
@@ -197,8 +197,6 @@ const [listOftags , setListOftags] = React.useState([]);
                 options={state.options}
                 series={state.series}
                 type="bar"
-                width="320"
-                height="170"
                 className="WebsitePreview_chart"
             />
             <div className="bin">

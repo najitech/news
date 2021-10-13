@@ -45,12 +45,13 @@
 .WebsitePreview_buttonContent > p {
     margin: 0px !important;
     padding: 0px !important;
-    font-size: 15px;
+    font-size: 14px;
+    padding-top:2px !important;
 }
 .WebsitePreview_button {
-    width: 230px !important;
+    width: 240px !important;
     height: 41px !important;
-    border-radius: 25px !important;
+    border-radius: 5px !important;
     background-color: #F38203 !important;
 }
 .WebsitePreview_buttonIcon{
@@ -82,4 +83,34 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 8px 27px;
+}
+
+.WebsitePreview_chart{
+    width: 320px;
+    height: 170px;
+}
+@media screen and (max-width : 961px) {
+    .WebsitePreview_chart {
+        width: 250px !important;
+        height: 140px;
+        margin-left: -10px;
+    }
+    .WebsitePreview_button {
+        width: 195px !important;
+        height: 30px !important;
+    }
+    .WebsitePreview_buttonContent > p {
+        font-size: 12px !important;
+    }
+    .WebsitePreview_buttonIcon {
+        font-size: 20px !important;
+    }
+    .WebsitePreview_avatar {
+        width: 100px !important;
+        height: 100px !important;
+    }
+    .WebsitePreview_title{
+        font-size: 17px !important;
+    }
+
 }

@@ -173,3 +173,60 @@
     border: 1px solid rgb(231, 231, 231);
     border-radius:3px;  
 }
+
+@media screen and (max-width : 875px) {
+    .websiteCardRss {
+        width : 276px !important;
+    }
+    .WebsiteCard_iconContent{
+        font-size: 11px !important;
+    }
+}
+
+@media screen and (max-width : 825px) {
+    .websiteCardRss {
+        width : 300px !important;
+    }
+    .WebsiteCard_iconContent{
+        font-size: 12px !important;
+    }
+}
+
+@media screen and (max-width : 635px) {
+    .websiteCardRss {
+        width : 276px !important;
+    }
+    .WebsiteCard_iconContent{
+        font-size: 11px !important;
+    }
+}
+
+@media screen and (max-width : 529px) {
+    .websiteCardRss {
+        width : 370px !important;
+        height: 200px !important;
+    }
+    .WebsiteCard_iconContent{
+        font-size: 12px !important;
+    }
+    .WebsiteCard_sparkline {
+        margin-top: 20px !important;
+        height: 50px !important;
+    }
+}
+
+
+@media screen and (max-width : 400px) {
+    .websiteCardRss {
+        width : 300px !important;
+        height: 200px !important;
+    }
+    .WebsiteCard_iconContent{
+        font-size: 12px !important;
+    }
+    .WebsiteCard_sparkline {
+        margin-top: 20px !important;
+        height: 50px !important;
+    }
+}
+

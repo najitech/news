@@ -6,3 +6,12 @@
 .webSiteHotItem span{
     font-size: 13px;
 }
+
+@media screen and (max-width : 961px) {
+    .hottagIcon {
+        font-size: 13px;
+    }
+    .webSiteHotItem span{
+        font-size: 10px;
+    }
+}

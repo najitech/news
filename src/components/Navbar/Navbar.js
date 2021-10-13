@@ -40,19 +40,19 @@ function Navbar() {
             <Link className="navLink1" to="/">  
               <div className={item1 ? 'activeBar1' : ""}>
                     <MdDashboard className="navIcon" style={{color : "#F50057"}}/>
-                    <Link className="navLink1" to="/">داشبورد</Link>
+                    <Link className="navLink1 navlinkres" to="/">داشبورد</Link>
                   </div> 
             </Link>
             <Link className="navLink2" to="/RSS">
               <div className={item2 ? 'activeBar2' : ""}>
                     <FaRssSquare className="navIcon" style={{color:"#F38203"}}/>
-                    <Link className="navLink2" to="/RSS">خبرخوان</Link>
+                    <Link className="navLink2 navlinkres" to="/RSS">خبرخوان</Link>
                 </div>  
             </Link>
             <Link className="navLink3" to="/Twitter">
               <div className={item3 ? 'activeBar' : ""}>
                   <IoNewspaperOutline className="navIcon"  style={{color:"#24E5A4"}}/>
-                  <Link className="navLink3" to="/Twitter">خبرگزاری ها</Link>
+                  <Link className="navLink3 navlinkres" to="/Twitter">خبرگزاری ها</Link>
                 </div>
             </Link>
           </Toolbar>

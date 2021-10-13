@@ -147,6 +147,9 @@
     .AppBar div {
         width: 120px;
     }
+    .navlinkres {
+        font-size: 12px;
+    }
 }
 @media screen and (max-width: 370px) {
     .AppBar div {
