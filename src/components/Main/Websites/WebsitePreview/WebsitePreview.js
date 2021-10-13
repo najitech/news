@@ -84,7 +84,7 @@ const state = {
     
 };
 
-function WebsitePreview() {
+function WebsitePreview(props) {
     const classes = useStyles();
     const [donChart , setdonChart] = useState({
         options: {},
@@ -93,9 +93,9 @@ function WebsitePreview() {
       });
     return (
         <div className="WebsitePreview">
-            <Avatar className="WebsitePreview_avatar"  src="https://upload.wikimedia.org/wikipedia/commons/e/e9/ISNA_logo.jpg" className="WebsitePreview_avatar" >R</Avatar>
+            <Avatar className="WebsitePreview_avatar"  src={props.image} className="WebsitePreview_avatar" >R</Avatar>
             <div className="WebsitePreview_header">
-                <h4 className="WebsitePreview_title">خبرگزاری ایسنا</h4>
+                <h4 className="WebsitePreview_title"> {props.title}</h4>
             </div>
             <Button
                 variant="contained"
@@ -105,7 +105,7 @@ function WebsitePreview() {
             >
                 <div className="WebsitePreview_buttonContent">
                     <RssFeedIcon className="WebsitePreview_buttonIcon" />
-                    <p>مشاهده ی اخبار {"ایسنا"}</p>
+                    <p>مشاهده ی اخبار {props.title}</p>
                 </div>
             </Button>
             <Chart
