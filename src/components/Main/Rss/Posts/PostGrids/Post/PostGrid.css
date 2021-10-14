@@ -137,17 +137,6 @@
     margin-left:6px;
 }
 
-
-.Positiveness_PostGrid_tag{
-    position: absolute;
-    top:-8px;
-    left: 0px;
-    font-size: 26px;
-    z-index: 10;
-    padding: 0px;
-}
-.Positive_tag_color{
-}
 .PostGrid_site{
     display: flex;
     align-items: center;
@@ -358,6 +347,10 @@
           .Hashtags2 span{
             font-size: 8px !important;
         }
+        
+    .PostGrid_site {
+        top: 100px;
+    }
 }
 @media screen and (max-width : 527px) {
     .Post_card {
