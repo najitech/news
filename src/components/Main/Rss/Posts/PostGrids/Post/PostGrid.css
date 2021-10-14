@@ -72,7 +72,7 @@
     justify-content: flex-start !important;
     align-items: flex-start !important;
     padding: 0px !important;
-
+    position: relative !important;
 }
 .CardContent{
     padding: 0px 10px !important;
@@ -138,7 +138,36 @@
 }
 
 
+.Positiveness_PostGrid_tag{
+    position: absolute;
+    top:-8px;
+    left: 0px;
+    font-size: 26px;
+    z-index: 10;
+    padding: 0px;
+}
+.Positive_tag_color{
+}
+.PostGrid_site{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 10;
+    top:128px;
+    right:10px;
+    color:white;
+    font-family: "Shabnam";
+    font-size: 13px;
+    background-color: rgba(0, 0, 0, 0.425);
+    border-radius: 4px;
+    padding : 0px 4px;
+    height: 22px;
 
+}
+.PostGrid_site > p {
+    margin-right:3px;
+    font-size: 10px;
+}
 @media screen and (max-width : 1380px) {
     .Post_card {
         width:245px !important;
@@ -227,6 +256,10 @@
     .PostGrid_image {
         height: 140px !important;
     }
+    
+    .PostGrid_site {
+        top: 105px;
+    }
 }
 
 
@@ -252,6 +285,10 @@
     .Hashtags2 span{
         font-size: 7px !important;
     }
+    
+    .PostGrid_site {
+        top: 110px;
+    }
 }
 @media screen and (max-width : 690px) {
     .Post_card {
@@ -272,6 +309,10 @@
     }
     .Hashtags2 span{
         font-size: 9px !important;
+    }
+    
+    .PostGrid_site {
+        top: 130px;
     }
 }
 @media screen and (max-width : 650px) {
@@ -337,6 +378,10 @@
       .Hashtags2 span{
         font-size: 7px !important;
     }
+    
+    .PostGrid_site {
+        top: 110px;
+    }
 }
 
 @media screen and (max-width : 487px) {
@@ -373,11 +418,18 @@
     .Hashtags2 span{
         font-size: 10px !important;
     }
+    
+    .PostGrid_site {
+        top: 175px;
+    }
 }
 
 @media screen and (max-width : 430px) {
     .Post_news_text {
         -webkit-line-clamp: 4; 
+    }
+    .PostGrid_site {
+        top: 175px;
     }
 }
 @media screen and (max-width : 390px) {
@@ -388,29 +440,15 @@
         height: 180px !important;
     }
 }
+
+@media screen and (max-width : 376px) {
+    .PostGrid_site {
+        top: 150px;
+    }
+}
 @media screen and (max-width : 371px) {
     .Post_footer_date {
         display: none;
     }
 }
 
-.PostGrid_site{
-    display: flex;
-    align-items: center;
-    position: absolute;
-    z-index: 10;
-    top:128px;
-    right:10px;
-    color:white;
-    font-family: "Shabnam";
-    font-size: 13px;
-    background-color: rgba(0, 0, 0, 0.425);
-    border-radius: 4px;
-    padding : 0px 4px;
-    height: 22px;
-
-}
-.PostGrid_site > p {
-    margin-right:3px;
-    font-size: 10px;
-}

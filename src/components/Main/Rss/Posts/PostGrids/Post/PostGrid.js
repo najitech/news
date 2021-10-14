@@ -17,7 +17,7 @@ import { createTheme, ThemeProvider } from '@material-ui/core/styles';
 import ModalResponsive from './ModalResponsive/ModalResponsive';
 import Hashtag2 from '../../../../../../UI/Hashtag2';
 import { MdWeb } from 'react-icons/md';
-
+import {IoBookmarkSharp} from 'react-icons/io5'
 const theme = createTheme();
 
 theme.typography= {
@@ -84,11 +84,10 @@ function Post(props) {
                         <MdWeb/>
                         <p>خبرگزاری تسنیم</p>
                 </div>
-                <div className="PostGrid_site">  
-                        <MdWeb/>
-                        <p>خبرگزاری تسنیم</p>
-                </div>
                 <CardActionArea className="postBody">
+                  <div className="Positiveness_PostGrid_tag">  
+                          <IoBookmarkSharp className="Positive_tag_color"/>
+                  </div>
                     <CardMedia
                     className={[classes.media , "PostGrid_image"].join(" ") }
                     image={props.image}
