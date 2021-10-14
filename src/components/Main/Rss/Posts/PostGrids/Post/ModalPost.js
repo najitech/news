@@ -5,6 +5,8 @@ import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
 import './ModalPost.css';
 import Chart from 'react-apexcharts';
+
+import WordCloud from 'react-d3-cloud';
 import PostTag from '../../../../../../UI/Tag';
 import Hashtag from '../../../../../../UI/Hashtag';
 import CustomizedProgressBars from './LinearProgress/CustomizedProgressBars'
@@ -27,7 +29,30 @@ const useStyles = makeStyles((theme: Theme) =>
     },
   }),
 );
-
+const data = [
+  { text: 'افغانستان', value: 1000 },
+  { text: 'طالبان', value: 200 },
+  { text: 'خبر', value: 800 },
+  { text: 'دولت', value: 1000000 },
+  { text: 'مستقل', value: 10 },
+  { text: 'کشور', value: 10 },
+  { text: 'تروریسم', value: 70 },
+  { text: 'ستیزه', value: 10 },
+  { text: 'ترکمنستان', value: 30 },
+  { text: 'دفاع', value: 20 },
+  { text: 'زیرزمینی', value: 10 },
+  { text: 'دفاع', value: 20 },
+  { text: 'تسلیحات', value: 10 },
+  { text: 'سطح', value: 20 },
+  { text: 'سیاسی', value: 50},
+  { text: 'قطعنامه‌', value: 30 },
+  { text: 'انتقال', value: 10 },
+  { text: 'المنافع', value: 20 },
+  { text: 'شیعه', value: 10 },
+  { text: 'طالبان', value: 20 },
+  { text: 'مبارزه', value: 10 },
+  { text: 'رئیس', value: 40 },
+];
 export default function ModalPost(props) {
   const classes = useStyles();
   const {PostProps} = props ;
@@ -177,14 +202,27 @@ export default function ModalPost(props) {
           <div className={[classes.paper ,'modalBase'].join(" ")}> 
               <div className="graphsRss">
                 <div className="categoriesChart">
-                  <Chart
-                      options={distributedChart.options}
-                      series={distributedChart.series}
-                      type="treemap"
-                      width="104%"
-                      height="240px"
-                      className="ChartStyleClassRssModal"
-                    />
+                 <WordCloud
+                    data={data}
+                    width={200}
+                    height={105}
+                    font="shabnam"
+                    fontWeight="bold"
+                    fontSize={(word) => Math.log2(word.value)*1.3}
+                    spiral="rectangular"
+                    padding={4}
+                    random={Math.random}
+                    rotate={(word) => 0}
+                    onWordClick={(event, d) => {
+                      console.log(`onWordClick: ${d.text}`);
+                    }}
+                    onWordMouseOver={(event, d) => {
+                      console.log(`onWordMouseOver: ${d.text}`);
+                    }}
+                    onWordMouseOut={(event, d) => {
+                      console.log(`onWordMouseOut: ${d.text}`);
+                    }}
+                  />
                 </div>
                 <div>
                 </div>
