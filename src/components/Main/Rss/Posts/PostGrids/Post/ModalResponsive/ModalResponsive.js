@@ -12,7 +12,32 @@ import { useMediaQuery } from 'react-responsive';
 import { BsFillPeopleFill } from 'react-icons/bs';
 import { BiCurrentLocation, BiTimeFive } from 'react-icons/bi';
 import Hashtag2 from '../../../../../../../UI/Hashtag2';
+import WordCloud from 'react-d3-cloud';
 import { MdWeb } from 'react-icons/md';
+const data = [
+  { text: 'افغانستان', value: 1000 },
+  { text: 'طالبان', value: 200 },
+  { text: 'خبر', value: 800 },
+  { text: 'دولت', value: 1000000 },
+  { text: 'مستقل', value: 10 },
+  { text: 'کشور', value: 10 },
+  { text: 'تروریسم', value: 70 },
+  { text: 'ستیزه', value: 10 },
+  { text: 'ترکمنستان', value: 30 },
+  { text: 'دفاع', value: 20 },
+  { text: 'زیرزمینی', value: 10 },
+  { text: 'دفاع', value: 20 },
+  { text: 'تسلیحات', value: 10 },
+  { text: 'سطح', value: 20 },
+  { text: 'سیاسی', value: 50},
+  { text: 'قطعنامه‌', value: 30 },
+  { text: 'انتقال', value: 10 },
+  { text: 'المنافع', value: 20 },
+  { text: 'شیعه', value: 10 },
+  { text: 'طالبان', value: 20 },
+  { text: 'مبارزه', value: 10 },
+  { text: 'رئیس', value: 40 },
+];
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     modal: {
@@ -302,14 +327,27 @@ function ModalResponsive(props) {
                     </div>
                     
                     <div className="squarChartRes">
-                        <Chart
-                        options={distributedChart.options}
-                        series={distributedChart.series}
-                        type="treemap"
-                        wi  dth="100%"
-                        height="200px"
-                        className="ChartStyleClassRssModal"
-                        />
+                    <WordCloud
+                    data={data}
+                    width={200}
+                    height={107}
+                    font="shabnam"
+                    fontWeight="bold"
+                    fontSize={(word) => Math.log2(word.value)*1.3}
+                    spiral="rectangular"
+                    padding={4}
+                    random={Math.random}
+                    rotate={(word) => 0}
+                    onWordClick={(event, d) => {
+                      console.log(`onWordClick: ${d.text}`);
+                    }}
+                    onWordMouseOver={(event, d) => {
+                      console.log(`onWordMouseOver: ${d.text}`);
+                    }}
+                    onWordMouseOut={(event, d) => {
+                      console.log(`onWordMouseOut: ${d.text}`);
+                    }}
+                  />
                     </div>
                 </div>
             </div>

@@ -5,8 +5,6 @@ import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
 import './ModalPost.css';
 import Chart from 'react-apexcharts';
-
-import WordCloud from 'react-d3-cloud';
 import PostTag from '../../../../../../UI/Tag';
 import Hashtag from '../../../../../../UI/Hashtag';
 import CustomizedProgressBars from './LinearProgress/CustomizedProgressBars'
@@ -14,21 +12,8 @@ import { BiCurrentLocation, BiTimeFive } from 'react-icons/bi';
 import { BsFillPeopleFill } from 'react-icons/bs';
 import Hashtag2 from '../../../../../../UI/Hashtag2';
 import { MdWeb } from 'react-icons/md';
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    modal: {
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
-    paper: {
-      height : '100%',
-      borderRadius : 5,
-      backgroundColor: theme.palette.background.paper,
-      boxShadow: theme.shadows[5],
-    },
-  }),
-);
+import WordCloud from 'react-d3-cloud';
+
 const data = [
   { text: 'افغانستان', value: 1000 },
   { text: 'طالبان', value: 200 },
@@ -53,6 +38,22 @@ const data = [
   { text: 'مبارزه', value: 10 },
   { text: 'رئیس', value: 40 },
 ];
+const useStyles = makeStyles((theme: Theme) =>
+  createStyles({
+    modal: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    paper: {
+      height : '100%',
+      borderRadius : 5,
+      backgroundColor: theme.palette.background.paper,
+      boxShadow: theme.shadows[5],
+    },
+  }),
+);
+
 export default function ModalPost(props) {
   const classes = useStyles();
   const {PostProps} = props ;
@@ -202,10 +203,10 @@ export default function ModalPost(props) {
           <div className={[classes.paper ,'modalBase'].join(" ")}> 
               <div className="graphsRss">
                 <div className="categoriesChart">
-                 <WordCloud
+                <WordCloud
                     data={data}
-                    width={200}
-                    height={105}
+                    width={250}
+                    height={107}
                     font="shabnam"
                     fontWeight="bold"
                     fontSize={(word) => Math.log2(word.value)*1.3}

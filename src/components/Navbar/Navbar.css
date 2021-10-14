@@ -164,4 +164,7 @@
     .AppBar div {
         width: 80px;
     }
+    .navlinkres {
+        font-size: 11px;
+    }
 }

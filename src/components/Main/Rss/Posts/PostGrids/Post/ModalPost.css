@@ -195,7 +195,7 @@
     text-align: right;
     width: 95%;
     margin: 0px auto;
-    margin-top: -20px;
+    margin-top: 20px;
 }
 
 .NER_tags span { 

@@ -18,6 +18,7 @@ import ModalResponsive from './ModalResponsive/ModalResponsive';
 import Hashtag2 from '../../../../../../UI/Hashtag2';
 import { MdWeb } from 'react-icons/md';
 import {IoBookmarkSharp} from 'react-icons/io5'
+import { BsFillPlusCircleFill } from 'react-icons/bs';
 const theme = createTheme();
 
 theme.typography= {
@@ -57,6 +58,14 @@ function Post(props) {
       if (props.good){
         bordercolor="Post_border_green";
       }
+      let positiveback = "positivebackRed"
+      if (props.good){
+        positiveback = "positivebackGreen"
+      }
+      let positivepoint = "منفی"
+      if (props.good){
+        positivepoint = "مثبت"
+      }
     const isMobileScreen = useMediaQuery({query :'(max-width : 1000px)'});
     return (
         <div  className="Post">
@@ -84,6 +93,9 @@ function Post(props) {
                         <MdWeb/>
                         <p>خبرگزاری تسنیم</p>
                 </div>
+                <div className={["Positiveness_PostGrid_site" ,positiveback ].join(" ")}>
+                        <p>{positivepoint}</p>
+                </div>
                 <CardActionArea className="postBody">
                     <CardMedia
                     className={[classes.media , "PostGrid_image"].join(" ") }
@@ -102,7 +114,6 @@ function Post(props) {
                     </CardContent>
                     <div>
                       <div className="PostGrid_Tag_Date">
-     
                       </div>
                       <PostTags/> 
                     <div className="PostGrid_HashtagsContainer">

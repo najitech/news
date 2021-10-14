@@ -151,11 +151,34 @@
     border-radius: 4px;
     padding : 0px 4px;
     height: 22px;
-
+}
+.Positiveness_PostGrid_site{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        z-index: 10;
+        top:128px;
+        left:10px;
+        color:white;
+        font-family: "Shabnam";
+        font-size: 13px;
+        border-radius: 4px;
+        padding : 3px 4px;
+        height: 22px;
+}
+.positivebackRed {
+    background-color: rgba(238, 38, 38, 0.541);
+}
+.positivebackGreen {
+    background-color: rgba(28, 184, 28, 0.582);
 }
 .PostGrid_site > p {
     margin-right:3px;
     font-size: 10px;
+}
+.Positiveness_PostGrid_site > p {
+    margin-right:3px;
+    font-size: 11px;
 }
 @media screen and (max-width : 1380px) {
     .Post_card {
@@ -249,6 +272,9 @@
     .PostGrid_site {
         top: 105px;
     }
+    .Positiveness_PostGrid_site{
+        top:105px;
+    }
 }
 
 
@@ -278,6 +304,9 @@
     .PostGrid_site {
         top: 110px;
     }
+    .Positiveness_PostGrid_site{
+        top:110px;
+    }
 }
 @media screen and (max-width : 690px) {
     .Post_card {
@@ -302,6 +331,9 @@
     
     .PostGrid_site {
         top: 130px;
+    }
+    .Positiveness_PostGrid_site{
+        top:130px;
     }
 }
 @media screen and (max-width : 650px) {
@@ -351,6 +383,9 @@
     .PostGrid_site {
         top: 100px;
     }
+    .Positiveness_PostGrid_site{
+        top:100px;
+    }
 }
 @media screen and (max-width : 527px) {
     .Post_card {
@@ -374,6 +409,9 @@
     
     .PostGrid_site {
         top: 110px;
+    }
+    .Positiveness_PostGrid_site{
+        top:110px;
     }
 }
 
@@ -415,6 +453,9 @@
     .PostGrid_site {
         top: 175px;
     }
+    .Positiveness_PostGrid_site{
+        top:175px;
+    }
 }
 
 @media screen and (max-width : 430px) {
@@ -424,6 +465,9 @@
     .PostGrid_site {
         top: 175px;
     }
+    .Positiveness_PostGrid_site{
+        top:175px;
+    }
 }
 @media screen and (max-width : 390px) {
     .Post_news_text {
@@ -431,6 +475,12 @@
     }
     .PostGrid_image {
         height: 180px !important;
+    }
+    .PostGrid_site {
+        top: 150px;
+    }
+    .Positiveness_PostGrid_site{
+        top:150px;
     }
 }
 
