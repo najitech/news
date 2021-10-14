@@ -73,13 +73,17 @@ function Post(props) {
             <div className="Post_footer">
                 {postdate.toLocaleString()}
             </div>
-            */}
+            */} 
             {!isMobileScreen ? 
                 <ModalPost  open={open} setOpen={setOpen} image={props.image} positiveness={10} title={props.title} text={props.news_text} publish_date={props.publish_date} handleClose={handleClose} PostProps={props} />
              :
              <ModalResponsive  open={open} setOpen={setOpen} image={props.image} positiveness={10} title={props.title} text={props.news_text} publish_date={props.publish_date} handleClose={handleClose} PostProps={props} />
              }
              <Card onClick={handleOpen}  className={classes.root ,"Post_card"}>
+                <div className="PostGrid_site">  
+                        <MdWeb/>
+                        <p>خبرگزاری تسنیم</p>
+                </div>
                 <div className="PostGrid_site">  
                         <MdWeb/>
                         <p>خبرگزاری تسنیم</p>

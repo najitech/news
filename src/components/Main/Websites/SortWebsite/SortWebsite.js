@@ -30,7 +30,7 @@ function SortWebsite(props) {
       setAnchorEl(null);
     };
     const mobileSize = useMediaQuery({query :'(max-width : 580px)'});
-    const buttonName = ['جدیدترین' , 'قدیمی ترین' , 'پربازدیدترین' , 'کم بازدیدترین'];
+    const buttonName = ['نام' , 'جدید ترین' , 'بیشترین داده' , 'پربازدیدترین '];
     return (    
         <div className="SortsRssWeb">
             <div className="barAsasRss">   
@@ -47,10 +47,10 @@ function SortWebsite(props) {
                 open={Boolean(anchorEl)}
                 onClose={handleClose}
             >
-                <MenuItem value={1} className="menuItemRss" onClick={handleClose}>جدیدترین</MenuItem>
-                <MenuItem value={2}  className="menuItemRss" onClick={handleClose}>قدیمی ترین</MenuItem>
-                <MenuItem value={3} className="menuItemRss" onClick={handleClose}>پربازدیدترین</MenuItem>
-                <MenuItem value={4} className="menuItemRss" onClick={handleClose}>کم بازدیدترین</MenuItem>
+                <MenuItem value={1} className="menuItemRss" onClick={handleClose}>نام</MenuItem>
+                <MenuItem value={2}  className="menuItemRss" onClick={handleClose}>جدید ترین</MenuItem>
+                <MenuItem value={3} className="menuItemRss" onClick={handleClose}>بیشترین داده</MenuItem>
+                <MenuItem value={4} className="menuItemRss" onClick={handleClose}>پربازدیدترین</MenuItem>
             </Menu>
             </>
                 }

@@ -33,9 +33,28 @@
 }
 .sortItemsWebsites{
     margin-top: 20px;
-    margin-right: 37px;
+    margin-right: 38px;
 }
+@media screen and (max-width : 1400px) {
+   .sortItemsWebsites{
+        margin-right: 30px;
+   }
+}
+@media screen and (max-width : 1350px) {
+    .sortItemsWebsites{
+         margin-right: 23px;
+    }
+ }
+ @media screen and (max-width : 1300px) {
+    .sortItemsWebsites{
+         margin-right: 17px;
+    }
+ }
+
 @media screen and (max-width : 1285px) {
+    .sortItemsWebsites{
+        margin-right: 46px;
+   }
     .gridWebsites {
         grid-template-columns: auto auto auto;
     }
@@ -48,8 +67,24 @@
         display:none ;
     }
 }
-
+@media screen and (max-width : 1230px) {
+    .sortItemsWebsites{
+        margin-right: 37px;
+   }
+}@media screen and (max-width : 1210px) {
+    .sortItemsWebsites{
+        margin-right: 37px;
+   }
+}
+@media screen and (max-width : 1100px) {
+    .sortItemsWebsites{
+        margin-right: 26px;
+   }
+}
 @media screen and (max-width : 1071px) {
+    .sortItemsWebsites{
+        margin-right: 42px;
+   }
     .gridWebsites {
       grid-template-columns:auto auto;
     }
@@ -57,10 +92,40 @@
         display:inline ;
     }
 }
+@media screen and (max-width : 1050px) {
+    .sortItemsWebsites{
+        margin-right: 37px;
+   }
+}
+@media screen and (max-width : 1024px) {
+    .sortItemsWebsites{
+        margin-right: 32px;
+   }
+}
+@media screen and (max-width : 1000px) {
+    .sortItemsWebsites{
+        margin-right: 25px;
+   }
+}
 @media screen and (max-width : 961px) {
     .websitesContainer {
         flex:1;
     }
+    .sortItemsWebsites{
+        margin-right: 32px;
+   }
+}
+@media screen and (max-width : 891px) {
+    
+    .sortItemsWebsites{
+        margin-right: 20px;
+   }
+}
+@media screen and (max-width : 861px) {
+    
+    .sortItemsWebsites{
+        margin-right: 10px;
+   }
 }
 
 @media screen and (max-width : 825px) {
@@ -70,8 +135,40 @@
     .websiteInformationContainer {
         display:none ;
     }
+    .sortItemsWebsites{
+        margin-right: 60px;
+   }
 }
-
+@media screen and (max-width : 800px) {
+    .sortItemsWebsites{
+        margin-right: 53px;
+   }
+}
+@media screen and (max-width : 768px) {
+    .sortItemsWebsites{
+        margin-right: 47px;
+   }
+}
+@media screen and (max-width : 750px) {
+    .sortItemsWebsites{
+        margin-right: 40px;
+    }
+}
+@media screen and (max-width : 700px) {
+    .sortItemsWebsites{
+        margin-right: 30px;
+    }
+}
+@media screen and (max-width : 650px) {
+    .sortItemsWebsites{
+        margin-right: 20px;
+    }
+}
+@media screen and (max-width : 600px) {
+    .sortItemsWebsites{
+        margin-right: 30px;
+    }
+}
 @media screen and (max-width : 583px) {
     .gridWebsites {
       grid-template-columns:auto;
@@ -80,9 +177,87 @@
         display:inline;
     }
 }
-
+@media screen and (max-width : 560px) {
+    .sortItemsWebsites{
+        margin-right: 22px;
+    }
+}
+@media screen and (max-width : 550px) {
+    .sortItemsWebsites{
+        margin-right: 15px;
+    }
+}
 @media screen and (max-width : 529px) {
+    .sortItemsWebsites{
+        margin-right: 91px;
+    }
     .websiteInformationContainer {
         display:none
+    }
+}
+
+@media screen and (max-width :510px) {
+    .sortItemsWebsites{
+        margin-right: 80px;
+    }
+}
+@media screen and (max-width :500px) {
+    .sortItemsWebsites{
+        margin-right: 76px;
+    }
+}
+@media screen and (max-width : 480px) {
+    .sortItemsWebsites{
+        margin-right: 65px;
+    }
+}
+@media screen and (max-width : 470px) {
+    .sortItemsWebsites{
+        margin-right: 59px;
+    }
+}
+@media screen and (max-width : 450px) {
+    .sortItemsWebsites{
+        margin-right: 50px;
+    }
+}
+@media screen and (max-width : 440px) {
+    .sortItemsWebsites{
+        margin-right: 45px;
+    }
+}
+@media screen and (max-width : 430px) {
+    .sortItemsWebsites{
+        margin-right: 40px;
+    }
+}
+@media screen and (max-width : 415px) {
+    .sortItemsWebsites{
+        margin-right: 37px;
+    }
+}
+@media screen and (max-width : 400px) {
+    .sortItemsWebsites{
+        margin-right: 50px;
+    }
+}
+@media screen and (max-width : 390px) {
+    .sortItemsWebsites{
+        margin-right: 46px;
+    }
+}
+@media screen and (max-width : 380px) {
+    .sortItemsWebsites{
+        margin-right: 40px;
+    }
+}
+@media screen and (max-width : 370px) {
+    .sortItemsWebsites{
+        margin-right: 35px;
+    }
+}
+@media screen and (max-width : 360px) {
+    .sortItemsWebsites{
+        margin-right: 30px;
     }
 }
