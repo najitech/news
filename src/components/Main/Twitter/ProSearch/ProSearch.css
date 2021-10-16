@@ -31,13 +31,18 @@ object-fit: cover;
 .toggleContainerSelect{
     margin: 0px auto;
     margin-top: 50px;
+    width: 500px !important;
+}
+.typeOfSearchChoose{
+    margin: 0px auto;
+    margin-top: 10px;
     width: 800px !important;
 }
 .proSearchInput{
     margin: 0px auto;
     margin-top: 20px;
     position: relative;
-    width: 800px;
+    width: 600px;
     border-radius: 30px;
     background-color: white;
     text-align: right;

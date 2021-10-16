@@ -13,4 +13,4 @@ function PostListTags() {
     )
 }
 
-export default PostListTags
+export default PostListTags;

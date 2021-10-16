@@ -5,6 +5,7 @@ import Search from '../../Rss/Search/Search';
 import './ProSearch.css';
 import Grow from '@material-ui/core/Grow';
 import SearchTypeTw from './SearchTypeTw/SearchTypeTw';
+import SocialMediaSearchType from './SocialMediaType/SocialMediaSearchType';
 function ProSearch(props) {
     const handleChange = (e)=>{
         props.setSearchInput(e.target.value);
@@ -25,11 +26,12 @@ function ProSearch(props) {
                     {...(true ? { timeout: 700 } : {})}>    
                         <h1>جستجوی پیشرفته</h1>
                     </Grow>
+                        
                     <Grow in={true}
                           style={{transitionDelay:'200ms',}}
                           {...(true ? { timeout: 1000 } : {})}>      
                         <div className="toggleContainerSelect">
-                            <SearchTypeTw/>
+                            <SocialMediaSearchType/>
                         </div>  
                     </Grow>
                     <Grow
@@ -45,6 +47,9 @@ function ProSearch(props) {
                         </Button>
                     </div>
                     </Grow>
+                    <div className="">
+                            <SearchTypeTw/>
+                    </div>  
                 </div>
             </div>
         </div>

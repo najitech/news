@@ -16,7 +16,7 @@ function Main() {
                         <Rss/>
                     </Route>
                     <Route path="/Twitter">
-                        <Websites/>
+                        <TwitterContainer/>
                     </Route>
                 </Switch>
         </div>

@@ -1,0 +1,31 @@
+.socialMediaSearch{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px white solid;
+}
+.socialMediaSearch span{
+    text-align: center;
+}
+.socialMediaSearch div{
+    height:40px;
+    padding: 10px 20px;
+    border-radius: 0px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    margin: -1px 5px;
+    color: white;
+}
+.instagram_proSearch_type:hover{
+    color: #55ADED;
+}
+.twitter_proSearch_type{
+
+}
+.telegram_proSearch_type{
+
+}
+.rss_proSearch_type{
+
+}
