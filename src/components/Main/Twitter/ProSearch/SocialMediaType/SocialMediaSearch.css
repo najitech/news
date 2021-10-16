@@ -3,7 +3,7 @@
     margin: auto;
     align-items: center;
     justify-content: center;
-    border-bottom: 1px white solid;
+    border-bottom: 3px white solid;
 }
 .socialMediaSearch span{
     text-align: center;
@@ -12,20 +12,59 @@
     height:40px;
     padding: 10px 20px;
     border-radius: 0px;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     margin: -1px 5px;
     color: white;
+    border-bottom:none ;
+    cursor: pointer;
+    transition: color 0.3 ease-in;
+}
+.socialMediaIconsProSearch{
+    font-size: 20px;
+    margin-left: 3px;
 }
 .instagram_proSearch_type:hover{
-    color: #55ADED;
+    background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    transition: 0.3s ease-out all;
 }
-.twitter_proSearch_type{
-
+.instagram_active_prosearch
+{
+    background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
 }
-.telegram_proSearch_type{
-
+.twitter_proSearch_type:hover{
+    background:linear-gradient(45deg, #66757f, #00ACEE, #36D8FF, #f5f8fa);
+    transition: 0.3s ease-out color;    
 }
-.rss_proSearch_type{
+.twitter_active_prosearch{
+    background:linear-gradient(45deg, #66757f, #00ACEE, #36D8FF, #f5f8fa);
+    border-bottom:none;
+}
 
+.telegram_proSearch_type:hover{
+    background:linear-gradient(120deg, #0088cc, #d9eef8);
+}
+.telegram_active_prosearch{
+    background:linear-gradient(120deg, #0088cc, #d9eef8);
+    border-bottom: none;
+}
+.rss_proSearch_type:hover{
+    background:linear-gradient(120deg, #f26522, #eca27f);
+}
+.rss_active_prosearch
+{
+    background:linear-gradient(120deg, #f26522,  #eca27f);
+    border-bottom: none;
+}
+.instagram_border_color{
+    border-bottom-color:#c13584 !important ;
+}
+.twitter_border_color {
+    border-bottom-color: #36D8FF !important;
+}
+.telegram_border_color{
+    border-bottom-color: #0088cc !important;   
+}
+.rss_border_color{
+    border-bottom-color: #f26522 !important;
 }
