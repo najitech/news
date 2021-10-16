@@ -58,13 +58,17 @@
 }
 .instagram_border_color{
     border-bottom-color:#c13584 !important ;
+    transition: 0.3s ease-out all;
 }
 .twitter_border_color {
     border-bottom-color: #36D8FF !important;
+    transition: 0.3s ease-out all;
 }
 .telegram_border_color{
     border-bottom-color: #0088cc !important;   
+    transition: 0.3s ease-out all;
 }
 .rss_border_color{
     border-bottom-color: #f26522 !important;
+    transition: 0.3s ease-out all;
 }
