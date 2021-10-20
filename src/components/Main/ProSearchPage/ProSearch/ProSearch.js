@@ -34,6 +34,10 @@ function ProSearch(props) {
                             <SocialMediaSearchType/>
                         </div>  
                     </Grow>
+                   
+                    <div className="">
+                            <SearchTypeTw/>
+                    </div>  
                     <Grow
                     in={true}
                     style={{ transformOrigin: '0 100 0',
@@ -47,9 +51,9 @@ function ProSearch(props) {
                         </Button>
                     </div>
                     </Grow>
-                    <div className="">
-                            <SearchTypeTw/>
-                    </div>  
+                    <div className="advancedProSearchDiv">
+        
+                    </div>
                 </div>
             </div>
         </div>
