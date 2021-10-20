@@ -45,11 +45,20 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+
 export default function MediaControlCard(props) {
   const classes = useStyles();
   const theme = useTheme();
   const publishDate = new Date(props.publish_date);
   const [open, setOpen] = React.useState(false);
+  let positiveback = "positivebackRed"
+  if (props.good){
+    positiveback = "positivebackGreen"
+  }
+  let positivepoint = "منفی"
+  if (props.good){
+    positivepoint = "مثبت"
+  }
 
   const handleOpen = () => {
       setOpen(true);
@@ -107,6 +116,7 @@ export default function MediaControlCard(props) {
                   <Hashtag2/>
                   <Hashtag2/>
             </div>
+
           </CardContent>
 
 

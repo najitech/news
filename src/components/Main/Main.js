@@ -3,7 +3,7 @@ import Rss from './Rss/Rss'
 import { Switch , Route } from 'react-router-dom'
 import './Main.css'
 import TheLayout from '../../containers/TheLayout'
-import TwitterContainer from './Twitter/TwitterContainer'
+import ProSearchContainer from './ProSearchPage/ProSearchContainer'
 import Websites from './Websites/Websites'
 function Main() {
     return (
@@ -16,7 +16,7 @@ function Main() {
                         <Rss/>
                     </Route>
                     <Route path="/Twitter">
-                        <TwitterContainer/>
+                        <ProSearchContainer/>
                     </Route>
                 </Switch>
         </div>

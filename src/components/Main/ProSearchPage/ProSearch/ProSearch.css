@@ -1,0 +1,78 @@
+.proSearch{
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 49px;
+    
+}
+.imageContainerPS{
+    height: 100vh;
+}
+.imageContainerPS img{
+    
+object-fit: cover;    
+}
+.imagestyle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0 , 0, 0.5 );
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+.imagestyle h1{
+    padding-top: 50px;
+    font-size: 40px;
+}
+.toggleContainerSelect{
+    margin: 0px auto;
+    margin-top: 50px;
+    width: 500px !important;
+}
+.typeOfSearchChoose{
+    margin: 0px auto;
+    margin-top: 10px;
+    width: 800px !important;
+}
+.proSearchInput{
+    margin: 0px auto;
+    margin-top: 20px;
+    position: relative;
+    width: 600px;
+    border-radius: 30px;
+    background-color: white;
+    text-align: right;
+    padding:5px 10px;
+    transition: all ease-in 0.4s; 
+}
+.proSearchInput input{  
+    margin :0px 0px;
+    border: none ;
+    width: 81%;
+    margin-right: 15px;
+    border-radius: none;
+    background-color:transparent;
+    font-size: 15px;
+    font-family: vazir;
+    height: 50px;
+}
+.proSearchInput:focus{
+    outline: none;  
+    border: none;
+    transition: all ease-out 0.4s;
+    box-shadow: 1px 1px 5px 1px rgba(37,159,251);
+}
+.searchButtonPs{
+    position: absolute !important;
+    left: 7px !important;
+    border-radius: 30px !important;
+    height: 50px !important;
+    font-size: 20px !important;
+    color: white !important;
+    width: 120px;
+    background-color:rgba(37,159,251) !important;
+}
