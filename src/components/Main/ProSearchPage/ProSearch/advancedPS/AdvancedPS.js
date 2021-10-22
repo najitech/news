@@ -111,9 +111,13 @@ function AdvancedPS(props) {
       };
     const handleAddItemAdvPS = ()=>{
         //set to default : 
-        if(advancedType === -10 || rule === -10)
+        if(advancedType === -10 )
         {
             return;
+        }
+        if(advancedType !== 30 && rule === -10)
+        {    
+                return;
         }
         setAdvancedType(-10);
         setRule(-10);
@@ -292,7 +296,7 @@ q                        />  : rule !== 20 ?
                      </div> 
                      <div>
                         <FormControl className="addPSadvItem">
-                            <Button disabled={advancedType===-10 || rule===-10} onClick={handleAddItemAdvPS}>افزودن
+                            <Button disabled={(advancedType===-10 )|| (rule===-10 && advancedType!==30)} onClick={handleAddItemAdvPS}>افزودن
                             <AiOutlinePlus/>
                             </Button>
                         </FormControl>
@@ -326,16 +330,20 @@ q                        />  : rule !== 20 ?
                                 </FormControl> 
                                 </div>
                                 <div className="listResualtPS">
-                                    
-                                {props.data.advanced[item][1] ===20 ?
-                                 props.data.advanced[item][0].first + 
-                                 " و " +
-                                props.data.advanced[item][0].last:
-                                item !== "picture" && item !=='type'? 
-                                props.data.advanced[item][0]:
-                                item ==='picture' ? 
-                                props.data.advanced[item][0] ? "باشد" : "نباشد":
-                                props.data.advanced[item][0] ===70 ? "گروه" : "کانال"}
+                                        
+                                    {props.data.advanced[item][1] ===20 ?
+                                        <div className="betweenItemResualt">
+                                            { props.data.advanced[item][0].first}
+                                            <span>و</span>
+                                            {props.data.advanced[item][0].last}</div>
+                                    :
+                                    item !== "picture" && item !=='type'?
+                                        <div className="listItemResualt">{props.data.advanced[item][0]}
+                                            </div>:
+                                    item ==='picture' ? 
+                                        <div className="pictureItemResualt">{props.data.advanced[item][0] ? "باشد" : "نباشد"}</div>:
+                                        <div className="telegramItemResualt">{ props.data.advanced[item][0] ===70 ? "گروه" : "کانال"}</div>
+                                   }
                                </div>
                             </div>
                           } 
