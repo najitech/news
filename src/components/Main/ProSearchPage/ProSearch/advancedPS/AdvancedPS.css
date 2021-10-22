@@ -71,7 +71,7 @@
 }
 .closeIconListItem{
     font-size: 17px;
-    color: rgba(255, 217, 0, 0.89) !important;;
+    color: rgba(255, 217, 0, 0.89) !important;
 }
 .listCardAdvancedPS{
     width: 70px;
@@ -84,4 +84,19 @@
     margin-right: 20px !important;
 }
 .valueSelectPopover{
+}
+
+
+.s2{
+    color:red !important;
+    box-shadow: none !important;
+
+}
+
+.h23 {
+    color:gold !important;
+}
+.t2 {
+    color:gold !important;
+    font-size: 13px !important;
 }
