@@ -151,20 +151,18 @@ function AdvancedPS(props) {
                 }
                 break;
             case 20:
-                if(props.social !== 3)
+                if(rule !==20)
                 {
-                    if(rule !==20)
-                    {
-                        props.handleAddRule((prev)=>{
-                            return {...prev , advanced :{...prev.advanced ,views : [value,rule , new Date()]}}
-                        });
-                    }
-                    else{
-                        props.handleAddRule((prev)=>{
-                            return {...prev , advanced :{...prev.advanced ,views : [between,rule , new Date()]}}
-                        });
-                    }
+                    props.handleAddRule((prev)=>{
+                        return {...prev , advanced :{...prev.advanced ,views : [value,rule , new Date()]}}
+                    });
                 }
+                else{
+                    props.handleAddRule((prev)=>{
+                        return {...prev , advanced :{...prev.advanced ,views : [between,rule , new Date()]}}
+                    });
+                }
+            
                 break;
             case 30:
                 props.handleAddRule((prev)=>{
@@ -306,8 +304,7 @@ function AdvancedPS(props) {
                               } : {}}
                             calendarPosition={props.mobile ? 'bottom-right' :"bottom"}
                             animations={[transition()]} 
-                            render={(btvalue, openCal)=>{return <CssTextField InputProps={{ disableUnderline: true }} className="th3" value={value !== null ? btvalue : "تاریخ"} onClick={openCal}/>}}
-q                        />  : rule !== 20 ? 
+                            render={(btvalue, openCal)=>{return <CssTextField InputProps={{ disableUnderline: true }} className="th3" value={value !== null ? btvalue : "تاریخ"} onClick={openCal}/>}}/>  : rule !== 20 ? 
                             <CssTextField InputProps={{ disableUnderline: true }} className="th3" required value={value !== null ? value : "0"} onChange={(e)=>{setValue(e.target.value)}} onClick={handleClick}/> :
                               <div className="betweenInputsContainer">
                                 <CssTextField  InputProps={{ disableUnderline: true }} className="th3"  required value={between.first !== null ? between.first : "0"} onChange={(e)=>{setBetween({...between, first : e.target.value})}} onClick={handleClick}/>
