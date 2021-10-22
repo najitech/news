@@ -19,7 +19,7 @@ function ProSearch(props) {
        
     } , []);
     const [social , setSocial] = useState(1);
-    const [typeTw , setTypeTw] = useState(1);
+    const [typeTw , setTypeTw] = useState(4);
 
     const [instagram , setInstagram] = useState({
         text : [],
@@ -82,6 +82,7 @@ function ProSearch(props) {
         setTypeInput(e.target.value);
     }
     const handleInputTypeSubmit = ()=>{
+        setTypeInput("");
         switch (social) {
             case 1: //instagram 
                 if(typeTw === 1) {setInstagram((prev)=>{ return {...prev , keywoard : [...prev.keywoard , typeInput]}})};
@@ -136,36 +137,41 @@ function ProSearch(props) {
                 if(typeTw === 1) {setTelegram((prev)=>{return {...prev , keywoard:prev.keywoard.filter(item=>(item !== data))}})};
                 if(typeTw === 2) {setTelegram((prev)=>{return {...prev , hashtags:prev.hashtags.filter(item=>(item !== data))}})};
                 if(typeTw === 3) {setTelegram((prev)=>{return {...prev , username:prev.username.filter(item=>(item !== data))}})};
-                if(typeTw === 3) {setTelegram((prev)=>{return {...prev , text:prev.text.filter(item=>(item !== data))}})};
+                if(typeTw === 4) {setTelegram((prev)=>{return {...prev , text:prev.text.filter(item=>(item !== data))}})};
                 break;
             default:
                 break;
         }
     }
     let chooseListChip;
+    let disabled =false;
     switch (social) {
         case 1: //instagram 
             if(typeTw === 1) {chooseListChip = instagram.keywoard};
             if(typeTw === 2) {chooseListChip = instagram.hashtags};
             if(typeTw === 3) {chooseListChip = instagram.username};
-            if(typeTw === 4) {chooseListChip = instagram.text};
+            if(typeTw === 4) {chooseListChip = instagram.text
+                                if(instagram.text.length === 1) {disabled =true;}};
             break;
             case 2://twitter 
             if(typeTw === 1) {chooseListChip = twitter.keywoard};
             if(typeTw === 2) {chooseListChip = twitter.hashtags};
             if(typeTw === 3) {chooseListChip = twitter.username};
-            if(typeTw === 4) {chooseListChip = twitter.text};
+            if(typeTw === 4) {chooseListChip = twitter.text
+                if(twitter.text.length === 1) {disabled =true;}};
             break;
         case 3://Rss
             if(typeTw === 1) {chooseListChip = rss.keywoard};
             if(typeTw === 2) {chooseListChip = rss.hashtags};
-            if(typeTw === 4) {chooseListChip = rss.text};
+            if(typeTw === 4) {chooseListChip = rss.text
+                if(rss.text.length === 1) {disabled =true;}};
             break;
         case 4 : //telegram 
             if(typeTw === 1) {chooseListChip = telegram.keywoard};
             if(typeTw === 2) {chooseListChip = telegram.hashtags};
             if(typeTw === 3) {chooseListChip = telegram.username};
-            if(typeTw === 4) {chooseListChip = telegram.text};
+            if(typeTw === 4) {chooseListChip = telegram.text
+                if(telegram.text.length === 1) {disabled =true;}};
             break;
         default:
             break;
@@ -199,12 +205,12 @@ function ProSearch(props) {
                     >
                     <div className="proSearchInput">
                         <TypeListPS handleDelete={handleDeleteChip} chipData={chooseListChip}/>
-                        <input placeholder="افزودن" value={typeInput} onChange={handleTypeInput}/>
-                        <Button onClick={handleInputTypeSubmit} className="searchButtonPs">
+                        <input disabled={disabled || chooseListChip.length===3} placeholder="افزودن" value={typeInput} onChange={handleTypeInput}/>
+                        <Button disabled={ disabled || chooseListChip.length===3} onClick={handleInputTypeSubmit} className="searchButtonPs">
                             <AiOutlinePlus/>
                         </Button>
                     </div>
-                    </Grow>
+                    </Grow>     
                     <div className="advancedProSearchDiv">
                         <AdvancedPS
                             logic={social===1? instagram.logic : social ===2 ? twitter.logic : social ===3 ? rss.logic : telegram.logic}
