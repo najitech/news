@@ -53,6 +53,8 @@
     border-bottom: 1px solid rgba(255, 217, 0, 0.356);
     justify-content: right;
     border-radius: 6px;
+    font-size:13px;
+    color: rgba(255, 217, 0, 0.89);
 }
 .ruleNameSelect{
     outline: none;
@@ -125,4 +127,17 @@
 }
 .advancedPS .MuiSelect-icon{
     color: rgba(255, 217, 0, 0.89) !important;
+}
+
+.th3 {
+    border-bottom: 1px solid rgba(255, 217, 0, 0.89) !important;
+    height: 33px !important;
+    font-size: 10px !important;
+    margin-top:-5px !important;
+}
+.listCardAdvancedPS {
+    border: 1px solid rgba(255, 217, 0, 0.89);
+    border-radius: 2px;
+    padding:4px;
+    width: 80px;
 }
