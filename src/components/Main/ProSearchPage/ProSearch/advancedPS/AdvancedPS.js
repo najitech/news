@@ -96,6 +96,8 @@ function AdvancedPS(props) {
     React.useEffect(() => {
         setAdvancedType(-10);
         setRule(-10);
+        setValue(0);
+        setBetween({first : null , last : null});
     }, [props.social])
     const handleAlignment = (event, newAlignment) => {
         setLogic(newAlignment);
@@ -149,20 +151,18 @@ function AdvancedPS(props) {
                 }
                 break;
             case 20:
-                if(props.social !== 3)
+                if(rule !==20)
                 {
-                    if(rule !==20)
-                    {
-                        props.handleAddRule((prev)=>{
-                            return {...prev , advanced :{...prev.advanced ,views : [value,rule , new Date()]}}
-                        });
-                    }
-                    else{
-                        props.handleAddRule((prev)=>{
-                            return {...prev , advanced :{...prev.advanced ,views : [between,rule , new Date()]}}
-                        });
-                    }
+                    props.handleAddRule((prev)=>{
+                        return {...prev , advanced :{...prev.advanced ,views : [value,rule , new Date()]}}
+                    });
                 }
+                else{
+                    props.handleAddRule((prev)=>{
+                        return {...prev , advanced :{...prev.advanced ,views : [between,rule , new Date()]}}
+                    });
+                }
+            
                 break;
             case 30:
                 props.handleAddRule((prev)=>{
@@ -192,6 +192,9 @@ function AdvancedPS(props) {
             default: 
                 break;
         }
+        
+        setValue(0);
+        setBetween({first : null , last : null});
     }
     console.log(props.data);
     return (
@@ -301,14 +304,13 @@ function AdvancedPS(props) {
                               } : {}}
                             calendarPosition={props.mobile ? 'bottom-right' :"bottom"}
                             animations={[transition()]} 
-                            render={(btvalue, openCal)=>{return <CssTextField InputProps={{ disableUnderline: true}} className="th3" value={value !== null ? btvalue : "تاریخ"} onClick={openCal}/>}}
-q                        />  : rule !== 20 ? 
+                            render={(btvalue, openCal)=>{return <CssTextField InputProps={{ disableUnderline: true }} className="th3" value={value !== null ? btvalue : "تاریخ"} onClick={openCal}/>}}/>  : rule !== 20 ? 
                             <CssTextField InputProps={{ disableUnderline: true }} className="th3" required value={value !== null ? value : "0"} onChange={(e)=>{setValue(e.target.value)}} onClick={handleClick}/> :
-                              <>
+                              <div className="betweenInputsContainer">
                                 <CssTextField  InputProps={{ disableUnderline: true }} className="th3"  required value={between.first !== null ? between.first : "0"} onChange={(e)=>{setBetween({...between, first : e.target.value})}} onClick={handleClick}/>
-                                <span>و</span>
-                                <CssTextField InputProps={{ disableUnderline: true }} className="th3" required value={between.last !== null ? between.last : between.first? between.first : "0"} onChange={(e)=>{setBetween({...between, last : e.target.value})}} onClick={handleClick}/>
-                              </>
+                    
+                                <CssTextField InputProps={{ disableUnderline: true }} className="th3" required value={between.last !== null ? between.last :"0"} onChange={(e)=>{setBetween({...between, last : e.target.value})}} onClick={handleClick}/>
+                              </div>
                         }
                      </FormControl>
                      </div> 
@@ -345,7 +347,11 @@ q                        />  : rule !== 20 ?
                                     {props.data.advanced[item][1] ===20 ?
                                         <div className="betweenItemResualt">
                                             { props.data.advanced[item][0].first}
-                                            <span>و</span>
+                                            &nbsp;
+                                            &nbsp;
+                                            <span>تا</span>
+                                            &nbsp;
+                                            &nbsp;
                                             {props.data.advanced[item][0].last}</div>
                                     :
                                     item !== "picture" && item !=='type'?
