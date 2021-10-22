@@ -7,6 +7,7 @@
 }
 .socialMediaSearch span{
     text-align: center;
+    font-size: 13px;
 }
 .socialMediaSearch div{
     height:40px;
@@ -14,7 +15,7 @@
     border-radius: 0px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    margin: -1px 5px;
+    margin: 0px 5px;
     color: white;
     border-bottom:none ;
     cursor: pointer;

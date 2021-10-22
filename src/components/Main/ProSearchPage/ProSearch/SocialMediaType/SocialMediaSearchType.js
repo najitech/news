@@ -1,14 +1,14 @@
-import { ToggleButton, ToggleButtonGroup } from '@material-ui/lab';
 import React from 'react'
-import { AiOutlineKey  ,AiFillInstagram ,AiFillTwitterCircle} from 'react-icons/ai';
+import {   AiFillInstagram ,AiFillTwitterCircle} from 'react-icons/ai';
 import {FaTelegram ,FaRssSquare} from 'react-icons/fa'
 import './SocialMediaSearch.css';
 function SocialMediaSearchType(props) {
-    const [social , setSocial] = React.useState(1); 
+    const {social , handleSocial} = props;
     const handleSelect = (e)=>{
-        setSocial(e);
+        handleSocial(e);
     }
     let borderColor;
+    // eslint-disable-next-line default-case
     switch(social)
     {
         case 1:
@@ -17,10 +17,10 @@ function SocialMediaSearchType(props) {
         case 2:
             borderColor= 'twitter_border_color';
             break;
-        case 3:
+        case 4:
             borderColor= 'telegram_border_color';
             break;
-        case 4:
+        case 3:
             borderColor= 'rss_border_color';
     }
     return (
@@ -32,14 +32,14 @@ function SocialMediaSearchType(props) {
             <div onClick={()=>{handleSelect(2)}} className={["twitter_proSearch_type " ,social===2  ? "twitter_active_prosearch" :" "].join(" ")}>
                 <AiFillTwitterCircle className="socialMediaIconsProSearch"/>
                 <span>توییتر</span>
-            </div>
-            <div onClick={()=>{handleSelect(3)}} className={["telegram_proSearch_type" , social ===3  ? "telegram_active_prosearch" : " "].join(" ")}>
-                <FaTelegram className="socialMediaIconsProSearch"/>
-                <span>تلگرام</span>
-            </div>
-            <div onClick={()=>{handleSelect(4)}} className={["rss_proSearch_type" , social===4 ? "rss_active_prosearch" : " "].join(" ")}>
+            </div>  
+            <div onClick={()=>{handleSelect(3)}} className={["rss_proSearch_type" , social===3 ? "rss_active_prosearch" : " "].join(" ")}>
                 <FaRssSquare className="socialMediaIconsProSearch"/>
                 <span>خبرخوان</span>
+            </div>
+            <div onClick={()=>{handleSelect(4)}} className={["telegram_proSearch_type" , social ===4  ? "telegram_active_prosearch" : " "].join(" ")}>
+                <FaTelegram className="socialMediaIconsProSearch"/>
+                <span>تلگرام</span>
             </div>
         </div>
     )

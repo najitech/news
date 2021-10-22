@@ -1,0 +1,25 @@
+.typeListPS{
+    display: flex;
+    align-items: center;
+    direction: ltr;
+}
+.typeListPS div{
+    margin: 0px 1px;
+}
+.typeListPS:first-child{
+    margin-right: 2px;
+}
+.typeListPS .MuiChip-root{
+    background-color: #E8E4F1;
+    color : #866DD9;
+}
+.typeListPS .MuiChip-root:focus{
+    background-color: #866dd93d;
+}
+.typeListPS .MuiChip-deleteIcon{    
+    background-color: #E8E4F1;
+    color : #866DD9;
+}
+.typeListPS .MuiChip-deleteIcon:hover{
+    color : #9388ac;
+}
