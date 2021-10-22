@@ -13,6 +13,7 @@ import persian from "react-date-object/calendars/persian";
 import persian_fa from "react-date-object/locales/persian_fa";
 
 import TextField from '@material-ui/core/TextField';
+import { withStyles } from '@material-ui/core/styles';
 const advancedTypeLabel = {
     "likes" : 'تعداد لایک',
     "views" : 'تعداد بازدید',
@@ -20,7 +21,24 @@ const advancedTypeLabel = {
     "date" : 'تاریخ',
     "type" : 'منبع'
 }
-
+const CssTextField = withStyles({
+    root: {
+      '& label.Mui-focused': {
+          borderColor:'rgba(255, 217, 0, 0.89)',
+        color: 'rgba(255, 217, 0, 0.89)',
+      },'&:after': {
+        borderColor: 'rgba(255, 217, 0, 0.89)',
+    },
+    borderBottomColor : 'rgba(255, 217, 0, 0.89)',
+    '&:not(.Mui-disabled):hover::before': {
+        borderColor: 'rgba(255, 217, 0, 0.89)',
+    },
+    '& .MuiInput-underline:after': {
+        borderBottomColor: 'rgba(255, 217, 0, 0.89)',
+      },
+      
+    },
+  })(TextField);
 const useStyles2 = makeStyles({
     select: {
         '&:before': {
@@ -261,13 +279,13 @@ function AdvancedPS(props) {
                               } : {}}
                             calendarPosition={props.mobile ? 'bottom-right' :"bottom"}
                             animations={[transition()]} 
-                            render={(btvalue, openCal)=>{return <TextField  className="t2" value={value !== null ? btvalue : "تاریخ"} onClick={openCal}/>}}
+                            render={(btvalue, openCal)=>{return <CssTextField value={value !== null ? btvalue : "تاریخ"} onClick={openCal}/>}}
 q                        />  : rule !== 20 ? 
-                            <TextField  required value={value !== null ? value : "0"} onChange={(e)=>{setValue(e.target.value)}} onClick={handleClick}/> :
+                            <CssTextField  required value={value !== null ? value : "0"} onChange={(e)=>{setValue(e.target.value)}} onClick={handleClick}/> :
                               <>
-                                <TextField  required value={between.first !== null ? between.first : "0"} onChange={(e)=>{setBetween({...between, first : e.target.value})}} onClick={handleClick}/>
+                                <CssTextField  required value={between.first !== null ? between.first : "0"} onChange={(e)=>{setBetween({...between, first : e.target.value})}} onClick={handleClick}/>
                                 <span>و</span>
-                                <TextField  required value={between.last !== null ? between.last : between.first? between.first : "0"} onChange={(e)=>{setBetween({...between, last : e.target.value})}} onClick={handleClick}/>
+                                <CssTextField  required value={between.last !== null ? between.last : between.first? between.first : "0"} onChange={(e)=>{setBetween({...between, last : e.target.value})}} onClick={handleClick}/>
                               </>
                         }
                      </FormControl>
