@@ -2,8 +2,7 @@ import { Chip } from '@material-ui/core';
 import React from 'react';
 import './TypeListPS.css';
 function TypeListPS(props) {
-    const {chipData}= props
-    console.log(chipData);
+    const {chipData}= props;
     return (
 
         <div className="typeListPS"> 

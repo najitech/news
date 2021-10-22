@@ -25,9 +25,9 @@ function ProSearch(props) {
         keywoard: [],
         hashtags : [],
         username : [],
+        logic : "any",
         advanced : {
-            logic : "any",
-            date : {},
+            date : null,
             picture : null,
             likes : null,
             views : null,
@@ -37,9 +37,9 @@ function ProSearch(props) {
         keywoard: [],
         hashtags : [],
         username : [],
+        logic : "any",
         advanced : {
-            logic : "any",
-            date : {},
+            date : null,
             picture : null,
             likes : null,
             views : null,
@@ -48,9 +48,9 @@ function ProSearch(props) {
     const [rss , setRss] = useState({
         keywoard: [],
         hashtags : [],
+        logic : "any",
         advanced : {
-            logic : "any",
-            date : {},
+            date : null,
             picture : null,
             views : null,
             sites : []
@@ -60,9 +60,9 @@ function ProSearch(props) {
         keywoard: [],
         hashtags : [],
         username : [],
+        logic : "any",
         advanced : {
-            logic : "any",
-            date : {},
+            date : null,
             picture : null,
             likes : null,
             views : null,
@@ -70,10 +70,10 @@ function ProSearch(props) {
         }
     });
     const handleLogic = (e)=>{
-        if(social === 1){setInstagram((prev)=>{return {...prev  , advanced : {...prev.advanced , logic : e}}})}
-        if(social === 2){setTwitter((prev)=>{return {...prev  , advanced : {...prev.advanced , logic : e}}})}
-        if(social === 3){setRss((prev)=>{return {...prev  , advanced : {...prev.advanced , logic : e}}})}
-        if(social === 4){setTelegram((prev)=>{return {...prev  , advanced : {...prev.advanced , logic : e}}})}
+        if(social === 1){setInstagram((prev)=>{return {...prev  ,logic : e}})}
+        if(social === 2){setTwitter((prev)=>{return {...prev  , logic : e}})}
+        if(social === 3){setRss((prev)=>{return {...prev  , logic : e}})}
+        if(social === 4){setTelegram((prev)=>{return {...prev  ,logic : e}})}
     }
     const handleTypeInput = (e)=>{
         setTypeInput(e.target.value);
@@ -156,7 +156,7 @@ function ProSearch(props) {
             break;
     }
     
-    console.log(instagram);
+    console.log(Object.keys(instagram.advanced));
     return (
         <div className="proSearch">
             <div className="imageContainerPS">    
@@ -194,9 +194,11 @@ function ProSearch(props) {
                     </Grow>
                     <div className="advancedProSearchDiv">
                         <AdvancedPS
-                            logic={social===1? instagram.advanced.logic : social ===2 ? twitter.advanced.logic : social ===3 ? rss.advanced.logic : telegram.advanced.logic}
+                            logic={social===1? instagram.logic : social ===2 ? twitter.logic : social ===3 ? rss.logic : telegram.logic}
                             setLogic={handleLogic}
                             social={social}
+                            handleAddRule={social===1? setInstagram : social ===2 ? setTwitter : social ===3 ? setRss : setTelegram}
+                            data={social===1? instagram : social ===2 ? twitter : social ===3 ? rss : telegram}
                             />
                     </div>
                 </div>
