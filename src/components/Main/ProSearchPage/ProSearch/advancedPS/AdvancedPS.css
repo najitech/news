@@ -27,8 +27,8 @@
     border-bottom : 2px dashed rgba(255, 217, 0, 0.89);
     width: 65%;
     padding: 10px;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
     margin-bottom: 5px;
 
 }
