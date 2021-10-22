@@ -24,9 +24,13 @@
     margin: auto;
     justify-content: center;
     border-top: 1px solid rgba(255, 217, 0, 0.89);
-    width: 60%;
-    padding: 5px;
-    border-radius: 30px;
+    border-bottom : 2px dashed rgba(255, 217, 0, 0.89);
+    width: 65%;
+    padding: 10px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-bottom: 5px;
+
 }
 .addRuleContainer div{
     margin: 0px 2px;
@@ -37,8 +41,9 @@
 
 }
 .advancedPSList{
-    width: 70%;
+    width: 65%;
     margin: auto;
+    height: 40px;
 
 }
 .advancedPSlistItem{
