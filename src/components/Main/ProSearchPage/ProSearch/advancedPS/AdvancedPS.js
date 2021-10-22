@@ -52,7 +52,8 @@ const useStyles2 = makeStyles({
         },
         color: 'gold',
         fontSize:'13px',
-        textAlign:'right'
+        textAlign:'right',
+        background:'none',
     },
 })
 
