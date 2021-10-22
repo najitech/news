@@ -22,6 +22,7 @@ function ProSearch(props) {
     const [typeTw , setTypeTw] = useState(1);
 
     const [instagram , setInstagram] = useState({
+        text : "",
         keywoard: [],
         hashtags : [],
         username : [],
@@ -34,6 +35,7 @@ function ProSearch(props) {
         }
     });
     const [twitter , setTwitter] = useState({
+        text : "",
         keywoard: [],
         hashtags : [],
         username : [],
@@ -46,6 +48,7 @@ function ProSearch(props) {
         }
     });
     const [rss , setRss] = useState({
+        text : "",
         keywoard: [],
         hashtags : [],
         logic : "any",
@@ -57,6 +60,7 @@ function ProSearch(props) {
         }
     });
     const [telegram , setTelegram] = useState({
+        text : "",
         keywoard: [],
         hashtags : [],
         username : [],
@@ -84,20 +88,24 @@ function ProSearch(props) {
                 if(typeTw === 1) {setInstagram((prev)=>{ return {...prev , keywoard : [...prev.keywoard , typeInput]}})};
                 if(typeTw === 2) {setInstagram({...instagram , hashtags : [...instagram.hashtags , typeInput]})};
                 if(typeTw === 3) {setInstagram({...instagram , username : [...instagram.username , typeInput]})};
+                if(typeTw === 4) {setInstagram({...instagram , text : [...instagram.text , typeInput]})};
                 break;
             case 2://twitter 
                 if(typeTw === 1) {setTwitter({...twitter , keywoard : [...twitter.keywoard , typeInput]})};
                 if(typeTw === 2) {setTwitter({...twitter , hashtags : [...twitter.hashtags , typeInput]})};
                 if(typeTw === 3) {setTwitter({...twitter , username : [...twitter.username , typeInput]})};
+                if(typeTw === 4) {setTwitter({...twitter , text : [...twitter.text , typeInput]})};
                 break;
             case 3://Rss
                 if(typeTw === 1) {setRss({...rss , keywoard : [...rss.keywoard , typeInput]})};
                 if(typeTw === 2) {setRss({...rss , hashtags : [...rss.hashtags , typeInput]})};
+                if(typeTw === 4) {setRss({...rss , text : [...rss.text , typeInput]})};
                 break;
             case 4 : //telegram 
                 if(typeTw === 1) {setTelegram({...telegram , keywoard : [...telegram.keywoard , typeInput]})};
                 if(typeTw === 2) {setTelegram({...telegram , hashtags : [...telegram.hashtags , typeInput]})};
                 if(typeTw === 3) {setTelegram({...telegram , username : [...telegram.username , typeInput]})};
+                if(typeTw === 4) {setTelegram({...telegram , text : [...telegram.text , typeInput]})};
                 break;
             default:
                 break;
