@@ -18,6 +18,12 @@
     margin: auto;
     justify-content: center;
 }
+.addRuleContainer div{
+    margin: 0px 2px;
+}
+.addFilterLabelPS{
+    font-size: 16px;
+}
 .advancedPSList{
     width: 70%;
     margin: auto;
@@ -25,14 +31,57 @@
 .advancedPSlistItem{
     display: flex;
     align-items: center;
-    justify-content: center;
+    background-color: #eee8ff50;
+    justify-content: right;
 }
-.advancedPS .MuiSelect-root{
+.ruleNameSelect{
     outline: none;
+    width: 150px;
+    padding: 0px;
+    font-size: 15px;
+    border: none;
+    padding: 10px;
 }
 .sliderPS{
     width: 200px;
     padding: 10px;
+}
+.ruleActionSelect{
+    font-size: 12px;
+    width: 100px;
+}
+.ruleValueSelect{
+    width : 150px;
+}
+.addPSadvItem .MuiButton-root{
+    background-color: rgba(0, 0, 0, 0.267);
+    color : rgba(255, 217, 0, 0.89);
+    border-radius: 20px;
+    width: 100px;
+}
+.addPSadvItem .MuiButton-root:hover{
+    background-color: rgba(0, 0, 0, 0.205);
+    color: rgba(255, 217, 0, 0.89);
+    opacity: 1;
+}
+.advancedPSButton{
+    background-color: rgba(0, 0, 0, 0.267) !important;
+    color: rgba(255, 217, 0, 0.89) !important;;
+    margin: 0px 3px !important;
+}
+.closeIconListItem{
+    font-size: 17px;
+    color: rgba(255, 217, 0, 0.89) !important;;
+}
+.listCardAdvancedPS{
+    width: 70px;
+}
+.listResualtPS{
+    width: 300px;
+}
+.ruleActionSelect{
+    margin: 0px 5px !important;
+    margin-right: 20px !important;
 }
 .valueSelectPopover{
 }

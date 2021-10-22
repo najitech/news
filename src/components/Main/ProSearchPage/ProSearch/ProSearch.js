@@ -56,7 +56,6 @@ function ProSearch(props) {
             date : null,
             picture : null,
             views : null,
-            sites : []
         }
     });
     const [telegram , setTelegram] = useState({
@@ -171,8 +170,6 @@ function ProSearch(props) {
         default:
             break;
     }
-    
-    console.log(Object.keys(instagram.advanced));
     return (
         <div className="proSearch">
             <div className="imageContainerPS">    
