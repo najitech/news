@@ -96,6 +96,8 @@ function AdvancedPS(props) {
     React.useEffect(() => {
         setAdvancedType(-10);
         setRule(-10);
+        setValue(0);
+        setBetween({first : null , last : null});
     }, [props.social])
     const handleAlignment = (event, newAlignment) => {
         setLogic(newAlignment);
@@ -192,6 +194,9 @@ function AdvancedPS(props) {
             default: 
                 break;
         }
+        
+        setValue(0);
+        setBetween({first : null , last : null});
     }
     console.log(props.data);
     return (
