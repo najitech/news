@@ -17,12 +17,18 @@
     text-align: center;
     margin: auto;
     justify-content: center;
+    border: 1px solid rgba(255, 217, 0, 0.356);
+    width: 60%;
+    padding: 5px;
+    border-radius: 6px;
 }
 .addRuleContainer div{
     margin: 0px 2px;
 }
 .addFilterLabelPS{
-    font-size: 16px;
+    font-size: 13px;
+    color:rgba(255, 217, 0, 0.89);
+
 }
 .advancedPSList{
     width: 70%;
