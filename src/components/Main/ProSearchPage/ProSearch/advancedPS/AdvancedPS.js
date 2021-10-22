@@ -4,7 +4,7 @@ import React from 'react';
 import './AdvancedPS.css';
 import DatePicker, { DateObject } from "react-multi-date-picker";
 import { Button, IconButton, MenuItem, Popover, Select, Slider, Switch } from '@material-ui/core';
-import { AiOutlineClose, AiOutlinePlus } from 'react-icons/ai';
+import { AiOutlineClose, AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
 import { GrClose } from 'react-icons/gr';
 import "react-multi-date-picker/styles/colors/red.css"
 import "react-multi-date-picker/styles/layouts/mobile.css";
@@ -28,7 +28,11 @@ function AdvancedPS(props) {
     const [value , setValue] = React.useState(null);
     const [between, setBetween] = React.useState({first : null , last :null});
     const [dateRange , setDateRange] = React.useState([new DateObject({ calendar: persian }).subtract(4, "days"),
-    new DateObject({ calendar: persian }).add(4, "days")])
+    new DateObject({ calendar: persian }).add(4, "days")]);
+    React.useEffect(() => {
+        setAdvancedType(-10);
+        setRule(-10);
+    }, [props.social])
     const handleAlignment = (event, newAlignment) => {
         setLogic(newAlignment);
     };
@@ -38,10 +42,6 @@ function AdvancedPS(props) {
     };
     const handleRuleChange = (event) => {
         setRule(event.target.value);
-        if(advancedType === 10 || advancedType === 20)
-        {
-            
-        }
     };
     const handleClick = (event) => {
     };
@@ -55,6 +55,14 @@ function AdvancedPS(props) {
         setCheckPicture( event.target.checked );
       };
     const handleAddItemAdvPS = ()=>{
+        //set to default : 
+        if(advancedType === -10 || rule === -10)
+        {
+            return;
+        }
+        setAdvancedType(-10);
+        setRule(-10);
+        
         // adding data to states : 
         switch(advancedType){
             case 10:
@@ -153,6 +161,7 @@ function AdvancedPS(props) {
                                 {props.data.advanced.picture === null ? <MenuItem value={30}>عکس دار </MenuItem> : null}
                                 {props.data.advanced.date ===null ? <MenuItem value={40}>تاریخ</MenuItem> : null}
                                 {props.social === 4 ? props.data.advanced.type ===null? <MenuItem value={50}>منبع</MenuItem> : null :null}
+                                <MenuItem value={-10}><AiOutlineMinus/></MenuItem>
                             </Select>     
                         </FormControl>
                     </div>
@@ -175,15 +184,16 @@ function AdvancedPS(props) {
                                 {advancedType === 40  ?<MenuItem value={40}>بعد از</MenuItem>:null}
                                 {advancedType === 50 && props.social === 4 ? <MenuItem value={70}>گروه</MenuItem>:null}
                                 {advancedType === 50 && props.social === 4 ? <MenuItem value={80}>کانال</MenuItem>:null}
+                                <MenuItem value={-10}><AiOutlineMinus/></MenuItem>
                             </Select>     
                         </FormControl>  : null}
                     </div>
                     <div>
                         <FormControl className="ruleValueSelect">
                          {
-                             advancedType === 50 ?
+                             advancedType === 50 ? 
                                 null :
-                             advancedType ===30 ? 
+                             advancedType ===30 && !props.data.advanced.picture ? 
                              <Switch
                                 checked={checkPicture}
                                 onChange={handleCheckPicture}
@@ -224,7 +234,7 @@ function AdvancedPS(props) {
                      </div> 
                      <div>
                         <FormControl className="addPSadvItem">
-                            <Button onClick={handleAddItemAdvPS}>افزودن
+                            <Button disabled={advancedType===-10 || rule===-10} onClick={handleAddItemAdvPS}>افزودن
                             <AiOutlinePlus/>
                             </Button>
                         </FormControl>
