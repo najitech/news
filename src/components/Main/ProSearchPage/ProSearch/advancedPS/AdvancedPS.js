@@ -166,7 +166,7 @@ function AdvancedPS(props) {
     return (
         <div className="advancedPS">
             <div>
-                <h5 className="advancedPSheader">نمایش &nbsp;<span className="toggleButtonAndOr" style={{direction: 'ltr'}}>
+                <h6 className="advancedPSheader">نمایش &nbsp;<span className="toggleButtonAndOr" style={{direction: 'ltr'}}>
                     <ToggleButtonGroup
                         value={logic}
                         exclusive
@@ -174,13 +174,13 @@ function AdvancedPS(props) {
                         aria-label="text alignment"
                         >
                         <ToggleButton value="and" aria-label="right aligned">
-                            همه
+                            <p>همه </p>
                         </ToggleButton>
                         <ToggleButton value="any" aria-label="left aligned">
-                            هر کدام
+                            <p>هر کدام </p>
                         </ToggleButton>
                     </ToggleButtonGroup>    
-                </span> نتایج فیلتر ها</h5>
+                </span> نتایج فیلتر ها</h6>
             </div>
                 <div className="addRuleContainer">
                     <div>
