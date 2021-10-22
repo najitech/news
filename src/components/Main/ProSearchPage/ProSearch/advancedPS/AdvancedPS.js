@@ -21,6 +21,14 @@ const advancedTypeLabel = {
     "date" : 'تاریخ',
     "type" : 'منبع'
 }
+const actionTypeLabel= {
+    20 : 'بین',
+    30 : "قبل از",
+    40 : 'بعد از',
+    10 : 'برابر با',
+    50 : 'کمتر از',
+    60 : 'بیشتر از'
+}
 const CssTextField = withStyles({
     root: {
       '& label.Mui-focused': {
@@ -256,12 +264,21 @@ function AdvancedPS(props) {
                              advancedType === 50 ? 
                                 null :
                              advancedType ===30 && !props.data.advanced.picture ? 
-                             <Switch
-                                checked={checkPicture}
-                                onChange={handleCheckPicture}
-                                name="checkedA"
-                                inputProps={{ 'aria-label': 'secondary checkbox' }}
-                            /> :advancedType ===40 ?  
+                             <ToggleButtonGroup
+                                value={checkPicture}
+                                exclusive
+                                defaultValue={true}
+                                className="groupTypeSelect"
+                                onChange={handleAlignment}
+                                aria-label="text alignment"
+                                >
+                                <ToggleButton onClick={()=>{setCheckPicture(true)}} className="togglePictureSelect" value={true} aria-label="left aligned">
+                                    <span>باشد</span>
+                                </ToggleButton>
+                                <ToggleButton onClick={()=>{setCheckPicture(false)}} className="togglePictureSelect" value={false} aria-label="left aligned">
+                                    <span>نباشد</span>
+                                </ToggleButton>
+                                </ToggleButtonGroup>:advancedType ===40 ?  
                             <DatePicker
                             
                             className={['red' ,"rmdp-mobile"].join(" ")}
@@ -315,18 +332,11 @@ q                        />  : rule !== 20 ?
                                 <div className="actionResult">
                                 <FormControl disabled className="ruleActionSelect" variant="outlined" >
                                     {
-                                        item !=='picture' && item !=="type" ?<Select
-                                        labelId="demo-simple-select-label"
-                                        id="demo-simple-select"
-                                        value={props.data.advanced[item][1]} 
-                                        >
-                                        <MenuItem value={20}>بین</MenuItem>    
-                                        <MenuItem value={30}>قبل از</MenuItem>
-                                        <MenuItem value={40}>بعد از</MenuItem>
-                                        <MenuItem value={10}>برابر با</MenuItem>
-                                        <MenuItem value={50}>کمتر از</MenuItem>
-                                        <MenuItem value={60}>بیشتر از</MenuItem>
-                                    </Select>:<>&nbsp;</>
+                                        item !=='picture' && item !=="type" ?
+                                        <div className="actionTypediv">
+                                            {actionTypeLabel[props.data.advanced[item][1]]}
+                                        </div>
+                                       :<>&nbsp;</>
                                     }
                                 </FormControl> 
                                 </div>
