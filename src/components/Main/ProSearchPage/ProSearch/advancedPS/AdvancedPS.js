@@ -301,7 +301,7 @@ function AdvancedPS(props) {
                               } : {}}
                             calendarPosition={props.mobile ? 'bottom-right' :"bottom"}
                             animations={[transition()]} 
-                            render={(btvalue, openCal)=>{return <TextField InputProps={{ disableUnderline: true }} className="th3" value={value !== null ? btvalue : "تاریخ"} onClick={openCal}/>}}
+                            render={(btvalue, openCal)=>{return <CssTextField InputProps={{ disableUnderline: true }} className="th3" value={value !== null ? btvalue : "تاریخ"} onClick={openCal}/>}}
 q                        />  : rule !== 20 ? 
                             <CssTextField InputProps={{ disableUnderline: true }} className="th3" required value={value !== null ? value : "0"} onChange={(e)=>{setValue(e.target.value)}} onClick={handleClick}/> :
                               <div className="betweenInputsContainer">
