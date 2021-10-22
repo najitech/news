@@ -3,7 +3,7 @@ import FormControl from '@material-ui/core/FormControl';
 import React from 'react';
 import './AdvancedPS.css';
 import DatePicker, { DateObject } from "react-multi-date-picker";
-import { Button, IconButton, MenuItem, Popover, Select, Slider, Switch } from '@material-ui/core';
+import { Button, IconButton, makeStyles, MenuItem, Popover, Select, Slider, Switch } from '@material-ui/core';
 import { AiOutlineClose, AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
 import { GrClose } from 'react-icons/gr';
 import "react-multi-date-picker/styles/colors/red.css"
@@ -21,7 +21,44 @@ const advancedTypeLabel = {
     "type" : 'منبع'
 }
 
+const useStyles2 = makeStyles({
+    select: {
+        '&:before': {
+            borderColor:'rgba(255, 217, 0, 0.89)',
+        },
+        '&:after': {
+            borderColor: 'rgba(255, 217, 0, 0.89)',
+        },
+        '&:not(.Mui-disabled):hover::before': {
+            borderColor: 'rgba(255, 217, 0, 0.89)',
+        },
+        color: 'gold',
+        fontSize:'13px',
+        textAlign:'right'
+    },
+})
+
+const useStyles3 = makeStyles({
+    root: {
+      "& .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline": {
+        borderColor: "rgba(255, 217, 0, 0.89)",
+
+      },
+      "&:hover .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline": {
+        borderColor: "rgba(255, 217, 0, 0.89)"
+      },
+      "& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline": {
+        borderColor: "rgba(255, 217, 0, 0.89)"
+      }
+      ,
+      borderColor:'rgba(255, 217, 0, 0.89)',
+      fontSize:'13px'
+    }
+  });
+
 function AdvancedPS(props) {
+    const classes3 = useStyles2()
+    const classes4 = useStyles3()
     const {logic, setLogic} = props;
     const [advancedType, setAdvancedType] = React.useState(40);
     const [rule , setRule] = React.useState(20);
@@ -152,6 +189,8 @@ function AdvancedPS(props) {
                     <div>
                         <FormControl className="ruleNameSelect">
                             <Select
+                                variant="standard"
+                                className={classes3.select}
                                 labelId="demo-simple-select-label"
                                 id="demo-simple-select"
                                 value={advancedType}
@@ -167,9 +206,9 @@ function AdvancedPS(props) {
                     </div>
                     <div>
                         {advancedType !== 30 ?  
-                        <FormControl  className="ruleActionSelect" variant="outlined" >
+                        <FormControl>  {/*className="ruleActionSelect" variant="outlined" */}
                             <Select
-                                color="info"
+                                className={classes3.select}
                                 labelId="demo-simple-select-label"
                                 id="demo-simple-select"
                                 value={rule}
@@ -201,6 +240,7 @@ function AdvancedPS(props) {
                                 inputProps={{ 'aria-label': 'secondary checkbox' }}
                             /> :advancedType ===40 ?  
                             <DatePicker
+                            
                             className={['red' ,"rmdp-mobile"].join(" ")}
                             value={rule === 20 ? dateRange :value}
                             range={rule === 20}
@@ -221,8 +261,8 @@ function AdvancedPS(props) {
                               } : {}}
                             calendarPosition={props.mobile ? 'bottom-right' :"bottom"}
                             animations={[transition()]} 
-                            render={(btvalue, openCal)=>{return <TextField  value={value !== null ? btvalue : "تاریخ"} onClick={openCal}/>}}
-                        />  : rule !== 20 ? 
+                            render={(btvalue, openCal)=>{return <TextField  className="t2" value={value !== null ? btvalue : "تاریخ"} onClick={openCal}/>}}
+q                        />  : rule !== 20 ? 
                             <TextField  required value={value !== null ? value : "0"} onChange={(e)=>{setValue(e.target.value)}} onClick={handleClick}/> :
                               <>
                                 <TextField  required value={between.first !== null ? between.first : "0"} onChange={(e)=>{setBetween({...between, first : e.target.value})}} onClick={handleClick}/>
