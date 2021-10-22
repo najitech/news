@@ -22,7 +22,7 @@ function ProSearch(props) {
     const [typeTw , setTypeTw] = useState(1);
 
     const [instagram , setInstagram] = useState({
-        text : "",
+        text : [],
         keywoard: [],
         hashtags : [],
         username : [],
@@ -35,7 +35,7 @@ function ProSearch(props) {
         }
     });
     const [twitter , setTwitter] = useState({
-        text : "",
+        text : [],
         keywoard: [],
         hashtags : [],
         username : [],
@@ -48,7 +48,7 @@ function ProSearch(props) {
         }
     });
     const [rss , setRss] = useState({
-        text : "",
+        text : [],
         keywoard: [],
         hashtags : [],
         logic : "any",
@@ -60,7 +60,7 @@ function ProSearch(props) {
         }
     });
     const [telegram , setTelegram] = useState({
-        text : "",
+        text : [],
         keywoard: [],
         hashtags : [],
         username : [],
@@ -120,20 +120,24 @@ function ProSearch(props) {
                 if(typeTw === 1) {setInstagram((prev)=>{return {...prev , keywoard:prev.keywoard.filter(item=>(item !== data))}})};
                 if(typeTw === 2) {setInstagram((prev)=>{return {...prev , hashtags:prev.hashtags.filter(item=>(item !== data))}})};
                 if(typeTw === 3) {setInstagram((prev)=>{return {...prev , username:prev.username.filter(item=>(item !== data))}})};
+                if(typeTw === 4) {setInstagram((prev)=>{return {...prev , text:prev.text.filter(item=>(item !== data))}})};
                 break;
                 case 3://Rss 
                 if(typeTw === 1) {setRss((prev)=>{return {...prev , keywoard:prev.keywoard.filter(item=>(item !== data))}})};
                 if(typeTw === 2) {setRss((prev)=>{return {...prev , hashtags:prev.hashtags.filter(item=>(item !== data))}})};
+                if(typeTw === 4) {setRss((prev)=>{return {...prev , text:prev.text.filter(item=>(item !== data))}})};
                 break;
                 case 2://Twitter
                 if(typeTw === 1) {setTwitter((prev)=>{return {...prev , keywoard:prev.keywoard.filter(item=>(item !== data))}})};
                 if(typeTw === 2) {setTwitter((prev)=>{return {...prev , hashtags:prev.hashtags.filter(item=>(item !== data))}})};
                 if(typeTw === 3) {setTwitter((prev)=>{return {...prev , username:prev.username.filter(item=>(item !== data))}})};
+                if(typeTw === 4) {setTwitter((prev)=>{return {...prev , text:prev.text.filter(item=>(item !== data))}})};
                 break;
             case 4 : //telegram        
                 if(typeTw === 1) {setTelegram((prev)=>{return {...prev , keywoard:prev.keywoard.filter(item=>(item !== data))}})};
                 if(typeTw === 2) {setTelegram((prev)=>{return {...prev , hashtags:prev.hashtags.filter(item=>(item !== data))}})};
                 if(typeTw === 3) {setTelegram((prev)=>{return {...prev , username:prev.username.filter(item=>(item !== data))}})};
+                if(typeTw === 3) {setTelegram((prev)=>{return {...prev , text:prev.text.filter(item=>(item !== data))}})};
                 break;
             default:
                 break;
@@ -145,20 +149,24 @@ function ProSearch(props) {
             if(typeTw === 1) {chooseListChip = instagram.keywoard};
             if(typeTw === 2) {chooseListChip = instagram.hashtags};
             if(typeTw === 3) {chooseListChip = instagram.username};
+            if(typeTw === 4) {chooseListChip = instagram.text};
             break;
             case 2://twitter 
             if(typeTw === 1) {chooseListChip = twitter.keywoard};
             if(typeTw === 2) {chooseListChip = twitter.hashtags};
             if(typeTw === 3) {chooseListChip = twitter.username};
+            if(typeTw === 4) {chooseListChip = twitter.text};
             break;
         case 3://Rss
             if(typeTw === 1) {chooseListChip = rss.keywoard};
             if(typeTw === 2) {chooseListChip = rss.hashtags};
+            if(typeTw === 4) {chooseListChip = rss.text};
             break;
         case 4 : //telegram 
             if(typeTw === 1) {chooseListChip = telegram.keywoard};
             if(typeTw === 2) {chooseListChip = telegram.hashtags};
             if(typeTw === 3) {chooseListChip = telegram.username};
+            if(typeTw === 4) {chooseListChip = telegram.text};
             break;
         default:
             break;
