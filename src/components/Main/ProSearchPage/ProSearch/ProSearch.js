@@ -9,6 +9,7 @@ import SocialMediaSearchType from './SocialMediaType/SocialMediaSearchType';
 import AdvancedPS from './advancedPS/AdvancedPS';
 import { AiOutlinePlus } from 'react-icons/ai';
 import TypeListPS from './TypeListPS/TypeListPS';
+import '../../../../UI/Styles.css' 
 function ProSearch(props) {
     const [typeInput , setTypeInput] = useState("");
     const [animate , setAnimate] = useState(false);
@@ -82,6 +83,10 @@ function ProSearch(props) {
         setTypeInput(e.target.value);
     }
     const handleInputTypeSubmit = ()=>{
+        if(typeInput === "")
+        {
+            return;
+        }
         setTypeInput("");
         switch (social) {
             case 1: //instagram 
@@ -177,7 +182,7 @@ function ProSearch(props) {
             break;
     }
     return (
-        <div className="proSearch">
+        <div className="proSearch noselect">
             <div className="imageContainerPS">    
                 <img height="100%" src="https://rcciworld.com/picture/bg.jpg" alt=""/>
                 <div className="imagestyle">

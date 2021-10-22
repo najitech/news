@@ -301,14 +301,14 @@ function AdvancedPS(props) {
                               } : {}}
                             calendarPosition={props.mobile ? 'bottom-right' :"bottom"}
                             animations={[transition()]} 
-                            render={(btvalue, openCal)=>{return <CssTextField InputProps={{ disableUnderline: true }} className="th3" value={value !== null ? btvalue : "تاریخ"} onClick={openCal}/>}}
+                            render={(btvalue, openCal)=>{return <TextField InputProps={{ disableUnderline: true }} className="th3" value={value !== null ? btvalue : "تاریخ"} onClick={openCal}/>}}
 q                        />  : rule !== 20 ? 
                             <CssTextField InputProps={{ disableUnderline: true }} className="th3" required value={value !== null ? value : "0"} onChange={(e)=>{setValue(e.target.value)}} onClick={handleClick}/> :
-                              <>
+                              <div className="betweenInputsContainer">
                                 <CssTextField  InputProps={{ disableUnderline: true }} className="th3"  required value={between.first !== null ? between.first : "0"} onChange={(e)=>{setBetween({...between, first : e.target.value})}} onClick={handleClick}/>
                                 <span>و</span>
-                                <CssTextField InputProps={{ disableUnderline: true }} className="th3" required value={between.last !== null ? between.last : between.first? between.first : "0"} onChange={(e)=>{setBetween({...between, last : e.target.value})}} onClick={handleClick}/>
-                              </>
+                                <CssTextField InputProps={{ disableUnderline: true }} className="th3" required value={between.last !== null ? between.last :"0"} onChange={(e)=>{setBetween({...between, last : e.target.value})}} onClick={handleClick}/>
+                              </div>
                         }
                      </FormControl>
                      </div> 
