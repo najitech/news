@@ -78,6 +78,11 @@
 .ruleValueSelect{
     width : 150px;
 }
+
+.ruleValueSelect .MuiInputBase-root {
+    color:rgba(255, 217, 0, 0.89);
+    font-size: 13px;
+}
 .addPSadvItem .MuiButton-root{
     background-color: rgba(0, 0, 0, 0.267);
     color : rgba(255, 217, 0, 0.89);
@@ -143,9 +148,9 @@
 
 .th3 {
     border-bottom: 1px solid rgba(255, 217, 0, 0.89) !important;
-    height: 33px !important;
-    font-size: 10px !important;
-    margin-top:-5px !important;
+    height: 27px !important;
+    font-size: 9px !important;
+    margin-top:1px !important;
 
 }
 .listCardAdvancedPS {
