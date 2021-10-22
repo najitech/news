@@ -10,6 +10,7 @@ import AdvancedPS from './advancedPS/AdvancedPS';
 import { AiOutlinePlus } from 'react-icons/ai';
 import TypeListPS from './TypeListPS/TypeListPS';
 import '../../../../UI/Styles.css' 
+import { BiSearchAlt } from 'react-icons/bi';
 function ProSearch(props) {
     const [typeInput , setTypeInput] = useState("");
     const [animate , setAnimate] = useState(false);
@@ -224,6 +225,12 @@ function ProSearch(props) {
                             handleAddRule={social===1? setInstagram : social ===2 ? setTwitter : social ===3 ? setRss : setTelegram}
                             data={social===1? instagram : social ===2 ? twitter : social ===3 ? rss : telegram}
                             />
+                    </div>    
+                    <div>
+                    <Button className="searchBtnPS">
+                        <span>جستجو</span>
+                        <BiSearchAlt/>
+                    </Button>
                     </div>
                 </div>
             </div>
