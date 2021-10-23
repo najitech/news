@@ -122,7 +122,7 @@ function AdvancedPS(props) {
       };
     const handleAddItemAdvPS = ()=>{
         //set to default : 
-        if(advancedType === -10 )
+        if(advancedType === -10)
         {
             return;
         }
@@ -138,7 +138,7 @@ function AdvancedPS(props) {
             case 10:
                 if(props.social !== 3)
                 {
-                    if(rule !==20)
+                    if(rule !==20 )
                     {
                         props.handleAddRule((prev)=>{
                             return {...prev , advanced :{...prev.advanced ,likes : [value , rule ,new Date()]}}
@@ -153,6 +153,7 @@ function AdvancedPS(props) {
             case 20:
                 if(rule !==20)
                 {
+                    
                     props.handleAddRule((prev)=>{
                         return {...prev , advanced :{...prev.advanced ,views : [value,rule , new Date()]}}
                     });
