@@ -1,4 +1,4 @@
-import { Chip } from '@material-ui/core';
+import { Chip, Grow } from '@material-ui/core';
 import React from 'react';
 import './TypeListPS.css';
 function TypeListPS(props) {
@@ -9,6 +9,8 @@ function TypeListPS(props) {
             {chipData === undefined ? null :  chipData.map((data) => {
                 let icon;
                 return (
+                <Grow in={true}
+                {...(true ? { timeout: 400 } : {})}>
                 <div key={data.key}>
                     <Chip
                     icon={icon}
@@ -17,6 +19,7 @@ function TypeListPS(props) {
                     className="chipTypeItemPS"
                     />
                 </div>
+                </Grow>
                 );
             })}
         </div>

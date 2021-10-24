@@ -1,4 +1,4 @@
-import { Button, Zoom } from '@material-ui/core';
+import { Button, Collapse, IconButton, Zoom } from '@material-ui/core';
 import React , {useEffect , useState} from 'react';
 import { BsSearch } from 'react-icons/bs';
 import Search from '../../Rss/Search/Search';
@@ -7,10 +7,11 @@ import Grow from '@material-ui/core/Grow';
 import SearchTypeTw from './SearchTypeTw/SearchTypeTw';
 import SocialMediaSearchType from './SocialMediaType/SocialMediaSearchType';
 import AdvancedPS from './advancedPS/AdvancedPS';
-import { AiOutlinePlus } from 'react-icons/ai';
+import { AiOutlineClose, AiOutlinePlus } from 'react-icons/ai';
 import TypeListPS from './TypeListPS/TypeListPS';
 import '../../../../UI/Styles.css' 
 import { BiSearchAlt } from 'react-icons/bi';
+import {GoSettings} from 'react-icons/go'
 function ProSearch(props) {
     const [typeInput , setTypeInput] = useState("");
     const [animate , setAnimate] = useState(false);
@@ -22,7 +23,7 @@ function ProSearch(props) {
     } , []);
     const [social , setSocial] = useState(1);
     const [typeTw , setTypeTw] = useState(4);
-
+    const [toggleAdvanced , setToggleAdvanced] = useState(false);
     const [instagram , setInstagram] = useState({
         text : [],
         keywoard: [],
@@ -216,8 +217,19 @@ function ProSearch(props) {
                             <AiOutlinePlus/>
                         </Button>
                     </div>
-                    </Grow>     
-                    <div className="advancedProSearchDiv">
+                    </Grow>
+                    <Grow in={!toggleAdvanced} {...(!toggleAdvanced ?  { timeout: 1000 }: {})}  style={{ marginBottom : toggleAdvanced?"-60px" :""}}>
+                     <div >
+                        <Button onClick={()=>{setToggleAdvanced(true)}} className="advancedSearchOpenBtn">
+                            <span>جستجوی پیشرفته</span>
+                            <GoSettings/>
+                        </Button>
+                    </div> 
+                    </Grow>
+                    <Collapse {...( { timeout: 1000 })} in={toggleAdvanced}><div className="advancedProSearchDiv">
+                        <div className="closeAdvancedSearch">
+                            <IconButton onClick={()=>{setToggleAdvanced(false)}}  className="closeBtnADv" size="small"><AiOutlineClose/></IconButton>
+                        </div>
                         <AdvancedPS
                             logic={social===1? instagram.logic : social ===2 ? twitter.logic : social ===3 ? rss.logic : telegram.logic}
                             setLogic={handleLogic}
@@ -225,7 +237,9 @@ function ProSearch(props) {
                             handleAddRule={social===1? setInstagram : social ===2 ? setTwitter : social ===3 ? setRss : setTelegram}
                             data={social===1? instagram : social ===2 ? twitter : social ===3 ? rss : telegram}
                             />
-                    </div>    
+                    </div>   </Collapse>
+                    
+                      
                     <div>
                     <Button className="searchBtnPS">
                         <span>جستجو</span>
