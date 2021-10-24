@@ -218,11 +218,13 @@ function ProSearch(props) {
                         </Button>
                     </div>
                     </Grow>
-                    <Grow in={!toggleAdvanced} {...(!toggleAdvanced ?  { timeout: 1000 }: {})}  style={{ marginBottom : toggleAdvanced?"-60px" :""}}>
-                     <div >
+                    <Grow in={true} {...(!toggleAdvanced ?  { timeout: 1700 }: {})} >
+                     <div>
                         <Button onClick={()=>{setToggleAdvanced(true)}} className="advancedSearchOpenBtn">
                             <span>جستجوی پیشرفته</span>
-                            <GoSettings/>
+                            {!toggleAdvanced ?
+                            <GoSettings/> :
+                            <AiOutlineClose/>}
                         </Button>
                     </div> 
                     </Grow>

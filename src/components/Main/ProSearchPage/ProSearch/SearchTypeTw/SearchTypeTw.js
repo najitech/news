@@ -4,6 +4,7 @@ import ToggleButtonGroup from '@material-ui/lab/ToggleButtonGroup';
 import './SearchTypeTw.css';
 import {BsCardText, BsFileText, BsHash} from 'react-icons/bs';
 import { AiOutlineKey ,AiOutlineUser } from 'react-icons/ai';
+import { Badge } from '@material-ui/core';
 function SearchTypeTw(props) {
     const [alignment, setAlignment] = React.useState('text');
     const {typeTw , setTypeTw} = props;
@@ -23,9 +24,12 @@ function SearchTypeTw(props) {
             aria-label="text alignment"
             >
             <ToggleButton onClick={()=>{handleChangeType(4)}} className="toggleTypeSelect" value="text" aria-label="left aligned">
+                <Badge className="badgeStyleSearchType" overlap="circular" variant="dot" badgeContent={4} color="secondary">
                 <BsFileText className="reacIconTypeSelect"/>
+                </Badge>
                 <span>متن</span>
             </ToggleButton>
+            
             <ToggleButton onClick={()=>{handleChangeType(1)}} className="toggleTypeSelect" value="keyword" aria-label="left aligned">
                 <AiOutlineKey className="reacIconTypeSelect"/>
                 <span>کلیدواژه</span>
