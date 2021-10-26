@@ -3,6 +3,9 @@ import './PSR_TopSlider.css'
 import ItemsCarousel from 'react-items-carousel';
 import PostGrid from '../../../../Rss/Posts/PostGrids/Post/PostGrid';
 import MenuOpenIcon from '@material-ui/icons/MenuOpen';
+import PSR_TopSlider_Slide from './PSR_TopSlider_Slide';
+import {FaChevronCircleLeft ,FaChevronLeft } from 'react-icons/fa'
+import {IoIosArrowDropleftCircle ,IoIosArrowDroprightCircle} from 'react-icons/io'
 
 function PSR_TopSlider() {
     const myposts = [{
@@ -199,24 +202,27 @@ function PSR_TopSlider() {
                 enablePlaceholder={true}
                 numberOfPlaceholderItems={3}
                 numberOfCars={3}
-                gutter={12}
+                gutter={40}
                 slidesToScroll={2}
-                chevronWidth={30}
+                alwaysShowChevrons={true}
+                chevronWidth={60}
                 outsideChevron={true}
                 showSlither={false}
                 firstAndLastGutter={false}
                 requestToChangeActive={setActiveItemIndex}
                 activeItemIndex={activeItemIndex}
-                rightChevron={'>'}
-                leftChevron={<MenuOpenIcon/>}
+                rightChevron={<IoIosArrowDroprightCircle className="Slider_icon"/>}
+                leftChevron={<IoIosArrowDropleftCircle className="Slider_icon"/>}
             >
-            {
-                myposts.map( (data) => {
-                    let mycount2= mycount1+1000;
-                    mycount1=mycount2;
-                    return (
-                    <PostGrid key={mycount1} good={data.good} image={data.image} link={data.link} title={data.title} news_text={data.news_text} publish_date={data.publish_date}  />
-                )})
+            { 
+            [
+                <PSR_TopSlider_Slide type="telegram"/>,
+                <PSR_TopSlider_Slide type="instagram"/>,
+                <PSR_TopSlider_Slide type="rss"/>,
+                <PSR_TopSlider_Slide type="twitter"/>,
+                
+            ]
+
             }
 
             </ItemsCarousel>

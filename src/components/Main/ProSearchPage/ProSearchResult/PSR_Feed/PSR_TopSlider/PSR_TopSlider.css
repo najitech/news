@@ -1,7 +1,10 @@
 .PSR_TopSlider {
-    width: 1000px;
-
+    width: 980px;
     direction: ltr;
-    background-color: red;
-    margin-right:200px;
+    margin-right:30px;
+}
+
+.Slider_icon{
+    font-size: 40px;
+    color : #836FE0;
 }

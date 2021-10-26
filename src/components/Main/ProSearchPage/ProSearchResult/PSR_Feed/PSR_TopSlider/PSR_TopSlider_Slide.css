@@ -1,0 +1,26 @@
+.PSR_TopSlider_Slide {
+    width: 290px;
+    height:150px;
+    background-color: #31327D;
+    border-radius: 32px;
+    position: relative;
+
+}
+.TopSlider_top {
+    height: 50%;
+    background: rgb(234,148,107);
+    background: linear-gradient(90deg, rgba(234,148,107,1) 0%, rgba(240,118,60,1) 100%); 
+    border-radius: 32px;
+}
+
+.Slide_typeIconContainer {
+    position:absolute;
+    right:42%;
+    top:25%;
+    font-size: 50px;
+}
+.Slide_typeIcon{
+    border: 7px solid #31327D ;
+    border-radius: 50%;
+
+}
