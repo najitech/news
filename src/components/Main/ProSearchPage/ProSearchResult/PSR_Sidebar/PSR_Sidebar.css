@@ -1,0 +1,49 @@
+.PSR_Sidebar {
+    flex : 0.23;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    display: flex;
+    background-color: #2D2C56;
+    box-shadow: 0px 0px 2px 2px #2D2C56;;
+}
+.PSR_Sidebar_Icons {
+    flex:0.15;
+    display: flex;
+    flex-direction: column;
+    margin-right:7px;
+    margin-top:40px;
+}
+.PSR_Sidebar_Icon {
+    font-size: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 35px;
+    width: 50px;
+    height: 50px;
+    border : 2px solid white;
+    border-radius: 15px;
+    color:rgb(255, 255, 255);
+    padding: 4px;
+    cursor: pointer;
+    transition: all 0.7s ease;
+}
+.PSR_instagram {
+    background-color: #CC337C;
+}
+.PSR_twitter {
+    background-color: #2ED1FC;
+}
+.PSR_rss{
+    background-color: #F0763C;
+}
+.PSR_telegram {
+    background-color: #36A1D7;
+}
+.PSR_icon_select {
+    transform: rotate(15deg)  translatex(15px) translateY(-15px);
+    width: 55px;
+    height: 55px;
+    font-size: 42px;
+    transition: all 0.7s ease;
+}

@@ -1,0 +1,7 @@
+.ProSearchResult {
+    display: flex;
+    height: 100%;
+    background-color: #28264E;
+    padding-top:30px;
+    justify-content: space-around;
+}
