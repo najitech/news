@@ -1,10 +1,11 @@
 import React from 'react'
 import './PSR_Feed.css'
+import PSR_TopSlider from './PSR_TopSlider/PSR_TopSlider'
 
 function PSR_Feed() {
     return (
         <div className="PSR_Feed">
-            <h3>this is feed</h3>
+            <PSR_TopSlider/>
         </div>
     )
 }
