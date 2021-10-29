@@ -1,3 +1,15 @@
 .PSR_Sidebar_Filters {
     flex:0.85;
+    overflow-y: scroll;
+    height: 96%;
 }
+.PSR_Sidebar_Filters::-webkit-scrollbar {
+    display: none;
+  }
+  .PSR_Sidebar_Filters {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    margin-bottom: 10px;
+    width: 250px;
+    margin-top: 5px;
+  }

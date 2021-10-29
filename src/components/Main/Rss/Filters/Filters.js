@@ -13,9 +13,9 @@ function Filters(props) {
         <div className="Filters">
             <form>  
                     <Positiveness/> 
-                    <AccardionPS title="موضوع">
+                    <Accardion title="موضوع">
                         <Categories/>
-                    </AccardionPS> 
+                    </Accardion> 
                     <Accardion title="تاریخ">
                         <DateFilter mobile={props.mobile}/>
                     </Accardion>

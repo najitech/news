@@ -30,7 +30,7 @@ const useStyles = makeStyles({
  }
 });
 
-function Positiveness() {
+function Positiveness(props) {
     const classes = useStyles();
     const [value, setValue] = React.useState(0);
     const [alignment, setAlignment] = React.useState('right');
@@ -42,8 +42,8 @@ function Positiveness() {
   
   
     return (
-        <div className="Positivness">
-        <p className="Positivness_title" >حس خبر</p>
+        <div className={!props.dark? "Positivness": "Positivness_dark"}>
+        <p className={props.dark? "Positivness_titleDark" : "Positivness_title"} >حس خبر</p>
         <div className="Positive">
           <ToggleButtonGroup
             value={alignment}
@@ -52,13 +52,13 @@ function Positiveness() {
             aria-label="text alignment"
             className="Positive_toggle"
           >
-            <ToggleButton className="Positive_box" value="left" aria-label="left aligned">
+            <ToggleButton className={["Positive_box" , props.dark? 'psDark':""].join(" ")} value="left" aria-label="left aligned">
               <RemoveCircleIcon className="Remove"/>
             </ToggleButton>
-            <ToggleButton className="Positive_box" value="center" aria-label="centered">
+            <ToggleButton className={["Positive_box" , props.dark? 'psDark':""].join(" ")} value="center" aria-label="centered">
              <RadioButtonCheckedIcon/>
             </ToggleButton>
-            <ToggleButton  className="Positive_box" value="right" aria-label="right aligned">
+            <ToggleButton  className={["Positive_box" , props.dark? 'psDark':""].join(" ")} value="right" aria-label="right aligned">
               <AddCircleIcon/>
             </ToggleButton>
           </ToggleButtonGroup>

@@ -36,18 +36,18 @@ const CategoriesRss = {
     "tablighofrosh" : ["تبلیغات" ,  RiPercentLine], 
     "mostahjan" : ["مستحجن" , AiOutlineStop]
 }
-function Categories() {
+function Categories(props) {
     const list = Object.keys(CategoriesRss).map((item)=>{
         return <li>        
-                <CategoryCheckbox className="fontStyle" 
+                <CategoryCheckbox dark={props.dark} className={props.dark ? "darkStyleCat": "fontStye"} 
                 name={item}
                 label={CategoriesRss[item][0]}
                 Icon={CategoriesRss[item][1]}
                 color="secondary"/>
-            </li>
+            </li>   
     });
     return (
-        <div className="categories">
+        <div className={["categories", props.dark ? 'catDark': "catLight"].join(" ")}>
             <ul>
                 {list}
             </ul>

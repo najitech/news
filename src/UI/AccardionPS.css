@@ -1,21 +1,26 @@
 .accPS{
     padding: 0px !important;
     margin: 0px !important;
-    background-color: #21163f !important;
+    background-color: #2D2C56 !important;
+}
+.marg{
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    padding-bottom: 0px !important;
 }
 .marginPS{
-    margin-top : 10px !important;
+    margin-top : 5px !important;
     border: none !important;
     color : white !important;
     outline: none !important;
-    background-color: #21163f !important;
+    background-color: #2D2C56 !important;
 }
 .fontAccardionPS{
     font-size: 14px !important;
 }
-.extentionPSLIne{
+.extentionPSLIneInstagram{
     border: none;
-    border-top: 1px solid #6442c4;
+    border-top: 2px solid #C13584;
     margin: 3px 10px;
     height: 0px;
     position: absolute;

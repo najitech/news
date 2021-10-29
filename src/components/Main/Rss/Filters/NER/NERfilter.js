@@ -1,9 +1,27 @@
 import React  , {useState} from 'react'
 import './NERfilter.css';
-import { Button } from '@material-ui/core';
+import { Button, TextField, withStyles } from '@material-ui/core';
 import Input from '../../../../../UI/Input';
 import { AiFillFileWord } from 'react-icons/ai';
 import NERCheckBox from './NERCheckBox/NERCheckBox';
+const CssTextDarkInput = withStyles({
+    root: {
+      '& label.Mui-focused': {
+          borderColor:'rgba(255, 217, 0, 0.89)',
+        color: 'rgba(255, 217, 0, 0.89)',
+      },'&:after': {
+        borderColor: 'rgba(255, 217, 0, 0.89)',
+    },
+    borderBottomColor : 'rgba(255, 217, 0, 0.89)',
+    '&:not(.Mui-disabled):hover::before': {
+        borderColor: 'rgba(255, 217, 0, 0.89)',
+    },
+    '& .MuiInput-underline:after': {
+        borderBottomColor: 'rgba(255, 217, 0, 0.89)',
+      },
+      color:'red',
+    },
+  })(TextField);
 function NERfilter(props) {
     const [NERs , setNERs] = useState([]);
     const [inputNER , setINputNER] =  useState("");
@@ -19,21 +37,30 @@ function NERfilter(props) {
         setNERs([...NERs , inputNER]);
     }
     return (
-        <div className="NERfilter">
+        <div className={["NERfilter",props.dark?"darkInputThem":""].join(" ")}>
              <div className="NERAddContainer"> 
-                <Input placeholder="افزودن موجودیت"
+                  {
+              props.dark?
+              <CssTextDarkInput placeholder="افزودن موجودیت"
                  size="small" 
                  Icon={AiFillFileWord}
-                 class="inputStyle"
-                 value={inputNER}
-                 onChange={(e)=>{setINputNER(e.target.value)}}
-                  class="inputStyle"/>
-                <Button onClick={addNERHandler} className="addTag">افزودن</Button>
+                 InputProps={{ disableUnderline: true }} 
+                  class="inputFilterStyleDark"
+                  value={inputNER}
+                  onChange={(e)=>{setINputNER(e.target.value)}}/>:
+                  <Input placeholder="افزودن موجودیت"
+                  size="small" 
+                  Icon={AiFillFileWord}
+                   class="inputFilterStyle"
+                   value={inputNER}
+                   onChange={(e)=>{setINputNER(e.target.value)}}/>
+            }
+                <Button onClick={addNERHandler}  className={!props.dark ? "addTag" : "addTagDark"}>افزودن</Button>
             </div>
-            <div className="listOfNER">
+            <div className={props.dark?"listDark":"listOfNER"} >
                 <ul>
                     {NERs.map((item)=>{
-                        return <NERCheckBox label={item}/>
+                        return <NERCheckBox dark={props.dark} label={item}/>
                     })}
                 </ul>
             </div>

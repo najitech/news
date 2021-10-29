@@ -13,6 +13,22 @@
     padding: 5px !important;    
     margin-left: 20px !important;
 }
+.inputFilterStyleDark{
+    border-bottom: 2px solid #764ee3 !important;
+    margin-bottom:2px !important;
+
+}
+.addTagDark{
+    font-size: 11px !important;
+    color: white !important;
+    padding: 5px !important;
+    margin-bottom: 2px !important;
+    background: #764ee3 !important;
+    border-radius: 0px !important;
+    border-top-left-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+    margin-left: 20px !important;
+}
 .tagsContainer{
     direction: ltr;
     max-height: 200px;
@@ -31,4 +47,23 @@
 }
 .siteFilterSwitch{
     font-size: 10px !important;
+}
+.darkInputThem .MuiInputBase-root{
+    color: white !important;
+    font-size: 14px !important;
+}
+.chipDarkThem .MuiChip-root{
+    background-color: #764ee3;
+    color : #E8E4F1;      
+    font-size: 10px;  
+    height: 28px;
+}
+.chipDarkThem .MuiChip-root:focus{
+    background-color: #8d6de6;
+}
+.chipDarkThem .MuiChip-deleteIcon{  
+    color : #E8E4F1;
+}
+.chipDarkThem .MuiChip-deleteIcon:hover{
+    color : #ebe6ffa9;
 }

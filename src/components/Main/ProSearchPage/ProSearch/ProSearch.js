@@ -204,6 +204,9 @@ function ProSearch(props) {
         default:
             break;
     }
+    const counterTags=(data , social)=>{
+        return data.keywoard.length + (social !== 3 ? data.username.length : 0 )+ data.hashtags.length + data.text.length;
+    }
     return (
         <div className="proSearch noselect">
             <div className="imageContainerPS">    
@@ -218,7 +221,7 @@ function ProSearch(props) {
                           style={{transitionDelay:'200ms',}}
                           {...(true ? { timeout: 1000 } : {})}>      
                         <div className="toggleContainerSelect">
-                            <SocialMediaSearchType isMark={[ifEmpty(instagram , 1) , ifEmpty(twitter,2) ,ifEmpty(rss,3) , ifEmpty(telegram , 4)]} handleSocial={handleSocial} social={social}/>
+                            <SocialMediaSearchType isMark={[counterTags(instagram , 1), counterTags(twitter,2) ,counterTags(rss,3) , counterTags(telegram , 4)]} handleSocial={handleSocial} social={social}/>
                         </div>  
                     </Grow>
 

@@ -2,7 +2,12 @@
     position: relative;
     width: 100%;
 }
-
+.dNERCheckBoxDark{
+    margin-right: -26px;
+}
+.darkStyleColor{
+    color: white;
+}
 .fontStyle{
     color: rgb(65, 64, 64);
 }

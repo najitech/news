@@ -16,8 +16,11 @@
     width: 100%;
     padding: 0px;
 }
-.categories li:hover{
+.catLight li:hover{
     background-color: rgb(238, 238, 238);
     transition: background-color 0.3s ease-out;
-    
+}
+.catDark li:hover{
+    background-color: rgba(0, 0, 0, 0.11);
+    transition: backgrrgb(238, 238, 238)se-out;
 }

@@ -26,6 +26,31 @@
 }
 .listOfNER li:hover{
     background-color: rgb(238, 238, 238);
-    transition: background-color 0.3s ease-out;
-    
+    transition: background-color 0.3s ease-out;   
+}
+.listDark{
+    padding: 0px;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+}
+.listDark ul {
+    margin: 0px;
+    list-style: none;
+    padding: 0px;
+    width: 100%;
+}
+.listDark li{
+    list-style:none;
+    width: 100%;
+    padding: 0px 5px;
+}
+.listDark li:hover{
+    background-color: rgba(0, 0, 0, 0.322);
+    transition: background-color 0.3s ease-out;   
+}
+.darkInputThem .MuiInputBase-root{
+    color: white !important;
+    font-size: 14px !important;
 }

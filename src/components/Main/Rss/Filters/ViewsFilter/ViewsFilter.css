@@ -1,0 +1,24 @@
+.viewFilter{
+    width: 100%;
+    position: relative;
+}
+.viewFilter > div{
+   border-bottom: 1px solid #764ee3;
+   margin:10px 0px;
+}
+.lastChildSlider{
+   border-bottom:none !important;
+}
+.sliderDarkThemFilter{
+    width: 90% !important;
+    margin: auto !important;
+}
+.viewFilter .MuiInputBase-root{
+    color: white !important;
+    font-size: 14px !important;
+}
+.inputSlider{
+    margin-bottom:2px !important;
+    width: 200px;
+    margin-top: 5px;
+}

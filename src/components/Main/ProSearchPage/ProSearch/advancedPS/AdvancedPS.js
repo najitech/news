@@ -310,7 +310,6 @@ function AdvancedPS(props) {
                             <CssTextField InputProps={{ disableUnderline: true }} className="th3" required value={value !== null ? value : "0"} onChange={(e)=>{setValue(e.target.value)}} onClick={handleClick}/> :
                               <div className="betweenInputsContainer">
                                 <CssTextField  InputProps={{ disableUnderline: true }} className="th3"  required value={between.first !== null ? between.first : "0"} onChange={(e)=>{setBetween({...between, first : e.target.value})}} onClick={handleClick}/>
-                    
                                 <CssTextField InputProps={{ disableUnderline: true }} className="th3" required value={between.last !== null ? between.last :"0"} onChange={(e)=>{setBetween({...between, last : e.target.value})}} onClick={handleClick}/>
                               </div>
                         }

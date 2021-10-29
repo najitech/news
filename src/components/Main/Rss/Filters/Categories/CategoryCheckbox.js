@@ -11,6 +11,16 @@ const useStyles = makeStyles(() => ({
          fontSize: '0.85em'
      }
  }));
+ const DarkCheckBox = withStyles({
+    root: {
+      color: "white",
+      
+    '&$checked': {
+        color: "#764ee3",
+      },
+    },
+    checked: {},
+  })((props) => <Checkbox color="default" {...props} />);
 function CategoryCheckbox(props) {
     const Icon  = props.Icon;
     const  classes  = useStyles();
@@ -19,14 +29,15 @@ function CategoryCheckbox(props) {
             <FormGroup row className="catCheck noselect">
                 <FormControlLabel
                  classes={{
+                    root: classes.root,
                     label: classes.label, 
                 }}
-                    className="fontStyle"
-                    control={<Checkbox name={props.name} size="small" color={props.color}/>}
+                    className={props.dark? 'darkStyleCat' :"fontStyle"}
+                    control={props.dark ? <DarkCheckBox name={props.name} size="small" color={props.color}/> :<Checkbox name={props.name} size="small" color={props.color}/>}
                     label={props.label}          
                     
                 />
-                <div className="iconCheck">
+                <div className={props.dark ? 'iconCheckDark' : "iconCheck"}>
                     <Icon/>
                 </div>
             </FormGroup>

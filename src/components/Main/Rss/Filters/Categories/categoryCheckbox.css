@@ -12,3 +12,13 @@
 .fontStyle{
     color: rgb(65, 64, 64);
 }
+.darkStyleCat { 
+    color : white;
+}
+.iconCheckDark { 
+    position: absolute;
+    left: 30px;
+    top: 0.4em;
+    color: white;
+    font-size: 17px;
+}

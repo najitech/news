@@ -25,6 +25,15 @@
     border-radius: 10px;
     box-shadow : 1.0px 1.4px 2px 0.4px rgb(226, 226, 226);
 }
+.Positivness_dark{
+    margin-top: 30px;
+    background-color: none;
+    border: none;
+    box-shadow: none;
+    padding: 10px;
+    padding-top: 4px;
+    border-radius: none;
+}
 .Positive {
     display: flex;
     justify-content: center;
@@ -62,4 +71,13 @@
 .Positivness_title {
     font-size: 14px;
     margin-right: 5px;
+}
+.Positivness_titleDark{
+    color: white;
+    font-size: 14px;
+    margin-right: 5px;
+}
+.psDark{
+    color: #C13584 !important;
+    border-color: #C13584 !important;
 }
