@@ -119,9 +119,8 @@ object-fit: cover;
     font-size: 13px !important;
     background-color: rgba(0, 0, 0, 0.205) !important;
     color: rgba(255, 217, 0, 0.89) !important;
-    border-top-left-radius: 0px !important;
-    border-top-right-radius: 0px !important;
-    margin-bottom: 50px !important;
+    margin-top: 5px !important;
+    margin-bottom: 30px !important;
     margin-right: 3px !important;
 }
 .advancedSearchOpenBtn span{

@@ -19,6 +19,7 @@ import Hashtag2 from '../../../../../../UI/Hashtag2';
 import { MdWeb } from 'react-icons/md';
 import {IoBookmarkSharp} from 'react-icons/io5'
 import { BsFillPlusCircleFill } from 'react-icons/bs';
+import ModalPS from '../../../../../../UI/ModalPS';
 const theme = createTheme();
 
 theme.typography= {
@@ -84,7 +85,7 @@ function Post(props) {
             </div>
             */} 
             {!isMobileScreen ? 
-                <ModalPost  open={open} setOpen={setOpen} image={props.image} positiveness={10} title={props.title} text={props.news_text} publish_date={props.publish_date} handleClose={handleClose} PostProps={props} />
+                <ModalPS  open={open} setOpen={setOpen} image={props.image} positiveness={10} title={props.title} text={props.news_text} publish_date={props.publish_date} handleClose={handleClose} PostProps={props} />
              :
              <ModalResponsive  open={open} setOpen={setOpen} image={props.image} positiveness={10} title={props.title} text={props.news_text} publish_date={props.publish_date} handleClose={handleClose} PostProps={props} />
              }

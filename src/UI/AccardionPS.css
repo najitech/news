@@ -1,0 +1,27 @@
+.accPS{
+    padding: 0px !important;
+    margin: 0px !important;
+    background-color: #21163f !important;
+}
+.marginPS{
+    margin-top : 10px !important;
+    border: none !important;
+    color : white !important;
+    outline: none !important;
+    background-color: #21163f !important;
+}
+.fontAccardionPS{
+    font-size: 14px !important;
+}
+.extentionPSLIne{
+    border: none;
+    border-top: 1px solid #6442c4;
+    margin: 3px 10px;
+    height: 0px;
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    right: 0px;
+}
+.marginPS hr{
+}

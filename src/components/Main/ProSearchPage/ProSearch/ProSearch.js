@@ -1,7 +1,5 @@
 import { Button, Collapse, IconButton, Zoom } from '@material-ui/core';
 import React , {useEffect , useState} from 'react';
-import { BsSearch } from 'react-icons/bs';
-import Search from '../../Rss/Search/Search';
 import './ProSearch.css';
 import Grow from '@material-ui/core/Grow';
 import SearchTypeTw from './SearchTypeTw/SearchTypeTw';
@@ -30,6 +28,7 @@ function ProSearch(props) {
         hashtags : [],
         username : [],
         logic : "any",
+        dataType : 1,
         advanced : {
             date : null,
             picture : null,
@@ -43,6 +42,7 @@ function ProSearch(props) {
         hashtags : [],
         username : [],
         logic : "any",
+        dataType : 2,
         advanced : {
             date : null,
             picture : null,
@@ -55,6 +55,7 @@ function ProSearch(props) {
         keywoard: [],
         hashtags : [],
         logic : "any",
+        dataType : 3,
         advanced : {
             date : null,
             picture : null,
@@ -67,6 +68,7 @@ function ProSearch(props) {
         hashtags : [],
         username : [],
         logic : "any",
+        dataType : 4,
         advanced : {
             date : null,
             picture : null,
@@ -150,6 +152,25 @@ function ProSearch(props) {
                 break;
         }
     }
+    const ifEmpty= (data , social)=>{
+        if(data.keywoard.length!==0 || data.hashtags.length!==0 || data.text.length!==0)
+        {
+            return true;
+        }
+        if(social !==3)
+        {
+            if(data.username.length !==0)
+                return true;
+        }
+        for(let item in data.advanced)
+        {
+            if(data.advanced[item] !==null)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
     let chooseListChip;
     let disabled =false;
     switch (social) {
@@ -197,12 +218,13 @@ function ProSearch(props) {
                           style={{transitionDelay:'200ms',}}
                           {...(true ? { timeout: 1000 } : {})}>      
                         <div className="toggleContainerSelect">
-                            <SocialMediaSearchType handleSocial={handleSocial} social={social}/>
+                            <SocialMediaSearchType isMark={[ifEmpty(instagram , 1) , ifEmpty(twitter,2) ,ifEmpty(rss,3) , ifEmpty(telegram , 4)]} handleSocial={handleSocial} social={social}/>
                         </div>  
                     </Grow>
 
                     <div className="">
-                            <SearchTypeTw typeTw={typeTw} setTypeTw={setTypeTw} social={social}/>
+                            <SearchTypeTw data={social===1? instagram : social ===2 ? twitter : social ===3 ? rss : telegram}
+                              typeTw={typeTw} setTypeTw={setTypeTw} social={social}/>
                     </div>  
                     <Grow
                     in={true}
@@ -218,11 +240,13 @@ function ProSearch(props) {
                         </Button>
                     </div>
                     </Grow>
-                    <Grow in={!toggleAdvanced} {...(!toggleAdvanced ?  { timeout: 1000 }: {})}  style={{ marginBottom : toggleAdvanced?"-60px" :""}}>
-                     <div >
+                    <Grow in={true} {...(!toggleAdvanced ?  { timeout: 1700 }: {})} >
+                     <div>
                         <Button onClick={()=>{setToggleAdvanced(true)}} className="advancedSearchOpenBtn">
                             <span>جستجوی پیشرفته</span>
-                            <GoSettings/>
+                            {!toggleAdvanced ?
+                            <GoSettings/> :
+                            <AiOutlineClose/>}
                         </Button>
                     </div> 
                     </Grow>
@@ -234,12 +258,12 @@ function ProSearch(props) {
                             logic={social===1? instagram.logic : social ===2 ? twitter.logic : social ===3 ? rss.logic : telegram.logic}
                             setLogic={handleLogic}
                             social={social}
-                            handleAddRule={social===1? setInstagram : social ===2 ? setTwitter : social ===3 ? setRss : setTelegram}
+                            handleAddRule={[setInstagram , setTwitter, setRss,setTelegram]}
                             data={social===1? instagram : social ===2 ? twitter : social ===3 ? rss : telegram}
+                            media = {[instagram ,twitter, rss , telegram]}
                             />
                     </div>   </Collapse>
                     
-                      
                     <div>
                     <Button className="searchBtnPS">
                         <span>جستجو</span>
