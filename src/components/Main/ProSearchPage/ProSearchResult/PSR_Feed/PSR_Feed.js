@@ -27,6 +27,9 @@ function PSR_Feed() {
             break;
         case 3:
             borderColor= 'rss_border_color';
+        case 5:
+            borderColor= 'telegram_border_color';
+            break;
     }
     
     
@@ -34,6 +37,10 @@ function PSR_Feed() {
         <div className="PSR_Feed">
             <PSR_TopSlider/>
             <div className={["PSR_toggle" , borderColor].join(" ")}>
+                <div onClick={()=>{handleSelect(5)}} className={["PSR_telegram_proSearch_type" , social ===5  ? "PSR_telegram_active_prosearch" : " "].join(" ")}>
+                    <FaTelegram className="PSR_socialMediaIconsProSearch"/>
+                    <span>همه</span>
+                </div>
                 <div onClick={()=>{handleSelect(1)}} className={["PSR_instagram_proSearch_type",social === 1 ?"PSR_instagram_active_prosearch" : " " ].join(" ")}>
                     <AiFillInstagram className="PSR_socialMediaIconsProSearch"/>
                     <span>اینستاگرام</span>
@@ -51,7 +58,7 @@ function PSR_Feed() {
                     <span>تلگرام</span>
                 </div>
             </div>  
-            <PSR_Posts type={social===1 ? "instagram" : social===2? "twitter" : social===3? "rss" : social ===4? "telegram" : ""}/>
+            <PSR_Posts type={social===1 ? "instagram" : social===2? "twitter" : social===3? "rss" : social ===4? "telegram" : social===5? "all" : ""}/>
         </div>
     )
 }

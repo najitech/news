@@ -5,13 +5,15 @@
     border-radius : 3px;
     font-weight: bold !important;
     align-items:center;
-    margin-left:10px;
+    margin-left:4px;
+
 
 }
 .Tag  p {
     text-align: center;
     color : rgb(241, 241, 241);
     font-family: 'Shabnam'; 
+    font-size: 8px;
 
 
 }
