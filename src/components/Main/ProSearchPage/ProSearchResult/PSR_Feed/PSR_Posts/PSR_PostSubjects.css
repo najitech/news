@@ -1,0 +1,16 @@
+.PSR_PostSubjects {
+    display: flex;
+    margin-bottom: 2px;
+    margin-top:auto;
+    justify-self: end;
+    padding: 0px 8px;
+    border-top: 1px solid gold;
+    border-radius: 10px;
+}
+.PSR_PostSubjects > * {
+    border-left:1px solid gold;
+    border-radius: 0px;
+}
+.PostTags_lastchild {
+    border:none;
+}

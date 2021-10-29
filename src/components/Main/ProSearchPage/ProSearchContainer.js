@@ -6,7 +6,8 @@ function ProSearchContainer() {
     const [submitted , setSubmitted] = useState(false);
     return (
         <div className="ProSearchContianer">
-           {!submitted ? <ProSearch setSubmit={setSubmitted}/> : <ProSearchResult/>}
+           {/*!submitted ? <ProSearch setSubmit={setSubmitted}/> : <ProSearchResult/>*/}
+           <ProSearchResult/>
         </div>
     )
 }

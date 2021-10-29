@@ -1,0 +1,14 @@
+
+.PSR_PostKeys {
+    margin-right :7px;
+    display: flex;
+    width: 70%;
+}
+.PSR_PostKeys > * {
+    margin-left:5px;
+}
+@media screen and (max-width : 487px) {
+    .PSR_PostKeys {
+        width: 46%;
+    }
+}
