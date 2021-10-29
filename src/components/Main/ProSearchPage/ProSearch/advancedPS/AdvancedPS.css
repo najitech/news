@@ -49,15 +49,25 @@
 .advancedPSlistItem{
     display: flex;
     align-items: center;
-
     justify-content: right;
     font-size:13px;
-    color: rgba(255, 217, 0, 0.89);
     height: 40px;
     padding:20px 0px;
     background-color: rgba(0, 0, 0, 0.26);
     margin-top:3px;
     border-radius: 20px;
+}
+.advancedPSlistInstagram{ 
+    color: #f142a5 !important;
+}
+.advancedPSlistTwitter{
+    color :#44c1ff !important; 
+}
+.advancedPSlistRss{
+    color : #fa7b40;
+}
+.advancedPSlistTelegram {
+    color : #07a5f5;
 }
 .ruleNameSelect{
     outline: none;
@@ -128,13 +138,10 @@
     margin-left: 10px !important;
     text-align: center !important;
 }
-
 .s2{
     color:red !important;
     box-shadow: none !important;
-
 }
-
 .h23 {
     color:gold !important;
 }
@@ -181,9 +188,34 @@
     justify-content: center;
     color: rgb(235, 235, 235);
 }
-
+.actionTypeInstagram {
+    background-color: #c135842f;
+}
+.actionTypeTwitter{
+    background-color :#36d7ff3d !important; 
+}
+.instagramButtonStyle{
+    color: #f142a5 !important;
+    background-color: #c135842f !important;   
+}
+.twitterButtonStyle{
+    color :#36D8FF !important; 
+}
+.actionTypeRss{
+    background-color:#f2642238;
+}
+.actionTypeTelegram { 
+    background-color: #0088cc2a;
+}
+.rssButtonStyle{
+    color : #fa7b40;
+    background-color:#f2642238;
+}
+.telegramButtonStyle{
+    color : #44c1ff;
+    background-color: #0088cc2a;
+}
 .listResualtPS {
-
     border-radius: 0px;
     padding:4px;
     margin-right:70px;
@@ -192,4 +224,7 @@
     height: 28px;
     align-items: center;
     justify-content: center;
+}
+.fontSIcon{
+    font-size: 18px;
 }

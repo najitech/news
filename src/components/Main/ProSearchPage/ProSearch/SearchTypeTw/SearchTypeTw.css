@@ -17,3 +17,13 @@
 .toggleTypeSelect span{
     padding-right: 3px;
 }
+.divContainer .MuiBadge-root{
+    align-items: center !important;
+    text-align: center !important;
+    padding-bottom: 18px;;
+    font-size: 4px !important;
+    direction: ltr;
+}
+.divContainer .MuiBadge-colorSecondary{
+    text-align : center !important;
+}

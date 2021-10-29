@@ -4,8 +4,16 @@ import ToggleButtonGroup from '@material-ui/lab/ToggleButtonGroup';
 import './SearchTypeTw.css';
 import {BsCardText, BsFileText, BsHash} from 'react-icons/bs';
 import { AiOutlineKey ,AiOutlineUser } from 'react-icons/ai';
-import { Badge } from '@material-ui/core';
+import { Badge, makeStyles } from '@material-ui/core';
+
+const useStyles = makeStyles((theme) => ({
+    font1: {
+      fontSize: "9px",
+      textAlign:'center',
+    },
+  }));
 function SearchTypeTw(props) {
+    const classes = useStyles();
     const [alignment, setAlignment] = React.useState('text');
     const {typeTw , setTypeTw} = props;
     const handleAlignment = (event, newAlignment) => {
@@ -24,21 +32,23 @@ function SearchTypeTw(props) {
             aria-label="text alignment"
             >
             <ToggleButton onClick={()=>{handleChangeType(4)}} className="toggleTypeSelect" value="text" aria-label="left aligned">
-                <Badge className="badgeStyleSearchType" overlap="circular" variant="dot" badgeContent={4} color="secondary">
+                <Badge classes={{badge: classes.font1}} overlap="rectangular" badgeContent={props.data.text.length} color="secondary"/>
                 <BsFileText className="reacIconTypeSelect"/>
-                </Badge>
                 <span>متن</span>
             </ToggleButton>
             
             <ToggleButton onClick={()=>{handleChangeType(1)}} className="toggleTypeSelect" value="keyword" aria-label="left aligned">
+                <Badge classes={{badge: classes.font1}}  className="badgeStyleSearchType" badgeContent={props.data.keywoard.length} color="secondary"/>
                 <AiOutlineKey className="reacIconTypeSelect"/>
                 <span>کلیدواژه</span>
             </ToggleButton>
             <ToggleButton onClick={()=>{handleChangeType(2)}} className="toggleTypeSelect" value="hashtag" aria-label="centered">
+                <Badge classes={{badge: classes.font1}}  className="badgeStyleSearchType" badgeContent={props.data.hashtags.length} color="secondary"/>
                 <BsHash className="reacIconTypeSelect"/>
                 <span>هشتگ</span>
             </ToggleButton>
             {props.social !== 3 ? <ToggleButton onClick={()=>{handleChangeType(3)}} className="toggleTypeSelect" value="username" aria-label="right aligned">
+                <Badge classes={{badge: classes.font1}}  className="badgeStyleSearchType"  overlap="rectangle"  badgeContent={props.data.username.length} color="secondary"/>
                 <AiOutlineUser/>
                 <span>کاربر</span>
             </ToggleButton> : null}

@@ -4,7 +4,7 @@ import React from 'react';
 import './AdvancedPS.css';
 import DatePicker, { DateObject } from "react-multi-date-picker";
 import { Button, IconButton, makeStyles, MenuItem, Popover, Select, Slider, Switch } from '@material-ui/core';
-import { AiOutlineClose, AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
+import { AiFillInstagram, AiFillTwitterCircle, AiOutlineClose, AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
 import { GrClose } from 'react-icons/gr';
 import "react-multi-date-picker/styles/colors/red.css"
 import "react-multi-date-picker/styles/layouts/mobile.css";
@@ -14,6 +14,7 @@ import persian_fa from "react-date-object/locales/persian_fa";
 
 import TextField from '@material-ui/core/TextField';
 import { withStyles } from '@material-ui/core/styles';
+import { FaRssSquare, FaTelegram } from 'react-icons/fa';
 const advancedTypeLabel = {
     "likes" : 'تعداد لایک',
     "views" : 'تعداد بازدید',
@@ -111,8 +112,9 @@ function AdvancedPS(props) {
     };
     const handleClick = (event) => {
     };
-    const handleDeleteItem = (item)=>{
-        props.handleAddRule((prev)=>{
+    const handleDeleteItem = (item , dataType)=>{
+        const Fun = props.handleAddRule[dataType - 1];
+        Fun((prev)=>{
             return {...prev , advanced : {...prev.advanced , [item] : null}}
         })
     }
@@ -132,7 +134,7 @@ function AdvancedPS(props) {
         }
         setAdvancedType(-10);
         setRule(-10);
-        
+        const fun = props.handleAddRule[props.social -1];
         // adding data to states : 
         switch(advancedType){
             case 10:
@@ -140,11 +142,11 @@ function AdvancedPS(props) {
                 {
                     if(rule !==20 )
                     {
-                        props.handleAddRule((prev)=>{
+                        fun((prev)=>{
                             return {...prev , advanced :{...prev.advanced ,likes : [value , rule ,new Date()]}}
                         });
                     }else{
-                        props.handleAddRule((prev)=>{
+                        fun((prev)=>{
                             return {...prev , advanced :{...prev.advanced ,likes : [between , rule ,new Date()]}}
                         });
                     }
@@ -154,30 +156,30 @@ function AdvancedPS(props) {
                 if(rule !==20)
                 {
                     
-                    props.handleAddRule((prev)=>{
+                    fun((prev)=>{
                         return {...prev , advanced :{...prev.advanced ,views : [value,rule , new Date()]}}
                     });
                 }
                 else{
-                    props.handleAddRule((prev)=>{
+                    fun((prev)=>{
                         return {...prev , advanced :{...prev.advanced ,views : [between,rule , new Date()]}}
                     });
                 }
             
                 break;
             case 30:
-                props.handleAddRule((prev)=>{
+                fun((prev)=>{
                     return {...prev , advanced :{...prev.advanced ,picture : [checkPicture, 0 , new Date()]}}
                 });
                 break;
             case 40:
                 if(rule !==20)
                 {
-                    props.handleAddRule((prev)=>{
+                    fun((prev)=>{
                         return {...prev , advanced :{...prev.advanced ,date : [value, rule , new Date()]}}
                     });
                 }else{
-                    props.handleAddRule((prev)=>{
+                    fun((prev)=>{
                         return {...prev , advanced :{...prev.advanced ,date : [{first:dateRange[0] , last : dateRange[1]}, rule , new Date()]}}
                     });
                 }
@@ -185,7 +187,7 @@ function AdvancedPS(props) {
             case 50:
                     if(props.social ===4)
                     {
-                        props.handleAddRule((prev)=>{
+                       fun((prev)=>{
                             return {...prev , advanced :{...prev.advanced ,type : [rule, rule , new Date()]}}
                         });
                     }
@@ -197,7 +199,6 @@ function AdvancedPS(props) {
         setValue(0);
         setBetween({first : null , last : null});
     }
-    console.log(props.data);
     return (
         <div className="advancedPS">
             <div>
@@ -324,48 +325,53 @@ function AdvancedPS(props) {
                      </div>
                 </div>
                 <div className="advancedPSList">
-                    {
-                      Object.keys(props.data.advanced).map((item)=>{
-                        console.log(props.data.advanced[item])
-                          if(props.data.advanced[item] !== null)
-                          {
-                                return <div className="advancedPSlistItem">
-                                <IconButton size="small" className="advancedPSButton" onClick={()=>handleDeleteItem(item)}><AiOutlineClose className="closeIconListItem"/></IconButton>
-                                <div className="listCardAdvancedPS">{advancedTypeLabel[item]}</div>
-                                <div className="actionResult">
-                                <FormControl disabled className="ruleActionSelect" variant="outlined" >
-                                    {
-                                        item !=='picture' && item !=="type" ?
-                                        <div className="actionTypediv">
-                                            {actionTypeLabel[props.data.advanced[item][1]]}
-                                        </div>
-                                       :<>&nbsp;</>
-                                    }
-                                </FormControl> 
-                                </div>
-                                <div className="listResualtPS">
-                                        
-                                    {props.data.advanced[item][1] ===20 ?
-                                        <div className="betweenItemResualt">
-                                            { props.data.advanced[item][0].first}
-                                            &nbsp;
-                                            &nbsp;
-                                            <span>تا</span>
-                                            &nbsp;
-                                            &nbsp;
-                                            {props.data.advanced[item][0].last}</div>
-                                    :
-                                    item !== "picture" && item !=='type'?
-                                        <div className="listItemResualt">{props.data.advanced[item][0]}
-                                            </div>:
-                                    item ==='picture' ? 
-                                        <div className="pictureItemResualt">{props.data.advanced[item][0] ? "باشد" : "نباشد"}</div>:
-                                        <div className="telegramItemResualt">{ props.data.advanced[item][0] ===70 ? "گروه" : "کانال"}</div>
-                                   }
-                               </div>
-                            </div>
-                          } 
-                      })
+                    {   
+                      props.media.map((data)=>{
+                          console.log(data);
+                        return Object.keys(data.advanced).map((item)=>{
+                        if(data.advanced[item] !== null)
+                        {
+                              return <div className={["advancedPSlistItem", data.dataType === 1? "advancedPSlistInstagram" :data.dataType ===2?"advancedPSlistTwitter" : data.dataType===3 ?"advancedPSlistRss" :"advancedPSlistTelegram"].join(" ")}>
+                              <IconButton size="small" className={["advancedPSButton", data.dataType === 1? "instagramButtonStyle" :data.dataType ===2?"twitterButtonStyle" : data.dataType===3 ?"rssButtonStyle" :"telegramButtonStyle"].join(" ")} onClick={()=>handleDeleteItem(item , data.dataType)}><AiOutlineClose className={[data.dataType === 1? "advancedPSlistInstagram" :data.dataType ===2?"advancedPSlistTwitter" : data.dataType===3 ?"advancedPSlistRss" :"advancedPSlistTelegram"].join(" ")}/></IconButton>
+                              <div className="listCardAdvancedPS">{advancedTypeLabel[item]}</div>
+                              <div className="actionResult">
+                              <FormControl disabled className="ruleActionSelect" variant="outlined" >
+                                  {
+                                      item !=='picture' && item !=="type" ?
+                                      <div className={["actionTypediv",data.dataType === 1? "actionTypeInstagram" :data.dataType ===2?"actionTypeTwitter" : data.dataType===3 ?"actionTypeRss" :"actionTypeTelegram  "].join(" ")}>
+                                          {actionTypeLabel[data.advanced[item][1]]}
+                                      </div>
+                                     :<>&nbsp;</>
+                                  }
+                              </FormControl> 
+                              </div>
+                              <div className="listResualtPS">
+                                      
+                                  {data.advanced[item][1] ===20 ?   
+                                      <div className="betweenItemResualt">
+                                          { data.advanced[item][0].first}
+                                          &nbsp;
+                                          &nbsp;
+                                          <span>تا</span>
+                                          &nbsp;
+                                          &nbsp;
+                                          {data.advanced[item][0].last}</div>
+                                  :
+                                  item !== "picture" && item !=='type'?
+                                      <div className="listItemResualt">{data.advanced[item][0]}
+                                          </div>:
+                                  item ==='picture' ? 
+                                      <div className="pictureItemResualt">{data.advanced[item][0] ? "باشد" : "نباشد"}</div>:
+                                      <div className="telegramItemResualt">{ data.advanced[item][0] ===70 ? "گروه" : "کانال"}</div>
+                                 }
+                             </div>
+                             <div className="iconListItemPS">
+                                 {data.dataType ===1 ?  <AiFillInstagram className="advancedPSlistInstagram fontSIcon"/> : data.dataType === 2 ? <AiFillTwitterCircle className="advancedPSlistTwitter fontSIcon"/> : data.dataType === 3 ?  <FaRssSquare className="advancedPSlistRss fontSIcon"/> : <FaTelegram className="advancedPSlistTelegram fontSIcon"/>}
+                             </div>
+                          </div>
+                        } 
+                    })})
+                      
                     }
                 </div>
         </div>

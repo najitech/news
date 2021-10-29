@@ -1,5 +1,6 @@
 import React from 'react'
 import Accardion from '../../../../UI/Accardion'
+import AccardionPS from '../../../../UI/AccardionPS'
 import Categories from './Categories/Categories'
 import DateFilter from './Date/DateFilter'
 import './Filters.css'
@@ -12,9 +13,9 @@ function Filters(props) {
         <div className="Filters">
             <form>  
                     <Positiveness/> 
-                    <Accardion title="موضوع">
+                    <AccardionPS title="موضوع">
                         <Categories/>
-                    </Accardion> 
+                    </AccardionPS> 
                     <Accardion title="تاریخ">
                         <DateFilter mobile={props.mobile}/>
                     </Accardion>
