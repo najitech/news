@@ -15,7 +15,10 @@ function Main() {
                     <Route path="/RSS">
                         <Rss/>
                     </Route>
-                    <Route path="/Twitter">
+                    <Route path="/Websites">
+                        <Websites/>
+                    </Route>
+                    <Route path="/ProSearch">
                         <ProSearchContainer/>
                     </Route>
                 </Switch>

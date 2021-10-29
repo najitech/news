@@ -43,14 +43,23 @@
 .activeBar2:hover .navLink{
     color : #F38203;
 }
-.activeBar{
+.activeBar3{
     border-bottom: solid 3px #24E5A4 !important;
 }
-.activeBar .navLink3{
+.activeBar3 .navLink3{
     color : #24E5A4 ;
 }
-.activeBar:hover .navLink{
+.activeBar3:hover .navLink{
     color: #24E5A4;
+}
+.activeBar4{
+    border-bottom: solid 3px #764ee3 !important;
+}
+.activeBar4 .navLink4{
+    color: #764ee3;
+}
+.activeBar4:hover .navLink{
+    color:#764ee3;
 }
 .navIcon{
     font-size: 20px;
@@ -73,6 +82,12 @@
     color: rgb(61, 61, 61); 
     line-height: 1.5em;
     text-decoration: none;
+    transition: all 0.3s ease;
+}
+.navLink4{
+    color: rgb(61, 61, 61); 
+    line-height: 1.5em;
+    text-decoration: none !important;
     transition: all 0.3s ease;
 }
 .navLink:hover{
@@ -120,6 +135,20 @@
 {
     transition: all 0.3s ease;
     border-bottom-color: #24E5A4 !important;
+}
+.navLink4 div:hover {
+    
+    transition: all 0.3s ease;
+    border-bottom-color: #764ee3 !important;
+}
+.navlink4:hover{
+    transition: all 0.3s ease;
+    color: #764ee3;
+    text-decoration: none;
+}
+.navLink4 div:hover .navLink4{
+    transition: all 0.3s ease;
+    color: #764ee3;
 }
 .tnavFilters{
     position: absolute;

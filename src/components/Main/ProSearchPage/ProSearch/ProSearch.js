@@ -265,7 +265,7 @@ function ProSearch(props) {
                     </div>   </Collapse>
                     
                     <div>
-                    <Button className="searchBtnPS">
+                    <Button onClick={()=>{props.setSubmit(true)}} className="searchBtnPS">
                         <span>جستجو</span>
                         <BiSearchAlt/>
                     </Button>

@@ -8,6 +8,7 @@ import {MdDashboard} from 'react-icons/md'
 import {FaRssSquare ,FaTwitter} from 'react-icons/fa'
 import {IoNewspaperOutline} from 'react-icons/io5'
 import '../../UI/Styles.css';
+import { AiOutlineSearch } from 'react-icons/ai';
 const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
@@ -29,9 +30,13 @@ function Navbar() {
       exact: true
     });
     let item3 = useRouteMatch({
-      path: '/Twitter',
+      path: '/Wesites',
       exact: true
     });
+    let item4 = useRouteMatch({
+      path :'/ProSearch',
+      exact: true
+    })
     const myLink = useRef();
     return (
       <div className={[classes.root , 'Navbar' ,'noselect']}>
@@ -49,10 +54,16 @@ function Navbar() {
                     <Link className="navLink2 navlinkres" to="/RSS">خبرخوان</Link>
                 </div>  
             </Link>
-            <Link className="navLink3" to="/Twitter">
-              <div className={item3 ? 'activeBar' : ""}>
+            <Link className="navLink3" to="/Websites">
+              <div className={item3 ? 'activeBar3' : ""}>
                   <IoNewspaperOutline className="navIcon"  style={{color:"#24E5A4"}}/>
-                  <Link className="navLink3 navlinkres" to="/Twitter">خبرگزاری ها</Link>
+                  <Link className="navLink3 navlinkres" to="/Websites">خبرگزاری ها</Link>
+                </div>
+            </Link>
+            <Link className="navLink4" to="/ProSearch">
+              <div className={item4 ? 'activeBar4' : ""}>
+                  <AiOutlineSearch className="navIcon"  style={{color:"#764ee3"}}/>
+                  <Link className="navLink4 navlinkres" to="/ProSearch">جستجوی پیشرفته</Link>
                 </div>
             </Link>
           </Toolbar>
