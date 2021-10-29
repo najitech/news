@@ -206,6 +206,7 @@ function PSR_TopSlider() {
                 slidesToScroll={2}
                 alwaysShowChevrons={true}
                 chevronWidth={60}
+
                 outsideChevron={true}
                 showSlither={false}
                 firstAndLastGutter={false}

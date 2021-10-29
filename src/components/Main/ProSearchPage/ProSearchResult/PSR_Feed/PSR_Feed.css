@@ -1,4 +1,84 @@
 .PSR_Feed {
-    flex : 0.75;
+    flex : 0.77;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
 
+.PSR_toggle {
+    display: flex;
+    margin: 0px 30px;
+    margin-top:30px;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px white solid;
+}
+
+.PSR_toggle span{
+    text-align: center;
+    font-size: 13px;
+}
+.PSR_toggle div{
+    height:40px;
+    padding: 10px 20px;
+    border-radius: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 0px 5px;
+    color: white;
+    border-bottom:none ;
+    cursor: pointer;
+    transition: color 0.3 ease-in;
+}
+.PSR_socialMediaIconsProSearch{
+    font-size: 20px;
+    margin-left: 3px;
+}
+.PSR_instagram_proSearch_type:hover{
+    background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    transition: 0.3s ease-out all;
+}
+.PSR_instagram_active_prosearch
+{
+    background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+.PSR_twitter_proSearch_type:hover{
+    background:linear-gradient(45deg, #66757f, #00ACEE, #36D8FF, #f5f8fa);
+    transition: 0.3s ease-out color;    
+}
+.PSR_twitter_active_prosearch{
+    background:linear-gradient(45deg, #66757f, #00ACEE, #36D8FF, #f5f8fa);
+    border-bottom:none;
+}
+
+.PSR_telegram_proSearch_type:hover{
+    background:linear-gradient(120deg, #0088cc, #d9eef8);
+}
+.PSR_telegram_active_prosearch{
+    background:linear-gradient(120deg, #0088cc, #d9eef8);
+    border-bottom: none;
+}
+.PSR_rss_proSearch_type:hover{
+    background:linear-gradient(120deg, #f26522, #eca27f);
+}
+.PSR_rss_active_prosearch
+{
+    background:linear-gradient(120deg, #f26522,  #eca27f);
+    border-bottom: none;
+}
+.PSR_instagram_border_color{
+    border-bottom-color:#c13584 !important ;
+    transition: 0.3s ease-out all;
+}
+.PSR_twitter_border_color {
+    border-bottom-color: #36D8FF !important;
+    transition: 0.3s ease-out all;
+}
+.PSR_telegram_border_color{
+    border-bottom-color: #0088cc !important;   
+    transition: 0.3s ease-out all;
+}
+.PSR_rss_border_color{
+    border-bottom-color: #f26522 !important;
+    transition: 0.3s ease-out all;
 }

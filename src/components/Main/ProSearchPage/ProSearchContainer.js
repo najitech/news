@@ -9,7 +9,7 @@ function ProSearchContainer() {
     return (
         <div className="ProSearchContianer">
            {/*<ProSearch value={searchInput} setSearchInput={setSearchInput} setSubmit={setSubmitted}/>*/}
-           <ProSearchResult/>
+           <ProSearch/>
         </div>
     )
 }

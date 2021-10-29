@@ -8,19 +8,55 @@
 }
 .TopSlider_top {
     height: 50%;
-    background: rgb(234,148,107);
-    background: linear-gradient(90deg, rgba(234,148,107,1) 0%, rgba(240,118,60,1) 100%); 
     border-radius: 32px;
 }
-
+.PSR_TopSlider_instagram {
+    background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+.PSR_TopSlider_telegram{
+    background:linear-gradient(120deg, #0088cc, #d9eef8);
+}
+.PSR_TopSlider_twitter{
+    background:linear-gradient(45deg, #66757f, #00ACEE, #36D8FF, #f5f8fa);
+}
+.PSR_TopSlider_rss {
+    background:linear-gradient(120deg, #f26522, #eca27f);
+}
 .Slide_typeIconContainer {
     position:absolute;
     right:42%;
     top:25%;
     font-size: 50px;
 }
-.Slide_typeIcon{
+.Slide_telegramIcon{
     border: 7px solid #31327D ;
     border-radius: 50%;
+    font-size: 48px;
+    color:white;
+    background:linear-gradient(120deg, #0088cc, #d9eef8);
+    padding: 6px;
+}
+.Slide_instgramIcon{
+    border: 7px solid #31327D ;
+    border-radius: 50%;
+    color:white;
+    background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    padding: 6px;
+}
+.Slide_twitterIcon{
+    border: 7px solid #31327D ;
+    border-radius: 50%;
+    color:white;
+    background:linear-gradient(45deg, #66757f, #00ACEE, #36D8FF, #f5f8fa);
+    padding: 6px;
+}
+.Slide_rssIcon{
+    border: 7px solid #31327D ;
+    border-radius: 50%;
+    color:white;
+    background:linear-gradient(120deg, #f26522, #eca27f);
+    padding: 3px;
+    padding-bottom: 5px;
+    font-size: 48px;
 
 }

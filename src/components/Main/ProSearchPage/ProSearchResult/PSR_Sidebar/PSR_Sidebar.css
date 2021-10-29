@@ -29,21 +29,20 @@
     transition: all 0.7s ease;
 }
 .PSR_instagram {
-    background-color: #CC337C;
+    background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
 }
 .PSR_twitter {
-    background-color: #2ED1FC;
+    background:linear-gradient(45deg, #66757f, #00ACEE, #36D8FF, #f5f8fa);
 }
 .PSR_rss{
-    background-color: #F0763C;
+    background:linear-gradient(120deg, #f26522, #eca27f);
 }
 .PSR_telegram {
-    background-color: #36A1D7;
+    background:linear-gradient(120deg, #0088cc, #d9eef8);
 }
 .PSR_icon_select {
-    transform: rotate(15deg)  translatex(15px) translateY(-15px);
-    width: 55px;
-    height: 55px;
+    width: 65px;
+    height: 65px;
     font-size: 42px;
     transition: all 0.7s ease;
 }
