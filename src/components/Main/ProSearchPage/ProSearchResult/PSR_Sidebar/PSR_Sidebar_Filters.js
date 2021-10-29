@@ -14,7 +14,6 @@ import ViewsFilter from '../../../Rss/Filters/ViewsFilter/ViewsFilter'
 function PSR_Sidebar_Filters(props) {
     return (
         <div className="PSR_Sidebar_Filters">
-                    <Positiveness dark/> 
                     <AccardionPS  instagram title="موضوع">
                         <Categories dark/>
                     </AccardionPS> 
@@ -26,6 +25,9 @@ function PSR_Sidebar_Filters(props) {
                     </AccardionPS>
                     <AccardionPS marg instagram title="هشتگ">
                         <TagsFilter dark/>   
+                    </AccardionPS>
+                    <AccardionPS instagram title="حس خبر">    
+                        <Positiveness dark/> 
                     </AccardionPS>
                     <AccardionPS off instagram title="وب سایت">
                         <SitesFilter dark/>

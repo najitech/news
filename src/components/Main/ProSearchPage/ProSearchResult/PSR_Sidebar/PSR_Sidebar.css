@@ -3,6 +3,8 @@
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
     display: flex;
+    padding-top: 20px;
+    padding-bottom: 25px;
     background-color: #2D2C56;
 
 }

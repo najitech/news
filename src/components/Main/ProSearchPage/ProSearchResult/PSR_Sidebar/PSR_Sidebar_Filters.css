@@ -1,7 +1,8 @@
 .PSR_Sidebar_Filters {
     flex:0.85;
+    overflow: hidden;
     overflow-y: scroll;
-    height: 96%;
+    padding-left: 20px;
 }
 .PSR_Sidebar_Filters::-webkit-scrollbar {
     display: none;

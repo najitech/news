@@ -43,7 +43,7 @@ function Positiveness(props) {
   
     return (
         <div className={!props.dark? "Positivness": "Positivness_dark"}>
-        <p className={props.dark? "Positivness_titleDark" : "Positivness_title"} >حس خبر</p>
+        {!props.dark ? <p className={props.dark? "Positivness_titleDark" : "Positivness_title"} >حس خبر</p>: null}
         <div className="Positive">
           <ToggleButtonGroup
             value={alignment}

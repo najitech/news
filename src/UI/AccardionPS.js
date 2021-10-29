@@ -28,7 +28,7 @@ function AccardionPS(props) {
     const classes = useStyles();
     return (
       <ExpansionPanel className={[props.off ? "accPS" :props.marg?  "marg" :'' , 'marginPS'  , 'boxShadowAccPS' , classes.hideBorder].join(" ")} classes={{ expanded: classes.expanded }}>
-        <ExpansionPanelSummary className="marginPS extentionPSLIne"  expandIcon={<ExpandMoreIcon style={{color: props.instagram ? "#C13584" : "",fontSize:'21px'}}/>}>
+        <ExpansionPanelSummary className="marginPS extentionPSLIne"  expandIcon={<ExpandMoreIcon style={{color: props.instagram ? "#1E96D2" : "",fontSize:'21px'}}/>}>
           <Typography className="fontAccardionPS">{props.title}</Typography>
           <hr className={props.instagram ? "extentionPSLIneInstagram" : ""}/>
         </ExpansionPanelSummary>
