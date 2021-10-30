@@ -61,7 +61,7 @@ const state = {
               color:  '#263238'
             },
         },
-        xaxis: {
+        xaxis: {  
           categories: [
             ['شنبه'],
             ['یکشنبه'],

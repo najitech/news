@@ -18,9 +18,39 @@
 .fontAccardionPS{
     font-size: 14px !important;
 }
-.extentionPSLIneInstagram{
+.extentionPSLIneTelegram{
     border: none;
     border-top: 2px solid #1E96D2;
+    margin: 3px 10px;
+    height: 0px;
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    right: 0px;
+}
+.extentionPSLIneRss{
+    border: none;
+    border-top: 2px solid #EF824E;
+    margin: 3px 10px;
+    height: 0px;
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    right: 0px;
+}
+.extentionPSLIneTwitter{
+    border: none;
+    border-top: 2px solid #36D8FF;
+    margin: 3px 10px;
+    height: 0px;
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    right: 0px;
+}
+.extentionPSLIneInstagram{
+    border: none;
+    border-top: 2px solid #9938A3;
     margin: 3px 10px;
     height: 0px;
     position: absolute;

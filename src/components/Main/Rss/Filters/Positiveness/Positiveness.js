@@ -44,13 +44,13 @@ function Positiveness(props) {
     return (
         <div className={!props.dark? "Positivness": "Positivness_dark"}>
         {!props.dark ? <p className={props.dark? "Positivness_titleDark" : "Positivness_title"} >حس خبر</p>: null}
-        <div className="Positive">
+        <div className={props.dark ? "DarkPositive" :"Positive"}>
           <ToggleButtonGroup
             value={alignment}
             exclusive
             onChange={handleAlignment}
             aria-label="text alignment"
-            className="Positive_toggle"
+            className={props.dark ? "toggleDarkPo" :"Positive_toggle"}
           >
             <ToggleButton className={["Positive_box" , props.dark? 'psDark':""].join(" ")} value="left" aria-label="left aligned">
               <RemoveCircleIcon className="Remove"/>
@@ -62,6 +62,7 @@ function Positiveness(props) {
               <AddCircleIcon/>
             </ToggleButton>
           </ToggleButtonGroup>
+          <div style={{width:props.dark ? "100%" : "" , margin: props.dark ?'auto' : '' ,direction:'rtl'}}>
           {alignment=== "left" ?
             <p className="Positive_negetive"> منفی</p> :
             alignment==="center"?
@@ -70,6 +71,8 @@ function Positiveness(props) {
             <p className="Positive_Positive"> مثبت</p> :
             null
           } 
+          </div>
+          
         </div>
         </div>
     )

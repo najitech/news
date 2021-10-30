@@ -54,14 +54,20 @@ const PrettoSlider = withStyles({
 function ViewsFilter(props) {
 const [like, setLike] = React.useState(30);
 const [view , setView] =React.useState(50);
+const [retweet , setRetweet] = React.useState(10);
   const handleLike = (event, newValue) => {
     setLike(newValue);
-  };const handleView = (event, newValue) => {
+  };
+  const handleView = (event, newValue) => {
     setView(newValue);
+  };
+  const handleRetweet = (event, newValue) => {
+    setRetweet(newValue);
   };
     return (
         <div className="viewFilter">
-            <div>
+            
+            {!props.off ? <div>
             <h6>تعداد لایک :<span>
               <CssTextDarkInput 
                  size="small" 
@@ -72,7 +78,8 @@ const [view , setView] =React.useState(50);
                   value={like}
                   onChange={(e)=>{handleLike(e.target.value)}}/></span> </h6>
             <PrettoSlider className="sliderDarkThemFilter" value={like} onChange={handleLike} aria-labelledby="continuous-slider" />
-            </div>
+            </div> : null}
+    
             <div className="lastChildSlider">
             <h6>تعداد بازدید :<span><CssTextDarkInput 
                  size="small" 
@@ -84,7 +91,17 @@ const [view , setView] =React.useState(50);
                   onChange={(e)=>{handleView(e.target.value)}}/></span> </h6>
             <PrettoSlider className="sliderDarkThemFilter" value={view} onChange={handleView} aria-labelledby="continuous-slider" />
             </div>
-            
+            {props.retweet ? <div className="lastChildSlider">
+            <h6>تعداد ریتوییت :<span><CssTextDarkInput 
+                 size="small" 
+                 Icon={GrView}
+                 InputProps={{ disableUnderline: true }} 
+                  class="inputSlider"
+                  variant="outlined"
+                  value={retweet}
+                  onChange={(e)=>{handleRetweet(e.target.value)}}/></span> </h6>
+            <PrettoSlider className="sliderDarkThemFilter" value={retweet} onChange={handleRetweet} aria-labelledby="continuous-slider" />
+            </div> :null }
         </div>
     )
 }

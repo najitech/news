@@ -28,7 +28,7 @@ function DateFilter(props) {
             </div> 
             <div className="dateInputPicker">   
                 <DatePicker
-                    className={['red' , props.mobile ? "rmdp-mobile" : ''].join(" ")}
+                    className={[props.dark ? "purple" :'red' , props.mobile ? "rmdp-mobile" : ''].join(" ")}
                     animations={[transition()]} 
                     calendar={persian}
                     mobileLabels={props.mobile ?{

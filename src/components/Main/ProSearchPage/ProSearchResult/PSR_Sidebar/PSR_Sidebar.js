@@ -23,7 +23,7 @@ function PSRSidebar() {
                 </div>
             
             </div>
-            <PSR_Sidebar_Filters/>
+            <PSR_Sidebar_Filters type={SideBarIcon}/>
         </div>
     )
 }

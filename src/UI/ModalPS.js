@@ -65,6 +65,7 @@ export default function ModalPS(props) {
             show : false,
         },
       },
+      
       plotOptions: {
         bar: {
           borderRadius: 4,
@@ -75,8 +76,10 @@ export default function ModalPS(props) {
         colors: ['#764ee3']
       },
       xaxis: {
-        categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]
-      }
+        categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999],
+        
+      },
+      
     },
     
     series: [
@@ -289,29 +292,29 @@ export default function ModalPS(props) {
                   <CustomizedProgressBars barValue={70}/>
                   <div className="hashtags">
                     <PostTag text="موضوعات :"  fontSize="13px" padding="0px" backGroundColor="#322063" color="white" marginP="0px" paddingP="0px"/>
-                    <PostTag text="اقتصادی" color="#56bcdb" fontSize="11px" padding="5px" backGroundColor ="#ebf4f9"/>
-                    <PostTag text="حوادث"  color="#56db82" fontSize="11px" padding="5px" backGroundColor="#ebf9ec"/>
-                    <PostTag text="نظامی"  color="#db5656" fontSize="11px" padding="5px" backGroundColor="#f9ebeb"/>
-                    <PostTag text="جنگ" color="#dbb156" fontSize="11px" padding="5px" backGroundColor="#f9f3eb"/>
-                    <PostTag text="فرهنگی" color="#7556DB" fontSize="11px" padding="5px"  backGroundColor="#EFEBF9"/>
-                    <PostTag text="ورزشی" color="#56db82" fontSize="11px" padding="5px"  backGroundColor="#ebf9ec"/>
-                    <PostTag text="علمی" color="#db56af" fontSize="11px" padding="5px"  backGroundColor="#f9ebf3"/>
+                    <PostTag text="اقتصادی" color="#56bcdb" fontSize="11px" padding="5px" backGroundColor ="#40474b"/>
+                    <PostTag text="حوادث"  color="#56db82" fontSize="11px" padding="5px" backGroundColor="#404b41"/>
+                    <PostTag text="نظامی"  color="#db5656" fontSize="11px" padding="5px" backGroundColor="#4b4040"/>
+                    <PostTag text="جنگ" color="#dbb156" fontSize="11px" padding="5px" backGroundColor="#4b4940"/>
+                    <PostTag text="فرهنگی" color="#7556DB" fontSize="11px" padding="5px"  backGroundColor="#45404b"/>
+                    <PostTag text="ورزشی" color="#56db82" fontSize="11px" padding="5px"  backGroundColor="#47404b"/>
+                    <PostTag text="علمی" color="#db56af" fontSize="11px" padding="5px"  backGroundColor="#4b4046"/>
                   </div> 
                   <div className="keywordsPS">
                     <PostTag text="کلمات کلیدی :" fontSize="13px" padding="0px" backGroundColor="#322063" color="white" marginP="0px" paddingP="0px"/>
                     <div className="keywords_tags">
-                      <Hashtag/>
-                      <Hashtag/>
-                      <Hashtag/>
-                      <Hashtag/>  
+                      <Hashtag backGroundColor="#4b46aa" color="white"/>
+                      <Hashtag backGroundColor="#4b46aa" color="white"/>
+                      <Hashtag backGroundColor="#4b46aa" color="white"/>
+                      <Hashtag backGroundColor="#4b46aa" color="white"/>  
                     </div>  
                   </div>  
                       <div className="Modal_Hashtags2">
-                        <Hashtag2/>
-                        <Hashtag2/>
-                        <Hashtag2/>
-                        <Hashtag2/>
-                        <Hashtag2/>
+                        <Hashtag2  backGroundColor="none" color="white"/>
+                        <Hashtag2  backGroundColor="none" color="white"/>
+                        <Hashtag2  backGroundColor="none" color="white"/>
+                        <Hashtag2  backGroundColor="none" color="white"/>
+                        <Hashtag2  backGroundColor="none" color="white"/>
                     </div>
                 </div>
               </div>

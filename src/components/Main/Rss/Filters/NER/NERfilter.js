@@ -1,6 +1,6 @@
 import React  , {useState} from 'react'
 import './NERfilter.css';
-import { Button, TextField, withStyles } from '@material-ui/core';
+import { Button, Chip, TextField, withStyles } from '@material-ui/core';
 import Input from '../../../../../UI/Input';
 import { AiFillFileWord } from 'react-icons/ai';
 import NERCheckBox from './NERCheckBox/NERCheckBox';
@@ -36,6 +36,10 @@ function NERfilter(props) {
         }
         setNERs([...NERs , inputNER]);
     }
+    const closeHandler = (e)=>()=>{
+        setNERs(prev=>{return prev.filter((chip)=>chip !== e)});
+    }
+    console.log(NERs)
     return (
         <div className={["NERfilter",props.dark?"darkInputThem":""].join(" ")}>
              <div className="NERAddContainer"> 
@@ -58,11 +62,16 @@ function NERfilter(props) {
                 <Button onClick={addNERHandler}  className={!props.dark ? "addTag" : "addTagDark"}>افزودن</Button>
             </div>
             <div className={props.dark?"listDark":"listOfNER"} >
-                <ul>
+                <div className={["tagsContainer", props.dark ?"chipDarkThem" : ""].join(" ")}>
                     {NERs.map((item)=>{
-                        return <NERCheckBox dark={props.dark} label={item}/>
-                    })}
-                </ul>
+                        return <Chip
+                                    className ="chipclass"
+                                    label={item}
+                                    color="secondary"
+                                    onDelete = {closeHandler(item)}
+                                    key={item}
+                                    />})}
+            </div>
             </div>
         </div>
     )

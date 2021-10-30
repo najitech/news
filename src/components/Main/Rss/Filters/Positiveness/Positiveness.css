@@ -26,16 +26,28 @@
     box-shadow : 1.0px 1.4px 2px 0.4px rgb(226, 226, 226);
 }
 .Positivness_dark{
-    margin-top: 10px;
+    margin-top: 0px;
     background-color: none;
     border: none;
+    width: 100%;
     box-shadow: none;
-    padding: 10px;
+    padding: 0px;
     padding-top: 4px;
     border-radius: none;
 }
+.toggleDarkPo{
+    margin: auto;
+    width: 70% !important;
+}
 .Positive {
     display: flex;
+    justify-content: center;
+    direction: ltr;
+    align-items: center;
+    justify-content:space-around;
+}
+.DarkPositive{
+    width: 100%;
     justify-content: center;
     direction: ltr;
     align-items: center;
@@ -48,7 +60,16 @@
     height: 26px;
     width: 43px;
 }
-.Positive p {
+.Positive p { 
+    font-size: 14px;
+    width: 80px;
+    height: 34px;
+    text-align: center;
+    line-height: 2.5em;
+    border-radius: 16px;
+}
+.DarkPositive p{
+    
     font-size: 14px;
     width: 80px;
     height: 34px;
@@ -78,6 +99,6 @@
     margin-right: 5px;
 }
 .psDark{
-    color: #C13584 !important;
-    border-color: #C13584 !important;
+    color: #764ee3 !important;
+    border-color: #764ee3 !important;
 }
