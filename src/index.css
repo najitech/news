@@ -31,11 +31,12 @@ code {
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background:#764ee394; 
+  background:var(--PSR_ScrollbarColor); 
   border-radius: 5px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #764ee3; 
+  background:var(--PSR_ScrollbarHoverColor) ; 
+
 }

@@ -18,9 +18,8 @@ function ProSearchContainer() {
 
         <div className={["ProSearchContianer",theme].join(" ")}>
            {/*!submitted ? <ProSearch setSubmit={setSubmitted}/> : <ProSearchResult/>*/}
-           <button onClick={handleclick}>click me! </button>
            <ThemeColorContext.Provider value={theme}>
-             <ProSearchResult theme={theme}/>
+             <ProSearchResult theme={theme} setTheme={setTheme}/>
             </ThemeColorContext.Provider>
         </div>
 

@@ -4,7 +4,7 @@ import { FaRssSquare, FaTelegram } from 'react-icons/fa'
 import './PSR_Sidebar.css'
 import PSR_Sidebar_Filters from './PSR_Sidebar_Filters'
 
-function PSRSidebar() {
+function PSRSidebar(props) {
     const [SideBarIcon , SetSideBarIcon] = useState(1)
     return (
         <div className="PSR_Sidebar">
@@ -23,7 +23,7 @@ function PSRSidebar() {
                 </div>
             
             </div>
-            <PSR_Sidebar_Filters type={SideBarIcon}/>
+            <PSR_Sidebar_Filters setTheme={props.setTheme} type={SideBarIcon}/>
         </div>
     )
 }

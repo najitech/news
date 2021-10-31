@@ -14,12 +14,15 @@
     --PSR_SidebarColor :#2D2C56;
     --AccardionPS_marginPScolor :#2D2C56;
     --AccardionPS_accPScolor:#2D2C56;
+    --PSR_ScrollbarColor :#764ee394;
+    --PSR_ScrollbarHoverColor:#764ee3 ;
+ 
 }
 
 .darkTheme {
     --backGroundTheme : #EBEDEF;
     --postTheme : #FFFFFF;
-    --PSR_toggle : grey;
+    --PSR_toggle : rgba(138, 126, 126, 0.541);
     --PSR_PostTextColor : #414040;
     --PSR_PostBoxShadow : rgb(167, 166, 166);
     --PSR_PostSubjectBorderColor : none;
@@ -28,4 +31,6 @@
     --PSR_SidebarColor :#FFFFFF;
     --AccardionPS_marginPScolor:#FFFFFF;
     --AccardionPS_accPScolor:#FFFFFF;
+    --PSR_ScrollbarColor :rgb(155, 155, 155);
+    --PSR_ScrollbarHoverColor:rgb(190, 186, 186) ;
 }

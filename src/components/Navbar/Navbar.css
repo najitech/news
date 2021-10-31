@@ -24,6 +24,24 @@
     width: 300px;
     transition: all 0.3s ease;
 }
+.Navbar_ThemeToggle{
+    width: 80px !important;
+    height: 50px !important;
+    margin-bottom: 2px;
+    margin-right:70px;
+
+}
+.Navbar_ThemeToggleDark {
+    color:blue ;
+    font-size: 35px;
+    padding-top: 2px;
+}
+.Navbar_ThemeToggleLight {
+    color: rgb(194, 194, 7) ;
+    font-size: 35px;
+    padding-top: 2px;
+    margin-left:10px;
+}
 
 .activeBar1{
     border-bottom: #F50057 3px solid !important;

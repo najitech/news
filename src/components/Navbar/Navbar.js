@@ -9,6 +9,8 @@ import {FaRssSquare ,FaTwitter} from 'react-icons/fa'
 import {IoNewspaperOutline} from 'react-icons/io5'
 import '../../UI/Styles.css';
 import { AiOutlineSearch } from 'react-icons/ai';
+import {MdDarkMode} from 'react-icons/md'
+import {BsSunFill} from 'react-icons/bs'
 const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
