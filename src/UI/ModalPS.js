@@ -61,6 +61,7 @@ export default function ModalPS(props) {
   const {PostProps} = props ;
   const [chart , setChart] = useState({
     options: {
+      
       chart: {
         id: "basic-bar",
         toolbar : {
@@ -79,7 +80,7 @@ export default function ModalPS(props) {
       },
       xaxis: {
         categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999],
-        
+        color:'#fff'
       },
       
     },
@@ -87,12 +88,17 @@ export default function ModalPS(props) {
     series: [
       {
         name: "series-1",
-        data: [30, 40, 45, 50, 49, 60, 70, 91]
-      }
+        data: [30, 40, 45, 50, 49, 60, 70, 91],
+      },
     ]
   });
   const [donChart , setdonChart] = useState({
-    options: {},
+    options: {
+      legend: {
+        labels: {
+          colors: "#fff",
+      },},
+    },
     series: [44, 55, 41, 17, 15],
     labels: ['A', 'B', 'C', 'D', 'E']
   });
