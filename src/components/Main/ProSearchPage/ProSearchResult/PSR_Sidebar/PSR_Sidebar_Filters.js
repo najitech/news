@@ -81,7 +81,6 @@ function PSR_Sidebar_Filters(props) {
                     <AccardionPS off rss  title="وب سایت">
                         <SitesFilter dark/>
                     </AccardionPS>
-
                     <AccardionPS marg rss  title="حس خبر">    
                         <Positiveness size dark/> 
                     </AccardionPS>
