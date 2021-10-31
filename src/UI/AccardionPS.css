@@ -1,7 +1,6 @@
 .accPS{
     padding: 0px !important;
     margin: 0px !important;
-    background-color: #2D2C56 !important;
 }
 .marg{
     margin-top: 0px !important;
@@ -14,6 +13,13 @@
     color : white !important;
     outline: none !important;
     background-color: #2D2C56 !important;
+}
+.marginPSwhite{
+    margin-top : 5px !important;
+    border: none !important;
+    color : black !important;
+    outline: none !important;
+    background-color: white !important;
 }
 .fontAccardionPS{
     font-size: 14px !important;

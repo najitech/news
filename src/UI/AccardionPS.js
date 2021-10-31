@@ -27,8 +27,8 @@ function AccardionPS(props) {
     
     const classes = useStyles();
     return (
-      <ExpansionPanel className={[props.off ? "accPS" :props.marg?  "marg" :'' , 'marginPS'  , 'boxShadowAccPS' , classes.hideBorder].join(" ")} classes={{ expanded: classes.expanded }}>
-        <ExpansionPanelSummary className="marginPS extentionPSLIne"  expandIcon={<ExpandMoreIcon style={{color: props.instagram ? "#9938A3" :props.telegram? '#1E96D2' : props.twitter ? "#36D8FF" : props.rss ? "#EF824E" : '#36D8FF',fontSize:'21px'}}/>}>
+      <ExpansionPanel className={[props.off ? "accPS" :props.marg?  "marg" :'' ,!props.white ?  'marginPS' : 'marginPSwhite'  , 'boxShadowAccPS' , classes.hideBorder].join(" ")} classes={{ expanded: classes.expanded }}>
+        <ExpansionPanelSummary className={[props.white ?"marginPSwhite":  "marginPS", "extentionPSLIne"].join(" ")}  expandIcon={<ExpandMoreIcon style={{color: props.instagram ? "#9938A3" :props.telegram? '#1E96D2' : props.twitter ? "#36D8FF" : props.rss ? "#EF824E" : '#36D8FF',fontSize:'21px'}}/>}>
           <Typography className="fontAccardionPS">{props.title}</Typography>
           <hr className={props.instagram ? "extentionPSLIneInstagram" :props.twitter ?  "extentionPSLIneTwitter" : props.rss ? 'extentionPSLIneRss' : 'extentionPSLIneTelegram'}/>
         </ExpansionPanelSummary>
