@@ -76,11 +76,11 @@ function PSR_Post(props) {
                 </div>
             </div>
             <div className="PSR_Hashtags2">
-                <Hashtag2  backGroundColor="none" color="white"/>
-                <Hashtag2  backGroundColor="none" color="white"/>
-                <Hashtag2  backGroundColor="none" color="white"/>
-                <Hashtag2  backGroundColor="none" color="white"/>
-                <Hashtag2 backGroundColor="none" color="white" className="PSR_Hashtag2_lastchild"/>
+                <Hashtag2  backGroundColor="none"/>
+                <Hashtag2  backGroundColor="none" />
+                <Hashtag2  backGroundColor="none" />
+                <Hashtag2  backGroundColor="none" />
+                <Hashtag2 backGroundColor="none" className="PSR_Hashtag2_lastchild"/>
             </div>
 
             <div className="PSR_PostFooter">
@@ -120,7 +120,10 @@ function PSR_Post(props) {
                                 props.TelegramType==="channel" ?
                                 <FaBullhorn className="PSR_TelegramSourceIcon"/>
                                 :
+                                <div className="PSR_Telegram_Group">
+                                <span>نام گروه</span>
                                 <HiUserGroup className="PSR_TelegramSourceIcon"/>
+                                </div>
                             } 
                         </div>
                         <div className="PSR_TelegramComments">

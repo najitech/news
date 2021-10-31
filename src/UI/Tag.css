@@ -3,7 +3,7 @@
     display: flex;
     height: 17px;
     border-radius : 3px;
-    font-weight: bold !important;
+    font-weight: 600 !important;
     align-items:center;
     margin-left:4px;
 
@@ -13,7 +13,7 @@
     text-align: center;
     color : rgb(241, 241, 241);
     font-family: 'Shabnam'; 
-    font-size: 8px;
+    font-size: 9.5px;
 
 
 }
