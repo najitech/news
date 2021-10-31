@@ -9,7 +9,7 @@ import PostTag from './Tag';
 import Hashtag from './Hashtag';
 import CustomizedProgressBars from '../components/Main/Rss/Posts/PostGrids/Post/LinearProgress/CustomizedProgressBars'; 
 import { BiCurrentLocation, BiTimeFive } from 'react-icons/bi';
-import { BsFillPeopleFill } from 'react-icons/bs';
+import { BsFillPeopleFill, BsFillPersonFill } from 'react-icons/bs';
 import Hashtag2 from './Hashtag2';
 import { MdWeb } from 'react-icons/md';
 import WordCloud from 'react-d3-cloud';
@@ -279,8 +279,8 @@ export default function ModalPS(props) {
                       <p className="publishDatePost">تاریخ انتشار : {(props.publish_date)} </p>
                       <h3>{props.title}</h3>
                       <div className="Modal_website_Rss">  
-                        <MdWeb/>
-                        <p>خبرگزاری تسنیم</p>
+                      <BsFillPersonFill />
+                        <p>ehsan.ah</p>
                       </div>
                     </div>
                   </div> 
@@ -312,11 +312,11 @@ export default function ModalPS(props) {
                     </div>  
                   </div>  
                       <div className="Modal_Hashtags2">
-                        <Hashtag2  backGroundColor="none" color="white"/>
-                        <Hashtag2  backGroundColor="none" color="white"/>
-                        <Hashtag2  backGroundColor="none" color="white"/>
-                        <Hashtag2  backGroundColor="none" color="white"/>
-                        <Hashtag2  backGroundColor="none" color="white"/>
+                        <Hashtag2  backGroundColor="none" color="#fff"/>
+                        <Hashtag2  backGroundColor="none" color="#fff"/>
+                        <Hashtag2  backGroundColor="none" color="#fff"/>
+                        <Hashtag2  backGroundColor="none" color="#fff"/>
+                        <Hashtag2  backGroundColor="none" color="#fff"/>
                     </div>
                 </div>
               </div>
