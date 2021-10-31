@@ -44,7 +44,7 @@ function Positiveness(props) {
     return (
         <div className={!props.dark? "Positivness": "Positivness_dark"}>
         {!props.dark ? <p className={props.dark? "Positivness_titleDark" : "Positivness_title"} >حس خبر</p>: null}
-        <div className={props.dark ? "DarkPositive" :"Positive"}>
+        <div className={props.size ? "DarkPositive" :"Positive"}>
           <ToggleButtonGroup
             value={alignment}
             exclusive
@@ -62,7 +62,7 @@ function Positiveness(props) {
               <AddCircleIcon/>
             </ToggleButton>
           </ToggleButtonGroup>
-          <div style={{width:props.dark ? "100%" : "" , margin: props.dark ?'auto' : '' ,direction:'rtl'}}>
+          <div style={{width:props.size ? "100%" : "" , margin: props.size ?'auto' : '' ,direction:'rtl'}}>
           {alignment=== "left" ?
             <p className="Positive_negetive"> منفی</p> :
             alignment==="center"?

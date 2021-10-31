@@ -33,6 +33,35 @@ const PrettoSlider = withStyles({
       borderRadius: 4,
     },
   })(Slider);  
+  const WhitePrettoSlider = withStyles({
+    root: {
+      color: '#F50057',
+      height: 8,
+    },
+    thumb: {
+      height: 20,
+      width: 20,
+      backgroundColor: '#fff',
+      border: '2px solid currentColor',
+      marginTop: -8,
+      marginLeft: -12,
+      '&:focus, &:hover, &$active': {
+        boxShadow: 'inherit',
+      },
+    },
+    active: {},
+    valueLabel: {
+      left: 'calc(-50% + 4px)',
+    },
+    track: {
+      height: 8,
+      borderRadius: 4,
+    },
+    rail: {
+      height: 8,
+      borderRadius: 4,
+    },
+  })(Slider);
   const CssTextDarkInput = withStyles({
     root: {
       '& label.Mui-focused': {
@@ -65,7 +94,7 @@ const [retweet , setRetweet] = React.useState(10);
     setRetweet(newValue);
   };
     return (
-        <div className="viewFilter">
+        <div className={["viewFilter", props.dark? "darkViewFilter" : 'whiteModeviewFilter'].join(" ")}>
             
             {!props.off ? <div>
             <h6>تعداد لایک :<span>
@@ -77,7 +106,7 @@ const [retweet , setRetweet] = React.useState(10);
                   variant="outlined"
                   value={like}
                   onChange={(e)=>{handleLike(e.target.value)}}/></span> </h6>
-            <PrettoSlider className="sliderDarkThemFilter" value={like} onChange={handleLike} aria-labelledby="continuous-slider" />
+            {props.dark ? <PrettoSlider className="sliderDarkThemFilter" value={like} onChange={handleLike} aria-labelledby="continuous-slider" /> : <WhitePrettoSlider  className="sliderDarkThemFilter" value={like} onChange={handleLike} aria-labelledby="continuous-slider" />}
             </div> : null}
     
             <div className="lastChildSlider">
@@ -89,7 +118,7 @@ const [retweet , setRetweet] = React.useState(10);
                   variant="outlined"
                   value={view}
                   onChange={(e)=>{handleView(e.target.value)}}/></span> </h6>
-            <PrettoSlider className="sliderDarkThemFilter" value={view} onChange={handleView} aria-labelledby="continuous-slider" />
+            {props.dark ? <PrettoSlider className="sliderDarkThemFilter" value={view} onChange={handleView} aria-labelledby="continuous-slider" /> : <WhitePrettoSlider className="sliderDarkThemFilter" value={view} onChange={handleView} aria-labelledby="continuous-slider"/>}
             </div>
             {props.retweet ? <div className="lastChildSlider">
             <h6>تعداد ریتوییت :<span><CssTextDarkInput 
@@ -100,7 +129,7 @@ const [retweet , setRetweet] = React.useState(10);
                   variant="outlined"
                   value={retweet}
                   onChange={(e)=>{handleRetweet(e.target.value)}}/></span> </h6>
-            <PrettoSlider className="sliderDarkThemFilter" value={retweet} onChange={handleRetweet} aria-labelledby="continuous-slider" />
+            {props.dark ? <PrettoSlider className="sliderDarkThemFilter" value={retweet} onChange={handleRetweet} aria-labelledby="continuous-slider" /> : <WhitePrettoSlider  className="sliderDarkThemFilter" value={retweet} onChange={handleRetweet} aria-labelledby="continuous-slider"/> } 
             </div> :null }
         </div>
     )

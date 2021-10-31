@@ -85,7 +85,7 @@ function Post(props) {
             </div>
             */} 
             {!isMobileScreen ? 
-                <ModalPS  open={open} setOpen={setOpen} image={props.image} positiveness={10} title={props.title} text={props.news_text} publish_date={props.publish_date} handleClose={handleClose} PostProps={props} />
+                <ModalPost open={open} setOpen={setOpen} image={props.image} positiveness={10} title={props.title} text={props.news_text} publish_date={props.publish_date} handleClose={handleClose} PostProps={props} />
              :
              <ModalResponsive  open={open} setOpen={setOpen} image={props.image} positiveness={10} title={props.title} text={props.news_text} publish_date={props.publish_date} handleClose={handleClose} PostProps={props} />
              }

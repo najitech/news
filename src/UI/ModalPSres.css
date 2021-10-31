@@ -1,0 +1,171 @@
+.modalRes{
+    width: 100%;
+    position: relative;
+    margin: auto auto;
+    padding: 0px !important;
+    height: 85%;
+    overflow-y:hidden;
+    text-align: right;
+    overflow-x: hidden;
+}
+.modalBaseRes{
+    background: linear-gradient(45deg, rgb(27, 27, 71) 0%, rgba(55,57,116,1) 79%);  
+    width: 80%;
+    padding: 10px 10px 10px 5px;
+    height: 100%;
+    overflow-y:scroll;
+    position: relative;
+    border-radius: 5px;
+}
+.imageContainerResModal{
+    width: 100%;
+    overflow: hidden;
+    box-shadow : 0.0px 1.0px 17px 4px #E4E0F5 !important; 
+    height: 40%;
+    flex: 0.5;
+    border-radius: 5px;
+    position: relative;
+}
+.imageContainerResModal img{
+    width: 100%;
+    border-radius: 5px;
+}
+.imageHoverRes{
+    z-index: 10;
+    left: 0;
+    top: 0;
+    text-align: right;
+    bottom: 0;
+    right: 0;
+    color: white;
+    position: absolute;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.514);
+    opacity: 0;
+    transition: 0.3s opacity ease-in;
+}
+.imageHoverRes:hover{
+    opacity: 1;
+    transition: 0.3s opacity ease-out;
+}
+.publishDatePost{
+    padding:0px 4px;
+    padding-top: 4px;
+    font-size: 12px !important;
+    text-decoration: underline !important;
+    margin:0px;
+    margin-bottom: 0px;
+}
+.imageHoverRes h3{
+    padding: 10px;
+    font-size: 18px;
+}
+.postContentModalRes{
+    height: 200px;
+    overflow-y: scroll;
+    flex: 0.5;
+    padding:0px 10px;
+    text-align: right;
+}
+.chartsModalRes div{
+    margin: auto auto;
+}   
+.squarChartRes{
+    width: 97%;
+    margin: 0px auto;
+    align-items: center;
+}
+.chartOriginalResModal{
+    display: flex;
+}
+.chartOriginalResModal:first-child{
+    flex: 0.5;
+}
+.chartOriginalResModal:last-child{
+    flex:0.5;
+}
+.flexresponsive{
+    display: flex;
+    align-items: center;
+}
+.NER_tags_res{
+    text-align: right;
+    direction: ltr;
+    width: 90%;
+    margin: 0px auto;
+}
+.Modal_Hashtags2 {
+    display: flex;
+    align-items: center;
+    margin-right:12px;
+    padding: 7px 10px;
+}
+.Modal_Hashtags2 > p {
+    font-size: 12px;
+}
+
+.Modal_Hashtags2 > * {
+    margin-left:6px;
+}
+
+.modal_rss_website{
+    display: flex;
+    bottom: 10px;
+    font-size: 16px !important;
+    align-items: center;
+    right: 7px;
+}
+.modal_rss_website p{
+    font-size: 13px;
+}
+@media screen and (max-width : 759px) {
+    
+    .imageContainerResModal{
+        height: 25%;
+        
+    }
+    .flexresponsive:first-child{
+        flex : 0.6;
+    }
+    .flexresponsive:last-child{
+        flex:0.4 ;
+    }
+}
+@media screen and (max-width : 600px) {
+        .chartOriginalResModal:first-child{
+        flex: 0.3;
+    }
+    .flexresponsive{
+        display: block;
+    }
+    .chartOriginalResModal:last-child{
+        flex:0.7;
+    }
+    .imageContainerResModal{
+        height: auto;
+    }
+}
+@media screen and (max-width : 550px) {
+    .chartOriginalResModal{
+        display: block;
+        margin: -5px 0px;
+    }
+    .flexresponsive{
+        display: block;
+    }
+    .imageContainerResModal{
+        height: auto;
+    }
+}
+@media screen and (max-width : 380px) {
+    .chartOriginalResModal{
+        display: block;
+        margin: -5px 0px;
+    }
+    .flexresponsive{
+        display: block;
+    }
+    .imageContainerResModal{
+        height: auto;
+    }
+}

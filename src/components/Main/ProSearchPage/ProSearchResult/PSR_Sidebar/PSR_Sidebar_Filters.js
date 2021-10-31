@@ -17,40 +17,29 @@ function PSR_Sidebar_Filters(props) {
     return (
         <div className="PSR_Sidebar_Filters">
         {props.type === 1 ?
-            <><AccardionPS marg instagram title="موضوع">
-                <Categories dark/>
-            </AccardionPS> 
-            <AccardionPS marg instagram title="نوع">
-                <CheckBoxFilter dark/>
+            <>
+             <AccardionPS marg  instagram title="هشتگ">
+                <TagsFilter  dark/>   
             </AccardionPS>
-            <AccardionPS instagram marg title="لایک و بازدید">
-                <ViewsFilter/>
-            </AccardionPS>
-            <AccardionPS off instagram title="تاریخ">
-                <DateFilter dark mobile={props.mobile}/>
-            </AccardionPS>
-            <AccardionPS marg instagram title="هشتگ">
-                <TagsFilter dark/>   
-            </AccardionPS>
-            <AccardionPS marg instagram title="موجودیت ها">
+            <AccardionPS marg  instagram title="موجودیت ها">
                 <NERfilter dark/>
             </AccardionPS> 
             <AccardionPS marg instagram title="کاربر">
-                <UsernameFilter dark/>
-                
-            </AccardionPS></>: props.type === 2 ? <><AccardionPS marg twitter title="موضوع">
+                <UsernameFilter dark />
+            </AccardionPS><AccardionPS marg  instagram title="موضوع">
                 <Categories dark/>
             </AccardionPS> 
-            <AccardionPS marg twitter title="نوع">
+            <AccardionPS marg  instagram title="نوع">
                 <CheckBoxFilter dark/>
             </AccardionPS>
-            <AccardionPS twitter marg title=" لایک و بازدید و ریتوییت">
-                <ViewsFilter retweet/>
+            <AccardionPS instagram  marg title="لایک و بازدید">
+                <ViewsFilter dark/>
             </AccardionPS>
-            <AccardionPS off twitter title="تاریخ">
-                <DateFilter dark mobile={props.mobile}/>
+            <AccardionPS off  instagram title="تاریخ">
+                <DateFilter dark  mobile={props.mobile}/>
             </AccardionPS>
-            <AccardionPS marg twitter title="هشتگ">
+           </>: props.type === 2 ? <>
+           <AccardionPS marg twitter title="هشتگ">
                 <TagsFilter dark/>   
             </AccardionPS>
             <AccardionPS marg twitter title="موجودیت ها">
@@ -58,57 +47,71 @@ function PSR_Sidebar_Filters(props) {
             </AccardionPS> 
             <AccardionPS marg twitter title="کاربر">
                 <UsernameFilter dark/>
-            </AccardionPS></> : props.type ===3 ?
-                    <><AccardionPS marg rss title="موضوع">
+            </AccardionPS><AccardionPS marg twitter title="موضوع">
+                <Categories dark/>
+            </AccardionPS> 
+            <AccardionPS marg twitter title="نوع">
+                <CheckBoxFilter dark/>
+            </AccardionPS>
+            <AccardionPS twitter marg title=" لایک و بازدید و ریتوییت">
+                <ViewsFilter dark retweet/>
+            </AccardionPS>
+            <AccardionPS off twitter title="تاریخ">
+                <DateFilter dark mobile={props.mobile}/>
+            </AccardionPS>
+            </> : props.type ===3 ?
+                    <>
+                    <AccardionPS marg  rss title="هشتگ">
+                        <TagsFilter dark/>   
+                    </AccardionPS>
+                    <AccardionPS marg  rss title="موجودیت ها">
+                        <NERfilter dark/>
+                    </AccardionPS> 
+                    <AccardionPS marg  rss title="کاربر">
+                        <UsernameFilter dark/>
+            </AccardionPS><AccardionPS marg  rss title="موضوع">
                         <Categories dark/>
                     </AccardionPS> 
-                    <AccardionPS marg rss title="نوع">
+                    <AccardionPS marg  rss title="نوع">
                         <CheckBoxFilter dark/>
                     </AccardionPS>
-                    <AccardionPS rss marg title="بازدید">
-                        <ViewsFilter off/>
+                    <AccardionPS rss  marg title="بازدید">
+                        <ViewsFilter dark off/>
                     </AccardionPS>        
-                    <AccardionPS off rss title="وب سایت">
+                    <AccardionPS off rss  title="وب سایت">
                         <SitesFilter dark/>
                     </AccardionPS>
 
-                    <AccardionPS marg rss title="حس خبر">    
-                        <Positiveness dark/> 
+                    <AccardionPS marg rss  title="حس خبر">    
+                        <Positiveness size dark/> 
                     </AccardionPS>
-                    <AccardionPS off rss title="تاریخ">
+                    <AccardionPS off rss  title="تاریخ">
                         <DateFilter dark mobile={props.mobile}/>
                     </AccardionPS>
-                    <AccardionPS marg rss title="هشتگ">
-                        <TagsFilter dark/>   
-                    </AccardionPS>
-                    <AccardionPS marg rss title="موجودیت ها">
-                        <NERfilter dark/>
-                    </AccardionPS> 
-                    <AccardionPS marg rss title="کاربر">
-                        <UsernameFilter dark/>
-            </AccardionPS></>: props.type === 4 ? 
-                <><AccardionPS marg telegram title="موضوع">
+                    </>: props.type === 4 ? 
+                <><AccardionPS marg telegram title="هشتگ">
+                <TagsFilter dark/>   
+            </AccardionPS>
+            <AccardionPS marg telegram title="موجودیت ها">
+                <NERfilter dark/>
+            </AccardionPS> 
+            <AccardionPS marg telegram title="کاربر">
+                <UsernameFilter dark/>
+                
+            </AccardionPS>
+                <AccardionPS marg telegram title="موضوع">
                     <Categories dark/>
                 </AccardionPS> 
                 <AccardionPS marg telegram title="نوع">
                     <CheckBoxFilter telegram dark/>
                 </AccardionPS>
                 <AccardionPS telegram marg title="لایک و بازدید">
-                    <ViewsFilter />
+                    <ViewsFilter dark />
                 </AccardionPS>
                 <AccardionPS off telegram title="تاریخ">
                     <DateFilter dark mobile={props.mobile}/>
                 </AccardionPS>
-                <AccardionPS marg telegram title="هشتگ">
-                    <TagsFilter dark/>   
-                </AccardionPS>
-                <AccardionPS marg telegram title="موجودیت ها">
-                    <NERfilter dark/>
-                </AccardionPS> 
-                <AccardionPS marg telegram title="کاربر">
-                    <UsernameFilter dark/>
-                    
-                </AccardionPS></> :null}
+                </> :null}
                     
         </div>
     )

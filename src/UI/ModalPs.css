@@ -24,6 +24,7 @@
 .modalBasePS{
     background: linear-gradient(45deg, rgb(27, 27, 71) 0%, rgba(55,57,116,1) 79%);
     display: flex;
+    position: relative;
     direction: ltr;
 }
 .graphsRss{
@@ -290,6 +291,11 @@
     font-size: 20px !important;
     align-items: center;
     right: 7px;
+}
+
+.darkCloseModal{
+    position: absolute;
+    color: white;
 }
 .Modal_website_Rss p{
     font-size: 14px;

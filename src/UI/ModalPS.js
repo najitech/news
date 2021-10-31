@@ -13,6 +13,8 @@ import { BsFillPeopleFill } from 'react-icons/bs';
 import Hashtag2 from './Hashtag2';
 import { MdWeb } from 'react-icons/md';
 import WordCloud from 'react-d3-cloud';
+import { IconButton } from '@material-ui/core';
+import { AiOutlineClose } from 'react-icons/ai';
 
 const data = [
   { text: 'افغانستان', value: 1000 },
