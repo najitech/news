@@ -4,4 +4,5 @@
     background-color: var(--backGroundTheme);
     padding-top:30px;
     justify-content: space-between;
+    transition: all 0.5s ease;
 }

@@ -26,7 +26,7 @@ function PSR_Sidebar_Filters(props) {
             </div>
         {props.type === 1 ?
             <>
-             <AccardionPS marg white={ThemeColor==="darkTheme"} instagram title="هشتگ">
+             <AccardionPS  marg white={ThemeColor==="darkTheme"} instagram title="هشتگ">
                 <TagsFilter  dark={ThemeColor==="lightTheme" }/>   
             </AccardionPS>
             <AccardionPS marg  white={ThemeColor==="darkTheme"} instagram title="موجودیت ها">

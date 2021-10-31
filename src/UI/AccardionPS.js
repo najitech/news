@@ -13,6 +13,7 @@ const useStyles = makeStyles({
         display : 'none',
     },
       boxShadow : 'none',
+
       borderBottom : 'none',
       '&:before': {
         display: 'none',

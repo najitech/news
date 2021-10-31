@@ -4,7 +4,7 @@
 
 .lightTheme {
     --backGroundTheme : #28264E;
-    --postTheme :linear-gradient(45deg, rgba(37,37,99,1) 0%, rgba(55,57,116,1) 79%);
+    --postTheme :#2D2C56;
     --PSR_toggle : none;
     --PSR_PostTextColor : white;
     --PSR_PostBoxShadow : rgba(26, 1, 95, 0.562);
