@@ -5,7 +5,7 @@
     display: flex;
     padding-top: 20px;
     padding-bottom: 25px;
-    background-color: #2D2C56;
+    background-color: var(--PSR_SidebarColor);
 
 }
 .PSR_Sidebar_Icons {

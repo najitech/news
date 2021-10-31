@@ -4,6 +4,7 @@ import { FaRssSquare, FaTelegram } from 'react-icons/fa';
 import './PSR_Feed.css'
 import PSR_Posts from './PSR_Posts/PSR_Posts';
 import PSR_TopSlider from './PSR_TopSlider/PSR_TopSlider'
+import {DiGhostSmall} from 'react-icons/di'
 
 function PSR_Feed() {
 
@@ -38,7 +39,7 @@ function PSR_Feed() {
             <PSR_TopSlider/>
             <div className={["PSR_toggle" , borderColor].join(" ")}>
                 <div onClick={()=>{handleSelect(5)}} className={["PSR_telegram_proSearch_type" , social ===5  ? "PSR_telegram_active_prosearch" : " "].join(" ")}>
-                    <FaTelegram className="PSR_socialMediaIconsProSearch"/>
+                    <DiGhostSmall className="PSR_socialMediaIconsProSearch"/>
                     <span>همه</span>
                 </div>
                 <div onClick={()=>{handleSelect(1)}} className={["PSR_instagram_proSearch_type",social === 1 ?"PSR_instagram_active_prosearch" : " " ].join(" ")}>

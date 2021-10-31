@@ -11,6 +11,7 @@
     margin-top:30px;
     align-items: center;
     justify-content: center;
+
     border-bottom: 3px white solid;
 }
 
@@ -34,6 +35,20 @@
     font-size: 20px;
     margin-left: 3px;
 }
+.PSR_instagram_proSearch_type{
+    background-color: var(--PSR_toggle);
+
+}
+.PSR_twitter_proSearch_type {
+    background-color: var(--PSR_toggle);
+}
+.PSR_telegram_proSearch_type {
+    background-color: var(--PSR_toggle);
+}
+.PSR_rss_proSearch_type {
+    background-color: var(--PSR_toggle);
+}
+
 .PSR_instagram_proSearch_type:hover{
     background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
     transition: 0.3s ease-out all;

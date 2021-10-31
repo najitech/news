@@ -13,7 +13,8 @@ import { AiFillInstagram, AiFillPlusCircle, AiFillTwitterCircle } from 'react-ic
 import { HiUserGroup } from 'react-icons/hi'
 import ModalPS from '../../../../../../UI/ModalPS'
 import colors from 'react-multi-date-picker/plugins/colors'
-
+import ThemeColorContext from '../../../../../../UI/ThemeColorContext'
+import ModalPost from '../../../../Rss/Posts/PostGrids/Post/ModalPost';
 function PSR_Post(props) {
     const [open, setOpen] = React.useState(false);
 
@@ -25,10 +26,14 @@ function PSR_Post(props) {
         console.log('called')
         setOpen(false);
       };
+      
+    const ThemeColor = React.useContext(ThemeColorContext);
     return (
         <div>
-        <ModalPS open={open} setOpen={setOpen} image={"https://i.insider.com/5d91fdb36f24eb3da40c3e29?width=750&format=jpeg&auto=webp"} positiveness={10} title={"عنوان آزمایشی"} text={"گاهی وارد طبیعت شو و بگذار که نسیمی خنک و زیبا چهره ات را نوازش کند. اگر کمی با خود بیندیشی، می بینی که تمام زیبایی های زندگی در همین است. عده ای همواره به دنبال ثروت هستند، عده ای به دنبال جای و مقام هستند و عده ای هم کامل از همه چیز بریده اند و دیگر امیدی به زندگی ندارند. آنها زیبایی های زندگی را فراموش کرده اند. همینکه گاهی اوقات وارد طبیعت شوی و از زیبایی های آن لذت ببری، خود یک نعمت بزرگ است. همینکه بگذاری آن نسیم خنک صورتت را نوازش کند، خود یک ثروت بزرگ است. ثروت ها همین ها هستند که گاهی نادیده گرفته می شون"} publish_date={"14/06/1400"} handleClose={handleClose} PostProps={props} />
-     
+            {ThemeColor==="lightTheme" ? <ModalPS open={open} setOpen={setOpen} image={"https://i.insider.com/5d91fdb36f24eb3da40c3e29?width=750&format=jpeg&auto=webp"} positiveness={10} title={"عنوان آزمایشی"} text={"گاهی وارد طبیعت شو و بگذار که نسیمی خنک و زیبا چهره ات را نوازش کند. اگر کمی با خود بیندیشی، می بینی که تمام زیبایی های زندگی در همین است. عده ای همواره به دنبال ثروت هستند، عده ای به دنبال جای و مقام هستند و عده ای هم کامل از همه چیز بریده اند و دیگر امیدی به زندگی ندارند. آنها زیبایی های زندگی را فراموش کرده اند. همینکه گاهی اوقات وارد طبیعت شوی و از زیبایی های آن لذت ببری، خود یک نعمت بزرگ است. همینکه بگذاری آن نسیم خنک صورتت را نوازش کند، خود یک ثروت بزرگ است. ثروت ها همین ها هستند که گاهی نادیده گرفته می شون"} publish_date={"14/06/1400"} handleClose={handleClose} PostProps={props} />
+      :  <ModalPost open={open} setOpen={setOpen} image={"https://i.insider.com/5d91fdb36f24eb3da40c3e29?width=750&format=jpeg&auto=webp"} positiveness={10} title={"عنوان آزمایشی"} text={"گاهی وارد طبیعت شو و بگذار که نسیمی خنک و زیبا چهره ات را نوازش کند. اگر کمی با خود بیندیشی، می بینی که تمام زیبایی های زندگی در همین است. عده ای همواره به دنبال ثروت هستند، عده ای به دنبال جای و مقام هستند و عده ای هم کامل از همه چیز بریده اند و دیگر امیدی به زندگی ندارند. آنها زیبایی های زندگی را فراموش کرده اند. همینکه گاهی اوقات وارد طبیعت شوی و از زیبایی های آن لذت ببری، خود یک نعمت بزرگ است. همینکه بگذاری آن نسیم خنک صورتت را نوازش کند، خود یک ثروت بزرگ است. ثروت ها همین ها هستند که گاهی نادیده گرفته می شون"} publish_date={"14/06/1400"} handleClose={handleClose} PostProps={props} />
+    }
+       
         <div className="PSR_Post" onClick={handleOpen}>
             
             <div className="PSR_PostImageContainer">
@@ -92,11 +97,11 @@ function PSR_Post(props) {
                 </div>
             </div>
             <div className="PSR_Hashtags2">
-                <Hashtag2  backGroundColor="none" color="white"/>
-                <Hashtag2  backGroundColor="none" color="white"/>
-                <Hashtag2  backGroundColor="none" color="white"/>
-                <Hashtag2  backGroundColor="none" color="white"/>
-                <Hashtag2 backGroundColor="none" color="white" className="PSR_Hashtag2_lastchild"/>
+                <Hashtag2  backGroundColor="none"/>
+                <Hashtag2  backGroundColor="none" />
+                <Hashtag2  backGroundColor="none" />
+                <Hashtag2  backGroundColor="none" />
+                <Hashtag2 backGroundColor="none" className="PSR_Hashtag2_lastchild"/>
             </div>
 
             <div className="PSR_PostFooter">
@@ -136,7 +141,10 @@ function PSR_Post(props) {
                                 props.TelegramType==="channel" ?
                                 <FaBullhorn className="PSR_TelegramSourceIcon"/>
                                 :
+                                <div className="PSR_Telegram_Group">
+                                <span>نام گروه</span>
                                 <HiUserGroup className="PSR_TelegramSourceIcon"/>
+                                </div>
                             } 
                         </div>
                         <div className="PSR_TelegramComments">

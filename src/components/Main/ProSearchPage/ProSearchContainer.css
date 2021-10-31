@@ -1,3 +1,36 @@
 .ProSearchContianer {
     height: 100%;
 }
+
+.lightTheme {
+    --backGroundTheme : #28264E;
+    --postTheme :linear-gradient(45deg, rgba(37,37,99,1) 0%, rgba(55,57,116,1) 79%);
+    --PSR_toggle : none;
+    --PSR_PostTextColor : white;
+    --PSR_PostBoxShadow : rgba(26, 1, 95, 0.562);
+    --PSR_PostSubjectBorderColor : gold;
+    --PSR_PostTitle: rgb(70, 226, 253);
+    --Hashtag1 : #4b46aa ;
+    --PSR_SidebarColor :#2D2C56;
+    --AccardionPS_marginPScolor :#2D2C56;
+    --AccardionPS_accPScolor:#2D2C56;
+    --PSR_ScrollbarColor :#764ee394;
+    --PSR_ScrollbarHoverColor:#764ee3 ;
+ 
+}
+
+.darkTheme {
+    --backGroundTheme : #EBEDEF;
+    --postTheme : #FFFFFF;
+    --PSR_toggle : rgba(138, 126, 126, 0.541);
+    --PSR_PostTextColor : #414040;
+    --PSR_PostBoxShadow : rgb(167, 166, 166);
+    --PSR_PostSubjectBorderColor : none;
+    --PSR_PostTitle: rgb(53, 52, 52);
+    --Hashtag1 : grey ;
+    --PSR_SidebarColor :#FFFFFF;
+    --AccardionPS_marginPScolor:#FFFFFF;
+    --AccardionPS_accPScolor:#FFFFFF;
+    --PSR_ScrollbarColor :rgb(155, 155, 155);
+    --PSR_ScrollbarHoverColor:rgb(190, 186, 186) ;
+}

@@ -1,7 +1,7 @@
 .PSR_TopSlider_Slide {
     width: 290px;
     height:150px;
-    background-color: #31327D;
+    background: var(--postTheme);
     border-radius: 32px;
     position: relative;
 
@@ -62,7 +62,7 @@
     font-size: 50px;
 }
 .Slide_telegramIcon{
-    border: 7px solid #31327D ;
+    border: 7px solid var(--postTheme);
     border-radius: 50%;
     font-size: 48px;
     color:white;
@@ -70,21 +70,21 @@
     padding: 6px;
 }
 .Slide_instgramIcon{
-    border: 7px solid #31327D ;
+    border: 7px solid var(--postTheme);
     border-radius: 50%;
     color:white;
     background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
     padding: 6px;
 }
 .Slide_twitterIcon{
-    border: 7px solid #31327D ;
+    border: 7px solid var(--postTheme);
     border-radius: 50%;
     color:white;
     background:linear-gradient(45deg, #66757f, #00ACEE, #36D8FF, #f5f8fa);
     padding: 6px;
 }
 .Slide_rssIcon{
-    border: 7px solid #31327D ;
+    border: 7px solid var(--postTheme);
     border-radius: 50%;
     color:white;
     background:linear-gradient(120deg, #f26522, #eca27f);

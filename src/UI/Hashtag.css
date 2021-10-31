@@ -6,6 +6,7 @@
     color: #7556DB !important;
     font-weight: bold;*/
     border-radius: 3px ;
+    background-color: var(--Hashtag1);
 
 }
 .HashtagDiv > span {
