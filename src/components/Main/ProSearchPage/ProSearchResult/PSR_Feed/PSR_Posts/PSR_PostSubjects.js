@@ -11,12 +11,12 @@ function PSR_PostSubjects() {
             {
                 ThemeColor==="lightTheme" ?
                 <>
-                <Tag text = "حوادث" backGroundColor="#30326E" fontSize="10px" color="#7556DB"/>
-                <Tag text = "سیاسی"  backGroundColor="#30326E"  fontSize="10px" color="#56bcdb" padding="6px" />
-                <Tag text = "اجتماعی" backGroundColor="#30326E" fontSize="10px" color="#56db82"/>
-                <Tag text = "فرهنگی"  backGroundColor="#30326E" fontSize="10px" color="#db5656"/>
+                <Tag text = "حوادث" backGroundColor="#2D2C56" fontSize="10px" color="#7556DB"/>
+                <Tag text = "سیاسی"  backGroundColor="#2D2C56"  fontSize="10px" color="#56bcdb" padding="6px" />
+                <Tag text = "اجتماعی" backGroundColor="#2D2C56" fontSize="10px" color="#56db82"/>
+                <Tag text = "فرهنگی"  backGroundColor="#2D2C56" fontSize="10px" color="#db5656"/>
                 <div className="PostTags_lastchild">
-                  <Tag  text = "ورزشی"  backGroundColor="#30326E" color="#dbb156" fontSize="10px" />
+                  <Tag  text = "ورزشی"  backGroundColor="#2D2C56" color="#dbb156" fontSize="10px" />
                 </div>
                 </>
                 :
