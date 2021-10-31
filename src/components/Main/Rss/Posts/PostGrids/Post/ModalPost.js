@@ -87,7 +87,15 @@ export default function ModalPost(props) {
     ]
   });
   const [donChart , setdonChart] = useState({
-    options: {},
+    options: {
+      
+  legend: {
+    labels: {
+      colors: "rgb(184, 32, 32)",
+
+  }
+  }
+    },
     series: [44, 55, 41, 17, 15],
     labels: ['A', 'B', 'C', 'D', 'E']
   });

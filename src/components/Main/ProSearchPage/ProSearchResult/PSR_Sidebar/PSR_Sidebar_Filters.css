@@ -14,3 +14,10 @@
     width: 250px;
     margin-top: 5px;
   }
+
+  .Navbar_ThemeToggleLight {
+    cursor: pointer;
+  }
+  .Navbar_ThemeToggleDark {
+    cursor: pointer;
+  }
