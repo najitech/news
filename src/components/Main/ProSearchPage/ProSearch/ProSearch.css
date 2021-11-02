@@ -126,3 +126,32 @@ object-fit: cover;
 .advancedSearchOpenBtn span{
     margin-left: 3px;
 }
+
+@media screen and (max-width: 1050px) { 
+    .advancedProSearchDiv{
+        width: 900px;
+    }   
+}
+@media screen and (max-width : 950px) {
+    .advancedProSearchDiv{
+        width: 700px;
+    }
+}
+@media screen and (max-width : 750px) {
+    .advancedProSearchDiv{
+        width: 580px;
+        padding: 0px 5px;
+    }
+}
+@media screen and (max-width : 600px) {
+    .advancedProSearchDiv{
+        width: 480px;
+        padding: 0px 5px;
+    }
+}
+@media screen and (max-width : 500px) {
+    .advancedProSearchDiv{
+        width: 400px;
+        padding: 0px 5px;
+    }
+}

@@ -253,7 +253,8 @@ function ProSearch(props) {
                         </Button>
                     </div> 
                     </Grow>
-                    <Collapse {...( { timeout: 1000 })} in={toggleAdvanced}><div className="advancedProSearchDiv">
+                    <Collapse {...( { timeout: 1000 })} in={toggleAdvanced}>
+                    <div className="advancedProSearchDiv">
                         <div className="closeAdvancedSearch">
                             <IconButton onClick={()=>{setToggleAdvanced(false)}}  className="closeBtnADv" size="small"><AiOutlineClose/></IconButton>
                         </div>

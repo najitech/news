@@ -3,15 +3,15 @@ import './ModalPSres.css';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
-import PostTag from '../../../../../../../UI/Tag';
+import PostTag from './Tag';
 import Chart from 'react-apexcharts';
-import Hashtag from '../../../../../../../UI/Hashtag';
-import CustomizedProgressBars from '../LinearProgress/CustomizedProgressBars';
+import Hashtag from './Hashtag';
+import CustomizedProgressBars from '../components/Main/Rss/Posts/PostGrids/Post/LinearProgress/CustomizedProgressBars'; 
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 import { useMediaQuery } from 'react-responsive';
-import { BsFillPeopleFill } from 'react-icons/bs';
+import { BsFillPeopleFill, BsFillPersonFill } from 'react-icons/bs';
 import { BiCurrentLocation, BiTimeFive } from 'react-icons/bi';
-import Hashtag2 from '../../../../../../../UI/Hashtag2';
+import Hashtag2 from './Hashtag2';
 import WordCloud from 'react-d3-cloud';
 import { MdWeb } from 'react-icons/md';
 const data = [
@@ -111,103 +111,14 @@ function ModalPSres(props) {
         ]
       });
       const [donChart , setdonChart] = useState({
-        options: {},
+        options: {legend: {
+          labels: {
+            colors: "#fff",
+        },},},
         series: [44, 55, 41, 17, 15],
         labels: ['A', 'B', 'C', 'D', 'E']
       });
-      const [distributedChart , setDistributed] = useState({
-              
-        series: [
-          {
-            data: [
-              {
-                x: 'طنز',
-                y: 218
-              },
-              {
-                x: 'تاریخی',
-                y: 149
-              },
-              {
-                x: 'آموزشی',
-                y: 184
-              },
-              {
-                x: 'مذهبی',
-                y: 55
-              },
-              {
-                x: 'هنری',
-                y: 84
-              },
-              {
-                x: 'علمی',
-                y: 31
-              },
-              {
-                x: 'طبیعت',
-                y: 70
-              },
-              {
-                x: 'حوادث',
-                y: 30
-              },
-              {
-                x: 'ورزشی',
-                y: 44
-              },
-              {
-                x: 'نظامی',
-                y: 68
-              },
-              {
-                x: 'جنگ',
-                y: 28
-              },
-              {
-                x: 'سیاسی',
-                y: 19
-              },
-              {
-                x: 'اجتماعی',
-                y: 29
-              }
-            ]
-          }
-        ],
-        options: {
-          legend: {
-            show: false
-          },
-          chart: {
-            toolbar : {
-              show : false,
-            },
-            height: 350,
-            type: 'treemap'
-          },
-          colors: [
-            '#3B93A5',
-            '#F7B844',
-            '#ADD8C7',
-            '#EC3C65',
-            '#CDD7B6',
-            '#C1F666',
-            '#D43F97',
-            '#1E5D8C',
-            '#421243',
-            '#7F94B0',
-            '#EF6537',
-            '#C0ADDB'
-          ],
-          plotOptions: {
-            treemap: {
-              distributed: true,
-              enableShades: false
-            }
-          }
-        },
-      });
+  
       const nowItsTheTime = useMediaQuery({query :'(max-width: 759px)'});
       const timeToBack = useMediaQuery({query : "(max-width : 550px)"})
       
@@ -227,19 +138,19 @@ function ModalPSres(props) {
         disableEnforceFocus
       >  
         <Fade in={props.open}>
-            <div className="modalBaseRes">
+            <div className="modalBaseResPS">
               <div className="flexresponsive">
-                <div className="imageContainerResModal">
+                <div className="imageContainerResModalPS">
                       <img src={props.image} alt={props.alt}/>
                       <div className="imageHoverRes">
                         <p className="publishDatePost">تاریخ انتشار : {(props.publish_date)} </p>
                         <h3>{props.title}</h3>
                       </div>
                   </div>
-                  <div className="postContentModalRes">
+                  <div className="postContentModalResPS">
                   <div className="modal_rss_website">  
-                        <MdWeb/>
-                        <p>خبرگزاری تسنیم</p>
+                  <BsFillPersonFill />
+                        <p>ehsan.ah</p>
                       </div>
                       <p style={{fontSize:'10px' , textDecoration:"underline"}}>تاریخ انتشار : {(props.publish_date)} </p>
                       <h3 style={{fontSize:'15px'}}>{props.title}</h3>
@@ -250,49 +161,50 @@ function ModalPSres(props) {
               </div>
                 <CustomizedProgressBars barValue={props.positiveness}/>
                 <div className="hashtags">
-                    <PostTag text="موضوعات :" fontSize="13px" padding="0px" backGroundColor="white" color="black" marginP="0px" paddingP="0px"/>
-                    <PostTag text="اقتصادی" fontSize="11px" padding="5px" backGroundColor ="#15AEFA"/>
-                    <PostTag text="حوادث"  fontSize="11px" padding="5px" backGroundColor="red"/>
-                    <PostTag text="نظامی"  fontSize="11px" padding="5px" backGroundColor="orange"/>
-                    <PostTag text="جنگ"  fontSize="11px" padding="5px" backGroundColor="green"/>
-                    <PostTag text="فرهنگی" fontSize="11px" padding="5px"  backGroundColor="purple"/>
-                    <PostTag text="ورزشی" fontSize="11px" padding="5px"  backGroundColor="brown"/>
-                    <PostTag text="علمی" fontSize="11px" padding="5px"  backGroundColor="rgb(145, 135, 53)"/>
+                    <PostTag text="موضوعات :" fontSize="13px" padding="0px" backGroundColor="#353771" color="white" marginP="0px" paddingP="0px"/>
+                    <PostTag text="اقتصادی" color="#56bcdb" fontSize="11px" padding="5px" backGroundColor ="#40474b"/>
+                    <PostTag text="حوادث"  color="#56db82" fontSize="11px" padding="5px" backGroundColor="#404b41"/>
+                    <PostTag text="نظامی"  color="#db5656" fontSize="11px" padding="5px" backGroundColor="#4b4040"/>
+                    <PostTag text="جنگ" color="#dbb156" fontSize="11px" padding="5px" backGroundColor="#4b4940"/>
+                    <PostTag text="فرهنگی" color="#7556DB" fontSize="11px" padding="5px"  backGroundColor="#45404b"/>
+                    <PostTag text="ورزشی" color="#56db82" fontSize="11px" padding="5px"  backGroundColor="#47404b"/>
+                    <PostTag text="علمی" color="#db56af" fontSize="11px" padding="5px"  backGroundColor="#4b4046"/>
+                
                 </div>
                 <div className="keywords">
-                    <PostTag text="کلمات کلیدی :" fontSize="13px" padding="0px" backGroundColor="white" color="black" marginP="0px" paddingP="0px"/>
+                    <PostTag text="کلمات کلیدی :" fontSize="13px" padding="0px" backGroundColor="#353771" color="white" marginP="0px" paddingP="0px"/>
                     <div className="keywords_tags">
-                      <Hashtag/>
-                      <Hashtag/>  
-                      <Hashtag/>
-                      <Hashtag/>  
+                    <Hashtag backGroundColor="#4b46aa" color="white"/>
+                      <Hashtag backGroundColor="#4b46aa" color="white"/>
+                      <Hashtag backGroundColor="#4b46aa" color="white"/>
+                      <Hashtag backGroundColor="#4b46aa" color="white"/>  
                     </div>
                 </div> 
                 <div className="Modal_Hashtags2">
-                        <Hashtag2/>
-                        <Hashtag2/>
-                        <Hashtag2/>
-                        <Hashtag2/>
-                        <Hashtag2/>
+                  <Hashtag2  backGroundColor="none" color="#fff"/>
+                        <Hashtag2  backGroundColor=" rgba(0, 0, 0, 0);" color="#fff"/>
+                        <Hashtag2  backGroundColor=" rgba(0, 0, 0, 0);" color="#fff"/>
+                        <Hashtag2  backGroundColor=" rgba(0, 0, 0, 0);" color="#fff"/>
+                        <Hashtag2  backGroundColor=" rgba(0, 0, 0, 0);" color="#fff"/>
                     </div>
-                <div className="NER_tags_res">
-                      <div className="NER_location">
-                        <span className="NER_title_head">:مکان
+                <div className=" NER_tags">
+                      <div className="NER_locationPSres">
+                        <span className="NER_title_head">مکان
                         <BiCurrentLocation/> </span>
                         <span>
                           مشهد ، تهران ، تبریز ، اصفهان ، شیراز
                           </span>
                       </div>
-                      <div className="NER_people">
+                      <div className="NER_peoplePSres">
                         
-                      <span className="NER_title_head">:اشخاص
+                      <span className="NER_title_head">اشخاص
                       <BsFillPeopleFill/></span>
                       <span>
                           روحانی ، رئیس جمهور ، سرباز ، رهبر 
                           </span>
                       </div>
-                      <div className="NER_time">
-                      <span className="NER_title_head">:زمان
+                      <div className="NER_timePSres">
+                      <span className="NER_title_head">زمان
                       <BiTimeFive/></span>
                       <span>
                            هفته ناجا، روز معلم ، شهریور 

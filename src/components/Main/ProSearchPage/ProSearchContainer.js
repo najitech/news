@@ -23,7 +23,6 @@ function ProSearchContainer() {
                 <ProSearchResult theme={theme} setTheme={setTheme}/>
                 </ThemeColorContext.Provider>
            }
-
         </div>
 
     )
