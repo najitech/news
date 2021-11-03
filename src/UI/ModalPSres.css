@@ -8,7 +8,7 @@
     text-align: right;
     overflow-x: hidden;
 }
-.modalBaseRes{
+.modalBaseResPS{
     background: linear-gradient(45deg, rgb(27, 27, 71) 0%, rgba(55,57,116,1) 79%);  
     width: 80%;
     padding: 10px 10px 10px 5px;
@@ -17,16 +17,15 @@
     position: relative;
     border-radius: 5px;
 }
-.imageContainerResModal{
+.imageContainerResModalPS{
     width: 100%;
     overflow: hidden;
-    box-shadow : 0.0px 1.0px 17px 4px #E4E0F5 !important; 
     height: 40%;
     flex: 0.5;
     border-radius: 5px;
     position: relative;
 }
-.imageContainerResModal img{
+.imageContainerResModalPS img{
     width: 100%;
     border-radius: 5px;
 }
@@ -60,10 +59,11 @@
     padding: 10px;
     font-size: 18px;
 }
-.postContentModalRes{
+.postContentModalResPS{
     height: 200px;
     overflow-y: scroll;
     flex: 0.5;
+    color: white;
     padding:0px 10px;
     text-align: right;
 }
@@ -94,6 +94,8 @@
     width: 90%;
     margin: 0px auto;
 }
+.NER_tagsPs{
+}
 .Modal_Hashtags2 {
     display: flex;
     align-items: center;
@@ -117,6 +119,50 @@
 }
 .modal_rss_website p{
     font-size: 13px;
+}
+.NER_locationPSres{
+    border-bottom: 2px solid #764ee394;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding:2px 3px;
+    margin: 5px auto;
+}
+.NER_locationPSres span {
+    color: white;
+    font-size: 11px;
+}
+.NER_peoplePSres{
+    border-bottom:2px solid #764ee394;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    justify-content: right;
+    padding:2px 3px;
+    margin: 5px auto;
+}
+.NER_peoplePSres span{
+    color: white;
+    font-size: 11px;
+}
+.NER_timePSres{
+    border-bottom: #764ee394 2px solid;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    justify-content: right;
+    padding:2px 3px;
+    margin: 5px auto;
+}
+.NER_timePSres span{
+    color: white;
+    font-size: 11px;
 }
 @media screen and (max-width : 759px) {
     
