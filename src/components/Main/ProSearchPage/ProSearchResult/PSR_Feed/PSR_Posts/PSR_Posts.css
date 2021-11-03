@@ -8,3 +8,27 @@
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
+
+
+@media screen and (max-width : 1030px) {
+    .PSR_Posts {
+      grid-template-columns: auto auto auto;
+    }
+}
+@media screen and (max-width : 790px) {
+    .PSR_Posts {
+    grid-template-columns: auto auto auto;
+  }
+}
+@media screen and (max-width : 690px) {
+    .PSR_Posts {
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (max-width : 487px) {
+    .PSR_Posts {
+    grid-template-columns: auto;
+    justify-content: center;
+    padding: 0px 50px;
+  }
+}

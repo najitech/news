@@ -7,6 +7,7 @@ import {BiRss} from 'react-icons/bi'
 import {FiRss} from 'react-icons/fi'
 import './PSR_TopSlider_Slide.css'
 import Chart from "react-apexcharts";
+import { useMediaQuery } from 'react-responsive';
 
 function PSR_TopSlider_Slide(props) {
     const [chartCircle2 , setChartCircle2] = React.useState({     
@@ -110,6 +111,18 @@ function PSR_TopSlider_Slide(props) {
     else if (props.type==="rss") {
         TopSliderColor = "PSR_TopSlider_rss"
     }
+    let chartheight="43";
+    let chartwidth = "700px";
+    const q434 = useMediaQuery({query :'(max-width : 434px)'});
+    const q343 = useMediaQuery({query :'(max-width : 343px)'});
+    if (q434) {
+        chartheight="30" ;
+        chartwidth = "530px";
+    }
+    if (q343) {
+        chartheight="24" ;
+        chartwidth = "460px";
+    }
     return (
         <div className="PSR_TopSlider_Slide">
             <div className={["TopSlider_top" , TopSliderColor].join(" ")}>
@@ -137,7 +150,7 @@ function PSR_TopSlider_Slide(props) {
                 }
 
             </div>
-            <Chart className="PSR_TopSlider_chart" options={chartCircle2.options} series={chartCircle2.series} type="line" height="43" width="700px"/>
+            <Chart className="PSR_TopSlider_chart" options={chartCircle2.options} series={chartCircle2.series} type="line" height={chartheight} width={chartwidth}/>
         </div>
     )
 }

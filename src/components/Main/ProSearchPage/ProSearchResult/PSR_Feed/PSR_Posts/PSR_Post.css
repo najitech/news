@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     cursor: pointer;
-    transition: all 0.6s ease;
+    /*transition: all 0.6s ease;*/
 }
 
 .PSR_PostImageContainer {
@@ -360,3 +360,356 @@
     padding: 6px;
 
 }
+
+
+
+
+
+@media screen and (max-width : 1380px) {
+    .PSR_Post {
+        width:245px !important;
+        transition: width 2s ease-in-out ;
+    }
+    .PSR_PostImage {
+        width: 235px;
+    }
+    .Post {
+        width: 245px;
+    }
+    .Post_footer_title {
+        font-size: 9.5px !important;
+    }
+}
+
+
+@media screen and (max-width : 1279px) {
+    .PSR_Post {
+      width: 285px !important;
+    }
+    .PSR_PostImage {
+        width: 275px;
+    }
+    .Post {
+        width: 285px;
+    }
+    .PostGrid_image {
+        height: 160px !important;
+    }
+}
+
+@media screen and (max-width : 1190px) {
+    .PSR_Post {
+      width: 265px !important;
+    }
+    .PSR_PostImage {
+        width: 255px;
+    }
+    .Post {
+        width: 265px;
+    }
+    .PostGrid_image {
+        height: 160px !important;
+    }
+}
+
+@media screen and (max-width : 1119px) {
+    .PSR_Post {
+        width:245px !important;
+    }
+    .PSR_PostImage {
+        width: 235px;
+    }
+    .Post {
+        width: 245px;
+    }
+    .Post_footer_title {
+        font-size: 9.5px !important;
+    }
+}
+
+
+@media screen and (max-width : 1030px) {
+    .PSR_Post {
+      width: 298px !important;
+    }
+    .PSR_PostImage {
+        width: 288px;
+        height: 150px;
+    }
+    .Post {
+        width: 298px;
+    }
+    .PostGrid_image {
+        height: 160px !important;
+    }
+}
+
+
+@media screen and (max-width : 940px) {
+    .PSR_Post {
+        width:268px !important;
+        transition: width 2s ease ;
+    }
+    .PSR_PostImage {
+        width: 258px;
+    }
+    .Post {
+        width: 268px;
+    }
+}
+@media screen and (max-width : 853px) {
+    .PSR_Post {
+        width:245px !important;
+    }
+    .PSR_PostImage {
+        width: 235px;
+        height: 135px;
+    }
+    .Post {
+        width: 245px;
+    }
+    .Post_footer_title {
+        font-size: 9.5px !important;
+    }
+    .PostGrid_image {
+        height: 140px !important;
+    }
+    
+    .PostGrid_site {
+        top: 105px;
+    }
+    .Positiveness_PostGrid_site{
+        top:105px;
+    }
+}
+
+
+@media screen and (max-width : 790px) {
+    .PSR_Post {
+      width: 212px !important;
+    }
+    .PSR_PostImage {
+        width: 202px;
+        height: 120px;
+    }
+    .Post {
+        width: 212px;
+    }
+    .Post_footer {
+        display: none !important;
+    }
+    .PostGrid_image {
+        height: 140px !important;
+    }
+    .Post_title {
+        font-size: 12px !important;
+    }
+    .Hashtag2_lastchild{
+        display: none;
+    }
+    .Hashtags2 span{
+        font-size: 7px !important;
+    }
+    
+    .PostGrid_site {
+        top: 110px;
+    }
+    .Positiveness_PostGrid_site{
+        top:110px;
+    }
+}
+@media screen and (max-width : 690px) {
+    .PSR_Post {
+      width: 299px !important;
+    }
+    .PSR_PostImage {
+        width: 289px;
+        height: 160px;
+    }
+    .Post {
+        width: 299px;
+        margin-bottom: 20px !important;
+    }
+    .PostGrid_image {
+        height: 160px !important;
+    }
+    .Post_title {
+        font-size: 14px !important;
+    }
+    .Post_footer {
+        display:flex !important;
+    }
+    .Hashtags2 span{
+        font-size: 9px !important;
+    }
+    
+    .PostGrid_site {
+        top: 130px;
+    }
+    .Positiveness_PostGrid_site{
+        top:130px;
+    }
+}
+@media screen and (max-width : 650px) {
+    .PSR_Post {
+        width:280px !important;
+    }
+    .PSR_PostImage {
+        width: 270px;
+        height: 150px;
+    }
+    .Post {
+        width: 280px;
+    }
+    .Post_footer_title {
+        font-size: 9.5px !important;
+    }
+}
+@media screen and (max-width : 608px) {
+    .PSR_Post {
+        width:260px !important;
+    }
+    .Post {
+        width: 260px;
+        margin-bottom: 15px !important;
+    }
+    .Post_footer_title {
+        font-size: 9.5px !important;
+    }
+}
+@media screen and (max-width : 565px) {
+        .PSR_Post {
+            width: 240px !important;
+            height: 330px !important;
+          }
+          .Post {
+              width: 240px;
+          }
+          .Post_footer {
+              display: none !important;
+          }
+          .PostGrid_image {
+              height: 140px !important;
+          }
+          .Post_title {
+              font-size: 12px !important;
+          }
+          .Hashtags2 span{
+            font-size: 8px !important;
+        }
+        
+    .PostGrid_site {
+        top: 100px;
+    }
+    .Positiveness_PostGrid_site{
+        top:100px;
+    }
+}
+@media screen and (max-width : 527px) {
+    .PSR_Post {
+        width: 219px !important;
+      }
+      .Post {
+          width: 219px;
+      }
+      .Post_footer {
+          display: none !important;
+      }
+      .PostGrid_image {
+          height: 140px !important;
+      }
+      .Post_title {
+          font-size: 12px !important;
+      }
+      .Hashtags2 span{
+        font-size: 7px !important;
+    }
+    
+    .PostGrid_site {
+        top: 110px;
+    }
+    .Positiveness_PostGrid_site{
+        top:110px;
+    }
+}
+
+@media screen and (max-width : 487px) {
+    .PSR_Post {
+      width: 100% !important;
+      height: auto !important;
+    }
+    .Post {
+        width: 100%;
+        margin-bottom: 20px !important;
+    }
+    .PostGrid_image {
+        height: 210px !important;
+    }
+    .Post_title {
+        font-size: 14px !important;
+        height: 57px;
+    }
+    .Post_footer {
+        display:flex !important;
+    }
+    .Post_footer_date {
+        display:inline;
+        margin-left:2px ;
+        margin-right:auto;
+        font-size: 11px !important;
+    }
+    .Post_news_text {
+        -webkit-line-clamp: 5;  
+    }
+    .Post_footer  {
+        width: 92%;
+    }
+    .Hashtags2 span{
+        font-size: 10px !important;
+    }
+    
+    .PostGrid_site {
+        top: 175px;
+    }
+    .Positiveness_PostGrid_site{
+        top:175px;
+    }
+}
+
+@media screen and (max-width : 430px) {
+    .Post_news_text {
+        -webkit-line-clamp: 4; 
+    }
+    .PostGrid_site {
+        top: 175px;
+    }
+    .Positiveness_PostGrid_site{
+        top:175px;
+    }
+}
+@media screen and (max-width : 390px) {
+    .Post_news_text {
+        -webkit-line-clamp: 3; 
+    }
+    .PostGrid_image {
+        height: 180px !important;
+    }
+    .PostGrid_site {
+        top: 150px;
+    }
+    .Positiveness_PostGrid_site{
+        top:150px;
+    }
+}
+
+@media screen and (max-width : 376px) {
+    .PostGrid_site {
+        top: 150px;
+    }
+}
+@media screen and (max-width : 371px) {
+    .Post_footer_date {
+        display: none;
+    }
+}
+

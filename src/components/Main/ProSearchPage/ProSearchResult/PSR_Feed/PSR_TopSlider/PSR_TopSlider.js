@@ -6,6 +6,7 @@ import MenuOpenIcon from '@material-ui/icons/MenuOpen';
 import PSR_TopSlider_Slide from './PSR_TopSlider_Slide';
 import {FaChevronCircleLeft ,FaChevronLeft } from 'react-icons/fa'
 import {IoIosArrowDropleftCircle ,IoIosArrowDroprightCircle} from 'react-icons/io'
+import { useMediaQuery } from 'react-responsive';
 
 function PSR_TopSlider() {
     const myposts = [{
@@ -195,18 +196,47 @@ function PSR_TopSlider() {
     const checked=true;
 
     const [activeItemIndex, setActiveItemIndex] = useState(0);
+    const q1094 = useMediaQuery({query :'(max-width : 1094px)'});
+    const q828 = useMediaQuery({query :'(max-width : 828px)'});
+    const q434 = useMediaQuery({query :'(max-width : 828px)'});
+    const q343 = useMediaQuery({query :'(max-width : 343px)'});
+    let gutternum = 40;
+    let cardnumbers = 3;
+    let firstAndLastGutterb = false;
+    let slidesToScrollNumber=2;
+    let chevronWidthNumber = 60;
+    if (q1094) {
+        gutternum=20;
+    }
+    if (q1094) {
+        cardnumbers=2;
+    }
+    if (q1094) {
+        firstAndLastGutterb = false;
+    }
+    if (q828) {
+        cardnumbers=1;
+        gutternum=0;
+        slidesToScrollNumber=1;
+    }
+    if (q434) {
+        chevronWidthNumber=29;
+    }
+    if (q343) {
+        chevronWidthNumber=23;
+    }
     return (
         <div className="PSR_TopSlider">
             <ItemsCarousel
                 placeholderItem={<div style={{ height: 200, background: '#EEE' }} />}
                 enablePlaceholder={true}
-                numberOfPlaceholderItems={3}
-                numberOfCars={3}
-                gutter={40}
-                slidesToScroll={2}
+                numberOfPlaceholderItems={cardnumbers}
+                numberOfCards={cardnumbers}
+                gutter={gutternum}
+                classes = {{itemsWrapper:"TopSliderItems"} }
+                slidesToScroll={slidesToScrollNumber}
                 alwaysShowChevrons={true}
-                chevronWidth={60}
-
+                chevronWidth={chevronWidthNumber}
                 outsideChevron={true}
                 showSlither={false}
                 firstAndLastGutter={false}
@@ -227,6 +257,7 @@ function PSR_TopSlider() {
             }
 
             </ItemsCarousel>
+
         </div>
     )
 }

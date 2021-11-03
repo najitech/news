@@ -94,3 +94,39 @@
     font-size: 48px;
 
 }
+
+
+@media screen and (max-width : 434px) {
+    .PSR_TopSlider_Slide {
+        width: 230px;
+        height:120px;
+    }
+    .TopSlider_top span {
+        font-size: 9.5px;
+    }
+    .PSR_TopSlider_result {
+        padding-top: 15px;
+        padding-right: 20px;
+    }
+    .PSR_TopSlider_all {
+        padding-top: 15px;
+        padding-right: 15px;
+    }
+    .Slide_typeIconContainer {
+        right:40%;
+        top:25%;
+        font-size: 45px;
+    }
+}
+@media screen and (max-width : 434px) {
+    .PSR_TopSlider_Slide {
+        width: 230px;
+        height:120px;
+    }
+}
+@media screen and (max-width : 343px) {
+    .PSR_TopSlider_Slide {
+        width: 207px;
+        height:110px;
+    }
+}
