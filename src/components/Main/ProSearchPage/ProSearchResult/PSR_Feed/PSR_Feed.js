@@ -44,11 +44,7 @@ function PSR_Feed(props) {
     
     return (
         <div className="PSR_Feed">
-            <TempDrawerPS class="toggleBtnFilterPSSort">
-                    <div className={props.theme ==='lightTheme' ? "DarkdrawerPSRContainer" : 'LightdrawerPSRContainer'}>
-                    <PSR_Drawer setTheme={props.setTheme}/>
-                    </div>
-                </TempDrawerPS>
+
             <PSR_TopSlider/>
             <div className="PSR_TopFeedContainer"> 
                 <TempDrawerPS class="toggleBtnFilterPS">
@@ -80,7 +76,11 @@ function PSR_Feed(props) {
                 </div>
             </div>  
             <div className="PSR_SortContainer">
-                 
+                <TempDrawerPS class="toggleBtnFilterPSSort">
+                    <div className={props.theme ==='lightTheme' ? "DarkdrawerPSRContainer" : 'LightdrawerPSRContainer'}>
+                    <PSR_Drawer setTheme={props.setTheme}/>
+                    </div>
+                </TempDrawerPS>
                 <PSR_Sort social={social}/>
             </div>
  
