@@ -4,7 +4,9 @@
     flex-direction: column;
     justify-content: flex-start;
 }
-
+.PSR_BottomNavContainer {
+    display: none;
+}
 .PSR_toggle {
     display: flex;
     margin: 0px 30px;
@@ -128,6 +130,9 @@
 @media screen and (max-width : 528px) {
     .PSR_toggle {
         display: none;
+    }
+    .PSR_BottomNavContainer {
+        display: inline;
     }
 }
 

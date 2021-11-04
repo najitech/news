@@ -1,0 +1,59 @@
+.PSR_navigationBottomPS{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    left: 0px;
+    right: 0px;
+
+}
+
+
+
+.PSR_instagramNavBotton{
+    background-color: rgba(0, 0, 0, 0.39) !important;
+    color:#f30be7 !important;
+}
+.PSR_twitterNavBottom { 
+    
+    background-color: rgba(0, 0, 0, 0.39) !important;
+    color: #16b8e0 !important;
+}
+.PSR_rssNavBottom { 
+    background-color: rgba(0, 0, 0, 0.39) !important;
+    color: #f26522 !important;
+}
+.PSR_telegramNavBottom { 
+    background-color: rgba(0, 0, 0, 0.39) !important;
+    color :  #86cbee !important;
+    border-radius: 20px;
+}
+.PSR_navigationBottomPS{
+    background-color: rgba(0, 0, 0, 0.39) !important;
+}
+.PSR_navigationBottomPS .Mui-selected.PSR_twitterNavBottom{
+    border-radius: 12px;
+    border: 3px #16b8e0 solid !important;
+    background-color: #a6d1db46 !important;
+}
+.PSR_navigationBottomPS .Mui-selected.PSR_instagramNavBotton{
+    border-radius: 12px;
+    border: 3px #e1306c solid !important;
+    background-color: #d3bde254 !important;
+}
+.PSR_navigationBottomPS .Mui-selected.PSR_rssNavBottom{
+    border-radius: 12px;
+    border: 3px #f26522 solid !important;
+    background-color: #d4a18942 !important;
+}
+.PSR_navigationBottomPS .Mui-selected.PSR_telegramNavBottom{
+    border-radius: 12px;
+    border: 3px #4abcf5 solid !important;
+    background-color: #a5c4d352 !important;
+}
+.PSR_iconNavBottom{
+    font-size: 20px;
+}
+
+.PSR_navigationBottomPS {
+    background-color: rgb(56, 54, 54) !important;
+}

@@ -6,6 +6,7 @@ import PSR_Posts from './PSR_Posts/PSR_Posts';
 import PSR_TopSlider from './PSR_TopSlider/PSR_TopSlider'
 import {DiGhostSmall} from 'react-icons/di'
 import TempDrawerPS from '../../../../../UI/TempDrawerPS'
+import PSR_BottomNav from './PSR_BottomNav/PSR_BottomNav'
 
 function PSR_Feed() {
 
@@ -66,6 +67,10 @@ function PSR_Feed() {
                 </div>
             </div>  
             <PSR_Posts type={social===1 ? "instagram" : social===2? "twitter" : social===3? "rss" : social ===4? "telegram" : social===5? "all" : ""}/>
+            <div className="PSR_BottomNavContainer">
+                <PSR_BottomNav social={social} handleSocial={handleSocial}/>
+            </div>
+            
         </div>
     )
 }
