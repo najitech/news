@@ -17,16 +17,13 @@ function ProSearchContainer() {
     return (
 
         <div className={["ProSearchContianer",theme].join(" ")}>
-           {/*!submitted ? <ProSearch setSubmit={setSubmitted}/> 
+           {!submitted ? <ProSearch setSubmit={setSubmitted}/> 
                 : 
                 <ThemeColorContext.Provider value={theme}>
                 <ProSearchResult theme={theme} setTheme={setTheme}/>
                 </ThemeColorContext.Provider>
-                */
+                
            }
-            <ThemeColorContext.Provider value={theme}>
-                <ProSearchResult theme={theme} setTheme={setTheme}/>
-            </ThemeColorContext.Provider>
 
         </div>
 

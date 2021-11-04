@@ -5,7 +5,7 @@ import './PSR_Feed.css'
 import PSR_Posts from './PSR_Posts/PSR_Posts';
 import PSR_TopSlider from './PSR_TopSlider/PSR_TopSlider'
 import {DiGhostSmall} from 'react-icons/di'
-import TemporaryDrawer from '../../../../../UI/TemporaryDrawer'
+import TempDrawerPS from '../../../../../UI/TempDrawerPS'
 
 function PSR_Feed() {
 
@@ -39,9 +39,9 @@ function PSR_Feed() {
         <div className="PSR_Feed">
             <PSR_TopSlider/>
             <div className="PSR_TopFeedContainer"> 
-                <TemporaryDrawer>
+                <TempDrawerPS>
 
-                </TemporaryDrawer>    
+                </TempDrawerPS>    
                 <div className={["PSR_toggle" , borderColor].join(" ")}>
                     <div onClick={()=>{handleSelect(5)}} className={["PSR_telegram_proSearch_type" , social ===5  ? "PSR_telegram_active_prosearch" : " "].join(" ")}>
                         <DiGhostSmall className="PSR_socialMediaIconsProSearch"/>
