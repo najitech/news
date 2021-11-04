@@ -1,5 +1,6 @@
 .PSR_Feed {
     flex : 0.77;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -148,7 +149,9 @@
 
 .PSR_SortContainer {
     margin:0px auto;
+    position: relative;
     margin-top:15px;
+    width: 100%;
     margin-bottom: 10px;
 }
 

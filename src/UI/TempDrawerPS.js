@@ -10,8 +10,10 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
-import {GiHamburgerMenu} from 'react-icons/gi'
+import {GiHamburgerMenu, GiSettingsKnobs} from 'react-icons/gi'
 import './TempDrawerPS.css';
+import { AiFillFilter } from 'react-icons/ai';
+import { FcClearFilters } from 'react-icons/fc';
 
 const useStyles = makeStyles({
   list: {
@@ -42,7 +44,7 @@ export default function TempDrawerPS(props) {
     <div>
       {["right"].map((anchor) => (
         <React.Fragment style={{backgroundColor : 'red'}} key={anchor}>
-          <Button className={[props.class]} onClick={toggleDrawer(anchor, true)}><GiHamburgerMenu/></Button>
+          <Button className={[props.class]} onClick={toggleDrawer(anchor, true)}><FcClearFilters/></Button>
           <Drawer className="styleDrawerPs" anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
             {props.children}
           </Drawer>
