@@ -177,20 +177,20 @@
 }
 @media screen and (max-width: 992px) {
     .AppBar div {
-        width: 200px;
+        width: 180px;
     }
 }
 @media screen and (max-width: 700px) {
     .AppBar div {
-        width: 170px;
+        width: 150px;
     }
 }
 @media screen and (max-width: 600px) {
     .AppBar div {
-        width: 120px;
+        width: 110px;
     }
     .navlinkres {
-        font-size: 12px;
+        font-size: 11px;
     }
 }
 

@@ -272,6 +272,10 @@
         margin-right: 30px;
         margin-left: 30px;
     }
+    .dateBetweenPS{
+        font-size: 8px !important;
+        background-color: #07a5f5;
+    }
 }
 @media screen and (max-width : 600px) {
     .addRuleContainer{
@@ -305,6 +309,13 @@
     }
     .addPSadvItem{
         margin-right:30px !important;
+    }
+    
+    .betweenItemResualt{
+        font-size: 11px;
+    }
+    .listItemResualt{
+        font-size: 11px;
     }
 }
 @media screen and (max-width : 500px) {
@@ -350,6 +361,13 @@
     }
     .togglePictureSelect{
         font-size: 10px !important;
+    }
+    
+    .betweenItemResualt{
+        font-size: 11px;
+    }
+    .listItemResualt{
+        font-size: 11px;
     }
     
 }
@@ -414,5 +432,11 @@
     }
     .addIconBottonADPS{
         padding: 3px !important;
+    }
+    .betweenItemResualt{
+        font-size: 10px;
+    }
+    .listItemResualt{
+        font-size: 10px;
     }
 }

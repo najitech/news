@@ -99,7 +99,9 @@
     border-bottom-color: #f26522 !important;
     transition: 0.3s ease-out all;
 }
-
+.PSR_TopFeedContainer{
+    position: relative;
+}
 @media screen and (max-width : 1434px) {
     .PSR_Feed {
         flex:0.8;

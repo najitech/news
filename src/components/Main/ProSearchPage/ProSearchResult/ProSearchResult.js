@@ -7,7 +7,7 @@ function ProSearchResult(props) {
     return (
         <div className="ProSearchResult">
             <PSR_Sidebar setTheme={props.setTheme}/>
-            <PSR_Feed/>
+            <PSR_Feed setTheme={props.setTheme}/>
         </div>
     )
 }

@@ -41,8 +41,8 @@ export default function TempDrawerPS(props) {
   return (
     <div>
       {["right"].map((anchor) => (
-        <React.Fragment key={anchor}>
-          <Button className={props.class} onClick={toggleDrawer(anchor, true)}><GiHamburgerMenu/></Button>
+        <React.Fragment style={{backgroundColor : 'red'}} key={anchor}>
+          <Button className={[props.class]} onClick={toggleDrawer(anchor, true)}><GiHamburgerMenu/></Button>
           <Drawer className="styleDrawerPs" anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
             {props.children}
           </Drawer>

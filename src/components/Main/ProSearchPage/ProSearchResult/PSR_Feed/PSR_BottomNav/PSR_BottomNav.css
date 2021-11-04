@@ -57,3 +57,30 @@
 .PSR_navigationBottomPS {
     background-color: rgb(56, 54, 54) !important;
 }
+
+@media screen and (max-width : 415px) {
+    .PSR_instagramNavBotton{
+        font-size: 2px !important;
+    }
+    .PSR_twitterNavBottom{
+        font-size:2px !important;
+    }
+    .PSR_rssNavBottom{
+        font-size: 2px !important;
+    }
+    .PSR_telegramNavBottom{
+        font-size: 2px !important;
+    }
+    .PSR_iconNavBottom{
+        font-size: 17px;
+    }
+    .resNavSize{
+        width: 10px !important;
+        padding: 0px !important;
+    }
+    
+    .MuiBottomNavigationAction-label{
+        font-size: 10px !important;
+    }
+    
+}

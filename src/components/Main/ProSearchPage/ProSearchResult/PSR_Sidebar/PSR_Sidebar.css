@@ -64,3 +64,16 @@
     }
     
 }
+
+@media screen and (max-width : 500px) {
+    .PSR_Sidebar_Icon{
+        width: 35px;
+        height: 35px;
+    }
+    .PSR_icon_select{
+        width: 45px;
+        height: 45px;
+        transition: all 0.7s ease;
+    }
+    
+}

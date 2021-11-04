@@ -21,3 +21,8 @@
   .Navbar_ThemeToggleDark {
     cursor: pointer;
   }
+  @media screen and (max-width : 500px) {
+      .PSR_Sidebar_Filters{
+        width: 200px;
+      }
+  }

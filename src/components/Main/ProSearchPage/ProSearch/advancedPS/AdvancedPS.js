@@ -23,6 +23,18 @@ const advancedTypeLabel = {
     "date" : 'تاریخ',
     "type" : 'منبع'
 }
+function nFormatter(num) {
+    if (num >= 1000000000) {
+       return (num / 1000000000).toFixed(1).replace(/\.0$/, '') + 'G';
+    }
+    if (num >= 1000000) {
+       return (num / 1000000).toFixed(1).replace(/\.0$/, '') + 'M';
+    }
+    if (num >= 1000) {
+       return (num / 1000).toFixed(1).replace(/\.0$/, '') + 'K';
+    }
+    return num;
+}
 const actionTypeLabel= {
     20 : 'بین',
     30 : "قبل از",
@@ -354,17 +366,17 @@ function AdvancedPS(props) {
                               <div className="listResualtPS">
                                       
                                   {data.advanced[item][1] ===20 ?   
-                                      <div className="betweenItemResualt">
-                                          { data.advanced[item][0].first}
+                                      <div className={"betweenItemResualt"}>
+                                          {item!=='date'? nFormatter(parseInt(data.advanced[item][0].first)):"10/24/20"}
                                           &nbsp;
-                                          &nbsp;
+                                          {item!=='date' ?  <>&nbsp;</>:null}
                                           <span>تا</span>
                                           &nbsp;
-                                          &nbsp;
-                                          {data.advanced[item][0].last}</div>
+                                          {item!=='date' ?  <>&nbsp;</>:null}
+                                          {item !=='date'?  nFormatter(parseInt(data.advanced[item][0].last)):'12/30/20'}</div>
                                   :
                                   item !== "picture" && item !=='type'?
-                                      <div className="listItemResualt">{data.advanced[item][0]}
+                                      <div className="listItemResualt">{item !=='date' ? nFormatter(parseInt(data.advanced[item][0])):data.advanced[item][0] }
                                           </div>:
                                   item ==='picture' ? 
                                       <div className="pictureItemResualt">{data.advanced[item][0] ? "باشد" : "نباشد"}</div>:

@@ -7,8 +7,11 @@ import PSR_TopSlider from './PSR_TopSlider/PSR_TopSlider'
 import {DiGhostSmall} from 'react-icons/di'
 import TempDrawerPS from '../../../../../UI/TempDrawerPS'
 import PSR_BottomNav from './PSR_BottomNav/PSR_BottomNav'
+import PSR_Sidebar from '../PSR_Sidebar/PSR_Sidebar';
+import PSR_Drawer from './PSR_Drawer/PSR_Drawer';
 
-function PSR_Feed() {
+
+function PSR_Feed(props) {
 
     const [social , handleSocial] = useState(1);
     const handleSelect = (e)=>{
@@ -40,8 +43,10 @@ function PSR_Feed() {
         <div className="PSR_Feed">
             <PSR_TopSlider/>
             <div className="PSR_TopFeedContainer"> 
-                <TempDrawerPS>
-
+                <TempDrawerPS class="toggleBtnFilterPS">
+                    <div style={{height:"100vh"}}>
+                    <PSR_Drawer setTheme={props.setTheme}/>
+                    </div>
                 </TempDrawerPS>    
                 <div className={["PSR_toggle" , borderColor].join(" ")}>
                     <div onClick={()=>{handleSelect(5)}} className={["PSR_telegram_proSearch_type" , social ===5  ? "PSR_telegram_active_prosearch" : " "].join(" ")}>
