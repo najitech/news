@@ -22,6 +22,7 @@ const StyledToggleButtonGroup = withStyles((theme) => ({
   grouped: {
     margin: theme.spacing(0.5),
     height:'20px',
+    border:'none',
     '&:not(:first-child)': {
       borderRadius: theme.shape.borderRadius,
     },

@@ -23,10 +23,10 @@ export default function BottomNavSocial(props) {
       onChange={(event, newValue) => {
         handleSelect(newValue);
       }} className={[classes.root , "PSR_navigationBottomPS"].join(" ")}>
-      <BottomNavigationAction className="PSR_instagramNavBotton" value={1} label="Instagram" icon={<AiFillInstagram className="PSR_iconNavBottom"/>} />
-      <BottomNavigationAction className="PSR_twitterNavBottom" value={2} label="Twitter" icon={<AiFillTwitterCircle className="PSR_iconNavBottom"/>} />
-      <BottomNavigationAction className="PSR_rssNavBottom" value={3} label="Rss" icon={<FaRssSquare className="PSR_iconNavBottom"/>} />
-      <BottomNavigationAction className="PSR_telegramNavBottom" value={4} label="Telegram" icon={<FaTelegram className="PSR_iconNavBottom"/>} />
+      <BottomNavigationAction className="PSR_bottomNavItem PSR_instagramNavBotton" value={1} label="Instagram" icon={<AiFillInstagram className="PSR_iconNavBottom"/>} />
+      <BottomNavigationAction className="PSR_bottomNavItem PSR_twitterNavBottom" value={2} label="Twitter" icon={<AiFillTwitterCircle className="PSR_iconNavBottom"/>} />
+      <BottomNavigationAction className="PSR_bottomNavItem PSR_rssNavBottom" value={3} label="Rss" icon={<FaRssSquare className="PSR_iconNavBottom"/>} />
+      <BottomNavigationAction className="PSR_bottomNavItem PSR_telegramNavBottom" value={4} label="Telegram" icon={<FaTelegram className="PSR_iconNavBottom"/>} />
     </BottomNavigation>
   );
 }
