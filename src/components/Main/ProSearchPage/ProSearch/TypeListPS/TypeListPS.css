@@ -23,3 +23,14 @@
 .typeListPS .MuiChip-deleteIcon:hover{
     color : #9388ac;
 }
+
+@media screen and (max-width : 500px) {
+    .typeListPS .MuiChip-root{
+        font-size: 10px;
+    }
+    .typeListPS .MuiChip-deleteIcon{
+        width: 17px;
+        height: 17px;
+
+    }
+}

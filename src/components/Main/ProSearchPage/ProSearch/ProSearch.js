@@ -10,6 +10,8 @@ import TypeListPS from './TypeListPS/TypeListPS';
 import '../../../../UI/Styles.css' 
 import { BiSearchAlt } from 'react-icons/bi';
 import {GoSettings} from 'react-icons/go'
+import BottomNavSocial from './BottomNavSocial/BottomNavSocial';
+import { useMediaQuery } from 'react-responsive';
 function ProSearch(props) {
     const [typeInput , setTypeInput] = useState("");
     const [animate , setAnimate] = useState(false);
@@ -152,6 +154,8 @@ function ProSearch(props) {
                 break;
         }
     }
+    
+    const isMobileScreen = useMediaQuery({query :'(max-width : 500px)'});
     const ifEmpty= (data , social)=>{
         if(data.keywoard.length!==0 || data.hashtags.length!==0 || data.text.length!==0)
         {
@@ -216,19 +220,21 @@ function ProSearch(props) {
                     {...(true ? { timeout: 700 } : {})}>    
                         <h1>جستجوی در مرکز داده</h1>
                     </Grow>
-                        
-                    <Grow in={true}
-                          style={{transitionDelay:'200ms',}}
-                          {...(true ? { timeout: 1000 } : {})}>      
-                        <div className="toggleContainerSelect">
-                            <SocialMediaSearchType isMark={[counterTags(instagram , 1), counterTags(twitter,2) ,counterTags(rss,3) , counterTags(telegram , 4)]} handleSocial={handleSocial} social={social}/>
-                        </div>  
-                    </Grow>
+                    {
+                        !isMobileScreen ?<Grow in={!isMobileScreen}
+                        style={{transitionDelay:'200ms',}}
+                        {...(true ? { timeout: 1000 } : {})}>      
+                      <div className="toggleContainerSelect">
+                          <SocialMediaSearchType isMark={[counterTags(instagram , 1), counterTags(twitter,2) ,counterTags(rss,3) , counterTags(telegram , 4)]} handleSocial={handleSocial} social={social}/>
+                      </div>  
+                  </Grow>:null
+                    } 
 
                     <div className="">
                             <SearchTypeTw data={social===1? instagram : social ===2 ? twitter : social ===3 ? rss : telegram}
                               typeTw={typeTw} setTypeTw={setTypeTw} social={social}/>
                     </div>  
+                    
                     <Grow
                     in={true}
                     style={{ transformOrigin: '0 100 0',
@@ -238,9 +244,12 @@ function ProSearch(props) {
                     <div className="proSearchInput">
                         <TypeListPS handleDelete={handleDeleteChip} chipData={chooseListChip}/>
                         <input disabled={disabled || chooseListChip.length===3} placeholder="افزودن" value={typeInput} onChange={handleTypeInput}/>
-                        <Button disabled={ disabled || chooseListChip.length===3} onClick={handleInputTypeSubmit} className="searchButtonPs">
+                        {!isMobileScreen ? <Button disabled={ disabled || chooseListChip.length===3} onClick={handleInputTypeSubmit} className="searchButtonPs">
                             <AiOutlinePlus/>
-                        </Button>
+                        </Button> : 
+                        <IconButton  disabled={ disabled || chooseListChip.length===3} onClick={handleInputTypeSubmit} className="IconButtonPsADD">
+                            <AiOutlinePlus/>
+                        </IconButton>}
                     </div>
                     </Grow>
                     <Grow in={true} {...(!toggleAdvanced ?  { timeout: 1700 }: {})} >
@@ -273,9 +282,14 @@ function ProSearch(props) {
                         <span>جستجو</span>
                         <BiSearchAlt/>
                     </Button>
-                    </div>
+                    </div>                   
                 </div>
             </div>
+            <Collapse {...( { timeout: 1000 })} in={isMobileScreen}>
+            <div className="navBottonPS">    
+                        <BottomNavSocial isMark={[counterTags(instagram , 1), counterTags(twitter,2) ,counterTags(rss,3) , counterTags(telegram , 4)]} handleSocial={handleSocial} social={social} className="navBottonsAd"/>  
+            </div>
+            </Collapse>
         </div>
     )
 }

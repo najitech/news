@@ -49,7 +49,7 @@ function SearchTypeTw(props) {
             </ToggleButton>
             {props.social !== 3 ? <ToggleButton onClick={()=>{handleChangeType(3)}} className="toggleTypeSelect" value="username" aria-label="right aligned">
                 <Badge classes={{badge: classes.font1}}  className="badgeStyleSearchType"  overlap="rectangle"  badgeContent={props.data.username.length} color="secondary"/>
-                <AiOutlineUser/>
+                <AiOutlineUser className="reacIconTypeSelect"/>
                 <span>کاربر</span>
             </ToggleButton> : null}
             

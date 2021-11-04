@@ -126,7 +126,32 @@ object-fit: cover;
 .advancedSearchOpenBtn span{
     margin-left: 3px;
 }
-
+.navBottonPS{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    left: 0px;
+    right: 0px;
+}
+.navBottonsAd{
+    display: block !important;
+    margin: auto !important;
+    width: 100% !important;
+}
+.IconButtonPsADD{
+    background-color: #764ee3 !important;
+    color: white !important;
+    width: 30px !important;
+    height: 30px !important;
+    padding: 5px !important;
+    font-size: 14px !important;
+    position: absolute !important;
+    left: 7px !important;
+}
+.IconButtonPsADD:disabled{
+    background-color: #855fe77a !important;
+    color: #ffffff !important;
+}
 @media screen and (max-width: 1050px) { 
     .advancedProSearchDiv{
         width: 900px;
@@ -154,10 +179,47 @@ object-fit: cover;
         width: 400px;
         padding: 0px 5px;
     }
+    .proSearchInput{
+        width: 400px; 
+    }
+    .proSearchInput input{
+        height: 30px;
+        font-size: 12px;
+    }
+    .searchBtnPS{
+        margin-bottom: 70px !important;
+    }
+    .imagestyle h1{
+        font-size: 23px;
+        padding-bottom: 20px;
+    }
+    .advancedSearchOpenBtn{
+        font-size: 11px !important;
+    }
 }
 @media screen and (max-width : 415px) {
     .advancedProSearchDiv{
+        width: 370px;
+        padding: 0px 5px;
+    }
+    .proSearchInput{
+        width: 350px;
+    }
+    .proSearchInput input{
+        height: 30px;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width : 370px) {
+    .advancedProSearchDiv{
         width: 340px;
         padding: 0px 5px;
+    }
+    .proSearchInput{
+        width: 300px;
+    }
+    .proSearchInput input{
+        height: 30px;
+        font-size: 12px;
     }
 }
