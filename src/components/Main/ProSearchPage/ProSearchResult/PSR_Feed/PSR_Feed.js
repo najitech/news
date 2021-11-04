@@ -7,10 +7,13 @@ import PSR_TopSlider from './PSR_TopSlider/PSR_TopSlider'
 import {DiGhostSmall} from 'react-icons/di'
 import TempDrawerPS from '../../../../../UI/TempDrawerPS'
 import PSR_BottomNav from './PSR_BottomNav/PSR_BottomNav'
+import SortWebsite from '../../../Websites/SortWebsite/SortWebsite';
+import PSR_Sort from './PSR_Sort/PSR_Sort';
 
 function PSR_Feed() {
 
     const [social , handleSocial] = useState(1);
+    const [socialMobile , handleSocialMobile] = useState([1]);
     const handleSelect = (e)=>{
         handleSocial(e);
     }
@@ -39,10 +42,7 @@ function PSR_Feed() {
     return (
         <div className="PSR_Feed">
             <PSR_TopSlider/>
-            <div className="PSR_TopFeedContainer"> 
-                <TempDrawerPS>
-
-                </TempDrawerPS>    
+            <div className="PSR_TopFeedContainer">   
                 <div className={["PSR_toggle" , borderColor].join(" ")}>
                     <div onClick={()=>{handleSelect(5)}} className={["PSR_telegram_proSearch_type" , social ===5  ? "PSR_telegram_active_prosearch" : " "].join(" ")}>
                         <DiGhostSmall className="PSR_socialMediaIconsProSearch"/>
@@ -66,6 +66,10 @@ function PSR_Feed() {
                     </div>
                 </div>
             </div>  
+            <div className="PSR_SortContainer">
+                <PSR_Sort social={social}/>
+            </div>
+ 
             <PSR_Posts type={social===1 ? "instagram" : social===2? "twitter" : social===3? "rss" : social ===4? "telegram" : social===5? "all" : ""}/>
             <div className="PSR_BottomNavContainer">
                 <PSR_BottomNav social={social} handleSocial={handleSocial}/>
