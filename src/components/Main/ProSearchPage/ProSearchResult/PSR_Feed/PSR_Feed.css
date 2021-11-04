@@ -98,8 +98,11 @@
     transition: 0.3s ease-out all;
 }
 
-
-
+@media screen and (max-width : 1434px) {
+    .PSR_Feed {
+        flex:0.8;
+    }
+}
 
 @media screen and (max-width : 1279px) {
     .PSR_Feed{

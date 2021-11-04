@@ -18,18 +18,21 @@
 .PostTags_lastchild {
     border:none;
 }
-
-@media screen and (max-width : 1380px) {
-    .PSR_PostSubjects {
-        padding:0px;
-        padding-top: 4px;
-        padding-left:6px;
+@media screen and (max-width : 1398px) {
+    .PSR_PostSubjects > *  {
+        margin:0px 4px;
     }
-
+    .PSR_PostSubjects > * > p {
+        padding-left:3px;
+    }
 }
+
 @media screen and (max-width : 1279px) {
     .PSR_PostSubjects > * {
-        margin:0px 5px;
+        margin:0px 4px;
+    }
+    .PSR_PostSubjects > * > p {
+        padding-left:0px;
     }
 }
 @media screen and (max-width : 1190px) {
@@ -39,7 +42,7 @@
 }
 @media screen and (max-width : 1119px) {
     .PSR_PostSubjects > * {
-        margin:0px 1px;
+        margin:0px 0px;
     }
 }
 @media screen and (max-width : 1030px)  {
@@ -60,7 +63,114 @@
 }
 @media screen and (max-width : 853px) {
     .PSR_PostSubjects > *  {
+        margin:0px 6px;
+    }
+    .PSR_PostTags_lastchild {
+        display: none;
+
+    }
+    .PSR_PostTags_4thchild {
+        border-left:none;
+    }
+    .PSR_PostSubjects > * > p {
+        padding-left:3px;
+    }
+}
+@media screen and (max-width : 790px) {
+    .PSR_PostSubjects > *  {
+        margin:0px 1px;
+    }
+
+    .PSR_PostSubjects > * > p {
+        padding-left:4px;
+    }
+}
+
+@media screen and (max-width : 690px) {
+    .PSR_PostSubjects > *  {
+        margin:0px 5px;
+    }
+    .PSR_PostTags_lastchild {
+        display: inline;
+
+    }
+    .PSR_PostTags_4thchild {
+        border-left:1px solid var(--PSR_PostSubjectBorderColor);
+    }
+    .PSR_PostSubjects > * > p {
+        padding-left:3px;
+    }
+}
+@media screen and (max-width : 650px) {
+    .PSR_PostSubjects > *  {
+        margin:0px 3px;
+    }
+}
+@media screen and (max-width : 608px) {
+    .PSR_PostSubjects > *  {
+        margin:0px 1px;
+    }
+    .PSR_PostSubjects > * > p {
+        padding-left:4px;
+    }
+}
+@media screen and (max-width : 565px) {
+    .PSR_PostSubjects > *  {
+        margin:0px 6px;
+    }
+    .PSR_PostTags_lastchild {
+        display: none;
+
+    }
+    .PSR_PostTags_4thchild {
+        border-left:none;
+    }
+    .PSR_PostSubjects > * > p {
+        padding-left:3px;
+    }
+}
+@media screen and (max-width : 527px) {
+    .PSR_PostSubjects > *  {
         margin:0px 2px;
+    }
+
+    .PSR_PostSubjects > * > p {
+        padding-left:4px;
+    }
+}
+
+@media screen and (max-width : 487px) {
+    .PSR_PostSubjects > *  {
+        margin:0px 8px;
+    }
+    .PSR_PostTags_lastchild {
+        display: inline;
+
+    }
+    .PSR_PostTags_4thchild {
+        border-left:1px solid var(--PSR_PostSubjectBorderColor);
+    }
+    .PSR_PostSubjects > * > p {
+        padding-left:5px;
+    }
+}
+@media screen and (max-width : 430px) {
+    .PSR_PostSubjects > *  {
+        margin:0px 3px;
+    }
+
+    .PSR_PostSubjects > * > p {
+        padding-left:4px;
+    }
+}
+
+
+
+
+
+@media screen and (max-width : 370px) {
+    .PSR_PostSubjects > *  {
+        margin:0px auto;
     }
     .PSR_PostTags_lastchild {
         display: none;

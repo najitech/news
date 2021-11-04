@@ -9,7 +9,16 @@
     scrollbar-width: none;  /* Firefox */
 }
 
-
+@media screen and (max-width : 1398px) {
+  .PSR_Posts {
+    grid-template-columns: auto auto auto;
+  }
+}
+@media screen and (max-width : 1279px) {
+  .PSR_Posts {
+    grid-template-columns: auto auto auto auto;
+  }
+}
 @media screen and (max-width : 1030px) {
     .PSR_Posts {
       grid-template-columns: auto auto auto;

@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: column;
     margin-right:7px;
-    margin-top:40px;
+    margin-top:80px;
 }
 .PSR_Sidebar_Icon {
     font-size: 39px;
@@ -22,10 +22,10 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 35px;
-    width: 50px;
-    height: 50px;
+    width: 43px;
+    height: 43px;
     border : 2px solid white;
-    border-radius: 15px;
+    border-radius: 45%;
     color:rgb(255, 255, 255);
     padding: 4px;
     cursor: pointer;
@@ -39,16 +39,24 @@
 }
 .PSR_rss{
     background:linear-gradient(120deg, #f26522, #eca27f);
+    padding:9px;
 }
 .PSR_telegram {
     background:linear-gradient(120deg, #0088cc, #d9eef8);
 }
 .PSR_icon_select {
-    width: 65px;
-    height: 65px;
+    width: 55px;
+    height: 55px;
     font-size: 42px;
     transition: all 0.7s ease;
 }
+@media screen and (max-width : 1434px) {
+    .PSR_Sidebar {
+        flex : 0.2;
+    }
+}
+
+
 
 @media screen and (max-width : 1279px) {
     .PSR_Sidebar{

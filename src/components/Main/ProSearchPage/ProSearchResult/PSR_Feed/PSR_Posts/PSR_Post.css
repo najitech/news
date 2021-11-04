@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     cursor: pointer;
-    /*transition: all 0.6s ease;*/
+    transition: all 0.6s ease;
 }
 
 .PSR_PostImageContainer {
@@ -382,7 +382,8 @@
 }
 
 
-@media screen and (max-width : 1279px) {
+
+@media screen and (max-width : 1398px) {
     .PSR_Post {
       width: 285px !important;
     }
@@ -487,6 +488,7 @@
 @media screen and (max-width : 790px) {
     .PSR_Post {
       width: 212px !important;
+      height: 380px;
     }
     .PSR_PostImage {
         width: 202px;
@@ -495,8 +497,8 @@
     .Post {
         width: 212px;
     }
-    .Post_footer {
-        display: none !important;
+    .PSR_Post_Hashtags_title {
+        font-size: 8px !important;
     }
     .PostGrid_image {
         height: 140px !important;
@@ -507,7 +509,7 @@
     .Hashtag2_lastchild{
         display: none;
     }
-    .Hashtags2 span{
+    .PSR_Hashtags2 span{
         font-size: 7px !important;
     }
     
@@ -521,10 +523,14 @@
 @media screen and (max-width : 690px) {
     .PSR_Post {
       width: 299px !important;
+      height: 405px;
     }
     .PSR_PostImage {
         width: 289px;
         height: 160px;
+    }
+    .PSR_Post_Hashtags_title {
+        font-size: 10px !important;
     }
     .Post {
         width: 299px;
@@ -539,7 +545,7 @@
     .Post_footer {
         display:flex !important;
     }
-    .Hashtags2 span{
+    .PSR_Hashtags2 span{
         font-size: 9px !important;
     }
     
@@ -580,7 +586,7 @@
 @media screen and (max-width : 565px) {
         .PSR_Post {
             width: 240px !important;
-            height: 330px !important;
+
           }
           .Post {
               width: 240px;
@@ -594,7 +600,7 @@
           .Post_title {
               font-size: 12px !important;
           }
-          .Hashtags2 span{
+          .PSR_Hashtags2 span{
             font-size: 8px !important;
         }
         
@@ -609,9 +615,19 @@
     .PSR_Post {
         width: 219px !important;
       }
+      .PSR_PostImage {
+        width: 270px;
+        height: 140px;
+    }
       .Post {
           width: 219px;
       }
+      .PSR_Hashtags2 span{
+        font-size: 9px !important;
+    }
+    .PSR_Post_Hashtags_title {
+        font-size: 8px !important;
+    }
       .Post_footer {
           display: none !important;
       }
@@ -621,7 +637,7 @@
       .Post_title {
           font-size: 12px !important;
       }
-      .Hashtags2 span{
+      .PSR_Hashtags2 span{
         font-size: 7px !important;
     }
     
@@ -636,7 +652,14 @@
 @media screen and (max-width : 487px) {
     .PSR_Post {
       width: 100% !important;
-      height: auto !important;
+      height: 440px !important;
+    }
+    .PSR_Post_Hashtags_title {
+        font-size: 10px !important;
+    }
+    .PSR_PostImage {
+        width: 95%;
+        height: 180px;
     }
     .Post {
         width: 100%;
@@ -664,7 +687,7 @@
     .Post_footer  {
         width: 92%;
     }
-    .Hashtags2 span{
+    .PSR_Hashtags2 span{
         font-size: 10px !important;
     }
     
@@ -686,11 +709,17 @@
     .Positiveness_PostGrid_site{
         top:175px;
     }
+    .PSR_PostImage {
+        height: 160px;
+    }
 }
 @media screen and (max-width : 390px) {
     .Post_news_text {
         -webkit-line-clamp: 3; 
     }
+    .PSR_Post {
+        height: 410px !important;
+      }
     .PostGrid_image {
         height: 180px !important;
     }
@@ -700,16 +729,30 @@
     .Positiveness_PostGrid_site{
         top:150px;
     }
+    .PSR_PostImage {
+        height: 150px;
+    }
 }
 
 @media screen and (max-width : 376px) {
     .PostGrid_site {
         top: 150px;
     }
+    .PSR_PostImage {
+        height: 140px;
+    }
+    .PSR_Hashtags2 span{
+        font-size: 8px !important;
+    }
 }
 @media screen and (max-width : 371px) {
     .Post_footer_date {
         display: none;
+    }
+}
+@media screen and (max-width : 330px) {
+    .PSR_Hashtags2 span{
+        font-size: 7.5px !important;
     }
 }
 

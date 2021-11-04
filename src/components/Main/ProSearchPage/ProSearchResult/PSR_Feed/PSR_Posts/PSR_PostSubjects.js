@@ -14,7 +14,9 @@ function PSR_PostSubjects() {
                 <Tag text = "حوادث" backGroundColor="#2D2C56" fontSize="10px" color="#7556DB"/>
                 <Tag text = "سیاسی"  backGroundColor="#2D2C56"  fontSize="10px" color="#56bcdb" padding="6px" />
                 <Tag text = "اجتماعی" backGroundColor="#2D2C56" fontSize="10px" color="#56db82"/>
-                <Tag text = "فرهنگی"  backGroundColor="#2D2C56" fontSize="10px" color="#db5656"/>
+                <div className="PSR_PostTags_4thchild">
+                   <Tag text = "فرهنگی"  backGroundColor="#2D2C56" fontSize="10px" color="#db5656"/>
+                </div>
                 <div className="PSR_PostTags_lastchild">
                   <Tag  text = "ورزشی"  backGroundColor="#2D2C56" color="#dbb156" fontSize="10px" />
                 </div>

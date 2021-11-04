@@ -196,6 +196,8 @@ function PSR_TopSlider() {
     const checked=true;
 
     const [activeItemIndex, setActiveItemIndex] = useState(0);
+    const q1398 = useMediaQuery({query :'(max-width : 1398px)'});
+    const q1279 = useMediaQuery({query :'(max-width : 1279px)'});
     const q1094 = useMediaQuery({query :'(max-width : 1094px)'});
     const q828 = useMediaQuery({query :'(max-width : 828px)'});
     const q434 = useMediaQuery({query :'(max-width : 828px)'});
@@ -205,6 +207,12 @@ function PSR_TopSlider() {
     let firstAndLastGutterb = false;
     let slidesToScrollNumber=2;
     let chevronWidthNumber = 60;
+    if (q1398) {
+        cardnumbers=2;
+    }
+    if (q1279) {
+        cardnumbers=3;
+    }
     if (q1094) {
         gutternum=20;
     }
