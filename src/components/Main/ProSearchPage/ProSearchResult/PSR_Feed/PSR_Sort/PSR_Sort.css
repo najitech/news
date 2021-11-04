@@ -27,7 +27,7 @@
     display: flex;
     direction: rtl;
     align-items: center;
-    background-color:#2D2C56 ;
+    background-color:var(--postTheme);
     border-radius: 3px;
     box-shadow:2px 3px 8px 0.3px var(--PSR_PostBoxShadow);
 }
@@ -38,7 +38,7 @@
 .PSR_Sortasas p{
     padding : 0px;
     font-size: 13px;
-    color: white;
+    color: var(--PSR_PostTextColor);
     margin: 0px 5px;
 }
 @media screen  and (max-width :760px){ 
@@ -63,5 +63,5 @@
 }
 
 .PSR_menuButton {
-    color:white !important;
+    color:var(--PSR_PostTextColor) !important;
 }
