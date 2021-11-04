@@ -27,3 +27,56 @@
 .divContainer .MuiBadge-colorSecondary{
     text-align : center !important;
 }
+
+@media screen and (max-width : 500px) {
+    .toggleTypeSelect{
+        width: 90px !important;
+        margin-left: 7px !important;
+    }
+    .toggleTypeSelect span{
+        font-size: 12px !important;
+    }
+    .reacIconTypeSelect{
+        font-size: 12px !important;
+    }
+    .divContainer{
+        width: 100%;
+        padding-right: 30px;
+        margin: auto !important;
+    }
+}
+    
+@media screen and (max-width : 467px) {
+    .toggleTypeSelect{
+        width: 80px !important;
+        margin-left: 7px !important;
+    }
+    .toggleTypeSelect span{
+        font-size: 10px !important;
+    }
+    .reacIconTypeSelect{
+        font-size: 12px !important;
+    }
+    .divContainer{
+        width: 100%;
+        padding-right: 30px;
+        margin: auto !important;
+    }
+}
+@media screen and (max-width : 390px) {
+    .toggleTypeSelect{
+        width: 70px !important;
+        margin-left: 7px !important;
+    }
+    .toggleTypeSelect span{
+        font-size: 9px !important;
+    }
+    .reacIconTypeSelect{
+        font-size: 11px !important;
+    }
+    .divContainer{
+        width: 100%;
+        padding-right: 50px ;
+        margin: auto !important;
+    }
+}

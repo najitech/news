@@ -303,6 +303,9 @@
     .actionTypediv{
         margin-right: 15px;
     }
+    .addPSadvItem{
+        margin-right:30px !important;
+    }
 }
 @media screen and (max-width : 500px) {
     .addRuleContainer{
@@ -340,13 +343,26 @@
     .actionTypediv{
         margin-right: 15px;
     }
+    
+    .groupTypeSelect{
+        margin-right: -10px !important;
+        margin-left: 10px !important;
+    }
+    .togglePictureSelect{
+        font-size: 10px !important;
+    }
+    
 }
 @media screen and (max-width : 415px) {
     .addRuleContainer{
         width: 100%;
         padding: 0px;
         border: none;
+        justify-content: space-around;
         margin: 0px;
+    }
+    .advancedPSlistItem{
+        font-size: 11px;
     }
     .advancedPSList{
         width: 100%;
@@ -366,13 +382,15 @@
     .listCardAdvancedPS{
         width: 80px;
         margin-right: 0px;
-        font-size: 12px;
+        font-size: 11px;
     }
     .betweenInputsContainer{
         width: 100px;
+        margin-left: 10px;
     }
     .addPSadvItem .MuiButton-root{
         width: 40px;
+        margin-right: 20px;
         font-size: 10px;
     }
     .actionTypediv{
@@ -386,5 +404,15 @@
     }
     .addFilterLabelPS{
         display: none;
+    }
+    .togglePictureSelect{
+        margin-left: 10px !important;
+    }
+    .groupTypeSelect{
+        margin-right: -30px !important;
+        margin-left: 10px !important;
+    }
+    .addIconBottonADPS{
+        padding: 3px !important;
     }
 }

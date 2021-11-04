@@ -321,7 +321,7 @@ function AdvancedPS(props) {
                      <div>
                         <FormControl className="addPSadvItem">
                             {
-                                isMobileScreen ? <IconButton className="closeBtnADv" style={{fontSize:"14px" , width:'30px' , padding:'4px' , height:'30px'}}  disabled={(advancedType===-10 )|| (rule===-10 && advancedType!==30)} onClick={handleAddItemAdvPS}>  <AiOutlinePlus/>
+                                isMobileScreen ? <IconButton className="closeBtnADv addIconBottonADPS" style={{fontSize:"14px" , width:'30px' , padding:'4px' , height:'30px'}}  disabled={(advancedType===-10 )|| (rule===-10 && advancedType!==30)} onClick={handleAddItemAdvPS}>  <AiOutlinePlus/>
                                 </IconButton> :
                             <Button disabled={(advancedType===-10 )|| (rule===-10 && advancedType!==30)} onClick={handleAddItemAdvPS}>افزودن
                             <AiOutlinePlus/>

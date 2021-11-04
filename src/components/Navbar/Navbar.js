@@ -45,25 +45,25 @@ function Navbar() {
         <AppBar  position="static">
           <Toolbar className="AppBar" variant="dense">
             <Link className="navLink1" to="/">  
-              <div className={item1 ? 'activeBar1' : ""}>
+              <div className={[item1 ? 'activeBar1' : "",'divNavRes'].join(" ")}>
                     <MdDashboard className="navIcon" style={{color : "#F50057"}}/>
                     <Link className="navLink1 navlinkres" to="/">داشبورد</Link>
                   </div> 
             </Link>
             <Link className="navLink2" to="/RSS">
-              <div className={item2 ? 'activeBar2' : ""}>
+              <div className={[item2 ? 'activeBar2' : "",'divNavRes'].join(" ")}>
                     <FaRssSquare className="navIcon" style={{color:"#F38203"}}/>
                     <Link className="navLink2 navlinkres" to="/RSS">خبرخوان</Link>
                 </div>  
             </Link>
             <Link className="navLink3" to="/Websites">
-              <div className={item3 ? 'activeBar3' : ""}>
+              <div className={[item3 ? 'activeBar3' : "" , 'divNavRes'].join(" ")}>
                   <IoNewspaperOutline className="navIcon"  style={{color:"#24E5A4"}}/>
                   <Link className="navLink3 navlinkres" to="/Websites">خبرگزاری ها</Link>
                 </div>
             </Link>
             <Link className="navLink4" to="/ProSearch">
-              <div className={item4 ? 'activeBar4' : ""}>
+              <div className={[item4 ? 'activeBar4' : "",'divNavRes'].join(" ")}>
                   <AiOutlineSearch className="navIcon"  style={{color:"#764ee3"}}/>
                   <Link className="navLink4 navlinkres" to="/ProSearch">جستجوی پیشرفته</Link>
                 </div>

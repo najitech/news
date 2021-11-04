@@ -5,6 +5,8 @@ import './Search.css'
 import {BsSearch} from 'react-icons/bs' 
 import Filters from '../Filters/Filters';
 import TemporaryDrawer from '../../../../UI/TemporaryDrawer';
+import PSRSidebar from '../../ProSearchPage/ProSearchResult/PSR_Sidebar/PSR_Sidebar';
+import PSR_Sidebar_Filters from '../../ProSearchPage/ProSearchResult/PSR_Sidebar/PSR_Sidebar_Filters';
 function Search() {
     return (
         <div className="search">

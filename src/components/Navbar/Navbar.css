@@ -187,31 +187,40 @@
 }
 @media screen and (max-width: 600px) {
     .AppBar div {
-        width: 160px;
+        width: 120px;
+    }
+    .navlinkres {
+        font-size: 12px;
     }
 }
 
 @media screen and (max-width: 450px) {
     .AppBar div {
-        width: 110px;
+        width: 100px;
     }
     .navlinkres {
-        font-size: 12px;
+        font-size: 10px;
     }
 }
 @media screen and (max-width: 400px) {
     .AppBar div {
-        width: 110px;
+        width: 90px;
     }
     .navlinkres {
-        font-size: 12px;
+        font-size: 9px;
+    }
+    .navIcon{
+        font-size: 19px;
+    }
+    .divNavRes{
+        display: flex;
+        flex-direction: column;
+        padding : 6px 0px !important;
     }
 }
 @media screen and (max-width: 370px) {
     .AppBar div {
-        width: 80px;
+        width: 70px;
     }
-    .navlinkres {
-        font-size: 11px;
-    }
+    
 }

@@ -5,29 +5,28 @@ import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import RestoreIcon from '@material-ui/icons/Restore';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
-
+import { AiFillInstagram, AiFillTwitterCircle } from 'react-icons/ai';
+import { FaRssSquare, FaTelegram } from 'react-icons/fa';
+import './BottomNavSocial.css'
 const useStyles = makeStyles({
-  root: {
-    width: 500,
-  },
 });
 
-export default function BottomNavSocial() {
+export default function BottomNavSocial(props) {
   const classes = useStyles();
-  const [value, setValue] = React.useState(0);
-
+  const {social , handleSocial} = props;
+  const handleSelect = (e)=>{
+      handleSocial(e);
+  }
   return (
     <BottomNavigation
-      value={value}
+      value={social}
       onChange={(event, newValue) => {
-        setValue(newValue);
-      }}
-      showLabels
-      className={classes.root}
-    >
-      <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
-      <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
-      <BottomNavigationAction label="Nearby" icon={<LocationOnIcon />} />
+        handleSelect(newValue);
+      }} className={[classes.root , "navigationBottomPS"].join(" ")}>
+      <BottomNavigationAction className="instagramNavBotton" value={1} label="Instagram" icon={<AiFillInstagram className="iconNavBottom"/>} />
+      <BottomNavigationAction className="twitterNavBottom" value={2} label="Twitter" icon={<AiFillTwitterCircle className="iconNavBottom"/>} />
+      <BottomNavigationAction className="rssNavBottom" value={3} label="Rss" icon={<FaRssSquare className="iconNavBottom"/>} />
+      <BottomNavigationAction className="telegramNavBottom" value={4} label="Telegram" icon={<FaTelegram className="iconNavBottom"/>} />
     </BottomNavigation>
   );
 }
