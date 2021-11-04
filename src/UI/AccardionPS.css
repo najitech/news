@@ -67,3 +67,8 @@
 }
 .marginPS hr{
 }
+@media screen and (max-width : 500px) {
+    .fontAccardionPS{
+      font-size: 12px !important;
+    }
+}

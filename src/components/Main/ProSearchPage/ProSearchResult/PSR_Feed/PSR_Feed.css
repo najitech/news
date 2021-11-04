@@ -102,6 +102,14 @@
 .PSR_TopFeedContainer{
     position: relative;
 }
+.DarkdrawerPSRContainer{
+    height:100vh;
+    background-color:#2D2C56 !important;
+}
+.LightdrawerPSRContainer{
+    height: 100vh;
+    background-color: white !important;
+}
 @media screen and (max-width : 1434px) {
     .PSR_Feed {
         flex:0.8;
@@ -136,5 +144,10 @@
     .PSR_BottomNavContainer {
         display: inline;
     }
+}
+
+.PSR_SortContainer {
+    margin:0px auto;
+    margin-top:10px;
 }
 

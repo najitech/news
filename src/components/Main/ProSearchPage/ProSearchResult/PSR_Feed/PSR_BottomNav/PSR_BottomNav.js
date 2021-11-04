@@ -8,7 +8,6 @@ import LocationOnIcon from '@material-ui/icons/LocationOn';
 import { AiFillInstagram, AiFillTwitterCircle } from 'react-icons/ai';
 import { FaRssSquare, FaTelegram } from 'react-icons/fa';
 import './PSR_BottomNav.css'
-import { DiGhostSmall } from 'react-icons/di';
 const useStyles = makeStyles({
 });
 
@@ -24,11 +23,10 @@ export default function BottomNavSocial(props) {
       onChange={(event, newValue) => {
         handleSelect(newValue);
       }} className={[classes.root , "PSR_navigationBottomPS"].join(" ")}>
-      <BottomNavigationAction className="PSR_telegramNavBottom resNavSize"  value={5} label="همه" icon={<DiGhostSmall className="PSR_iconNavBottom"/>} />
-      <BottomNavigationAction className="PSR_instagramNavBotton resNavSize" value={1} label="Instagram" icon={<AiFillInstagram className="PSR_iconNavBottom"/>} />
-      <BottomNavigationAction className="PSR_twitterNavBottom resNavSize" value={2} label="Twitter" icon={<AiFillTwitterCircle className="PSR_iconNavBottom"/>} />
-      <BottomNavigationAction className="PSR_rssNavBottom resNavSize" value={3} label="Rss" icon={<FaRssSquare className="PSR_iconNavBottom"/>} />
-      <BottomNavigationAction className="PSR_telegramNavBottom resNavSize" value={4} label="Telegram" icon={<FaTelegram className="PSR_iconNavBottom"/>} />
+      <BottomNavigationAction className="PSR_instagramNavBotton" value={1} label="Instagram" icon={<AiFillInstagram className="PSR_iconNavBottom"/>} />
+      <BottomNavigationAction className="PSR_twitterNavBottom" value={2} label="Twitter" icon={<AiFillTwitterCircle className="PSR_iconNavBottom"/>} />
+      <BottomNavigationAction className="PSR_rssNavBottom" value={3} label="Rss" icon={<FaRssSquare className="PSR_iconNavBottom"/>} />
+      <BottomNavigationAction className="PSR_telegramNavBottom" value={4} label="Telegram" icon={<FaTelegram className="PSR_iconNavBottom"/>} />
     </BottomNavigation>
   );
 }

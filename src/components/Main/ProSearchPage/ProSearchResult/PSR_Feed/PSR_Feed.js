@@ -9,11 +9,14 @@ import TempDrawerPS from '../../../../../UI/TempDrawerPS'
 import PSR_BottomNav from './PSR_BottomNav/PSR_BottomNav'
 import PSR_Sidebar from '../PSR_Sidebar/PSR_Sidebar';
 import PSR_Drawer from './PSR_Drawer/PSR_Drawer';
+import SortWebsite from '../../../Websites/SortWebsite/SortWebsite';
+import PSR_Sort from './PSR_Sort/PSR_Sort';
 
 
 function PSR_Feed(props) {
 
     const [social , handleSocial] = useState(1);
+    const [socialMobile , handleSocialMobile] = useState([1]);
     const handleSelect = (e)=>{
         handleSocial(e);
     }
@@ -44,7 +47,7 @@ function PSR_Feed(props) {
             <PSR_TopSlider/>
             <div className="PSR_TopFeedContainer"> 
                 <TempDrawerPS class="toggleBtnFilterPS">
-                    <div style={{height:"100vh"}}>
+                    <div className={props.theme ==='lightTheme' ? "DarkdrawerPSRContainer" : 'LightdrawerPSRContainer'}>
                     <PSR_Drawer setTheme={props.setTheme}/>
                     </div>
                 </TempDrawerPS>    
@@ -71,6 +74,10 @@ function PSR_Feed(props) {
                     </div>
                 </div>
             </div>  
+            <div className="PSR_SortContainer">
+                <PSR_Sort social={social}/>
+            </div>
+ 
             <PSR_Posts type={social===1 ? "instagram" : social===2? "twitter" : social===3? "rss" : social ===4? "telegram" : social===5? "all" : ""}/>
             <div className="PSR_BottomNavContainer">
                 <PSR_BottomNav social={social} handleSocial={handleSocial}/>
