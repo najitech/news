@@ -15,6 +15,7 @@ import persian_fa from "react-date-object/locales/persian_fa";
 import TextField from '@material-ui/core/TextField';
 import { withStyles } from '@material-ui/core/styles';
 import { FaRssSquare, FaTelegram } from 'react-icons/fa';
+import { useMediaQuery } from 'react-responsive';
 const advancedTypeLabel = {
     "likes" : 'تعداد لایک',
     "views" : 'تعداد بازدید',
@@ -122,6 +123,8 @@ function AdvancedPS(props) {
       const handleCheckPicture = (event) => {
         setCheckPicture( event.target.checked );
       };
+      
+    const isMobileScreen = useMediaQuery({query :'(max-width : 500px)'});
     const handleAddItemAdvPS = ()=>{
         //set to default : 
         if(advancedType === -10)
@@ -317,9 +320,13 @@ function AdvancedPS(props) {
                      </div> 
                      <div>
                         <FormControl className="addPSadvItem">
+                            {
+                                isMobileScreen ? <IconButton className="closeBtnADv" style={{fontSize:"14px" , width:'30px' , padding:'4px' , height:'30px'}}  disabled={(advancedType===-10 )|| (rule===-10 && advancedType!==30)} onClick={handleAddItemAdvPS}>  <AiOutlinePlus/>
+                                </IconButton> :
                             <Button disabled={(advancedType===-10 )|| (rule===-10 && advancedType!==30)} onClick={handleAddItemAdvPS}>افزودن
                             <AiOutlinePlus/>
                             </Button>
+                            }
                         </FormControl>
                      </div>
                 </div>
