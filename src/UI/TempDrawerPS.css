@@ -28,7 +28,12 @@
         display: block !important ;
     }
 }
-@media screen and (max-width : 528px) {
+@media screen and (max-width : 667px) {
+    .toggleBtnFilterPS{
+        right:1% !important;
+    }
+}
+@media screen and (max-width : 576px) {
     .toggleBtnFilterPS{
         display: none !important ;
     }
