@@ -123,6 +123,7 @@ function ProSearch(props) {
         }
     }
     const handleSocial = (e)=>{
+        setTypeTw(4);
         setSocial(e);
     }
     const handleDeleteChip = (data)=>{
