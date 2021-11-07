@@ -288,7 +288,7 @@ function ProSearch(props) {
             </div>
             <Collapse {...( { timeout: 1000 })} in={isMobileScreen}>
             <div className="navBottonPS">    
-                        <BottomNavSocial isMark={[counterTags(instagram , 1), counterTags(twitter,2) ,counterTags(rss,3) , counterTags(telegram , 4)]} handleSocial={handleSocial} social={social} className="navBottonsAd"/>  
+                        <BottomNavSocial  isMark={[counterTags(instagram , 1), counterTags(twitter,2) ,counterTags(rss,3) , counterTags(telegram , 4)]} handleSocial={handleSocial} social={social} className="navBottonsAd"/>  
             </div>
             </Collapse>
         </div>
