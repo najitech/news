@@ -1,0 +1,6 @@
+.KP_Body {
+    flex:0.7;
+    display: flex;
+    background-color: green;
+    height: 100%;
+}

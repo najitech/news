@@ -1,0 +1,12 @@
+.KeywordPage {
+    height: 100%;
+    overflow-y: scroll;
+}
+.KeywordPageContainter{
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+    width: 100%;
+    background-color: red;
+    position: relative;
+}

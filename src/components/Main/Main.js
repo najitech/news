@@ -5,21 +5,23 @@ import './Main.css'
 import TheLayout from '../../containers/TheLayout'
 import ProSearchContainer from './ProSearchPage/ProSearchContainer'
 import Websites from './Websites/Websites'
+import KeywordPage from './KeywordPage/KeywordPage'
 function Main() {
     return (
         <div className="Main">
                 <Switch>
                     <Route exact path="/">
-                        <TheLayout/>
+                        {/*<TheLayout/>*/}
+                        <KeywordPage/>
                     </Route>
                     <Route path="/RSS">
-                        <Rss/>
+                        {/*<Rss/>*/}
                     </Route>
                     <Route path="/Websites">
-                        <Websites/>
+                        {/*<Websites/>*/}
                     </Route>
                     <Route path="/ProSearch">
-                        <ProSearchContainer/>
+                        {/*<ProSearchContainer/>*/}
                     </Route>
                 </Switch>
         </div>
