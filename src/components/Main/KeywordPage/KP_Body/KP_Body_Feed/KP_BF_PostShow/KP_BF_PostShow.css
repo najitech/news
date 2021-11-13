@@ -1,0 +1,86 @@
+.KP_PostShow{
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding: 5px 20px;
+    border-bottom: 2px solid var(--background-colorKPPost);
+    margin-bottom: 2px;
+}
+.instagramThemeKPPost{
+    --boxshadowFadeKPPost :#c135841c;
+    --colorKPPost : #c13584d0;
+    --background-colorKPPost: #c1358444;
+}
+.twitterThemeKPPost{
+    --boxshadowFadeKPPost :#62bee23b;
+    --colorKPPost : #00abeee1;
+    --background-colorKPPost: #b6dcf393;
+}
+.rssThemeKPPost{
+    --boxshadowFadeKPPost :#f264221f;
+    --colorKPPost : #f26422d8;
+    --background-colorKPPost: #eca17f71;
+}
+.telegramThemeKPPost{
+    --boxshadowFadeKPPost :#0088cc1e;
+    --colorKPPost : #0088ccd2;
+    --background-colorKPPost: #b1dff570;
+}
+.PostCo_KP{
+    display: flex;
+    align-items: center;
+}
+.postContent_KP{
+    margin-right: 4px;
+    width: 500px;
+
+} 
+.postContent_KP h5{
+    margin: 0px;
+    font-weight: bold;
+    margin-bottom:3px;
+    font-size: 14px;
+}
+.postContent_KP p{
+    white-space: nowrap;
+    padding: 0px;
+    margin:0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.postImageAvatarKP{
+    border-radius: 10px !important;
+    height: 50px !important;
+    width: 50px !important;
+    box-shadow : 2px 2px 20px 0px var(--boxshadowFadeKPPost) ,-1px -1px 20px 0px var(--boxshadowFadeKPPost) !important;
+}
+.poster_KP_Post{
+    background-color:var(--background-colorKPPost);
+    display: flex;
+    min-width: 140px;
+    align-items: center; 
+    border-radius: 30px;
+    margin-right: 20px;
+    padding: 0px 6px;
+    box-shadow : 5px 5px 15px 0px var(--boxshadowFadeKPPost) ,-2px -2px 15px 0px var(--boxshadowFadeKPPost);
+}
+.postUserAvatarKP{
+    height: 35px !important;
+    width: 35px !important;
+    border : 3px solid var(--colorKPPost) !important;
+}
+.poster_KP_Post h4{
+    padding: 0px;
+    font-weight: bold;
+    margin: 0px;
+    color: var(--colorKPPost);
+    font-size: 12px;
+    margin-right: 10px;
+}
+.postIcon_KP{
+    position: absolute;
+    left: 10px;
+    font-size: 30px;
+    top: 15%;
+    color: var(--colorKPPost);
+}

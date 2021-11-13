@@ -5,5 +5,13 @@
 }
 .KP_BF_list {
     flex:0.7;
-    background-color: cyan;
+}
+.KP_Sort_Search{
+    display: flex;
+    align-items: center;
+}
+.postListDivKP{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }

@@ -1,4 +1,29 @@
 .KP_Body_Widgets {
     flex:0.25;
-    background-color: blueviolet;
+}
+.TopKeywoardWidget{
+    background-color: white;
+    margin: auto 25px;
+    border-radius: 14px;
+    box-shadow: 4px 4px 5px 1px rgba(214, 214, 214, 0.4) , -5px -5px 20px 1px rgba(214, 214, 214, 0.4);
+    padding:10px 20px;
+}
+.TopKeywoardWidget h4{
+    font-size: 16.6px;
+    color: rgb(97, 97, 97);
+}
+.TopKeywoardWidget .MuiChip-root{
+    background-color: #764ee3;
+    color : #E8E4F1;      
+    font-size: 10px;  
+    height: 28px;
+}
+.TopKeywoardWidget .MuiChip-root:focus{
+    background-color: #8d6de6;
+}
+.TopKeywoardWidget .MuiChip-deleteIcon{  
+    color : #E8E4F1;
+}
+.TopKeywoardWidget .MuiChip-deleteIcon:hover{
+    color : #ebe6ffa9;
 }

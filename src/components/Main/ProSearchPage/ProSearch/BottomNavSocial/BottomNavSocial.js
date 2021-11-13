@@ -29,7 +29,7 @@ export default function BottomNavSocial(props) {
       <BottomNavigationAction className="instagramNavBotton" value={1} label="Instagram" icon={<Badge overlap="circular" badgeContent={props.isMark[0]} color="secondary"><AiFillInstagram className="iconNavBottom"/> </Badge>} />
       <BottomNavigationAction className="twitterNavBottom" value={2} label="Twitter" icon={<Badge overlap="circular" badgeContent={props.isMark[1]}  color="secondary"><AiFillTwitterCircle className="iconNavBottom"/> </Badge>}/>
       <BottomNavigationAction className="rssNavBottom" value={3} label="Rss" icon={<Badge overlap="circular" badgeContent={props.isMark[2]}  color="secondary"><FaRssSquare className="iconNavBottom"/> </Badge> } />
-      <BottomNavigationAction className="telegramNavBottom" value={4} label="Telegram" icon={<Badge overlap="circular" badgeContent={props.isMark[3]}  color="secondary"><FaTelegram className="iconNavBottom"/></Badge>} />
+      <BottomNavigationAction className="telegramNavBottom" value={4} label="Telegram" icon={<Badge overlap="circular" badgeContent={props.isMark[3 ]}  color="secondary"><FaTelegram className="iconNavBottom"/></Badge>} />
     </BottomNavigation>
   );
 }
