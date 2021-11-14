@@ -17,6 +17,7 @@
 }
 .holerepeatListKP{
     text-align: center;
+    width: 80px;
     padding-right: 5px;
 }
 .keyContainerLP{
@@ -91,7 +92,7 @@
     font-size: 20px;
 }
 .sumNumKPlist{
-    margin-right: 100px;
+    margin-right: 50px;
     min-width: 130px;
 }
 

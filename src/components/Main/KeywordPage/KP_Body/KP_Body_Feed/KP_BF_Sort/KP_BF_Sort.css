@@ -1,14 +1,13 @@
-.PSR_Sort{
-    width: 100%;
+.PSR_Sort_KP{
     direction: ltr;
+    width: 480px;
 }
 .togSort{
     flex:0.3;
     border-radius: none !important;
     height: 30px;
 }
-.selectSort{
-    width: 100px;
+.selectSortKP{
     border-radius: 0px !important;   
 }
 .sortSelectBtn{

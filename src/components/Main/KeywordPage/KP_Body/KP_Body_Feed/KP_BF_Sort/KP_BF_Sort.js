@@ -32,7 +32,7 @@ function PK_BF_Sort(props) {
     const mobileSize = useMediaQuery({query :'(max-width : 580px)'});
     const buttonName = ['نام' , 'جدید ترین' , 'بیشترین داده' , 'پربازدیدترین '];
     return (    
-        <div className="PSR_Sort">
+        <div className="PSR_Sort_KP">
             <div className="KP_Sortasas">   
                 <MdSort className="KP_sortIconRss" color={props.social===1? "#764ee3" : props.social===2? "#16b8e0" :props.social===3?"#f26522 " :props.social===4?"#4abcf5" :props.social===5?"#4abcf5" : ""}/>
                 <p>مرتب سازی بر اساس :  </p>
