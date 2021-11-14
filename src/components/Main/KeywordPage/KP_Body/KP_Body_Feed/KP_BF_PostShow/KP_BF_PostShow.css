@@ -5,6 +5,10 @@
     padding: 5px 20px;
     border-bottom: 2px solid var(--background-colorKPPost);
     margin-bottom: 2px;
+    cursor: pointer;
+}
+.KP_PostShow:hover{
+    background-color: rgba(151, 151, 151, 0.192);
 }
 .instagramThemeKPPost{
     --boxshadowFadeKPPost :#c135841c;

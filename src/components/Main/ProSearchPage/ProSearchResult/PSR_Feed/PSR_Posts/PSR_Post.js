@@ -26,13 +26,12 @@ function PSR_Post(props) {
       };
 
     const handleClose = () => {
-        console.log('called')
         setOpen(false);
       };
       
     const isMobileScreen = useMediaQuery({query :'(max-width : 1000px)'});
     const ThemeColor = React.useContext(ThemeColorContext);
-    return (
+    return (    
         <div>
             {ThemeColor==="lightTheme" ?!isMobileScreen ?  <ModalPS open={open} setOpen={setOpen} image={"https://i.insider.com/5d91fdb36f24eb3da40c3e29?width=750&format=jpeg&auto=webp"} positiveness={10} title={"عنوان آزمایشی"} text={"گاهی وارد طبیعت شو و بگذار که نسیمی خنک و زیبا چهره ات را نوازش کند. اگر کمی با خود بیندیشی، می بینی که تمام زیبایی های زندگی در همین است. عده ای همواره به دنبال ثروت هستند، عده ای به دنبال جای و مقام هستند و عده ای هم کامل از همه چیز بریده اند و دیگر امیدی به زندگی ندارند. آنها زیبایی های زندگی را فراموش کرده اند. همینکه گاهی اوقات وارد طبیعت شوی و از زیبایی های آن لذت ببری، خود یک نعمت بزرگ است. همینکه بگذاری آن نسیم خنک صورتت را نوازش کند، خود یک ثروت بزرگ است. ثروت ها همین ها هستند که گاهی نادیده گرفته می شون"} publish_date={"14/06/1400"} handleClose={handleClose} PostProps={props} />:
             <ModalPSres open={open} setOpen={setOpen} image={"https://i.insider.com/5d91fdb36f24eb3da40c3e29?width=750&format=jpeg&auto=webp"} positiveness={10} title={"عنوان آزمایشی"} text={"گاهی وارد طبیعت شو و بگذار که نسیمی خنک و زیبا چهره ات را نوازش کند. اگر کمی با خود بیندیشی، می بینی که تمام زیبایی های زندگی در همین است. عده ای همواره به دنبال ثروت هستند، عده ای به دنبال جای و مقام هستند و عده ای هم کامل از همه چیز بریده اند و دیگر امیدی به زندگی ندارند. آنها زیبایی های زندگی را فراموش کرده اند. همینکه گاهی اوقات وارد طبیعت شوی و از زیبایی های آن لذت ببری، خود یک نعمت بزرگ است. همینکه بگذاری آن نسیم خنک صورتت را نوازش کند، خود یک ثروت بزرگ است. ثروت ها همین ها هستند که گاهی نادیده گرفته می شون"} publish_date={"14/06/1400"} handleClose={handleClose} PostProps={props} />

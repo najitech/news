@@ -8,6 +8,7 @@
 }
 .KP_Sort_Search{
     display: flex;
+    background-color: none;
     align-items: center;
 }
 .postListDivKP{
