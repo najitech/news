@@ -14,21 +14,25 @@
     --boxshadowFadeKPPost :#c135841c;
     --colorKPPost : #c13584d0;
     --background-colorKPPost: #c1358444;
+    --background-colorKP :#ffdbef; 
 }
 .twitterThemeKPPost{
     --boxshadowFadeKPPost :#62bee23b;
     --colorKPPost : #00abeee1;
     --background-colorKPPost: #b6dcf393;
+    --background-colorKP :#e4f5ff; 
 }
 .rssThemeKPPost{
     --boxshadowFadeKPPost :#f264221f;
     --colorKPPost : #f26422d8;
     --background-colorKPPost: #eca17f71;
+    --background-colorKP : #ffefe8;
 }
 .telegramThemeKPPost{
     --boxshadowFadeKPPost :#0088cc1e;
     --colorKPPost : #0088ccd2;
     --background-colorKPPost: #b1dff570;
+    --background-colorKP :#def3fd; 
 }
 .PostCo_KP{
     display: flex;
