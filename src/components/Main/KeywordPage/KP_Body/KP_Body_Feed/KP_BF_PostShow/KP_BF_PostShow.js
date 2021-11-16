@@ -17,7 +17,7 @@ function KP_BF_PostShow(props) {
       };
     return (
         <div>
-            <KP_BF_ModalP open={open} social={props.social} image={props.image} alt={props.alt} title={props.title} text={props.summary} username={props.username} avatar={props.avatar}  setOpen={setOpen} handleClose={handleClose}/>
+            <KP_BF_ModalP open={open} top={props.top} social={props.social} image={props.image} alt={props.alt} title={props.title} text={props.summary} username={props.username} avatar={props.avatar}  setOpen={setOpen} handleClose={handleClose}/>
             <div onClick={handleOpen} className={["KP_PostShow",props.social === 1 ?"instagramThemeKPPost"  :props.social === 2 ?'twitterThemeKPPost' :props.social===3 ? 'rssThemeKPPost' :"telegramThemeKPPost"].join(" ")}>
             <div className="PostCo_KP">
                 <div className="imageContainerKP_Post"><Avatar className="postImageAvatarKP" src={props.image} alt={props.alt}/></div>
@@ -31,6 +31,13 @@ function KP_BF_PostShow(props) {
                 <div className="poster_KP_Content">
                     <h4>{props.username}</h4>
                 </div>
+            </div>
+            <div className="post_KP_topFive">
+                <div className="chip_keywoard_post">{props.top[0]}</div>
+                <div className="chip_keywoard_post">{props.top[1]}</div>
+                <div className="chip_keywoard_post">{props.top[2]}</div>
+                <div className="chip_keywoard_post">{props.top[3]}</div>
+                <div className="chip_keywoard_post">{props.top[4]}</div>
             </div>
             <div className="postIcon_KP">
                 {props.social === 1 ? <AiFillInstagram/> : props.social === 2 ? <AiFillTwitterCircle/> : props.social === 3  ? <BsFillRssFill/> : <BsTelegram/>}

@@ -1,7 +1,7 @@
 import { ExpansionPanel, ExpansionPanelDetails, ExpansionPanelSummary, makeStyles, Typography, Button } from '@material-ui/core'
 import React from 'react'
 import './KP_BF_ListItem.css'
-import {AiFillEye, AiFillInstagram, AiFillTwitterCircle} from 'react-icons/ai'
+import {AiFillEye, AiFillInstagram, AiFillTwitterCircle, AiOutlineSearch} from 'react-icons/ai'
 import {BsFillRssFill, BsTelegram} from 'react-icons/bs';
 import {GoKey} from 'react-icons/go'
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
@@ -45,7 +45,7 @@ function KP_BF_ListItem(props) {
                     <div className="extenKPCo">
                         <div className="keyContainerLP">
                             <div className="holerepeatListKP">
-                                <h4>{props.title}</h4>
+                                <h4 style={{fontWeight:'bold' , textShadow:'1px 1px 1px 1px grey'}}>{props.title}</h4>
                             </div>
                         </div>
                         <div className="numShowHList instagram_NumACCHead">
@@ -65,11 +65,15 @@ function KP_BF_ListItem(props) {
                             <span>{nFormatter(parseInt(props.telegram))}</span>
                         </div>
                         <div className="sumNumKPlist">
-                            <span>تعداد تکرار  : {nFormatter(parseInt(props.sum))}</span>
+                            <span>تعداد تکرار  : <span style={{fontWeight:'bold' , color:'#764ee3' ,borderBottom:'1px solid #764ee38f'}}>{nFormatter(parseInt(props.sum))}</span></span>
                         </div>
                         <div className="openExtentionBtn">
+                            <Button className="searchBtnKP"><AiOutlineSearch style={{fontSize:'22px' , paddingLeft:'3px'}}/>جستجو</Button>
+                        </div>
+                        <div className="">
                             <Button className="extBtnKP"><AiFillEye style={{fontSize:'22px' , paddingLeft:'3px'}}/>نمایش پست ها</Button>
                         </div>
+                        
                     </div>
                 </div>
                 </ExpansionPanelSummary>

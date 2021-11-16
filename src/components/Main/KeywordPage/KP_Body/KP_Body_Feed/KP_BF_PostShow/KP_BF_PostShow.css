@@ -40,7 +40,7 @@
 }
 .postContent_KP{
     margin-right: 4px;
-    width: 500px;
+    width: 400px;
 
 } 
 .postContent_KP h5{
@@ -91,4 +91,26 @@
     font-size: 30px;
     top: 15%;
     color: var(--colorKPPost);
+}
+.post_KP_topFive{
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 11px;
+    margin-right: 10px;
+    justify-content: space-evenly;
+    width: 280px;
+    margin-bottom: 2px;
+    text-align: center;
+}
+.post_KP_topFive div{
+    padding:5px 5px;
+    margin: 4px 2px;
+    text-align: center;
+    border-radius: 7px;
+    color: white;
+    color: var(--colorKPPost);
+    background-color: var(--boxshadowFadeKPPost);
 }

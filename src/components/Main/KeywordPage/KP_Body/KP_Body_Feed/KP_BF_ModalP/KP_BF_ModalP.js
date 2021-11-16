@@ -50,6 +50,7 @@ function KP_BF_ModalP(props) {
                     </div>
                   </div>
                   <div style={{flex:'0.5'}}><img width="100%" className="modalPostImage_KP" src={props.image} alt={props.alt}/></div>
+                  
                   <div className="modalPostKPUserContainer">
                       <div><Avatar className="modalPostAvatar_KP" src={props.avatar}/></div>
                       <div className="usernamePostModal_KP">
@@ -57,7 +58,7 @@ function KP_BF_ModalP(props) {
                       </div>
                     </div>
                 </div>
-                
+            
             </Fade>
       </Modal>
         </div>

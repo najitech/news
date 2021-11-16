@@ -66,3 +66,16 @@
     padding-right: 4px;
     font-weight: bold;
 }
+.post_KP_topFiveMOdal{
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 14px;
+    margin-right: 10px;
+    justify-content: space-evenly;
+    width: 280px;
+    margin-bottom: 2px;
+    text-align: center;
+}
