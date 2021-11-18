@@ -130,17 +130,15 @@ function KP_Header_box(props) {
 
             </div>
 
-            <div className="KP_HeaderBox_DataResultContainer">
-                <div className="KP_HeaderBox_TodayResult">
-                    <span>داده ی امروز </span>
-                    <span className="KP_HeaderBox_dataNumber">34.324K</span>
-                </div>
-                <div className="KP_HeaderBox_WeekResult">
-                <span>داده های هفته </span>
-                <span className="KP_HeaderBox_dataNumber">5434.3K</span>
-                </div>
+            <div className="KP_HeaderBox_TodayResult">
+                <span>کلمات کلیدی دریافتی امروز </span>
+                <span className="KP_HeaderBox_dataNumber">34.324K</span>
             </div>
-            <Chart className="KP_Header_TopSlider_chart" options={chartCircle2.options} series={chartCircle2.series} type="line" height={50} width={190}/>
+            <div className="KP_HeaderBox_WeekResult">
+            <span>کلمات کلیدی دریافتی هفته </span>
+            <span className="KP_HeaderBox_dataNumber">5434.3K</span>
+            </div>
+        
         </div>
     )
 }

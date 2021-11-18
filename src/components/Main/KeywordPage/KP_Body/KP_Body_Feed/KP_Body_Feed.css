@@ -6,9 +6,12 @@
 .KP_BF_list {
     flex:0.7;
 }
+.KP_BF_Main {
+    margin-top:20px;
+}
 .KP_Sort_Search{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-color: none;
     align-items: center;
 }
