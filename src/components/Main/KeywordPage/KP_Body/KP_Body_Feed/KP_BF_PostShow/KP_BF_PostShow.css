@@ -39,7 +39,7 @@
     align-items: center;
 }
 .postContent_KP{
-    margin-right: 4px;
+    margin-right: 7px;
     width: 400px;
 
 } 
@@ -58,9 +58,9 @@
     text-overflow: ellipsis;
 }
 .postImageAvatarKP{
-    border-radius: 10px !important;
-    height: 50px !important;
-    width: 50px !important;
+    border-radius: 5px !important;
+    height: 40px !important;
+    width: 40px !important;
     box-shadow : 2px 2px 20px 0px var(--boxshadowFadeKPPost) ,-1px -1px 20px 0px var(--boxshadowFadeKPPost) !important;
 }
 .poster_KP_Post{
@@ -117,4 +117,16 @@
     color: white;
     color: var(--colorKPPost);
     background-color: var(--boxshadowFadeKPPost);
+}
+.KPWidgetIconKP_Post{
+    padding:4px;
+    border-radius: 50%;
+    width: 23px;
+    height: 23px;
+    color: white;
+}
+
+.KPWidget_twitterIconPost {
+    background:linear-gradient(45deg, #66757f, #00ACEE, #36D8FF, #f5f8fa);
+    
 }

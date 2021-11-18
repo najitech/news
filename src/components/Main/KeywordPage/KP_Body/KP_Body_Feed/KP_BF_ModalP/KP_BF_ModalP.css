@@ -48,22 +48,22 @@
     display: flex;
     background-color:var(--background-colorKP);
     border-radius: 30px;
-    min-width: 140px;
+    min-width: 110px;
     padding: 4px 6px;
     align-items: center;
 }
 .modalPostAvatar_KP{
-    height: 40px !important;
-    width: 40px !important;
-    border : 3px solid var(--colorKPPost) !important;
+    height: 25px !important;
+    width: 25px !important;
+    border : 0px solid var(--colorKPPost) !important;
 }
 .usernamePostModal_KP h5{
     
     color: var(--colorKPPost);
-    font-size: 17px;
+    font-size: 10px;
     padding: 0px ;
     margin: 0px;
-    padding-right: 4px;
+    padding-right: 7px;
     font-weight: bold;
 }
 .post_KP_topFiveMOdal{

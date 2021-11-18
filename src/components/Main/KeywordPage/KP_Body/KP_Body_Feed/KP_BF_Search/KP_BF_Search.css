@@ -1,77 +1,34 @@
 .searchBoxKP{
     display: flex;
     box-shadow: 4px 4px 5px 1px rgba(214, 214, 214, 0.4) , -5px -5px 20px 1px rgba(214, 214, 214, 0.4);
-    border-radius: 5px;
+    border-radius: 13px;
     margin-bottom: 1px;
 }
 .searchBoxKP input { 
     width: 400px;
     font-size: 13px;
     padding: 1px 10px;
-    border-top-right-radius: 3px !important;
+    border-top-right-radius: 13px !important;
     border: none;
     outline: none;
-    border-bottom-right-radius: 3px !important;
+    border-bottom-right-radius: 13px !important;
+}
+.searchBoxKP input::placeholder{
+    color: grey;
+    padding: 0px;
 }
 .searchBtnKPList{
-    height: 28.3px !important;
+    height: 32px !important;
     padding: 0px !important;
+    width: 50px !important;
     background-color: #764ee3 !important;
     color: white !important;
+    border-radius: 14px !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
     border-top-right-radius: 0px !important;
     border-bottom-right-radius: 0px !important;
 }
-
-.searchBox {
-
-    transform:  translate(-50%,50%);
-    background: #2f3640;
-    height: 40px;
-    border-radius: 40px;
-    padding: 10px;
-
-}
-
-.searchBox:hover > .searchInput {
-    width: 240px;
-    padding: 0 6px;
-}
-
-.searchBox:hover > .searchButton {
-  background: white;
-  color : #2f3640;
-}
-
-.searchButton {
-    color: white;
-    float: right;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: #2f3640;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.4s;
-}
-
-.searchInput {
-    border:none;
-    background: none;
-    outline:none;
-    float:left;
-    padding: 0;
-    color: white;
-    font-size: 16px;
-    transition: 0.4s;
-    line-height: 40px;
-    width: 0px;
-
-}
-
-@media screen and (max-width: 620px) {
-.searchBox:hover > .searchInput {
-    width: 150px;
-    padding: 0 6px;
-}
+.searchBoxKP input:focus .searchBtnKPList{
+    background-color: #50d890 !important;
 }
