@@ -1,6 +1,7 @@
 import { Avatar } from '@material-ui/core'
 import React from 'react'
 import { AiFillInstagram, AiFillTwitterCircle } from 'react-icons/ai'
+import { BiRss } from 'react-icons/bi'
 import { BsFillRssFill, BsTelegram } from 'react-icons/bs'
 import KP_BF_ModalP from '../KP_BF_ModalP/KP_BF_ModalP'
 import './KP_BF_PostShow.css'
@@ -40,7 +41,10 @@ function KP_BF_PostShow(props) {
                 <div className="chip_keywoard_post">{props.top[4]}</div>
             </div>
             <div className="postIcon_KP">
-                {props.social === 1 ? <AiFillInstagram/> : props.social === 2 ? <AiFillTwitterCircle/> : props.social === 3  ? <BsFillRssFill/> : <BsTelegram/>}
+                {props.social === 1 ? 
+                    <AiFillInstagram className="KPWidget_instgramIcon KPWidgetIconKP_Post"/>  : props.social === 2 ? 
+                    <AiFillTwitterCircle className="KPWidget_twitterIconPost KPWidgetIconKP_Post"/>  : props.social === 3  ? 
+                    <BiRss className="KPWidget_rssIcon KPWidgetIconKP_Post"/>: <BsTelegram style={{fontSize:'22px'}}/>}
             </div>
         </div>
         </div>

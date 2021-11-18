@@ -20,3 +20,15 @@
     display: flex;
     flex-direction: column;
 }
+.indexPostListItemKP{
+    margin-top: -10px;
+    margin-bottom: 8px;
+}
+.indexPostListItemKP span {
+    padding: 0px;
+    border-bottom: 2px solid #b09aec8c;
+    padding-bottom: 5px;
+}
+.indexPostListItemKP:first-child{
+    margin-right: 20px;
+}

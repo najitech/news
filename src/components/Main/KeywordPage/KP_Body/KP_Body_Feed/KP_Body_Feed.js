@@ -1,4 +1,5 @@
 import React from 'react'
+import PSR_ItemsSort from '../../../ProSearchPage/ProSearchResult/PSR_Feed/PSR_Sort/PSR_ItemsSort'
 import PSR_Sort from '../../../ProSearchPage/ProSearchResult/PSR_Feed/PSR_Sort/PSR_Sort'
 import KP_BF_chart from './KP_BF_chart'
 import KP_BF_ListItem from './KP_BF_ListItem/KP_BF_ListItem'
@@ -18,6 +19,7 @@ function KP_Body_Feed() {
                 </div>
                 <KP_BF_ListItem sum="10549834" instagram="49535" twitter="578345" rss="15865" telegram="854653" rad off title="مشهد">
                     <div className="postListDivKP">
+                        <div className="indexPostListItemKP"><span> عکس </span><span style={{marginRight:'150px'}}> عنوان و توضیحات  { /*item.title? "عنوان و توضیح": "عنوان"*/}</span><span style={{marginRight:'195px'}}>اطلاعات فرستنده</span><span style={{marginRight:'130px'}}>5 کلمه کلیدی برتر</span></div>
                         <KP_BF_PostShow top={['مشهد','گرگان ','تهران' , 'ایران', 'اخبار']}
                                         image="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" 
                                         summary="این یک پست آزمایشی اینستاگرام است که برای نمایش در نظر گرفته شده است" 

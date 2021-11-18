@@ -39,7 +39,7 @@
     align-items: center;
 }
 .postContent_KP{
-    margin-right: 4px;
+    margin-right: 7px;
     width: 400px;
 
 } 
@@ -53,28 +53,32 @@
     white-space: nowrap;
     padding: 0px;
     margin:0px;
+    font-size: 12px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 .postImageAvatarKP{
-    border-radius: 10px !important;
-    height: 50px !important;
-    width: 50px !important;
+    border-radius: 5px !important;
+    height: 40px !important;
+    width: 40px !important;
     box-shadow : 2px 2px 20px 0px var(--boxshadowFadeKPPost) ,-1px -1px 20px 0px var(--boxshadowFadeKPPost) !important;
 }
 .poster_KP_Post{
     background-color:var(--background-colorKPPost);
     display: flex;
-    min-width: 140px;
+    min-width: 120px;
     align-items: center; 
+    margin: auto 0px;
+    height: 35px;
     border-radius: 30px;
-    margin-right: 20px;
-    padding: 0px 6px;
+    margin-right: 30px;
+    margin-left: 20px;
+    padding: 0px 3px;
     box-shadow : 5px 5px 15px 0px var(--boxshadowFadeKPPost) ,-2px -2px 15px 0px var(--boxshadowFadeKPPost);
 }
 .postUserAvatarKP{
-    height: 35px !important;
-    width: 35px !important;
+    height: 30px !important;
+    width: 30px !important;
     border : 3px solid var(--colorKPPost) !important;
 }
 .poster_KP_Post h4{
@@ -82,8 +86,8 @@
     font-weight: bold;
     margin: 0px;
     color: var(--colorKPPost);
-    font-size: 12px;
-    margin-right: 10px;
+    font-size: 10px;
+    margin-right: 5px;
 }
 .postIcon_KP{
     position: absolute;
@@ -113,4 +117,16 @@
     color: white;
     color: var(--colorKPPost);
     background-color: var(--boxshadowFadeKPPost);
+}
+.KPWidgetIconKP_Post{
+    padding:4px;
+    border-radius: 50%;
+    width: 23px;
+    height: 23px;
+    color: white;
+}
+
+.KPWidget_twitterIconPost {
+    background:linear-gradient(45deg, #66757f, #00ACEE, #36D8FF, #f5f8fa);
+    
 }
