@@ -58,7 +58,6 @@ function KP_BF_ModalP(props) {
                       </div>
                     </div>
                 </div>
-            
             </Fade>
       </Modal>
         </div>

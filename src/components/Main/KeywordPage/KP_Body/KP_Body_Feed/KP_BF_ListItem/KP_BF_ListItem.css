@@ -46,12 +46,12 @@
     justify-content: space-around;
     width: 67px;
     border-radius: 14px;
-    padding: 3px 2px;
-    font-size: 17px;
+    padding: 5px 3px;
+    font-size: 16px;
 }
 .numShowHList span{
-    font-size: 11px;
-    padding-top: 2px;
+    font-size: 8px;
+    padding-top: 2.3px;
     margin: 0px;
 }
 .twitter_NumACCHead
@@ -64,11 +64,11 @@
     justify-content: space-around;
     width: 67PX;
     border-radius: 14px;
-    padding: 3px 2px;
-    font-size: 17px;
+    padding: 5px 3px;
+    font-size: 16px;
 }
 .rss_NumACCHead
-{
+{   
     background:linear-gradient(120deg, #f26422d8, #eca17fd3);
     color: white;
     text-align: center;
@@ -77,7 +77,7 @@
     justify-content: space-around;
     width: 67px;
     border-radius: 14px;
-    padding: 3px 2px;
+    padding: 6px 3px;
     font-size: 14px;
 }
 .telegram_NumACCHead
@@ -90,8 +90,8 @@
     justify-content: space-around;
     width: 67px;
     border-radius: 14px;
-    padding: 3px 2px;
-    font-size: 17px;
+    padding: 5px 3px;
+    font-size: 16px;
 }
 .sumNumKPlist{
     margin-right: 50px;

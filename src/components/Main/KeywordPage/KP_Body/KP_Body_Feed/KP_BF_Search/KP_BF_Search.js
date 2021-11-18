@@ -4,9 +4,15 @@ import { AiOutlineSearch } from 'react-icons/ai'
 import './KP_BF_Search.css'
 function KP_BF_Search(props) {
     return (
-        <div className="searchBoxKP">
-            <input placeholder="جستجو"/>
-            <Button className="searchBtnKPList"><AiOutlineSearch/></Button>
+        <div className="searchBoxKP">   
+            <div class="searchBox">
+            <input class="searchInput"type="text" name="" placeholder="Search"/>
+                <button class="searchButton" href="#">
+                    <i class="material-icons">
+                        search
+                    </i>
+                </button>
+            </div>
         </div>
     )
 }
