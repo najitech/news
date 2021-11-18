@@ -8,21 +8,6 @@ import { FaTelegramPlane } from 'react-icons/fa'
 function KP_Body_Widgets() {
     return (
         <div className="KP_Body_Widgets">
-            <div className="TopKeywoardWidget">
-                <h6>کلمات کلیدی برتر </h6>
-                <div>
-                    <ChipDarkTheme label="مشهد" />
-                    <ChipDarkTheme label="خراسان" />
-                    <ChipDarkTheme label="خبر" />
-                    <ChipDarkTheme label="مشرق" />
-                    <ChipDarkTheme label="شهر" />
-                    <ChipDarkTheme label="روزنامه" />
-                    <ChipDarkTheme label="خراسان رضوی" />
-                    <ChipDarkTheme label="ایران" />
-                    <ChipDarkTheme label="رئیس جمهور" />
-                    <ChipDarkTheme label="اخبار روز" />
-                </div>
-            </div>
             <div className="Widget_3Keywords">
 
                     <div className="KPWidget_HeaderIcons">
@@ -264,6 +249,22 @@ function KP_Body_Widgets() {
 
                     </div>
                     </div>
+                </div>
+                <div className="TopKeywoardWidget">
+                <h6>کلمات کلیدی برتر </h6>
+                <p> کلمات کلیدی برتر در 24 ساعت گذشته </p>
+                <div>
+                    <ChipDarkTheme label="مشهد" />
+                    <ChipDarkTheme label="خراسان" />
+                    <ChipDarkTheme label="خبر" />
+                    <ChipDarkTheme label="مشرق" />
+                    <ChipDarkTheme label="شهر" />
+                    <ChipDarkTheme label="روزنامه" />
+                    <ChipDarkTheme label="خراسان رضوی" />
+                    <ChipDarkTheme label="ایران" />
+                    <ChipDarkTheme label="رئیس جمهور" />
+                    <ChipDarkTheme label="اخبار روز" />
+                </div>
                 </div>
         </div>
     )

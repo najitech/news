@@ -9,6 +9,8 @@ function KP_Header() {
                 <h3>کلمات کلیدی</h3>
                 <p>به بخش کلمات کلیدی سایت خوش آمدید. در این بخش می توانید کلمات کلیدی در منابع مختلف در ساعات خاص مشاهده کنید</p>
             </div>
+            <div className="KP_FooterHeader">
+            </div>
             <div className="KP_BottomHeader">
                 <KP_Header_box type="instagram"/>
                 <KP_Header_box type="telegram"/>
