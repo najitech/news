@@ -7,7 +7,7 @@
 .searchBoxKP input { 
     width: 400px;
     font-size: 13px;
-    padding: 1px 10px;
+    padding: 1px 15px;
     border-top-right-radius: 13px !important;
     border: none;
     outline: none;
@@ -29,6 +29,6 @@
     border-top-right-radius: 0px !important;
     border-bottom-right-radius: 0px !important;
 }
-.searchBoxKP input:focus .searchBtnKPList{
+.searchBoxKP input:focus ~ .searchBtnKPList{
     background-color: #50d890 !important;
 }
