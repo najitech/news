@@ -1,4 +1,44 @@
 .KP_BF_chart {
     flex:0.3;
     background-color: none;
+    background-color: #29294A;
+}
+.KP_BF_chart_SourceContainer {
+    display: flex;
+    width: 100%;
+    color:white;
+}
+.KP_BF_chart_Source {
+    flex:0.25;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+}
+.Chartborder-right {
+    border-right:1px solid grey;
+}
+.KP_BF_chartSourceTitle {
+    font-size: 13px;
+}
+.KP_BF_chartSourceNumber{
+    margin-top:10px;
+    font-size: 18px;
+}
+.KP_chartNumberTelegram {
+    color: #36D8FF;
+}
+.KP_chartNumberInstagram{
+    color: #c13584;
+}
+.KP_chartNumberTwitter {
+    color: #0088cc;
+}
+.KP_chartNumberRss{
+    color: #f26522;
+}
+.arrow_box {
+    display: flex;
+    flex-direction: column;
 }

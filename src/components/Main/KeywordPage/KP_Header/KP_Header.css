@@ -4,6 +4,7 @@
     justify-content: space-around;
     align-items:flex-end;
     flex-direction: column;
+    border-bottom: 1px solid rgb(224, 224, 224);
 }
 
 .KP_TopHeader {

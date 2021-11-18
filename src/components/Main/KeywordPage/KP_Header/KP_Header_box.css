@@ -36,21 +36,22 @@
     width: 100%;
     height: 50px;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
-    border: 6px solid white;
 
 }
 .KP_Icon {
-    border-radius: 50%;
-    width: 35px;
-    height: 35px;
-    margin-left:9px;
+    border-radius: 12px;
+    width: 40px;
+    height: 40px;
+    margin-right:18px;
+    margin-top: 6px;
     display: flex;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 25px;
+
 }
 
 .KP_HeaderBox_Header {

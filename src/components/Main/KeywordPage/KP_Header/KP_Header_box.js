@@ -140,7 +140,7 @@ function KP_Header_box(props) {
                 <span className="KP_HeaderBox_dataNumber">5434.3K</span>
                 </div>
             </div>
-            <Chart className="KP_Header_TopSlider_chart" options={chartCircle2.options} series={chartCircle2.series} type="line" height={50} width={190}/>
+        
         </div>
     )
 }

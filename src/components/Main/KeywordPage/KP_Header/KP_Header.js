@@ -6,7 +6,6 @@ function KP_Header() {
     return (
         <div className="KP_Header">
             <div className="KP_TopHeader">
-                <h2>hi</h2>
             </div>
             <div className="KP_BottomHeader">
                 <KP_Header_box type="instagram"/>

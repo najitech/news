@@ -1,11 +1,15 @@
 import React from 'react'
 import './KP_Body_Widgets.css'
 import ChipDarkTheme from '../../../../../UI/ChipDarkTheme';
+import { AiFillInstagram, AiFillTwitterCircle } from 'react-icons/ai'
+import { BiRss } from 'react-icons/bi'
+import { FaTelegramPlane } from 'react-icons/fa'
+
 function KP_Body_Widgets() {
     return (
         <div className="KP_Body_Widgets">
             <div className="TopKeywoardWidget">
-                <h4>کلمات کلیدی برتر </h4>
+                <h6>کلمات کلیدی برتر </h6>
                 <div>
                     <ChipDarkTheme label="مشهد" />
                     <ChipDarkTheme label="خراسان" />
@@ -19,6 +23,220 @@ function KP_Body_Widgets() {
                     <ChipDarkTheme label="اخبار روز" />
                 </div>
             </div>
+            <div className="Widget_3Keywords">
+
+                    <div className="KPWidget_HeaderIcons">
+                    <FaTelegramPlane className="KPWidget_telegramIcon KPWidgetIcon"/> 
+                    <AiFillInstagram className="KPWidget_instgramIcon KPWidgetIcon"/> 
+                    <AiFillTwitterCircle className="KPWidget_twitterIcon KPWidgetIcon"/> 
+                    <BiRss className="KPWidget_rssIcon KPWidgetIcon"/>
+                    </div>
+                    <div className="rightbox">
+                    <div className="rb-container">
+                        <ul className="rb">
+                        <li className="rb-item" ng-repeat="itembx">
+                            <div className="timestamp">
+                               7:00 Pm
+                            </div>
+                            <div className="item-title">
+                                <div className="KP_Widget_ItemGroup">
+                                    <span> تهران</span>
+                                    <span> سایت</span>
+                                    <span> ایران</span>
+                                </div>
+                                <div className="KP_Widget_ItemGroup">
+                                    <span> مشهد</span>
+                                    <span> عید</span>
+                                    <span> ایران</span>
+                                </div>
+                                <div className="KP_Widget_ItemGroup">
+                                    <span> توییتر</span>
+                                    <span> خنده</span>
+                                    <span> خوشحالی</span>
+                                </div>
+                                <div className="KP_Widget_ItemGroup KP_Widget_LastItem ">
+                                    <span> ایران</span>
+                                    <span> پاییز</span>
+                                    <span> طوفان</span>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li className="rb-item" ng-repeat="itembx">
+                            <div className="timestamp">
+                               8:00 Pm
+                            </div>
+                            <div className="item-title">
+                                <div className="KP_Widget_ItemGroup">
+                                    <span> تهران</span>
+                                    <span> سایت</span>
+                                    <span> ایران</span>
+                                </div>
+                                <div className="KP_Widget_ItemGroup">
+                                    <span> مشهد</span>
+                                    <span> عید</span>
+                                    <span> ایران</span>
+                                </div>
+                                <div className="KP_Widget_ItemGroup">
+                                    <span> توییتر</span>
+                                    <span> خنده</span>
+                                    <span> خوشحالی</span>
+                                </div>
+                                <div className="KP_Widget_ItemGroup KP_Widget_LastItem ">
+                                    <span> ایران</span>
+                                    <span> پاییز</span>
+                                    <span> طوفان</span>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li className="rb-item" ng-repeat="itembx">
+                            <div className="timestamp">
+                               9:00 Pm
+                            </div>
+                            <div className="item-title">
+                                <div className="KP_Widget_ItemGroup">
+                                    <span> تهران</span>
+                                    <span> سایت</span>
+                                    <span> ایران</span>
+                                </div>
+                                <div className="KP_Widget_ItemGroup">
+                                    <span> مشهد</span>
+                                    <span> عید</span>
+                                    <span> ایران</span>
+                                </div>
+                                <div className="KP_Widget_ItemGroup">
+                                    <span> توییتر</span>
+                                    <span> خنده</span>
+                                    <span> خوشحالی</span>
+                                </div>
+                                <div className="KP_Widget_ItemGroup KP_Widget_LastItem ">
+                                    <span> ایران</span>
+                                    <span> پاییز</span>
+                                    <span> طوفان</span>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li className="rb-item" ng-repeat="itembx">
+                            <div className="timestamp">
+                               10:00 Pm
+                            </div>
+                            <div className="item-title">
+                                <div className="KP_Widget_ItemGroup">
+                                    <span> تهران</span>
+                                    <span> سایت</span>
+                                    <span> ایران</span>
+                                </div>
+                                <div className="KP_Widget_ItemGroup">
+                                    <span> مشهد</span>
+                                    <span> عید</span>
+                                    <span> ایران</span>
+                                </div>
+                                <div className="KP_Widget_ItemGroup">
+                                    <span> توییتر</span>
+                                    <span> خنده</span>
+                                    <span> خوشحالی</span>
+                                </div>
+                                <div className="KP_Widget_ItemGroup KP_Widget_LastItem ">
+                                    <span> ایران</span>
+                                    <span> پاییز</span>
+                                    <span> طوفان</span>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li className="rb-item" ng-repeat="itembx">
+                            <div className="timestamp">
+                               11:00 Pm
+                            </div>
+                            <div className="item-title">
+                                <div className="KP_Widget_ItemGroup">
+                                    <span> تهران</span>
+                                    <span> سایت</span>
+                                    <span> ایران</span>
+                                </div>
+                                <div className="KP_Widget_ItemGroup">
+                                    <span> مشهد</span>
+                                    <span> عید</span>
+                                    <span> ایران</span>
+                                </div>
+                                <div className="KP_Widget_ItemGroup">
+                                    <span> توییتر</span>
+                                    <span> خنده</span>
+                                    <span> خوشحالی</span>
+                                </div>
+                                <div className="KP_Widget_ItemGroup KP_Widget_LastItem ">
+                                    <span> ایران</span>
+                                    <span> پاییز</span>
+                                    <span> طوفان</span>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li className="rb-item" ng-repeat="itembx">
+                            <div className="timestamp">
+                               12:00 Pm
+                            </div>
+                            <div className="item-title">
+                                <div className="KP_Widget_ItemGroup">
+                                    <span> تهران</span>
+                                    <span> سایت</span>
+                                    <span> ایران</span>
+                                </div>
+                                <div className="KP_Widget_ItemGroup">
+                                    <span> مشهد</span>
+                                    <span> عید</span>
+                                    <span> ایران</span>
+                                </div>
+                                <div className="KP_Widget_ItemGroup">
+                                    <span> توییتر</span>
+                                    <span> خنده</span>
+                                    <span> خوشحالی</span>
+                                </div>
+                                <div className="KP_Widget_ItemGroup KP_Widget_LastItem ">
+                                    <span> ایران</span>
+                                    <span> پاییز</span>
+                                    <span> طوفان</span>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li className="rb-item" ng-repeat="itembx">
+                            <div className="timestamp">
+                               1:00 Am
+                            </div>
+                            <div className="item-title">
+                                <div className="KP_Widget_ItemGroup">
+                                    <span> تهران</span>
+                                    <span> سایت</span>
+                                    <span> ایران</span>
+                                </div>
+                                <div className="KP_Widget_ItemGroup">
+                                    <span> مشهد</span>
+                                    <span> عید</span>
+                                    <span> ایران</span>
+                                </div>
+                                <div className="KP_Widget_ItemGroup">
+                                    <span> توییتر</span>
+                                    <span> خنده</span>
+                                    <span> خوشحالی</span>
+                                </div>
+                                <div className="KP_Widget_ItemGroup KP_Widget_LastItem ">
+                                    <span> ایران</span>
+                                    <span> پاییز</span>
+                                    <span> طوفان</span>
+                                </div>
+                            </div>
+
+                        </li>
+                       
+
+                        </ul>
+
+                    </div>
+                    </div>
+                </div>
         </div>
     )
 }
