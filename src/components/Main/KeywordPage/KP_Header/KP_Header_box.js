@@ -130,15 +130,13 @@ function KP_Header_box(props) {
 
             </div>
 
-            <div className="KP_HeaderBox_DataResultContainer">
-                <div className="KP_HeaderBox_TodayResult">
-                    <span>داده ی امروز </span>
-                    <span className="KP_HeaderBox_dataNumber">34.324K</span>
-                </div>
-                <div className="KP_HeaderBox_WeekResult">
-                <span>داده های هفته </span>
-                <span className="KP_HeaderBox_dataNumber">5434.3K</span>
-                </div>
+            <div className="KP_HeaderBox_TodayResult">
+                <span>کلمات کلیدی دریافتی امروز </span>
+                <span className="KP_HeaderBox_dataNumber">34.324K</span>
+            </div>
+            <div className="KP_HeaderBox_WeekResult">
+            <span>کلمات کلیدی دریافتی هفته </span>
+            <span className="KP_HeaderBox_dataNumber">5434.3K</span>
             </div>
         
         </div>

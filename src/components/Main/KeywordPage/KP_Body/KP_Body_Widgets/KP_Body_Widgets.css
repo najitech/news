@@ -5,7 +5,7 @@
     background-color: #FFFFFF;
     margin: auto 0px;
     margin-left: 15px;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 4px 4px 5px 1px rgba(214, 214, 214, 0.4) , -5px -5px 20px 1px rgba(214, 214, 214, 0.4);
     padding:20px 20px;
 }
@@ -48,7 +48,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow-y: scroll;
+
 
 }
 
@@ -56,6 +56,8 @@
   width: 100%;
   height: 93%;
   padding: 0px;
+  margin-top: 10px;
+  overflow-y: scroll;
 }
 
 
@@ -68,7 +70,7 @@
 }
 
 .rb-container ul.rb {
-  margin: 20px 0;
+  margin: 7px 0;
   padding: 0;
   display: inline-block;
 }
@@ -119,7 +121,6 @@ ul.rb li .timestamp {
 .item-title {
   color: rgb(71, 71, 71);
   display: flex;
-
   margin-top:10px;
   justify-content: space-between;
   align-items: center;
@@ -212,10 +213,24 @@ input::placeholder {
 }
 .KPWidget_twitterIcon {
     background:linear-gradient(45deg, #66757f, #00ACEE, #36D8FF, #f5f8fa);
+    margin-left:28px;
 }
 .KPWidget_rssIcon {
     background:linear-gradient(120deg, #f26522, #eca27f);
-    margin-left:25px;
+
+}
+
+.TelegramColor {
+    color:#36D8FF;
+}
+.InstagramColor {
+    color:#e1306c;
+}
+.TwitterColor {
+    color:#00ACEE;
+}
+.RssColor {
+    color:#f26522;
 }
 
 

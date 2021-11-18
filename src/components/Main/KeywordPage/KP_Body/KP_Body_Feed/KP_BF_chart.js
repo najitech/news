@@ -6,11 +6,11 @@ function KP_BF_chart() {
     const [KP_BF_Chart, setKP_BF_Chart] =useState({
           series: [{
               name: 'Inflation',
-              data: [4,8,2,20,14,18,5,32,12,24,3,6,12,8,45,22,7,32,13,1,7,3,12,21,6]
+              data: [4,8,2,20,14,18,5,32,12,24,3,6,12,8,45,22,7,32,13,1,7,3,12,21]
             }],
             options: {
               tooltip: {
-
+                enabled: false,
                 custom: function({ series, seriesIndex, dataPointIndex, w }) {
                   return (
                     '<div class="arrow_box">' +
@@ -44,6 +44,11 @@ function KP_BF_chart() {
               chart: {
                 height: 350,
                 type: 'bar',
+                events: {
+                  dataPointSelection: function(event, chartContext, config) {
+                    console.log(chartContext, config);
+                  }
+                 },
                 toolbar: {
                     show: true,
                     tools: {
