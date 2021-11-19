@@ -50,7 +50,7 @@ function KP_Body_Widgets() {
                         </li>
                         <li className="rb-item" ng-repeat="itembx">
                             <div className="timestamp">
-                               7:00 Pm
+                               8:00 Pm
                             </div>
                             <div className="item-title">
                                 <div className="KP_Widget_ItemGroup RssColor">
@@ -78,7 +78,7 @@ function KP_Body_Widgets() {
                         </li>
                         <li className="rb-item" ng-repeat="itembx">
                             <div className="timestamp">
-                               7:00 Pm
+                               9:00 Pm
                             </div>
                             <div className="item-title">
                                 <div className="KP_Widget_ItemGroup RssColor">
@@ -106,7 +106,7 @@ function KP_Body_Widgets() {
                         </li>
                         <li className="rb-item" ng-repeat="itembx">
                             <div className="timestamp">
-                               7:00 Pm
+                               10:00 Pm
                             </div>
                             <div className="item-title">
                                 <div className="KP_Widget_ItemGroup RssColor">
@@ -134,7 +134,7 @@ function KP_Body_Widgets() {
                         </li>
                         <li className="rb-item" ng-repeat="itembx">
                             <div className="timestamp">
-                               7:00 Pm
+                               11:00 Pm
                             </div>
                             <div className="item-title">
                                 <div className="KP_Widget_ItemGroup RssColor">
@@ -162,7 +162,7 @@ function KP_Body_Widgets() {
                         </li>
                         <li className="rb-item" ng-repeat="itembx">
                             <div className="timestamp">
-                               7:00 Pm
+                               12:00 Pm
                             </div>
                             <div className="item-title">
                                 <div className="KP_Widget_ItemGroup RssColor">
@@ -190,7 +190,7 @@ function KP_Body_Widgets() {
                         </li>
                         <li className="rb-item" ng-repeat="itembx">
                             <div className="timestamp">
-                               7:00 Pm
+                               1:00 Am
                             </div>
                             <div className="item-title">
                                 <div className="KP_Widget_ItemGroup RssColor">
@@ -218,7 +218,7 @@ function KP_Body_Widgets() {
                         </li>
                         <li className="rb-item" ng-repeat="itembx">
                             <div className="timestamp">
-                               7:00 Pm
+                                2:00 Am
                             </div>
                             <div className="item-title">
                                 <div className="KP_Widget_ItemGroup RssColor">

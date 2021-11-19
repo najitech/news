@@ -1,6 +1,5 @@
 .KP_BF_chart {
     flex:0.3;
-    background-color: none;
     background-color: #29294A;
     border-radius: 4px;
 }
@@ -25,7 +24,8 @@
 }
 .KP_BF_chartSourceNumber{
     margin-top:10px;
-    font-size: 18px;
+    font-size: 15px;
+    font-weight: bold;
 }
 .KP_chartNumberTelegram {
     color: #36D8FF;

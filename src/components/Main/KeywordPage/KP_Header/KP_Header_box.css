@@ -1,8 +1,8 @@
 .KP_Header_box {
-    height: 210px;
-    width: 200px;
+    height: 230px;
+    width: 220px;
     background-color: white;
-    border-radius: 15px;
+    border-radius: 12px;
     margin-bottom: 30px;
     position: relative;
     display: flex;
@@ -11,20 +11,20 @@
     box-shadow:3px 3px 6px 2px rgba(0, 0, 0, 0.336);
 }
 .KP_Header_box_Instagram {
-    background: rgb(254,207,255);
-    background: linear-gradient(180deg, rgba(254,207,255,1) 0%, rgba(255,255,255,1) 56%);
+    background: rgb(255,228,254);
+    background: linear-gradient(180deg, rgba(255,228,254,1) 0%, rgba(255,255,255,1) 41%);
 }
 .KP_Header_box_Telegram {
     background: rgb(205,237,253);
-    background: linear-gradient(180deg, rgba(205,237,253,1) 0%, rgba(255,255,255,1) 56%);
+    background: linear-gradient(180deg, rgba(205,237,253,1) 0%, rgba(255,255,255,1) 41%);
 }
 .KP_Header_box_Twitter {
     background: rgb(182,235,255);
-    background: linear-gradient(180deg, rgba(182,235,255,1) 0%, rgba(255,255,255,1) 60%);
+    background: linear-gradient(180deg, rgba(182,235,255,1) 0%, rgba(255,255,255,1) 41%);
 }
 .KP_Header_box_Rss{
-    background: rgb(255,224,210);
-    background: linear-gradient(180deg, rgba(255,224,210,1) 0%, rgba(255,255,255,1) 83%);
+    background: rgb(255,244,225);
+    background: linear-gradient(180deg, rgba(255,244,225,1) 0%, rgba(255,255,255,1) 41%);
 }
 
 .KP_TopSlider_instagram {
@@ -56,13 +56,13 @@
 }
 .KP_HeaderBox_TitleSource {
     font-size: 12px;
-    color:rgb(100, 100, 100);
+    color:#29294A;;
     font-weight: bold;
     margin-right:16px;
     margin-top:9px;
 }
 .KP_Icon {
-    border-radius: 15px;
+    border-radius:5px;
     width: 35px;
     height: 35px;
     margin-right:13px;
@@ -93,7 +93,7 @@
     font-size: 11px;
     margin-top: 10px;
     padding-top:8px;
-    color:rgb(134, 134, 134);
+    color:#29294A;
 }
 .KP_HeaderBox_TodayResult {
     flex:0.4;
@@ -105,8 +105,8 @@
     font-weight: bold;
     padding-right: 15px;
     border-bottom: 1px solid  rgb(235, 235, 235);
-    margin-top:18px;
-    padding-bottom: 3px;
+    margin-top:35px;
+    padding-bottom: 14px;
 }
 .KP_TodayResultFooter {
     display: flex;
@@ -122,6 +122,10 @@
     color:rgb(113, 238, 113);
     font-size: 13px;
     margin-left:13px;
+}
+.KP_HeaderBox_raise > span {
+    color:#29294A;;
+    font-size: 10px;
 }
 .KP_Fall {
     color:rgb(245, 96, 96);
@@ -144,11 +148,12 @@
     font-weight: bold;
     padding-right: 10px;
     margin-top:14px;
+    padding-top:6px;
 }
 .KP_HeaderBox_dataNumber {
     margin-right: 3px;
     font-size: 13px;
-    color:grey;
+    color:#29294A;;
     font-weight: bold;
 }
 .KP_Header_TopSlider_chart {

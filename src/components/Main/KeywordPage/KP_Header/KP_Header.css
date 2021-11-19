@@ -1,11 +1,12 @@
 .KP_Header {
-    flex:0.39;
+    flex:0.2;
     display: flex;
     justify-content: space-around;
     align-items:flex-end;
     flex-direction: column;
     font-family: "Shabnam";
     position: relative;
+    height: 330px;
 
 }
 .KP_TopHeader > h3 {
@@ -28,7 +29,7 @@
 }
 .KP_BottomHeader {
     position: absolute;
-    bottom: -10px;
+    bottom: -20px;
     width: 100%;
     display: flex;
     justify-content: space-around;

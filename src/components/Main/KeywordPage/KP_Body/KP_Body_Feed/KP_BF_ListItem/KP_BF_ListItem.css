@@ -2,6 +2,9 @@
     margin: 0px !important;
     padding: 0px !important;
     width: 100% !important;
+    height: 25px !important;
+    display: flex !important;
+    align-items: center !important;
 }
 .extenKPCo{
     width: 100% !important;
@@ -34,8 +37,9 @@
     font-size: 11px;
 }
 .kpACCco{
-    border-radius: 14px !important;
+    border-radius: 5px !important;
     box-shadow: 4px 4px 20px 5px rgba(214, 214, 214, 0.24) , -5px -5px 20px 1px rgba(214, 214, 214, 0.2) !important;
+
 }
 .instagram_NumACCHead{
     background:linear-gradient(45deg, #405ce6c5, #5851dbbe, #833ab4c0, #c13584d0, #e1306bd7, #fd1d1d83);
@@ -49,10 +53,16 @@
     padding: 5px 3px;
     font-size: 16px;
 }
+.sumNumKPlist {
+    font-size: 12px;
+}
 .numShowHList span{
     font-size: 8px;
     padding-top: 2.3px;
     margin: 0px;
+}
+.numShowHList {
+    border-radius: 10px !important;
 }
 .twitter_NumACCHead
 {

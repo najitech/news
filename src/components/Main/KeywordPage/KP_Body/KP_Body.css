@@ -1,4 +1,4 @@
 .KP_Body {
-    flex:0.6;
     display: flex;
+    margin-top:10px;
 }
