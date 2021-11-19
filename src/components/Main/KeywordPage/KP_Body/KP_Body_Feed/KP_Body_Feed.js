@@ -29,7 +29,7 @@ function KP_Body_Feed() {
                     </span>
                     <span style={{marginRight:'120px',fontWeight:'bold'}}>تعداد تکرار کل</span>
                 </div>
-                <KP_BF_ListItem sum="10549834" instagram="49535" twitter="578345" rss="15865" telegram="854653" rad off title="مشهد">
+                <KP_BF_ListItem first sum="10549834" instagram="49535" twitter="578345" rss="15865" telegram="854653" rad off title="مشهد">
                     <div className="postListDivKP">
                         <div className="indexPostListItemKP"><span> عکس </span><span style={{marginRight:'150px'}}> عنوان و توضیحات  { /*item.title? "عنوان و توضیح": "عنوان"*/}</span><span style={{marginRight:'195px'}}>اطلاعات فرستنده</span><span style={{marginRight:'130px'}}>5 کلمه کلیدی برتر</span></div>
                         <KP_BF_PostShow top={['مشهد','گرگان ','تهران' , 'ایران', 'اخبار']}

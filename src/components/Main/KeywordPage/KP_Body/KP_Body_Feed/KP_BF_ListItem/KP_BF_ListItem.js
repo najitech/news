@@ -39,7 +39,7 @@ function KP_BF_ListItem(props) {
     const classes = useStyles();
     return (
         <div className="KP_ListItem">
-            <ExpansionPanel className={[props.off ? "acc" : "" , 'margin'  , 'boxShadowAcc',props.rad ? "kpACCco" : '' , classes.hideBorder].join(" ")} classes={{ expanded: classes.expanded }}>
+            <ExpansionPanel className={[props.off ? "acc" : "" , 'margin'  , 'boxShadowAcc',props.rad ? "kpACCco" : '' , classes.hideBorder, props.first ?'firstRadListItem' : ''].join(" ")} classes={{ expanded: classes.expanded }}>
                 <ExpansionPanelSummary className="margin back">
                 <div className="fontAccardion headAccKP">
                     <div className="extenKPCo">

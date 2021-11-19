@@ -34,11 +34,18 @@
 }
 .listIndex_KPList{
     padding: 0px;
-    color: #29294A;
+    color: #29294A; 
+    border-radius: 14px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     margin-top: 4px;
+    background-color: white;
+    padding: 10px;
     font-size: 14px;
     font-weight: bold;
-    margin-right: 6px;
+    padding-bottom: 13px;
+    margin-right: 0px;
+    padding-right: 8px;
     margin-top: 10px;
 }
 .listIndex_KPList span{

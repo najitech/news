@@ -35,7 +35,7 @@
 }
 .kpACCco{
     border-radius: 14px !important;
-    box-shadow: 4px 4px 20px 5px rgba(214, 214, 214, 0.24) , -5px -5px 20px 1px rgba(214, 214, 214, 0.2) !important;
+    box-shadow: 4px 4px 20px 5px rgba(214, 214, 214, 0.24)  !important;
 }
 .instagram_NumACCHead{
     color:#e1306c;
@@ -47,6 +47,11 @@
     border-radius: 14px;
     padding: 5px 3px;
     font-size: 16px;
+}
+.firstRadListItem{
+    border-top-left-radius:0px !important;
+    margin-top: -11px !important;
+    border-top-right-radius:0px !important;
 }
 .numShowHList span{
     font-size: 14px;
