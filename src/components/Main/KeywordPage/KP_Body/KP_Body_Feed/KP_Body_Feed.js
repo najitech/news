@@ -1,4 +1,8 @@
 import React from 'react'
+import { AiFillInstagram, AiFillTwitterCircle } from 'react-icons/ai'
+import { BiRss } from 'react-icons/bi'
+import { FaTelegramPlane } from 'react-icons/fa'
+import {FiKey} from 'react-icons/fi'
 import PSR_ItemsSort from '../../../ProSearchPage/ProSearchResult/PSR_Feed/PSR_Sort/PSR_ItemsSort'
 import PSR_Sort from '../../../ProSearchPage/ProSearchResult/PSR_Feed/PSR_Sort/PSR_Sort'
 import KP_BF_chart from './KP_BF_chart'
@@ -16,6 +20,14 @@ function KP_Body_Feed() {
                 <div className="KP_Sort_Search">
                     <KP_BF_Sort social={1}/>
                     <KP_BF_Search/>
+                </div>
+                <div className="listIndex_KPList"><span><FiKey style={{fontSize:'17px'}}/> کلمه کلیدی</span><span>
+                    <AiFillInstagram className="KPWidget_instgramIcon_index KPWidgetIcon_index"/> 
+                    <AiFillTwitterCircle className="KPWidget_twitterIcon_index KPWidgetIcon_index"/>
+                    <BiRss className="KPWidget_rssIcon_index KPWidgetIcon_index"/>
+                    <FaTelegramPlane className="KPWidget_telegramIcon_index KPWidgetIcon_index"/> 
+                    </span>
+                    <span style={{marginRight:'120px',fontWeight:'bold'}}>تعداد تکرار کل</span>
                 </div>
                 <KP_BF_ListItem sum="10549834" instagram="49535" twitter="578345" rss="15865" telegram="854653" rad off title="مشهد">
                     <div className="postListDivKP">

@@ -49,23 +49,23 @@ function KP_BF_ListItem(props) {
                             </div>
                         </div>
                         <div className="numShowHList instagram_NumACCHead">
-                            <AiFillInstagram/>
+                            
                             <span>{nFormatter(parseInt(props.instagram))}</span>
                         </div>
                         <div className="numShowHList twitter_NumACCHead">
-                            <AiFillTwitterCircle/>
+                            
                             <span>{nFormatter(parseInt(props.twitter))}</span>
                         </div>
                         <div className="numShowHList rss_NumACCHead">
-                            <BsFillRssFill/>
+                         
                             <span>{nFormatter(parseInt(props.rss))}</span>
                         </div>
                         <div className="numShowHList telegram_NumACCHead">
-                            <BsTelegram/>
+                           
                             <span>{nFormatter(parseInt(props.telegram))}</span>
                         </div>
                         <div className="sumNumKPlist">
-                            <span>تعداد تکرار  : <span style={{fontWeight:'bold' , color:'#764ee3' ,borderBottom:'1px solid #764ee38f'}}>{nFormatter(parseInt(props.sum))}</span></span>
+                            <span><span style={{fontWeight:'bold',textAlign:'center' , color:'#764ee3',paddingRight:'30px',paddingLeft:'30px' ,borderBottom:'1px solid #764ee38f'}}>{nFormatter(parseInt(props.sum))}</span></span>
                         </div>
                         <div className="openExtentionBtn">
                             <Button className="searchBtnKP"><AiOutlineSearch style={{fontSize:'22px' , paddingLeft:'3px'}}/>جستجو</Button>
