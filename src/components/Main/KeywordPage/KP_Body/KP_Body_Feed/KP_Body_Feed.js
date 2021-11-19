@@ -1,4 +1,8 @@
 import React from 'react'
+import { AiFillInstagram, AiFillTwitterCircle } from 'react-icons/ai'
+import { BiRss } from 'react-icons/bi'
+import { FaTelegramPlane } from 'react-icons/fa'
+import {FiKey} from 'react-icons/fi'
 import PSR_ItemsSort from '../../../ProSearchPage/ProSearchResult/PSR_Feed/PSR_Sort/PSR_ItemsSort'
 import PSR_Sort from '../../../ProSearchPage/ProSearchResult/PSR_Feed/PSR_Sort/PSR_Sort'
 import KP_BF_chart from './KP_BF_chart'
@@ -17,21 +21,29 @@ function KP_Body_Feed() {
                     <KP_BF_Sort social={1}/>
                     <KP_BF_Search/>
                 </div>
-                <KP_BF_ListItem sum="10549834" instagram="49535" twitter="578345" rss="15865" telegram="854653" rad off title="مشهد">
+                <div className="listIndex_KPList"><span><FiKey style={{fontSize:'17px'}}/> کلمه کلیدی</span><span>
+                    <AiFillInstagram className="KPWidget_instgramIcon_index KPWidgetIcon_index"/> 
+                    <AiFillTwitterCircle className="KPWidget_twitterIcon_index KPWidgetIcon_index"/>
+                    <BiRss className="KPWidget_rssIcon_index KPWidgetIcon_index"/>
+                    <FaTelegramPlane className="KPWidget_telegramIcon_index KPWidgetIcon_index"/> 
+                    </span>
+                    <span style={{marginRight:'120px',fontWeight:'bold'}}>تعداد تکرار کل</span>
+                </div>
+                <KP_BF_ListItem first sum="10549834" instagram="49535" twitter="578345" rss="15865" telegram="854653" rad off title="مشهد">
                     <div className="postListDivKP">
-                        <div className="indexPostListItemKP"><span> عکس </span><span style={{marginRight:'150px'}}> عنوان و توضیحات  { /*item.title? "عنوان و توضیح": "عنوان"*/}</span><span style={{marginRight:'195px'}}>اطلاعات فرستنده</span><span style={{marginRight:'130px'}}>5 کلمه کلیدی برتر</span></div>
+                        <div className="indexPostListItemKP"><span> عکس </span><span style={{marginRight:'150px'}}> عنوان و توضیحات  { /*item.title? "عنوان و توضیح": "عنوان"*/}</span><span style={{marginRight:'213px'}}>اطلاعات فرستنده</span><span style={{marginRight:'135px'}}>5 کلمه کلیدی برتر</span></div>
                         <KP_BF_PostShow top={['مشهد','گرگان ','تهران' , 'ایران', 'اخبار']}
                                         image="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" 
                                         summary="این یک پست آزمایشی اینستاگرام است که برای نمایش در نظر گرفته شده است" 
                                         avatar="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg"
-                                        username="flower_22_A"
+                                        username="Alireza.m"
                                         social={1}/>
                         <KP_BF_PostShow title="پست توییتر"
                                         top={['مشهد','استان ','شهرستان' , 'ایران', 'توییتر']}
                                         image="https://cdn.vox-cdn.com/thumbor/5NULJp4-1rBYJz5IdmttFuLzdwU=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/22712959/1328326456.jpg" 
                                         summary="این یک پست آزمایشی اینستاگرام است که برای نمایش در نظر گرفته شده است" 
                                         avatar="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg"
-                                        username="flower_22_A"
+                                        username="Alireza.m"
                                         social={2}/>
                         <KP_BF_PostShow title="پست خبرخوان"
                                         top={['مشهد','باستان ','حرم' , 'امام رضا', 'موزه']}

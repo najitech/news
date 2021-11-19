@@ -37,13 +37,11 @@
     font-size: 11px;
 }
 .kpACCco{
-    border-radius: 5px !important;
-    box-shadow: 4px 4px 20px 5px rgba(214, 214, 214, 0.24) , -5px -5px 20px 1px rgba(214, 214, 214, 0.2) !important;
-
+    border-radius: 14px !important;
+    box-shadow: 4px 4px 20px 5px rgba(214, 214, 214, 0.24)  !important;
 }
 .instagram_NumACCHead{
-    background:linear-gradient(45deg, #405ce6c5, #5851dbbe, #833ab4c0, #c13584d0, #e1306bd7, #fd1d1d83);
-    color: white;
+    color:#e1306c;
     text-align: center;
     display: flex;
     align-items: center;
@@ -53,11 +51,13 @@
     padding: 5px 3px;
     font-size: 16px;
 }
-.sumNumKPlist {
-    font-size: 12px;
+.firstRadListItem{
+    border-top-left-radius:0px !important;
+    margin-top: -11px !important;
+    border-top-right-radius:0px !important;
 }
 .numShowHList span{
-    font-size: 8px;
+    font-size: 14px;
     padding-top: 2.3px;
     margin: 0px;
 }
@@ -66,8 +66,7 @@
 }
 .twitter_NumACCHead
 {
-    background:linear-gradient(45deg, #67b8f1e8, #00abeee1, #36D8FF, #b6dcf3);
-    color: white;
+    color:#00ACEE;
     text-align: center;
     display: flex;
     align-items: center;justify-content: space-evenly;
@@ -78,8 +77,7 @@
 }
 .rss_NumACCHead
 {   
-    background:linear-gradient(120deg, #f26422d8, #eca17fd3);
-    color: white;
+    color:#f26522;
     text-align: center;
     display: flex;
     align-items: center;justify-content: space-evenly;
@@ -90,8 +88,7 @@
 }
 .telegram_NumACCHead
 {
-    background:linear-gradient(120deg, #0088ccd2, #b1dff5e3);
-    color: white;
+    color:#36D8FF;
     text-align: center;
     display: flex;
     align-items: center;justify-content: space-evenly;
@@ -101,7 +98,8 @@
     font-size: 16px;
 }
 .sumNumKPlist{
-    margin-right: 50px;
+    margin-right: 30px;
+    text-align: center;
     min-width: 140px;
 }
 
@@ -113,15 +111,15 @@
     color: white !important;
     border-radius: 12.3px !important;
     font-size: 10px !important;
-    padding: 7px 12px!important;
+    padding: 5px 12px!important;
     font-weight: bold !important;
     margin-left: 0px !important;
 }
 .searchBtnKP{
-    background-color: #50d890 !important;
+    background-color: #812020 !important;
     color: white !important;
     border-radius: 12.3px !important;
     font-size: 10px !important;
-    padding: 7px 12px!important;
+    padding: 5px 12px!important;
     font-weight: bold !important;
 }

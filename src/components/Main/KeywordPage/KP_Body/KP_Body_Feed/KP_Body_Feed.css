@@ -26,9 +26,55 @@
 }
 .indexPostListItemKP span {
     padding: 0px;
+    margin-right: 5px;
+    font-size: 12.5px;
     border-bottom: 2px solid #b09aec8c;
-    padding-bottom: 5px;
+    padding-bottom: 3px;
 }
 .indexPostListItemKP:first-child{
     margin-right: 20px;
+}
+.listIndex_KPList{
+    padding: 0px;
+    color: #29294A; 
+    border-radius: 14px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin-top: 4px;
+    background-color: white;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 13px;
+    margin-right: 0px;
+    padding-right: 8px;
+    margin-top: 10px;
+}
+.listIndex_KPList span{
+    font-size: 12px;
+}
+.KPWidgetIcon_index{
+    padding:4px;
+    border-radius: 50%;
+    width: 23px;
+    height: 23px;
+    color: white;
+    align-items: center;
+    margin-bottom: -2px;
+}
+.KPWidget_instgramIcon_index{
+    margin-right: 90px;
+    background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+.KPWidget_twitterIcon_index{
+    margin-right: 75px;
+    background:linear-gradient(45deg, #66757f, #00ACEE, #36D8FF, #f5f8fa);
+}
+.KPWidget_rssIcon_index{
+    margin-right: 72px;
+    background:linear-gradient(120deg, #f26522, #eca27f);
+}
+.KPWidget_telegramIcon_index{
+    background:linear-gradient(120deg, #0088cc, #d9eef8);
+    margin-right: 74px;
 }

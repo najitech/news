@@ -8,7 +8,7 @@
     cursor: pointer;
 }
 .KP_PostShow:hover{
-    background-color: rgba(151, 151, 151, 0.192);
+    background-color: rgba(167, 167, 167, 0.192);
 }
 .instagramThemeKPPost{
     --boxshadowFadeKPPost :#c135841c;
@@ -47,13 +47,14 @@
     margin: 0px;
     font-weight: bold;
     margin-bottom:3px;
-    font-size: 14px;
+    font-size: 12px;
 }
 .postContent_KP p{
     white-space: nowrap;
     padding: 0px;
     margin:0px;
-    font-size: 12px;
+    color: rgb(100, 100, 100);
+    font-size: 11px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -66,10 +67,10 @@
 .poster_KP_Post{
     background-color:var(--background-colorKPPost);
     display: flex;
-    min-width: 120px;
+    min-width: 110px;
     align-items: center; 
     margin: auto 0px;
-    height: 35px;
+    height: 28px;
     border-radius: 30px;
     margin-right: 30px;
     margin-left: 20px;
@@ -77,17 +78,21 @@
     box-shadow : 5px 5px 15px 0px var(--boxshadowFadeKPPost) ,-2px -2px 15px 0px var(--boxshadowFadeKPPost);
 }
 .postUserAvatarKP{
-    height: 30px !important;
-    width: 30px !important;
-    border : 3px solid var(--colorKPPost) !important;
+    margin-right: 2px !important;
+    height: 22px !important;
+    width: 22px !important;
+    border : 1px solid var(--colorKPPost) !important;
 }
 .poster_KP_Post h4{
     padding: 0px;
     font-weight: bold;
     margin: 0px;
+    padding-top: 1px;
     color: var(--colorKPPost);
-    font-size: 10px;
+    font-size: 8px;
     margin-right: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .postIcon_KP{
     position: absolute;
@@ -110,7 +115,7 @@
     text-align: center;
 }
 .post_KP_topFive div{
-    padding:5px 5px;
+    padding:3px 7px;
     margin: 4px 2px;
     text-align: center;
     border-radius: 7px;

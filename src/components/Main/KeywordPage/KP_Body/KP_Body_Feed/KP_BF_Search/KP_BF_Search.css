@@ -32,3 +32,6 @@
 .searchBoxKP input:focus ~ .searchBtnKPList{
     background-color: #50d890 !important;
 }
+.searchBtnKPList:hover{
+    
+}
