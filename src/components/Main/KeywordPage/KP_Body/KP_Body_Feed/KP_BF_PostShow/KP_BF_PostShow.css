@@ -47,16 +47,19 @@
     margin: 0px;
     font-weight: bold;
     margin-bottom:3px;
-    font-size: 12px;
+    font-size: 11px;
 }
 .postContent_KP p{
-    white-space: nowrap;
+    display: block;/* or inline-block */
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 3em;
+    line-height: 1.5em;
     padding: 0px;
     margin:0px;
     color: rgb(100, 100, 100);
-    font-size: 11px;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    font-size: 9px;
 }
 .postImageAvatarKP{
     border-radius: 5px !important;
@@ -108,15 +111,15 @@
     flex-wrap: wrap;
     align-items: center;
     font-size: 11px;
-    margin-right: 10px;
+    margin-right: 38px;
     justify-content: space-evenly;
-    width: 280px;
+    width: 240px;
     margin-bottom: 2px;
     text-align: center;
 }
 .post_KP_topFive div{
     padding:3px 7px;
-    margin: 4px 2px;
+    margin: 2px 2px;
     text-align: center;
     border-radius: 7px;
     color: white;

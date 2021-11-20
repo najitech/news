@@ -38,7 +38,6 @@ function KP_BF_PostShow(props) {
                 <div className="chip_keywoard_post">{props.top[1]}</div>
                 <div className="chip_keywoard_post">{props.top[2]}</div>
                 <div className="chip_keywoard_post">{props.top[3]}</div>
-                <div className="chip_keywoard_post">{props.top[4]}</div>
             </div>
             <div className="postIcon_KP">
                 {props.social === 1 ? 
