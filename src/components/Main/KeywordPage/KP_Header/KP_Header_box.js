@@ -151,10 +151,15 @@ function KP_Header_box(props) {
             <div className="KP_HeaderBox_TodayResult">
                 <span>کلمات کلیدی دریافتی امروز </span>
                 <div className="KP_TodayResultFooter">
-                    <span className="KP_HeaderBox_dataNumber">34.324K</span>
+                    <span className="KP_HeaderBox_dataNumber">{props.todayData}</span>
                     <div className="KP_HeaderBox_raise">
-                        <span>12.432k </span>
-                        <BsFillArrowUpRightCircleFill className="KP_Box_raiseIcon"/>
+                        <span>{props.todayRaise} </span>
+                        {
+                            props.todayRaising ?
+                            <BsFillArrowUpRightCircleFill className="KP_Box_raiseIcon"/>
+                            :
+                            <BsArrowDownRightCircleFill className="KP_Box_raiseIcon  KP_Fall"/>
+                        }
                     </div>
 
                 </div>
@@ -163,10 +168,15 @@ function KP_Header_box(props) {
             <div className="KP_HeaderBox_WeekResult">
             <span>کلمات کلیدی دریافتی هفته </span>
             <div className="KP_TodayResultFooter">
-                    <span className="KP_HeaderBox_dataNumber">34.324K</span>
-                    <div className="KP_HeaderBox_raise KP_Fall">
-                        <span>12.432k </span>
-                        <BsArrowDownRightCircleFill className="KP_Box_raiseIcon"/>
+                    <span className="KP_HeaderBox_dataNumber">{props.weekData}</span>
+                    <div className="KP_HeaderBox_raise ">
+                        <span>{props.weekRaise} </span>
+                        {
+                            props.weekRaising ?
+                            <BsFillArrowUpRightCircleFill className="KP_Box_raiseIcon"/>
+                            :
+                            <BsArrowDownRightCircleFill className="KP_Box_raiseIcon KP_Fall "/>
+                        }
                     </div>
 
             </div>

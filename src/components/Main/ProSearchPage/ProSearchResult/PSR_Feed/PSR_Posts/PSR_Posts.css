@@ -1,12 +1,12 @@
 .PSR_Posts{
     display: grid;
     place-items: center;
-    overflow-y:scroll ;
     grid-template-columns: auto auto auto auto;
     justify-content: space-around;
     gap: 5px 0px;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    /*overflow-y:scroll ;
+    -ms-overflow-style: none;  
+    scrollbar-width: none; */
 }
 
 @media screen and (max-width : 1398px) {

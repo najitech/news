@@ -57,9 +57,10 @@
     border-top-right-radius:0px !important;
 }
 .numShowHList span{
-    font-size: 14px;
+    font-size: 13px;
     padding-top: 2.3px;
     margin: 0px;
+    font-weight: bold;
 }
 .numShowHList {
     border-radius: 10px !important;
@@ -101,6 +102,7 @@
     margin-right: 30px;
     text-align: center;
     min-width: 140px;
+    font-size: 13px;
 }
 
 .openExtentionBtn{

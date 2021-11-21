@@ -1,5 +1,6 @@
 .KP_Body_Widgets {
     flex:0.25;
+
 }
 .TopKeywoardWidget{
     background-color: #FFFFFF;
@@ -8,7 +9,7 @@
     border-radius: 10px;
     box-shadow: 4px 4px 5px 1px rgba(214, 214, 214, 0.4) , -5px -5px 20px 1px rgba(214, 214, 214, 0.4);
     padding:20px 20px;
-    margin-top:20px;
+
 }
 .TopKeywoardWidget > p {
     font-size: 10px;
@@ -53,7 +54,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  margin-top:20px;
+  position: sticky;
+  top: 10px;
 
 }
 
@@ -63,6 +66,8 @@
   padding: 0px;
   margin-top: 10px;
   overflow-y: scroll;
+  overflow-x: hidden;
+
 }
 
 

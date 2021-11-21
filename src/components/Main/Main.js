@@ -18,10 +18,10 @@ function Main() {
                         {/*<Rss/>*/}
                     </Route>
                     <Route path="/Websites">
-                        {/*<Websites/>*/}
+                        {<Websites/>}
                     </Route>
                     <Route path="/ProSearch">
-                        {/*<ProSearchContainer/>*/}
+                        {<ProSearchContainer/>}
                     </Route>
                 </Switch>
         </div>

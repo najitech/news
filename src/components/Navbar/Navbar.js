@@ -47,7 +47,7 @@ function Navbar() {
             <Link className="navLink1" to="/">  
               <div className={[item1 ? 'activeBar1' : "",'divNavRes'].join(" ")}>
                     <MdDashboard className="navIcon" style={{color : "#F50057"}}/>
-                    <Link className="navLink1 navlinkres" to="/">داشبورد</Link>
+                    <Link className="navLink1 navlinkres" to="/">کلمات کلیدی</Link>
                   </div> 
             </Link>
             <Link className="navLink2" to="/RSS">
