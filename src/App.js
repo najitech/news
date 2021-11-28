@@ -5,6 +5,7 @@ import Main from './components/Main/Main'
 import Navbar from './components/Navbar/Navbar'
 import './scss/style.scss';
 import './App.css';
+import 'mapbox-gl/dist/mapbox-gl.css';
 
 import { BrowserRouter as Router} from 'react-router-dom';
 const theme = createMuiTheme({

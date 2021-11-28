@@ -8,7 +8,9 @@ function KP_BF_chart() {
     let currentHour=0;
     currentHour= new Date().getHours();    
     const tempnum = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23]
-    const xChart = tempnum.map((number) => (currentHour+number)%24 )
+    const ChartTemp = tempnum.map((number) => (currentHour-number)%24 )
+    const xChart = ChartTemp.map ((number) => number > 0 ? number : (24+number)%24)
+    xChart.reverse()
     const [KP_BF_Chart, setKP_BF_Chart] =useState({
           series: [{
               name: 'Inflation',

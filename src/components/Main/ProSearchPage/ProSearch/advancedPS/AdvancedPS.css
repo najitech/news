@@ -1,5 +1,6 @@
 .advancedPS {
     overflow-x: hidden;
+    height: 100%;
 }
 
 .toggleButtonAndOr .MuiToggleButton-root{

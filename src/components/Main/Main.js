@@ -6,13 +6,14 @@ import TheLayout from '../../containers/TheLayout'
 import ProSearchContainer from './ProSearchPage/ProSearchContainer'
 import Websites from './Websites/Websites'
 import KeywordPage from './KeywordPage/KeywordPage'
+import MapPage from './MapPages/MapPage'
 function Main() {
     return (
         <div className="Main">
                 <Switch>
                     <Route exact path="/">
                         {/*<TheLayout/>*/}
-                        <KeywordPage/>
+                        <MapPage/>
                     </Route>
                     <Route path="/RSS">
                         {/*<Rss/>*/}
