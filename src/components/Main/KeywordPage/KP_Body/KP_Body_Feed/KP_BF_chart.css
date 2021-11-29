@@ -42,4 +42,30 @@
 .arrow_box {
     display: flex;
     flex-direction: column;
+    background-color: white;
+    padding: 3px;
+}
+
+.ChartHoverInstagram {
+    color: #c13584;
+}
+.ChartHoverTwitter {
+    color: #0088cc;
+}
+.ChartHoverRss {
+    color: #f26522;
+}
+.ChartHoverTelegram {
+    color: #36D8FF;
+}
+.ChartHoverItem {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11.5px;
+    font-weight: 600;
+    margin-top:4px;
+    background-color: white;
+}
+.ChartHoverItem img {
+    margin-right:5px;
 }

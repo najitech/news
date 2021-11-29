@@ -1,3 +1,7 @@
+.advancedPS {
+    overflow-x: hidden;
+    height: 100%;
+}
 
 .toggleButtonAndOr .MuiToggleButton-root{
     color: rgb(223, 223, 223) !important;

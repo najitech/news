@@ -1,8 +1,16 @@
-import React ,{useState} from 'react'
+import React ,{useState } from 'react'
 import './KP_BF_chart.css'
 import Chart from 'react-apexcharts'
+import KPchart_Tooltip from './KPchart_Tooltip'
+import Timage from '../../../../../Instagram_logo_2016.svg.png'
 
 function KP_BF_chart() {
+    let currentHour=0;
+    currentHour= new Date().getHours();    
+    const tempnum = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23]
+    const ChartTemp = tempnum.map((number) => (currentHour-number)%24 )
+    const xChart = ChartTemp.map ((number) => number > 0 ? number : (24+number)%24)
+    xChart.reverse()
     const [KP_BF_Chart, setKP_BF_Chart] =useState({
           series: [{
               name: 'Inflation',
@@ -10,30 +18,26 @@ function KP_BF_chart() {
             }],
             options: {
               tooltip: {
-                enabled: false,
+                enabled: true,
                 custom: function({ series, seriesIndex, dataPointIndex, w }) {
                   return (
                     '<div class="arrow_box">' +
-                    "<span className='KP_chartNumberTwitter'>" +
-                    "Twitter" +
-                    ": " +
-                    "1.234k" +
-                    "</span>" +
-                    "<span className='KP_chartNumberTelegram'>" +
-                    "Telegram" +
-                    ": " +
-                    "3.543k" +
-                    "</span>" +
-                    "<span className='KP_chartNumberInstagram'>" +
-                    "Instagram" +
-                    ": " +
-                    "0.545k" +
-                    "</span>" +
-                    "<span className='KP_chartNumberRss'>" +
-                    "Rss" +
-                    ": " +
-                    "2.453k" +
-                    "</span>" +
+                        '<div class="ChartHoverItem ChartHoverInstagram"'+
+                        "<span> 2.8K</span>" +
+                        '<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="" width="14" height="14">' +
+                        '</div>' +
+                        '<div class="ChartHoverItem ChartHoverTwitter"'+
+                        "<span> 5.4K</span>" +
+                        '<img src="https://static.cdnlogo.com/logos/t/96/twitter-icon.svg" alt="" width="14" height="14">' +
+                        '</div>' +
+                        '<div class="ChartHoverItem ChartHoverRss"'+
+                        "<span> 3.2K</span>" +
+                        '<img src="https://seeklogo.com/images/R/rss-icon-logo-025B789EB6-seeklogo.com.png" alt="" width="14" height="14">' +
+                        '</div>' +
+                        '<div class="ChartHoverItem ChartHoverTelegram"'+
+                        "<span> 1.6K</span>" +
+                        '<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/640px-Telegram_logo.svg.png" alt="" width="14" height="14">' +
+                        '</div>' +
                     "</div>"
                   );
                 },
@@ -99,7 +103,7 @@ function KP_BF_chart() {
               dataLabels: {
                 enabled: true,
                 formatter: function (val) {
-                  return val;
+                  return val + 'K';
                 },
                 offsetY: -20,
                 style: {
@@ -109,7 +113,7 @@ function KP_BF_chart() {
               },
               
               xaxis: {
-                categories: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24],
+                categories:xChart,
                 position: 'bottom',
                 colors: ["rgb(255, 255, 255)"],
                 axisBorder: {
@@ -147,9 +151,7 @@ function KP_BF_chart() {
                     }
                   }
                 },
-                tooltip: {
-                  enabled: true,
-                }
+
               },
               yaxis: {
                 axisBorder: {

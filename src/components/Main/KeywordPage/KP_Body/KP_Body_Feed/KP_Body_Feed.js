@@ -34,14 +34,23 @@ function KP_Body_Feed() {
                         <div className="indexPostListItemKP"><span> عکس </span><span style={{marginRight:'150px'}}> عنوان و توضیحات  { /*item.title? "عنوان و توضیح": "عنوان"*/}</span><span style={{marginRight:'213px'}}>اطلاعات فرستنده</span><span style={{marginRight:'120px'}}> کلمات کلیدی دیگر متن </span></div>
                         <KP_BF_PostShow top={['گرگان ','تهران' , 'ایران', 'اخبار']}
                                         image="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" 
-                                        summary="این یک پست آزمایشی اینستاگرام است که برای نمایش در نظر گرفته شده است" 
-                                        avatar="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg"
+                                        summary=" به گزارش خبرآنلاین، معاون وزیر راه و شهرسازی با اعلام این خبر در گفت‌و گو با  یک برنامه رادیویی اعلام کرد: به دنبال افزایش تقاضای تمدید مهلت ثبت‌نام در سامانه نهضت ملی مسکن، نام‌نویسی در این طرح که تا پیش از این ۲۸ آبان به اتمام می‌رسید، تا ۱۵ آذر ماه تمدید شده است. متقاضیان می‌توانند بدون نگرانی ثبت‌نام در مرحله اول نهضت ملی مسکن را در سامانه مربوطه به آدرس saman.mrud.ir انجام دهند.
+
+                                        محمود محمودزاده یادآور شد: تاکنون یک میلیون و ۲۶۰ هزار نفر در سامانه نهضت ملی مسکن ثبت‌نام کرده‌اند که در ۵۲۰ شهر تقاضای آنها ثبت شده است. در این ۵۲۰ شهر، زمین به اندازه کافی تأمین شده است. به مرور تعداد شهرهای مورد تقاضا افزایش خواهد یافت و امیدواریم همه متقاضیان دریافت مسکن تا یکی دو ماه آینده در شهرهای مورد دلخواه ثبت‌نام کنند.
+                                        
+                                        گفتنی است  از روز ۲۸ مهرماه ثبت‌نام اجرای قانون جهش تولید مسکن در سامانه جامع طرح‌های حمایتی مسکن به نشانی saman.mrud.ir در ۳۱ استان آغاز شده که تا ۱۵ آذرماه ادامه دارد. متقاضیان پس از ورود بر روی گزینه «ثبت نام نهضت ملی مسکن» کلیک کنند. عدم استفاده از تسهیلات یارانه‌ای دولتی در بخش مسکن و سبز بودن فرم «ج»، فقدان مالکیت خصوصی، متاهل یا سرپرست خانوار بودن و سابقه حداقل پنج سال سکونت در شهر مورد تقاضا چهار شرط اصلی خواهد بود. درخصوص شرط تاهل، پنج گروه شامل خانم‌های بالای ۳۵ سال، افراد دارای معلولیت بالای ۲۰ سال، نخبگان علمی، مردان مجرد بالای ۴۵ سال و بیماران خاص، می‌توانند ثبت نام کنند. درباره نداشتن مالکیت نیز برخی گروه‌های درآمدی در بعضی مناطق بر اساس تشخیص وزارت راه و شهرسازی از این شرط معاف هستند." 
+
+                                        avatar="https://i.pinimg.com/564x/a9/d6/05/a9d60534f8f7b6e7d960892db9b0f4ae.jpg"
                                         username="Alireza.m"
                                         social={1}/>
                         <KP_BF_PostShow title="پست توییتر"
                                         top={['استان ','شهرستان' , 'ایران', 'توییتر']}
                                         image="https://cdn.vox-cdn.com/thumbor/5NULJp4-1rBYJz5IdmttFuLzdwU=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/22712959/1328326456.jpg" 
-                                        summary="این یک پست آزمایشی اینستاگرام است که برای نمایش در نظر گرفته شده است" 
+                                        summary=" به گزارش خبرآنلاین، معاون وزیر راه و شهرسازی با اعلام این خبر در گفت‌و گو با  یک برنامه رادیویی اعلام کرد: به دنبال افزایش تقاضای تمدید مهلت ثبت‌نام در سامانه نهضت ملی مسکن، نام‌نویسی در این طرح که تا پیش از این ۲۸ آبان به اتمام می‌رسید، تا ۱۵ آذر ماه تمدید شده است. متقاضیان می‌توانند بدون نگرانی ثبت‌نام در مرحله اول نهضت ملی مسکن را در سامانه مربوطه به آدرس saman.mrud.ir انجام دهند.
+
+                                        محمود محمودزاده یادآور شد: تاکنون یک میلیون و ۲۶۰ هزار نفر در سامانه نهضت ملی مسکن ثبت‌نام کرده‌اند که در ۵۲۰ شهر تقاضای آنها ثبت شده است. در این ۵۲۰ شهر، زمین به اندازه کافی تأمین شده است. به مرور تعداد شهرهای مورد تقاضا افزایش خواهد یافت و امیدواریم همه متقاضیان دریافت مسکن تا یکی دو ماه آینده در شهرهای مورد دلخواه ثبت‌نام کنند.
+                                        
+                                        گفتنی است  از روز ۲۸ مهرماه ثبت‌نام اجرای قانون جهش تولید مسکن در سامانه جامع طرح‌های حمایتی مسکن به نشانی saman.mrud.ir در ۳۱ استان آغاز شده که تا ۱۵ آذرماه ادامه دارد. متقاضیان پس از ورود بر روی گزینه «ثبت نام نهضت ملی مسکن» کلیک کنند. عدم استفاده از تسهیلات یارانه‌ای دولتی در بخش مسکن و سبز بودن فرم «ج»، فقدان مالکیت خصوصی، متاهل یا سرپرست خانوار بودن و سابقه حداقل پنج سال سکونت در شهر مورد تقاضا چهار شرط اصلی خواهد بود. درخصوص شرط تاهل، پنج گروه شامل خانم‌های بالای ۳۵ سال، افراد دارای معلولیت بالای ۲۰ سال، نخبگان علمی، مردان مجرد بالای ۴۵ سال و بیماران خاص، می‌توانند ثبت نام کنند. درباره نداشتن مالکیت نیز برخی گروه‌های درآمدی در بعضی مناطق بر اساس تشخیص وزارت راه و شهرسازی از این شرط معاف هستند." 
                                         avatar="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg"
                                         username="Alireza.m"
                                         social={2}/>
@@ -70,41 +79,58 @@ function KP_Body_Feed() {
                         
                     </div>
                 </KP_BF_ListItem> 
-                <KP_BF_ListItem sum="546463543" instagram="36554" twitter="32454" rss="87458" telegram="87234" rad off title="ایران">
+                <KP_BF_ListItem sum="546463543" instagram="36554" twitter="32454" rss="87458" telegram="87234" rad off title="پزشک">
                     <div className="postListDivKP">
                         
                     </div>
                 </KP_BF_ListItem>
-                <KP_BF_ListItem sum="546463543" instagram="36554" twitter="32454" rss="87458" telegram="87234" rad off title="ایران">
+                <KP_BF_ListItem sum="546463543" instagram="36554" twitter="32454" rss="87458" telegram="87234" rad off title="صبح">
                     <div className="postListDivKP">
                         
                     </div>
                 </KP_BF_ListItem>
-                <KP_BF_ListItem sum="546463543" instagram="36554" twitter="32454" rss="87458" telegram="87234" rad off title="ایران">
+                <KP_BF_ListItem sum="546463543" instagram="36554" twitter="32454" rss="87458" telegram="87234" rad off title="مهربانی">
                     <div className="postListDivKP">
                         
                     </div>
                 </KP_BF_ListItem>
-                <KP_BF_ListItem sum="546463543" instagram="36554" twitter="32454" rss="87458" telegram="87234" rad off title="ایران">
+                <KP_BF_ListItem sum="546463543" instagram="36554" twitter="32454" rss="87458" telegram="87234" rad off title="زندگی">
                     <div className="postListDivKP">
                         
                     </div>
                 </KP_BF_ListItem>
-                <KP_BF_ListItem sum="546463543" instagram="36554" twitter="32454" rss="87458" telegram="87234" rad off title="ایران">
+                <KP_BF_ListItem sum="546463543" instagram="36554" twitter="32454" rss="87458" telegram="87234" rad off title="جنگ">
                     <div className="postListDivKP">
                         
                     </div>
                 </KP_BF_ListItem>
-                <KP_BF_ListItem sum="546463543" instagram="36554" twitter="32454" rss="87458" telegram="87234" rad off title="ایران">
+                <KP_BF_ListItem sum="546463543" instagram="36554" twitter="32454" rss="87458" telegram="87234" rad off title="فوتبال">
                     <div className="postListDivKP">
                         
                     </div>
                 </KP_BF_ListItem>
-                <KP_BF_ListItem sum="546463543" instagram="36554" twitter="32454" rss="87458" telegram="87234" rad off title="ایران">
+                <KP_BF_ListItem sum="546463543" instagram="36554" twitter="32454" rss="87458" telegram="87234" rad off title="افغانستان">
                     <div className="postListDivKP">
                         
                     </div>
                 </KP_BF_ListItem>
+                <KP_BF_ListItem sum="546463543" instagram="36554" twitter="32454" rss="87458" telegram="87234" rad off title="عید">
+                    <div className="postListDivKP">
+                        
+                    </div>
+                </KP_BF_ListItem>
+                <KP_BF_ListItem sum="546463543" instagram="36554" twitter="32454" rss="87458" telegram="87234" rad off title="یلدا">
+                    <div className="postListDivKP">
+                        
+                    </div>
+                </KP_BF_ListItem>
+                <KP_BF_ListItem sum="546463543" instagram="36554" twitter="32454" rss="87458" telegram="87234" rad off title="مجلس">
+                    <div className="postListDivKP">
+                        
+                    </div>
+                </KP_BF_ListItem>
+
+
                 
                
             </div>

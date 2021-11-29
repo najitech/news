@@ -3,7 +3,11 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: flex-start;    
+    overflow-y:scroll ;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
+    overflow-x: hidden;
 }
 .PSR_BottomNavContainer {
     display: none;
