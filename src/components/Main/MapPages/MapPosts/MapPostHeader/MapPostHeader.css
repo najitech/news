@@ -1,0 +1,62 @@
+.mapPostHeader{
+    background-color: #272949;
+    flex: 0.3;
+    color: white;
+    direction: rtl;
+}
+.headerTitlesMapPost h1{
+    font-size: 28px;
+    padding: 0px;
+    margin: 0px;
+    margin-right: -1px;
+}
+.headerContentPostMap{
+    padding-top: 40px;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 130px;
+    display: flex;
+}
+.timeAndCalMapPost{
+    display: flex;
+    padding-left: 84px;
+}
+.timeAndCalMapPost div{
+    display: flex;
+    font-size: 15px;
+    padding: 0px;
+    align-items: center;
+    margin: 0px 40px;
+    height: 50px;
+}
+.timeAndCalMapPost span{
+    margin-right: 15px;
+    padding: 0px;
+}
+.headerIconPostMap{
+    font-size: 20px;
+}
+.headerIconPostMap2{
+    font-size: 25px;
+}
+.buttonStyleMapPost{
+    background-color: #272949;
+    color: white;
+    border: 1px solid white;
+    outline: none;
+    font-size: 18px;
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+}
+.buttonStyleMapPost:focus{
+    outline: none;
+    border: 1px solid white !important;
+}
+.buttonStyleMapPost:active{
+    border: 1px solid white !important;
+}
+.buttonStyleMapPost:hover{
+    background-color: white;
+    color:#272949;
+}

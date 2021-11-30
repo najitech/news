@@ -6,7 +6,7 @@ import TheLayout from '../../containers/TheLayout'
 import ProSearchContainer from './ProSearchPage/ProSearchContainer'
 import Websites from './Websites/Websites'
 import KeywordPage from './KeywordPage/KeywordPage'
-import MapPage from './MapPages/MapPage'
+import MapPage from './MapPages/MapPosts/MapPosts'
 function Main() {
     return (
         <div className="Main">

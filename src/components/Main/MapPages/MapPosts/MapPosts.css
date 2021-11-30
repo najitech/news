@@ -1,0 +1,7 @@
+.mapPosts{
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    height: 100%;   
+    position: relative;
+}
