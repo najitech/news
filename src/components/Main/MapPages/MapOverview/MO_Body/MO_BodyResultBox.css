@@ -1,0 +1,65 @@
+.MO_BodyResultBox {
+    background-color: #FFFFFF;
+    box-shadow:3px 3px 7px 1px rgba(0, 0, 0, 0.151);
+    height: 140px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding:10px 25px;
+    position: relative;
+}
+
+.MOresult_telegramIcon {
+    color:#11cbfa;
+}
+.MOresult_instgramIcon {
+    color:#e1306c;
+}
+.MOresult_twitterIcon {
+    color:#00ACEE;
+}
+.MOresult_rssIcon {
+    color:#f38b5b;
+}
+.MOresult_paperIcon {
+    color:rgba(81,214,168,1);
+}
+
+.MOresult_Icon {
+    background-color:white ;
+    border: 2px solid rgb(243, 243, 243);
+    border-radius:5px;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    box-shadow: 1px 1px 2px 1px rgb(219, 219, 219);
+}
+.MOresult_Title {
+    font-size:10px;
+    margin-top:30px;
+    color:rgb(121, 121, 121);
+}
+.MOresult_WeekResultFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:auto;
+}
+.MOresult_HeaderBox_dataNumber {
+    font-size:17px;
+    font-weight:bolder;
+    color:rgb(94, 94, 94);
+}
+.MOresult_HeaderBox_raise {
+    color:rgb(113, 238, 113);
+}
+.MOresult_HeaderBox_raise > span {
+    font-size:11px;
+    font-weight: 600;
+    color:rgb(109, 109, 109);
+    margin-left:2px;
+}
+

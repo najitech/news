@@ -1,6 +1,6 @@
 .Map {
-    background-color: red;
     position: relative;
+    z-index: 2;
 }
 .MapPage_MarkerNumber {
     display: flex;

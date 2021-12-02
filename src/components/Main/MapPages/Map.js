@@ -36,9 +36,9 @@ function Map(props) {
         <div className="Map">
             <ReactMapGL
             {...viewport}
-            mapStyle="mapbox://styles/morteza80/ckwcnmub217gh14kotnju5h51"
+            mapStyle="mapbox://styles/morteza80/ckwkt81xo0dhu14qv3wqdquyn"
             attributionControl={false}
-            mapboxApiAccessToken={"pk.eyJ1IjoibW9ydGV6YTgwIiwiYSI6ImNrd2NkcGlzODFrbWMyb3FtOWtpcWdzZ2YifQ.hkWgCYG9hMPo9IdfTb3cCA"}
+            mapboxApiAccessToken="pk.eyJ1IjoibW9ydGV6YTgwIiwiYSI6ImNrd2NkcGlzODFrbWMyb3FtOWtpcWdzZ2YifQ.hkWgCYG9hMPo9IdfTb3cCA"
             onViewportChange={viewport => {
                 setViewport(viewport);
               }}

@@ -1,0 +1,25 @@
+.MO_Body {
+    width: 100%;
+    height: 350px;
+    background-color: #EFF6FF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 10px 30px 6px white;
+    z-index: 10;
+}
+.MOBodyChart {
+    flex: 0.47;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    box-shadow:3px 3px 7px 1px rgba(0, 0, 0, 0.199);
+    padding-right:15px;
+
+}
+.MO_BodyResult {
+    flex:0.47;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap:35px 20px;
+
+}

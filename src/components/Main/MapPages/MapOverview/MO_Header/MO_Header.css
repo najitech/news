@@ -1,0 +1,48 @@
+.MO_Header {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.MO_TopHeader > h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+.MO_TopHeader > p {
+    font-size: 9.5px;
+}
+.MO_TopHeader {
+    flex:0.5;
+    height: 100px;
+    background-color: #29294A;
+    width: 100%;
+    color:white;
+    padding:12px 90px;
+    position: relative;
+}
+.MO_FooterHeader {
+    flex:0.5;
+}
+.MO_BottomHeader {
+    position: absolute;
+    direction: ltr;
+    bottom: 5px;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-end;
+    padding:0px 50px;
+    padding-bottom: 10px;
+}
+.MO_SliderContainer {
+    width: 97%;
+}
+
+.MO_Slider_icon {
+    font-size: 25px;
+}
+.MO_TopSliderItems {
+    padding:10px 0px;
+}
