@@ -109,7 +109,7 @@ function MO_Header_box(props) {
 
     return (
         <div className={["MO_Header_box",MO_HeaderBox_color].join(" ")}>
-            <div className="MO_Header_boxMask">
+            <div className="MO_Header_boxMask MO_Header_boxMaskTexture">
 
             </div>
             <div className="MO_HeaderboxHeader">

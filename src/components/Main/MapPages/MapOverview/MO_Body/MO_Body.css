@@ -1,7 +1,6 @@
 .MO_Body {
     width: 100%;
     height: 350px;
-    background-color: #EFF6FF;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -14,12 +13,75 @@
     border-radius: 20px;
     box-shadow:3px 3px 7px 1px rgba(0, 0, 0, 0.199);
     padding-right:15px;
-
+    direction: ltr;
 }
 .MO_BodyResult {
     flex:0.47;
     display: grid;
     grid-template-columns: auto auto auto;
     gap:35px 20px;
+
+}
+
+.MO_ChartTooltip {
+    display: flex;
+    flex-direction: column;
+    padding:4px 10px;
+    direction: ltr;
+    color:white;
+}
+.whitecolor {
+    color:rgb(128, 111, 17);
+    font-size: 10px !important;
+    margin-top:7px;
+    font-family: "Shabnam";
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    text-align: right;
+    justify-content: right;
+}
+.MOrssBack {
+    background-color: #f38b5b;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+}
+.MOtelBack {
+    background-color: #11cbfa; 
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+}
+.MOpaperBack {
+    background-color: rgba(81,214,168,1);
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+}
+.MOtwiBack {
+    background-color: #00ACEE;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+}
+.MOInstaBack {
+    background-color: rgb(233, 51, 233);
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+}
+.circleMargin {
+    margin-left:5px;
+    margin-bottom: 2.35px;
+}
+.MO_TooltipTitle {
+    direction: rtl;
+    font-size:11px;
+    margin-right:3px;
+    margin-left:4px;
+    padding-bottom: 2.35px;
+}
+.MO_TooltipNumber {
 
 }

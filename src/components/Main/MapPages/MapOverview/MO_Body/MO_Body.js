@@ -3,6 +3,7 @@ import './MO_Body.css'
 import Chart from 'react-apexcharts'
 import MO_BodyResultBox from './MO_BodyResultBox'
 
+
 function MO_Body() {
     const [ChartData , setChartData] = useState({
             series: [{
@@ -28,7 +29,10 @@ function MO_Body() {
         
         
         ],
+        
          options: {
+
+          colors: ['rgb(233, 51, 233)','#11cbfa','#f38b5b','#00ACEE','rgba(81,214,168,1)'],
               chart: {
                 height: 350,
                 type: 'line',
@@ -58,27 +62,64 @@ function MO_Body() {
                 },
             },
               stroke: {
-                width: 3,
+                width: 2.5,
                 curve: 'smooth'
               },
 
               fill: {
+                
                 type: 'gradient',
                 gradient: {
-                  shade: 'dark',
-                  gradientToColors: [ '#FDD835'],
+                  shade: 'light',
+                  gradientToColors: ['rgb(233, 51, 233)','#11cbfa','#f38b5b','#00ACEE','rgba(81,214,168,1)'],
                   shadeIntensity: 1,
                   type: 'horizontal',
                   opacityFrom: 1,
-                  opacityTo: 1,
-                  stops: [0, 100, 100, 100]
+                  opacityTo: 0.75,
+                  stops: [0,100]
                 },
               },
               yaxis: {
                 min: 0,
                 max: 40,
                 tickAmount: 4,
-              }
+              },
+              tooltip: {
+                enabled: true,
+                custom: function({ series, seriesIndex, dataPointIndex, w }) {
+                  return (
+                    '<div class="MO_ChartTooltip">' +
+                        '<div class="ChartHoverItem ChartHoverInstagram whitecolor"'+
+                        "<span class='MO_TooltipNumber'> 12.8K</span>" +
+                        '<span class="MO_TooltipTitle"> خبرخوان : </span>' +
+                        '<div class="MOrssBack circleMargin"></div>' +
+                        '</div>' +
+
+                        '<div class="ChartHoverItem ChartHoverInstagram whitecolor "'+
+                        "<span class='MO_TooltipNumber'> 20.5K</span>" +
+                        '<span class="MO_TooltipTitle"> تلگرام : </span>' +
+                        '<div class="MOtelBack circleMargin"></div>' +
+                        '</div>' +
+                        '<div class="ChartHoverItem ChartHoverInstagram whitecolor "'+
+                        '<span class="MO_TooltipNumber"> 8.3K</span>' +
+                        '<span class="MO_TooltipTitle"> روزنامه : </span>' +
+                        '<div class="MOpaperBack circleMargin"></div>' +
+                        '</div>' +
+                        '<div class="ChartHoverItem ChartHoverInstagram whitecolor "'+
+                        "<span class='MO_TooltipNumber'> 13.8K</span>" +
+                        '<span class="MO_TooltipTitle"> توییتر : </span>' +
+                        '<div class="MOtwiBack circleMargin"></div>' +
+                        '</div>' +
+                        '<div class="ChartHoverItem ChartHoverInstagram whitecolor "'+
+                        "<span class='MO_TooltipNumber'> 17.4K</span>" +
+                        '<span class="MO_TooltipTitle"> اینستاگرام : </span>' +
+                        '<div class="MOInstaBack circleMargin"></div>' +
+                        '</div>' +
+
+                    "</div>"
+                  );
+                },
+              },
             },
           
           
@@ -102,3 +143,5 @@ function MO_Body() {
 }
 
 export default MO_Body
+
+

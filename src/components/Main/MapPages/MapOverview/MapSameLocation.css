@@ -1,0 +1,139 @@
+.MapSameLocation {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding:5px 10px;
+    border-radius:5px;
+    margin-top:10px;
+    font-weight: bold;
+    padding-top:10px;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 1px 1px rgb(224, 224, 224);
+}
+.MapSameLocation > span {
+    font-size: 12px;
+}
+.MOSameLocation_result {
+    margin-top:6px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    padding-top:7px;
+    width: 100%;
+    padding-bottom: 4px;
+}
+.MOSameLocation_raise {
+    color:rgb(113, 238, 113);
+
+}
+.MOSameLocation_raise > span {
+    color:black;
+    font-size:11px;
+    margin-left:3px;
+}
+.MOSameLocation_NumberContainer {
+    flex:0.3;
+    display: flex;
+    flex-direction: column;
+    font-size:9.5px;
+    color:rgb(163, 163, 163);
+    border: 1px solid rgb(224, 224, 224);
+    padding: 3px 8px;
+    border-radius: 4px;
+    height: 47px;
+}
+.MOSameLocation_dataNumber {
+    font-weight: bold;
+    color:rgb(65, 55, 4);
+    font-size:12px;
+    margin-top:auto;
+
+}
+.MOSameLocation_Header {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+}
+.MOSameLocation_FirstChar {
+    z-index: 10001;
+    width: 37px;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:50%;
+    color:white;
+    margin-left:10px;
+    box-shadow: 1px 1px 2px 1px rgba(42, 21, 236, 0.178);
+    background-color: greenyellow;
+}
+.MapSameMarkerBlue {
+    color:white;
+    background-color:rgba(15, 179, 255, 0.863);
+}
+.MapSameMarkerRed {
+    color:white;
+    background-color: rgba(253, 17, 17, 0.781);
+}
+.MOSameLocation_TitleLoc {
+    font-weight: bold;
+    font-size: 13px;
+    color:black;
+}
+.MOSameLocation_locIcon {
+    font-size: 13px;
+    margin-left:4px;
+    color:rgb(173, 173, 173);
+    padding-bottom: 3px;
+}
+.MOSameLocation_Loc {
+    font-weight: normal;
+    color:rgb(180, 180, 180);
+    font-size:11px;
+    margin-top:5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.MOSameLocation_raiseBox {
+    flex:0.65;
+    display: flex;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 4px;
+    font-size:9.5px;
+    color:rgb(163, 163, 163);
+    padding-right:6px;
+    padding-top:3px;
+
+}
+.MOSameLocation_raiseNumberBox {
+    flex:0.4;
+    display: flex;
+    flex-direction: column;
+    padding:3px 0px;
+    padding-top:0px;
+}
+.MOSameLocation_raiseNumber {
+    margin-top:auto;
+    font-size:12px;
+    font-weight: bold;
+    color:#08ccb2;
+}
+.MOSameLocation_raiseNumberRed {
+    color:rgb(241, 80, 80);
+}
+.MOSameLocation_raiseChart {
+    flex:0.6;
+    height: 40px;
+    border-right: 1px solid rgb(224, 224, 224);
+    padding-right:2px;
+}
+.MapSameLocation_boxMask {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    color:red;
+
+}
