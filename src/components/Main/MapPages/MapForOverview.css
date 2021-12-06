@@ -8,30 +8,30 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 35px;
-    height: 35px;
     border-radius: 50%;
-    background-color:rgba(109, 170, 16, 0.863);
-    font-size: 8px;
+    background-color:#10D8A8;
+    font-size: 10px;
     color:rgb(255, 255, 255);
     direction: ltr;
     cursor: pointer;
     transition: all 0.1s ease;
+    border: 2px solid white;
 }
 .MapPage_Marker:hover {
-    background-color:#268b08 ;
+    background-color:#2da708 ;
     transition: all 0.1s ease;
+
 }
 .MarkerBlue {
     color:white;
-    background-color:rgba(15, 179, 255, 0.863);
+    background-color:#415DF0;
 }
 .MarkerBlue:hover {
-    background-color:rgb(11, 111, 241);
+    background-color:rgb(8, 67, 143);
 }
 .MarkerRed {
     color:white;
-    background-color: rgba(253, 17, 17, 0.781);
+    background-color: #ED507B;
 }
 .MarkerRed:hover {
     background-color: rgba(226, 13, 13, 0.918);
@@ -50,4 +50,90 @@
     border-radius: 50%;
     border: 1px solid rgb(180, 180, 180);
     box-shadow: 1px 1px 1px 1px rgb(158, 158, 158);
+}
+.dead-center {
+}
+
+.MarkerContainer {
+    font-size: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+	background-color: #513FA3;
+	position: relative;
+	padding: 8px 6px;
+	color: #ffffff;
+    border-radius: 1.5px;
+}
+.marker {
+    margin-top:5px;
+    font-size: 9px;
+    z-index: 10;
+}
+.markerpin {
+	content: "";
+	position: absolute;
+	height: 25px;
+	width: 25px;
+	bottom: -9.5px;
+	left: 20%;
+    transform: rotate(-90deg);
+	background-color: #513FA3;
+	clip-path: polygon(0 0, 100% 0, 100% 100%);
+    border-radius:3px;
+}
+
+.MapBoxPopup {
+    padding:3px 5px;
+    display: flex;
+    flex-direction: column;
+
+}
+.MapBoxPopupHeader {
+    display: flex;
+    align-items: center;
+    margin-top:8px;
+}
+.MapBoxPopupTitle {
+
+}
+.MapBoxPopupbutton {
+    width: 100%;
+    height: 30px;
+    background-color: #F0F1FE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    margin-top:16px;
+    cursor: pointer;
+}
+.MapPage_Marker_more {
+    width: 50px;
+    height: 50px;
+    background-color:#F0F9FD ;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right:4px;
+    cursor: pointer;
+}
+.MapPage_MarkerPopup {
+    width: 50px;
+    height: 50px;
+    margin-right:-6px;
+}
+.z-index1000 {
+    z-index: 1000;
+}
+.z-index1001{
+    z-index: 1001;
+}
+.z-index1002 {
+    z-index: 1002;
+}
+.z-index1003 {
+    z-index: 1003;
 }

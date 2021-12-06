@@ -102,7 +102,13 @@ function MapOverview(props) {
                         <div className="fadeTopMap">
 
                         </div>
-                        <MapForOverview className="h65" width="1400px" height="600px"/>
+                        <div className="fadeLeftMap">
+
+                        </div>
+                        <div className="fadeRightMap">
+
+                        </div>
+                        <MapForOverview className="h65" width="1500px" height="600px"/>
                     </div>
                 </div>
 
