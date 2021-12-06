@@ -19,7 +19,7 @@ function Main() {
                         {/*<Rss/>*/}
                     </Route>
                     <Route path="/Websites">
-                        {<Websites/>}
+                        {<KeywordPage/>}
                     </Route>
                     <Route path="/ProSearch">
                         {<ProSearchContainer/>}

@@ -8,22 +8,28 @@ import TopLocationMapBoxInf from './TopLocationMapBoxInf';
 function MapPostInfBox(props) {
     const [donut,setDonut] = React.useState({
         options: {
-            series: [44, 55, 41, 17],
-            labels: ['خبرخوان', 'شیپور', 'توییتر', 'تلگرام'],
-            colors : ["#F9B503", "#4FDDAF" , '#3DC0F3' , "#5B76F7"],
+            dataLabels: {
+                enabled: false,
+              },
+            series: [44, 55, 41, 17,23],
+            labels: ['خبرخوان', 'شیپور', 'توییتر', 'تلگرام','روزنامه'],
+            colors : ["#F9B503", "#4FDDAF" , '#3DC0F3' , "#5B76F7","#f75b5b"],
             legend:{show:false},
+            stroke: {
+                lineCap: 'round'
+              },
             plotOptions: {
                 pie: {
                 expandOnClick: false,      
                   donut: {
-                    size: '67%',
+                    size: '70%',
                     labels: {
                     }
                   }
                 }
               }
         },
-        series: [44, 55, 41, 17],
+        series: [44, 55, 41, 17,23],
       });
     return (
         <div className="mapPostInfBox"> 
@@ -44,7 +50,10 @@ function MapPostInfBox(props) {
             </div>
             <div className="charInfBoxMapPost">
                 <div className="chartMapBoxInf">
-                <Chart className="chartDonutMapPostInf" options={donut.options} series={donut.series} type="donut" width="230" />
+                    <div className="maxPerChartMapBoxInf"><h4>66%</h4>
+                        <span>شیپور</span>
+                    </div>
+                    <Chart className="chartDonutMapPostInf" options={donut.options} series={donut.series} type="donut" width="230" />
                 </div>
                 <div className="topTenLocationMapBoxInf">
                     <div className="toptenLocationPostInf">

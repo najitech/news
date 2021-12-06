@@ -1,8 +1,10 @@
 .mapPostHeader{
     background-color: #272949;
-    flex: 0.3;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
     color: white;
     direction: rtl;
+    height: 220px;
 }
 .headerTitlesMapPost h1{
     font-size: 28px;

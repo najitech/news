@@ -61,6 +61,7 @@
 }
 .chartMapBoxInf{
     display: flex;
+    position: relative;
     align-items: center;
     flex: 0.3;
 }
@@ -75,4 +76,26 @@
     display: flex;
     margin: 5px 0px;
     flex-direction: column;
+}
+.maxPerChartMapBoxInf{
+    height: 60px;
+    right: 0px;
+    left: 0px;
+    margin: 0px 80px;
+    position: absolute;
+    text-align: center;
+}
+.maxPerChartMapBoxInf h4{
+    margin: 0;
+    padding-left: 7px;
+    color: black;
+    margin-top: 7px;
+    padding-top:8px;
+    font-weight: bold;
+    margin-bottom: -9px;
+}
+.maxPerChartMapBoxInf span{
+    color: gray;
+    font-size: 12px;
+    padding-left: 5px;
 }
