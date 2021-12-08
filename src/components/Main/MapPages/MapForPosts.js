@@ -127,7 +127,7 @@ function MapForPosts(props) {
     <ReactMapGL
         {...viewport}
         mapStyle="mapbox://styles/morteza80/ckwsazp2e3o4t15o3g9bqcltn"
-        mapboxApiAccessToken="pk.eyJ1IjoibW9ydGV6YTgwIiwiYSI6ImNrd2NkcGlzODFrbWMyb3FtOWtpcWdzZ2YifQ.hkWgCYG9hMPo9IdfTb3cCA"
+        mapboxApiAccessToken="pk.eyJ1IjoibS1oYXNoZW1pODAiLCJhIjoiY2t3ZjB0eDJpMGE2dDJvcnVnMDd0ZzhnciJ9.q-3U7cOXn_9a_AYrRmKATg"
         maxZoom={20}
         onViewportChange={newViewport => {
           setViewport({ ...newViewport });
