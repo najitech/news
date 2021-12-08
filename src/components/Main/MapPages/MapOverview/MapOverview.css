@@ -73,17 +73,18 @@
     display:flex;
     justify-content: space-around;
     padding:0px 13px;
+
 }
 .MO_SameLocations {
-    background-color: azure;
+  
     position: absolute;
     z-index: 100001;
     right:20px;
     top:0;
-    height:100vh;
+    height:100%;
     border-radius: 14px;
     padding:0px 7px;
-    overflow-x: scroll;
+    overflow-y: scroll;
 }
 .MO_SameLocationsTitle {
     display: flex;

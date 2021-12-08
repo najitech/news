@@ -4,6 +4,7 @@ import MapForOverview from '../MapForOverview'
 import MO_Header from './MO_Header/MO_Header';
 import MO_Body from './MO_Body/MO_Body';
 import MapSameLocation from './MapSameLocation';
+import MapForPosts from '../MapForPosts';
 
 function MapOverview(props) {
     const SameLocation = [

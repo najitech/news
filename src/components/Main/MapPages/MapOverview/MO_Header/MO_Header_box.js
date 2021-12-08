@@ -2,10 +2,10 @@ import React,{useState} from 'react'
 import './MO_Header_box.css'
 import { AiFillInstagram, AiFillTwitterCircle } from 'react-icons/ai'
 import { BiRss } from 'react-icons/bi'
-import {ImNewspaper} from 'react-icons/im'
+import {ImNewspaper,ImBullhorn} from 'react-icons/im'
 import { FaTelegramPlane } from 'react-icons/fa'
 import Chart from 'react-apexcharts'
-import { BsArrowDownRightCircleFill, BsFillArrowUpRightCircleFill } from 'react-icons/bs'
+import { BsCollectionFill} from 'react-icons/bs'
 
 function MO_Header_box(props) {
     let chartcolor="#e1306c"
@@ -31,8 +31,18 @@ function MO_Header_box(props) {
         TopMOColor = "MO_TopSlider_paper"
         chartcolor="rgba(81,214,168,1)"
     }
+    else if (props.type==="sheypoor"){
+      MO_HeaderBox_color = "MO_Header_box_sheypoor";
+      TopMOColor = "MO_TopSlider_sheypoor"
+      chartcolor="#0084FF"
+    }
+    else if (props.type==="all"){
+      MO_HeaderBox_color = "MO_Header_box_all";
+      TopMOColor = "MO_TopSlider_all"
+      chartcolor="#a3f9ff"
+    }
     const [chart , setchart] = useState({
-            series: [75],
+            series: [props.percent],
             options: {
               chart: {
                 height: 70,
@@ -101,7 +111,7 @@ function MO_Header_box(props) {
                 colors: [chartcolor],
               },
               stroke: {
-                lineCap: 'round'
+                lineCap: 'round',
               },
               labels: [''],
             },
@@ -114,13 +124,15 @@ function MO_Header_box(props) {
             </div>
             <div className="MO_HeaderboxHeader">
                 <div className="MO_HeaderboxChart">
-                    <div className="MOChart2">
+                    <div className={["MOChart2" , props.type==="all"? "MOChart2All" : ""].join(" ")}>
                       <Chart options={chart.options} series={chart.series} type="radialBar" height={110} />
                     </div>
                 </div>          
                 <div className={["MO_typeIconContainer"].join(" ")}>
                     <div className={["MO_Icon"].join(" ")}>
                         {
+                            props.type==="all" ?
+                            <BsCollectionFill className="MO_allIcon"/>:
                             props.type==="telegram" ?
                             <FaTelegramPlane className="MO_telegramIcon"/> :
                             props.type==="instagram" ?
@@ -131,11 +143,15 @@ function MO_Header_box(props) {
                             <BiRss className="MO_rssIcon"/> :
                             props.type==="paper" ?
                             <ImNewspaper className="MO_paperIcon" /> :
+                            props.type==="sheypoor" ?
+                            <ImBullhorn className="MO_sheypoorIcon"/>:
                             null
                         }
                     </div>
                     <span className="MO_HeaderBox_TitleSource">
                         {
+                            props.type==="all" ?
+                            <span className="MO_allIcon">همه </span> :
                             props.type==="telegram" ?
                             <span className="MO_telegramIcon">تلگرام </span> :
                             props.type==="instagram" ?
@@ -146,17 +162,19 @@ function MO_Header_box(props) {
                             <span className="MO_rssIcon">خبرخوان </span> :
                             props.type==="paper" ?
                             <span className="MO_paperIcon">روزنامه </span> :
+                            props.type==="sheypoor" ?
+                            <span className="MO_sheypoorIcon">شیپور </span> :
                             null
                         }
                     </span>
                 </div>
 
             </div>
-            <div className="MO_Header_BoxFooter">
+            <div className={["MO_Header_BoxFooter",props.type==="all" ? "MO_Header_BoxFooterAll MO_Header_BoxFooterAllCon" : ""].join(" ")}>
                   <span className="MO_Header_TodayNumber">
                         345,684
                   </span>
-                  <span className="MO_Header_TodayTitle">
+                  <span className={["MO_Header_TodayTitle",props.type==="all" ? "MO_Header_BoxFooterAll" : ""].join(" ")}>
                         موقعیت های مکانی دریافتی امروز
                   </span>
             </div>

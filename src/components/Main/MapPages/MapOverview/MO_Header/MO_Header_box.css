@@ -26,7 +26,15 @@
     background: rgb(81,214,168);
     background: linear-gradient(0deg, rgba(81,214,168,1) 0%, rgba(87,227,123,1) 50%);
 }
+.MO_Header_box_sheypoor {
+    background: rgb(0,102,255);
+    background: linear-gradient(0deg, rgba(0,102,255,1) 0%, rgba(0,132,255,1) 100%);
+}
+.MO_Header_box_all {
+    background: rgb(163,249,255);
+    background: linear-gradient(0deg, rgba(163,249,255,1) 0%, rgba(216,250,253,1) 100%);
 
+}
 .MO_TopSlider_instagram {
     background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
 }
@@ -47,6 +55,7 @@
 }
 .MO_HeaderboxChart {
     flex:0.5;
+
 }
 .MO_telegramIcon {
     color:#11cbfa;
@@ -62,6 +71,12 @@
 }
 .MO_paperIcon {
     color:rgba(81,214,168,1);
+}
+.MO_sheypoorIcon {
+    color:#0084FF;
+}
+.MO_allIcon {
+    color:#0bc6d3;
 }
 .MO_typeIconContainer {
     height: 80px;
@@ -190,6 +205,14 @@
     color:rgb(255, 255, 255);
     margin-top: 6px;
 }
+.MO_Header_BoxFooterAll {
+    color:rgb(107, 107, 107);
+    border-color: rgb(46, 229, 253);
+    
+}
+.MO_Header_BoxFooterAllCon {
+    margin-top:16px;
+}
 .MO_Header_boxMask {
     position:absolute;
     width: 100%;
@@ -215,5 +238,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
 
+}
+.MOChart2All {
+    border:none;
+    width: 80px;
+    height: 80px;
+}
+@-moz-document url-prefix() { 
+    .MOChart2 {
+        padding-top:17px;
+    }
+  }
