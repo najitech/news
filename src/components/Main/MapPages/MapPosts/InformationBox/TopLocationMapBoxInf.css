@@ -1,0 +1,66 @@
+.topLocationBoxMapBox{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex: 0.2;
+}
+.topLocationBoxMapBox p{
+    font-size: 9px;
+    padding: 0px;
+    margin: 0px;
+}
+.greenGrowthTopLocationStyle {
+    color: #24E5A4;
+}
+.redGrowthTopLocationStyle{
+    color: #e52424;
+}
+.nameLocationBoxMapBoxTop{
+    display: flex;
+    flex:0.7;
+    align-items: center;
+}
+.numberOfTopTenLocationBox{
+    height: 26px;
+    display: flex;
+    font-size: 11px;
+    padding: 0px;
+    margin: 0px;
+    padding-top: 3px;
+    font-weight: bold;
+    align-items: center;
+    width: 30px;
+    margin-left: 5px;
+    justify-content: center;
+    border-radius: 9px;
+}
+.growthIconTopLocationMapBox{
+    flex:0.3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+}
+.nameLocationBoxMapBoxTop h4{
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+}
+.topLocationBoxMapBox h5{
+    font-size: 10px;
+    margin: 0px;
+    color: black;
+    font-weight: bold;
+    margin: 0px 3px;
+    padding: 0px;
+    padding-top: 8px;
+}
+.oddLocationIconStyleTopTen{
+    background-color: #DFF8FF;
+    color: #7CD5EC;
+}
+.evenLocationIconStyleTopTen{
+    background-color: #D9E1FC;
+    color: #6276D4;
+}

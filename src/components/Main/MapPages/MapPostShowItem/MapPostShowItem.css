@@ -1,0 +1,234 @@
+.shaypoorThemePostMapList{
+    --boxshadowFadeMPPost :#4fddb03a;
+    --colorMPPost : #29D3B2;
+    --background-colorMPPost: #afeedaa1;
+    --background-colorMP :#C9FCF5; 
+    --background-hovermP: #afeeda3b;
+}
+.twitterThemePostMapList{
+    --boxshadowFadeMPPost :#3dbff333;
+    --colorMPPost : #3DC0F3;
+    --background-colorMPPost: #b1e7fc7a;
+    --background-colorMP :#e4f5ff; 
+    --background-hoverMP: #b1e7fc33;
+}
+.rssThemePostMapList{
+    --boxshadowFadeMPPost :#f9b3032d;
+    --colorMPPost : #F9B503;
+    --background-colorMPPost: #f8e1a896;
+    --background-colorMP : #faf4dd;
+    --background-hoverMP: #f8e1a836;
+}
+.telegramThemePostMapList{
+    --boxshadowFadeMPPost :#5b75f736;
+    --colorMPPost : #5B76F7;
+    --background-colorMPPost: #b9c5ff96;
+    --background-colorMP :#def3fd; 
+    --background-hoverMP: #b9c5ff3a;
+}
+.newsPaperThemePostMapList{
+    --boxshadowFadeMPPost :#f75b5b44;
+    --colorMPPost : #f75b5b;
+    --background-colorMPPost: #ffb9b996;
+    --background-colorMP :#fddede; 
+    --background-hoverMP: #ffb9b93a;
+}
+.mapPostItemMapBox{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px dashed var(--background-colorMPPost);
+}
+.postFeedItemMap{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.postFeedItemMap > div{
+    flex: 0.3;
+    display: flex;
+    padding: 10px;
+    height: 50px;
+    border-radius: 6px;
+    margin: 2px 6px;
+}
+.wordsBoxMapBoxItem{
+    display: flex;
+    flex-direction: column;   
+    margin-right: -5px;
+    border-left: var(--boxshadowFadeMPPost) solid 2px;
+}
+.indexOfwordsItemBoxMap{
+    display: flex;
+    flex-direction: column;
+    color: #272949;
+    font-size: 9px;
+    font-weight: bold;
+}
+.indexOfwordsItemBoxMap > div{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    
+    margin: 4px 0px;
+}
+.wordsBoxMapBoxItem > div{
+    height: 100%;
+    border-radius: 6px;
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    padding: 6px;
+    margin: 2px 0px;
+}
+.postHeaderItemMap{
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+}
+.rightsideItemMapBox{
+    height: 100%;
+    padding-top: 16px;
+    border-left: var(--boxshadowFadeMPPost) solid 2px;
+}
+.typeSocialPostItemMap{
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+.typeSocialPostItemMap div{
+    color: white;
+    width: 70px;
+    font-size: 8px;
+    margin-left: 5px;
+    padding:1px 4px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+.socialMediaPostItem{
+    background-color: var(--colorMPPost);
+}
+.typeSocialPostItem{
+    background-color: #4BCEF9;
+}
+.type2SocialPostItem{
+    background-color: #2ED470;
+}
+.profilePostItemMap{
+    display: flex;
+}
+.infPostItemMap{
+    width: 373px;
+    margin: 0px 10px;
+}
+.infPostItemMap h5{
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+.infPostItemMap p{
+    display: block;/* or inline-block */
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 3em;
+    line-height: 1.5em;
+    padding: 0px;
+    margin:0px;
+    color: rgb(100, 100, 100);
+    font-size: 10.5px;
+}
+.avatarPostItemMapCom{
+    height: 50px !important;
+    width: 50px !important;
+    border-radius:7px !important;
+}
+.posterItemMapBox{
+    display: flex;
+    padding: 3px 5px;
+    border-radius: 6px;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: left;
+    min-width: 180px;
+    text-align: left;
+    margin-right: 0px;
+}
+.dataAndUserInfMapBox{
+    margin-left: 5px;
+}
+.dataAndUserInfMapBox h5{
+    margin: 0px;
+    margin-top:5px;
+    color: var(--colorMPPost);
+    font-size: 11px;
+    padding-left: 1px;
+    font-weight: bold;
+}
+.dataAndUserInfMapBox span{
+    font-size: 9px;
+}
+.posterAvatarItemMapBox{
+    box-shadow: 0.5px 0.5px 2px 1px var(--boxshadowFadeMPPost) !important;
+}
+
+.otherandnumberItemMapBox{
+    display: flex;
+    margin-right: 30px;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 70px;
+}
+.otherandnumberItemMapBox h5{
+    margin: 0px;
+    margin-top:5px;
+    color: #272949;
+    font-size: 11px;
+    font-weight: bold;
+}
+.otherLocationsItemMapBox{
+    
+    display: flex;
+    align-items: center;
+}
+.otherLocationsItemMapBox > div{
+    width: 32px;
+    height: 32px;
+    display: flex;
+    color: white;
+    font-weight: 200;
+    align-items: center;
+    border: 1px white solid;
+    text-align: center;
+    margin-left: -10px;
+    justify-content: center;
+    border-radius:50%;
+}
+.otherlocationdiv1{
+    background: rgb(147,195,226);
+    background: linear-gradient(180deg, rgba(147,195,226,1) 0%, rgba(129,175,222,1) 0%, rgba(103,145,216,1) 17%, rgba(102,144,216,1) 29%, rgba(85,125,213,1) 51%, rgba(72,110,210,1) 100%);
+}
+.otherlocationdiv2{
+    background: rgb(241,217,149);
+background: linear-gradient(220deg, rgba(241,217,149,1) 0%, rgba(239,189,120,1) 16%, rgba(238,170,101,1) 30%, rgba(237,154,84,1) 41%, rgba(233,111,38,1) 100%);
+}
+.otherlocationdiv3{
+    background: rgb(187,224,127);
+    background: linear-gradient(220deg, rgba(187,224,127,1) 0%, rgba(153,204,96,1) 14%, rgba(135,194,80,1) 26%, rgba(113,182,60,1) 51%, rgba(98,173,46,1) 66%, rgba(90,143,64,1) 100%)
+}
+.otherlocationdiv4{
+    background: rgb(190,113,207);
+    background: linear-gradient(220deg, rgba(190,113,207,1) 0%, rgba(130,76,196,1) 51%, rgba(73,48,176,1) 100%);    
+}
+.moreIconPosterItemMapBox{
+    height: 30px !important;
+    width: 30px !important;
+    font-size: 13px !important;
+    padding: 0px !important;
+    margin-left: 20px;
+    color: var(--colorMPPost) !important;
+}
+.type2SocialPostItemnag{
+    background-color: #d42e2e;   
+}

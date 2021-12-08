@@ -1,0 +1,211 @@
+.shaypoorThemePostMapList{
+    --boxshadowFadeMPPost :#4fddb017;
+    --colorMPPost : #29D3B2;
+    --background-colorMPPost: #afeedaa1;
+    --background-colorMP :#C9FCF5; 
+    --background-hovermP: #afeeda3b;
+}
+.twitterThemePostMapList{
+    --boxshadowFadeMPPost :#3dbff31a;
+    --colorMPPost : #3DC0F3;
+    --background-colorMPPost: #b1e7fc7a;
+    --background-colorMP :#e4f5ff; 
+    --background-hoverMP: #b1e7fc33;
+}
+.rssThemePostMapList{
+    --boxshadowFadeMPPost :#f9b30318;
+    --colorMPPost : #F9B503;
+    --background-colorMPPost: #f8e1a896;
+    --background-colorMP : #faf4dd;
+    --background-hoverMP: #f8e1a836;
+}
+.telegramThemePostMapList{
+    --boxshadowFadeMPPost :#5b75f721;
+    --colorMPPost : #5B76F7;
+    --background-colorMPPost: #b9c5ff96;
+    --background-colorMP :#def3fd; 
+    --background-hoverMP: #b9c5ff3a;
+}
+.newsPaperThemePostMapList{
+    --boxshadowFadeMPPost :#f75b5b21;
+    --colorMPPost : #f75b5b;
+    --background-colorMPPost: #ffb9b996;
+    --background-colorMP :#fddede; 
+    --background-hoverMP: #ffb9b93a;
+}
+.headAccMapPost{
+    width: 100% !important;
+    height: 40px !important;
+    display: flex !important;
+    align-items: center !important;
+}
+.extenKPCo{
+    width: 100% !important;
+    padding: 0px !important;
+    display: flex;
+    align-items: center;
+}
+.back{
+    padding: 0px 10px 0px 0px !important;
+}
+.extenKPCo div{
+    margin-left: 30px;
+}
+.holerepeatListKPMapBox{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    padding-right: 5px;
+}
+.keyContainerLP{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+.holerepeatListKPMapBox h4{
+    font-size: 15px;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 4px;
+}
+.holerepeatListKPMapBox span{
+    font-size: 11px;
+}
+.kpACCcoMapBox{
+
+    border-radius: 17px !important;
+    box-shadow: 1px 1px 12px 1px #2729492c !important;
+    background: linear-gradient(90deg, hsla(187, 80%, 98%, 1) 0%, hsla(0, 0%, 100%, 1) 43%, hsla(225, 80%, 98%, 1) 100%) !important;
+}
+
+.firstRadListItemMapBox{
+    border-top-left-radius:0px !important;
+    margin-top: -11px !important;
+    
+    box-shadow: 1px 7px 12px 1px #a4a6b82c !important;
+    border-top-right-radius:0px !important;
+}
+
+.twitter_NumACCHeadMapBox
+{
+    color:#3DC0F3;
+    text-align: center;
+    display: flex;
+    align-items: center;justify-content: space-evenly;
+    width: 67PX;
+    border-radius: 14px;
+    padding: 5px 3px;
+    font-size: 16px;
+}
+.rss_NumACCHeadMapBox
+{   
+    color:#F9B503;
+    text-align: center;
+    display: flex;
+    align-items: center;justify-content: space-evenly;
+    width: 67px;
+    border-radius: 14px;
+    padding: 6px 3px;
+    font-size: 14px;
+}
+.telegram_NumACCHeadMapBox
+{
+    color:#5B76F7;
+    text-align: center;
+    display: flex;
+    align-items: center;justify-content: space-evenly;
+    width: 67px;
+    border-radius: 14px;
+    padding: 5px 3px;
+    font-size: 16px;
+}
+.sumNumKPlist{
+    margin-right: 30px;
+    text-align: center;
+    min-width: 140px;
+    font-size: 13px;
+}
+
+.openExtentionBtn{
+    margin-right:40px;
+}
+.extBtnMapBox{
+    background-color: #D9E1FC !important;
+    color: #6276D4 !important;
+    border-radius: 14.3px !important;
+    font-size: 10px !important;
+    padding: 5px 12px!important;
+    font-weight: bold !important;
+    margin-left: 0px !important;
+}
+.searchBtnKP{
+    background-color: #812020 !important;
+    color: white !important;
+    border-radius: 12.3px !important;
+    font-size: 10px !important;
+    padding: 5px 12px!important;
+    font-weight: bold !important;
+}
+.locationAvatarListShow{
+    color: white;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 40px;
+}
+.locationAvatarStyle1{
+    background: rgb(147,195,226);
+    background: linear-gradient(180deg, rgba(147,195,226,1) 0%, rgba(129,175,222,1) 0%, rgba(103,145,216,1) 17%, rgba(102,144,216,1) 29%, rgba(85,125,213,1) 51%, rgba(72,110,210,1) 100%);
+}
+.locationAvatarStyle2{
+    background: rgb(241,217,149);
+background: linear-gradient(220deg, rgba(241,217,149,1) 0%, rgba(239,189,120,1) 16%, rgba(238,170,101,1) 30%, rgba(237,154,84,1) 41%, rgba(233,111,38,1) 100%);
+}
+.locationAvatarStyle3{
+    background: rgb(187,224,127);
+    background: linear-gradient(220deg, rgba(187,224,127,1) 0%, rgba(153,204,96,1) 14%, rgba(135,194,80,1) 26%, rgba(113,182,60,1) 51%, rgba(98,173,46,1) 66%, rgba(90,143,64,1) 100%)
+}
+.locationAvatarStyle4{
+    background: rgb(190,113,207);
+background: linear-gradient(220deg, rgba(190,113,207,1) 0%, rgba(130,76,196,1) 51%, rgba(73,48,176,1) 100%);
+}
+.HeaderInfListMapPost{
+    display: flex;
+    background-color: var(--background-colorMP);
+    width: 120px;
+    border-radius:30px;
+    padding:4px 5px;
+    align-items: center;
+}
+.headInfSocialMapPost{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin-top: 6px;
+    margin-right: -24px;
+    text-align: right;
+    justify-content: right;
+}
+.headInfSocialMapPost h4{
+    margin: 0px;
+    font-size: 11px;
+    font-weight: bold;
+    color: #272949;
+    margin-bottom: -1px;
+}
+.headInfSocialMapPost span{
+    color: #A2AAB2;
+    font-size: 9px;
+}
+.headIconSocialMapPost{
+    color: white;
+    background-color: var(--colorMPPost) !important;
+    padding: 6.5px;
+    font-size: 13px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}

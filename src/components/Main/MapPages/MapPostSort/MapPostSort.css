@@ -1,0 +1,63 @@
+.PSR_Sort_KP{
+    direction: ltr;
+    width: 480px;
+}
+.togSort{
+    flex:0.3;
+    border-radius: none !important;
+    height: 30px;
+}
+.selectSortKP{
+    border-radius: 0px !important;   
+}
+.sortSelectBtn{
+    border-radius:3px !important;
+    background-color: white !important;
+    font-size: 12px !important;
+    padding: 4px !important;
+    margin: 0px 5px !important;
+    box-shadow : 1.0px 1.4px 2px 0.4px #E4E0F5 !important;
+}
+.KP_Sortasas{
+    display: flex;
+    direction: rtl;
+    align-items: center;
+    background-color:#FFFFFF;
+    border-radius: 13px;
+    padding: 2px 4px;
+    box-shadow: 4px 4px 5px 1px rgba(214, 214, 214, 0.4) , -5px -5px 20px 1px rgba(214, 214, 214, 0.4);
+}
+.KP_sortIconRss{
+    font-size: 23px;
+    color: #764ee3;
+}
+.KP_Sortasas p{
+    padding : 0px;
+    font-size: 13px;
+    color: #414040;
+    margin: 0px 5px;
+}
+@media screen  and (max-width :760px){ 
+    .togSort {
+        display: none !important;
+    }
+    .SortsRss {
+        justify-content: right;
+    }
+}
+@media screen  and (max-width :573px){ 
+    .SortItems {
+        display: none;
+    }
+}
+.hi10{
+    font-size: 12px !important;
+    color:white !important;
+} 
+.menuButtonRssSort{
+    font-size: 12px !important;
+}
+
+.KP_menuButton {
+    color:#414040 !important;
+}

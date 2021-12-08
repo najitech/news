@@ -1,0 +1,41 @@
+.mapPostFeed{
+    flex: 0.7;
+    width: 1197px;
+    margin: 0px auto;
+    padding-top: 170px;
+    padding-bottom: 50px;
+}
+.KPWidget_instgramIcon_indexMapBox{
+    background-color:#4FDDAF ;
+    margin-right: 74px;
+}
+.KPWidget_twitterIcon_indexMapBox{
+    margin-right: 75px;
+    background-color: #3DC0F3;
+}
+.KPWidget_rssIcon_indexMapBox{
+    margin-right: 72px;
+    background-color: #F9B503;
+}
+.KPWidget_telegramIcon_indexMapBox{
+    margin-right: 74px;
+    background-color: #5B76F7;
+}
+.indexPostListItemKPMapBox{
+    background: linear-gradient(90deg, hsla(187, 80%, 98%, 1) 0%, hsla(0, 0%, 100%, 1) 43%, hsla(225, 80%, 98%, 1) 100%)  !important;
+}
+
+.indexOfpostsMapBox{
+    margin-top: -10px;
+    margin-bottom: 8px;
+}
+.indexOfpostsMapBox span {
+    padding: 0px;
+    margin-right: 5px;
+    font-size: 12.5px;
+    border-bottom: 2px solid #D9E1FC;
+    padding-bottom: 3px;
+}
+.indexOfpostsMapBox:first-child{
+    margin-right: 20px;
+}

@@ -7,6 +7,7 @@ import ProSearchContainer from './ProSearchPage/ProSearchContainer'
 import Websites from './Websites/Websites'
 import KeywordPage from './KeywordPage/KeywordPage'
 import MapOverview from './MapPages/MapOverview/MapOverview'
+import MapPage from './MapPages/MapPosts/MapPosts'
 function Main() {
     return (
         <div className="Main">
@@ -17,10 +18,10 @@ function Main() {
                     </Route>
                     <Route path="/RSS">
                         {/*<Rss/>*/}
-                        <KeywordPage/>
+                        <MapPage/>
                     </Route>
                     <Route path="/Websites">
-                        {<Websites/>}
+                        {<KeywordPage/>}
                     </Route>
                     <Route path="/ProSearch">
                         {<ProSearchContainer/>}

@@ -49,6 +49,7 @@
     margin-bottom:3px;
     font-size: 11px;
 }
+
 .postContent_KP p{
     display: block;/* or inline-block */
     text-overflow: ellipsis;
