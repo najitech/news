@@ -4,6 +4,7 @@
     right: 0px;
     position: absolute;
     height: 200px;
+    z-index: 100000;
     margin: 0px 120px;
     border-radius: 20px;
     box-shadow: 1px 1px 12px 1px #2729492c;

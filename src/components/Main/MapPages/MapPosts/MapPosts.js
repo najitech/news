@@ -15,7 +15,7 @@ function MapPosts(props) {
                         <div className="fadeRightMap">
 
                         </div>
-                        <MapForPosts className="h65" width="1500px" height="600px"/>
+                        <MapForPosts className="h65" width="100%" height="800px"/>
                     </div>
             <MapPostFeed/>
             <MapPostInfBox/>

@@ -15,7 +15,7 @@ function MapForPosts(props) {
         latitude: 52.6376,
         longitude: -1.135171,
         width: "100vw",
-        height: "100vh",
+        height: props.height,
         zoom: 12
     });
     const fetcher = (...args) => fetch(...args).then(response => response.json());

@@ -86,6 +86,11 @@ function MapPostFeed(props) {
             <ListItemMapPost index={1} sum="3208320" instagram="898023" twitter="732261" rss="897923" telegram="473873" title="مشهد"  rad/>
             <ListItemMapPost index={2} sum="2345384" instagram="1232" twitter="96842" rss="29831" telegram="7652" title="اصفهان"  rad/>
             <ListItemMapPost index={3} sum="998603" instagram="32718" twitter="12131" rss="96589" telegram="945893" title="تبریز"  rad/>
+            <ListItemMapPost index={3} sum="998603" instagram="32718" twitter="12131" rss="96589" telegram="945893" title="تبریز"  rad/>
+            <ListItemMapPost index={3} sum="998603" instagram="32718" twitter="12131" rss="96589" telegram="945893" title="تبریز"  rad/>
+            <ListItemMapPost index={3} sum="998603" instagram="32718" twitter="12131" rss="96589" telegram="945893" title="تبریز"  rad/>
+            <ListItemMapPost index={3} sum="998603" instagram="32718" twitter="12131" rss="96589" telegram="945893" title="تبریز"  rad/>
+            <ListItemMapPost index={3} sum="998603" instagram="32718" twitter="12131" rss="96589" telegram="945893" title="تبریز"  rad/>
         </div>
     )
 }
