@@ -212,7 +212,7 @@ function MapForOverview(props) {
                         <span>طبس</span>
                         <span>21K</span>
                       </div>
-                      <div className="MapPage_Marker_more" >
+                      <div className="MapPage_Marker_more" /*onClick=props.setSameLocation(Your Data)*/ >
                         +6
                       </div>
                     </div>

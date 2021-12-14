@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './MapOverview.css'
 import MapForOverview from '../MapForOverview'
 import MO_Header from './MO_Header/MO_Header';
@@ -7,7 +7,7 @@ import MapSameLocation from './MapSameLocation';
 import MapForPosts from '../MapForPosts';
 
 function MapOverview(props) {
-    const SameLocation = [
+    const[ SameLocation , setSameLocation] = useState([
         {
             latitude: 36.2605,
             longitude: 59.6168,
@@ -68,7 +68,7 @@ function MapOverview(props) {
             TodayData:"342.671K",
             TodayRaise:"8.429K"
         },
-    ]
+    ])
     return(
         <div className="MapOverview">
             <div className="MapOverviewContainer">
@@ -109,7 +109,7 @@ function MapOverview(props) {
                         <div className="fadeRightMap">
 
                         </div>
-                        <MapForOverview className="h65" width="1500px" height="100vh"/>
+                        <MapForOverview className="h65" width="1500px" height="100vh" setSameLocation={setSameLocation}/>
                     </div>
                 </div>
 
