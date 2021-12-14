@@ -47,12 +47,12 @@ function ListItemMapPost(props) {
                 <ExpansionPanelSummary className="margin back">
                 <div className="fontAccardion headAccMapPost">
                     <div className="extenKPCo">
-                        <div className="keyContainerLP">
+                        <div className="keyContainerLPMP">
                             <div className="holerepeatListKPMapBox">
-                                <div className={["locationAvatarListShow", `locationAvatarStyle${props.index%4+1}`].join(" ")}>{props.title[0]}</div><div style={{marginRight:"-20px",display:'flex',textAlign:'right',alignItems:'center',flexDirection:'column'}}><h4 style={{fontWeight:'bold' , textShadow:'1px 1px 1px 1px grey'}}>{props.title}</h4><span>{nFormatter(parseInt(props.sum))}</span></div>
+                                <div className={["locationAvatarListShow", `locationAvatarStyle${props.index%4+1}`].join(" ")}>{props.title[0]}</div><div className="resresresFinal" style={{marginRight:"-20px",display:'flex',textAlign:'right',alignItems:'center',flexDirection:'column'}}><h4 style={{fontWeight:'bold' , textShadow:'1px 1px 1px 1px grey'}}>{props.title}</h4><span>{nFormatter(parseInt(props.sum))}</span></div>
                             </div>
                         </div>
-                        <div style={{marginRight:'190px'}} className="HeaderInfListMapPost shaypoorThemePostMapList">
+                        <div className="HeaderInfListMapPost shaypoorThemePostMapList marginRigthMPListItemHead">
                                 <div classNam=""><GiTrumpet className="headIconSocialMapPost"/></div>
                                 <div className="headInfSocialMapPost">
                                     <h4>{nFormatter(parseInt(props.instagram))}</h4>

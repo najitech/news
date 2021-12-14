@@ -1,4 +1,4 @@
-.PSR_Sort_KP{
+.PSR_Sort_MP{
     direction: ltr;
     width: 500px;
 }
@@ -37,6 +37,38 @@
     color: #414040;
     margin: 0px 5px;
 }
+
+.KP_menuButtonMP {
+    color:#414040 !important;
+}
+@media screen  and (max-width :1050px){ 
+    .PSR_Sort_MP{
+        width: 450px !important;
+    }
+    .KP_Sortasas p{
+        font-size: 11px;
+    }
+    .KP_sortIconRss{
+        font-size: 20px;
+    }
+    .togSort{
+        height: 20px !important;
+    }
+    .sortSelectBtn{
+        padding: 2px !important;
+    }
+}
+
+@media screen  and (max-width :820px){
+    .PSR_Sort_MP{
+        width: 250px !important;
+    }
+    .KP_menuButtonMP{
+        font-size: 10.5px !important;
+        padding: 4px !important;
+        padding-bottom: 5px !important;
+    }
+}
 @media screen  and (max-width :760px){ 
     .togSort {
         display: none !important;
@@ -45,9 +77,29 @@
         justify-content: right;
     }
 }
+
+@media screen  and (max-width :720px){ 
+    .KP_menuButtonMP{
+        font-size: 10.5px !important;
+        padding: 0px !important;
+        padding-bottom: 0px !important;
+    }
+    .PSR_Sort_MP{
+        width: 220px !important;
+    }
+}
 @media screen  and (max-width :573px){ 
     .SortItems {
         display: none;
+    }
+    .KP_sortIconRss{
+        font-size: 18px !important;
+    }
+}
+
+@media screen  and (max-width :520px){ 
+    .PSR_Sort_MP{
+        width: 90px !important;
     }
 }
 .hi10{
@@ -56,8 +108,4 @@
 } 
 .menuButtonRssSort{
     font-size: 12px !important;
-}
-
-.KP_menuButton {
-    color:#414040 !important;
 }

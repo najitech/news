@@ -100,3 +100,164 @@
     font-size: 12px;
     padding-left: 5px;
 }
+
+@media screen and (max-width: 1400px) {
+    .mapPostInfBox{
+        margin: 0px 100px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .mapPostInfBox{
+        margin: 0px 100px;
+    }
+    .mapPostInfBox{
+        margin: 0px 60px;
+    }
+       
+}
+@media screen and (max-width: 1100px) {
+    .totalInfBoxMapPost{
+        padding-right: 20px;
+    }
+    .totalInfBoxMapPost h2{
+        font-size: 19px;
+    }
+    .growsMapBoxInf h3{
+        font-size: 12px;
+    }
+    .growsMapBoxInf span{
+        font-size: 9px;
+    }
+    .baseGrowsBoxStyle{
+        height: 35px;
+        width: 35px;
+        font-size: 20px;
+    }
+    .baseGrowsBoxStyle{
+        margin-left: 5px;
+        margin-top: -3px;
+        margin-right: 0px;
+    }
+    .maxPerChartMapBoxInf{
+        margin: 0px 65px;
+    }
+    .maxPerChartMapBoxInf h4{
+        font-size: 16px;
+    }
+    .maxPerChartMapBoxInf span{
+        font-size: 11px;
+    }
+    
+}
+@media screen and (max-width: 950px) {
+    .maxPerChartMapBoxInf{
+        display: none;
+    }
+    .chartMapBoxInf{
+        display: none;
+    }
+    .topTenLocationMapBoxInf{
+        flex:1;
+        margin-right: 20px;
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+    .totalInfBoxMapPost{
+        flex: 0.4;
+    }
+    .charInfBoxMapPost{
+        flex:0.6;
+    }
+    .growsMapBoxInf{
+        margin-top: 4px;
+        flex-direction: column;
+    }
+    .growsMapBoxInf >div{
+        margin:5px 0px;
+    }
+    .totalInfBoxMapPost span{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .mapPostInfBox{
+        flex-direction: column;
+        height: 420px;
+    }
+    .totalInfBoxMapPost{
+        border: none;
+        position: relative;
+        padding-right: 15px;
+    }
+    .responsiveChart{
+        position: absolute;
+        top: 10px;
+        left: 0px;
+    }
+    .responsiveChartInfo{
+        position: absolute;
+        left: 85px;
+        top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .responsiveChartInfo h4{
+        font-weight: bold;
+        color: black;
+        font-size: 18px;
+        margin: 0;
+        padding-left: 1px;
+    }
+    .responsiveChartInfo span{
+        color: grey;
+        margin-top: -3px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .mapPostInfBox{
+        margin: 0px 20px;
+    }
+    .growsMapBoxInf h3{
+        font-size: 12px;
+        padding-top: 5px;
+    }
+    .totalInfBoxMapPost{
+        border: none;
+        position: relative;
+        padding-right: 8px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .totalInfBoxMapPost h2{
+        font-size: 16px;
+    }
+    .growsMapBoxInf h3{
+        font-size: 12px;
+    }
+    .growsMapBoxInf span{
+        font-size: 8px;
+    }
+    .totalInfBoxMapPost span{
+        font-size: 9px;
+    }
+    .responsiveChartInfo{
+        top: 46px;
+        left: 70px;
+    }
+    .charInfBoxMapPost{
+        flex: 1;
+        margin-right: -10px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+.responsiveChart{
+    margin-left: -20px;
+}
+}

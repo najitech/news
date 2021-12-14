@@ -1,10 +1,10 @@
-.searchBoxKP{
+.searchBoxMP{
     display: flex;
-    box-shadow: 4px 4px 5px 1px rgba(214, 214, 214, 0.4) , -5px -5px 20px 1px rgba(214, 214, 214, 0.4);
+    box-shadow: 1px 1px 10px 1px #2729492c !important;
     border-radius: 13px;
     margin-bottom: 1px;
 }
-.searchBoxKP input { 
+.searchBoxMP input { 
     width: 400px;
     font-size: 13px;
     padding: 1px 15px;
@@ -13,7 +13,7 @@
     outline: none;
     border-bottom-right-radius: 13px !important;
 }
-.searchBoxKP input::placeholder{
+.searchBoxMP input::placeholder{
     color: grey;
     padding: 0px;
 }
@@ -29,9 +29,48 @@
     border-top-right-radius: 0px !important;
     border-bottom-right-radius: 0px !important;
 }
-.searchBoxKP input:focus ~ .searchBtnKPList{
+.searchBoxMP input:focus ~ .searchBtnKPList{
     background-color: #50d890 !important;
 }
-.searchBtnKPList:hover{
+@media screen and (max-width: 1050px) { 
+    .searchBoxMP input{
+        width: 250px;
+    }
+    .searchBoxMP{
+        margin-top: 3px;
+    }
+    .searchBtnKPList{
+        
+        height: 29px !important;
+        width: 40px !important;
+    }
+    .searchBoxMP{
+        box-shadow : 0.5px 0.5px 16px 0px #bdbdbd10 !important;
+    }
+    
+}
+
+@media screen and (max-width: 720px) {
+    .searchBoxMP input{
+        width: 200px;
+        font-size: 10px;
+    }
+    .searchBtnKPList{
+        
+        height: 25px !important;
+        width: 34px !important;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .searchBoxMP input{
+        width: 170px;
+        font-size: 10px;
+    }
+    .searchBtnKPList{   
+        height: 20px !important;
+        width: 25px !important;
+        font-size: 10px !important  ;
+    }
     
 }

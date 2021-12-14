@@ -56,16 +56,16 @@ export default function MapPostSortItem(props) {
           onChange={handleAlignment}
           aria-label="text alignment"
         >
-          <ToggleButton className="PSR_ToggleButton" aria-label="left aligned">
+          <ToggleButton className=" MaPBoxB" aria-label="left aligned">
             <p>نام</p>
           </ToggleButton>
-          <ToggleButton className="PSR_ToggleButton" v aria-label="right aligned">
+          <ToggleButton className=" MaPBoxB" v aria-label="right aligned">
             <p>جدید ترین</p>
           </ToggleButton>
-          <ToggleButton className="PSR_ToggleButton"  va aria-label="centered">
+          <ToggleButton className=" MaPBoxB"  va aria-label="centered">
             <p>بیشترین داده</p>
           </ToggleButton>
-          <ToggleButton className="PSR_ToggleButton" aria-label="right aligned">
+          <ToggleButton className=" MaPBoxB" aria-label="right aligned">
             <p>پربازدیدترین</p>
           </ToggleButton>
         </StyledToggleButtonGroup>

@@ -71,7 +71,6 @@
     justify-content: center;
     align-items: center;
     padding: 6px;
-    
     margin: 4px 0px;
 }
 .wordsBoxMapBoxItem > div{
@@ -223,6 +222,7 @@ background: linear-gradient(220deg, rgba(241,217,149,1) 0%, rgba(239,189,120,1) 
 }
 .moreIconPosterItemMapBox{
     height: 30px !important;
+    
     width: 30px !important;
     font-size: 13px !important;
     padding: 0px !important;
@@ -231,4 +231,151 @@ background: linear-gradient(220deg, rgba(241,217,149,1) 0%, rgba(239,189,120,1) 
 }
 .type2SocialPostItemnag{
     background-color: #d42e2e;   
+}
+
+@media screen and (max-width: 1300px) { 
+    .infPostItemMap{
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 1250px) { 
+    .infPostItemMap{
+        width: 250px;
+    }
+    .otherandnumberItemMapBox{
+        margin-left: 0px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .infPostItemMap{
+        width: 200px;
+    }
+    .otherandnumberItemMapBox{
+        margin-left: -40px;
+        margin-right: 10px;
+    }
+} 
+
+@media screen and (max-width: 930px) {
+    .infPostItemMap{
+        width: 150px;
+    }
+    .otherandnumberItemMapBox{
+        display: none;
+    }
+    .posterItemMapBox{
+        margin-right: -40px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .posterItemMapBox{
+        margin-left: -70px;
+        flex-direction: column;
+        margin-right: -50px;
+    }
+    .dataAndUserInfMapBox{
+        text-align: center;
+    }
+    .infPostItemMap{
+        width: 160px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .posterItemMapBox{
+        margin-left: 0px;
+        flex-direction: row-reverse;
+        margin-right: 0px;
+    }
+    .dataAndUserInfMapBox{
+        text-align: left;
+    }
+    .infPostItemMap{
+        width: 450px !important;
+    }
+    .otherandnumberItemMapBox{
+        display: block;
+    }
+    .postHeaderItemMap{
+        flex-direction: column;
+    }
+    .wordsBoxMapBoxItem{
+        width: 450px;
+    }
+    .postHeaderItemMap > div{
+        margin:3px 0px;
+    }
+    .posterClassDivShow >div{
+        margin: 0px 10px;
+    }
+    .rightsideItemMapBox{
+        border-left: none;
+        padding-bottom: 3px;
+        border-bottom: var(--boxshadowFadeMPPost) dotted 2px;
+    }
+    .wordsIndexAndClassDivMap{
+        padding-bottom: 3px;
+        border-bottom: var(--boxshadowFadeMPPost) dotted 2px;
+    }
+    .wordsBoxMapBoxItem{
+        border: none;
+    }
+    .infPostItemMap h5{
+        font-size: 12px;
+    }
+    .infPostItemMap p{
+        font-size: 9px;
+        max-height: 4.5em;
+    line-height: 1.5em;
+    }
+    .avatarPostItemMapCom{
+        height: 50px !important;
+        width: 50px !important;
+        margin-top: 5px;
+    }
+    .indexOfwordsItemBoxMap{
+        font-size: 8px;
+    }
+    .indexOfwordsItemBoxMap > div{
+        font-size: 7px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+.wordsBoxMapBoxItem{
+    width: 400px;
+}
+.infPostItemMap{
+    width: 400px !important;
+}
+}
+@media screen and (max-width: 520px) {
+    .wordsBoxMapBoxItem{
+        width: 250px;
+    }
+    .infPostItemMap{
+        width: 230px !important;
+    }
+    .rightsideItemMapBox{
+        padding-top: 0px;
+    }
+}
+@media screen and (max-width: 370px) {
+    .wordsBoxMapBoxItem{
+        width: 270px;
+    }
+    .infPostItemMap{
+        width: 230px !important;
+    }
+    .rightsideItemMapBox{
+        padding-top: 0px;
+    }
+    
+.indexOfwordsItemBoxMap  span{
+    display: none;
+}
 }

@@ -58,7 +58,7 @@
     width: 200px;
     padding-right: 5px;
 }
-.keyContainerLP{
+.keyContainerLPMP{
     display: flex;
     align-items: center;
     font-size: 20px;
@@ -75,78 +75,18 @@
 .kpACCcoMapBox{
 
     border-radius: 17px !important;
-    box-shadow: 1px 1px 12px 1px #2729492c !important;
-    background: linear-gradient(90deg, hsla(187, 80%, 98%, 1) 0%, hsla(0, 0%, 100%, 1) 43%, hsla(225, 80%, 98%, 1) 100%) !important;
+    box-shadow: 1px 1px 10px 1px #2729492c !important;
 }
 
 .firstRadListItemMapBox{
     border-top-left-radius:0px !important;
     margin-top: -11px !important;
-    
     box-shadow: 1px 7px 12px 1px #a4a6b82c !important;
     border-top-right-radius:0px !important;
 }
 
-.twitter_NumACCHeadMapBox
-{
-    color:#3DC0F3;
-    text-align: center;
-    display: flex;
-    align-items: center;justify-content: space-evenly;
-    width: 67PX;
-    border-radius: 14px;
-    padding: 5px 3px;
-    font-size: 16px;
-}
-.rss_NumACCHeadMapBox
-{   
-    color:#F9B503;
-    text-align: center;
-    display: flex;
-    align-items: center;justify-content: space-evenly;
-    width: 67px;
-    border-radius: 14px;
-    padding: 6px 3px;
-    font-size: 14px;
-}
-.telegram_NumACCHeadMapBox
-{
-    color:#5B76F7;
-    text-align: center;
-    display: flex;
-    align-items: center;justify-content: space-evenly;
-    width: 67px;
-    border-radius: 14px;
-    padding: 5px 3px;
-    font-size: 16px;
-}
-.sumNumKPlist{
-    margin-right: 30px;
-    text-align: center;
-    min-width: 140px;
-    font-size: 13px;
-}
 
-.openExtentionBtn{
-    margin-right:40px;
-}
-.extBtnMapBox{
-    background-color: #D9E1FC !important;
-    color: #6276D4 !important;
-    border-radius: 14.3px !important;
-    font-size: 10px !important;
-    padding: 5px 12px!important;
-    font-weight: bold !important;
-    margin-left: 0px !important;
-}
-.searchBtnKP{
-    background-color: #812020 !important;
-    color: white !important;
-    border-radius: 12.3px !important;
-    font-size: 10px !important;
-    padding: 5px 12px!important;
-    font-weight: bold !important;
-}
+
 .locationAvatarListShow{
     color: white;
     width: 40px;
@@ -175,7 +115,7 @@ background: linear-gradient(220deg, rgba(190,113,207,1) 0%, rgba(130,76,196,1) 5
 .HeaderInfListMapPost{
     display: flex;
     background-color: var(--background-colorMP);
-    width: 120px;
+    min-width: 120px;
     border-radius:30px;
     padding:4px 5px;
     align-items: center;
@@ -208,4 +148,223 @@ background: linear-gradient(220deg, rgba(190,113,207,1) 0%, rgba(130,76,196,1) 5
     height: 30px;
     width: 30px;
     border-radius: 50%;
+}
+.marginRigthMPListItemHead{
+    margin-right: 190px;
+}
+@media screen and (max-width: 1250px) {   
+    .headAccMapPost{
+        width: 1000px !important;
+    }
+    .marginRigthMPListItemHead{
+        margin-right: 0px;
+    }
+    .kpACCcoMapBox{
+        box-shadow: 1px 1px 20px 1px #86868d17 !important;
+    }
+}
+
+@media screen and (max-width: 1050px) { 
+    .headAccMapPost{
+        width: 900px !important;
+    }
+    .marginRigthMPListItemHead{
+        margin-right: -100px;
+    }
+    .kpACCcoMapBox{
+        box-shadow: 1px 1px 40px 1px #ececec17 !important;
+    }
+}@media screen and (max-width: 930px) { 
+    .headAccMapPost{
+        width: 800px !important;
+    }
+    .marginRigthMPListItemHead{
+        margin-right: -50px;
+    }
+    .kpACCcoMapBox{
+        box-shadow: 1px 1px 40px 1px #ececec17 !important;
+    }
+    .holerepeatListKPMapBox{
+        width: 130px;
+    }
+    .holerepeatListKPMapBox h4{
+        font-size: 12.5px;
+    }
+    .holerepeatListKPMapBox span{
+        font-size: 10px;
+    }
+    .keyContainerLPMP{
+        margin-left: 60px !important;
+    }
+    .locationAvatarListShow{
+        height: 35px;
+        font-size: 17px;
+        width: 35px;
+    }
+    .HeaderInfListMapPost{
+        min-width: 50px;
+        width: 95px !important;
+    }
+    .headInfSocialMapPost h4{
+        font-size: 10px;
+    }
+    .headIconSocialMapPost{
+        width: 27px;
+        height: 27px;
+    }
+}
+@media screen and (max-width: 820px) { 
+    .headAccMapPost{
+        width: 700px !important;
+    }
+    .marginRigthMPListItemHead{
+        margin-right: -70px;
+    }
+    .extenKPCo > div{
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width: 720px) { 
+    .headAccMapPost{
+        width: 600px !important;
+    }
+    .marginRigthMPListItemHead{
+        margin-right: -60px;
+    }
+    .extenKPCo > div{
+        margin-left: 10px;
+    }
+    .HeaderInfListMapPost{
+        min-width: 50px;
+        padding: 3px 5px;
+        width: 75px !important;
+    }
+    .headInfSocialMapPost h4{
+        font-size: 9px;
+    }
+    .headInfSocialMapPost span{
+        font-size: 7px;
+    }
+    .headIconSocialMapPost{
+        width: 23px;
+        height: 23px;
+    }
+    .headAccMapPost{
+        height: 30px !important;
+    }
+}
+
+@media screen and (max-width: 620px) { 
+    .headAccMapPost{
+        width: 500px !important;
+    }
+    .locationAvatarListShow{
+        height: 30px;
+        font-size: 14px;
+        width: 30px;
+    }
+    .holerepeatListKPMapBox h4{
+        font-size: 12px;
+    }
+    .holerepeatListKPMapBox span{
+        font-size: 9px;
+    }
+    .marginRigthMPListItemHead{
+        margin-right: -140px;
+    }
+}
+@media screen and (max-width: 520px) { 
+    .headAccMapPost{
+        width: 400px !important;
+    }
+    .locationAvatarListShow{
+        height: 23px;
+        font-size: 12px;
+        width: 23px;
+    }
+    .holerepeatListKPMapBox{
+        width: 120px;
+    }
+    .holerepeatListKPMapBox h4{
+        font-size: 10px;
+    }
+    .holerepeatListKPMapBox span{
+        font-size: 7px;
+    }
+    .marginRigthMPListItemHead{
+        margin-right: -110px;
+    }
+    .headIconSocialMapPost{
+        background-color: none !important;
+        padding: 3px;
+        height: 17px;
+        width: 17px;
+        margin-top: 1px;
+    }
+    .HeaderInfListMapPost{
+        min-width: 50px;
+        padding: 1px 3px;
+        width: 50px !important;
+    }
+    .headInfSocialMapPost h4{
+        font-size: 7px;
+        margin-bottom: 4px;
+        margin-right: -3px;
+    }
+    .headInfSocialMapPost span{
+        display: none;
+    }
+    .headAccMapPost{
+        height: 20px !important;
+    }
+}
+
+@media screen and (max-width: 420px) { 
+    .headAccMapPost{
+        width: 370px !important;
+    }
+    
+    .HeaderInfListMapPost{
+        margin: -5px;
+    }
+    .marginRigthMPListItemHead{
+        margin-right: -125px;
+    }
+}
+
+@media screen and (max-width: 370px) { 
+    .headAccMapPost{
+        width: 400px !important;
+    }
+    .holerepeatListKPMapBox{
+        margin-right: 70px !important;
+        padding: 0px !important;
+    }
+    .HeaderInfListMapPost{
+        margin: -4px;
+    }
+    .marginRigthMPListItemHead{
+        margin-right: -180px;
+    }
+    .locationAvatarListShow{
+        display: none;
+    }
+    .headInfSocialMapPost h4{
+        font-size: 6px;
+        margin-bottom: 5px;
+        margin-right: -3px;
+    }
+    .headIconSocialMapPost{
+        background-color: none !important;
+        padding: 2px;
+        height: 12px;
+        width: 12px;
+        margin-top: 1px;
+    }
+    .HeaderInfListMapPost{
+        min-width: 45px;
+        padding: 0px 3px;
+        width: 45px !important;
+    }
+    
 }

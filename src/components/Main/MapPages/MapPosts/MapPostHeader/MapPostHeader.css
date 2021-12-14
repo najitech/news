@@ -62,3 +62,123 @@
     background-color: white;
     color:#272949;
 }
+@media screen and (max-width: 1400px) {
+    .headerContentPostMap{
+        padding-right: 110px;
+    }
+    .timeAndCalMapPost{
+        padding-left: 60px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .headerContentPostMap{
+        padding-right: 67px;
+    }
+    .timeAndCalMapPost{
+        padding-left: 23px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    
+    .headerTitlesMapPost h1{
+        font-size: 24px;
+    }
+    .buttonStyleMapPost{
+        margin-left: 10px;
+        height: 40px;
+        width: 40px;
+        border-radius: 16px;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 900px) {
+    
+    .headerTitlesMapPost h1{
+        font-size: 22px;
+    }
+    .timeAndCalMapPost{
+        margin-left: 20px;
+    }
+    .timeAndCalMapPost h5{
+        font-size: 13px;
+    }
+    .timeAndCalMapPost div{
+        font-size: 12px;
+        margin: 0px 20px;
+    }
+    .timeAndCalMapPost span{
+        margin-right: 4px;
+        padding-top: 5px;
+    }
+    .headerIconPostMap{
+        font-size: 17px;
+    }
+    .headerIconPostMap2{
+        font-size: 17px;
+    }
+    .headerTitlesMapPost p{
+        font-size: 12px;
+    }
+    .buttonStyleMapPost{
+        margin-left: 10px;
+        height: 35px;
+        width: 35px;
+        border-radius: 14px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .timeAndCalMapPost div{
+        font-size: 10px;
+        margin: 0px 10px;
+    }
+    .timeAndCalMapPost span{
+        margin-right: 2px;
+        padding-top: 3px;
+    }
+    .headerIconPostMap{
+        font-size: 12px;
+    }
+    .headerIconPostMap2{
+        font-size: 12px;
+    }
+    .headerTitlesMapPost p{
+        font-size: 11px;
+    }
+    .buttonStyleMapPost{
+        margin-left: 10px;
+        height: 30px;
+        width: 30px;
+        border-radius: 12px;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 520px) {
+    .headerContentPostMap{
+        padding-right: 30px;
+    }
+    .timeAndCalMapPost{
+        padding-left: 00px;
+    }
+    .timeAndCalMapPost > div{
+        font-size: 10px;
+        margin: 0px 4px;
+        text-align: left;
+        flex-direction: row-reverse;
+    }
+    .timeAndCalMapPost span{
+        margin-left: 4px;
+        padding-top: 3px;
+    }
+    .timeAndCalMapPost{
+        height: 70px;
+        flex-direction: column;
+        margin-left:30px;
+        text-align: left;
+    }
+    .buttonStyleMapPost{
+        display: none;
+    }
+}

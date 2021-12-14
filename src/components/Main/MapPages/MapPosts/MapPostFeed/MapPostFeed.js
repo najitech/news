@@ -7,7 +7,6 @@ import { FiKey } from 'react-icons/fi'
 import { GoLocation } from 'react-icons/go'
 import KP_BF_Search from '../../../KeywordPage/KP_Body/KP_Body_Feed/KP_BF_Search/KP_BF_Search'
 import ListItemMapPost from '../ListItemMapPost/ListItemMapPost'
-import MapPostPostList from '../MapPostPostList/MapPostPostList'
 import KP_BF_Sort from '../../../KeywordPage/KP_Body/KP_Body_Feed/KP_BF_Sort/KP_BF_Sort';
 import './MapPostFeed.css'
 import MapPostSearch from '../MapPostSearch/MapPostSearch'

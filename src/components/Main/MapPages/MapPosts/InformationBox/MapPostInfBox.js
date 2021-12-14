@@ -2,10 +2,16 @@ import React from 'react';
 import { AiOutlineArrowDown } from 'react-icons/ai';
 import { GrLocationPin } from 'react-icons/gr';
 import { MdArrowUpward } from 'react-icons/md';
+import { useMediaQuery } from 'react-responsive';
 import Chart from 'react-apexcharts';
 import './MapPostInfBox.css';
 import TopLocationMapBoxInf from './TopLocationMapBoxInf';
 function MapPostInfBox(props) {
+    
+    const size1100 = useMediaQuery({query :'(max-width : 1100px)'});
+    const size950 = useMediaQuery({query :'(max-width : 950px)'});
+    const size660 = useMediaQuery({query :'(max-width : 660px)'});
+    const size450 = useMediaQuery({query :'(max-width : 450px)'});
     const [donut,setDonut] = React.useState({
         options: {
             dataLabels: {
@@ -36,9 +42,9 @@ function MapPostInfBox(props) {
             <div className="totalInfBoxMapPost">
                 <span style={{color:'#8A97A6'}}>موقعیت مکانی های دریافت شده در روز</span>
                 <h2>2,456,433 <GrLocationPin/></h2>
-                <span style={{fontSize:'10px' ,color:'#B1B5BA' , marginTop:'-10px'}}>موقیت های مکانی روز گذشته : 135,343,211</span>
+                <span style={{fontSize:'10px' ,color:'#B1B5BA' , marginTop:'-10px'}}>{!size450? "موقعیت های مکانی روز گذشته : 135,343,211":"موقعیت های روزگذشته : 134k"}</span>
                 <div className="growsMapBoxInf">
-                    <div style={{marginLeft:"40px"}}>
+                    <div style={{marginLeft:!size950?"40px":'20px'}}>
                         <div className="baseGrowsBoxStyle" style={{backgroundColor:'#DFF8FF'}}><AiOutlineArrowDown style={{color:'#7CD5EC',fontWeight:'bold'}}/></div>
                         <div><h3>544,234</h3><span>افت نسبت به روز قبل</span></div>
                     </div>
@@ -47,13 +53,20 @@ function MapPostInfBox(props) {
                         <div><h3>41,234</h3><span>رشد نسبت به روز قبل</span></div>
                     </div>
                 </div>
+                {size660 ? 
+                <div className="responsiveChart">
+                    <div className="responsiveChartInfo"><h4>66%</h4>
+                        <span>شیپور</span>
+                    </div>
+                    <Chart className="chartDonutMapPostInf" options={donut.options} series={donut.series} type="donut" width={!size450?"200px":'170px'} />
+                </div>:''}
             </div>
             <div className="charInfBoxMapPost">
                 <div className="chartMapBoxInf">
                     <div className="maxPerChartMapBoxInf"><h4>66%</h4>
                         <span>شیپور</span>
                     </div>
-                    <Chart className="chartDonutMapPostInf" options={donut.options} series={donut.series} type="donut" width="230" />
+                    <Chart className="chartDonutMapPostInf" options={donut.options} series={donut.series} type="donut" width={size950 ? '120px':size1100?'180px' :'230px'} />
                 </div>
                 <div className="topTenLocationMapBoxInf">
                     <div className="toptenLocationPostInf">

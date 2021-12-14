@@ -29,17 +29,18 @@ function MapPostSort(props) {
       setSortType(e.target.value);
       setAnchorEl(null);
     };
-    const mobileSize = useMediaQuery({query :'(max-width : 580px)'});
+    const mobileSize = useMediaQuery({query :'(max-width : 820px)'});
+    const size520 = useMediaQuery({query :'(max-width : 520px)'});
     const buttonName = ['نام' , 'جدید ترین' , 'بیشترین داده' , 'پربازدیدترین '];
     return (    
-        <div className="PSR_Sort_KP">
+        <div className="PSR_Sort_MP">
             <div className="KP_Sortasas">   
-                <MdSort className="KP_sortIconRss" color={props.social===1? "#764ee3" : props.social===2? "#16b8e0" :props.social===3?"#f26522 " :props.social===4?"#4abcf5" :props.social===5?"#4abcf5" : ""}/>
-                <p>مرتب سازی بر اساس :  </p>
+                {!size520?<MdSort className="KP_sortIconRss" color={props.social===1? "#764ee3" : props.social===2? "#16b8e0" :props.social===3?"#f26522 " :props.social===4?"#4abcf5" :props.social===5?"#4abcf5" : ""}/>:''}
+                {!size520?<p>مرتب سازی بر اساس :  </p>:''}
                 {!mobileSize ? 
                 <KP_BF_SortItem/>
                 :<>
-                <Button aria-controls="simple-menu" className="KP_menuButton" aria-haspopup="true" onClick={handleClick}>{buttonName[sortType-1]}<BiSortUp className="PSR_menuButton" style={{fontSize:22 ,paddingRight:'5px' , color:  'rgb(60,60,60)'}} /></Button>
+                <Button aria-controls="simple-menu" className="KP_menuButtonMP" aria-haspopup="true" onClick={handleClick}>{size520? <MdSort style={{color:'#764ee3',fontSize:'15px',paddingLeft:'2px',marginRight:'4px'}}/>:''}{buttonName[sortType-1]}</Button>
                 <Menu
                 className="hi10"
                 id="simple-menu"
@@ -48,10 +49,10 @@ function MapPostSort(props) {
                 open={Boolean(anchorEl)}
                 onClose={handleClose}
                 >
-                <MenuItem value={1} className="KP_menuButton" onClick={handleClose}>نام</MenuItem>
-                <MenuItem value={2}  className="KP_menuButton" onClick={handleClose}>جدید ترین</MenuItem>
-                <MenuItem value={3} className="KP_menuButton" onClick={handleClose}>بیشترین داده</MenuItem>
-                <MenuItem value={4} className="KP_menuButton" onClick={handleClose}>پربازدیدترین</MenuItem>
+                <MenuItem value={1} className="KP_menuButtonMPOP" onClick={handleClose}>نام</MenuItem>
+                <MenuItem value={2}  className="KP_menuButtonMPOP" onClick={handleClose}>جدید ترین</MenuItem>
+                <MenuItem value={3} className="KP_menuButtonMPOP" onClick={handleClose}>بیشترین داده</MenuItem>
+                <MenuItem value={4} className="KP_menuButtonMPOP" onClick={handleClose}>پربازدیدترین</MenuItem>
                 </Menu>
             </>
                 }
