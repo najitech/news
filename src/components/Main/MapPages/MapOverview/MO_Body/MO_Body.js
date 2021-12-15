@@ -2,7 +2,9 @@ import React,{useState} from 'react'
 import './MO_Body.css'
 import Chart from 'react-apexcharts'
 import MO_BodyResultBox from './MO_BodyResultBox'
-
+import { useMediaQuery } from 'react-responsive'
+import { IoIosArrowDropleftCircle, IoIosArrowDroprightCircle } from 'react-icons/io';
+import ItemsCarousel from 'react-items-carousel';
 
 function MO_Body() {
     const [ChartData , setChartData] = useState({
@@ -124,20 +126,104 @@ function MO_Body() {
           
           
           })
+    const [activeItemIndex, setActiveItemIndex] = useState(0);
+    const q1145 = useMediaQuery({query :'(max-width : 1145px)'}); 
+    const q922 = useMediaQuery({query :'(max-width : 922px)'}); 
+    const q1398 = useMediaQuery({query :'(max-width : 1398px)'});
+    const q1179 = useMediaQuery({query :'(max-width : 1179px)'});
+    const q964 = useMediaQuery({query :'(max-width : 964px)'});
+    const q770 = useMediaQuery({query :'(max-width : 770px)'});
+    const q672 = useMediaQuery({query :'(max-width : 672px)'});
+    const q540 = useMediaQuery({query :'(max-width : 540px)'});
+    const q487 = useMediaQuery({query :'(max-width : 487px)'});
+    const q410 = useMediaQuery({query :'(max-width : 410px)'});
+    const q343 = useMediaQuery({query :'(max-width : 343px)'});
+    let gutternum = 40;
+    let cardnumbers = 6;
+    if (q1398) {
+        cardnumbers=5;
+    }
+    if (q1179) {
+        cardnumbers=4;
+    }
+    if (q964) {
+        cardnumbers=3;
+    }
+    if (q672) {
+        cardnumbers=2;
+    }
+    if (q487) {
+        cardnumbers=1;
+    }
+    let chartHeight =300;
+    if (q1145) {
+      chartHeight=257;
+    }
+    if (q922) {
+      chartHeight=220;
+    }
+    if (q672) {
+      chartHeight=200;
+    }
+    if (q540) {
+      chartHeight=180;
+    }
+    if (q487) {
+      chartHeight=170;
+    }
+    if (q410) {
+      chartHeight=150;
+    }
     return (
         <div className="MO_Body">
-            <div className="MO_BodyResult">
-                <MO_BodyResultBox type="rss" weekData="120.353K" weekRaise="10.342K" weekRaising/>
-                <MO_BodyResultBox type="telegram" weekData="93.925K" weekRaise="5.632K"/>
-                <MO_BodyResultBox type="paper" weekData="105.195K" weekRaise="8.363K" weekRaising/>
-                <MO_BodyResultBox type="twitter" weekData="80.872K" weekRaise="26.435K"/>
-                <MO_BodyResultBox type="instagram" weekData="230.563K" weekRaise="12.865K" weekRaising/>
-                <MO_BodyResultBox type="telegram" weekData="153.564K" weekRaise="4.753K"/>
-            </div>
-            <div className="MOBodyChart">
-                <Chart options={ChartData.options} series={ChartData.series} type="line" height={300} />
-            </div>
 
+            <div className="MOBodyChart">
+                <Chart options={ChartData.options} series={ChartData.series} type="line" height={chartHeight} />
+            </div>
+            {!q770 ? <div className="MO_BodyResult">
+                <MO_BodyResultBox type="rss" weekData="120.353" weekRaise="10.342" weekRaising/>
+                <MO_BodyResultBox type="telegram" weekData="93.925" weekRaise="5.632"/>
+                <MO_BodyResultBox type="paper" weekData="105.195" weekRaise="8.363" weekRaising/>
+                <MO_BodyResultBox type="twitter" weekData="80.872" weekRaise="26.435"/>
+                <MO_BodyResultBox type="instagram" weekData="230.563" weekRaise="12.865" weekRaising/>
+                <MO_BodyResultBox type="telegram" weekData="153.564" weekRaise="4.753"/>
+           </div> 
+           :
+
+           <div className="MOBody_SliderContainer">
+           <ItemsCarousel
+               placeholderItem={<div style={{ height: 200, background: '#EEE' }} />}
+               enablePlaceholder={true}
+               numberOfPlaceholderItems={cardnumbers}
+               numberOfCards={cardnumbers}
+               classes = {{itemsWrapper:"MO_TopSliderItems MO_TopSliderItemsMarginz"} }
+               slidesToScroll={1}
+               alwaysShowChevrons={true}
+               chevronWidth={35}
+               outsideChevron={true}
+               showSlither={false}
+               firstAndLastGutter={false}
+               requestToChangeActive={setActiveItemIndex}
+               activeItemIndex={activeItemIndex}
+               rightChevron={<IoIosArrowDroprightCircle className="Slider_icon MO_Slider_icon"/>}
+               leftChevron={<IoIosArrowDropleftCircle className="Slider_icon MO_Slider_icon"/>}
+           >
+           { 
+           [
+             <MO_BodyResultBox type="rss" weekData="120.353" weekRaise="10.342" weekRaising/>,
+             <MO_BodyResultBox type="telegram" weekData="93.925" weekRaise="5.632"/>,
+             <MO_BodyResultBox type="paper" weekData="105.195" weekRaise="8.363" weekRaising/>,
+             <MO_BodyResultBox type="twitter" weekData="80.872" weekRaise="26.435"/>,
+             <MO_BodyResultBox type="instagram" weekData="230.563" weekRaise="12.865" weekRaising/>,
+             <MO_BodyResultBox type="telegram" weekData="153.564" weekRaise="4.753"/>  
+           ]
+
+           }
+
+           </ItemsCarousel>  
+          </div>
+          }
+                
         </div>
     )
 }

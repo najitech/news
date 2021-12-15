@@ -4,9 +4,33 @@ import { IoIosArrowDropleftCircle, IoIosArrowDroprightCircle } from 'react-icons
 import ItemsCarousel from 'react-items-carousel';
 import MO_Header_box from './MO_Header_box';
 import KP_Header_box from '../../../KeywordPage/KP_Header/KP_Header_box';
+import { useMediaQuery } from 'react-responsive';
 
 function MO_Header() {
     const [activeItemIndex, setActiveItemIndex] = useState(0);
+    const q1398 = useMediaQuery({query :'(max-width : 1398px)'});
+    const q1179 = useMediaQuery({query :'(max-width : 1179px)'});
+    const q964 = useMediaQuery({query :'(max-width : 964px)'});
+    const q672 = useMediaQuery({query :'(max-width : 672px)'});
+    const q487 = useMediaQuery({query :'(max-width : 487px)'});
+    const q343 = useMediaQuery({query :'(max-width : 343px)'});
+    let gutternum = 40;
+    let cardnumbers = 6;
+    if (q1398) {
+        cardnumbers=5;
+    }
+    if (q1179) {
+        cardnumbers=4;
+    }
+    if (q964) {
+        cardnumbers=3;
+    }
+    if (q672) {
+        cardnumbers=2;
+    }
+    if (q487) {
+        cardnumbers=1;
+    }
     return (
         <div className="MO_Header">
             <div className="MO_TopHeader">
@@ -21,10 +45,10 @@ function MO_Header() {
                     <ItemsCarousel
                         placeholderItem={<div style={{ height: 200, background: '#EEE' }} />}
                         enablePlaceholder={true}
-                        numberOfPlaceholderItems={6}
-                        numberOfCards={6}
+                        numberOfPlaceholderItems={cardnumbers}
+                        numberOfCards={cardnumbers}
                         classes = {{itemsWrapper:"MO_TopSliderItems"} }
-                        slidesToScroll={2}
+                        slidesToScroll={1}
                         alwaysShowChevrons={true}
                         chevronWidth={35}
                         outsideChevron={true}

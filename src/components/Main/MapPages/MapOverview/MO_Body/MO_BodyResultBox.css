@@ -63,3 +63,105 @@
     margin-left:2px;
 }
 
+@media screen and (max-width : 1350px) {
+    .MO_BodyResultBox{
+        padding:7px 15px;
+    }
+}
+@media screen and (max-width : 1350px) {
+    .MO_BodyResultBox{
+        padding:7px 15px;
+    }
+}
+@media screen and (max-width : 1200px) {
+    .MOresult_HeaderBox_dataNumber{
+        font-size:14px;
+    }
+}
+@media screen and (max-width : 1163px) {
+    .MOresult_Title{
+        font-size:11px;
+        margin-top:22px;
+    }
+    .MOresult_WeekResultFooter{
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width : 1145px) {
+    .MO_BodyResultBox{ 
+        height: 118px;
+    }
+    .MOresult_Title {
+        margin-top:19px;
+    }
+    .MOresult_WeekResultFooter{
+        margin-bottom: 0px;
+    }
+}
+@media screen and (max-width : 952px) {
+    .MOresult_Title{
+        font-size:10px;
+    }
+}
+@media screen and (max-width : 922px) {
+    .MO_BodyResultBox{ 
+        height: 100px;
+    }
+    .MOresult_Icon {
+        width: 30px;
+        height: 30px;
+        font-size:20px;
+    }
+    .MOresult_Title{
+        font-size:8px;
+        margin-top:14px;
+    }
+    .MOresult_HeaderBox_dataNumber{
+        font-size:12px;
+    }
+    .MOresult_HeaderBox_raise > span{
+        font-size:10px;
+    }
+    .MOresult_HeaderBox_raise {
+        padding-bottom: 1px;
+    }
+}
+@media screen and (max-width : 770px)  {
+    .MO_BodyResultBox {
+        height: 140px;
+        padding:7px 25px;
+    }
+    .MOresult_Title {
+        font-size:9px;
+        margin-top:20px;
+    }
+}
+@media screen and (max-width : 770px)  {
+    .MO_BodyResultBox {
+        padding:7px 15px;
+        padding-bottom: 15px;
+    }
+    .MOresult_Title {
+        font-size: 9.5px;
+    }
+    .MO_BodyResultBox {
+        width: 160px;
+        height: 150px;
+        margin-left:10px;
+        direction: rtl;
+    }
+}
+@media screen and (max-width : 672px) {
+    .MOBody_SliderContainer {
+        width: 65%;
+    }
+    .MO_BodyResultBox {
+        margin-left:15px;
+    }
+}
+@media screen and (max-width : 487px) {
+    .MO_BodyResultBox {
+        margin:auto;
+    }
+
+}

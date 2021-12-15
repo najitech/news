@@ -5,6 +5,7 @@ import MO_Header from './MO_Header/MO_Header';
 import MO_Body from './MO_Body/MO_Body';
 import MapSameLocation from './MapSameLocation';
 import MapForPosts from '../MapForPosts';
+import { useMediaQuery } from 'react-responsive';
 
 function MapOverview(props) {
     const[ SameLocation , setSameLocation] = useState([
@@ -69,36 +70,40 @@ function MapOverview(props) {
             TodayRaise:"8.429K"
         },
     ])
+    const q1026 = useMediaQuery({query :'(max-width : 1026px)'}); 
     return(
         <div className="MapOverview">
             <div className="MapOverviewContainer">
                 <MO_Header/>
                 <MO_Body/>
                 <div className="MapOverviewFooter">
+                    {!q1026?     
                     <div className="MO_SameLocations">
-                        <div className="MO_SameLocationsTitle">
-                        <h3>مکان های نزدیک مشهد</h3>
-                        </div>
-                        {
-                            SameLocation.map((loc) => {
-                                return(
-                                    <MapSameLocation
-                                    latitude={loc.latitude}
-                                    longitude={loc.longitude}
-                                    numbers={loc.numbers}
-                                    location={loc.label}
-                                    TodayData={loc.TodayData}
-                                    TodayRaise={loc.TodayRaise}
-                                    TodayRaising={loc.TodayRaising}
-                                    key={loc.longitude}
-    
-                                     />
-                                )
+                            <div className="MO_SameLocationsTitle">
+                            <h3>مکان های نزدیک مشهد</h3>
+                            </div>
+                            {
+                                SameLocation.map((loc) => {
+                                    return(
+                                        <MapSameLocation
+                                        latitude={loc.latitude}
+                                        longitude={loc.longitude}
+                                        numbers={loc.numbers}
+                                        location={loc.label}
+                                        TodayData={loc.TodayData}
+                                        TodayRaise={loc.TodayRaise}
+                                        TodayRaising={loc.TodayRaising}
+                                        key={loc.longitude}
+        
+                                        />
+                                    )
 
+                                }
+                                )
                             }
-                            )
-                        }
-                    </div>
+                    </div> :
+                    null
+                    }
                     <div className="MO_MapContianer">
                         <div className="fadeTopMap">
 
@@ -109,7 +114,7 @@ function MapOverview(props) {
                         <div className="fadeRightMap">
 
                         </div>
-                        <MapForOverview className="h65" width="1500px" height="100vh" setSameLocation={setSameLocation}/>
+                        <MapForOverview className="h65" width="98%" height="100vh" setSameLocation={setSameLocation}/>
                     </div>
                 </div>
 

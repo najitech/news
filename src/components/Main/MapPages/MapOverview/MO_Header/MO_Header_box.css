@@ -250,3 +250,22 @@
         padding-top:17px;
     }
   }
+@media screen and (max-width : 964px) {
+    .MO_Header_box {
+        height: 180px;
+        width: 180px;
+    }
+}
+@media screen and (max-width : 717px) {
+    .MO_Header_box {
+        height: 170px;
+        width: 170px;
+    }
+    .MO_Header_TodayNumber {
+        font-size:16px;
+    }
+    .MO_Header_TodayTitle {
+        font-size:10px;
+    }
+
+}
