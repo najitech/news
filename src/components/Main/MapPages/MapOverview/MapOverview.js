@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import './MapOverview.css'
 import MapForOverview from '../MapForOverview'
 import MO_Header from './MO_Header/MO_Header';
@@ -9,6 +9,34 @@ import { useMediaQuery } from 'react-responsive';
 import Modal from '@material-ui/core/Modal';
 
 function MapOverview(props) {
+    const [visible, setVisible] = useState(false)
+    useEffect(() => {
+        window.scrollTo(0, 0)
+     }, [])
+    const toggleVisible = () => {
+      const scrolled = document.documentElement.scrollTop;
+      if (scrolled > 300){
+        setVisible(true)
+      } 
+      else if (scrolled <= 300){
+        setVisible(false)
+      }
+    };
+    
+    const scrollToTop = () =>{
+      /*window.scrollTo({
+        top: 0, 
+        behavior: 'smooth'
+        /* you can also use 'auto' behaviour
+           in place of 'smooth' 
+      });
+      */
+     console.log(window.scrollY)
+    };
+    
+    window.addEventListener('scroll', toggleVisible);
+  
+    
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => {
         setOpen(true);
@@ -81,6 +109,7 @@ function MapOverview(props) {
     const q1026 = useMediaQuery({query :'(max-width : 1026px)'}); 
     return(
         <div className="MapOverview">
+
             <div className="MapOverviewContainer">
                 <MO_Header/>
                 <MO_Body/>
@@ -154,7 +183,7 @@ function MapOverview(props) {
                         <div className="fadeLeftMap">
 
                         </div>
-                        <div className="fadeRightMap">
+                        <div className="fadeRightMap fadeRightMapMo">
 
                         </div>
                         <MapForOverview handleOpen = {handleOpen} className="h65" width="98%" height="100vh" setSameLocation={setSameLocation}/>

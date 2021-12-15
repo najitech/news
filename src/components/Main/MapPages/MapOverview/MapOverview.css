@@ -120,9 +120,31 @@
     margin:auto;
     position: relative;
 }
+
+.MO_ScrollTop {
+    position: fixed;
+    bottom: 8px;
+    right:56px;
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    z-index:10002;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
 @media screen and (max-width : 800px) {
     .fadeRightMap {
         width: 100px;
+    }
+    .fadeRightMapMo {
+        transform: rotate(180deg);
+        border-radius: 1px;
+        background-color: #eeeeee;
+        opacity: 0.9;
+        background-size: 9px 9px;
+        background-image: repeating-linear-gradient(45deg, #c3c3c3 0, #c3c3c3 0.9px, #eeeeee 0, #eeeeee 50%);
     }
     .fadeLeftMap {
         width: 100px;
