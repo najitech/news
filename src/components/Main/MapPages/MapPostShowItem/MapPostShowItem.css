@@ -294,6 +294,10 @@ background: linear-gradient(220deg, rgba(241,217,149,1) 0%, rgba(239,189,120,1) 
     .dataAndUserInfMapBox{
         text-align: left;
     }
+    .mapPostItemMapBox{
+        
+        border-bottom: 2px solid var(--background-colorMPPost);
+    }
     .infPostItemMap{
         width: 450px !important;
     }
