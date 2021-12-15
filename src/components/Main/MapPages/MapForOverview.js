@@ -4,6 +4,7 @@ import useSwr from "swr";
 import ReactMapGL , {Marker,Popup,FlyToInterpolator} from 'react-map-gl';
 import useSupercluster from "use-supercluster";
 function MapForOverview(props) {
+    const {handleOpen} = props;
     const [selectedPark, setSelectedPark] = useState(null);
     const [viewport, setViewport] = useState({/*
         width: props.width,
@@ -212,7 +213,7 @@ function MapForOverview(props) {
                         <span>طبس</span>
                         <span>21K</span>
                       </div>
-                      <div className="MapPage_Marker_more" /*onClick=props.setSameLocation(Your Data)*/ >
+                      <div className="MapPage_Marker_more" onClick={handleOpen} /*onClick=props.setSameLocation(Your Data)*/ >
                         +6
                       </div>
                     </div>

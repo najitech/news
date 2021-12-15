@@ -6,8 +6,16 @@ import MO_Body from './MO_Body/MO_Body';
 import MapSameLocation from './MapSameLocation';
 import MapForPosts from '../MapForPosts';
 import { useMediaQuery } from 'react-responsive';
+import Modal from '@material-ui/core/Modal';
 
 function MapOverview(props) {
+    const [open, setOpen] = React.useState(false);
+    const handleOpen = () => {
+        setOpen(true);
+      };
+    const handleClose = () => {
+        setOpen(false);
+    }
     const[ SameLocation , setSameLocation] = useState([
         {
             latitude: 36.2605,
@@ -82,6 +90,7 @@ function MapOverview(props) {
                             <div className="MO_SameLocationsTitle">
                             <h3>مکان های نزدیک مشهد</h3>
                             </div>
+                            <div className="MO_SameLocationsContent">
                             {
                                 SameLocation.map((loc) => {
                                     return(
@@ -101,8 +110,42 @@ function MapOverview(props) {
                                 }
                                 )
                             }
+                            </div>
                     </div> :
-                    null
+                    <Modal
+                    open={open}
+                    onClose={handleClose}
+                    aria-labelledby="simple-modal-title"
+                    aria-describedby="simple-modal-description"
+                    className="MO_SameLocationsRes"
+                    >
+                        <div className="MO_SameLocations">
+                            <div className="MO_SameLocationsTitle MO_SameLocationsTitleRes">
+                            <h3>مکان های نزدیک مشهد</h3>
+                            </div>
+                            <div className="MO_SameLocationsContent">
+                            {
+                                SameLocation.map((loc) => {
+                                    return(
+                                        <MapSameLocation
+                                        latitude={loc.latitude}
+                                        longitude={loc.longitude}
+                                        numbers={loc.numbers}
+                                        location={loc.label}
+                                        TodayData={loc.TodayData}
+                                        TodayRaise={loc.TodayRaise}
+                                        TodayRaising={loc.TodayRaising}
+                                        key={loc.longitude}
+        
+                                        />
+                                    )
+
+                                }
+                                )
+                            }
+                           </div>
+                        </div>
+                    </Modal>
                     }
                     <div className="MO_MapContianer">
                         <div className="fadeTopMap">
@@ -114,7 +157,7 @@ function MapOverview(props) {
                         <div className="fadeRightMap">
 
                         </div>
-                        <MapForOverview className="h65" width="98%" height="100vh" setSameLocation={setSameLocation}/>
+                        <MapForOverview handleOpen = {handleOpen} className="h65" width="98%" height="100vh" setSameLocation={setSameLocation}/>
                     </div>
                 </div>
 

@@ -85,7 +85,12 @@
     height:100%;
     border-radius: 14px;
     padding:0px 7px;
+    overflow-y: hidden;
+}
+.MO_SameLocationsContent {
     overflow-y: scroll;
+    height: 90%;
+
 }
 .MO_SameLocationsTitle {
     display: flex;
@@ -106,4 +111,36 @@
     border-radius: 14px;
     font-weight: 700;
 
+}
+.MO_SameLocationsTitleRes > h3 {
+    color:white !important;
+}
+.MO_SameLocationsRes{
+    height: 93%;
+    margin:auto;
+    position: relative;
+}
+@media screen and (max-width : 800px) {
+    .fadeRightMap {
+        width: 100px;
+    }
+    .fadeLeftMap {
+        width: 100px;
+    }
+}
+@media screen and (max-width : 500px) {
+    .fadeRightMap {
+        width: 50px;
+    }
+    .fadeLeftMap {
+        width: 50px;
+    }
+}
+@media screen and (max-width : 400px) {
+    .fadeRightMap {
+        width: 20px;
+    }
+    .fadeLeftMap {
+        width: 20px;
+    }
 }
