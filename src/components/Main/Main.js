@@ -8,17 +8,18 @@ import Websites from './Websites/Websites'
 import KeywordPage from './KeywordPage/KeywordPage'
 import MapOverview from './MapPages/MapOverview/MapOverview'
 import MapPage from './MapPages/MapPosts/MapPosts'
+import DataPage from './DataPage/DataPage'
 function Main() {
     return (
         <div className="Main">
                 <Switch>
                     <Route exact path="/">
                         {/*<TheLayout/>*/}
-                        <MapOverview/>
+                        <DataPage/>
                     </Route>
                     <Route path="/RSS">
                         {/*<Rss/>*/}
-                        <MapPage/>
+                        <KeywordPage/>
                     </Route>
                     <Route path="/Websites">
                         {<KeywordPage/>}
