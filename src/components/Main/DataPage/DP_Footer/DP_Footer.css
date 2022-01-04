@@ -134,11 +134,41 @@
         grid-template-columns: auto auto;
     }
 }
+@media screen and (max-width : 577px) {
+    .DPF_HeaderTitle {
+        font-size:14px;
+    }
+    .DPF_HeaderButton {
+        padding: 7px 40px;
+    }
+}
 @media screen and (max-width : 447px) {
     .DPF_all {
         flex:1;
     }
     .DPF_Biggest {
         display: none;
+    }
+    .DPF_HeaderTitle {
+        font-size:12px;
+    }
+    .DPF_HeaderTitle > span {
+        padding-top:7px;
+    }
+    .DPF_HeaderButton {
+        padding: 7px 30px;
+        font-size: 10px;
+    }
+}
+@media screen and (max-width : 370px)  {
+    .DPF_HeaderTitle {
+        font-size:12px;
+    }
+    .DPF_HeaderTitle > span {
+        padding-top:5px;
+    }
+    .DPF_HeaderButton {
+        padding: 5px 20px;
+        font-size: 10px;
     }
 }

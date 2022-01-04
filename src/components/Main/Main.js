@@ -19,7 +19,7 @@ function Main() {
                     </Route>
                     <Route path="/RSS">
                         {/*<Rss/>*/}
-                        <KeywordPage/>
+                        <MapOverview/>
                     </Route>
                     <Route path="/Websites">
                         {<KeywordPage/>}

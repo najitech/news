@@ -36,12 +36,13 @@
     justify-content: center;
     align-items: center;
     padding:8px;
-    color:white;
+    color:#364B66;
     border-radius: 5px;
     cursor: pointer;
 }
 .DP_CTimeFilterActive {
     background-color: #313A57;
+    color:white;
 }
 .DP_ChartSide {
     flex:0.8;
@@ -86,19 +87,27 @@
     align-items: center;
     padding:9px 0px;
     justify-content: space-between;
-    border-bottom:2px dashed rgba(255, 255, 255, 0.096)
+    border-bottom:2px dashed rgba(255, 255, 255, 0.096);
+    opacity: 0.4;
+}
+.DP_SidebarSource:hover {
+    opacity: 0.7;
+}
+.DP_SidebarSActive {
+    opacity: 1;
+}
+.DP_SidebarSActive:hover{
+    opacity: 1;
 }
 .DP_SidebarSource > span {
-    color:white;
+    color:rgba(255, 255, 255, 0.664);
     font-size:10px;
     margin-right:5px;
 }
 .DP_SidebarSourceTitle {
     display: flex;
     align-items: center;
-    color:white;
-
-
+    color:rgba(255, 255, 255, 0.664);
 }
 .DP_SidebarSourceTitle > span {
     margin-right:5px;
@@ -157,20 +166,21 @@
     color:rgb(156, 236, 176);
 }
 .DP_SheypoorIcon {
-    color: rgba(0,132,255,1);
-    backgroud-color: hsla(291, 64%, 42%, 0.5)
+    color: rgb(0, 132, 255);
 }
 .transparentItem {
     background-color: transparent !important;
 }
-
+.MOSheypoorBack {
+    background-color: rgb(0, 132, 255);;
+}
 
 .DP_CContentFilter {
     display: flex;
 }
 .DP_SelectBox {
     width: 120px;
-    margin-right:30px;
+    margin-right:10px;
     color: rgb(50, 15, 95);
 
 }
@@ -187,6 +197,9 @@
     margin-top:8px;
     box-shadow: 2px 2px 1px 1px rgba(18, 17, 97, 0.253);
     padding-top:8px;
+}
+.DP_DateInput2 {
+    margin-bottom: 7px;
 }
 .DP_DateInput:focus {
     outline: none;
@@ -209,6 +222,9 @@
   .DP_DateInput:-moz-placeholder { /* Firefox 18- */
 
   }
+  .DP_DatePick {
+    display: block;
+  }
   .DP_DatePickContainer {
       width: 100%;
       display: flex;
@@ -225,6 +241,79 @@
       background-color: #272E48 !important;
   }
 
+.DP_TimePickContainer{
+    direction: ltr;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.DP_TimePick {
+    position:absolute;
+    right:200px;
+    top:100px;
+    z-index: 10003;
+
+}
+
+.DP_TimePickerBButtom {
+    color:grey;
+    border: 1px solid rgba(173, 173, 173, 0.267);
+    cursor:pointer;
+    font-family: 'Shabnam';
+    font-size:14px;
+    transition: all 0.1s ease;
+}
+.DP_TimePickerBButtom:hover {
+    color:rgb(63, 63, 63);
+    background-color: azure;
+    transition: all 0.1s ease;
+}
+
+.DP_SelectBoxContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:40px;
+    margin-left:7px;
+}
+.DP_SelectBoxContainer > span {
+    font-family: 'Shabnam';
+    font-size:12px;
+    font-weight: bold;
+    color:#63738f
+}
+.DP_SelectPlaceHolder {
+    font-family: 'Shabnam';
+    font-size: 10px;
+}
+.DP_ChartRightFilters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.DP_ChartResIcon {
+    display: none;
+    color:white;
+    background-color: #313A57;
+    border-radius:5px;
+    padding:1px 6px;
+}
+.DP_Drawer {
+    background-color: transparent !important;
+}
+.DP_DownloadPng {
+    display: none;
+}
+.DP_TimePickDrawer {
+    position:absolute;
+    top:10px;
+    right:20px;
+    z-index: 100000000;
+    direction: ltr;
+}
+
   @media screen and (max-width : 655px) {
         .DP_ChartSidebar {
             display: none;
@@ -232,6 +321,38 @@
         .DP_ChartContainer {
             flex:1;
         }
+        .DP_ChartSidebarDrawer {
+            display: block;
+            padding-top:40px;
+            flex:0.3;
+            width:250px;
+        }
+        .DP_ChartResIcon {
+            display: inline;
+        }
+        .DP_SelectBoxContainer > span {
+            display: none;
+        }
   }
 
- 
+@media screen and (max-width : 495px) {
+    .DP_CContentFilter {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .DP_SelectBoxContainer {
+        margin-bottom: 5px;
+    }
+    .DP_ChartRightFilters {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        justify-content: space-between;
+
+    }
+    .DP_ChartResIcon {
+        margin-right:11px;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+}
