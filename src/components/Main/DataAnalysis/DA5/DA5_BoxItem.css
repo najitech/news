@@ -1,0 +1,34 @@
+.DA5_BoxItem {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    height: 40px;
+}
+.DA5_BoxItemHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.DA5_BoxItemTitle {
+    font-size: 11px;
+    color:rgb(173, 173, 173);
+}
+
+.DA5_BoxItemNumber {
+    font-size:11px;
+    font-weight: bold;
+}
+
+.DA5_BoxItemBarContainer {
+    width: 100%;
+    height: 3px;
+    margin-top: 7px;
+    background-color: #F4F4F6;
+}
+.DA5_BoxItemBar {
+    height: 100%;
+    width: 100%;
+    background-color: #0FA86A;
+}

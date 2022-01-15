@@ -1,0 +1,13 @@
+.DA6_Lchart {
+    flex:0.78;
+    height: 100%;
+    background-color: white;
+    padding: 0px 17px;
+    border-radius: 6px;
+}
+.DA6_Header {
+
+}
+.DA6_LchartContainer {
+    /*padding:0px 15px;*/
+}

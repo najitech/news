@@ -1,0 +1,6 @@
+.DA5 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 70px;
+    margin-top:10px;
+}

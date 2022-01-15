@@ -1,0 +1,11 @@
+.DataAnalysis {
+    overflow-y: scroll;
+    height: 100%;
+}
+.DA_Body {
+    width: 90%;
+    margin: auto;
+}
+.justforscroll {
+    height: 400px;
+}

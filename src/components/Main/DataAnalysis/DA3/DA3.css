@@ -1,0 +1,7 @@
+.DA3 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    column-gap: 10px;
+    margin-top:10px;
+ 
+}

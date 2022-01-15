@@ -1,0 +1,29 @@
+.DA2 {
+    display: flex;
+}
+
+.DA2_BehaviorContainer {
+    flex:0.7;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10px;
+}
+.DA2Chart {
+    flex:0.3;
+    padding:15px;
+    
+}
+.DA2Chart {
+    height: 320px;
+    background-color: white;
+    border-radius: 4px;
+    margin-right:10px;
+    color:#49c3f3
+}
+.DA2Chart_Header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color:#77777B;
+    font-size:12px;
+}

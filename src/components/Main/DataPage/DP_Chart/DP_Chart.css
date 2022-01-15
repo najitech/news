@@ -214,13 +214,28 @@
     font-size: 13px;
   }
   .DP_DateInput::-moz-placeholder { /* Firefox 19+ */
-
+    color: grey;
+    text-align: right;
+    margin:0px;
+    padding:0px;
+    width: 100%;
+    font-size: 13px;
   }
   .DP_DateInput:-ms-input-placeholder { /* IE 10+ */
-
+    color: grey;
+    text-align: right;
+    margin:0px;
+    padding:0px;
+    width: 100%;
+    font-size: 13px;
   }
   .DP_DateInput:-moz-placeholder { /* Firefox 18- */
-
+    color: grey;
+    text-align: right;
+    margin:0px;
+    padding:0px;
+    width: 100%;
+    font-size: 13px;
   }
   .DP_DatePick {
     display: block;

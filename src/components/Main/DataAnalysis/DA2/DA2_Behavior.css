@@ -1,0 +1,41 @@
+.DA2_Behavior {
+    height: 320px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+}
+.DA2_BehaviorCategories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:10px;
+}
+.DA2_BehaviorTitle {
+    color:#77777B;
+    font-size: 12px;
+}
+.DA2_BehaviorCategory {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.DA2_BCategoryTitle {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size:10px;
+    color:#AFAFAF
+}
+.DA2_BCategoryBarcontainer {
+    width: 100%;
+    height: 3px;
+    margin-top: 7px;
+    background-color: #F4F4F6;
+}
+.DA2_BCategoryBar {
+    height: 100%;
+    width: 100%;
+    background-color: #0FA86A;
+}

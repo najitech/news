@@ -1,0 +1,135 @@
+.DA1 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 370px;
+    width: 90%;
+    position: absolute;
+    top: 100px;
+    border-radius: 12px;
+    padding:13px 20px;
+}
+.DA1_Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #F0F0F0;
+
+}
+.DA1_HeaderFilters {
+    display: flex;
+    align-items: center;
+}
+
+.DA1_Footer {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+
+}
+.DA1_HeaderDateFilterC {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left:15px;
+}
+.DA1_HeaderDateFilterC > span {
+    margin-left:14px;
+    font-size: 11px;
+}
+.DA_TopContaier {
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.DA_TopHeader {
+    flex:0.3;
+    width: 100%;
+    background-color: #29294A;
+    color:white;
+    padding:12px 90px;
+    position: relative;
+}
+.DA_FHeader {
+    flex:0.7;
+}
+.DA_Header > h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+.DA_Header > p {
+    font-size: 9.5px;
+}
+
+.DA_CTimeFilters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.DA_DateInput {
+    outline: none;
+    border:none;
+    box-shadow: none;
+    color: rgb(85, 85, 85);
+    padding:4px 13px;
+    text-align: right;
+    border-radius: 5px;
+    font-size:10px;
+    background-color: #F9FAFC;
+    box-shadow: 2px 2px 1px 1px rgba(204, 204, 204, 0.452);
+    padding-top:8px;
+    
+}
+.DA_DateInput::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: grey;
+    text-align: right;
+    margin:0px;
+    padding:0px;
+    width: 100%;
+    font-size: 13px;
+  }
+  .DA_DateInput::-moz-placeholder { /* Firefox 19+ */
+    color: grey;
+    text-align: right;
+    margin:0px;
+    padding:0px;
+    width: 100%;
+    font-size: 13px;
+  }
+  .DA_DateInput:-ms-input-placeholder { /* IE 10+ */
+    color: grey;
+    text-align: right;
+    margin:0px;
+    padding:0px;
+    width: 100%;
+    font-size: 13px;
+  }
+  .DA_DateInput:-moz-placeholder { /* Firefox 18- */
+    color: grey;
+    text-align: right;
+    margin:0px;
+    padding:0px;
+    width: 100%;
+    font-size: 13px;
+  }
+  
+  .DA_CTimeFilter {
+
+      font-size:11px;
+      padding: 14px 9px;
+      color:#B4B3B9;
+      cursor: pointer;
+      margin-bottom: -1.5px;
+  }
+  .DA_CTimeFilterActive {
+      color:#262626;
+      font-weight: bold;
+      border-bottom: 2px solid #7E7C86;
+  }
+  .DA_DownloadPng {
+      margin-right:10px;
+  }

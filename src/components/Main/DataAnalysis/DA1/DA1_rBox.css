@@ -1,0 +1,37 @@
+
+.DA1_rBox {
+    display: flex;
+    margin:5px;
+    width: 280px;
+    height: 80px;
+}
+.DA1_rBox_Result {
+    flex:0.45;
+    position: relative;
+}
+.DA1_rbox_Chart {
+    flex:0.55;  
+    padding-top:10px;
+}
+.DA1_rBox_Result {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 15px 0px;
+    padding-right:8px;
+}
+.DA1_rBox_ResultTitle {
+    font-size:11px;
+    color:#B6B5B9;
+}
+.DA1_rBox_ResultNumber {
+    font-weight: bold;
+    margin-left:15px;
+}
+.DA1_rBox_ResultFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}

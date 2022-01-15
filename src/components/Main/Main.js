@@ -9,20 +9,23 @@ import KeywordPage from './KeywordPage/KeywordPage'
 import MapOverview from './MapPages/MapOverview/MapOverview'
 import MapPage from './MapPages/MapPosts/MapPosts'
 import DataPage from './DataPage/DataPage'
+import DataAnalysis from './DataAnalysis/DataAnalysis'
+
 function Main() {
     return (
         <div className="Main">
                 <Switch>
                     <Route exact path="/">
                         {/*<TheLayout/>*/}
-                        <DataPage/>
+                        {/*<DataPage/>*/}
+                        <DataAnalysis/>
                     </Route>
                     <Route path="/RSS">
                         {/*<Rss/>*/}
-                        <MapOverview/>
+                        <DataPage/>
                     </Route>
                     <Route path="/Websites">
-                        {<KeywordPage/>}
+                        {<MapOverview/>}
                     </Route>
                     <Route path="/ProSearch">
                         {<ProSearchContainer/>}
