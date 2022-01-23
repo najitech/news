@@ -1,0 +1,101 @@
+.DA7_UserBox {
+    height: 140px;
+    background-color: white;
+    border-radius: 6px;
+    font-size:12px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.DA7_UBH_Avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.DA7_UBFooter {
+    margin-top:30px;
+    padding:0px 8px;
+}
+.DA7_UBF_Count {
+    direction: ltr;
+}
+.DA7_UBHeader {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.DA7_UBHeaderContent {
+    display: flex;
+    flex-direction: column;
+}
+.DA7_UBFooter {
+    display: flex;
+    align-items: center;
+}
+.DA7_UBF_buttons {
+    display: flex;
+    align-items: center;
+}
+
+.DA7_UBF_button {
+    background-color: #FAF9FF;
+    color:#acacac;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0px 10px;
+    font-size: 9.5px;
+    margin-right:10px;
+    box-shadow: 2px 2px 2px 1px rgb(235, 235, 235);
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+.DA7_UBF_button:hover {
+    background-color: #e7e5f1;
+    color:#22a54a;
+    transition: all 0.1s ease;
+}
+.DA7_UBHeaderContent {
+    margin-right:11px;
+}
+.DA7_UBHeaderContentName {
+    font-size: 13px;
+}
+.DA7_UBHeaderContentDescribe {
+    color:#B8B9BB;
+    font-size:9px;
+}
+.DA7_UBF_Count {
+    font-size:15px;
+    font-weight: bold;
+    margin-left:30px
+}
+.DA7_UserBoxIcons {
+    position: absolute;
+    top:-10px;
+    left:10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.DA7_UserBoxIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:22px;
+    color:black;
+    margin-left:7px;
+    width: 35px;
+    height: 35px;
+    background-color: aqua;
+    opacity: 0.7;
+    border-radius: 6px;
+    background: hsla(169, 79%, 49%, 1);
+    background: linear-gradient(150deg, hsla(169, 79%, 49%, 1) 0%, hsla(177, 79%, 47%, 1) 68%, hsla(185, 80%, 48%, 1) 100%);
+    background: -moz-linear-gradient(150deg, hsla(169, 79%, 49%, 1) 0%, hsla(177, 79%, 47%, 1) 68%, hsla(185, 80%, 48%, 1) 100%);
+    background: -webkit-linear-gradient(150deg, hsla(169, 79%, 49%, 1) 0%, hsla(177, 79%, 47%, 1) 68%, hsla(185, 80%, 48%, 1) 100%);
+}

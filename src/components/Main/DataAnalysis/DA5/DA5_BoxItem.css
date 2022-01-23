@@ -1,7 +1,6 @@
 .DA5_BoxItem {
     display: flex;
     flex-direction: column;
-
     justify-content: center;
     height: 40px;
 }
@@ -23,7 +22,7 @@
 
 .DA5_BoxItemBarContainer {
     width: 100%;
-    height: 3px;
+    height: 4px;
     margin-top: 7px;
     background-color: #F4F4F6;
 }
@@ -31,4 +30,5 @@
     height: 100%;
     width: 100%;
     background-color: #0FA86A;
+    box-shadow: 1px 2px 5px 1px #0fa86b60; ;
 }

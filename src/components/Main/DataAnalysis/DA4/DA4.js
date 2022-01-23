@@ -56,15 +56,15 @@ function DA4() {
     const [ChartData , setChartData] = useState({
           
             series: [{
-              name: 'PRODUCT A',
+              name: 'پست های مثبت',
               data: [14, 16, 16, 17, 17, 13, 19, 18, 16, 11, 12, 19, 14, 13, 11, 12,
                 17, 18, 11, 14, 19, 12, 11, 19]
             }, {
-              name: 'PRODUCT B',
+              name: 'پست های خنثی',
               data: [12, 17, 15, 14, 19, 14, 11, 16, 16, 17, 20, 17, 20, 12, 14, 14,
                 20, 19, 15, 14, 18, 18, 15, 18]
             }, {
-              name: 'PRODUCT C',
+              name: 'پست های منفی',
               data: [20, 21, 12, 19, 21, 20, 20, 20, 13, 21, 18, 20, 17, 17, 18, 20,
                 17, 18, 16, 12, 14, 19, 17, 13]
             }],
@@ -90,7 +90,13 @@ function DA4() {
                             fontWeight: 400,
                             cssClass: 'apexcharts-yaxis-label',
                         },
-                      }
+                      },
+                      axisBorder: {
+                        show: false,
+                    },
+                    axisTicks: {
+                        show: false,
+                    },
                   },
                   yaxis: {
                     show: true,
@@ -141,9 +147,20 @@ function DA4() {
                 },
               },
               legend: {
-                show:false,
-                position: 'right',
-                offsetY: 40
+                show:true,
+                position: 'top',
+                markers: {
+                  width: 12,
+                  height: 12,
+                  strokeWidth: 0,
+                  strokeColor: '#fff',
+                  fillColors: ['#4B65E0', '#64D6F8', 'rgb(247, 109, 109)'],
+                  radius: 12,
+                  customHTML: undefined,
+                  onClick: undefined,
+                  offsetX: 5,
+                  offsetY: 0
+              },
               },
               fill: {
                 colors: ['#4B65E0', '#64D6F8', 'rgb(247, 109, 109)'],
@@ -156,7 +173,10 @@ function DA4() {
         <div className='DA4'>
             <div className='DA4_RightChartContainer'>
                 <div className='DA1_Header DA4_Header'>
-                        <span>حس پست ها</span>
+                <div className='DA1_HeaderTitleDes'>
+                          <span className='DA1_HeaderTitle'>حس پست ها</span>
+                          <span className='DA1_HeaderDescribe'>توضیحات مربوط به این نمودار</span>
+                        </div>
                         <div className='DA1_HeaderFilters'>
                             <div className='DA_CTimeFilters'>
                                 <div className={['DA_CTimeFilter' ,TimeFilter===1? 'DA_CTimeFilterActive' : ''].join(' ')} onClick={() => handleTimeFilter(1)}>

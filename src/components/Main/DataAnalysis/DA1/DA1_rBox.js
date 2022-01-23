@@ -50,6 +50,15 @@ function DA1_rBox(props) {
             }, 
           },
           chart: {
+            dropShadow: {
+                enabled: true,
+                top: 2,
+                left: 0,
+                blur: 2,
+                color:['#764ee3'],
+                opacity: 0.2,
+              
+              },
             height: 350,
             type: 'line',
             sparkline: {
@@ -83,7 +92,7 @@ function DA1_rBox(props) {
                             <span style={{color : props.weekRaising? '#0FA86A' : '#DC595A'}}>{!q952?props.weekRaise : props.weekRaise.split('.')[0]}% </span>
                             {
                                 props.weekRaising ?
-                                <BsFillArrowUpRightCircleFill className="MOresult_Box_raiseIcon"/>
+                                <BsFillArrowUpRightCircleFill className="MOresult_Box_raiseIcon DA1_RaiseIcon"/>
                                 :
                                 <BsArrowDownRightCircleFill className="MOresult_Box_raiseIcon KP_Fall "/>
                             }

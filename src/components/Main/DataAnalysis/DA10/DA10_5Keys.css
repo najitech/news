@@ -1,0 +1,91 @@
+.DA10_5Keys {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    align-items: center;
+}
+.DA10_5KeysContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+}
+.DA10_5KeysHourContainer {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    
+}
+.DA10_5KeysHour {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.DA10BackWhite {
+    background-color: white;
+}
+.DA10Backother {
+    background-color: #F9FAFE;
+}
+.DA10_5KeysHour {
+    direction: ltr;
+    color:white;
+    font-size: 9.5px;
+    font-weight: 550;
+    padding-top: 2px;
+}
+.DA10_5Key {
+    font-size: 11px;
+    color:rgb(82, 82, 82);
+    margin-bottom: 5px;
+}
+
+.hexagon {
+    position: relative;
+    width: 30px; 
+    height: 17.32px;
+    background-color: #475dbe;
+    margin: 8.66px 0;
+    box-shadow: 0 0 4px rgba(71,93,190,0.45);
+    margin-top:20px;
+  }
+  
+  .hexagon:before,
+  .hexagon:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 21.21px;
+    height: 21.21px;
+    -webkit-transform: scaleY(0.5774) rotate(-45deg);
+    -ms-transform: scaleY(0.5774) rotate(-45deg);
+    transform: scaleY(0.5774) rotate(-45deg);
+    background-color: inherit;
+    left: 4.3934px;
+    box-shadow: 0 0 6px rgba(71,93,190,0.45);
+  }
+  
+  .hexagon:before {
+    top: -10.6066px;
+  }
+  
+  .hexagon:after {
+    bottom: -10.6066px;
+  }
+  
+  /*cover up extra shadows*/
+  .hexagon span {
+    display: block;
+    position: absolute;
+    top:0px;
+    left: 0;
+    width:30px;
+    height:17.3205px;
+    z-index: 2;
+    background: inherit;
+  }

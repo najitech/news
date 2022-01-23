@@ -16,6 +16,11 @@ import DA4 from './DA4/DA4';
 import DA5 from './DA5/DA5';
 import DA6 from './DA6/DA6';
 import DA7 from './DA7/DA7';
+import DA8 from './DA8/DA8';
+import DA9 from './DA9/DA9';
+import DA10 from './DA10/DA10';
+import DA11 from './DA11/DA11';
+import DA12 from './DA12/DA12';
 
 function DataAnalysis() {
     const [TimeFilter,SetTimeFilter] = useState(1)
@@ -34,7 +39,7 @@ function DataAnalysis() {
     }
     return (
         <div className='DataAnalysis'>
-                <DA1/>
+                <DA1 AllData="120.353" FirstData="65.351" SecondData="48.261" AllDataRaise="8.2" AllDataRaising/>
             <div className='DA_Body'>
                 <DA2/>
                 <DA3/>
@@ -42,6 +47,10 @@ function DataAnalysis() {
                 <DA5/>
                 <DA6/>
                 <DA7/>
+                <DA9/>
+                <DA10/>
+                <DA11/>
+                <DA12/>
                 <div className='justforscroll'>
 
                 </div>

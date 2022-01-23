@@ -1,0 +1,66 @@
+.DA_NER_Box {
+    height: 35px;
+    border-radius: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding:0px 4px;
+
+}
+
+.DA_NER_Location {
+    background-color: rgba(5, 106, 229, 0.2);
+}
+.DA_NER_Persons {
+    background-color: rgba(46, 197, 205, 0.2);
+}
+.DA_NER_Time {
+    background-color: rgba(254, 132, 1, 0.2);
+}
+.DA_NER_Events {
+    background-color: rgba(159, 65, 236, 0.2);
+}
+.DA_NER_Organs {
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+.DA_NER_BoxCircle {
+    opacity: 1;
+    height: 29px;
+    width: 29px;
+    border-radius: 50%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.DA_NERCircle_Location {
+    background-color: rgba(5, 106, 229, 0.6);
+}
+.DA_NERCircle_Persons {
+    background-color: rgba(46, 197, 205, 0.6);
+}
+.DA_NERCircle_Time {
+    background-color: rgba(254, 132, 1, 0.6);
+}
+.DA_NERCircle_Events {
+    background-color: rgba(159, 65, 236, 0.6);
+}
+.DA_NERCircle_Organs {
+    background-color: rgba(255, 0, 0, 0.6);
+}
+.DA_NER_BoxTitle {
+    margin-right:10px;
+    font-size: 10px;
+    font-weight: 600;
+    color:rgb(87, 87, 87);
+}
+
+.DA_NER_BoxCircle > span {
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:12px;
+}

@@ -1,6 +1,9 @@
 import React , {useState} from 'react'
 import './DA7.css'
 import Chart from 'react-apexcharts'
+import DA7_UserBox from './DA7_UserBox'
+import img1 from '../../../../ronaldo.jpg'
+import img2 from '../../../../dicaprio.jpg'
 
 function DA7() {
     const [TimeFilter,SetTimeFilter] = useState(1)
@@ -24,8 +27,17 @@ function DA7() {
     
      options: {
 
-      colors: ['#008FFB','#00E396','#FEB019','#FF4560'],
+      colors: ['#8A8FB6'],
           chart: {
+            dropShadow: {
+              enabled: true,
+              top: 2,
+              left: 0,
+              blur: 4,
+              color:['#8A8FB6'],
+              opacity: 0.2,
+            
+            },
             height: 350,
             type: 'line',
             toolbar: {
@@ -54,19 +66,18 @@ function DA7() {
             },
         },
           stroke: {
-            width: 1.5,
+            width: 2,
             curve: 'smooth'
           },
           fill: {
             type: 'gradient',
             gradient: {
               shade: 'light',
-              gradientToColors: [],
+              gradientToColors: ["rgb(255, 255, 255)",'#8A8FB6',"rgb(255, 255, 255)"],
               shadeIntensity: 0,
               type: 'horizontal',
-              opacityFrom: 1,
-              opacityTo: 0.2,
-              stops: [90,100]
+
+              stops: [0,7,96,100]
             },
           },
           grid: {
@@ -101,7 +112,13 @@ function DA7() {
                     fontWeight: 400,
                     cssClass: 'apexcharts-yaxis-label',
                 },
-              }
+              },
+              axisBorder: {
+                show: false,
+            },
+            axisTicks: {
+                show: false,
+            },
           },
           yaxis: {
             show: true,
@@ -124,31 +141,10 @@ function DA7() {
             custom: function({ series, seriesIndex, dataPointIndex, w }) {
               return (
                 '<div class="MO_ChartTooltip">' +
-                    '<div class="ChartHoverItem ChartHoverInstagram whitecolor"'+
-                    "<span class='MO_TooltipNumber'> 12.8K</span>" +
-                    '<span class="MO_TooltipTitle"> خبرخوان : </span>' +
-                    '<div class="MOrssBack circleMargin"></div>' +
-                    '</div>' +
-
                     '<div class="ChartHoverItem ChartHoverInstagram whitecolor "'+
                     "<span class='MO_TooltipNumber'> 20.5K</span>" +
-                    '<span class="MO_TooltipTitle"> تلگرام : </span>' +
+                    '<span class="MO_TooltipTitle"> کاربران : </span>' +
                     '<div class="MOtelBack circleMargin"></div>' +
-                    '</div>' +
-                    '<div class="ChartHoverItem ChartHoverInstagram whitecolor "'+
-                    '<span class="MO_TooltipNumber"> 8.3K</span>' +
-                    '<span class="MO_TooltipTitle"> روزنامه : </span>' +
-                    '<div class="MOpaperBack circleMargin"></div>' +
-                    '</div>' +
-                    '<div class="ChartHoverItem ChartHoverInstagram whitecolor "'+
-                    "<span class='MO_TooltipNumber'> 13.8K</span>" +
-                    '<span class="MO_TooltipTitle"> توییتر : </span>' +
-                    '<div class="MOtwiBack circleMargin"></div>' +
-                    '</div>' +
-                    '<div class="ChartHoverItem ChartHoverInstagram whitecolor "'+
-                    "<span class='MO_TooltipNumber'> 17.4K</span>" +
-                    '<span class="MO_TooltipTitle"> اینستاگرام : </span>' +
-                    '<div class="MOInstaBack circleMargin"></div>' +
                     '</div>' +
 
                 "</div>"
@@ -163,7 +159,11 @@ function DA7() {
         <div className='DA7'>
             <div className='DA7_ChartContainer'>
                 <div className='DA1_Header DA6_Header'>
-                    <span>نگاه کلی</span>
+                      <div className='DA1_HeaderTitleDes'>
+                          <span className='DA1_HeaderTitle'>کاربران </span>
+                          <span className='DA1_HeaderDescribe DA1_HeaderDescribeIm'>توضیحات مربوط به این نمودار</span>
+                        </div>
+
                     <div className='DA1_HeaderFilters'>
                         <div className='DA_CTimeFilters'>
                             <div className={['DA_CTimeFilter' ,TimeFilter===1? 'DA_CTimeFilterActive' : ''].join(' ')} onClick={() => handleTimeFilter(1)}>
@@ -187,6 +187,20 @@ function DA7() {
             </div>
 
             <div className='DA7_Users'>
+                <DA7_UserBox avatar={img1} name="رونالدو"/>
+                <DA7_UserBox avatar={img1} name="رونالدو" />
+                <DA7_UserBox avatar={img1} name="رونالدو" />
+                <DA7_UserBox avatar={img1} name="رونالدو" />
+                
+                <DA7_UserBox avatar={img2} name="دیکاپریو" />
+                <DA7_UserBox avatar={img2} name="دیکاپریو" />
+                <DA7_UserBox avatar={img2} name="دیکاپریو" />
+                <DA7_UserBox avatar={img2} name="دیکاپریو" />
+                <DA7_UserBox avatar={img1} name="رونالدو"/>
+                <DA7_UserBox avatar={img1} name="رونالدو" />
+                <DA7_UserBox avatar={img1} name="رونالدو" />
+                <DA7_UserBox avatar={img1} name="رونالدو" />
+                
 
             </div>
         </div>

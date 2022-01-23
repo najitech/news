@@ -2,7 +2,7 @@ import React from 'react'
 import Rss from './Rss/Rss'
 import { Switch , Route } from 'react-router-dom'
 import './Main.css'
-import TheLayout from '../../containers/TheLayout'
+/*import TheLayout from '../../containers/TheLayout'*/
 import ProSearchContainer from './ProSearchPage/ProSearchContainer'
 import Websites from './Websites/Websites'
 import KeywordPage from './KeywordPage/KeywordPage'
@@ -22,7 +22,7 @@ function Main() {
                     </Route>
                     <Route path="/RSS">
                         {/*<Rss/>*/}
-                        <DataPage/>
+                        <KeywordPage/>
                     </Route>
                     <Route path="/Websites">
                         {<MapOverview/>}

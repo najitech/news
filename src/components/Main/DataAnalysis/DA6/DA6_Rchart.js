@@ -6,7 +6,17 @@ function DA6_Rchart() {
     const [ChartData , setChartData] = useState({
             series: [44, 55, 17, 15],
             options: {
+              labels: ['کم تکرار', 'نسبتا پرتکرار', 'پر تکرار', 'بسیار پر تکرار'],
               chart: {
+                dropShadow: {
+                  enabledOnSeries: [1,2,3,4],
+                  top: 2,
+                  left: 0,
+                  blur: 3,
+                  color:['#7F7ECC','#92CFDB'],
+                  opacity: 0.2,
+                
+                },
                 type: 'donut',
                 events: {
                     selection: function(chartContext, { xaxis, yaxis }) {
@@ -50,8 +60,12 @@ function DA6_Rchart() {
                             show: true,
                             total: {
                                 show: true,
-                                label: '',
-                                formatter: () => 'Text you want'
+                                label: ' کل دیتا',
+                                formatter: function (w) {
+                                  return w.globals.seriesTotals.reduce((a, b) => {
+                                    return a + b
+                                  }, 0)
+                                }
                             },
                             name: {
                               show: true,

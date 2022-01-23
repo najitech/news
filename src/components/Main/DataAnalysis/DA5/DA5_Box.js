@@ -39,13 +39,15 @@ function DA5_Box(props) {
 
                 </div>
             </div>
-            <div className='DA5_BoxF'>
-                <DA5_BoxItem title="سیاسی" number={118682} percent="20%" />
-                <DA5_BoxItem title="اجتماعی" number={18453} percent="17%"  />
-                <DA5_BoxItem title="هنری" number={126934} percent="8%"  />
-                <DA5_BoxItem title="ورزشی" number={51573} percent="27%" />
-                <DA5_BoxItem title="علمی" number={8632} percent="21%" />
-                <DA5_BoxItem title="فرهنگی" number={108352} percent="8%" />
+            <div className='DA5_BoxF' style={{gridTemplateColumns: props.BoxItems.length<4 ? "auto" : props.BoxItems.length<7 ? "auto auto" : props.BoxItems.length<10 ? "auto auto auto" : props.BoxItems.length<13 ? "auto auto auto auto" : "auto auto auto auto auto"}}>
+                {
+                    props.BoxItems.map((BoxItem) => {
+                        return (
+                            <DA5_BoxItem title={BoxItem.title} number={BoxItem.number} percent={BoxItem.percent} />
+                        )
+                    })
+                }
+                
             </div>
         </div>
     )

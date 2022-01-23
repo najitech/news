@@ -49,6 +49,15 @@ function DA3_Box(props) {
             }, 
           },
           chart: {
+            dropShadow: {
+                enabled: true,
+                top: 2,
+                left: 0,
+                blur: 3,
+                color:[props.color],
+                opacity: 0.2,
+              
+              },
             height: 350,
             type: 'line',
             sparkline: {
@@ -77,6 +86,7 @@ function DA3_Box(props) {
             </div>
            <div className='DA3_BoxBody'>
                 <span className='DA3_BBodyTitle'>{props.title}</span>
+                <span className='DA3_BBodyDecribe'>توضیحات مربوط به این باکس</span>
                 <span className='DA3_BBodyCount'>{props.count}</span>
                 <div className={['DA3_BBodyRaise',props.raising? "DA3_Raise" : "DA3_Fall"].join(' ')}>
                     {props.raising? <BsArrowUpShort className="DA3_RaiseIcon" />  : <BsArrowDownShort className="DA3_FallIcon "/>}
@@ -86,12 +96,34 @@ function DA3_Box(props) {
                     <Chart options={ChartData.options} series={ChartData.series} type="line" height={"60px"} />
                 </div>
                 <div className='DA3_BBody_Footer'>
-                    <span>سه {props.title} برتر</span>
+                    <span>چهار {props.title} برتر</span>
                     <div className='DA3_BChartTops'>
-                        <div className='DA3_BChartT_TitleNumber'>
+   
                             <span className='DA3_BChartT_Title'>{tops[0].name}</span>
                             <span className='DA3_BChartT_Number'>{tops[0].count}</span>
+
+
+                        <div className='DA3_BChartT_Raise'>
+                            <span className={['DA3_BChartT_RaiseNumber',props.tops[0].raising? "DA3_Raise" : "DA3_Fall"].join(' ')}>{tops[0].countRaise}</span>
+                            {tops[0].raising? <CgArrowTopRight className="DA3_RaiseIcon DA3_IconTops" /> : <CgArrowBottomRight className="DA3_FallIcon DA3_IconTops"/>}
                         </div>
+                    </div>
+                    <div className='DA3_BChartTops'>
+                  
+                            <span className='DA3_BChartT_Title'>{tops[0].name}</span>
+                            <span className='DA3_BChartT_Number'>{tops[0].count}</span>
+                    
+
+                        <div className='DA3_BChartT_Raise'>
+                            <span className={['DA3_BChartT_RaiseNumber',props.tops[0].raising? "DA3_Raise" : "DA3_Fall"].join(' ')}>{tops[0].countRaise}</span>
+                            {tops[0].raising? <CgArrowTopRight className="DA3_RaiseIcon DA3_IconTops" /> : <CgArrowBottomRight className="DA3_FallIcon DA3_IconTops"/>}
+                        </div>
+                    </div>
+                    <div className='DA3_BChartTops'>
+               
+                            <span className='DA3_BChartT_Title'>{tops[0].name}</span>
+                            <span className='DA3_BChartT_Number'>{tops[0].count}</span>
+                     
 
                         <div className='DA3_BChartT_Raise'>
                             <span className={['DA3_BChartT_RaiseNumber',props.tops[0].raising? "DA3_Raise" : "DA3_Fall"].join(' ')}>{tops[0].countRaise}</span>
@@ -109,17 +141,8 @@ function DA3_Box(props) {
                             {tops[0].raising? <CgArrowTopRight className="DA3_RaiseIcon DA3_IconTops" /> : <CgArrowBottomRight className="DA3_FallIcon DA3_IconTops"/>}
                         </div>
                     </div>
-                    <div className='DA3_BChartTops'>
-                        <div className='DA3_BChartT_TitleNumber'>
-                            <span className='DA3_BChartT_Title'>{tops[0].name}</span>
-                            <span className='DA3_BChartT_Number'>{tops[0].count}</span>
-                        </div>
 
-                        <div className='DA3_BChartT_Raise'>
-                            <span className={['DA3_BChartT_RaiseNumber',props.tops[0].raising? "DA3_Raise" : "DA3_Fall"].join(' ')}>{tops[0].countRaise}</span>
-                            {tops[0].raising? <CgArrowTopRight className="DA3_RaiseIcon DA3_IconTops" /> : <CgArrowBottomRight className="DA3_FallIcon DA3_IconTops"/>}
-                        </div>
-                    </div>
+
                 </div>
            </div>
 

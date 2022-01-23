@@ -1,0 +1,7 @@
+.DA10 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto ;
+    column-gap: 6px;
+    margin-top:10px;
+    border-radius: 6px;
+}

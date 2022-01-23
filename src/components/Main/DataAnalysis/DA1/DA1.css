@@ -2,12 +2,12 @@
     display: flex;
     flex-direction: column;
     background-color: white;
-    height: 370px;
+    height: 445px;
     width: 90%;
     position: absolute;
     top: 100px;
     border-radius: 12px;
-    padding:13px 20px;
+    padding:5px 20px;
 }
 .DA1_Header {
     display: flex;
@@ -133,3 +133,121 @@
   .DA_DownloadPng {
       margin-right:10px;
   }
+
+  .DA1_ResultTitle {
+      font-size: 13px;
+      font-weight: 600;
+  }
+  .DA1_RaiseIcon {
+      color: #11A868;
+  }
+  .DA1_ResultFooter {
+      margin-top:8px;
+  }
+  .DA1_Overviews {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 32%;
+      margin-bottom: -17px;
+  }
+  
+  .DA1_ResultFirst {
+      display: flex;
+      flex-direction: column;
+  }
+  .DA1_ResultFirstHeader {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .DA1_ResultFirstCircle {
+      width: 10px;
+      height: 10px;
+      background-color: aqua;
+      border-radius: 50%;
+  }
+  .DA1_ResultFirstTitle {
+      font-size: 13px;
+      margin-right:6px;
+      color:rgb(167, 167, 167);
+  }
+    .DA1_ResultFirst {
+      display: flex;
+      flex-direction: column;
+  }
+  .DA1_ResultFirstHeader {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .DA1_ResultFirstCircle {
+      width: 10px;
+      height: 10px;
+      background-color: #5DCCE9;
+      border-radius: 50%;
+  }
+  .DA1_ResultFirstTitle {
+      font-size: 13px;
+      margin-right:6px;
+      color:rgb(167, 167, 167);
+  }
+
+
+
+.DA1_ResultSecond {
+    display: flex;
+    flex-direction: column;
+}
+.DA1_ResultSecondHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.DA1_ResultSecondCircle {
+    width: 10px;
+    height: 10px;
+    background-color: #5409E4;
+    border-radius: 50%;
+}
+.DA1_ResultSecondTitle {
+    font-size: 13px;
+    margin-right:6px;
+    color:rgb(167, 167, 167);
+}
+.DA1_ResultFirstCount {
+    margin-top:8px;
+    padding-right:15px;
+    font-size:15px;
+    font-weight: bold;
+}
+.DA1_ResultSecondCount {
+    margin-top:8px;
+    padding-right:15px;
+    font-size:15px;
+    font-weight: bold;
+}
+.DA1_ResultNumber {
+    font-size: 23px;
+    font-weight: bold;
+}
+.DA1_PostsRaiseContainer {
+    margin-right:10px;
+}
+.DA1_HeaderTitleDes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top:6px;
+}
+.DA1_HeaderTitle {
+    font-size:14px;
+}
+.DA1_HeaderDescribe {
+    margin-top:3px;
+    color:rgb(185, 185, 185);
+    font-size:10px;
+}
+.DA1_HeaderDescribeIm {
+    margin-bottom: 3px;
+}

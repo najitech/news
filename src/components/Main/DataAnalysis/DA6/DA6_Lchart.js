@@ -54,7 +54,20 @@ function DA6_Lchart() {
               },
           },
           legend: {
-            show: false,
+            show:true,
+            position: 'top',
+            markers: {
+              width: 8,
+              height: 8,
+              strokeWidth: 0,
+              strokeColor: '#fff',
+              fillColors: ['#008FFB','#00E396','#FEB019','#FF4560'],
+              radius: 12,
+              customHTML: undefined,
+              onClick: undefined,
+              offsetX: 5,
+              offsetY: 0
+          },
           },
 
           grid: {
@@ -89,7 +102,7 @@ function DA6_Lchart() {
                 shadeIntensity: 0.5,
                 gradientToColors: undefined,
                 inverseColors: true,
-                opacityFrom: 0.2,
+                opacityFrom: 0.3,
                 opacityTo: 0,
                 stops: [0,70, 100],
                 colorStops: []
@@ -127,7 +140,11 @@ function DA6_Lchart() {
                     fontWeight: 400,
                     cssClass: 'apexcharts-yaxis-label',
                 },
-              }
+              },
+              axisBorder: {
+                show: false,
+            },
+
           },
           yaxis: {
             show: true,
@@ -150,31 +167,25 @@ function DA6_Lchart() {
             custom: function({ series, seriesIndex, dataPointIndex, w }) {
               return (
                 '<div class="MO_ChartTooltip">' +
-                    '<div class="ChartHoverItem ChartHoverInstagram whitecolor"'+
-                    "<span class='MO_TooltipNumber'> 12.8K</span>" +
-                    '<span class="MO_TooltipTitle"> خبرخوان : </span>' +
-                    '<div class="MOrssBack circleMargin"></div>' +
-                    '</div>' +
-
-                    '<div class="ChartHoverItem ChartHoverInstagram whitecolor "'+
-                    "<span class='MO_TooltipNumber'> 20.5K</span>" +
-                    '<span class="MO_TooltipTitle"> تلگرام : </span>' +
-                    '<div class="MOtelBack circleMargin"></div>' +
-                    '</div>' +
-                    '<div class="ChartHoverItem ChartHoverInstagram whitecolor "'+
-                    '<span class="MO_TooltipNumber"> 8.3K</span>' +
-                    '<span class="MO_TooltipTitle"> روزنامه : </span>' +
-                    '<div class="MOpaperBack circleMargin"></div>' +
-                    '</div>' +
                     '<div class="ChartHoverItem ChartHoverInstagram whitecolor "'+
                     "<span class='MO_TooltipNumber'> 13.8K</span>" +
-                    '<span class="MO_TooltipTitle"> توییتر : </span>' +
+                    '<span class="MO_TooltipTitle"> کم تکرار : </span>' +
                     '<div class="MOtwiBack circleMargin"></div>' +
                     '</div>' +
                     '<div class="ChartHoverItem ChartHoverInstagram whitecolor "'+
+                    '<span class="MO_TooltipNumber"> 8.3K</span>' +
+                    '<span class="MO_TooltipTitle"> نسبتا پر تکرار : </span>' +
+                    '<div class="MOpaperBack circleMargin"></div>' +
+                    '</div>' +
+                    '<div class="ChartHoverItem ChartHoverInstagram whitecolor"'+
+                    "<span class='MO_TooltipNumber'> 12.8K</span>" +
+                    '<span class="MO_TooltipTitle"> پر تکرار : </span>' +
+                    '<div class="MOrssBack circleMargin"></div>' +
+                    '</div>' +
+                    '<div class="ChartHoverItem ChartHoverInstagram whitecolor "'+
                     "<span class='MO_TooltipNumber'> 17.4K</span>" +
-                    '<span class="MO_TooltipTitle"> اینستاگرام : </span>' +
-                    '<div class="MOInstaBack circleMargin"></div>' +
+                    '<span class="MO_TooltipTitle"> بسیار پر تکرار : </span>' +
+                    '<div class="MOrssBack DA6_VeryHighBack circleMargin"></div>' +
                     '</div>' +
 
                 "</div>"
@@ -188,7 +199,11 @@ function DA6_Lchart() {
     return (
         <div className='DA6_Lchart'>
             <div className='DA1_Header DA6_Header'>
-                <span>نگاه کلی</span>
+                    <div className='DA1_HeaderTitleDes'>
+                          <span className='DA1_HeaderTitle'>کتگوری ها</span>
+                          <span className='DA1_HeaderDescribe DA1_HeaderDescribeIm'>توضیحات مربوط به این نمودار</span>
+                        </div>
+
                 <div className='DA1_HeaderFilters'>
                     <div className='DA_CTimeFilters'>
                         <div className={['DA_CTimeFilter' ,TimeFilter===1? 'DA_CTimeFilterActive' : ''].join(' ')} onClick={() => handleTimeFilter(1)}>

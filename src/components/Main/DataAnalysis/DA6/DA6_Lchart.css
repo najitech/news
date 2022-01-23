@@ -4,10 +4,14 @@
     background-color: white;
     padding: 0px 17px;
     border-radius: 6px;
+
 }
 .DA6_Header {
 
 }
 .DA6_LchartContainer {
     /*padding:0px 15px;*/
+}
+.DA6_VeryHighBack {
+    background-color: red;
 }

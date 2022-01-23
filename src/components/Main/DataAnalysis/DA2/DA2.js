@@ -129,12 +129,21 @@ function DA2() {
                 }
               },
               fill: {
-                opacity: 0.5,
-                colors: ['#49c3f3']
-            },
+                type: 'gradient',
+                gradient: {
+                  shade: 'light',
+                  type: "vertical",
+                  shadeIntensity: 0.4,
+                  gradientToColors:  ["rgba(57,179,227,0.6)"], // optional, if not defined - uses the shades of same color in series
+                  inverseColors: true,
+                  opacityFrom: 0.4,
+                  opacityTo: 0.1,
+                  stops: [0, 100],
+                }
+              },
             stroke: {
                 show: true,
-                width: 1,
+                width: 2,
                 colors: ['#49c3f3'],
                 dashArray: 0
               },
@@ -147,6 +156,15 @@ function DA2() {
                 }
               },
             chart: {
+                dropShadow: {
+                    enabled: true,
+                    top: 0,
+                    left: 0,
+                    blur: 5,
+                    color:['rgba(57,179,227,0.8)'],
+                    opacity: 0.7,
+                  
+                  },
               height: 350,
               type: 'radar',
               toolbar: {

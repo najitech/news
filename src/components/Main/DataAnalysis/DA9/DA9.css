@@ -1,0 +1,141 @@
+.DA9 {
+    height: 630px;
+    border-radius: 6px;
+    background-color: white;
+    margin-top:10px;
+    padding: 0px 8px;
+}
+.DA9_Header {
+    padding:0px 18px;
+}
+
+.DA9_ResultContainer {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -10px;
+}
+.DA9_Result {
+    margin-top:13px;
+    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 300px;
+}
+.DA9_ResultBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.DA9_ResultBox1 {
+    border-left: 1px solid rgb(219, 219, 219);
+}
+.DA9_ResultBox1 > span {
+    color:rgb(136, 187, 59)
+}
+.DA9_ResultBox2 > span {
+    color:rgb(253, 181, 47)
+}
+
+.DA9_ChartTooltip {
+    background-color: #363636;
+    display: flex;
+    flex-direction: column;
+    color:white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    width: 200px;
+    padding-bottom: 3px;
+}
+.DA9_ChartTHeader {
+    border-bottom: 2px solid #494242;
+    padding: 12px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:12px;
+    font-weight: 500;
+    color:#dadada;
+}
+.DA9_ChartTKeys {
+    direction: ltr;
+    padding: 11px 13px;
+    font-size:10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#91AA56;
+}
+.DA9_ChartTHashtags {
+    direction: ltr;
+    padding: 11px 13px;
+    font-size:10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#B95729;
+}
+.DA9_ChartTHeaderTitle {
+    font-size:10px;
+}
+
+.DA9_RDescrition {
+    font-size:10px;
+    color:rgb(187, 187, 187) !important;
+    margin-top:3px;
+}
+.DA9_RNumber {
+    direction: ltr;
+    margin-top:5px;
+}
+.DA9_ResultBox1Numbers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size:10px;
+}
+.DA9_ResultContainerTitle {
+    font-size: 18px;
+    font-weight:bolder;
+    margin-top:12px;
+}
+.DA_NERContainer {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+.DA_NERsHelp {
+    display: flex;
+    align-items: center;
+    margin-top:30px;
+}
+.DA_NERHelp {
+    display: flex;
+    align-items: center;
+    margin-right:15px;
+}
+.DA_NERHelpCircle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.DA_NERHelpTitle {
+    font-size: 11px;
+    margin-right:4px;
+}
+.DA_NERsHelpTitle {
+    margin-left:20px;
+    font-size:14px;
+    margin-right:10px;
+}
