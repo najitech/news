@@ -1,8 +1,8 @@
 import React , {useState} from 'react';
-import './DA12.css'
+import './DA12_Hashtags.css'
 import DA12_Hashtag from './DA12_Hashtag';
 
-function DA12() {
+function DA12_Hashtags() {
     const [TimeFilter,SetTimeFilter] = useState(1)
     const handleTimeFilter = (e) => {
         let a=e;
@@ -66,4 +66,4 @@ function DA12() {
     )
 }
 
-export default DA12;
+export default DA12_Hashtags;

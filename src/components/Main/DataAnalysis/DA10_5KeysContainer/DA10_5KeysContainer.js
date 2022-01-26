@@ -1,5 +1,5 @@
 import React , {useState} from 'react';
-import './DA10.css'
+import './DA10_5KeysContainer.css'
 import DA10_5Keys from './DA10_5Keys'
 
 const keys = [
@@ -10,7 +10,7 @@ const keys = [
     'مذاکره' ,
 ]
 
-function DA10() {
+function DA10_5KeysContainer() {
     let currentHour= new Date().getHours();    
     const tempnum = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23]
     const ChartTemp = tempnum.map((number) => (currentHour-number-1)%24 )
@@ -37,4 +37,4 @@ function DA10() {
     )
 }
 
-export default DA10;
+export default DA10_5KeysContainer;

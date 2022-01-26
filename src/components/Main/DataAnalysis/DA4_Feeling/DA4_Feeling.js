@@ -1,8 +1,8 @@
 import React , {useState} from 'react'
-import './DA4.css'
+import './DA4_Feeling.css'
 import Chart from 'react-apexcharts'
 
-function DA4() {
+function DA4_Feeling() {
     let currentHour= new Date().getHours();    
     const tempnum = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23]
     const ChartTemp = tempnum.map((number) => (currentHour-number-1)%24 )
@@ -173,7 +173,7 @@ function DA4() {
         <div className='DA4'>
             <div className='DA4_RightChartContainer'>
                 <div className='DA1_Header DA4_Header'>
-                <div className='DA1_HeaderTitleDes'>
+                      <div className='DA1_HeaderTitleDes'>
                           <span className='DA1_HeaderTitle'>حس پست ها</span>
                           <span className='DA1_HeaderDescribe'>توضیحات مربوط به این نمودار</span>
                         </div>
@@ -233,4 +233,4 @@ function DA4() {
     )
 }
 
-export default DA4
+export default DA4_Feeling

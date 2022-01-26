@@ -1,8 +1,8 @@
 import React from 'react'
-import './DA3.css'
+import './DA3_NER.css'
 import DA3_Box from './DA3_Box'
 
-function DA3() {
+function DA3_NER() {
     const NER_Result = [
         {
             title:'کلمات کلیدی',
@@ -41,4 +41,4 @@ function DA3() {
     )
 }
 
-export default DA3
+export default DA3_NER

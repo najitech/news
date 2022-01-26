@@ -1,9 +1,9 @@
 import React from 'react'
-import './DA5.css'
+import './DA5_4Categories.css'
 import DA5_Box from './DA5_Box'
 
 
-function DA5() {
+function DA5_4Categories() {
     let BoxItems = [
         {
             title:"سیاسی",
@@ -56,4 +56,4 @@ function DA5() {
     )
 }
 
-export default DA5
+export default DA5_4Categories

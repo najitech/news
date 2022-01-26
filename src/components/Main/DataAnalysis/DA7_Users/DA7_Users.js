@@ -1,11 +1,11 @@
 import React , {useState} from 'react'
-import './DA7.css'
+import './DA7_Users.css'
 import Chart from 'react-apexcharts'
 import DA7_UserBox from './DA7_UserBox'
 import img1 from '../../../../ronaldo.jpg'
 import img2 from '../../../../dicaprio.jpg'
 
-function DA7() {
+function DA7_Users() {
     const [TimeFilter,SetTimeFilter] = useState(1)
     let ChartNumbers =[[14, 16, 16, 17, 17, 13, 19, 18, 16, 11, 12, 19, 14, 13, 11, 12,
         17, 18, 11, 14, 19, 12, 11, 19]]
@@ -76,7 +76,6 @@ function DA7() {
               gradientToColors: ["rgb(255, 255, 255)",'#8A8FB6',"rgb(255, 255, 255)"],
               shadeIntensity: 0,
               type: 'horizontal',
-
               stops: [0,7,96,100]
             },
           },
@@ -207,4 +206,4 @@ function DA7() {
     )
 }
 
-export default DA7
+export default DA7_Users

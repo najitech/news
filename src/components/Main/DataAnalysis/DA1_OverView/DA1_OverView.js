@@ -1,5 +1,5 @@
 import React ,{useState} from 'react'
-import './DA1.css'
+import './DA1_OverView.css'
 import DatePicker from 'react-multi-date-picker'
 import persian from "react-date-object/calendars/persian";
 import persian_fa from "react-date-object/locales/persian_fa";
@@ -12,7 +12,7 @@ import DA1_rBox from './DA1_rBox'
 import { useMediaQuery } from 'react-responsive'
 import { BsArrowDownRightCircleFill, BsFillArrowUpRightCircleFill } from 'react-icons/bs';
 
-function DA1(props) {
+function DA1_OverView(props) {
     let q952 = useMediaQuery({query :'(max-width : 952px)'}); 
     const [TimeFilter,SetTimeFilter] = useState(1)
     const handleTimeFilter = (e) => {
@@ -139,13 +139,13 @@ function DA1(props) {
                 '<div class="MO_ChartTooltip">' +
 
                     '<div class="ChartHoverItem ChartHoverInstagram whitecolor "'+
-                    "<span class='MO_TooltipNumber'> 20.5K</span>" +
+                    "<span class='MO_TooltipNumber'>" + series[0][dataPointIndex] + "K</span>" +
                     '<span class="MO_TooltipTitle"> مولفه اول : </span>' +
                     '<div class="MOtelBack circleMargin"></div>' +
                     '</div>' +
 
                     '<div class="ChartHoverItem ChartHoverInstagram whitecolor "'+
-                    "<span class='MO_TooltipNumber'> 17.4K</span>" +
+                    "<span class='MO_TooltipNumber'>" + series[1][dataPointIndex] + "K</span>" +
                     '<span class="MO_TooltipTitle"> مولفه دوم : </span>' +
                     '<div class="MOInstaBack circleMargin"></div>' +
                     '</div>' +
@@ -270,4 +270,4 @@ function CustomInput1({ openCalendar, value, handleValueChange }) {
   }
 
 
-export default DA1
+export default DA1_OverView

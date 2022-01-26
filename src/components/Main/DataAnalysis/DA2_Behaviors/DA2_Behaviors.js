@@ -1,9 +1,9 @@
 import React , {useState} from 'react'
-import './DA2.css'
+import './DA2_Behaviors.css'
 import DA2_Behavior from './DA2_Behavior'
 import Chart from 'react-apexcharts'
 
-function DA2() {
+function DA2_Behaviors() {
     const [Behaviors,setBehaviors] = useState([
         {
             title:'پرخواشگرانه',
@@ -221,4 +221,4 @@ function DA2() {
     )
 }
 
-export default DA2
+export default DA2_Behaviors

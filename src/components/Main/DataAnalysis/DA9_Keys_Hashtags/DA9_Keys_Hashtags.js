@@ -1,9 +1,9 @@
 import React , {useState} from 'react'
-import './DA9.css'
+import './DA9_Keys_Hashtags.css'
 import Chart from 'react-apexcharts'
 import DA_NER_Box from './DA_NER_Box';
 
-function DA9(props) {
+function DA9_Keys_Hashtags(props) {
     let currentHour= new Date().getHours();    
     const tempnum = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23]
     const ChartTemp = tempnum.map((number) => (currentHour-number-1)%24 )
@@ -263,4 +263,4 @@ function DA9(props) {
     )
 }
 
-export default DA9
+export default DA9_Keys_Hashtags
