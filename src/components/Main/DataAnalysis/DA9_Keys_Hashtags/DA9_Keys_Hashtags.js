@@ -2,14 +2,20 @@ import React , {useState} from 'react'
 import './DA9_Keys_Hashtags.css'
 import Chart from 'react-apexcharts'
 import DA_NER_Box from './DA_NER_Box';
+import { useMediaQuery } from 'react-responsive'
 
 function DA9_Keys_Hashtags(props) {
+    let q553 = useMediaQuery({query :'(max-width : 553px)'});
     let currentHour= new Date().getHours();    
     const tempnum = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23]
     const ChartTemp = tempnum.map((number) => (currentHour-number-1)%24 )
     let xChart = ChartTemp.map ((number) => number > 0 ? number : (24+number)%24)
     xChart.reverse()
     let xChartLabel = xChart.map(e => e > 11 ? 'بعد از ظهر ' : 'قبل از ظهر')
+    if (q553) {
+      xChart = xChart.slice(0,12);
+      xChartLabel = xChartLabel.slice(0,12)
+    }
     const [TimeFilter,SetTimeFilter] = useState(1)
     const handleTimeFilter = (e) => {
         let a=e;
@@ -20,16 +26,19 @@ function DA9_Keys_Hashtags(props) {
           SetTimeFilter(a)
         }
     }
+    let chartNumbers = [[14, 16, 16, 17, 17, 13, 19, 18, 16, 11, 12, 19, 14, 13, 11, 12,
+      17, 18, 11, 14, 19, 12, 11, 19],
+      [12, 17, 15, 14, 19, 14, 11, 16, 16, 17, 20, 17, 20, 12, 14, 14,
+        20, 19, 15, 14, 18, 18, 15, 18]
+    ]
     const [ChartData , setChartData] = useState({
           
         series: [{
           name: 'PRODUCT A',
-          data: [14, 16, 16, 17, 17, 13, 19, 18, 16, 11, 12, 19, 14, 13, 11, 12,
-            17, 18, 11, 14, 19, 12, 11, 19]
+          data: q553? chartNumbers[0].slice(0,12) : chartNumbers[0]
         }, {
           name: 'PRODUCT B',
-          data: [12, 17, 15, 14, 19, 14, 11, 16, 16, 17, 20, 17, 20, 12, 14, 14,
-            20, 19, 15, 14, 18, 18, 15, 18]
+          data: q553? chartNumbers[1].slice(0,12) : chartNumbers[1]
         }],
         options: {
             colors : ['rgb(253, 181, 47)','rgb(136, 187, 59)'],

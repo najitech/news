@@ -1,5 +1,5 @@
 .DA6_Lchart {
-    flex:0.78;
+    flex:0.74;
     height: 100%;
     background-color: white;
     padding: 0px 17px;
@@ -11,7 +11,13 @@
 }
 .DA6_LchartContainer {
     /*padding:0px 15px;*/
+    margin-top:5px;
 }
 .DA6_VeryHighBack {
     background-color: red;
 }
+@media screen and ( max-width : 686px ) {
+    .DA6_Lchart {
+        margin-top:10px;
+    }
+} 

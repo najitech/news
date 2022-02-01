@@ -24,6 +24,7 @@
 .DA1_Footer {
     display: grid;
     grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
 
 }
 .DA1_HeaderDateFilterC {
@@ -250,4 +251,152 @@
 }
 .DA1_HeaderDescribeIm {
     margin-bottom: 3px;
+}
+
+@media screen and ( max-width : 1380px ) {
+    .DA1_Overviews {
+        width: 40%;
+    }
+}
+@media screen and ( max-width : 1350px ) {
+    .DA1_Footer {
+        grid-template-columns: auto auto auto;
+    }
+    .DA1{
+        height: 525px;
+    }
+
+}
+@media screen and ( max-width : 1120px ) {
+    .DA1_Overviews {
+        width: 50%;
+    }
+    .DA1_Footer {
+        grid-template-columns: auto auto auto;
+    }
+    .DA1{
+        height: 525px;
+    }
+
+}
+@media screen and ( max-width : 1015px ) {
+    .DA1_Footer {
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and ( max-width : 900px ) {
+    .DA1_Overviews {
+        width: 60%;
+    }
+    .DA1_ResultTitle {
+        font-size: 12px;
+    }
+    .DA1_ResultNumber {
+        font-size:18px;
+    }
+    .DA1_ResultFirstTitle {
+        font-size: 11px;
+    }
+    .DA1_ResultSecondTitle {
+        font-size:11px;
+    }
+    .DA1_ResultFirstCount {
+        font-size:14px;
+    }
+    .DA1_ResultSecondCount {
+        font-size:14px;
+    }
+}
+@media screen and ( max-width : 900px )  {
+    .DA1_Overviews {
+        width: 70%;
+    }
+}
+
+@media screen and ( max-width : 610px ) {
+    .DA1_Overviews {
+        width: 80%;
+    }
+}
+@media screen and ( max-width : 538px ) {
+    .DA1_Overviews {
+        width: 80%;
+    }
+    .DA1_ResultTitle {
+        font-size: 11px;
+    }
+    .DA1_ResultNumber {
+        font-size:16px;
+    }
+    .DA1_ResultFirstTitle {
+        font-size: 10px;
+    }
+    .DA1_ResultSecondTitle {
+        font-size:10px;
+    }
+    .DA1_ResultFirstCount {
+        font-size:12px;
+    }
+    .DA1_ResultSecondCount {
+        font-size:12px;
+    }
+}
+@media screen and ( max-width : 491px ) {
+    .DA1_Overviews {
+        width: 90%;
+    }
+}
+@media screen and ( max-width : 482px ) {
+    .DA1_Footer {
+        grid-template-columns: auto;
+    }
+    .DA1{
+        height: 685px;
+    }
+}
+@media screen and ( max-width : 425px ) {
+    .DA1_Overviews {
+        width: 94%;
+    }
+    .DA1_ResultTitle {
+        font-size: 10px;
+    }
+    .DA1_ResultNumber {
+        font-size:14px;
+    }
+    .DA1_ResultFirstTitle {
+        font-size: 9px;
+    }
+    .DA1_ResultSecondTitle {
+        font-size:9px;
+    }
+    .DA1_ResultFirstCount {
+        font-size:10px;
+    }
+    .DA1_ResultSecondCount {
+        font-size:10px;
+    }
+    .DA1_ResultFirst {
+        flex:0.28;
+    }
+    .DA1_ResultSecond {
+        flex:0.28;
+    }
+    .DA1_PostOverview {
+        flex:0.44;
+    }
+    .DA1_ResultFirstCount {
+        padding-right:30px;
+    }
+    .DA1_ResultSecondCount {
+        padding-right: 30px;
+    }
+}
+@media screen and ( max-width : 404px ) {
+    .DA1_ResultFirstCount {
+        padding-right:20px;
+    }
+    .DA1_ResultSecondCount {
+        padding-right: 20px;
+    }
 }

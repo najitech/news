@@ -205,11 +205,6 @@ function DA2_Behaviors() {
     })
     return (
         <div className='DA2'>
-            <div className='DA2_BehaviorContainer'>
-                <DA2_Behavior BData={Behaviors.slice(0,7)}/>
-                <DA2_Behavior BData={Behaviors.slice(7,14)}/>
-                <DA2_Behavior  BData={Behaviors.slice(14,21)}/>
-            </div>
             <div className='DA2Chart'>
                 <div className='DA2Chart_Header'>
                     <span>6 مدل رفتاری برتر</span>
@@ -217,6 +212,10 @@ function DA2_Behaviors() {
                 </div>
                 <Chart options={ChartData.options} series={ChartData.series} type="radar" height={320} />
             </div>
+            <DA2_Behavior BData={Behaviors.slice(0,7)}/>
+            <DA2_Behavior BData={Behaviors.slice(7,14)}/>
+            <DA2_Behavior  BData={Behaviors.slice(14,21)}/>
+
         </div>
     )
 }

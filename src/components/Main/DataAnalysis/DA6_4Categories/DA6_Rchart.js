@@ -1,8 +1,10 @@
 import React , {useState} from 'react'
 import './DA6_Rchart.css'
 import Chart from 'react-apexcharts'
+import { useMediaQuery } from 'react-responsive';
 
 function DA6_Rchart() {
+    let q952 = useMediaQuery({query :'(max-width : 952px)'}); 
     const [ChartData , setChartData] = useState({
             series: [44, 55, 17, 15],
             options: {
@@ -99,17 +101,6 @@ function DA6_Rchart() {
               dataLabels: {
                 enabled: false,
               },
-              responsive: [{
-                breakpoint: 480,
-                options: {
-                  chart: {
-                    width: 200
-                  },
-                  legend: {
-                    position: 'bottom'
-                  }
-                }
-              }]
             },
           
           

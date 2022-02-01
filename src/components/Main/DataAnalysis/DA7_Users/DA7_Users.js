@@ -4,8 +4,10 @@ import Chart from 'react-apexcharts'
 import DA7_UserBox from './DA7_UserBox'
 import img1 from '../../../../ronaldo.jpg'
 import img2 from '../../../../dicaprio.jpg'
+import { useMediaQuery } from 'react-responsive'
 
 function DA7_Users() {
+    let q577 = useMediaQuery({query :'(max-width : 577px)'}); 
     const [TimeFilter,SetTimeFilter] = useState(1)
     let ChartNumbers =[[14, 16, 16, 17, 17, 13, 19, 18, 16, 11, 12, 19, 14, 13, 11, 12,
         17, 18, 11, 14, 19, 12, 11, 19]]
@@ -21,7 +23,7 @@ function DA7_Users() {
     const [ChartData , setChartData] = useState({
         series: [{
           name: 'کاربران',
-          data: ChartNumbers[0]
+          data: q577 ? ChartNumbers[0].slice(0,12) : ChartNumbers[0]
         },
     ],
     
@@ -184,24 +186,28 @@ function DA7_Users() {
                 <Chart options={ChartData.options} series={ChartData.series} type="line" height={260} />
                 </div>
             </div>
+            <div className='DA5_Container'>
+                  <div className='DAS_LeftMask'>
+                  </div>
+                  <div className='DA7_Users'>
+                      <DA7_UserBox avatar={img1} name="رونالدو"/>
+                      <DA7_UserBox avatar={img1} name="رونالدو" />
+                      <DA7_UserBox avatar={img1} name="رونالدو" />
+                      <DA7_UserBox avatar={img1} name="رونالدو" />
+                      
+                      <DA7_UserBox avatar={img2} name="دیکاپریو" />
+                      <DA7_UserBox avatar={img2} name="دیکاپریو" />
+                      <DA7_UserBox avatar={img2} name="دیکاپریو" />
+                      <DA7_UserBox avatar={img2} name="دیکاپریو" />
+                      <DA7_UserBox avatar={img1} name="رونالدو"/>
+                      <DA7_UserBox avatar={img1} name="رونالدو" />
+                      <DA7_UserBox avatar={img1} name="رونالدو" />
+                      <DA7_UserBox avatar={img1} name="رونالدو" />
+                      
 
-            <div className='DA7_Users'>
-                <DA7_UserBox avatar={img1} name="رونالدو"/>
-                <DA7_UserBox avatar={img1} name="رونالدو" />
-                <DA7_UserBox avatar={img1} name="رونالدو" />
-                <DA7_UserBox avatar={img1} name="رونالدو" />
-                
-                <DA7_UserBox avatar={img2} name="دیکاپریو" />
-                <DA7_UserBox avatar={img2} name="دیکاپریو" />
-                <DA7_UserBox avatar={img2} name="دیکاپریو" />
-                <DA7_UserBox avatar={img2} name="دیکاپریو" />
-                <DA7_UserBox avatar={img1} name="رونالدو"/>
-                <DA7_UserBox avatar={img1} name="رونالدو" />
-                <DA7_UserBox avatar={img1} name="رونالدو" />
-                <DA7_UserBox avatar={img1} name="رونالدو" />
-                
-
-            </div>
+                  </div>
+                </div>
+            
         </div>
     )
 }

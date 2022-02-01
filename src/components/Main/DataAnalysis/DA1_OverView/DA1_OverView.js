@@ -14,6 +14,7 @@ import { BsArrowDownRightCircleFill, BsFillArrowUpRightCircleFill } from 'react-
 
 function DA1_OverView(props) {
     let q952 = useMediaQuery({query :'(max-width : 952px)'}); 
+    let q553 = useMediaQuery({query :'(max-width : 553px)'});
     const [TimeFilter,SetTimeFilter] = useState(1)
     const handleTimeFilter = (e) => {
         let a=e;
@@ -35,11 +36,11 @@ function DA1_OverView(props) {
     const [ChartData , setChartData] = useState({
         series: [{
           name: 'اینستاگرام',
-          data: ChartNumbers[0]
+          data: q553? ChartNumbers[0].slice(0,12) : ChartNumbers[0]
         },
         {
             name: 'تلگرام',
-            data: ChartNumbers[1]
+            data: q553? ChartNumbers[1].slice(0,12) : ChartNumbers[1]
         },  
     ],
     
@@ -196,7 +197,7 @@ function DA1_OverView(props) {
                     </div>
                     <div className='DA1_Overviews'>
                       <div className='DA1_rBox_Result DA1_PostOverview'>
-                          <span className='DA1_ResultTitle'>کل پست های امروز</span>
+                          <span className='DA1_ResultTitle'> پست های امروز</span>
                           <div>
                               <div className="MOresult_WeekResultFooter DA1_ResultFooter">
                                   <span className="MOresult_HeaderBox_dataNumber DA1_ResultNumber">{props.AllData.split('.')[0]}K</span>

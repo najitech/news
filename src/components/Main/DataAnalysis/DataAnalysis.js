@@ -42,9 +42,19 @@ function DataAnalysis() {
                 <DA1_OverView AllData="120.353" FirstData="65.351" SecondData="48.261" AllDataRaise="8.2" AllDataRaising/>
             <div className='DA_Body'>
                 <DA2_Behaviors/>
-                <DA3_NER/>
+                <div className='DA3_Container'>
+                  <div className='DAS_LeftMask'>
+                  </div>
+                  <DA3_NER/>
+                </div>
+
                 <DA4_Feeling/>
-                <DA5_4Categories/>
+                <div className='DA5_Container'>
+                  <div className='DAS_LeftMask'>
+                  </div>
+                  <DA5_4Categories/>
+                </div>
+                
                 <DA6_4Categories/>
                 <DA7_Users/>
                 <DA9_Keys_Hashtags/>

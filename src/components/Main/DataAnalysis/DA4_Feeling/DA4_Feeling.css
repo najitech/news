@@ -1,13 +1,16 @@
 .DA4 {
-    height: 315px;
+    height: auto;
     display: flex;
     margin-top:10px;
     justify-content: space-between;
+    padding-bottom: 10px;
 }
 
 .DA4_LeftChart {
     flex:0.29;
     background-color: white;
+    min-width: 290px;
+    border-radius: 6px;
 }
 .DA4_RightChartContainer {
     background-color: white;
@@ -15,6 +18,9 @@
     display: flex;
     flex-direction: column;
     border-radius: 6px;
+}
+.DA4_RightChart {
+    margin-top:5px;
 }
 .DA4_Header {
     padding:3px 17px;
@@ -65,4 +71,23 @@
     font-size: 11px;
     color:rgb(179, 179, 179);
     margin-top:10px;
+}
+
+@media screen and ( max-width : 1099px ) {
+    .DA5 {
+        overflow-x: scroll;
+        padding:10px 0px;
+           column-gap: 20px;
+    }
+}
+@media screen and ( max-width : 700px ) {
+    .DA4 {
+        flex-direction: column;
+    }
+    .DA4_LeftChart {
+        margin-top:10px;
+        padding-bottom: 10px;
+    }
+    .DA4_LeftChartContainer {
+    }
 }

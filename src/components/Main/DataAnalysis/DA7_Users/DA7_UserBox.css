@@ -7,6 +7,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    min-width: 290px;
 }
 .DA7_UBH_Avatar {
     width: 50px;
@@ -32,6 +33,7 @@
 .DA7_UBFooter {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .DA7_UBF_buttons {
     display: flex;
@@ -71,7 +73,6 @@
 .DA7_UBF_Count {
     font-size:15px;
     font-weight: bold;
-    margin-left:30px
 }
 .DA7_UserBoxIcons {
     position: absolute;

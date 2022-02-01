@@ -1,8 +1,18 @@
 import React , {useState} from 'react'
 import './DA6_Lchart.css'
 import Chart from 'react-apexcharts'
+import { useMediaQuery } from 'react-responsive';
 
 function DA6_Lchart() {
+    let q900 = useMediaQuery({query :'(max-width : 900px)'}); 
+    let q686= useMediaQuery({query :'(max-width : 686px)'}); 
+    let q575= useMediaQuery({query :'(max-width : 575px)'}); 
+    if (q686) {
+      q900=false;
+    }
+    if (q575) {
+      q900=true;
+    }
     const [TimeFilter,SetTimeFilter] = useState(1)
     let ChartNumbers =[[14, 16, 16, 17, 17, 13, 19, 18, 16, 11, 12, 19, 14, 13, 11, 12,
         17, 18, 11, 14, 19, 12, 11, 19],
@@ -24,19 +34,19 @@ function DA6_Lchart() {
     const [ChartData , setChartData] = useState({
         series: [{
           name: 'کم تکرار',
-          data: ChartNumbers[0]
+          data: q900 ? ChartNumbers[0].slice(0,12) : ChartNumbers[0]
         },
         {
             name: 'نسبتا پر تکرار',
-            data: ChartNumbers[1]
+            data: q900 ? ChartNumbers[1].slice(0,12) : ChartNumbers[1]
         },  
         {
             name: 'پر تکرار',
-            data: ChartNumbers[2]
+            data: q900 ? ChartNumbers[2].slice(0,12) : ChartNumbers[2]
         }, 
         {
             name: 'بسیار پر تکرار',
-            data: ChartNumbers[3]
+            data: q900 ? ChartNumbers[3].slice(0,12) : ChartNumbers[3]
         }, 
     ],
     

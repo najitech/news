@@ -1,13 +1,28 @@
 import React , {useState} from 'react'
 import './DA4_Feeling.css'
 import Chart from 'react-apexcharts'
+import { useMediaQuery } from 'react-responsive';
 
 function DA4_Feeling() {
+    let q1143 = useMediaQuery({query :'(max-width : 1143px)'}); 
+    let q917 = useMediaQuery({query :'(max-width : 917px)'}); 
+    let q700 = useMediaQuery({query :'(max-width : 700px)'}); 
+    let q554 = useMediaQuery({query :'(max-width : 554px)'}); 
     let currentHour= new Date().getHours();    
     const tempnum = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23]
     const ChartTemp = tempnum.map((number) => (currentHour-number-1)%24 )
     let xChart = ChartTemp.map ((number) => number > 0 ? number : (24+number)%24)
     xChart.reverse()
+
+    if (q700) {
+      q917=false;
+    }
+    if (q554) {
+      q917= true;
+    }
+    if (q917) {
+      xChart = xChart.slice(0,12)
+    }
     const [TimeFilter,SetTimeFilter] = useState(1)
     const handleTimeFilter = (e) => {
         let a=e;
@@ -18,6 +33,13 @@ function DA4_Feeling() {
           SetTimeFilter(a)
         }
     }
+    let chartNumbers1 = [[14, 16, 16, 17, 17, 13, 19, 18, 16, 11, 12, 19, 14, 13, 11, 12,
+      17, 18, 11, 14, 19, 12, 11, 19],
+      [12, 17, 15, 14, 19, 14, 11, 16, 16, 17, 20, 17, 20, 12, 14, 14,
+        20, 19, 15, 14, 18, 18, 15, 18],
+      [20, 21, 12, 19, 21, 20, 20, 20, 13, 21, 18, 20, 17, 17, 18, 20,
+          17, 18, 16, 12, 14, 19, 17, 13]
+    ]
     const [ChartData2 , setChartData2] = useState({
         series: [44, 55, 15],
         options: {
@@ -38,35 +60,19 @@ function DA4_Feeling() {
                 fontSize: '10px',
             }
           },
-          responsive: [{
-            breakpoint: 480,
-            options: {
-
-              chart: {
-                width: 200
-              },
-              legend: {
-                
-                position: 'bottom'
-              }
-            }
-          }]
         },
     })
     const [ChartData , setChartData] = useState({
           
             series: [{
               name: 'پست های مثبت',
-              data: [14, 16, 16, 17, 17, 13, 19, 18, 16, 11, 12, 19, 14, 13, 11, 12,
-                17, 18, 11, 14, 19, 12, 11, 19]
+              data: q917 ? chartNumbers1[0].slice(0,15) : chartNumbers1[0]
             }, {
               name: 'پست های خنثی',
-              data: [12, 17, 15, 14, 19, 14, 11, 16, 16, 17, 20, 17, 20, 12, 14, 14,
-                20, 19, 15, 14, 18, 18, 15, 18]
+              data: q917  ? chartNumbers1[1].slice(0,15) : chartNumbers1[1]
             }, {
               name: 'پست های منفی',
-              data: [20, 21, 12, 19, 21, 20, 20, 20, 13, 21, 18, 20, 17, 17, 18, 20,
-                17, 18, 16, 12, 14, 19, 17, 13]
+              data: q917  ? chartNumbers1[2].slice(0,15) : chartNumbers1[2]
             }],
             options: {
                 dataLabels: {
@@ -143,7 +149,7 @@ function DA4_Feeling() {
                 bar: {
                   horizontal: false,
                   columnWidth: '30%',
-                  borderRadius: 5
+                  borderRadius:q1143? 3 : 5
                 },
               },
               legend: {

@@ -10,3 +10,30 @@
 .justforscroll {
     height: 400px;
 }
+
+.DA3_Container , .DA5_Container , .DA7_Container {
+    position: relative;
+}
+
+.DAS_LeftMask {
+    display: none;
+    position: absolute;
+    left:-10px;
+    top:7px;
+    height: 96%;
+    width: 130px;
+    z-index: 10;
+    background: rgb(235,237,239);
+    background: linear-gradient(90deg, rgba(235,237,239,1) 0%, rgba(244,244,244,0) 65%); 
+}
+
+@media screen and ( max-width : 1350px )  {
+    .DA_Body {
+        margin-top:156px;
+    }
+}
+@media screen and ( max-width : 482px ) {
+    .DA_Body {
+        margin-top:316px;
+    }
+}

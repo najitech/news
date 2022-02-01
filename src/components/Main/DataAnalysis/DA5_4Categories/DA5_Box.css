@@ -5,7 +5,6 @@
     display: flex;
     flex-direction: column;
     padding:5px 8px;
-
 }
 .DA5_BoxH {
     flex:0.45;
@@ -13,6 +12,7 @@
     border-radius: 10px;
     display: flex;
     position: relative;
+    padding-left: 30px;
     /*clip-path: ellipse(81% 100% at 81% 0%);*/
 
 }

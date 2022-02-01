@@ -13,3 +13,34 @@
     padding: 10px;
     margin-top:20px;
 }
+
+@media screen and ( max-width : 1350px ) {
+    .DA12_Hashtags {
+        grid-template-columns: auto auto auto auto auto auto auto;
+    }
+}
+@media screen and ( max-width : 1180px ) {
+    .DA12_Hashtags {
+        grid-template-columns: auto auto auto auto auto auto;
+    }
+}
+@media screen and ( max-width : 1026px ) {
+    .DA12_Hashtags {
+        grid-template-columns: auto auto auto auto auto;
+    }
+}
+@media screen and ( max-width : 855px ) {
+    .DA12_Hashtags {
+        grid-template-columns:auto auto auto auto;
+    }
+}
+@media screen and ( max-width : 692px ) {
+    .DA12_Hashtags {
+        grid-template-columns: auto auto auto;
+    }
+}
+@media screen and ( max-width : 514px ) {
+    .DA12_Hashtags {
+        grid-template-columns:auto auto;
+    }
+}
