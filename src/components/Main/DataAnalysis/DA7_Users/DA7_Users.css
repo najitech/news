@@ -18,16 +18,20 @@
     column-gap: 10px;
     row-gap: 20px;
 }
-.DA7_Users::-webkit-scrollbar {
-    width: 1px;
-    height: 5px;
+
+
+@media screen and ( max-width : 1360px ) {
+  .DA7_Users {
+    grid-template-columns:  auto auto auto;
   }
-   
-  .DA7_Users::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgba(119, 119, 119, 0.3);
+}
+@media screen and ( max-width : 1005px ) {
+  .DA7_Users {
+    grid-template-columns:  auto auto;
   }
-   
-  .DA7_Users::-webkit-scrollbar-thumb {
-    background-color: rgb(41, 61, 177);
-    outline: 1px solid slategrey;
+}
+@media screen and ( max-width : 667px ) {
+  .DA7_Users {
+    grid-template-columns: auto;
   }
+}

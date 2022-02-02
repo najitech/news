@@ -3,8 +3,8 @@
     grid-template-columns: auto auto auto auto auto;
     column-gap: 10px;
     margin-top:10px;
-    overflow-x: scroll;
     padding:10px 0px;
+    justify-content: space-between;
     position: relative;
 }
 
@@ -22,4 +22,25 @@
     outline: 1px solid slategrey;
   }
 
-  
+@media screen and ( max-width : 1460px ) {
+    .DA3 {
+      grid-template-columns:23% 23% 23% 23% ;
+      row-gap: 10px;
+    }
+}
+@media screen and ( max-width : 1153px ) {
+  .DA3 {
+    grid-template-columns:32% 32% 32% ;
+  }
+}
+@media screen and ( max-width : 869px ) {
+  .DA3 {
+    grid-template-columns:48% 48%;
+  }
+}
+@media screen and ( max-width : 573px ) {
+  .DA3 {
+    grid-template-columns: 97%;
+    justify-content: center;
+  }
+}

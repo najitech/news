@@ -47,14 +47,8 @@ function DataAnalysis() {
                   </div>
                   <DA3_NER/>
                 </div>
-
                 <DA4_Feeling/>
-                <div className='DA5_Container'>
-                  <div className='DAS_LeftMask'>
-                  </div>
-                  <DA5_4Categories/>
-                </div>
-                
+                <DA5_4Categories/>
                 <DA6_4Categories/>
                 <DA7_Users/>
                 <DA9_Keys_Hashtags/>
